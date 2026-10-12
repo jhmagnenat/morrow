@@ -1,0 +1,24 @@
+{
+  "checkedAt": "2026-10-11T17:53:17.412Z",
+  "result": "pass",
+  "syntheticModels": true,
+  "providerCalls": 0,
+  "pedagogicalQualityScore": null,
+  "checks": [
+    "cold and existing-deck model inputs identical",
+    "source-only omission recovery",
+    "native recall reformulated and independently rechecked",
+    "automatic visual proof requires independent legible read-back",
+    "visual rejection and transport failure remain drafts",
+    "visual proof invalidated by changed answer or PDF",
+    "context images use matching indices and retain primary quiz evidence",
+    "accepted text survives visual failure"
+  ],
+  "coldGeneratedCards": [
+    {
+      "question": "How is the area of a rectangle calculated?",
+      "answer": "Width multiplied by height."
+    }
+  ],
+  "freshPaidEvaluation": "not performed: configured provider previously returned no credits remaining"
+}

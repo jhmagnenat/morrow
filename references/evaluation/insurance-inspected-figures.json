@@ -1,0 +1,89 @@
+{
+  "pdfSha256": "438f0286f8310855dd51bcb0db76aafbea5c5551b8dcf160cbc0a5feeb4160af",
+  "reviewer": "Codex original-PDF image inspection",
+  "reviewedAt": "2026-10-11T10:35:14.791Z",
+  "inspection": "Direct assistant inspection of freshly rendered original pages 22, 24, 26, 29 and 30. This is not a fresh provider call, human certification or an automatic-generation quality score.",
+  "images": [
+    {
+      "page": 26,
+      "file": "reviewed-source-26.png",
+      "sha256": "d7b5423b59da1ec8b76adc7a792a2e2bd3a7cc73dd1cb54c9a4caf78a2a8a4bc"
+    },
+    {
+      "page": 29,
+      "file": "reviewed-source-29.png",
+      "sha256": "5e9309f5a42e389df8a4908582c0d1d9c918ff87b443e728e3fed6c9d5b90b36"
+    },
+    {
+      "page": 30,
+      "file": "reviewed-source-30.png",
+      "sha256": "803b9e54bed1f865384adcb15ab00a791e2f54dc2c4776ea384a14ccec5b5de2"
+    },
+    {
+      "page": 22,
+      "file": "reviewed-source-22.png",
+      "sha256": "29a485dc737f15b584b28956f13c9b7973636251d29ad6fa600c24fe8d027f9d"
+    },
+    {
+      "page": 24,
+      "file": "reviewed-source-24.png",
+      "sha256": "7369daf14125971f7bad533b93110e7f3a53b316fd3540a503ff267307d664b1"
+    }
+  ],
+  "facts": [
+    {
+      "page": 26,
+      "topic": "European insurer ranking (2022)",
+      "claim": "The three leading European insurers by premium income in 2022 are AXA, Allianz and Generali, in that order.",
+      "question": "Which three European insurers lead by premium income in 2022, in descending order?",
+      "answer": "AXA, Allianz, Generali.",
+      "kind": "comparison"
+    },
+    {
+      "page": 29,
+      "topic": "Life-insurance market shares (2025)",
+      "claim": "The 2025 life-insurer market-share chart ranks Swiss Life first, Helvetia second and AXA third by gross premiums written.",
+      "question": "Which three life insurers lead the 2025 market-share chart by gross premiums written, in descending order?",
+      "answer": "Swiss Life, Helvetia, AXA.",
+      "kind": "comparison"
+    },
+    {
+      "page": 29,
+      "topic": "Life-insurance market shares (2025)",
+      "claim": "The 2025 life-insurer market shares are percentages of gross premiums written.",
+      "question": "What metric defines the life-insurer market shares shown for 2025?",
+      "answer": "Each insurer's percentage of gross premiums written.",
+      "kind": "definition"
+    },
+    {
+      "page": 30,
+      "topic": "Swiss reinsurance market shares (2025)",
+      "claim": "The leading reinsurers in Switzerland in 2025 by gross premiums written are Swiss Re Group, NewRe and MS Reinsurance, in that order.",
+      "question": "Which three reinsurers lead in Switzerland in 2025 by gross premiums written, in descending order?",
+      "answer": "Swiss Re Group, NewRe, MS Reinsurance.",
+      "kind": "comparison"
+    },
+    {
+      "page": 22,
+      "topic": "Swiss household insurance spending (2020)",
+      "claim": "The monthly-spending breakdown for private households in Switzerland, based on 2020 data, allocates 23% to insurance contributions.",
+      "question": "In the Swiss household monthly-spending breakdown based on 2020 data, what share goes to insurance contributions?",
+      "answer": "23%.",
+      "kind": "comparison"
+    },
+    {
+      "page": 22,
+      "topic": "Swiss household insurance spending (2020)",
+      "claim": "The insurance contributions in the Swiss household breakdown comprise social insurance, health insurance, life insurance, and property and casualty insurance.",
+      "question": "Which four insurance categories make up insurance contributions in the Swiss household spending breakdown?",
+      "answer": "Social insurance, health insurance, life insurance, and property and casualty insurance.",
+      "kind": "mechanism"
+    }
+  ],
+  "excludedPages": [
+    {
+      "page": 24,
+      "reason": "Original-image inspection: a Liberty Mutual advertising photograph without a taught subject claim. Brand recognition is not an essential learning objective."
+    }
+  ]
+}

@@ -1,0 +1,86 @@
+{
+  "description": "Manually selected teaching targets from the regenerated introductory insurance course. Expected topics are a review rubric, not source quotations or proof of generated quality.",
+  "pages": [
+    {
+      "page": 19,
+      "text": "Role of insurance in the economy\n- Risk pooling\n- Law of large numbers is a tool that allows to\nprice risks\n- Economic justification of insurance is risk\ndiversification.\n- Capital markets\n- Saving & Protections\nMarket overview\n- Macro-economic developments\n- Demographics\n- Technology\n- Sustainability\n2. Insurance industry\n19\nInsured Insurer\nPremium\n(deterministic)\nClaims\n(stochastic)",
+      "expectedTopics": [
+        "Risk pooling",
+        "Law of large numbers",
+        "Risk diversification"
+      ]
+    },
+    {
+      "page": 20,
+      "text": "Inside an insurance company\n20\nInsurance Company\nPolicyholders\nSociety / Economy\n(stability, protection\nContribution to cappital markets,\nsupport business&individuals, jobs)\nUnderwriting\n(Assess risk + Pricing)\nRisk Pooling &\nDiversification\nReserving\n(Set aside liabilities)\nClaims Management\n(Pay losses)\nInvestment Management\n(Invest premiums until claims are paid;\nGenerate returns; Support capital markets)\nSavings & Protection Products\nProperty and Casulty Products",
+      "expectedTopics": [
+        "Underwriting",
+        "Reserving",
+        "Claims Management",
+        "Investment Management"
+      ]
+    },
+    {
+      "page": 23,
+      "text": "Main insurance product families\n44\nFamily Customer need Typical risk or benefit Financial feature\nLife Protect income or build\nsavings\nDeath, longevity, retirement or\nsavings benefit\nLong duration and investment\nsensitivity\nProperty and\ncasualty\nProtect property and legal\nliability\nMotor, property, accident or liability\nloss\nClaims frequency and severity\nHealth and\naccident\nFund medical care or replace\nincome\nMedical expense, disability or\naccident\nClaims experience and\nhealthcare inflation\nReinsurance Protect an insurer Large, volatile or accumulated\ninsurance losses\nCeded premium and claim\nrecoveries\nCaptive\ninsurance\nFinance a corporate group's\nown risks\nRisks retained within the group Risk retention with external\nprotection when needed\nProduct classification can overlap. The purpose and risk transfer matter more than the label.",
+      "expectedTopics": [
+        "Life",
+        "Property and casualty",
+        "Health and accident",
+        "Reinsurance",
+        "Captive insurance"
+      ]
+    },
+    {
+      "page": 31,
+      "text": "5. Company functions\n31\nThe balance sheet connects business functions\nAssets\nInvestment and ALM\nLiquidity management\nMarket and credit risk\nSupports future claim\npayments\nLiabilities\nPricing assumptions\nClaims management\nReserving and provisions\nTiming and amount of\nobligations\nCapital and result\nRisk and capital\nmanagement\nFinance and reporting\nReinsurance\nProfitability and solvency",
+      "expectedTopics": [
+        "Assets and related functions",
+        "Liabilities and related functions",
+        "Capital and result"
+      ]
+    },
+    {
+      "page": 33,
+      "text": "Insurance value chain and financial links\n45\nStage Business question Main functions Financial link\nCustomer need and\nproduct\nWhat protection or savings need should\nthe product meet?\nProduct, distribution, legal and\ncompliance\nProduct terms define future\ncash flows\nPricing and\nunderwriting\nWhich risks will the insurer accept and\nat what price?\nPricing, underwriting and data Premium must cover expected\nclaims, expenses and margin\nRisk transfer and\ncapital\nHow much risk should the insurer\nretain?\nReinsurance and capital\nmanagement\nRetention changes volatility\nand capital needs\nClaims and reserving What has happened and what will it\nultimately cost?\nClaims and reserving Claims and provisions affect\nprofit and liabilities\nInvestment and\nreporting\nCan assets support obligations and\nreported performance?\nInvestment, finance, risk and\naudit\nInvestment result, liquidity,\nequity and disclosures\nA decision in one stage changes the information or constraints faced by the next stage.",
+      "expectedTopics": [
+        "Pricing and underwriting",
+        "Risk transfer and capital",
+        "Claims and reserving",
+        "Financial links"
+      ]
+    },
+    {
+      "page": 35,
+      "text": "KNOWLEDGE CHECK\nProducts and market share\nChoose an answer, then click to reveal the correct response.\n1 Which product pays if the insured dies during a fixed coverage period?\nA Whole life B Term life C Motor casco D Property\n2\nWhich product covers injury or damage caused to others by an insured driver?\nA Household contents B Term life C Motor liability D Travel\n3 What is the main purpose of reinsurance?\nA Limit large or volatile losses B Sell directly C Speed up claims D Guarantee profit\n4 What does premium market share measure?\nA Claims paid B Satisfaction C Share of written premiums D Invested assets\n5 A company has the largest Life market share. What follows with certainty?\nA Most profitable B Best service C Strongest solvency D None of these\nSESSION 1 REVIEW 1 OF 2",
+      "expectedTopics": [
+        "Term life",
+        "Motor liability",
+        "Reinsurance",
+        "Premium market share",
+        "Market share does not establish profitability"
+      ]
+    },
+    {
+      "page": 36,
+      "text": "KNOWLEDGE CHECK\nFunctions and the insurance value chain\nChoose an answer, then click to reveal the correct response.\n6 Which function decides whether to accept a risk and on what terms?\nA Claims B Underwriting C Finance D Distribution\n7 Which function estimates the premium needed for the expected risk?\nA Pricing B Reserving C Investment D Compliance\n8 What is the purpose of claims reserving?\nA Record sales B Set investment return C Estimate unpaid claim costs D Choose clients\n9 Which sequence best represents the insurance value chain?\nA Claims, sales, pricing, admin B Product/pricing, underwriting, admin, claims C Investment, claims, sales D Reserving,\nmarketing, pricing\n10 Claim frequency is 20% above plan. Who should respond?\nA Claims only B Pricing only C Several functions together D Marketing only\nSESSION 1 REVIEW 2 OF 2",
+      "expectedTopics": [
+        "Underwriting",
+        "Pricing",
+        "Claims reserving",
+        "Insurance value chain",
+        "Cross-functional response"
+      ]
+    }
+  ],
+  "excludedExamples": [
+    {
+      "question": "What activity is suggested on page 25 to understand insurance products in practice?",
+      "answer": "Watch a video about insurance products."
+    },
+    {
+      "question": "Which document provides the visual representation of the top European insurers by premium income in 2022?",
+      "answer": "Page 26 image."
+    }
+  ]
+}

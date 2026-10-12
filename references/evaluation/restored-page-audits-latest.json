@@ -1,0 +1,31 @@
+{
+  "restoredAt": "2026-10-11T11:26:03.527Z",
+  "documentId": "8b6f4739-c98f-4a73-98c2-39df80dcbb4f",
+  "courseId": "default",
+  "pdfSha256": "438f0286f8310855dd51bcb0db76aafbea5c5551b8dcf160cbc0a5feeb4160af",
+  "pages": [
+    27,
+    32,
+    33,
+    34
+  ],
+  "versions": [
+    "direct-cards-v6-fixed-review-slots",
+    "direct-cards-v6-fixed-review-slots",
+    "direct-cards-v6-fixed-review-slots",
+    "direct-cards-v6-fixed-review-slots"
+  ],
+  "providerCalls": 0,
+  "recovery": {
+    "version": 1,
+    "id": "44637b4a-28e8-4ae4-abe7-36644171ab5a",
+    "courseId": "default",
+    "createdAt": "2026-10-11T11:26:03.413Z",
+    "reason": "before-restoring-preserved-page-audits",
+    "digest": "20654b4ee18158ff6a0ffed7b59a5102d13346a442173884f4c043d82df1e3ec",
+    "bytes": 466213,
+    "pdfs": [
+      "438f0286f8310855dd51bcb0db76aafbea5c5551b8dcf160cbc0a5feeb4160af"
+    ]
+  }
+}

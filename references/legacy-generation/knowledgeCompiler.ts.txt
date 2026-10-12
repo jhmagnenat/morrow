@@ -1,0 +1,47 @@
+import {createHash} from 'node:crypto';
+import type {SourceSnippet} from '@/lib/sourceCatalog';
+import type {StudyCard} from '@/lib/contentQuality';
+
+export interface ExtractedKnowledge {concept:string;claim:string;kind:'fact'|'definition'|'rule'|'comparison';conditions:string[];sources:Array<{sourceId:string}>;}
+export interface KnowledgeUnit extends Omit<ExtractedKnowledge,'sources'> {id:string;sourceIds:string[];pages:number[];allowedKinds:StudyCard['kind'][];}
+export interface KnowledgePlan {version:string;units:KnowledgeUnit[];selectedIds:string[];omittedIds:string[];rejected:Array<{index:number;issues:string[]}>;}
+export const KNOWLEDGE_COMPILER_VERSION='knowledge-compiler-v1';
+const canonical=(s:string)=>s.normalize('NFC').replace(/\s+/g,' ').trim();
+
+// Provenance/identity compilation, not a factual or pedagogical certification.
+export function compileSourceKnowledge(items:ExtractedKnowledge[],concepts:string[],catalog:SourceSnippet[],primaryPages:number[],limit=36):KnowledgePlan {
+  const bySource=new Map(catalog.map(s=>[s.id,s])),merged=new Map<string,KnowledgeUnit>(),rejected:KnowledgePlan['rejected']=[];
+  items.forEach((item,index)=>{
+    const sourceIds=[...new Set(item.sources.map(s=>s.sourceId))];
+    const sources=sourceIds.map(id=>bySource.get(id));
+    const issues:string[]=[];
+    if(!concepts.includes(item.concept))issues.push('Unknown concept');
+    if(!item.claim.trim())issues.push('Empty knowledge claim');
+    if(!sourceIds.length||sources.some(s=>!s||s.text.trim().length<12))issues.push('Missing or unknown source evidence');
+    if(!sources.some(s=>s&&primaryPages.includes(s.page)))issues.push('No primary source');
+    if(issues.length){rejected.push({index,issues});return;}
+    const conditions=[...new Set(item.conditions.map(canonical).filter(Boolean))].sort();
+    const identity=JSON.stringify({concept:item.concept,claim:canonical(item.claim),kind:item.kind,conditions});
+    const previous=merged.get(identity);
+    if(previous){previous.sourceIds=[...new Set([...previous.sourceIds,...sourceIds])];previous.pages=[...new Set([...previous.pages,...sources.map(s=>s!.page)])].sort((a,b)=>a-b);return;}
+    merged.set(identity,{id:'K-'+createHash('sha256').update(identity).digest('hex').slice(0,20),concept:item.concept,claim:item.claim,kind:item.kind,conditions,sourceIds,pages:[...new Set(sources.map(s=>s!.page))].sort((a,b)=>a-b),allowedKinds:item.kind==='rule'?['mechanism','application']:item.kind==='comparison'?['comparison']:['definition']});
+  });
+  const units=[...merged.values()],remaining=new Set(units),selected:KnowledgeUnit[]=[];
+  // Source-balanced selection, no model-assigned importance or hash ordering.
+  while(remaining.size&&selected.length<limit){
+    let advanced=false;
+    for(const page of primaryPages){const next=[...remaining].find(u=>u.pages.includes(page));if(next){remaining.delete(next);selected.push(next);advanced=true;}if(selected.length===limit)break;}
+    if(!advanced)break;
+  }
+  return {version:KNOWLEDGE_COMPILER_VERSION,units,selectedIds:selected.map(u=>u.id),omittedIds:units.filter(u=>!selected.includes(u)).map(u=>u.id),rejected};
+}
+
+export function knowledgeTaskIssues(task:{knowledgeId:string;concept:string;kind:StudyCard['kind'];sources:Array<{sourceId:string}>},plan:KnowledgePlan):string[]{
+  const unit=plan.units.find(u=>u.id===task.knowledgeId);
+  if(!unit||!plan.selectedIds.includes(unit.id))return ['Unknown or unselected knowledge objective'];
+  const issues:string[]=[];
+  if(task.concept!==unit.concept)issues.push('Card changed the knowledge concept');
+  if(!unit.allowedKinds.includes(task.kind))issues.push('Card kind exceeds the source knowledge type');
+  if(!task.sources.length||task.sources.some(s=>!unit.sourceIds.includes(s.sourceId)))issues.push('Card cites evidence outside its knowledge objective');
+  return issues;
+}

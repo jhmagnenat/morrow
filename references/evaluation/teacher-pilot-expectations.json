@@ -1,0 +1,56 @@
+{
+  "pdfSha256": "438f0286f8310855dd51bcb0db76aafbea5c5551b8dcf160cbc0a5feeb4160af",
+  "basis": "Human-authored review objectives after inspecting extracted text and original PDF figures. These are acceptance criteria, not a measured model score or a complete scientific answer key.",
+  "expectations": [
+    {
+      "page": 19,
+      "objectives": [
+        "Explain risk pooling and why combining sufficiently independent risks can reduce relative uncertainty.",
+        "Explain the role and assumptions of the law of large numbers in insurance pricing.",
+        "Distinguish a contractual premium from the uncertain claims illustrated on the slide."
+      ],
+      "requiredContext": ["Dependence and correlated losses limit diversification.", "Use an explicitly hypothetical numerical example only if its assumptions and inputs are stated."],
+      "mustNotInvent": ["Diversification eliminates all risk.", "The law of large numbers guarantees a profitable insurer or perfectly predicts every claim."]
+    },
+    {
+      "page": 23,
+      "objectives": [
+        "Distinguish product families by the need served, insured risk and financial feature.",
+        "Explain how reinsurance protects an insurer and how a captive finances a group's own risks.",
+        "Apply the classification to a clear hypothetical customer need without treating overlapping labels as exclusive."
+      ],
+      "requiredContext": ["Explain duration and investment sensitivity in life products, and frequency/severity in property and casualty.", "Course product labels can overlap; purpose and risk transfer matter."],
+      "mustNotInvent": ["Every product belongs to one universally exclusive legal category.", "A jurisdiction-specific product rule that is neither documented nor identified as uncertain."]
+    },
+    {
+      "page": 26,
+      "objectives": [
+        "Identify that the chart compares premium income of European insurance groups in 2022, in USD billions.",
+        "Distinguish premium income from profit and from a percentage market share.",
+        "Explain why comparisons require compatible year, scope and metric rather than memorising a long ranking."
+      ],
+      "requiredContext": ["The figure visibly ranks AXA, Allianz and Generali first in this particular chart.", "Added explanations about premiums must be identified as background, not falsely attributed to the chart."],
+      "mustNotInvent": ["These are current rankings.", "These are percentages of a defined European market.", "A company with more premium income necessarily has more profit or better performance."]
+    },
+    {
+      "page": 29,
+      "objectives": [
+        "Read the chart as life-insurer market shares based on gross premiums written in 2025.",
+        "Explain the numerator and denominator needed for a market-share percentage.",
+        "If an application is offered, state its inputs explicitly: 41.8% plus 11.8% equals 53.6% for the two indicated slices."
+      ],
+      "requiredContext": ["The figure shows Swiss Life at 41.8% and Helvetia at 11.8%.", "Any geographic scope inferred from neighbouring slides must remain distinct from what the figure explicitly states."],
+      "mustNotInvent": ["Market share proves causation, superior service or profitability.", "A hypothetical percentage computation is a new real-world finding.", "The historical figure establishes today's market shares."]
+    },
+    {
+      "page": 32,
+      "objectives": [
+        "Explain the roles of actuarial, risk management, finance, investment management, compliance and internal audit in an insurance company.",
+        "Distinguish risk management, compliance and internal audit by their objectives.",
+        "Explain a concrete hypothetical collaboration between functions without inventing reporting lines absent from the slide."
+      ],
+      "requiredContext": ["The slide describes a possible structure, not a universal organizational requirement.", "Added professional context should clarify responsibilities and coordination."],
+      "mustNotInvent": ["Every insurer uses the depicted structure or reporting lines.", "A particular jurisdiction's mandatory governance arrangements without an adequate source."]
+    }
+  ]
+}

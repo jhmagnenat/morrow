@@ -1,26 +1,136 @@
 @import "tailwindcss";
+@import "./fonts.css";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #1a1a1b;
+  --foreground: #d4c6a6;
+}
+
+/* Preserve the existing palette; lift only low-contrast secondary labels. */
+.text-\[\#696A61\], .text-\[\#696a61\] { color: #aaa596; }
+button:focus-visible, a:focus-visible, input:focus-visible, textarea:focus-visible, select:focus-visible, summary:focus-visible {
+  outline: 2px solid #d2a55c;
+  outline-offset: 3px;
+}
+.skip-link { position: fixed; left: 1rem; top: -5rem; z-index: 10000; background: #d2a55c; color: #1c140d; padding: .6rem 1rem; }
+.skip-link:focus { top: 1rem; }
+.workspace-tools::backdrop { background: rgb(0 0 0 / .65); }
+.map-panel-back { display: none; }
+.anki-content table { max-width: 100%; border-collapse: collapse; }
+.anki-content th, .anki-content td { padding: .4rem .6rem; border: 1px solid #423e42; }
+.anki-content ul { list-style: disc; padding-left: 1.5rem; }
+.anki-content ol { list-style: decimal; padding-left: 1.5rem; }
+.anki-content p + p { margin-top: .5rem; }
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { scroll-behavior: auto !important; animation-duration: .01ms !important; transition-duration: .01ms !important; }
+}
+@media (max-width: 640px) {
+  .map-header-shell { height: auto !important; overflow: visible !important; }
+  .map-header button, .map-header a { min-height: 36px; flex-shrink: 0; }
+  .study-header { gap: .75rem; padding: .75rem 1rem; }
+  .study-navigation { width: 100%; }
+  .study-modes { width: 100%; }
+  .study-modes button { flex-shrink: 0; min-height: 44px; }
+  .course-bar { flex-wrap: wrap; }
+  .course-bar button { min-height: 36px; }
+  .map-panel-resizer { display: none; }
+  .map-side-panel { position: absolute; inset: 0 0 0 auto; z-index: 20; width: 100% !important; max-width: 100%; background: #201f21; }
+  .map-side-panel[data-selected="false"] { display: none; }
+  .map-panel-back { display: block; width: 100%; text-align: left; }
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
+  --font-sans: var(--font-body);
+  --font-display: var(--font-display);
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  /* Bronze accent scale against the anthracite chrome — the sober version
+     that worked, before the bordeaux detour. */
+  --color-accent-50: #f7eeda;
+  --color-accent-100: #f0e1c3;
+  --color-accent-200: #e4cb9a;
+  --color-accent-300: #d2a55c;
+  --color-accent-400: #c18a38;
+  --color-accent-500: #b48743;
+  --color-accent-600: #8a632c;
+  --color-accent-700: #6b4b22;
+  --color-accent-800: #4d3618;
+  --color-accent-900: #332410;
 }
 
 body {
+  height: 100dvh;
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-sans), Arial, Helvetica, sans-serif;
+  position: relative;
+  padding-top: env(safe-area-inset-top);
+  padding-bottom: env(safe-area-inset-bottom);
+  padding-left: env(safe-area-inset-left);
+  padding-right: env(safe-area-inset-right);
+}
+
+@media (max-width: 640px) {
+  input, textarea, select { font-size: max(16px, 1em); }
+  .workspace-tools { max-height: calc(100dvh - 2rem); max-width: calc(100vw - 1rem); }
+}
+
+/* A very faint grain so flat panels don't read as a glossy modern SaaS
+   surface — an old-school, slightly textured desktop-software feel. */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  pointer-events: none;
+  opacity: 0.025;
+  mix-blend-mode: overlay;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+
+/* React Flow dark-theme overrides, matched to the anthracite chrome */
+.react-flow {
+  --xy-background-color: #1a1a1b;
+  --xy-background-pattern-dots-color: #353338;
+  --xy-edge-stroke-default: #4a474c;
+  --xy-controls-button-background-color: #201f21;
+  --xy-controls-button-background-color-hover: #28262a;
+  --xy-controls-button-color: #8f8978;
+  --xy-controls-button-color-hover: #d4c6a6;
+  --xy-controls-button-border-color: #423e42;
+  --xy-minimap-background-color: #201f21;
+  --xy-attribution-background-color: transparent;
+}
+
+.react-flow__attribution {
+  background: transparent;
+}
+
+.react-flow__attribution a {
+  color: #696a61;
+}
+
+/* Sharp rectangular controls, no rounding — a physical switch/panel feel,
+   not the rounded-corner "AI SaaS" look. !important because several buttons
+   still carry an explicit Tailwind rounded-md/rounded-lg class (same classes
+   used on card/panel <div>s, which should stay rounded) — this is a
+   deliberate, blanket override for buttons specifically, not a mistake.
+   `a` is included because several nav items (Study/Progress/Browse/Interview,
+   course-bar pills) are Next.js <Link>s styled as buttons, not <button>
+   elements — harmless on plain text links, which have no visible box.
+   rounded-full is untouched, for genuinely circular things (avatars, dots)
+   and the existing pill-shaped node/badge chips, which aren't buttons. */
+button,
+input,
+textarea,
+select,
+a {
+  border-radius: 0 !important;
+}
+
+button.rounded-full,
+input.rounded-full,
+a.rounded-full {
+  border-radius: 9999px !important;
 }

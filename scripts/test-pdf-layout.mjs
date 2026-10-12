@@ -1,0 +1,18 @@
+import assert from 'node:assert/strict';
+import {isolatedModules,DATABASE_MODULES} from './isolated-modules.mjs';
+const env=await isolatedModules(DATABASE_MODULES);
+const {pdfPageLayout,parseOcrTsv,requiresPdfVisualReview}=await env.load('pdfLayout');
+const items=[];
+for(const [row,y] of [[0,700],[1,680]])for(const [column,x] of [[0,10],[1,100],[2,200]])items.push({str:`${row+column+1}`,x,y,width:20,height:10,fontSize:10});
+items.push({str:'A = w × h',x:10,y:600,width:90,height:10,fontSize:10});
+const result=pdfPageLayout(items,600,800);
+assert.equal(result.tableCandidates.length,2);assert.equal(result.blocks[0].y,90);assert(result.blocks.some(b=>b.kind==='formula-candidate'));
+assert.equal(pdfPageLayout([],600,800).requiresVisualReview,true);
+assert.equal(result.requiresVisualReview,true,'Detected tables and formulas must be checked visually');
+assert.equal(requiresPdfVisualReview({...result,requiresVisualReview:false}),true,'Old stored layout flags do not bypass detected structure');
+assert.equal(requiresPdfVisualReview(pdfPageLayout([{str:'Plain paragraph',x:10,y:600,width:90,height:10,fontSize:10}],600,800)),false,'Ordinary text retains the text pipeline');
+const header='level\tpage_num\tblock_num\tpar_num\tline_num\tword_num\tleft\ttop\twidth\theight\tconf\ttext';
+const ocr=parseOcrTsv([header,'1\t1\t0\t0\t0\t0\t0\t0\t600\t800\t-1\t','5\t1\t1\t1\t1\t1\t10\t20\t40\t15\t96\tArea','5\t1\t1\t1\t1\t2\t60\t20\t20\t15\t75\t12'].join('\n'));
+assert.equal(ocr.text,'Area 12');assert.equal(ocr.layout.origin,'ocr');assert.equal(ocr.layout.requiresVisualReview,true);assert(ocr.layout.warnings.some(w=>w.includes('1 words')));
+assert.throws(()=>parseOcrTsv(header+'\n5\t1\t1\t1\t1\t1\t-1\t20\t10\t10\t90\twrong'),/coordinates/);
+console.log('PASS: positioned PDF text, table/formula candidates, OCR lines/confidence, mandatory visual verification and invalid-coordinate rejection.');

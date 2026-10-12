@@ -1,0 +1,60 @@
+{
+  "id": "e155f285-bdbb-4fb9-a142-0c1f0b66fc1d",
+  "documentId": "8b6f4739-c98f-4a73-98c2-39df80dcbb4f",
+  "courseId": "default",
+  "workerPid": 6256,
+  "status": "needs_review",
+  "mode": "strict",
+  "enrichment": false,
+  "cardDetail": "key-ideas",
+  "pages": [
+    26,
+    28,
+    36
+  ],
+  "reprocess": true,
+  "startedAt": "2026-10-10T23:22:55.688Z",
+  "updatedAt": "2026-10-10T23:23:26.703Z",
+  "totalPages": 3,
+  "attemptedPages": [
+    28,
+    36,
+    26
+  ],
+  "completedPages": 0,
+  "reviewPages": [
+    26,
+    28,
+    36
+  ],
+  "notionsCreated": 4,
+  "cardsCreated": 17,
+  "requests": 11,
+  "inputTokens": 94598,
+  "outputTokens": 8227,
+  "warnings": [
+    "Unpublished objective: CNP from France has a premium income of USD 38.5 billion.",
+    "Unpublished objective: Crédit Agricole from France shows a premium income of USD 37.7 billion.",
+    "Unpublished objective: BNP Cardif from France records a premium income of USD 27.0 billion.",
+    "Unpublished objective: Mapfre from Spain has a premium income of USD 26.2 billion.",
+    "Unpublished objective: Covéa from France shows a premium income of USD 23.5 billion.",
+    "Unpublished objective: Prudential from the UK has a premium income of USD 23.3 billion.",
+    "Unpublished objective: Aviva from the UK shows a premium income of USD 22.8 billion.",
+    "Unpublished objective: Achmea from the Netherlands records a premium income of USD 22.5 billion."
+  ],
+  "execution": "inline",
+  "concurrency": 3,
+  "pipeline": "direct",
+  "sectionCount": 3,
+  "activeStages": {},
+  "elapsedMs": 31005,
+  "estimatedCostUsd": null,
+  "sectionsCompleted": 3,
+  "readyCards": 4,
+  "draftCards": 32,
+  "coveredPages": 0,
+  "skippedPages": 0,
+  "processedPages": 3,
+  "firstReadyAt": "2026-10-10T23:23:10.550Z",
+  "firstReadyMs": 14862
+}

@@ -1,0 +1,686 @@
+{
+  "description": "Actual v4 writer responses, including dangling IDs and false five-family coverage. Replay exercises transport and coverage gates, not new-model quality.",
+  "pages": [
+    {
+      "page": 19,
+      "text": "Role of insurance in the economy\n- Risk pooling\n- Law of large numbers is a tool that allows to\nprice risks\n- Economic justification of insurance is risk\ndiversification.\n- Capital markets\n- Saving & Protections\nMarket overview\n- Macro-economic developments\n- Demographics\n- Technology\n- Sustainability\n2. Insurance industry\n19\nInsured Insurer\nPremium\n(deterministic)\nClaims\n(stochastic)"
+    },
+    {
+      "page": 20,
+      "text": "Inside an insurance company\n20\nInsurance Company\nPolicyholders\nSociety / Economy\n(stability, protection\nContribution to cappital markets,\nsupport business&individuals, jobs)\nUnderwriting\n(Assess risk + Pricing)\nRisk Pooling &\nDiversification\nReserving\n(Set aside liabilities)\nClaims Management\n(Pay losses)\nInvestment Management\n(Invest premiums until claims are paid;\nGenerate returns; Support capital markets)\nSavings & Protection Products\nProperty and Casulty Products"
+    },
+    {
+      "page": 21,
+      "text": "Challenges\n• Macroeconomic & finance market\nchallenges\n• Low/negative interest rates (impact\ninvestment return particularly life\ninsurers with guaranteed products.\n• Inflation rising (impact claims cost\nand mismatches asset and liabilities)\n• Volatility & uncertainty (Covid,\ngeopolitical tensions, energy crisis)\n• Regulatory and Capital requirements\n• Technology and Digital Transformation\n• Climate Change and Emerging Risks:\nCatastrophe losses (wildfires, floods,\nhurricanes), new risks (cyber,\npandemic…)\n21\nInsurance industry challenges\nhttps://www.ft.com/content/d50ca306-6510-4eae-9ea6-843057c19563"
+    },
+    {
+      "page": 22,
+      "text": "22\nSource: Joël Wagner & Michel Fuino (2024), Risk Management & Introduction to Insurance, p.162\nBased on Federal Statistical Office, 2020c\n3. Insurance products\nBreakdown of monthly spending by private households in\nSwitzerland"
+    },
+    {
+      "page": 23,
+      "text": "Main insurance product families\n44\nFamily Customer need Typical risk or benefit Financial feature\nLife Protect income or build\nsavings\nDeath, longevity, retirement or\nsavings benefit\nLong duration and investment\nsensitivity\nProperty and\ncasualty\nProtect property and legal\nliability\nMotor, property, accident or liability\nloss\nClaims frequency and severity\nHealth and\naccident\nFund medical care or replace\nincome\nMedical expense, disability or\naccident\nClaims experience and\nhealthcare inflation\nReinsurance Protect an insurer Large, volatile or accumulated\ninsurance losses\nCeded premium and claim\nrecoveries\nCaptive\ninsurance\nFinance a corporate group's\nown risks\nRisks retained within the group Risk retention with external\nprotection when needed\nProduct classification can overlap. The purpose and risk transfer matter more than the label."
+    },
+    {
+      "page": 24,
+      "text": "24"
+    },
+    {
+      "page": 25,
+      "text": "Insurance products in practice\n• Watch this video\n• What insurance\nproduct do you\nhave?\n25\nSource: Joël Wagner & Michel Fuino (2024), Risk Management & Introduction to Insurance, p.184\nBased on Federal Statistical Office, 2020c"
+    },
+    {
+      "page": 26,
+      "text": "26\nSource: https://www.reinsurancene.ws/largest-30-european-insurers/\n4. Insurers and market shares"
+    },
+    {
+      "page": 27,
+      "text": "• Life\n• P&C\n• Health\n• Reinsurance\n• Captives\n27\nInsurance companies in Switzerland"
+    },
+    {
+      "page": 28,
+      "text": "28\n• Who are the top 3\nplayers in\n• Non-life insurers\n• life insurers?\n• accident insurers?\n• health insurers?\n• Reinsurers?\nhttps://www.svv.ch/en/swiss-insurance-market-companies-and-market-shares\nMarket shares"
+    },
+    {
+      "page": 29,
+      "text": "29"
+    },
+    {
+      "page": 30,
+      "text": "30"
+    },
+    {
+      "page": 31,
+      "text": "5. Company functions\n31\nThe balance sheet connects business functions\nAssets\nInvestment and ALM\nLiquidity management\nMarket and credit risk\nSupports future claim\npayments\nLiabilities\nPricing assumptions\nClaims management\nReserving and provisions\nTiming and amount of\nobligations\nCapital and result\nRisk and capital\nmanagement\nFinance and reporting\nReinsurance\nProfitability and solvency"
+    },
+    {
+      "page": 32,
+      "text": "Possible structure of an insurance company\n32\nLegal & General\nCounsel\nGroup /central\nFunctions\nIT/Digital\nstrategy\n(CTO)\nHR/People Mgmt Actuarial\nfunction\n(CRO)\nInvestment\nMgmt\n(CIO)\nDistribution &\nPartnerships\nAudit (internal\ncontrol)\nFinance &\nAccounting\n(CFO)\nCompliance Risk\nMgmt/ERM"
+    },
+    {
+      "page": 33,
+      "text": "Insurance value chain and financial links\n45\nStage Business question Main functions Financial link\nCustomer need and\nproduct\nWhat protection or savings need should\nthe product meet?\nProduct, distribution, legal and\ncompliance\nProduct terms define future\ncash flows\nPricing and\nunderwriting\nWhich risks will the insurer accept and\nat what price?\nPricing, underwriting and data Premium must cover expected\nclaims, expenses and margin\nRisk transfer and\ncapital\nHow much risk should the insurer\nretain?\nReinsurance and capital\nmanagement\nRetention changes volatility\nand capital needs\nClaims and reserving What has happened and what will it\nultimately cost?\nClaims and reserving Claims and provisions affect\nprofit and liabilities\nInvestment and\nreporting\nCan assets support obligations and\nreported performance?\nInvestment, finance, risk and\naudit\nInvestment result, liquidity,\nequity and disclosures\nA decision in one stage changes the information or constraints faced by the next stage."
+    },
+    {
+      "page": 34,
+      "text": "The actuary at the centre\n• Translate uncertainty into\nassumptions, cash flows and risk\nmeasures.\n• Compare expected results with\nemerging experience.\n• Test how decisions affect profitability\nand financial strength.\n• Explain uncertainty and trade-offs to\nmanagement and other functions.\nThe actuarial contribution\nEffective actuarial work combines quantitative analysis with\nclear explanations of decisions and uncertainty."
+    },
+    {
+      "page": 35,
+      "text": "KNOWLEDGE CHECK\nProducts and market share\nChoose an answer, then click to reveal the correct response.\n1 Which product pays if the insured dies during a fixed coverage period?\nA Whole life B Term life C Motor casco D Property\n2\nWhich product covers injury or damage caused to others by an insured driver?\nA Household contents B Term life C Motor liability D Travel\n3 What is the main purpose of reinsurance?\nA Limit large or volatile losses B Sell directly C Speed up claims D Guarantee profit\n4 What does premium market share measure?\nA Claims paid B Satisfaction C Share of written premiums D Invested assets\n5 A company has the largest Life market share. What follows with certainty?\nA Most profitable B Best service C Strongest solvency D None of these\nSESSION 1 REVIEW 1 OF 2"
+    },
+    {
+      "page": 36,
+      "text": "KNOWLEDGE CHECK\nFunctions and the insurance value chain\nChoose an answer, then click to reveal the correct response.\n6 Which function decides whether to accept a risk and on what terms?\nA Claims B Underwriting C Finance D Distribution\n7 Which function estimates the premium needed for the expected risk?\nA Pricing B Reserving C Investment D Compliance\n8 What is the purpose of claims reserving?\nA Record sales B Set investment return C Estimate unpaid claim costs D Choose clients\n9 Which sequence best represents the insurance value chain?\nA Claims, sales, pricing, admin B Product/pricing, underwriting, admin, claims C Investment, claims, sales D Reserving,\nmarketing, pricing\n10 Claim frequency is 20% above plan. Who should respond?\nA Claims only B Pricing only C Several functions together D Marketing only\nSESSION 1 REVIEW 2 OF 2"
+    }
+  ],
+  "batches": [
+    {
+      "knowledge": [
+        {
+          "key": "insurance_economic_role",
+          "page": 19,
+          "claim": "Insurance plays a role in the economy by facilitating risk pooling, utilizing the law of large numbers for pricing risks, providing economic justification through risk diversification, involving capital markets, and offering savings and protections.",
+          "sourceIds": [
+            "p19s0"
+          ],
+          "cardKeys": [
+            "role_economy",
+            "risk_pooling_importance"
+          ],
+          "exclusionReason": ""
+        },
+        {
+          "key": "macro_factors_affecting_industry",
+          "page": 19,
+          "claim": "The insurance industry is influenced by macroeconomic developments, demographics, technology, and sustainability issues.",
+          "sourceIds": [
+            "p19s0"
+          ],
+          "cardKeys": [
+            "industry_influences"
+          ],
+          "exclusionReason": ""
+        },
+        {
+          "key": "policyholder_insurer_relationship",
+          "page": 19,
+          "claim": "Insurance involves a deterministic premium paid by the insured and stochastic claims covered by the insurer.",
+          "sourceIds": [
+            "p19s0"
+          ],
+          "cardKeys": [
+            "insurance_structure"
+          ],
+          "exclusionReason": ""
+        },
+        {
+          "key": "insurance_company_functions",
+          "page": 20,
+          "claim": "An insurance company performs several functions including underwriting, risk pooling and diversification, reserving, claims management, investment management, and developing savings and protection products.",
+          "sourceIds": [
+            "p20s0"
+          ],
+          "cardKeys": [
+            "company_functions"
+          ],
+          "exclusionReason": ""
+        },
+        {
+          "key": "insurance_societal_impact",
+          "page": 20,
+          "claim": "Insurance contributes to societal stability, protection, capital market contribution, supports businesses and individuals, and creates jobs.",
+          "sourceIds": [
+            "p20s0"
+          ],
+          "cardKeys": [
+            "societal_impact"
+          ],
+          "exclusionReason": ""
+        }
+      ],
+      "cards": [
+        {
+          "key": "role_economy",
+          "topic": "Role of Insurance in the Economy",
+          "topicDefinition": "Insurance contributes to the economy by pooling risks, using the law of large numbers for pricing, providing risk diversification, connecting with capital markets, and offering savings and protection.",
+          "question": "How does insurance contribute to the economy?",
+          "answer": "Insurance contributes by risk pooling, utilizing the law of large numbers, risk diversification, involving capital markets, and offering savings and protections.",
+          "explanation": "",
+          "kind": "mechanism",
+          "objective": "Understand the economic role of insurance.",
+          "sources": [
+            {
+              "sourceId": "p19s0"
+            }
+          ],
+          "visualDescription": "Diagram illustrating insured and insurer relationship with premiums and claims on page 19."
+        },
+        {
+          "key": "industry_influences",
+          "topic": "Insurance Industry Influences",
+          "topicDefinition": "The insurance industry is affected by macroeconomic developments, demographics, technology, and sustainability issues.",
+          "question": "What factors influence the insurance industry?",
+          "answer": "Macroeconomic developments, demographics, technology, and sustainability issues.",
+          "explanation": "",
+          "kind": "comparison",
+          "objective": "Identify the factors influencing the insurance industry.",
+          "sources": [
+            {
+              "sourceId": "p19s0"
+            }
+          ],
+          "visualDescription": ""
+        },
+        {
+          "key": "insurance_structure",
+          "topic": "Insurance Structure",
+          "topicDefinition": "Insurance involves premier paid by the insured and claims covered by the insurer, characterized as deterministic and stochastic processes respectively.",
+          "question": "What characterizes the premium and claims in insurance?",
+          "answer": "Premiums are deterministic, and claims are stochastic.",
+          "explanation": "",
+          "kind": "mechanism",
+          "objective": "Differentiate the nature of premiums and claims in insurance.",
+          "sources": [
+            {
+              "sourceId": "p19s0"
+            }
+          ],
+          "visualDescription": "Diagram showing premium and claims relationship on page 19."
+        },
+        {
+          "key": "company_functions",
+          "topic": "Functions of an Insurance Company",
+          "topicDefinition": "An insurance company carries out underwriting, risk pooling and diversification, reserving, claims management, investment management, and offers products for savings and protection.",
+          "question": "What are the functions of an insurance company?",
+          "answer": "Underwriting, risk pooling and diversification, reserving, claims management, investment management, and product development for savings and protection.",
+          "explanation": "",
+          "kind": "mechanism",
+          "objective": "Understand the functions within an insurance company.",
+          "sources": [
+            {
+              "sourceId": "p20s0"
+            }
+          ],
+          "visualDescription": "Flowchart of insurance company functions on page 20."
+        },
+        {
+          "key": "societal_impact",
+          "topic": "Insurance's Societal Impact",
+          "topicDefinition": "Insurance stabilizes society by providing protection, supporting capital markets, aiding businesses and individuals, and creating jobs.",
+          "question": "How does insurance impact society?",
+          "answer": "Insurance provides societal stability, protection, capital market contribution, supports businesses and individuals, and creates jobs.",
+          "explanation": "",
+          "kind": "mechanism",
+          "objective": "Analyze the societal impact of insurance.",
+          "sources": [
+            {
+              "sourceId": "p20s0"
+            }
+          ],
+          "visualDescription": "Flowchart showing societal contributions of insurance on page 20."
+        }
+      ]
+    },
+    {
+      "knowledge": [
+        {
+          "key": "insurance_challenges_economic",
+          "page": 21,
+          "claim": "Macroeconomic challenges for the insurance industry include low or negative interest rates, which particularly affect life insurers with guaranteed products.",
+          "sourceIds": [
+            "p21s0"
+          ],
+          "cardKeys": [
+            "insurance_challenges_macro"
+          ],
+          "exclusionReason": ""
+        },
+        {
+          "key": "insurance_challenges_inflation",
+          "page": 21,
+          "claim": "Rising inflation impacts claim costs and causes mismatches in assets and liabilities for insurers.",
+          "sourceIds": [
+            "p21s0"
+          ],
+          "cardKeys": [
+            "insurance_challenges_macro"
+          ],
+          "exclusionReason": ""
+        },
+        {
+          "key": "insurance_challenges_volatility",
+          "page": 21,
+          "claim": "Volatility and uncertainty from events like Covid, geopolitical tensions, and energy crises are challenges for the insurance industry.",
+          "sourceIds": [
+            "p21s0"
+          ],
+          "cardKeys": [
+            "insurance_challenges_macro"
+          ],
+          "exclusionReason": ""
+        },
+        {
+          "key": "insurance_challenges_regulatory",
+          "page": 21,
+          "claim": "Regulatory and capital requirements pose challenges for the insurance industry.",
+          "sourceIds": [
+            "p21s0"
+          ],
+          "cardKeys": [
+            "insurance_challenges_regulatory"
+          ],
+          "exclusionReason": ""
+        },
+        {
+          "key": "insurance_challenges_technology",
+          "page": 21,
+          "claim": "Technology and digital transformation are major challenges for the insurance industry.",
+          "sourceIds": [
+            "p21s0"
+          ],
+          "cardKeys": [
+            "insurance_challenges_technology"
+          ],
+          "exclusionReason": ""
+        },
+        {
+          "key": "insurance_challenges_climate_change",
+          "page": 21,
+          "claim": "Climate change and emerging risks, such as catastrophe losses from wildfires and floods, pose challenges for the insurance industry.",
+          "sourceIds": [
+            "p21s0"
+          ],
+          "cardKeys": [
+            "insurance_challenges_climate"
+          ],
+          "exclusionReason": ""
+        },
+        {
+          "key": "insurance_product_families_life",
+          "page": 23,
+          "claim": "Life insurance aims to protect income or build savings, addressing risks like death and longevity, with long duration and investment sensitivity as financial features.",
+          "sourceIds": [
+            "p23s0"
+          ],
+          "cardKeys": [
+            "insurance_products_overview"
+          ],
+          "exclusionReason": ""
+        },
+        {
+          "key": "insurance_product_families_property",
+          "page": 23,
+          "claim": "Property and casualty insurance protects against property and legal liability losses, focusing on motor, property, accident, or liability losses, with claims frequency and severity as financial features.",
+          "sourceIds": [
+            "p23s0"
+          ],
+          "cardKeys": [
+            "insurance_products_overview"
+          ],
+          "exclusionReason": ""
+        },
+        {
+          "key": "insurance_product_families_health",
+          "page": 23,
+          "claim": "Health and accident insurance funds medical care or replaces income, dealing with medical expenses, disability, or accidents, with claims experience and healthcare inflation as financial features.",
+          "sourceIds": [
+            "p23s0"
+          ],
+          "cardKeys": [
+            "insurance_products_overview"
+          ],
+          "exclusionReason": ""
+        },
+        {
+          "key": "insurance_product_families_reinsurance",
+          "page": 23,
+          "claim": "Reinsurance protects insurers from large, volatile, or accumulated insurance losses, involving ceded premiums and claim recoveries as financial features.",
+          "sourceIds": [
+            "p23s0"
+          ],
+          "cardKeys": [
+            "insurance_products_overview"
+          ],
+          "exclusionReason": ""
+        },
+        {
+          "key": "insurance_product_families_captive",
+          "page": 23,
+          "claim": "Captive insurance is used to finance a corporate group's own risks, retaining risks within the group with external protection when needed.",
+          "sourceIds": [
+            "p23s0"
+          ],
+          "cardKeys": [
+            "insurance_products_overview"
+          ],
+          "exclusionReason": ""
+        }
+      ],
+      "cards": [
+        {
+          "key": "insurance_challenges_macro",
+          "topic": "Insurance Industry Challenges",
+          "topicDefinition": "The insurance industry faces various macroeconomic challenges, including low interest rates, rising inflation, and market volatility.",
+          "question": "What are some macroeconomic challenges faced by the insurance industry?",
+          "answer": "Low interest rates, rising inflation, and market volatility.",
+          "explanation": "Macroeconomic challenges for insurers include low or negative interest rates, impacting investment returns especially for life insurers, rising inflation affecting claim costs, and market volatility due to events like Covid and geopolitical tensions.",
+          "kind": "mechanism",
+          "objective": "Understand macroeconomic challenges in insurance.",
+          "sources": [
+            {
+              "sourceId": "p21s0"
+            }
+          ],
+          "visualDescription": "A damaged house on a beach showing consequences of catastrophic events like storms, highlighting insurance challenges."
+        },
+        {
+          "key": "insurance_challenges_regulatory",
+          "topic": "Insurance Industry Challenges",
+          "topicDefinition": "Regulatory and capital requirements pose significant challenges for the insurance industry.",
+          "question": "What regulatory challenges does the insurance industry face?",
+          "answer": "Regulatory and capital requirements.",
+          "explanation": "Regulations impose constraints that can affect how insurers operate, requiring them to maintain sufficient capital and comply with various statutory policies, which can be challenging to manage.",
+          "kind": "mechanism",
+          "objective": "Understand regulatory challenges in insurance.",
+          "sources": [
+            {
+              "sourceId": "p21s0"
+            }
+          ],
+          "visualDescription": ""
+        },
+        {
+          "key": "insurance_challenges_technology",
+          "topic": "Insurance Industry Challenges",
+          "topicDefinition": "Technology and digital transformation are impacting the insurance sector significantly.",
+          "question": "How does technology impact the insurance industry?",
+          "answer": "Technology and digital transformation present challenges.",
+          "explanation": "The need for technological adaptation and digital transformation in operations and offerings creates challenges for insurers as they have to update legacy systems and integrate new digital solutions.",
+          "kind": "mechanism",
+          "objective": "Understand technological challenges in insurance.",
+          "sources": [
+            {
+              "sourceId": "p21s0"
+            }
+          ],
+          "visualDescription": ""
+        },
+        {
+          "key": "insurance_challenges_climate",
+          "topic": "Insurance Industry Challenges",
+          "topicDefinition": "Climate change and emerging risks create new challenges for insurers.",
+          "question": "What climate-related challenges do insurers face?",
+          "answer": "Catastrophe losses from events like wildfires, floods, and emerging risks.",
+          "explanation": "Insurers face challenges from climate change, such as dealing with increased catastrophe losses from natural events and new emerging risks like cyber threats and pandemics, requiring adapted risk management strategies.",
+          "kind": "mechanism",
+          "objective": "Understand climate-related challenges in insurance.",
+          "sources": [
+            {
+              "sourceId": "p21s0"
+            }
+          ],
+          "visualDescription": ""
+        },
+        {
+          "key": "insurance_products_overview",
+          "topic": "Main Insurance Product Families",
+          "topicDefinition": "Insurance product families include life, property and casualty, health and accident, reinsurance, and captive insurance.",
+          "question": "What is the main purpose of life insurance?",
+          "answer": "Protect income or build savings.",
+          "explanation": "Life insurance is designed to provide financial security by protecting income or building savings, addressing risks such as death and longevity. Financial features include long duration and sensitivity to investment returns.",
+          "kind": "application",
+          "objective": "Identify purposes of various insurance products.",
+          "sources": [
+            {
+              "sourceId": "p23s0"
+            }
+          ],
+          "visualDescription": "A table listing various insurance product families with their customer needs, typical risks, and financial features."
+        }
+      ]
+    },
+    {
+      "knowledge": [
+        {
+          "key": "balance-sheet-function-connection",
+          "page": 31,
+          "claim": "The balance sheet connects business functions through assets, liabilities, and capital result categories that handle different areas such as investment, risk, claims management, and profitability.",
+          "sourceIds": [
+            "p31s0"
+          ],
+          "cardKeys": [
+            "balance-sheet-connection",
+            "balance-sheet-roles"
+          ],
+          "exclusionReason": ""
+        },
+        {
+          "key": "assets-role-insurance",
+          "page": 31,
+          "claim": "Assets in an insurance company include investment and ALM, liquidity management, and market and credit risk, which support future claim payments.",
+          "sourceIds": [
+            "p31s0"
+          ],
+          "cardKeys": [
+            "assets-function",
+            "balance-sheet-roles"
+          ],
+          "exclusionReason": ""
+        },
+        {
+          "key": "liabilities-role-insurance",
+          "page": 31,
+          "claim": "Liabilities are connected to pricing assumptions, claims management, reserving, and provisions, determining the timing and amount of obligations.",
+          "sourceIds": [
+            "p31s0"
+          ],
+          "cardKeys": [
+            "liabilities-function",
+            "balance-sheet-roles"
+          ],
+          "exclusionReason": ""
+        },
+        {
+          "key": "capital-result-role-insurance",
+          "page": 31,
+          "claim": "Capital and result in insurance deal with risk and capital management, finance and reporting, reinsurance, and profitability and solvency.",
+          "sourceIds": [
+            "p31s0"
+          ],
+          "cardKeys": [
+            "capital-result-function",
+            "balance-sheet-roles"
+          ],
+          "exclusionReason": ""
+        }
+      ],
+      "cards": [
+        {
+          "key": "balance-sheet-roles",
+          "topic": "Insurance Company Functions",
+          "topicDefinition": "Insurance company functions encompass asset management, liability handling, and capital result, each integral to maintaining the company's financial health.",
+          "question": "How does the balance sheet connect business functions in an insurance company?",
+          "answer": "The balance sheet connects business functions through assets, liabilities, and capital result categories.",
+          "explanation": "These categories encapsulate crucial areas like investment, risk management, and profitability, ensuring financial stability and operational efficiency.",
+          "kind": "mechanism",
+          "objective": "Understand the interconnection of insurance company functions through the balance sheet.",
+          "sources": [
+            {
+              "sourceId": "p31s0"
+            }
+          ],
+          "visualDescription": "The balance sheet is organized into columns: Assets, Liabilities, Capital and result, each describing their respective areas of responsibility."
+        },
+        {
+          "key": "assets-function",
+          "topic": "Insurance Company Functions",
+          "topicDefinition": "Insurance company functions encompass asset management, liability handling, and capital result, each integral to maintaining the company's financial health.",
+          "question": "What role do assets play in an insurance company?",
+          "answer": "Assets support future claim payments via investment, ALM, liquidity management, and managing market and credit risk.",
+          "explanation": "Assets ensure that an insurance company has the necessary liquidity and risk management to meet its claim obligations efficiently.",
+          "kind": "mechanism",
+          "objective": "Understand the role of assets in the financial functioning of an insurance company.",
+          "sources": [
+            {
+              "sourceId": "p31s0"
+            }
+          ],
+          "visualDescription": "Assets include items like investment and ALM, liquidity management, supporting claim payments."
+        },
+        {
+          "key": "liabilities-function",
+          "topic": "Insurance Company Functions",
+          "topicDefinition": "Insurance company functions encompass asset management, liability handling, and capital result, each integral to maintaining the company's financial health.",
+          "question": "What is the role of liabilities in an insurance company?",
+          "answer": "Liabilities involve pricing assumptions, claims management, reserving, and provisions, determining timing and amount of obligations.",
+          "explanation": "Handling liabilities accurately ensures that the company can meet its future financial obligations without hiccups.",
+          "kind": "mechanism",
+          "objective": "Learn how liabilities impact an insurance company's financial obligations.",
+          "sources": [
+            {
+              "sourceId": "p31s0"
+            }
+          ],
+          "visualDescription": "Liabilities are linked to pricing assumptions, claims management, reserving."
+        },
+        {
+          "key": "capital-result-function",
+          "topic": "Insurance Company Functions",
+          "topicDefinition": "Insurance company functions encompass asset management, liability handling, and capital result, each integral to maintaining the company's financial health.",
+          "question": "What functions are managed under capital and result in an insurance company?",
+          "answer": "Capital and result manage risk and capital management, finance and reporting, reinsurance, and profitability and solvency.",
+          "explanation": "These components ensure that the company remains financially robust and can handle unexpected financial scenarios effectively.",
+          "kind": "mechanism",
+          "objective": "Understand the capital and result functions in maintaining an insurance company's financial strength.",
+          "sources": [
+            {
+              "sourceId": "p31s0"
+            }
+          ],
+          "visualDescription": "Capital and result include functions like risk and capital management, profitability."
+        }
+      ]
+    },
+    {
+      "knowledge": [
+        {
+          "key": "insurance-company-structure",
+          "page": 32,
+          "claim": "Insurance companies are structured with various central functions such as Legal & General Counsel, Compliance, Audit, Risk Management/ERM, and Finance & Accounting (CFO). Additional roles include IT/Digital Strategy (CTO), HR/People Management, Actuarial function (CRO), Investment Management (CIO), and Distribution & Partnerships.",
+          "sourceIds": [
+            "p32s0",
+            "p32image"
+          ],
+          "cardKeys": [
+            "insurance-company-structure-definition",
+            "insurance-company-structure-functions"
+          ],
+          "exclusionReason": ""
+        },
+        {
+          "key": "insurance-value-chain",
+          "page": 33,
+          "claim": "The insurance value chain includes stages like customer need assessment, pricing and underwriting, risk transfer and capital management, claims and reserving, and investment and reporting. Each stage answers a key business question and involves main functions linked to financial outcomes.",
+          "sourceIds": [
+            "p33s0",
+            "p33image"
+          ],
+          "cardKeys": [
+            "insurance-value-chain-stages",
+            "financial-link-value-chain"
+          ],
+          "exclusionReason": ""
+        },
+        {
+          "key": "actuarial-role-insurance",
+          "page": 34,
+          "claim": "Actuaries translate uncertainty into assumptions, measure risks, test decisions' impact on profitability, and explain these aspects to management.",
+          "sourceIds": [
+            "p34s0"
+          ],
+          "cardKeys": [
+            "actuarial-role-definition",
+            "actuarial-role-functions"
+          ],
+          "exclusionReason": ""
+        }
+      ],
+      "cards": [
+        {
+          "key": "insurance-company-structure-definition",
+          "topic": "Insurance Company Structure",
+          "topicDefinition": "The organization of an insurance company involves central and functional roles such as Legal, Compliance, Audit, Risk Management, Finance, IT Strategy, HR, Actuarial, Investment, and Distribution.",
+          "question": "What central and functional roles comprise the structure of an insurance company?",
+          "answer": "Roles include Legal & General Counsel, Compliance, Audit, Risk Management, Finance, IT Strategy, HR, Actuarial, Investment, and Distribution.",
+          "explanation": "Insurance companies are organized with central and specialized roles to cover various critical business functions, ensuring comprehensive management and operation.",
+          "kind": "definition",
+          "objective": "Understand the organizational structure of an insurance company.",
+          "sources": [
+            {
+              "sourceId": "p32s0"
+            },
+            {
+              "sourceId": "p32image"
+            }
+          ],
+          "visualDescription": "The structure includes roles like Legal Counsel, Compliance, Audit, Risk Management, Finance (CFO), etc."
+        },
+        {
+          "key": "insurance-value-chain-stages",
+          "topic": "Insurance Value Chain",
+          "topicDefinition": "The insurance value chain consists of stages addressing customer needs, pricing, risk management, claims, and investments, each affecting business performance.",
+          "question": "What are the stages of the insurance value chain?",
+          "answer": "Stages include customer need assessment, pricing and underwriting, risk transfer and capital, claims and reserving, and investment and reporting.",
+          "explanation": "Each stage of the insurance value chain involves specific business questions and functions that affect financial performance and strategies.",
+          "kind": "definition",
+          "objective": "Identify the stages in the insurance value chain.",
+          "sources": [
+            {
+              "sourceId": "p33s0"
+            },
+            {
+              "sourceId": "p33image"
+            }
+          ],
+          "visualDescription": "Stages from customer needs to investments, with related functions and financial links."
+        },
+        {
+          "key": "financial-link-value-chain",
+          "topic": "Insurance Value Chain",
+          "topicDefinition": "The insurance value chain consists of stages addressing customer needs, pricing, risk management, claims, and investments, each affecting business performance.",
+          "question": "How does a decision in one stage of the insurance value chain affect the next?",
+          "answer": "A decision in one stage changes the information or constraints faced by the next stage.",
+          "explanation": "The insurance value chain is interconnected, meaning decisions at each stage alter conditions and information for subsequent stages, impacting overall business performance.",
+          "kind": "mechanism",
+          "objective": "Understand the impact of decisions in the insurance value chain stages.",
+          "sources": [
+            {
+              "sourceId": "p33s0"
+            },
+            {
+              "sourceId": "p33image"
+            }
+          ],
+          "visualDescription": "Sequential relationship in the value chain where decisions affect subsequent stages."
+        },
+        {
+          "key": "actuarial-role-definition",
+          "topic": "Role of Actuaries",
+          "topicDefinition": "Actuaries in insurance analyze risk, translate uncertainty into financial metrics, and guide management on profitability and financial strength.",
+          "question": "What is the role of actuaries in insurance?",
+          "answer": "Actuaries translate uncertainty into assumptions, measure risks, test profitability impacts, and explain these to management.",
+          "explanation": "Actuaries play a critical role in making informed decisions by analyzing data to assess risk and project financial outcomes, supporting management strategies.",
+          "kind": "definition",
+          "objective": "Explain the role of actuaries in an insurance company.",
+          "sources": [
+            {
+              "sourceId": "p34s0"
+            }
+          ],
+          "visualDescription": ""
+        }
+      ]
+    }
+  ]
+}

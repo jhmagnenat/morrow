@@ -1,0 +1,436 @@
+{
+  "page": 23,
+  "text": "Main insurance product families\n44\nFamily Customer need Typical risk or benefit Financial feature\nLife Protect income or build\nsavings\nDeath, longevity, retirement or\nsavings benefit\nLong duration and investment\nsensitivity\nProperty and\ncasualty\nProtect property and legal\nliability\nMotor, property, accident or liability\nloss\nClaims frequency and severity\nHealth and\naccident\nFund medical care or replace\nincome\nMedical expense, disability or\naccident\nClaims experience and\nhealthcare inflation\nReinsurance Protect an insurer Large, volatile or accumulated\ninsurance losses\nCeded premium and claim\nrecoveries\nCaptive\ninsurance\nFinance a corporate group's\nown risks\nRisks retained within the group Risk retention with external\nprotection when needed\nProduct classification can overlap. The purpose and risk transfer matter more than the label.",
+  "layout": {
+    "width": 842,
+    "height": 596,
+    "origin": "pdf",
+    "blocks": [
+      {
+        "id": "B1",
+        "text": "Main insurance product families",
+        "x": 78.760269,
+        "y": 47.41345,
+        "width": 378.3299966453217,
+        "height": 27.916025,
+        "fontSize": 27.916025,
+        "kind": "text"
+      },
+      {
+        "id": "B2",
+        "text": "44",
+        "x": 752.653809,
+        "y": 548.0234740000001,
+        "width": 11.563219375076434,
+        "height": 10.967005,
+        "fontSize": 10.967005,
+        "kind": "text"
+      },
+      {
+        "id": "B3",
+        "text": "Family",
+        "x": 81.625648,
+        "y": 131.77409100000003,
+        "width": 36.26494433784375,
+        "height": 11.964007,
+        "fontSize": 11.964007,
+        "kind": "text"
+      },
+      {
+        "id": "B4",
+        "text": "Customer need",
+        "x": 185.09273420884375,
+        "y": 131.77409100000003,
+        "width": 83.79891440274534,
+        "height": 11.964007,
+        "fontSize": 11.964007,
+        "kind": "text"
+      },
+      {
+        "id": "B5",
+        "text": "Typical risk or benefit",
+        "x": 372.142732624051,
+        "y": 131.77409100000003,
+        "width": 115.8207757538754,
+        "height": 11.964007,
+        "fontSize": 11.964007,
+        "kind": "text"
+      },
+      {
+        "id": "B6",
+        "text": "Financial feature",
+        "x": 583.0658451649265,
+        "y": 131.77409100000003,
+        "width": 91.68510128066097,
+        "height": 11.964007,
+        "fontSize": 11.964007,
+        "kind": "text"
+      },
+      {
+        "id": "B7",
+        "text": "Life",
+        "x": 81.625648,
+        "y": 186.94417599999997,
+        "width": 19.939386479468748,
+        "height": 12.961006,
+        "fontSize": 12.961006,
+        "kind": "text"
+      },
+      {
+        "id": "B8",
+        "text": "Protect income or build",
+        "x": 185.09911129446877,
+        "y": 186.94417599999997,
+        "width": 128.42645375473037,
+        "height": 12.961006,
+        "fontSize": 12.961006,
+        "kind": "text"
+      },
+      {
+        "id": "B9",
+        "text": "savings",
+        "x": 185.09747495976,
+        "y": 201.826054933224,
+        "width": 41.300338743644595,
+        "height": 12.961006,
+        "fontSize": 12.961006,
+        "kind": "text"
+      },
+      {
+        "id": "B10",
+        "text": "Death, longevity, retirement or",
+        "x": 372.142728533932,
+        "y": 186.94417599999997,
+        "width": 165.33207946683203,
+        "height": 12.961006,
+        "fontSize": 12.961006,
+        "kind": "text"
+      },
+      {
+        "id": "B11",
+        "text": "savings benefit",
+        "x": 372.142728533932,
+        "y": 201.826054933224,
+        "width": 82.68887349141013,
+        "height": 12.961006,
+        "fontSize": 12.961006,
+        "kind": "text"
+      },
+      {
+        "id": "B12",
+        "text": "Long duration and investment",
+        "x": 583.066155842204,
+        "y": 186.94417599999997,
+        "width": 163.2498536725411,
+        "height": 12.961006,
+        "fontSize": 12.961006,
+        "kind": "text"
+      },
+      {
+        "id": "B13",
+        "text": "sensitivity",
+        "x": 583.066155842204,
+        "y": 201.826054933224,
+        "width": 55.199817388146954,
+        "height": 12.961006,
+        "fontSize": 12.961006,
+        "kind": "text"
+      },
+      {
+        "id": "B14",
+        "text": "Property and",
+        "x": 81.62564800000001,
+        "y": 242.15112742178997,
+        "width": 69.99234389080662,
+        "height": 12.961006,
+        "fontSize": 12.961006,
+        "kind": "text"
+      },
+      {
+        "id": "B15",
+        "text": "casualty",
+        "x": 81.62564800000001,
+        "y": 257.033006355014,
+        "width": 46.782718206861496,
+        "height": 12.961006,
+        "fontSize": 12.961006,
+        "kind": "text"
+      },
+      {
+        "id": "B16",
+        "text": "Protect property and legal",
+        "x": 185.09747495976,
+        "y": 242.15112742178997,
+        "width": 141.38833083437888,
+        "height": 12.961006,
+        "fontSize": 12.961006,
+        "kind": "text"
+      },
+      {
+        "id": "B17",
+        "text": "liability",
+        "x": 185.09747495976,
+        "y": 257.033006355014,
+        "width": 39.70612748968352,
+        "height": 12.961006,
+        "fontSize": 12.961006,
+        "kind": "text"
+      },
+      {
+        "id": "B18",
+        "text": "Motor, property, accident or liability",
+        "x": 372.142728533932,
+        "y": 242.15112742178997,
+        "width": 193.66476937327718,
+        "height": 12.961006,
+        "fontSize": 12.961006,
+        "kind": "text"
+      },
+      {
+        "id": "B19",
+        "text": "loss",
+        "x": 372.142728533932,
+        "y": 257.033006355014,
+        "width": 22.872283547490184,
+        "height": 12.961006,
+        "fontSize": 12.961006,
+        "kind": "text"
+      },
+      {
+        "id": "B20",
+        "text": "Claims frequency and severity",
+        "x": 583.066155842204,
+        "y": 242.15112742178997,
+        "width": 165.6532709213873,
+        "height": 12.961006,
+        "fontSize": 12.961006,
+        "kind": "text"
+      },
+      {
+        "id": "B21",
+        "text": "Health and",
+        "x": 81.62564800000001,
+        "y": 297.35807884357996,
+        "width": 60.73515492865626,
+        "height": 12.961006,
+        "fontSize": 12.961006,
+        "kind": "text"
+      },
+      {
+        "id": "B22",
+        "text": "accident",
+        "x": 81.62564800000001,
+        "y": 312.23997073781,
+        "width": 48.237699229466905,
+        "height": 12.961006,
+        "fontSize": 12.961006,
+        "kind": "text"
+      },
+      {
+        "id": "B23",
+        "text": "Fund medical care or replace",
+        "x": 185.09747495976,
+        "y": 297.35807884357996,
+        "width": 160.05317861996085,
+        "height": 12.961006,
+        "fontSize": 12.961006,
+        "kind": "text"
+      },
+      {
+        "id": "B24",
+        "text": "income",
+        "x": 185.09747495976,
+        "y": 312.23997073781,
+        "width": 41.444074941787036,
+        "height": 12.961006,
+        "fontSize": 12.961006,
+        "kind": "text"
+      },
+      {
+        "id": "B25",
+        "text": "Medical expense, disability or",
+        "x": 372.142728533932,
+        "y": 297.35807884357996,
+        "width": 161.9512661206287,
+        "height": 12.961006,
+        "fontSize": 12.961006,
+        "kind": "text"
+      },
+      {
+        "id": "B26",
+        "text": "accident",
+        "x": 372.142728533932,
+        "y": 312.23997073781,
+        "width": 48.23769922946686,
+        "height": 12.961006,
+        "fontSize": 12.961006,
+        "kind": "text"
+      },
+      {
+        "id": "B27",
+        "text": "Claims experience and",
+        "x": 583.066155842204,
+        "y": 297.35807884357996,
+        "width": 125.92770179232019,
+        "height": 12.961006,
+        "fontSize": 12.961006,
+        "kind": "text"
+      },
+      {
+        "id": "B28",
+        "text": "healthcare inflation",
+        "x": 583.066155842204,
+        "y": 312.23997073781,
+        "width": 107.07750060012303,
+        "height": 12.961006,
+        "fontSize": 12.961006,
+        "kind": "text"
+      },
+      {
+        "id": "B29",
+        "text": "Reinsurance",
+        "x": 81.62564800000001,
+        "y": 352.56504322637596,
+        "width": 69.08294276927141,
+        "height": 12.961006,
+        "fontSize": 12.961006,
+        "kind": "text"
+      },
+      {
+        "id": "B30",
+        "text": "Protect an insurer",
+        "x": 185.0943015202715,
+        "y": 352.56504322637596,
+        "width": 97.60220120828512,
+        "height": 12.961006,
+        "fontSize": 12.961006,
+        "kind": "text"
+      },
+      {
+        "id": "B31",
+        "text": "Large, volatile or accumulated",
+        "x": 372.14082609555663,
+        "y": 352.56504322637596,
+        "width": 165.72354338998053,
+        "height": 12.961006,
+        "fontSize": 12.961006,
+        "kind": "text"
+      },
+      {
+        "id": "B32",
+        "text": "insurance losses",
+        "x": 372.142728533932,
+        "y": 367.44690919859397,
+        "width": 93.08132027720308,
+        "height": 12.961006,
+        "fontSize": 12.961006,
+        "kind": "text"
+      },
+      {
+        "id": "B33",
+        "text": "Ceded premium and claim",
+        "x": 583.066155842204,
+        "y": 352.56504322637596,
+        "width": 146.359456940006,
+        "height": 12.961006,
+        "fontSize": 12.961006,
+        "kind": "text"
+      },
+      {
+        "id": "B34",
+        "text": "recoveries",
+        "x": 583.066155842204,
+        "y": 367.44690919859397,
+        "width": 57.06666668245733,
+        "height": 12.961006,
+        "fontSize": 12.961006,
+        "kind": "text"
+      },
+      {
+        "id": "B35",
+        "text": "Captive",
+        "x": 81.62564800000001,
+        "y": 407.53195681704597,
+        "width": 42.26193852763479,
+        "height": 12.961006,
+        "fontSize": 12.961006,
+        "kind": "text"
+      },
+      {
+        "id": "B36",
+        "text": "insurance",
+        "x": 81.62564800000001,
+        "y": 422.65387358139,
+        "width": 54.60786113033395,
+        "height": 12.961006,
+        "fontSize": 12.961006,
+        "kind": "text"
+      },
+      {
+        "id": "B37",
+        "text": "Finance a corporate group's",
+        "x": 185.09747495976,
+        "y": 407.53195681704597,
+        "width": 152.10136148582777,
+        "height": 12.961006,
+        "fontSize": 12.961006,
+        "kind": "text"
+      },
+      {
+        "id": "B38",
+        "text": "own risks",
+        "x": 185.09747495976,
+        "y": 422.65387358139,
+        "width": 51.642966415195204,
+        "height": 12.961006,
+        "fontSize": 12.961006,
+        "kind": "text"
+      },
+      {
+        "id": "B39",
+        "text": "Risks retained within the group",
+        "x": 372.142728533932,
+        "y": 407.53195681704597,
+        "width": 168.67674354174218,
+        "height": 12.961006,
+        "fontSize": 12.961006,
+        "kind": "text"
+      },
+      {
+        "id": "B40",
+        "text": "Risk retention with external",
+        "x": 583.0725504956742,
+        "y": 407.53195681704597,
+        "width": 148.82783138867399,
+        "height": 12.961006,
+        "fontSize": 12.961006,
+        "kind": "text"
+      },
+      {
+        "id": "B41",
+        "text": "protection when needed",
+        "x": 583.066155842204,
+        "y": 422.65387358139,
+        "width": 133.96989198803712,
+        "height": 12.961006,
+        "fontSize": 12.961006,
+        "kind": "text"
+      },
+      {
+        "id": "B42",
+        "text": "Product classification can overlap. The purpose and risk transfer matter more than the label.",
+        "x": 132.549713,
+        "y": 491.985748,
+        "width": 575.532528477417,
+        "height": 13.958008,
+        "fontSize": 13.958008,
+        "kind": "text"
+      }
+    ],
+    "tableCandidates": [],
+    "requiresVisualReview": true,
+    "warnings": [
+      "Multiple reading columns detected; raw PDF item order must be verified against the page image."
+    ]
+  }
+}

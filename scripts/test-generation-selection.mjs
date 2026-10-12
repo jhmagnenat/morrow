@@ -1,0 +1,23 @@
+import assert from 'node:assert/strict';
+import {isolatedModules,packPlanFixture,packReviewFixture,targetReviewFixture} from './isolated-modules.mjs';
+const env=await isolatedModules([]),engine=await env.load('generationEngine');
+const source={documentId:'selection-test',title:'Probability',revision:'test',primaryPages:[1],snippets:[{id:'p1s0',page:1,text:'Independent events satisfy P(A and B) = P(A)P(B). For example, two independent fair coin flips both show heads with probability 1/4.'}],imagePages:[],images:[],uncertainOcrPages:[]};
+let promote=false;
+const model={async complete(_system,input,tool){
+ if(tool==='plan_direct_cards')return packPlanFixture({targets:[{page:1,claim:'Independent events satisfy P(A and B) = P(A)P(B).',importance:'core',sourceIds:['p1s0'],exclusionReason:''},{page:1,claim:'Two independent fair coin flips both show heads with probability 1/4.',importance:'supporting',sourceIds:['p1s0'],exclusionReason:''}]},input);
+ if(tool==='direct_cards')return {cards:Object.fromEntries(input.knowledge.map(k=>[k.key,{topic:'Independent events',topicDefinition:k.claim,question:k.importance==='supporting'?'What is the probability of two independent fair coin flips both showing heads?':'How is the joint probability of independent events calculated?',answer:k.importance==='supporting'?'1/4.':'P(A and B) = P(A)P(B).',explanation:'',kind:'application',objective:k.claim,sources:[{sourceId:'p1s0'}],visualDescription:''}]))};
+ return packReviewFixture({targets:targetReviewFixture(input).map(t=>({...t,selectionCorrect:!(promote&&input.knowledge.find(k=>k.key===t.key)?.selected===false)})),decisions:input.fields.map(f=>({key:f.key,complete:true,scopeCorrect:true,atomic:true,unambiguous:true,relevant:true,requiresVisualEvidence:false,duplicateOf:'',reason:'Synthetic reviewer.',verdict:'supported',evidence:[{sourceId:'p1s0'}],reasoning:'Fixture only.'})),pages:[{page:1,excluded:false,reason:'Independent events',objectives:input.knowledge.filter(k=>k.selected!==false).map(k=>({description:k.claim,cardKeys:k.cardKeys}))}]},input);
+}};
+let result=await engine.runGenerationEngine(source,[],model,'key-ideas');
+assert.equal(result.cards.length,1);assert.equal(result.draft.knowledge.filter(k=>k.selected===false).length,1);assert.equal(result.repairs?.length??0,0);
+result=await engine.runGenerationEngine(source,[],model,'comprehensive');assert.equal(result.cards.length,2);assert(result.cards.every(c=>!c.issues.length));
+promote=true;result=await engine.runGenerationEngine(source,[],model,'key-ideas',true);assert.equal(result.cards.length,2,'Independent selection audit can promote a wrongly deferred objective');assert(result.draft.knowledge.every(k=>k.selected));
+const proof=await env.load('contentReview');
+const quality=await env.load('contentQuality');
+const old={question:'What is the main purpose of reinsurance?',answer:'Limit large or volatile losses.',objective:'Reinsurance limits large or volatile losses.',kind:'definition'};
+assert.equal(quality.sameCardObjective(old,{...old,answer:'Protect an insurer.',objective:'Reinsurance protects an insurer.'}),false,'An identical question cannot overwrite a different source objective with a weaker answer');
+assert.equal(quality.sameCardObjective(old,{...old,objective:'The main purpose of reinsurance is to limit large or volatile losses.'}),true,'Identical recall content can retain its identity across equivalent objective wording');
+const card={question:'What is independence?',answer:'The joint probability is the product.',kind:'definition',example:'',explanation:'',evidence:[{documentId:'d',page:1}],reviewedConceptDefinition:'Independent events satisfy the product rule.'};
+const text=new Map([['d:1','Original source']]);card.accuracyReview=proof.createCardReview(card,text);
+assert.deepEqual(proof.cardReviewIssues(card,text),[]);assert(proof.cardReviewIssues({...card,reviewedConceptDefinition:'A fabricated definition.'},text).length);
+console.log('PASS: distinct essential/comprehensive selection, independent promotion, and exact definition proof binding. Synthetic decisions; no pedagogical score.');

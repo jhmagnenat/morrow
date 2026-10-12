@@ -1,0 +1,17 @@
+{
+  "model": "gpt-4o-2024-11-20",
+  "temperature": 0,
+  "seed": 17,
+  "pagesPerBatch": 2,
+  "cardsPerBatch": 8,
+  "maxOutputTokens": 4096,
+  "maxInputTokenBound": 24000,
+  "timeoutMs": 60000,
+  "rates": {
+    "input": 2.5,
+    "cachedInput": 1.25,
+    "output": 10,
+    "verifiedAt": "2026-10-10",
+    "source": "https://developers.openai.com/api/docs/models/gpt-4o"
+  }
+}

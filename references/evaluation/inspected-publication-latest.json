@@ -1,0 +1,25 @@
+{
+  "recordPath": "references/evaluation/insurance-inspected-market-share-limits.json",
+  "courseId": "default",
+  "documentId": "8b6f4739-c98f-4a73-98c2-39df80dcbb4f",
+  "result": {
+    "recovery": {
+      "version": 1,
+      "id": "fdf955b2-ef88-4fa3-9b81-92c0d95524ee",
+      "courseId": "default",
+      "createdAt": "2026-10-11T11:24:23.849Z",
+      "reason": "before-inspected-source-publication",
+      "digest": "52c7fed7967cc3e38f2ab5feb21f870fef923b87932331748a03c64e801b9b8a",
+      "bytes": 464831,
+      "pdfs": [
+        "438f0286f8310855dd51bcb0db76aafbea5c5551b8dcf160cbc0a5feeb4160af"
+      ]
+    },
+    "readyCards": 1,
+    "archived": 0,
+    "pages": [
+      35
+    ],
+    "providerCalls": 0
+  }
+}

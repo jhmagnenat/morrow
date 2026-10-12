@@ -1,0 +1,3296 @@
+{
+  "version": "direct-cards-v7-selected-knowledge",
+  "selected": [
+    23,
+    31
+  ],
+  "activeBefore": "default",
+  "startedAt": "2026-10-11T06:24:11.947Z",
+  "complete": true,
+  "humanQualityScore": null,
+  "jobs": [
+    {
+      "id": "8f5e53a8-a0f3-4d7d-8194-46d67fd24a75",
+      "documentId": "8588233f-526d-444b-b8a6-a8bfd3f48566",
+      "courseId": "05da10c9-5174-4ec8-804b-e96a029ef603",
+      "workerPid": 6256,
+      "status": "complete",
+      "mode": "strict",
+      "enrichment": false,
+      "cardDetail": "key-ideas",
+      "pages": [
+        23,
+        31
+      ],
+      "reprocess": false,
+      "startedAt": "2026-10-11T06:24:12.298Z",
+      "updatedAt": "2026-10-11T06:24:28.827Z",
+      "totalPages": 2,
+      "attemptedPages": [
+        31,
+        23
+      ],
+      "completedPages": 2,
+      "reviewPages": [],
+      "notionsCreated": 10,
+      "cardsCreated": 16,
+      "requests": 2,
+      "inputTokens": 17077,
+      "outputTokens": 2978,
+      "warnings": [],
+      "execution": "inline",
+      "concurrency": 3,
+      "pipeline": "direct",
+      "sectionCount": 2,
+      "activeStages": {},
+      "elapsedMs": 16516,
+      "estimatedCostUsd": null,
+      "firstReadyAt": "2026-10-11T06:24:22.301Z",
+      "firstReadyMs": 10003,
+      "sectionsCompleted": 2,
+      "readyCards": 16,
+      "draftCards": 0,
+      "coveredPages": 2,
+      "skippedPages": 0,
+      "processedPages": 2
+    }
+  ],
+  "job": {
+    "id": "8f5e53a8-a0f3-4d7d-8194-46d67fd24a75",
+    "documentId": "8588233f-526d-444b-b8a6-a8bfd3f48566",
+    "courseId": "05da10c9-5174-4ec8-804b-e96a029ef603",
+    "workerPid": 6256,
+    "status": "complete",
+    "mode": "strict",
+    "enrichment": false,
+    "cardDetail": "key-ideas",
+    "pages": [
+      23,
+      31
+    ],
+    "reprocess": false,
+    "startedAt": "2026-10-11T06:24:12.298Z",
+    "updatedAt": "2026-10-11T06:24:28.827Z",
+    "totalPages": 2,
+    "attemptedPages": [
+      31,
+      23
+    ],
+    "completedPages": 2,
+    "reviewPages": [],
+    "notionsCreated": 10,
+    "cardsCreated": 16,
+    "requests": 2,
+    "inputTokens": 17077,
+    "outputTokens": 2978,
+    "warnings": [],
+    "execution": "inline",
+    "concurrency": 3,
+    "pipeline": "direct",
+    "sectionCount": 2,
+    "activeStages": {},
+    "elapsedMs": 16516,
+    "estimatedCostUsd": null,
+    "firstReadyAt": "2026-10-11T06:24:22.301Z",
+    "firstReadyMs": 10003,
+    "sectionsCompleted": 2,
+    "readyCards": 16,
+    "draftCards": 0,
+    "coveredPages": 2,
+    "skippedPages": 0,
+    "processedPages": 2
+  },
+  "elapsedMs": 18667,
+  "runs": [
+    {
+      "id": "7ee1de1d-fe0d-4044-acf1-2a75b3729ac6",
+      "documentId": "8588233f-526d-444b-b8a6-a8bfd3f48566",
+      "status": "complete",
+      "version": "direct-cards-v7-selected-knowledge",
+      "planPromptHash": "f2c731b65df2221b2ae3b27150a52955b413048a923e4997cd2f50697ad87c72",
+      "writerPromptHash": "6f076c8fd18baa6af512108f2c24026408e1f481b1bf27351dd05e3f10bf1fec",
+      "reviewPromptHash": "be0faa290172ca195a95b9cb81e2c06cd06735b3888fa331ed7e947299bcd8d3",
+      "writerModel": "OpenAI (gpt-4o)",
+      "reviewModel": "OpenAI (gpt-4o)",
+      "cardDetail": "key-ideas",
+      "pages": [
+        31
+      ],
+      "sourceRevision": "40c08283209f5e7faec058eb9f2f994b56d88e2b975d8cd67ae1dc80dc6bdcf8",
+      "startedAt": "2026-10-11T06:24:12.384Z",
+      "finishedAt": "2026-10-11T06:24:22.300Z",
+      "usage": {
+        "requests": 1,
+        "inputTokens": 6727,
+        "outputTokens": 1038,
+        "elapsedMs": 9808,
+        "failures": 0,
+        "callTraces": [
+          {
+            "tool": "audit_direct_cards",
+            "model": "OpenAI (gpt-4o)",
+            "inputTokens": 6727,
+            "outputTokens": 1038,
+            "elapsedMs": 9808,
+            "status": "succeeded",
+            "providerModel": "gpt-4o-2024-08-06"
+          }
+        ]
+      },
+      "readyCards": 5,
+      "cardsCreated": 5,
+      "artifactKey": "direct-card-run:8588233f-526d-444b-b8a6-a8bfd3f48566:7ee1de1d-fe0d-4044-acf1-2a75b3729ac6",
+      "warnings": []
+    },
+    {
+      "id": "f7fd961b-7a05-47a7-9db8-9b2efc210d2e",
+      "documentId": "8588233f-526d-444b-b8a6-a8bfd3f48566",
+      "status": "complete",
+      "version": "direct-cards-v7-selected-knowledge",
+      "planPromptHash": "f2c731b65df2221b2ae3b27150a52955b413048a923e4997cd2f50697ad87c72",
+      "writerPromptHash": "6f076c8fd18baa6af512108f2c24026408e1f481b1bf27351dd05e3f10bf1fec",
+      "reviewPromptHash": "be0faa290172ca195a95b9cb81e2c06cd06735b3888fa331ed7e947299bcd8d3",
+      "writerModel": "OpenAI (gpt-4o)",
+      "reviewModel": "OpenAI (gpt-4o)",
+      "cardDetail": "key-ideas",
+      "pages": [
+        23
+      ],
+      "sourceRevision": "40c08283209f5e7faec058eb9f2f994b56d88e2b975d8cd67ae1dc80dc6bdcf8",
+      "startedAt": "2026-10-11T06:24:12.342Z",
+      "finishedAt": "2026-10-11T06:24:28.813Z",
+      "usage": {
+        "requests": 1,
+        "inputTokens": 10350,
+        "outputTokens": 1940,
+        "elapsedMs": 16315,
+        "failures": 0,
+        "callTraces": [
+          {
+            "tool": "audit_direct_cards",
+            "model": "OpenAI (gpt-4o)",
+            "inputTokens": 10350,
+            "outputTokens": 1940,
+            "elapsedMs": 16315,
+            "status": "succeeded",
+            "providerModel": "gpt-4o-2024-08-06"
+          }
+        ]
+      },
+      "readyCards": 11,
+      "cardsCreated": 11,
+      "artifactKey": "direct-card-run:8588233f-526d-444b-b8a6-a8bfd3f48566:f7fd961b-7a05-47a7-9db8-9b2efc210d2e",
+      "warnings": []
+    }
+  ],
+  "cards": [
+    {
+      "id": "91917dfe-1fa6-44b2-917f-59c2e5184f62",
+      "notionId": "3aa323ff-84d8-4537-a9f2-27cf617d8240",
+      "cardType": "notion",
+      "question": "Which financial statement connects business functions in this model?",
+      "answer": "The balance sheet.",
+      "explanation": "",
+      "example": "",
+      "kind": "mechanism",
+      "objective": "The balance sheet connects business functions.",
+      "status": "ready",
+      "evidence": [
+        {
+          "documentId": "8588233f-526d-444b-b8a6-a8bfd3f48566",
+          "page": 31,
+          "quote": "5. Company functions\n31\nThe balance sheet connects business functions\nAssets\nInvestment and ALM\nLiquidity management\nMarket and credit risk\nSupports future claim\npayments\nLiabilities\nPricing assumptions\nClaims management\nReserving and provisions\nTiming and amount of\nobligations\nCapital and result\nRisk and capital\nmanagement\nFinance and reporting\nReinsurance\nProfitability and solvency"
+        }
+      ],
+      "warnings": [],
+      "userEdited": false,
+      "model": "OpenAI (gpt-4o)",
+      "promptVersion": "direct-cards-v7-selected-knowledge",
+      "reviewedConceptDefinition": "The balance sheet connects business functions.",
+      "knowledgeTrace": {
+        "unitId": "t0",
+        "planKey": "354459f5aa0aba908110acbbecb404ae7aec2f20c89b52ca4da6f1437845b0ea",
+        "claim": "The balance sheet connects business functions.",
+        "conditions": []
+      },
+      "accuracyReview": {
+        "version": "accuracy-v2-scientific-quotations",
+        "contentHash": "726f0086f4590f8fcba6733c56ba917c754763571eb275ccee6f40acd56ac46f",
+        "sources": [
+          {
+            "documentId": "8588233f-526d-444b-b8a6-a8bfd3f48566",
+            "page": 31,
+            "sha256": "c7872a20bdd912309e08c78a7b0b80bf4bd1db20371beb796d8172a371beb795",
+            "revision": "40c08283209f5e7faec058eb9f2f994b56d88e2b975d8cd67ae1dc80dc6bdcf8"
+          }
+        ]
+      }
+    },
+    {
+      "id": "3ed1730c-9cce-46cb-b708-494f676eff86",
+      "notionId": "02a81dc8-c032-4353-975e-1ba03c09e0e7",
+      "cardType": "notion",
+      "question": "Which balance-sheet category is associated with Investment and ALM?",
+      "answer": "Assets.",
+      "explanation": "",
+      "example": "",
+      "kind": "mechanism",
+      "objective": "Investment and ALM are associated with assets on the balance sheet.",
+      "status": "ready",
+      "evidence": [
+        {
+          "documentId": "8588233f-526d-444b-b8a6-a8bfd3f48566",
+          "page": 31,
+          "quote": "5. Company functions\n31\nThe balance sheet connects business functions\nAssets\nInvestment and ALM\nLiquidity management\nMarket and credit risk\nSupports future claim\npayments\nLiabilities\nPricing assumptions\nClaims management\nReserving and provisions\nTiming and amount of\nobligations\nCapital and result\nRisk and capital\nmanagement\nFinance and reporting\nReinsurance\nProfitability and solvency"
+        }
+      ],
+      "warnings": [],
+      "userEdited": false,
+      "model": "OpenAI (gpt-4o)",
+      "promptVersion": "direct-cards-v7-selected-knowledge",
+      "reviewedConceptDefinition": "Investment and ALM are associated with assets on the balance sheet.",
+      "knowledgeTrace": {
+        "unitId": "t1",
+        "planKey": "354459f5aa0aba908110acbbecb404ae7aec2f20c89b52ca4da6f1437845b0ea",
+        "claim": "Investment and ALM are associated with assets on the balance sheet.",
+        "conditions": []
+      },
+      "accuracyReview": {
+        "version": "accuracy-v2-scientific-quotations",
+        "contentHash": "47161d37f94f29d86a360467f2203eadc969b08b7fdee546d04f34200bec2b5c",
+        "sources": [
+          {
+            "documentId": "8588233f-526d-444b-b8a6-a8bfd3f48566",
+            "page": 31,
+            "sha256": "c7872a20bdd912309e08c78a7b0b80bf4bd1db20371beb796d8172a371beb795",
+            "revision": "40c08283209f5e7faec058eb9f2f994b56d88e2b975d8cd67ae1dc80dc6bdcf8"
+          }
+        ]
+      }
+    },
+    {
+      "id": "09e0af08-1aa8-48b9-a0f0-a456a7fcb6db",
+      "notionId": "c68cc3b7-d150-4efb-aca5-bd6b748c3cb3",
+      "cardType": "notion",
+      "question": "What do assets support in the balance-sheet model?",
+      "answer": "future claim payments.",
+      "explanation": "",
+      "example": "",
+      "kind": "mechanism",
+      "objective": "Assets support future claim payments.",
+      "status": "ready",
+      "evidence": [
+        {
+          "documentId": "8588233f-526d-444b-b8a6-a8bfd3f48566",
+          "page": 31,
+          "quote": "5. Company functions\n31\nThe balance sheet connects business functions\nAssets\nInvestment and ALM\nLiquidity management\nMarket and credit risk\nSupports future claim\npayments\nLiabilities\nPricing assumptions\nClaims management\nReserving and provisions\nTiming and amount of\nobligations\nCapital and result\nRisk and capital\nmanagement\nFinance and reporting\nReinsurance\nProfitability and solvency"
+        }
+      ],
+      "warnings": [],
+      "userEdited": false,
+      "model": "OpenAI (gpt-4o)",
+      "promptVersion": "direct-cards-v7-selected-knowledge",
+      "reviewedConceptDefinition": "Assets support future claim payments.",
+      "knowledgeTrace": {
+        "unitId": "t4",
+        "planKey": "354459f5aa0aba908110acbbecb404ae7aec2f20c89b52ca4da6f1437845b0ea",
+        "claim": "Assets support future claim payments.",
+        "conditions": []
+      },
+      "accuracyReview": {
+        "version": "accuracy-v2-scientific-quotations",
+        "contentHash": "08f17805bbac87b749264f8ac6f5e4679fc86d5e1232c835f3a2a06ba371d9cb",
+        "sources": [
+          {
+            "documentId": "8588233f-526d-444b-b8a6-a8bfd3f48566",
+            "page": 31,
+            "sha256": "c7872a20bdd912309e08c78a7b0b80bf4bd1db20371beb796d8172a371beb795",
+            "revision": "40c08283209f5e7faec058eb9f2f994b56d88e2b975d8cd67ae1dc80dc6bdcf8"
+          }
+        ]
+      }
+    },
+    {
+      "id": "f89a277d-98a7-4066-8019-53145504df5d",
+      "notionId": "b0284572-dd52-4e21-9c04-a100f9114a9a",
+      "cardType": "notion",
+      "question": "Which balance-sheet category is associated with Reserving and provisions?",
+      "answer": "Liabilities.",
+      "explanation": "",
+      "example": "",
+      "kind": "mechanism",
+      "objective": "Reserving and provisions are associated with liabilities on the balance sheet.",
+      "status": "ready",
+      "evidence": [
+        {
+          "documentId": "8588233f-526d-444b-b8a6-a8bfd3f48566",
+          "page": 31,
+          "quote": "5. Company functions\n31\nThe balance sheet connects business functions\nAssets\nInvestment and ALM\nLiquidity management\nMarket and credit risk\nSupports future claim\npayments\nLiabilities\nPricing assumptions\nClaims management\nReserving and provisions\nTiming and amount of\nobligations\nCapital and result\nRisk and capital\nmanagement\nFinance and reporting\nReinsurance\nProfitability and solvency"
+        }
+      ],
+      "warnings": [],
+      "userEdited": false,
+      "model": "OpenAI (gpt-4o)",
+      "promptVersion": "direct-cards-v7-selected-knowledge",
+      "reviewedConceptDefinition": "Reserving and provisions are associated with liabilities on the balance sheet.",
+      "knowledgeTrace": {
+        "unitId": "t7",
+        "planKey": "354459f5aa0aba908110acbbecb404ae7aec2f20c89b52ca4da6f1437845b0ea",
+        "claim": "Reserving and provisions are associated with liabilities on the balance sheet.",
+        "conditions": []
+      },
+      "accuracyReview": {
+        "version": "accuracy-v2-scientific-quotations",
+        "contentHash": "a225249678611762837a528c4e2e2d189e2231aa94bf16685b9cc8626e1f10ae",
+        "sources": [
+          {
+            "documentId": "8588233f-526d-444b-b8a6-a8bfd3f48566",
+            "page": 31,
+            "sha256": "c7872a20bdd912309e08c78a7b0b80bf4bd1db20371beb796d8172a371beb795",
+            "revision": "40c08283209f5e7faec058eb9f2f994b56d88e2b975d8cd67ae1dc80dc6bdcf8"
+          }
+        ]
+      }
+    },
+    {
+      "id": "723b458b-28aa-44e1-805c-b1c469a34738",
+      "notionId": "dd0c5bfe-0af1-4f0d-9c6d-67d3951df820",
+      "cardType": "notion",
+      "question": "Which balance-sheet category is associated with Reinsurance?",
+      "answer": "Capital and result.",
+      "explanation": "",
+      "example": "",
+      "kind": "mechanism",
+      "objective": "Reinsurance is associated with capital and result on the balance sheet.",
+      "status": "ready",
+      "evidence": [
+        {
+          "documentId": "8588233f-526d-444b-b8a6-a8bfd3f48566",
+          "page": 31,
+          "quote": "5. Company functions\n31\nThe balance sheet connects business functions\nAssets\nInvestment and ALM\nLiquidity management\nMarket and credit risk\nSupports future claim\npayments\nLiabilities\nPricing assumptions\nClaims management\nReserving and provisions\nTiming and amount of\nobligations\nCapital and result\nRisk and capital\nmanagement\nFinance and reporting\nReinsurance\nProfitability and solvency"
+        }
+      ],
+      "warnings": [],
+      "userEdited": false,
+      "model": "OpenAI (gpt-4o)",
+      "promptVersion": "direct-cards-v7-selected-knowledge",
+      "reviewedConceptDefinition": "Reinsurance is associated with capital and result on the balance sheet.",
+      "knowledgeTrace": {
+        "unitId": "t11",
+        "planKey": "354459f5aa0aba908110acbbecb404ae7aec2f20c89b52ca4da6f1437845b0ea",
+        "claim": "Reinsurance is associated with capital and result on the balance sheet.",
+        "conditions": []
+      },
+      "accuracyReview": {
+        "version": "accuracy-v2-scientific-quotations",
+        "contentHash": "869cc3c2b5d17cba8c6174c4ecfaeb2e63be20f20758611a2c0ca6536d0ea897",
+        "sources": [
+          {
+            "documentId": "8588233f-526d-444b-b8a6-a8bfd3f48566",
+            "page": 31,
+            "sha256": "c7872a20bdd912309e08c78a7b0b80bf4bd1db20371beb796d8172a371beb795",
+            "revision": "40c08283209f5e7faec058eb9f2f994b56d88e2b975d8cd67ae1dc80dc6bdcf8"
+          }
+        ]
+      }
+    },
+    {
+      "id": "9a816092-a3a5-4e63-8dda-2c4b84e43735",
+      "notionId": "39a3c4b1-372e-401c-ab9a-3f8275134288",
+      "cardType": "notion",
+      "question": "What is the main purpose of life insurance?",
+      "answer": "Protect income or build savings.",
+      "explanation": "",
+      "example": "",
+      "kind": "definition",
+      "objective": "The purpose of life insurance is to protect income or build savings.",
+      "status": "ready",
+      "evidence": [
+        {
+          "documentId": "8588233f-526d-444b-b8a6-a8bfd3f48566",
+          "page": 23,
+          "quote": "Main insurance product families\n44\nFamily Customer need Typical risk or benefit Financial feature\nLife Protect income or build\nsavings\nDeath, longevity, retirement or\nsavings benefit\nLong duration and investment\nsensitivity\nProperty and\ncasualty\nProtect property and legal\nliability\nMotor, property, accident or liability\nloss\nClaims frequency and severity\nHealth and\naccident\nFund medical care or replace\nincome\nMedical expense, disability or\naccident\nClaims experience and\nhealthcare inflation\nReinsurance Protect an insurer Large, volatile or accumulated\ninsurance losses\nCeded premium and claim\nrecoveries\nCaptive\ninsurance\nFinance a corporate group's\nown risks\nRisks retained within the group Risk retention with external\nprotection when needed\nProduct classification can overlap. The purpose and risk transfer matter more than the label."
+        }
+      ],
+      "warnings": [],
+      "userEdited": false,
+      "model": "OpenAI (gpt-4o)",
+      "promptVersion": "direct-cards-v7-selected-knowledge",
+      "reviewedConceptDefinition": "The purpose of life insurance is to protect income or build savings.",
+      "knowledgeTrace": {
+        "unitId": "t0",
+        "planKey": "c4b60b6ec66de0d9026f1f7e1dda39229e965223e3242e4abfe1ad50c96355a5",
+        "claim": "The purpose of life insurance is to protect income or build savings.",
+        "conditions": []
+      },
+      "accuracyReview": {
+        "version": "accuracy-v2-scientific-quotations",
+        "contentHash": "9a024d9eabe20e47f8d591a200c8554f57158e37e821832e570c4841751ab429",
+        "sources": [
+          {
+            "documentId": "8588233f-526d-444b-b8a6-a8bfd3f48566",
+            "page": 23,
+            "sha256": "8b6fbf6418a1867022d38b551ccfecf9764f0025b7c21dbc19949493cec98613",
+            "revision": "40c08283209f5e7faec058eb9f2f994b56d88e2b975d8cd67ae1dc80dc6bdcf8"
+          }
+        ]
+      }
+    },
+    {
+      "id": "59f24717-742c-46e5-b61e-58c038a86f96",
+      "notionId": "39a3c4b1-372e-401c-ab9a-3f8275134288",
+      "cardType": "notion",
+      "question": "What financial features are associated with life insurance?",
+      "answer": "Long duration and investment sensitivity.",
+      "explanation": "",
+      "example": "",
+      "kind": "mechanism",
+      "objective": "The financial features of life insurance are long duration and investment sensitivity.",
+      "status": "ready",
+      "evidence": [
+        {
+          "documentId": "8588233f-526d-444b-b8a6-a8bfd3f48566",
+          "page": 23,
+          "quote": "Main insurance product families\n44\nFamily Customer need Typical risk or benefit Financial feature\nLife Protect income or build\nsavings\nDeath, longevity, retirement or\nsavings benefit\nLong duration and investment\nsensitivity\nProperty and\ncasualty\nProtect property and legal\nliability\nMotor, property, accident or liability\nloss\nClaims frequency and severity\nHealth and\naccident\nFund medical care or replace\nincome\nMedical expense, disability or\naccident\nClaims experience and\nhealthcare inflation\nReinsurance Protect an insurer Large, volatile or accumulated\ninsurance losses\nCeded premium and claim\nrecoveries\nCaptive\ninsurance\nFinance a corporate group's\nown risks\nRisks retained within the group Risk retention with external\nprotection when needed\nProduct classification can overlap. The purpose and risk transfer matter more than the label."
+        }
+      ],
+      "warnings": [],
+      "userEdited": false,
+      "model": "OpenAI (gpt-4o)",
+      "promptVersion": "direct-cards-v7-selected-knowledge",
+      "reviewedConceptDefinition": "The financial features of life insurance are long duration and investment sensitivity.",
+      "knowledgeTrace": {
+        "unitId": "t2",
+        "planKey": "c4b60b6ec66de0d9026f1f7e1dda39229e965223e3242e4abfe1ad50c96355a5",
+        "claim": "The financial features of life insurance are long duration and investment sensitivity.",
+        "conditions": []
+      },
+      "accuracyReview": {
+        "version": "accuracy-v2-scientific-quotations",
+        "contentHash": "cb22f63225824595b9be865f7de87299ddd6685c27086f60b75cac51f5be8789",
+        "sources": [
+          {
+            "documentId": "8588233f-526d-444b-b8a6-a8bfd3f48566",
+            "page": 23,
+            "sha256": "8b6fbf6418a1867022d38b551ccfecf9764f0025b7c21dbc19949493cec98613",
+            "revision": "40c08283209f5e7faec058eb9f2f994b56d88e2b975d8cd67ae1dc80dc6bdcf8"
+          }
+        ]
+      }
+    },
+    {
+      "id": "fc3b356f-b7ed-4bcf-81ab-4d3d984482e9",
+      "notionId": "5b5d2a15-37a3-459b-85be-2abcd6d44c00",
+      "cardType": "notion",
+      "question": "What is the main purpose of property and casualty insurance?",
+      "answer": "Protect property and legal liability.",
+      "explanation": "",
+      "example": "",
+      "kind": "definition",
+      "objective": "The purpose of property and casualty insurance is to protect property and legal liability.",
+      "status": "ready",
+      "evidence": [
+        {
+          "documentId": "8588233f-526d-444b-b8a6-a8bfd3f48566",
+          "page": 23,
+          "quote": "Main insurance product families\n44\nFamily Customer need Typical risk or benefit Financial feature\nLife Protect income or build\nsavings\nDeath, longevity, retirement or\nsavings benefit\nLong duration and investment\nsensitivity\nProperty and\ncasualty\nProtect property and legal\nliability\nMotor, property, accident or liability\nloss\nClaims frequency and severity\nHealth and\naccident\nFund medical care or replace\nincome\nMedical expense, disability or\naccident\nClaims experience and\nhealthcare inflation\nReinsurance Protect an insurer Large, volatile or accumulated\ninsurance losses\nCeded premium and claim\nrecoveries\nCaptive\ninsurance\nFinance a corporate group's\nown risks\nRisks retained within the group Risk retention with external\nprotection when needed\nProduct classification can overlap. The purpose and risk transfer matter more than the label."
+        }
+      ],
+      "warnings": [],
+      "userEdited": false,
+      "model": "OpenAI (gpt-4o)",
+      "promptVersion": "direct-cards-v7-selected-knowledge",
+      "reviewedConceptDefinition": "The purpose of property and casualty insurance is to protect property and legal liability.",
+      "knowledgeTrace": {
+        "unitId": "t3",
+        "planKey": "c4b60b6ec66de0d9026f1f7e1dda39229e965223e3242e4abfe1ad50c96355a5",
+        "claim": "The purpose of property and casualty insurance is to protect property and legal liability.",
+        "conditions": []
+      },
+      "accuracyReview": {
+        "version": "accuracy-v2-scientific-quotations",
+        "contentHash": "4a667479e295fd83aa4a4f0d1d040d076a3011420301066199e1f1ecc339ee7f",
+        "sources": [
+          {
+            "documentId": "8588233f-526d-444b-b8a6-a8bfd3f48566",
+            "page": 23,
+            "sha256": "8b6fbf6418a1867022d38b551ccfecf9764f0025b7c21dbc19949493cec98613",
+            "revision": "40c08283209f5e7faec058eb9f2f994b56d88e2b975d8cd67ae1dc80dc6bdcf8"
+          }
+        ]
+      }
+    },
+    {
+      "id": "2504ff91-1e53-4658-a9e1-65f076076e1b",
+      "notionId": "5b5d2a15-37a3-459b-85be-2abcd6d44c00",
+      "cardType": "notion",
+      "question": "What financial features are associated with property and casualty insurance?",
+      "answer": "Claims frequency and severity.",
+      "explanation": "",
+      "example": "",
+      "kind": "mechanism",
+      "objective": "The financial features of property and casualty insurance are claims frequency and severity.",
+      "status": "ready",
+      "evidence": [
+        {
+          "documentId": "8588233f-526d-444b-b8a6-a8bfd3f48566",
+          "page": 23,
+          "quote": "Main insurance product families\n44\nFamily Customer need Typical risk or benefit Financial feature\nLife Protect income or build\nsavings\nDeath, longevity, retirement or\nsavings benefit\nLong duration and investment\nsensitivity\nProperty and\ncasualty\nProtect property and legal\nliability\nMotor, property, accident or liability\nloss\nClaims frequency and severity\nHealth and\naccident\nFund medical care or replace\nincome\nMedical expense, disability or\naccident\nClaims experience and\nhealthcare inflation\nReinsurance Protect an insurer Large, volatile or accumulated\ninsurance losses\nCeded premium and claim\nrecoveries\nCaptive\ninsurance\nFinance a corporate group's\nown risks\nRisks retained within the group Risk retention with external\nprotection when needed\nProduct classification can overlap. The purpose and risk transfer matter more than the label."
+        }
+      ],
+      "warnings": [],
+      "userEdited": false,
+      "model": "OpenAI (gpt-4o)",
+      "promptVersion": "direct-cards-v7-selected-knowledge",
+      "reviewedConceptDefinition": "The financial features of property and casualty insurance are claims frequency and severity.",
+      "knowledgeTrace": {
+        "unitId": "t5",
+        "planKey": "c4b60b6ec66de0d9026f1f7e1dda39229e965223e3242e4abfe1ad50c96355a5",
+        "claim": "The financial features of property and casualty insurance are claims frequency and severity.",
+        "conditions": []
+      },
+      "accuracyReview": {
+        "version": "accuracy-v2-scientific-quotations",
+        "contentHash": "c6346bf2216614ded7cf1e22e9f2e007e032008f34278d31ef355c91160e9c67",
+        "sources": [
+          {
+            "documentId": "8588233f-526d-444b-b8a6-a8bfd3f48566",
+            "page": 23,
+            "sha256": "8b6fbf6418a1867022d38b551ccfecf9764f0025b7c21dbc19949493cec98613",
+            "revision": "40c08283209f5e7faec058eb9f2f994b56d88e2b975d8cd67ae1dc80dc6bdcf8"
+          }
+        ]
+      }
+    },
+    {
+      "id": "87f0245c-b851-4c98-a5d4-ce21f00af584",
+      "notionId": "4cd4779c-9b54-49dc-b1e2-093a1bcff28e",
+      "cardType": "notion",
+      "question": "What is the main purpose of health and accident insurance?",
+      "answer": "Fund medical care or replace income.",
+      "explanation": "",
+      "example": "",
+      "kind": "definition",
+      "objective": "The purpose of health and accident insurance is to fund medical care or replace income.",
+      "status": "ready",
+      "evidence": [
+        {
+          "documentId": "8588233f-526d-444b-b8a6-a8bfd3f48566",
+          "page": 23,
+          "quote": "Main insurance product families\n44\nFamily Customer need Typical risk or benefit Financial feature\nLife Protect income or build\nsavings\nDeath, longevity, retirement or\nsavings benefit\nLong duration and investment\nsensitivity\nProperty and\ncasualty\nProtect property and legal\nliability\nMotor, property, accident or liability\nloss\nClaims frequency and severity\nHealth and\naccident\nFund medical care or replace\nincome\nMedical expense, disability or\naccident\nClaims experience and\nhealthcare inflation\nReinsurance Protect an insurer Large, volatile or accumulated\ninsurance losses\nCeded premium and claim\nrecoveries\nCaptive\ninsurance\nFinance a corporate group's\nown risks\nRisks retained within the group Risk retention with external\nprotection when needed\nProduct classification can overlap. The purpose and risk transfer matter more than the label."
+        }
+      ],
+      "warnings": [],
+      "userEdited": false,
+      "model": "OpenAI (gpt-4o)",
+      "promptVersion": "direct-cards-v7-selected-knowledge",
+      "reviewedConceptDefinition": "The purpose of health and accident insurance is to fund medical care or replace income.",
+      "knowledgeTrace": {
+        "unitId": "t6",
+        "planKey": "c4b60b6ec66de0d9026f1f7e1dda39229e965223e3242e4abfe1ad50c96355a5",
+        "claim": "The purpose of health and accident insurance is to fund medical care or replace income.",
+        "conditions": []
+      },
+      "accuracyReview": {
+        "version": "accuracy-v2-scientific-quotations",
+        "contentHash": "4e12f39eb16e870a11eb5cedccffed8b7415a45389dea91f563a474610b8357f",
+        "sources": [
+          {
+            "documentId": "8588233f-526d-444b-b8a6-a8bfd3f48566",
+            "page": 23,
+            "sha256": "8b6fbf6418a1867022d38b551ccfecf9764f0025b7c21dbc19949493cec98613",
+            "revision": "40c08283209f5e7faec058eb9f2f994b56d88e2b975d8cd67ae1dc80dc6bdcf8"
+          }
+        ]
+      }
+    },
+    {
+      "id": "7227c8d0-0b5c-4784-8403-59291918b495",
+      "notionId": "4cd4779c-9b54-49dc-b1e2-093a1bcff28e",
+      "cardType": "notion",
+      "question": "What financial features are associated with health and accident insurance?",
+      "answer": "Claims experience and healthcare inflation.",
+      "explanation": "",
+      "example": "",
+      "kind": "mechanism",
+      "objective": "The financial features of health and accident insurance are claims experience and healthcare inflation.",
+      "status": "ready",
+      "evidence": [
+        {
+          "documentId": "8588233f-526d-444b-b8a6-a8bfd3f48566",
+          "page": 23,
+          "quote": "Main insurance product families\n44\nFamily Customer need Typical risk or benefit Financial feature\nLife Protect income or build\nsavings\nDeath, longevity, retirement or\nsavings benefit\nLong duration and investment\nsensitivity\nProperty and\ncasualty\nProtect property and legal\nliability\nMotor, property, accident or liability\nloss\nClaims frequency and severity\nHealth and\naccident\nFund medical care or replace\nincome\nMedical expense, disability or\naccident\nClaims experience and\nhealthcare inflation\nReinsurance Protect an insurer Large, volatile or accumulated\ninsurance losses\nCeded premium and claim\nrecoveries\nCaptive\ninsurance\nFinance a corporate group's\nown risks\nRisks retained within the group Risk retention with external\nprotection when needed\nProduct classification can overlap. The purpose and risk transfer matter more than the label."
+        }
+      ],
+      "warnings": [],
+      "userEdited": false,
+      "model": "OpenAI (gpt-4o)",
+      "promptVersion": "direct-cards-v7-selected-knowledge",
+      "reviewedConceptDefinition": "The financial features of health and accident insurance are claims experience and healthcare inflation.",
+      "knowledgeTrace": {
+        "unitId": "t8",
+        "planKey": "c4b60b6ec66de0d9026f1f7e1dda39229e965223e3242e4abfe1ad50c96355a5",
+        "claim": "The financial features of health and accident insurance are claims experience and healthcare inflation.",
+        "conditions": []
+      },
+      "accuracyReview": {
+        "version": "accuracy-v2-scientific-quotations",
+        "contentHash": "bc8ea647853375dca3b404d959740ff62b88a3f24a7510d3a5148f2624eefa7a",
+        "sources": [
+          {
+            "documentId": "8588233f-526d-444b-b8a6-a8bfd3f48566",
+            "page": 23,
+            "sha256": "8b6fbf6418a1867022d38b551ccfecf9764f0025b7c21dbc19949493cec98613",
+            "revision": "40c08283209f5e7faec058eb9f2f994b56d88e2b975d8cd67ae1dc80dc6bdcf8"
+          }
+        ]
+      }
+    },
+    {
+      "id": "5b0a2a90-431e-42e0-8701-863b6b492720",
+      "notionId": "dd0c5bfe-0af1-4f0d-9c6d-67d3951df820",
+      "cardType": "notion",
+      "question": "What is the main purpose of reinsurance?",
+      "answer": "Protect an insurer.",
+      "explanation": "",
+      "example": "",
+      "kind": "definition",
+      "objective": "The purpose of reinsurance is to protect an insurer.",
+      "status": "ready",
+      "evidence": [
+        {
+          "documentId": "8588233f-526d-444b-b8a6-a8bfd3f48566",
+          "page": 23,
+          "quote": "Main insurance product families\n44\nFamily Customer need Typical risk or benefit Financial feature\nLife Protect income or build\nsavings\nDeath, longevity, retirement or\nsavings benefit\nLong duration and investment\nsensitivity\nProperty and\ncasualty\nProtect property and legal\nliability\nMotor, property, accident or liability\nloss\nClaims frequency and severity\nHealth and\naccident\nFund medical care or replace\nincome\nMedical expense, disability or\naccident\nClaims experience and\nhealthcare inflation\nReinsurance Protect an insurer Large, volatile or accumulated\ninsurance losses\nCeded premium and claim\nrecoveries\nCaptive\ninsurance\nFinance a corporate group's\nown risks\nRisks retained within the group Risk retention with external\nprotection when needed\nProduct classification can overlap. The purpose and risk transfer matter more than the label."
+        }
+      ],
+      "warnings": [],
+      "userEdited": false,
+      "model": "OpenAI (gpt-4o)",
+      "promptVersion": "direct-cards-v7-selected-knowledge",
+      "reviewedConceptDefinition": "The purpose of reinsurance is to protect an insurer.",
+      "knowledgeTrace": {
+        "unitId": "t9",
+        "planKey": "c4b60b6ec66de0d9026f1f7e1dda39229e965223e3242e4abfe1ad50c96355a5",
+        "claim": "The purpose of reinsurance is to protect an insurer.",
+        "conditions": []
+      },
+      "accuracyReview": {
+        "version": "accuracy-v2-scientific-quotations",
+        "contentHash": "26d54dc2b3009270824a9f5ca55192e7cac6d41cb34562d4585bf397ca9ba187",
+        "sources": [
+          {
+            "documentId": "8588233f-526d-444b-b8a6-a8bfd3f48566",
+            "page": 23,
+            "sha256": "8b6fbf6418a1867022d38b551ccfecf9764f0025b7c21dbc19949493cec98613",
+            "revision": "40c08283209f5e7faec058eb9f2f994b56d88e2b975d8cd67ae1dc80dc6bdcf8"
+          }
+        ]
+      }
+    },
+    {
+      "id": "2ee7f3fc-6262-4334-a7b1-e84a9a21b73c",
+      "notionId": "dd0c5bfe-0af1-4f0d-9c6d-67d3951df820",
+      "cardType": "notion",
+      "question": "What financial features are associated with reinsurance?",
+      "answer": "Ceded premium and claim recoveries.",
+      "explanation": "",
+      "example": "",
+      "kind": "mechanism",
+      "objective": "The financial features of reinsurance are ceded premium and claim recoveries.",
+      "status": "ready",
+      "evidence": [
+        {
+          "documentId": "8588233f-526d-444b-b8a6-a8bfd3f48566",
+          "page": 23,
+          "quote": "Main insurance product families\n44\nFamily Customer need Typical risk or benefit Financial feature\nLife Protect income or build\nsavings\nDeath, longevity, retirement or\nsavings benefit\nLong duration and investment\nsensitivity\nProperty and\ncasualty\nProtect property and legal\nliability\nMotor, property, accident or liability\nloss\nClaims frequency and severity\nHealth and\naccident\nFund medical care or replace\nincome\nMedical expense, disability or\naccident\nClaims experience and\nhealthcare inflation\nReinsurance Protect an insurer Large, volatile or accumulated\ninsurance losses\nCeded premium and claim\nrecoveries\nCaptive\ninsurance\nFinance a corporate group's\nown risks\nRisks retained within the group Risk retention with external\nprotection when needed\nProduct classification can overlap. The purpose and risk transfer matter more than the label."
+        }
+      ],
+      "warnings": [],
+      "userEdited": false,
+      "model": "OpenAI (gpt-4o)",
+      "promptVersion": "direct-cards-v7-selected-knowledge",
+      "reviewedConceptDefinition": "The financial features of reinsurance are ceded premium and claim recoveries.",
+      "knowledgeTrace": {
+        "unitId": "t11",
+        "planKey": "c4b60b6ec66de0d9026f1f7e1dda39229e965223e3242e4abfe1ad50c96355a5",
+        "claim": "The financial features of reinsurance are ceded premium and claim recoveries.",
+        "conditions": []
+      },
+      "accuracyReview": {
+        "version": "accuracy-v2-scientific-quotations",
+        "contentHash": "54a0ce3fc8a685a2cc952c5d3c9ddd1ef463cc0898f176359fef3aec5c77cffd",
+        "sources": [
+          {
+            "documentId": "8588233f-526d-444b-b8a6-a8bfd3f48566",
+            "page": 23,
+            "sha256": "8b6fbf6418a1867022d38b551ccfecf9764f0025b7c21dbc19949493cec98613",
+            "revision": "40c08283209f5e7faec058eb9f2f994b56d88e2b975d8cd67ae1dc80dc6bdcf8"
+          }
+        ]
+      }
+    },
+    {
+      "id": "53631bd7-f058-498e-a463-5e3773452a52",
+      "notionId": "b39904a1-f1ac-4e24-bab9-34730a06a09a",
+      "cardType": "notion",
+      "question": "What is the main purpose of captive insurance?",
+      "answer": "Finance a corporate group's own risks.",
+      "explanation": "",
+      "example": "",
+      "kind": "definition",
+      "objective": "The purpose of captive insurance is to finance a corporate group's own risks.",
+      "status": "ready",
+      "evidence": [
+        {
+          "documentId": "8588233f-526d-444b-b8a6-a8bfd3f48566",
+          "page": 23,
+          "quote": "Main insurance product families\n44\nFamily Customer need Typical risk or benefit Financial feature\nLife Protect income or build\nsavings\nDeath, longevity, retirement or\nsavings benefit\nLong duration and investment\nsensitivity\nProperty and\ncasualty\nProtect property and legal\nliability\nMotor, property, accident or liability\nloss\nClaims frequency and severity\nHealth and\naccident\nFund medical care or replace\nincome\nMedical expense, disability or\naccident\nClaims experience and\nhealthcare inflation\nReinsurance Protect an insurer Large, volatile or accumulated\ninsurance losses\nCeded premium and claim\nrecoveries\nCaptive\ninsurance\nFinance a corporate group's\nown risks\nRisks retained within the group Risk retention with external\nprotection when needed\nProduct classification can overlap. The purpose and risk transfer matter more than the label."
+        }
+      ],
+      "warnings": [],
+      "userEdited": false,
+      "model": "OpenAI (gpt-4o)",
+      "promptVersion": "direct-cards-v7-selected-knowledge",
+      "reviewedConceptDefinition": "The purpose of captive insurance is to finance a corporate group's own risks.",
+      "knowledgeTrace": {
+        "unitId": "t12",
+        "planKey": "c4b60b6ec66de0d9026f1f7e1dda39229e965223e3242e4abfe1ad50c96355a5",
+        "claim": "The purpose of captive insurance is to finance a corporate group's own risks.",
+        "conditions": []
+      },
+      "accuracyReview": {
+        "version": "accuracy-v2-scientific-quotations",
+        "contentHash": "655f41bc36c10f3bfed4272b6a4efca843bfcd6d3c91468e1fbeceb4574ac00f",
+        "sources": [
+          {
+            "documentId": "8588233f-526d-444b-b8a6-a8bfd3f48566",
+            "page": 23,
+            "sha256": "8b6fbf6418a1867022d38b551ccfecf9764f0025b7c21dbc19949493cec98613",
+            "revision": "40c08283209f5e7faec058eb9f2f994b56d88e2b975d8cd67ae1dc80dc6bdcf8"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ce77954e-d315-405b-b5b1-5f1983ff2eaa",
+      "notionId": "b39904a1-f1ac-4e24-bab9-34730a06a09a",
+      "cardType": "notion",
+      "question": "What financial features are associated with captive insurance?",
+      "answer": "Risk retention with external protection when needed.",
+      "explanation": "",
+      "example": "",
+      "kind": "mechanism",
+      "objective": "The financial features of captive insurance are risk retention with external protection when needed.",
+      "status": "ready",
+      "evidence": [
+        {
+          "documentId": "8588233f-526d-444b-b8a6-a8bfd3f48566",
+          "page": 23,
+          "quote": "Main insurance product families\n44\nFamily Customer need Typical risk or benefit Financial feature\nLife Protect income or build\nsavings\nDeath, longevity, retirement or\nsavings benefit\nLong duration and investment\nsensitivity\nProperty and\ncasualty\nProtect property and legal\nliability\nMotor, property, accident or liability\nloss\nClaims frequency and severity\nHealth and\naccident\nFund medical care or replace\nincome\nMedical expense, disability or\naccident\nClaims experience and\nhealthcare inflation\nReinsurance Protect an insurer Large, volatile or accumulated\ninsurance losses\nCeded premium and claim\nrecoveries\nCaptive\ninsurance\nFinance a corporate group's\nown risks\nRisks retained within the group Risk retention with external\nprotection when needed\nProduct classification can overlap. The purpose and risk transfer matter more than the label."
+        }
+      ],
+      "warnings": [],
+      "userEdited": false,
+      "model": "OpenAI (gpt-4o)",
+      "promptVersion": "direct-cards-v7-selected-knowledge",
+      "reviewedConceptDefinition": "The financial features of captive insurance are risk retention with external protection when needed.",
+      "knowledgeTrace": {
+        "unitId": "t14",
+        "planKey": "c4b60b6ec66de0d9026f1f7e1dda39229e965223e3242e4abfe1ad50c96355a5",
+        "claim": "The financial features of captive insurance are risk retention with external protection when needed.",
+        "conditions": []
+      },
+      "accuracyReview": {
+        "version": "accuracy-v2-scientific-quotations",
+        "contentHash": "be1a7dfcfbe528b3cb856cb70b6f0899d052bb461a63d666772be4162f50374f",
+        "sources": [
+          {
+            "documentId": "8588233f-526d-444b-b8a6-a8bfd3f48566",
+            "page": 23,
+            "sha256": "8b6fbf6418a1867022d38b551ccfecf9764f0025b7c21dbc19949493cec98613",
+            "revision": "40c08283209f5e7faec058eb9f2f994b56d88e2b975d8cd67ae1dc80dc6bdcf8"
+          }
+        ]
+      }
+    },
+    {
+      "id": "71cda37e-2f67-49a4-ad3f-8e4402833fa7",
+      "notionId": "a95580d5-d9e1-4525-875f-4c03c7b8dfb9",
+      "cardType": "notion",
+      "question": "When insurance product classifications overlap, what matters more than the label?",
+      "answer": "The purpose and risk transfer.",
+      "explanation": "",
+      "example": "",
+      "kind": "mechanism",
+      "objective": "Product classification can overlap. The purpose and risk transfer matter more than the label.",
+      "status": "ready",
+      "evidence": [
+        {
+          "documentId": "8588233f-526d-444b-b8a6-a8bfd3f48566",
+          "page": 23,
+          "quote": "Main insurance product families\n44\nFamily Customer need Typical risk or benefit Financial feature\nLife Protect income or build\nsavings\nDeath, longevity, retirement or\nsavings benefit\nLong duration and investment\nsensitivity\nProperty and\ncasualty\nProtect property and legal\nliability\nMotor, property, accident or liability\nloss\nClaims frequency and severity\nHealth and\naccident\nFund medical care or replace\nincome\nMedical expense, disability or\naccident\nClaims experience and\nhealthcare inflation\nReinsurance Protect an insurer Large, volatile or accumulated\ninsurance losses\nCeded premium and claim\nrecoveries\nCaptive\ninsurance\nFinance a corporate group's\nown risks\nRisks retained within the group Risk retention with external\nprotection when needed\nProduct classification can overlap. The purpose and risk transfer matter more than the label."
+        }
+      ],
+      "warnings": [],
+      "userEdited": false,
+      "model": "OpenAI (gpt-4o)",
+      "promptVersion": "direct-cards-v7-selected-knowledge",
+      "reviewedConceptDefinition": "Product classification can overlap. The purpose and risk transfer matter more than the label.",
+      "knowledgeTrace": {
+        "unitId": "t15",
+        "planKey": "c4b60b6ec66de0d9026f1f7e1dda39229e965223e3242e4abfe1ad50c96355a5",
+        "claim": "Product classification can overlap. The purpose and risk transfer matter more than the label.",
+        "conditions": []
+      },
+      "accuracyReview": {
+        "version": "accuracy-v2-scientific-quotations",
+        "contentHash": "8ad3c4468ed5e0f6020c951bf717587022986f31a9e8bfadee943c77ae53f85e",
+        "sources": [
+          {
+            "documentId": "8588233f-526d-444b-b8a6-a8bfd3f48566",
+            "page": 23,
+            "sha256": "8b6fbf6418a1867022d38b551ccfecf9764f0025b7c21dbc19949493cec98613",
+            "revision": "40c08283209f5e7faec058eb9f2f994b56d88e2b975d8cd67ae1dc80dc6bdcf8"
+          }
+        ]
+      }
+    }
+  ],
+  "pages": [
+    {
+      "page": 31,
+      "kind": "content",
+      "status": "complete",
+      "generationComplete": true,
+      "reason": "",
+      "warnings": [],
+      "concepts": 5,
+      "cards": 5,
+      "readyCards": 5,
+      "draftCards": 0,
+      "knowledgeCoverage": [
+        {
+          "key": "t0",
+          "claim": "The balance sheet connects business functions.",
+          "status": "covered",
+          "reason": "",
+          "sourceIds": [
+            "p31s0"
+          ],
+          "cardKeys": [
+            "t0c0"
+          ]
+        },
+        {
+          "key": "t1",
+          "claim": "Investment and ALM are associated with assets on the balance sheet.",
+          "status": "covered",
+          "reason": "",
+          "sourceIds": [
+            "p31s0"
+          ],
+          "cardKeys": [
+            "t1c0"
+          ]
+        },
+        {
+          "key": "t2",
+          "claim": "Liquidity management is associated with assets on the balance sheet.",
+          "status": "deferred",
+          "reason": "The target is not covered by any candidate card.",
+          "sourceIds": [
+            "p31s0"
+          ],
+          "cardKeys": []
+        },
+        {
+          "key": "t3",
+          "claim": "Market and credit risk are associated with assets on the balance sheet.",
+          "status": "deferred",
+          "reason": "The target is not covered by any candidate card.",
+          "sourceIds": [
+            "p31s0"
+          ],
+          "cardKeys": []
+        },
+        {
+          "key": "t4",
+          "claim": "Assets support future claim payments.",
+          "status": "covered",
+          "reason": "",
+          "sourceIds": [
+            "p31s0"
+          ],
+          "cardKeys": [
+            "t4c0"
+          ]
+        },
+        {
+          "key": "t5",
+          "claim": "Pricing assumptions are associated with liabilities on the balance sheet.",
+          "status": "deferred",
+          "reason": "The target is not covered by any candidate card.",
+          "sourceIds": [
+            "p31s0"
+          ],
+          "cardKeys": []
+        },
+        {
+          "key": "t6",
+          "claim": "Claims management is associated with liabilities on the balance sheet.",
+          "status": "deferred",
+          "reason": "The target is not covered by any candidate card.",
+          "sourceIds": [
+            "p31s0"
+          ],
+          "cardKeys": []
+        },
+        {
+          "key": "t7",
+          "claim": "Reserving and provisions are associated with liabilities on the balance sheet.",
+          "status": "covered",
+          "reason": "",
+          "sourceIds": [
+            "p31s0"
+          ],
+          "cardKeys": [
+            "t7c0"
+          ]
+        },
+        {
+          "key": "t8",
+          "claim": "Timing and amount of obligations are associated with liabilities on the balance sheet.",
+          "status": "deferred",
+          "reason": "The target is not covered by any candidate card.",
+          "sourceIds": [
+            "p31s0"
+          ],
+          "cardKeys": []
+        },
+        {
+          "key": "t9",
+          "claim": "Risk and capital management are associated with capital and result on the balance sheet.",
+          "status": "deferred",
+          "reason": "The target is not covered by any candidate card.",
+          "sourceIds": [
+            "p31s0"
+          ],
+          "cardKeys": []
+        },
+        {
+          "key": "t10",
+          "claim": "Finance and reporting are associated with capital and result on the balance sheet.",
+          "status": "deferred",
+          "reason": "The target is not covered by any candidate card.",
+          "sourceIds": [
+            "p31s0"
+          ],
+          "cardKeys": []
+        },
+        {
+          "key": "t11",
+          "claim": "Reinsurance is associated with capital and result on the balance sheet.",
+          "status": "covered",
+          "reason": "",
+          "sourceIds": [
+            "p31s0"
+          ],
+          "cardKeys": [
+            "t11c0"
+          ]
+        },
+        {
+          "key": "t12",
+          "claim": "Profitability and solvency are associated with capital and result on the balance sheet.",
+          "status": "deferred",
+          "reason": "The target is not covered by any candidate card.",
+          "sourceIds": [
+            "p31s0"
+          ],
+          "cardKeys": []
+        }
+      ],
+      "missingObjectives": [],
+      "version": "direct-cards-v7-selected-knowledge",
+      "sourceRevision": "40c08283209f5e7faec058eb9f2f994b56d88e2b975d8cd67ae1dc80dc6bdcf8",
+      "updatedAt": "2026-10-11T06:24:22.298Z"
+    },
+    {
+      "page": 23,
+      "kind": "content",
+      "status": "complete",
+      "generationComplete": true,
+      "reason": "",
+      "warnings": [],
+      "concepts": 6,
+      "cards": 11,
+      "readyCards": 11,
+      "draftCards": 0,
+      "knowledgeCoverage": [
+        {
+          "key": "t0",
+          "claim": "The purpose of life insurance is to protect income or build savings.",
+          "status": "covered",
+          "reason": "",
+          "sourceIds": [
+            "p23s0"
+          ],
+          "cardKeys": [
+            "t0c0"
+          ]
+        },
+        {
+          "key": "t1",
+          "claim": "Life insurance is associated with death, longevity, retirement or savings benefit.",
+          "status": "deferred",
+          "reason": "The claim is supported by the source, but no card is generated for it.",
+          "sourceIds": [
+            "p23s0"
+          ],
+          "cardKeys": []
+        },
+        {
+          "key": "t2",
+          "claim": "The financial features of life insurance are long duration and investment sensitivity.",
+          "status": "covered",
+          "reason": "",
+          "sourceIds": [
+            "p23s0"
+          ],
+          "cardKeys": [
+            "t2c0"
+          ]
+        },
+        {
+          "key": "t3",
+          "claim": "The purpose of property and casualty insurance is to protect property and legal liability.",
+          "status": "covered",
+          "reason": "",
+          "sourceIds": [
+            "p23s0"
+          ],
+          "cardKeys": [
+            "t3c0"
+          ]
+        },
+        {
+          "key": "t4",
+          "claim": "Property and casualty insurance is associated with motor, property, accident or liability loss.",
+          "status": "deferred",
+          "reason": "The claim is supported by the source, but no card is generated for it.",
+          "sourceIds": [
+            "p23s0"
+          ],
+          "cardKeys": []
+        },
+        {
+          "key": "t5",
+          "claim": "The financial features of property and casualty insurance are claims frequency and severity.",
+          "status": "covered",
+          "reason": "",
+          "sourceIds": [
+            "p23s0"
+          ],
+          "cardKeys": [
+            "t5c0"
+          ]
+        },
+        {
+          "key": "t6",
+          "claim": "The purpose of health and accident insurance is to fund medical care or replace income.",
+          "status": "covered",
+          "reason": "",
+          "sourceIds": [
+            "p23s0"
+          ],
+          "cardKeys": [
+            "t6c0"
+          ]
+        },
+        {
+          "key": "t7",
+          "claim": "Health and accident insurance is associated with medical expense, disability or accident.",
+          "status": "deferred",
+          "reason": "The claim is supported by the source, but no card is generated for it.",
+          "sourceIds": [
+            "p23s0"
+          ],
+          "cardKeys": []
+        },
+        {
+          "key": "t8",
+          "claim": "The financial features of health and accident insurance are claims experience and healthcare inflation.",
+          "status": "covered",
+          "reason": "",
+          "sourceIds": [
+            "p23s0"
+          ],
+          "cardKeys": [
+            "t8c0"
+          ]
+        },
+        {
+          "key": "t9",
+          "claim": "The purpose of reinsurance is to protect an insurer.",
+          "status": "covered",
+          "reason": "",
+          "sourceIds": [
+            "p23s0"
+          ],
+          "cardKeys": [
+            "t9c0"
+          ]
+        },
+        {
+          "key": "t10",
+          "claim": "Reinsurance is associated with large, volatile or accumulated insurance losses.",
+          "status": "deferred",
+          "reason": "The claim is supported by the source, but no card is generated for it.",
+          "sourceIds": [
+            "p23s0"
+          ],
+          "cardKeys": []
+        },
+        {
+          "key": "t11",
+          "claim": "The financial features of reinsurance are ceded premium and claim recoveries.",
+          "status": "covered",
+          "reason": "",
+          "sourceIds": [
+            "p23s0"
+          ],
+          "cardKeys": [
+            "t11c0"
+          ]
+        },
+        {
+          "key": "t12",
+          "claim": "The purpose of captive insurance is to finance a corporate group's own risks.",
+          "status": "covered",
+          "reason": "",
+          "sourceIds": [
+            "p23s0"
+          ],
+          "cardKeys": [
+            "t12c0"
+          ]
+        },
+        {
+          "key": "t13",
+          "claim": "Captive insurance is associated with risks retained within the group.",
+          "status": "deferred",
+          "reason": "The claim is supported by the source, but no card is generated for it.",
+          "sourceIds": [
+            "p23s0"
+          ],
+          "cardKeys": []
+        },
+        {
+          "key": "t14",
+          "claim": "The financial features of captive insurance are risk retention with external protection when needed.",
+          "status": "covered",
+          "reason": "",
+          "sourceIds": [
+            "p23s0"
+          ],
+          "cardKeys": [
+            "t14c0"
+          ]
+        },
+        {
+          "key": "t15",
+          "claim": "Product classification can overlap. The purpose and risk transfer matter more than the label.",
+          "status": "covered",
+          "reason": "",
+          "sourceIds": [
+            "p23s0"
+          ],
+          "cardKeys": [
+            "t15c0"
+          ]
+        }
+      ],
+      "missingObjectives": [],
+      "version": "direct-cards-v7-selected-knowledge",
+      "sourceRevision": "40c08283209f5e7faec058eb9f2f994b56d88e2b975d8cd67ae1dc80dc6bdcf8",
+      "updatedAt": "2026-10-11T06:24:28.810Z"
+    }
+  ],
+  "artifacts": [
+    {
+      "version": "direct-cards-v7-selected-knowledge",
+      "planPromptHash": "f2c731b65df2221b2ae3b27150a52955b413048a923e4997cd2f50697ad87c72",
+      "writerPromptHash": "6f076c8fd18baa6af512108f2c24026408e1f481b1bf27351dd05e3f10bf1fec",
+      "reviewPromptHash": "be0faa290172ca195a95b9cb81e2c06cd06735b3888fa331ed7e947299bcd8d3",
+      "writerModel": "OpenAI (gpt-4o)",
+      "reviewModel": "OpenAI (gpt-4o)",
+      "cardDetail": "key-ideas",
+      "sourceRevision": "40c08283209f5e7faec058eb9f2f994b56d88e2b975d8cd67ae1dc80dc6bdcf8",
+      "pdfSha256": "438f0286f8310855dd51bcb0db76aafbea5c5551b8dcf160cbc0a5feeb4160af",
+      "sourceOrigin": "pdf",
+      "pages": [
+        31
+      ],
+      "imagePages": [
+        31
+      ],
+      "draft": {
+        "knowledge": [
+          {
+            "page": 31,
+            "claim": "The balance sheet connects business functions.",
+            "sourceIds": [
+              "p31s0"
+            ],
+            "exclusionReason": "",
+            "recall": {
+              "topic": "Balance sheet and business functions",
+              "question": "Which financial statement connects business functions in this model?",
+              "answer": "The balance sheet."
+            },
+            "selected": true,
+            "key": "t0",
+            "cardKeys": [
+              "t0c0"
+            ],
+            "issues": []
+          },
+          {
+            "page": 31,
+            "claim": "Investment and ALM are associated with assets on the balance sheet.",
+            "sourceIds": [
+              "p31s0"
+            ],
+            "exclusionReason": "",
+            "importance": "core",
+            "recall": {
+              "topic": "Investment and ALM",
+              "question": "Which balance-sheet category is associated with Investment and ALM?",
+              "answer": "Assets."
+            },
+            "selected": true,
+            "key": "t1",
+            "cardKeys": [
+              "t1c0"
+            ],
+            "issues": []
+          },
+          {
+            "page": 31,
+            "claim": "Liquidity management is associated with assets on the balance sheet.",
+            "sourceIds": [
+              "p31s0"
+            ],
+            "exclusionReason": "",
+            "importance": "supporting",
+            "recall": {
+              "topic": "Liquidity management",
+              "question": "Which balance-sheet category is associated with Liquidity management?",
+              "answer": "Assets."
+            },
+            "selected": false,
+            "key": "t2",
+            "cardKeys": [],
+            "issues": []
+          },
+          {
+            "page": 31,
+            "claim": "Market and credit risk are associated with assets on the balance sheet.",
+            "sourceIds": [
+              "p31s0"
+            ],
+            "exclusionReason": "",
+            "importance": "supporting",
+            "recall": {
+              "topic": "Market and credit risk",
+              "question": "Which balance-sheet category is associated with Market and credit risk?",
+              "answer": "Assets."
+            },
+            "selected": false,
+            "key": "t3",
+            "cardKeys": [],
+            "issues": []
+          },
+          {
+            "page": 31,
+            "claim": "Assets support future claim payments.",
+            "sourceIds": [
+              "p31s0"
+            ],
+            "exclusionReason": "",
+            "importance": "core",
+            "recall": {
+              "topic": "Asset support for claims",
+              "question": "What do assets support in the balance-sheet model?",
+              "answer": "future claim payments."
+            },
+            "selected": true,
+            "key": "t4",
+            "cardKeys": [
+              "t4c0"
+            ],
+            "issues": []
+          },
+          {
+            "page": 31,
+            "claim": "Pricing assumptions are associated with liabilities on the balance sheet.",
+            "sourceIds": [
+              "p31s0"
+            ],
+            "exclusionReason": "",
+            "importance": "supporting",
+            "recall": {
+              "topic": "Pricing assumptions",
+              "question": "Which balance-sheet category is associated with Pricing assumptions?",
+              "answer": "Liabilities."
+            },
+            "selected": false,
+            "key": "t5",
+            "cardKeys": [],
+            "issues": []
+          },
+          {
+            "page": 31,
+            "claim": "Claims management is associated with liabilities on the balance sheet.",
+            "sourceIds": [
+              "p31s0"
+            ],
+            "exclusionReason": "",
+            "importance": "supporting",
+            "recall": {
+              "topic": "Claims management",
+              "question": "Which balance-sheet category is associated with Claims management?",
+              "answer": "Liabilities."
+            },
+            "selected": false,
+            "key": "t6",
+            "cardKeys": [],
+            "issues": []
+          },
+          {
+            "page": 31,
+            "claim": "Reserving and provisions are associated with liabilities on the balance sheet.",
+            "sourceIds": [
+              "p31s0"
+            ],
+            "exclusionReason": "",
+            "importance": "core",
+            "recall": {
+              "topic": "Reserving and provisions",
+              "question": "Which balance-sheet category is associated with Reserving and provisions?",
+              "answer": "Liabilities."
+            },
+            "selected": true,
+            "key": "t7",
+            "cardKeys": [
+              "t7c0"
+            ],
+            "issues": []
+          },
+          {
+            "page": 31,
+            "claim": "Timing and amount of obligations are associated with liabilities on the balance sheet.",
+            "sourceIds": [
+              "p31s0"
+            ],
+            "exclusionReason": "",
+            "importance": "supporting",
+            "recall": {
+              "topic": "Timing and amount of obligations",
+              "question": "Which balance-sheet category is associated with Timing and amount of obligations?",
+              "answer": "Liabilities."
+            },
+            "selected": false,
+            "key": "t8",
+            "cardKeys": [],
+            "issues": []
+          },
+          {
+            "page": 31,
+            "claim": "Risk and capital management are associated with capital and result on the balance sheet.",
+            "sourceIds": [
+              "p31s0"
+            ],
+            "exclusionReason": "",
+            "importance": "supporting",
+            "recall": {
+              "topic": "Risk and capital management",
+              "question": "Which balance-sheet category is associated with Risk and capital management?",
+              "answer": "Capital and result."
+            },
+            "selected": false,
+            "key": "t9",
+            "cardKeys": [],
+            "issues": []
+          },
+          {
+            "page": 31,
+            "claim": "Finance and reporting are associated with capital and result on the balance sheet.",
+            "sourceIds": [
+              "p31s0"
+            ],
+            "exclusionReason": "",
+            "importance": "supporting",
+            "recall": {
+              "topic": "Finance and reporting",
+              "question": "Which balance-sheet category is associated with Finance and reporting?",
+              "answer": "Capital and result."
+            },
+            "selected": false,
+            "key": "t10",
+            "cardKeys": [],
+            "issues": []
+          },
+          {
+            "page": 31,
+            "claim": "Reinsurance is associated with capital and result on the balance sheet.",
+            "sourceIds": [
+              "p31s0"
+            ],
+            "exclusionReason": "",
+            "importance": "core",
+            "recall": {
+              "topic": "Reinsurance",
+              "question": "Which balance-sheet category is associated with Reinsurance?",
+              "answer": "Capital and result."
+            },
+            "selected": true,
+            "key": "t11",
+            "cardKeys": [
+              "t11c0"
+            ],
+            "issues": []
+          },
+          {
+            "page": 31,
+            "claim": "Profitability and solvency are associated with capital and result on the balance sheet.",
+            "sourceIds": [
+              "p31s0"
+            ],
+            "exclusionReason": "",
+            "importance": "supporting",
+            "recall": {
+              "topic": "Profitability and solvency",
+              "question": "Which balance-sheet category is associated with Profitability and solvency?",
+              "answer": "Capital and result."
+            },
+            "selected": false,
+            "key": "t12",
+            "cardKeys": [],
+            "issues": []
+          }
+        ],
+        "cards": [
+          {
+            "topic": "Balance sheet and business functions",
+            "question": "Which financial statement connects business functions in this model?",
+            "answer": "The balance sheet.",
+            "key": "t0c0",
+            "topicDefinition": "The balance sheet connects business functions.",
+            "explanation": "",
+            "kind": "mechanism",
+            "objective": "The balance sheet connects business functions.",
+            "sources": [
+              {
+                "sourceId": "p31s0"
+              }
+            ],
+            "visualDescription": ""
+          },
+          {
+            "topic": "Investment and ALM",
+            "question": "Which balance-sheet category is associated with Investment and ALM?",
+            "answer": "Assets.",
+            "key": "t1c0",
+            "topicDefinition": "Investment and ALM are associated with assets on the balance sheet.",
+            "explanation": "",
+            "kind": "mechanism",
+            "objective": "Investment and ALM are associated with assets on the balance sheet.",
+            "sources": [
+              {
+                "sourceId": "p31s0"
+              }
+            ],
+            "visualDescription": ""
+          },
+          {
+            "topic": "Asset support for claims",
+            "question": "What do assets support in the balance-sheet model?",
+            "answer": "future claim payments.",
+            "key": "t4c0",
+            "topicDefinition": "Assets support future claim payments.",
+            "explanation": "",
+            "kind": "mechanism",
+            "objective": "Assets support future claim payments.",
+            "sources": [
+              {
+                "sourceId": "p31s0"
+              }
+            ],
+            "visualDescription": ""
+          },
+          {
+            "topic": "Reserving and provisions",
+            "question": "Which balance-sheet category is associated with Reserving and provisions?",
+            "answer": "Liabilities.",
+            "key": "t7c0",
+            "topicDefinition": "Reserving and provisions are associated with liabilities on the balance sheet.",
+            "explanation": "",
+            "kind": "mechanism",
+            "objective": "Reserving and provisions are associated with liabilities on the balance sheet.",
+            "sources": [
+              {
+                "sourceId": "p31s0"
+              }
+            ],
+            "visualDescription": ""
+          },
+          {
+            "topic": "Reinsurance",
+            "question": "Which balance-sheet category is associated with Reinsurance?",
+            "answer": "Capital and result.",
+            "key": "t11c0",
+            "topicDefinition": "Reinsurance is associated with capital and result on the balance sheet.",
+            "explanation": "",
+            "kind": "mechanism",
+            "objective": "Reinsurance is associated with capital and result on the balance sheet.",
+            "sources": [
+              {
+                "sourceId": "p31s0"
+              }
+            ],
+            "visualDescription": ""
+          }
+        ]
+      },
+      "review": {
+        "targets": [
+          {
+            "key": "t0",
+            "verdict": "supported",
+            "atomic": true,
+            "selectionCorrect": true,
+            "reason": "",
+            "coverageComplete": true
+          },
+          {
+            "key": "t1",
+            "verdict": "supported",
+            "atomic": true,
+            "selectionCorrect": true,
+            "reason": "",
+            "coverageComplete": true
+          },
+          {
+            "key": "t2",
+            "verdict": "supported",
+            "atomic": true,
+            "selectionCorrect": true,
+            "reason": "The target is not covered by any candidate card.",
+            "coverageComplete": false
+          },
+          {
+            "key": "t3",
+            "verdict": "supported",
+            "atomic": true,
+            "selectionCorrect": true,
+            "reason": "The target is not covered by any candidate card.",
+            "coverageComplete": false
+          },
+          {
+            "key": "t4",
+            "verdict": "supported",
+            "atomic": true,
+            "selectionCorrect": true,
+            "reason": "",
+            "coverageComplete": true
+          },
+          {
+            "key": "t5",
+            "verdict": "supported",
+            "atomic": true,
+            "selectionCorrect": true,
+            "reason": "The target is not covered by any candidate card.",
+            "coverageComplete": false
+          },
+          {
+            "key": "t6",
+            "verdict": "supported",
+            "atomic": true,
+            "selectionCorrect": true,
+            "reason": "The target is not covered by any candidate card.",
+            "coverageComplete": false
+          },
+          {
+            "key": "t7",
+            "verdict": "supported",
+            "atomic": true,
+            "selectionCorrect": true,
+            "reason": "",
+            "coverageComplete": true
+          },
+          {
+            "key": "t8",
+            "verdict": "supported",
+            "atomic": true,
+            "selectionCorrect": true,
+            "reason": "The target is not covered by any candidate card.",
+            "coverageComplete": false
+          },
+          {
+            "key": "t9",
+            "verdict": "supported",
+            "atomic": true,
+            "selectionCorrect": true,
+            "reason": "The target is not covered by any candidate card.",
+            "coverageComplete": false
+          },
+          {
+            "key": "t10",
+            "verdict": "supported",
+            "atomic": true,
+            "selectionCorrect": true,
+            "reason": "The target is not covered by any candidate card.",
+            "coverageComplete": false
+          },
+          {
+            "key": "t11",
+            "verdict": "supported",
+            "atomic": true,
+            "selectionCorrect": true,
+            "reason": "",
+            "coverageComplete": true
+          },
+          {
+            "key": "t12",
+            "verdict": "supported",
+            "atomic": true,
+            "selectionCorrect": true,
+            "reason": "The target is not covered by any candidate card.",
+            "coverageComplete": false
+          }
+        ],
+        "decisions": [
+          {
+            "key": "t0c0",
+            "complete": true,
+            "scopeCorrect": true,
+            "atomic": true,
+            "unambiguous": true,
+            "relevant": true,
+            "requiresVisualEvidence": false,
+            "duplicateOf": "",
+            "reason": "",
+            "claims": [
+              {
+                "text": "Topic: Balance sheet and business functions\nConcept definition: The balance sheet connects business functions.\nQuestion: Which financial statement connects business functions in this model?\nAnswer: The balance sheet.",
+                "verdict": "supported",
+                "evidence": [
+                  {
+                    "sourceId": "p31s0",
+                    "quote": "5. Company functions\n31\nThe balance sheet connects business functions\nAssets\nInvestment and ALM\nLiquidity management\nMarket and credit risk\nSupports future claim\npayments\nLiabilities\nPricing assumptions\nClaims management\nReserving and provisions\nTiming and amount of\nobligations\nCapital and result\nRisk and capital\nmanagement\nFinance and reporting\nReinsurance\nProfitability and solvency"
+                  }
+                ],
+                "reasoning": "The claim that the balance sheet connects business functions is directly supported by the source text, which explicitly states this connection."
+              }
+            ]
+          },
+          {
+            "key": "t1c0",
+            "complete": true,
+            "scopeCorrect": true,
+            "atomic": true,
+            "unambiguous": true,
+            "relevant": true,
+            "requiresVisualEvidence": false,
+            "duplicateOf": "",
+            "reason": "",
+            "claims": [
+              {
+                "text": "Topic: Investment and ALM\nConcept definition: Investment and ALM are associated with assets on the balance sheet.\nQuestion: Which balance-sheet category is associated with Investment and ALM?\nAnswer: Assets.",
+                "verdict": "supported",
+                "evidence": [
+                  {
+                    "sourceId": "p31s0",
+                    "quote": "5. Company functions\n31\nThe balance sheet connects business functions\nAssets\nInvestment and ALM\nLiquidity management\nMarket and credit risk\nSupports future claim\npayments\nLiabilities\nPricing assumptions\nClaims management\nReserving and provisions\nTiming and amount of\nobligations\nCapital and result\nRisk and capital\nmanagement\nFinance and reporting\nReinsurance\nProfitability and solvency"
+                  }
+                ],
+                "reasoning": "The claim that Investment and ALM are associated with assets on the balance sheet is directly supported by the source text, which lists these associations under the 'Assets' category."
+              }
+            ]
+          },
+          {
+            "key": "t4c0",
+            "complete": true,
+            "scopeCorrect": true,
+            "atomic": true,
+            "unambiguous": true,
+            "relevant": true,
+            "requiresVisualEvidence": false,
+            "duplicateOf": "",
+            "reason": "",
+            "claims": [
+              {
+                "text": "Topic: Asset support for claims\nConcept definition: Assets support future claim payments.\nQuestion: What do assets support in the balance-sheet model?\nAnswer: future claim payments.",
+                "verdict": "supported",
+                "evidence": [
+                  {
+                    "sourceId": "p31s0",
+                    "quote": "5. Company functions\n31\nThe balance sheet connects business functions\nAssets\nInvestment and ALM\nLiquidity management\nMarket and credit risk\nSupports future claim\npayments\nLiabilities\nPricing assumptions\nClaims management\nReserving and provisions\nTiming and amount of\nobligations\nCapital and result\nRisk and capital\nmanagement\nFinance and reporting\nReinsurance\nProfitability and solvency"
+                  }
+                ],
+                "reasoning": "The claim that assets support future claim payments is directly supported by the source text, which states this association under the 'Assets' category."
+              }
+            ]
+          },
+          {
+            "key": "t7c0",
+            "complete": true,
+            "scopeCorrect": true,
+            "atomic": true,
+            "unambiguous": true,
+            "relevant": true,
+            "requiresVisualEvidence": false,
+            "duplicateOf": "",
+            "reason": "",
+            "claims": [
+              {
+                "text": "Topic: Reserving and provisions\nConcept definition: Reserving and provisions are associated with liabilities on the balance sheet.\nQuestion: Which balance-sheet category is associated with Reserving and provisions?\nAnswer: Liabilities.",
+                "verdict": "supported",
+                "evidence": [
+                  {
+                    "sourceId": "p31s0",
+                    "quote": "5. Company functions\n31\nThe balance sheet connects business functions\nAssets\nInvestment and ALM\nLiquidity management\nMarket and credit risk\nSupports future claim\npayments\nLiabilities\nPricing assumptions\nClaims management\nReserving and provisions\nTiming and amount of\nobligations\nCapital and result\nRisk and capital\nmanagement\nFinance and reporting\nReinsurance\nProfitability and solvency"
+                  }
+                ],
+                "reasoning": "The claim that reserving and provisions are associated with liabilities on the balance sheet is directly supported by the source text, which lists these associations under the 'Liabilities' category."
+              }
+            ]
+          },
+          {
+            "key": "t11c0",
+            "complete": true,
+            "scopeCorrect": true,
+            "atomic": true,
+            "unambiguous": true,
+            "relevant": true,
+            "requiresVisualEvidence": false,
+            "duplicateOf": "",
+            "reason": "",
+            "claims": [
+              {
+                "text": "Topic: Reinsurance\nConcept definition: Reinsurance is associated with capital and result on the balance sheet.\nQuestion: Which balance-sheet category is associated with Reinsurance?\nAnswer: Capital and result.",
+                "verdict": "supported",
+                "evidence": [
+                  {
+                    "sourceId": "p31s0",
+                    "quote": "5. Company functions\n31\nThe balance sheet connects business functions\nAssets\nInvestment and ALM\nLiquidity management\nMarket and credit risk\nSupports future claim\npayments\nLiabilities\nPricing assumptions\nClaims management\nReserving and provisions\nTiming and amount of\nobligations\nCapital and result\nRisk and capital\nmanagement\nFinance and reporting\nReinsurance\nProfitability and solvency"
+                  }
+                ],
+                "reasoning": "The claim that reinsurance is associated with capital and result on the balance sheet is directly supported by the source text, which lists this association under the 'Capital and result' category."
+              }
+            ]
+          }
+        ],
+        "pages": [
+          {
+            "page": 31,
+            "excluded": false,
+            "reason": "",
+            "objectives": [
+              {
+                "description": "The balance sheet connects business functions.",
+                "cardKeys": [
+                  "t0c0"
+                ]
+              },
+              {
+                "description": "Investment and ALM are associated with assets on the balance sheet.",
+                "cardKeys": [
+                  "t1c0"
+                ]
+              },
+              {
+                "description": "Assets support future claim payments.",
+                "cardKeys": [
+                  "t4c0"
+                ]
+              },
+              {
+                "description": "Reserving and provisions are associated with liabilities on the balance sheet.",
+                "cardKeys": [
+                  "t7c0"
+                ]
+              },
+              {
+                "description": "Reinsurance is associated with capital and result on the balance sheet.",
+                "cardKeys": [
+                  "t11c0"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "cards": [
+        {
+          "candidate": {
+            "topic": "Balance sheet and business functions",
+            "question": "Which financial statement connects business functions in this model?",
+            "answer": "The balance sheet.",
+            "key": "t0c0",
+            "topicDefinition": "The balance sheet connects business functions.",
+            "explanation": "",
+            "kind": "mechanism",
+            "objective": "The balance sheet connects business functions.",
+            "sources": [
+              {
+                "sourceId": "p31s0"
+              }
+            ],
+            "visualDescription": ""
+          },
+          "evidence": [
+            {
+              "documentId": "8588233f-526d-444b-b8a6-a8bfd3f48566",
+              "page": 31,
+              "quote": "5. Company functions\n31\nThe balance sheet connects business functions\nAssets\nInvestment and ALM\nLiquidity management\nMarket and credit risk\nSupports future claim\npayments\nLiabilities\nPricing assumptions\nClaims management\nReserving and provisions\nTiming and amount of\nobligations\nCapital and result\nRisk and capital\nmanagement\nFinance and reporting\nReinsurance\nProfitability and solvency"
+            }
+          ],
+          "issues": [],
+          "contractValid": true
+        },
+        {
+          "candidate": {
+            "topic": "Investment and ALM",
+            "question": "Which balance-sheet category is associated with Investment and ALM?",
+            "answer": "Assets.",
+            "key": "t1c0",
+            "topicDefinition": "Investment and ALM are associated with assets on the balance sheet.",
+            "explanation": "",
+            "kind": "mechanism",
+            "objective": "Investment and ALM are associated with assets on the balance sheet.",
+            "sources": [
+              {
+                "sourceId": "p31s0"
+              }
+            ],
+            "visualDescription": ""
+          },
+          "evidence": [
+            {
+              "documentId": "8588233f-526d-444b-b8a6-a8bfd3f48566",
+              "page": 31,
+              "quote": "5. Company functions\n31\nThe balance sheet connects business functions\nAssets\nInvestment and ALM\nLiquidity management\nMarket and credit risk\nSupports future claim\npayments\nLiabilities\nPricing assumptions\nClaims management\nReserving and provisions\nTiming and amount of\nobligations\nCapital and result\nRisk and capital\nmanagement\nFinance and reporting\nReinsurance\nProfitability and solvency"
+            }
+          ],
+          "issues": [],
+          "contractValid": true
+        },
+        {
+          "candidate": {
+            "topic": "Asset support for claims",
+            "question": "What do assets support in the balance-sheet model?",
+            "answer": "future claim payments.",
+            "key": "t4c0",
+            "topicDefinition": "Assets support future claim payments.",
+            "explanation": "",
+            "kind": "mechanism",
+            "objective": "Assets support future claim payments.",
+            "sources": [
+              {
+                "sourceId": "p31s0"
+              }
+            ],
+            "visualDescription": ""
+          },
+          "evidence": [
+            {
+              "documentId": "8588233f-526d-444b-b8a6-a8bfd3f48566",
+              "page": 31,
+              "quote": "5. Company functions\n31\nThe balance sheet connects business functions\nAssets\nInvestment and ALM\nLiquidity management\nMarket and credit risk\nSupports future claim\npayments\nLiabilities\nPricing assumptions\nClaims management\nReserving and provisions\nTiming and amount of\nobligations\nCapital and result\nRisk and capital\nmanagement\nFinance and reporting\nReinsurance\nProfitability and solvency"
+            }
+          ],
+          "issues": [],
+          "contractValid": true
+        },
+        {
+          "candidate": {
+            "topic": "Reserving and provisions",
+            "question": "Which balance-sheet category is associated with Reserving and provisions?",
+            "answer": "Liabilities.",
+            "key": "t7c0",
+            "topicDefinition": "Reserving and provisions are associated with liabilities on the balance sheet.",
+            "explanation": "",
+            "kind": "mechanism",
+            "objective": "Reserving and provisions are associated with liabilities on the balance sheet.",
+            "sources": [
+              {
+                "sourceId": "p31s0"
+              }
+            ],
+            "visualDescription": ""
+          },
+          "evidence": [
+            {
+              "documentId": "8588233f-526d-444b-b8a6-a8bfd3f48566",
+              "page": 31,
+              "quote": "5. Company functions\n31\nThe balance sheet connects business functions\nAssets\nInvestment and ALM\nLiquidity management\nMarket and credit risk\nSupports future claim\npayments\nLiabilities\nPricing assumptions\nClaims management\nReserving and provisions\nTiming and amount of\nobligations\nCapital and result\nRisk and capital\nmanagement\nFinance and reporting\nReinsurance\nProfitability and solvency"
+            }
+          ],
+          "issues": [],
+          "contractValid": true
+        },
+        {
+          "candidate": {
+            "topic": "Reinsurance",
+            "question": "Which balance-sheet category is associated with Reinsurance?",
+            "answer": "Capital and result.",
+            "key": "t11c0",
+            "topicDefinition": "Reinsurance is associated with capital and result on the balance sheet.",
+            "explanation": "",
+            "kind": "mechanism",
+            "objective": "Reinsurance is associated with capital and result on the balance sheet.",
+            "sources": [
+              {
+                "sourceId": "p31s0"
+              }
+            ],
+            "visualDescription": ""
+          },
+          "evidence": [
+            {
+              "documentId": "8588233f-526d-444b-b8a6-a8bfd3f48566",
+              "page": 31,
+              "quote": "5. Company functions\n31\nThe balance sheet connects business functions\nAssets\nInvestment and ALM\nLiquidity management\nMarket and credit risk\nSupports future claim\npayments\nLiabilities\nPricing assumptions\nClaims management\nReserving and provisions\nTiming and amount of\nobligations\nCapital and result\nRisk and capital\nmanagement\nFinance and reporting\nReinsurance\nProfitability and solvency"
+            }
+          ],
+          "issues": [],
+          "contractValid": true
+        }
+      ],
+      "excludedCards": [],
+      "diagnostics": []
+    },
+    {
+      "version": "direct-cards-v7-selected-knowledge",
+      "planPromptHash": "f2c731b65df2221b2ae3b27150a52955b413048a923e4997cd2f50697ad87c72",
+      "writerPromptHash": "6f076c8fd18baa6af512108f2c24026408e1f481b1bf27351dd05e3f10bf1fec",
+      "reviewPromptHash": "be0faa290172ca195a95b9cb81e2c06cd06735b3888fa331ed7e947299bcd8d3",
+      "writerModel": "OpenAI (gpt-4o)",
+      "reviewModel": "OpenAI (gpt-4o)",
+      "cardDetail": "key-ideas",
+      "sourceRevision": "40c08283209f5e7faec058eb9f2f994b56d88e2b975d8cd67ae1dc80dc6bdcf8",
+      "pdfSha256": "438f0286f8310855dd51bcb0db76aafbea5c5551b8dcf160cbc0a5feeb4160af",
+      "sourceOrigin": "pdf",
+      "pages": [
+        23
+      ],
+      "imagePages": [
+        23
+      ],
+      "draft": {
+        "knowledge": [
+          {
+            "page": 23,
+            "claim": "The purpose of life insurance is to protect income or build savings.",
+            "sourceIds": [
+              "p23s0"
+            ],
+            "exclusionReason": "",
+            "importance": "core",
+            "recall": {
+              "topic": "Life insurance",
+              "question": "What is the main purpose of life insurance?",
+              "answer": "Protect income or build savings.",
+              "kind": "definition"
+            },
+            "selected": true,
+            "key": "t0",
+            "cardKeys": [
+              "t0c0"
+            ],
+            "issues": []
+          },
+          {
+            "page": 23,
+            "claim": "Life insurance is associated with death, longevity, retirement or savings benefit.",
+            "sourceIds": [
+              "p23s0"
+            ],
+            "exclusionReason": "",
+            "importance": "supporting",
+            "recall": {
+              "topic": "Life insurance",
+              "question": "What typical risks or benefits are associated with life insurance?",
+              "answer": "Death, longevity, retirement or savings benefit.",
+              "kind": "mechanism"
+            },
+            "selected": false,
+            "key": "t1",
+            "cardKeys": [],
+            "issues": []
+          },
+          {
+            "page": 23,
+            "claim": "The financial features of life insurance are long duration and investment sensitivity.",
+            "sourceIds": [
+              "p23s0"
+            ],
+            "exclusionReason": "",
+            "importance": "core",
+            "recall": {
+              "topic": "Life insurance",
+              "question": "What financial features are associated with life insurance?",
+              "answer": "Long duration and investment sensitivity.",
+              "kind": "mechanism"
+            },
+            "selected": true,
+            "key": "t2",
+            "cardKeys": [
+              "t2c0"
+            ],
+            "issues": []
+          },
+          {
+            "page": 23,
+            "claim": "The purpose of property and casualty insurance is to protect property and legal liability.",
+            "sourceIds": [
+              "p23s0"
+            ],
+            "exclusionReason": "",
+            "importance": "core",
+            "recall": {
+              "topic": "Property and casualty insurance",
+              "question": "What is the main purpose of property and casualty insurance?",
+              "answer": "Protect property and legal liability.",
+              "kind": "definition"
+            },
+            "selected": true,
+            "key": "t3",
+            "cardKeys": [
+              "t3c0"
+            ],
+            "issues": []
+          },
+          {
+            "page": 23,
+            "claim": "Property and casualty insurance is associated with motor, property, accident or liability loss.",
+            "sourceIds": [
+              "p23s0"
+            ],
+            "exclusionReason": "",
+            "importance": "supporting",
+            "recall": {
+              "topic": "Property and casualty insurance",
+              "question": "What typical risks or benefits are associated with property and casualty insurance?",
+              "answer": "Motor, property, accident or liability loss.",
+              "kind": "mechanism"
+            },
+            "selected": false,
+            "key": "t4",
+            "cardKeys": [],
+            "issues": []
+          },
+          {
+            "page": 23,
+            "claim": "The financial features of property and casualty insurance are claims frequency and severity.",
+            "sourceIds": [
+              "p23s0"
+            ],
+            "exclusionReason": "",
+            "importance": "core",
+            "recall": {
+              "topic": "Property and casualty insurance",
+              "question": "What financial features are associated with property and casualty insurance?",
+              "answer": "Claims frequency and severity.",
+              "kind": "mechanism"
+            },
+            "selected": true,
+            "key": "t5",
+            "cardKeys": [
+              "t5c0"
+            ],
+            "issues": []
+          },
+          {
+            "page": 23,
+            "claim": "The purpose of health and accident insurance is to fund medical care or replace income.",
+            "sourceIds": [
+              "p23s0"
+            ],
+            "exclusionReason": "",
+            "importance": "core",
+            "recall": {
+              "topic": "Health and accident insurance",
+              "question": "What is the main purpose of health and accident insurance?",
+              "answer": "Fund medical care or replace income.",
+              "kind": "definition"
+            },
+            "selected": true,
+            "key": "t6",
+            "cardKeys": [
+              "t6c0"
+            ],
+            "issues": []
+          },
+          {
+            "page": 23,
+            "claim": "Health and accident insurance is associated with medical expense, disability or accident.",
+            "sourceIds": [
+              "p23s0"
+            ],
+            "exclusionReason": "",
+            "importance": "supporting",
+            "recall": {
+              "topic": "Health and accident insurance",
+              "question": "What typical risks or benefits are associated with health and accident insurance?",
+              "answer": "Medical expense, disability or accident.",
+              "kind": "mechanism"
+            },
+            "selected": false,
+            "key": "t7",
+            "cardKeys": [],
+            "issues": []
+          },
+          {
+            "page": 23,
+            "claim": "The financial features of health and accident insurance are claims experience and healthcare inflation.",
+            "sourceIds": [
+              "p23s0"
+            ],
+            "exclusionReason": "",
+            "importance": "core",
+            "recall": {
+              "topic": "Health and accident insurance",
+              "question": "What financial features are associated with health and accident insurance?",
+              "answer": "Claims experience and healthcare inflation.",
+              "kind": "mechanism"
+            },
+            "selected": true,
+            "key": "t8",
+            "cardKeys": [
+              "t8c0"
+            ],
+            "issues": []
+          },
+          {
+            "page": 23,
+            "claim": "The purpose of reinsurance is to protect an insurer.",
+            "sourceIds": [
+              "p23s0"
+            ],
+            "exclusionReason": "",
+            "importance": "core",
+            "recall": {
+              "topic": "Reinsurance",
+              "question": "What is the main purpose of reinsurance?",
+              "answer": "Protect an insurer.",
+              "kind": "definition"
+            },
+            "selected": true,
+            "key": "t9",
+            "cardKeys": [
+              "t9c0"
+            ],
+            "issues": []
+          },
+          {
+            "page": 23,
+            "claim": "Reinsurance is associated with large, volatile or accumulated insurance losses.",
+            "sourceIds": [
+              "p23s0"
+            ],
+            "exclusionReason": "",
+            "importance": "supporting",
+            "recall": {
+              "topic": "Reinsurance",
+              "question": "What typical risks or benefits are associated with reinsurance?",
+              "answer": "Large, volatile or accumulated insurance losses.",
+              "kind": "mechanism"
+            },
+            "selected": false,
+            "key": "t10",
+            "cardKeys": [],
+            "issues": []
+          },
+          {
+            "page": 23,
+            "claim": "The financial features of reinsurance are ceded premium and claim recoveries.",
+            "sourceIds": [
+              "p23s0"
+            ],
+            "exclusionReason": "",
+            "importance": "core",
+            "recall": {
+              "topic": "Reinsurance",
+              "question": "What financial features are associated with reinsurance?",
+              "answer": "Ceded premium and claim recoveries.",
+              "kind": "mechanism"
+            },
+            "selected": true,
+            "key": "t11",
+            "cardKeys": [
+              "t11c0"
+            ],
+            "issues": []
+          },
+          {
+            "page": 23,
+            "claim": "The purpose of captive insurance is to finance a corporate group's own risks.",
+            "sourceIds": [
+              "p23s0"
+            ],
+            "exclusionReason": "",
+            "importance": "core",
+            "recall": {
+              "topic": "Captive insurance",
+              "question": "What is the main purpose of captive insurance?",
+              "answer": "Finance a corporate group's own risks.",
+              "kind": "definition"
+            },
+            "selected": true,
+            "key": "t12",
+            "cardKeys": [
+              "t12c0"
+            ],
+            "issues": []
+          },
+          {
+            "page": 23,
+            "claim": "Captive insurance is associated with risks retained within the group.",
+            "sourceIds": [
+              "p23s0"
+            ],
+            "exclusionReason": "",
+            "importance": "supporting",
+            "recall": {
+              "topic": "Captive insurance",
+              "question": "What typical risks or benefits are associated with captive insurance?",
+              "answer": "Risks retained within the group.",
+              "kind": "mechanism"
+            },
+            "selected": false,
+            "key": "t13",
+            "cardKeys": [],
+            "issues": []
+          },
+          {
+            "page": 23,
+            "claim": "The financial features of captive insurance are risk retention with external protection when needed.",
+            "sourceIds": [
+              "p23s0"
+            ],
+            "exclusionReason": "",
+            "importance": "core",
+            "recall": {
+              "topic": "Captive insurance",
+              "question": "What financial features are associated with captive insurance?",
+              "answer": "Risk retention with external protection when needed.",
+              "kind": "mechanism"
+            },
+            "selected": true,
+            "key": "t14",
+            "cardKeys": [
+              "t14c0"
+            ],
+            "issues": []
+          },
+          {
+            "page": 23,
+            "claim": "Product classification can overlap. The purpose and risk transfer matter more than the label.",
+            "sourceIds": [
+              "p23s0"
+            ],
+            "exclusionReason": "",
+            "recall": {
+              "topic": "Insurance product classification",
+              "question": "When insurance product classifications overlap, what matters more than the label?",
+              "answer": "The purpose and risk transfer."
+            },
+            "selected": true,
+            "key": "t15",
+            "cardKeys": [
+              "t15c0"
+            ],
+            "issues": []
+          }
+        ],
+        "cards": [
+          {
+            "topic": "Life insurance",
+            "question": "What is the main purpose of life insurance?",
+            "answer": "Protect income or build savings.",
+            "kind": "definition",
+            "key": "t0c0",
+            "topicDefinition": "The purpose of life insurance is to protect income or build savings.",
+            "explanation": "",
+            "objective": "The purpose of life insurance is to protect income or build savings.",
+            "sources": [
+              {
+                "sourceId": "p23s0"
+              }
+            ],
+            "visualDescription": ""
+          },
+          {
+            "topic": "Life insurance",
+            "question": "What financial features are associated with life insurance?",
+            "answer": "Long duration and investment sensitivity.",
+            "kind": "mechanism",
+            "key": "t2c0",
+            "topicDefinition": "The financial features of life insurance are long duration and investment sensitivity.",
+            "explanation": "",
+            "objective": "The financial features of life insurance are long duration and investment sensitivity.",
+            "sources": [
+              {
+                "sourceId": "p23s0"
+              }
+            ],
+            "visualDescription": ""
+          },
+          {
+            "topic": "Property and casualty insurance",
+            "question": "What is the main purpose of property and casualty insurance?",
+            "answer": "Protect property and legal liability.",
+            "kind": "definition",
+            "key": "t3c0",
+            "topicDefinition": "The purpose of property and casualty insurance is to protect property and legal liability.",
+            "explanation": "",
+            "objective": "The purpose of property and casualty insurance is to protect property and legal liability.",
+            "sources": [
+              {
+                "sourceId": "p23s0"
+              }
+            ],
+            "visualDescription": ""
+          },
+          {
+            "topic": "Property and casualty insurance",
+            "question": "What financial features are associated with property and casualty insurance?",
+            "answer": "Claims frequency and severity.",
+            "kind": "mechanism",
+            "key": "t5c0",
+            "topicDefinition": "The financial features of property and casualty insurance are claims frequency and severity.",
+            "explanation": "",
+            "objective": "The financial features of property and casualty insurance are claims frequency and severity.",
+            "sources": [
+              {
+                "sourceId": "p23s0"
+              }
+            ],
+            "visualDescription": ""
+          },
+          {
+            "topic": "Health and accident insurance",
+            "question": "What is the main purpose of health and accident insurance?",
+            "answer": "Fund medical care or replace income.",
+            "kind": "definition",
+            "key": "t6c0",
+            "topicDefinition": "The purpose of health and accident insurance is to fund medical care or replace income.",
+            "explanation": "",
+            "objective": "The purpose of health and accident insurance is to fund medical care or replace income.",
+            "sources": [
+              {
+                "sourceId": "p23s0"
+              }
+            ],
+            "visualDescription": ""
+          },
+          {
+            "topic": "Health and accident insurance",
+            "question": "What financial features are associated with health and accident insurance?",
+            "answer": "Claims experience and healthcare inflation.",
+            "kind": "mechanism",
+            "key": "t8c0",
+            "topicDefinition": "The financial features of health and accident insurance are claims experience and healthcare inflation.",
+            "explanation": "",
+            "objective": "The financial features of health and accident insurance are claims experience and healthcare inflation.",
+            "sources": [
+              {
+                "sourceId": "p23s0"
+              }
+            ],
+            "visualDescription": ""
+          },
+          {
+            "topic": "Reinsurance",
+            "question": "What is the main purpose of reinsurance?",
+            "answer": "Protect an insurer.",
+            "kind": "definition",
+            "key": "t9c0",
+            "topicDefinition": "The purpose of reinsurance is to protect an insurer.",
+            "explanation": "",
+            "objective": "The purpose of reinsurance is to protect an insurer.",
+            "sources": [
+              {
+                "sourceId": "p23s0"
+              }
+            ],
+            "visualDescription": ""
+          },
+          {
+            "topic": "Reinsurance",
+            "question": "What financial features are associated with reinsurance?",
+            "answer": "Ceded premium and claim recoveries.",
+            "kind": "mechanism",
+            "key": "t11c0",
+            "topicDefinition": "The financial features of reinsurance are ceded premium and claim recoveries.",
+            "explanation": "",
+            "objective": "The financial features of reinsurance are ceded premium and claim recoveries.",
+            "sources": [
+              {
+                "sourceId": "p23s0"
+              }
+            ],
+            "visualDescription": ""
+          },
+          {
+            "topic": "Captive insurance",
+            "question": "What is the main purpose of captive insurance?",
+            "answer": "Finance a corporate group's own risks.",
+            "kind": "definition",
+            "key": "t12c0",
+            "topicDefinition": "The purpose of captive insurance is to finance a corporate group's own risks.",
+            "explanation": "",
+            "objective": "The purpose of captive insurance is to finance a corporate group's own risks.",
+            "sources": [
+              {
+                "sourceId": "p23s0"
+              }
+            ],
+            "visualDescription": ""
+          },
+          {
+            "topic": "Captive insurance",
+            "question": "What financial features are associated with captive insurance?",
+            "answer": "Risk retention with external protection when needed.",
+            "kind": "mechanism",
+            "key": "t14c0",
+            "topicDefinition": "The financial features of captive insurance are risk retention with external protection when needed.",
+            "explanation": "",
+            "objective": "The financial features of captive insurance are risk retention with external protection when needed.",
+            "sources": [
+              {
+                "sourceId": "p23s0"
+              }
+            ],
+            "visualDescription": ""
+          },
+          {
+            "topic": "Insurance product classification",
+            "question": "When insurance product classifications overlap, what matters more than the label?",
+            "answer": "The purpose and risk transfer.",
+            "key": "t15c0",
+            "topicDefinition": "Product classification can overlap. The purpose and risk transfer matter more than the label.",
+            "explanation": "",
+            "kind": "mechanism",
+            "objective": "Product classification can overlap. The purpose and risk transfer matter more than the label.",
+            "sources": [
+              {
+                "sourceId": "p23s0"
+              }
+            ],
+            "visualDescription": ""
+          }
+        ]
+      },
+      "review": {
+        "targets": [
+          {
+            "key": "t0",
+            "verdict": "supported",
+            "atomic": true,
+            "selectionCorrect": true,
+            "reason": "",
+            "coverageComplete": true
+          },
+          {
+            "key": "t1",
+            "verdict": "supported",
+            "atomic": true,
+            "selectionCorrect": true,
+            "reason": "The claim is supported by the source, but no card is generated for it.",
+            "coverageComplete": false
+          },
+          {
+            "key": "t2",
+            "verdict": "supported",
+            "atomic": true,
+            "selectionCorrect": true,
+            "reason": "",
+            "coverageComplete": true
+          },
+          {
+            "key": "t3",
+            "verdict": "supported",
+            "atomic": true,
+            "selectionCorrect": true,
+            "reason": "",
+            "coverageComplete": true
+          },
+          {
+            "key": "t4",
+            "verdict": "supported",
+            "atomic": true,
+            "selectionCorrect": true,
+            "reason": "The claim is supported by the source, but no card is generated for it.",
+            "coverageComplete": false
+          },
+          {
+            "key": "t5",
+            "verdict": "supported",
+            "atomic": true,
+            "selectionCorrect": true,
+            "reason": "",
+            "coverageComplete": true
+          },
+          {
+            "key": "t6",
+            "verdict": "supported",
+            "atomic": true,
+            "selectionCorrect": true,
+            "reason": "",
+            "coverageComplete": true
+          },
+          {
+            "key": "t7",
+            "verdict": "supported",
+            "atomic": true,
+            "selectionCorrect": true,
+            "reason": "The claim is supported by the source, but no card is generated for it.",
+            "coverageComplete": false
+          },
+          {
+            "key": "t8",
+            "verdict": "supported",
+            "atomic": true,
+            "selectionCorrect": true,
+            "reason": "",
+            "coverageComplete": true
+          },
+          {
+            "key": "t9",
+            "verdict": "supported",
+            "atomic": true,
+            "selectionCorrect": true,
+            "reason": "",
+            "coverageComplete": true
+          },
+          {
+            "key": "t10",
+            "verdict": "supported",
+            "atomic": true,
+            "selectionCorrect": true,
+            "reason": "The claim is supported by the source, but no card is generated for it.",
+            "coverageComplete": false
+          },
+          {
+            "key": "t11",
+            "verdict": "supported",
+            "atomic": true,
+            "selectionCorrect": true,
+            "reason": "",
+            "coverageComplete": true
+          },
+          {
+            "key": "t12",
+            "verdict": "supported",
+            "atomic": true,
+            "selectionCorrect": true,
+            "reason": "",
+            "coverageComplete": true
+          },
+          {
+            "key": "t13",
+            "verdict": "supported",
+            "atomic": true,
+            "selectionCorrect": true,
+            "reason": "The claim is supported by the source, but no card is generated for it.",
+            "coverageComplete": false
+          },
+          {
+            "key": "t14",
+            "verdict": "supported",
+            "atomic": true,
+            "selectionCorrect": true,
+            "reason": "",
+            "coverageComplete": true
+          },
+          {
+            "key": "t15",
+            "verdict": "supported",
+            "atomic": true,
+            "selectionCorrect": true,
+            "reason": "",
+            "coverageComplete": true
+          }
+        ],
+        "decisions": [
+          {
+            "key": "t0c0",
+            "complete": true,
+            "scopeCorrect": true,
+            "atomic": true,
+            "unambiguous": true,
+            "relevant": true,
+            "requiresVisualEvidence": false,
+            "duplicateOf": "",
+            "reason": "",
+            "claims": [
+              {
+                "text": "Topic: Life insurance\nConcept definition: The purpose of life insurance is to protect income or build savings.\nQuestion: What is the main purpose of life insurance?\nAnswer: Protect income or build savings.",
+                "verdict": "supported",
+                "evidence": [
+                  {
+                    "sourceId": "p23s0",
+                    "quote": "Main insurance product families\n44\nFamily Customer need Typical risk or benefit Financial feature\nLife Protect income or build\nsavings\nDeath, longevity, retirement or\nsavings benefit\nLong duration and investment\nsensitivity\nProperty and\ncasualty\nProtect property and legal\nliability\nMotor, property, accident or liability\nloss\nClaims frequency and severity\nHealth and\naccident\nFund medical care or replace\nincome\nMedical expense, disability or\naccident\nClaims experience and\nhealthcare inflation\nReinsurance Protect an insurer Large, volatile or accumulated\ninsurance losses\nCeded premium and claim\nrecoveries\nCaptive\ninsurance\nFinance a corporate group's\nown risks\nRisks retained within the group Risk retention with external\nprotection when needed\nProduct classification can overlap. The purpose and risk transfer matter more than the label."
+                  }
+                ],
+                "reasoning": "The claim that the purpose of life insurance is to protect income or build savings is directly supported by the source text, which explicitly states this purpose."
+              }
+            ]
+          },
+          {
+            "key": "t2c0",
+            "complete": true,
+            "scopeCorrect": true,
+            "atomic": true,
+            "unambiguous": true,
+            "relevant": true,
+            "requiresVisualEvidence": false,
+            "duplicateOf": "",
+            "reason": "",
+            "claims": [
+              {
+                "text": "Topic: Life insurance\nConcept definition: The financial features of life insurance are long duration and investment sensitivity.\nQuestion: What financial features are associated with life insurance?\nAnswer: Long duration and investment sensitivity.",
+                "verdict": "supported",
+                "evidence": [
+                  {
+                    "sourceId": "p23s0",
+                    "quote": "Main insurance product families\n44\nFamily Customer need Typical risk or benefit Financial feature\nLife Protect income or build\nsavings\nDeath, longevity, retirement or\nsavings benefit\nLong duration and investment\nsensitivity\nProperty and\ncasualty\nProtect property and legal\nliability\nMotor, property, accident or liability\nloss\nClaims frequency and severity\nHealth and\naccident\nFund medical care or replace\nincome\nMedical expense, disability or\naccident\nClaims experience and\nhealthcare inflation\nReinsurance Protect an insurer Large, volatile or accumulated\ninsurance losses\nCeded premium and claim\nrecoveries\nCaptive\ninsurance\nFinance a corporate group's\nown risks\nRisks retained within the group Risk retention with external\nprotection when needed\nProduct classification can overlap. The purpose and risk transfer matter more than the label."
+                  }
+                ],
+                "reasoning": "The claim regarding the financial features of life insurance being long duration and investment sensitivity is directly supported by the source text, which lists these features."
+              }
+            ]
+          },
+          {
+            "key": "t3c0",
+            "complete": true,
+            "scopeCorrect": true,
+            "atomic": true,
+            "unambiguous": true,
+            "relevant": true,
+            "requiresVisualEvidence": false,
+            "duplicateOf": "",
+            "reason": "",
+            "claims": [
+              {
+                "text": "Topic: Property and casualty insurance\nConcept definition: The purpose of property and casualty insurance is to protect property and legal liability.\nQuestion: What is the main purpose of property and casualty insurance?\nAnswer: Protect property and legal liability.",
+                "verdict": "supported",
+                "evidence": [
+                  {
+                    "sourceId": "p23s0",
+                    "quote": "Main insurance product families\n44\nFamily Customer need Typical risk or benefit Financial feature\nLife Protect income or build\nsavings\nDeath, longevity, retirement or\nsavings benefit\nLong duration and investment\nsensitivity\nProperty and\ncasualty\nProtect property and legal\nliability\nMotor, property, accident or liability\nloss\nClaims frequency and severity\nHealth and\naccident\nFund medical care or replace\nincome\nMedical expense, disability or\naccident\nClaims experience and\nhealthcare inflation\nReinsurance Protect an insurer Large, volatile or accumulated\ninsurance losses\nCeded premium and claim\nrecoveries\nCaptive\ninsurance\nFinance a corporate group's\nown risks\nRisks retained within the group Risk retention with external\nprotection when needed\nProduct classification can overlap. The purpose and risk transfer matter more than the label."
+                  }
+                ],
+                "reasoning": "The claim that the purpose of property and casualty insurance is to protect property and legal liability is directly supported by the source text, which explicitly states this purpose."
+              }
+            ]
+          },
+          {
+            "key": "t5c0",
+            "complete": true,
+            "scopeCorrect": true,
+            "atomic": true,
+            "unambiguous": true,
+            "relevant": true,
+            "requiresVisualEvidence": false,
+            "duplicateOf": "",
+            "reason": "",
+            "claims": [
+              {
+                "text": "Topic: Property and casualty insurance\nConcept definition: The financial features of property and casualty insurance are claims frequency and severity.\nQuestion: What financial features are associated with property and casualty insurance?\nAnswer: Claims frequency and severity.",
+                "verdict": "supported",
+                "evidence": [
+                  {
+                    "sourceId": "p23s0",
+                    "quote": "Main insurance product families\n44\nFamily Customer need Typical risk or benefit Financial feature\nLife Protect income or build\nsavings\nDeath, longevity, retirement or\nsavings benefit\nLong duration and investment\nsensitivity\nProperty and\ncasualty\nProtect property and legal\nliability\nMotor, property, accident or liability\nloss\nClaims frequency and severity\nHealth and\naccident\nFund medical care or replace\nincome\nMedical expense, disability or\naccident\nClaims experience and\nhealthcare inflation\nReinsurance Protect an insurer Large, volatile or accumulated\ninsurance losses\nCeded premium and claim\nrecoveries\nCaptive\ninsurance\nFinance a corporate group's\nown risks\nRisks retained within the group Risk retention with external\nprotection when needed\nProduct classification can overlap. The purpose and risk transfer matter more than the label."
+                  }
+                ],
+                "reasoning": "The claim regarding the financial features of property and casualty insurance being claims frequency and severity is directly supported by the source text, which lists these features."
+              }
+            ]
+          },
+          {
+            "key": "t6c0",
+            "complete": true,
+            "scopeCorrect": true,
+            "atomic": true,
+            "unambiguous": true,
+            "relevant": true,
+            "requiresVisualEvidence": false,
+            "duplicateOf": "",
+            "reason": "",
+            "claims": [
+              {
+                "text": "Topic: Health and accident insurance\nConcept definition: The purpose of health and accident insurance is to fund medical care or replace income.\nQuestion: What is the main purpose of health and accident insurance?\nAnswer: Fund medical care or replace income.",
+                "verdict": "supported",
+                "evidence": [
+                  {
+                    "sourceId": "p23s0",
+                    "quote": "Main insurance product families\n44\nFamily Customer need Typical risk or benefit Financial feature\nLife Protect income or build\nsavings\nDeath, longevity, retirement or\nsavings benefit\nLong duration and investment\nsensitivity\nProperty and\ncasualty\nProtect property and legal\nliability\nMotor, property, accident or liability\nloss\nClaims frequency and severity\nHealth and\naccident\nFund medical care or replace\nincome\nMedical expense, disability or\naccident\nClaims experience and\nhealthcare inflation\nReinsurance Protect an insurer Large, volatile or accumulated\ninsurance losses\nCeded premium and claim\nrecoveries\nCaptive\ninsurance\nFinance a corporate group's\nown risks\nRisks retained within the group Risk retention with external\nprotection when needed\nProduct classification can overlap. The purpose and risk transfer matter more than the label."
+                  }
+                ],
+                "reasoning": "The claim that the purpose of health and accident insurance is to fund medical care or replace income is directly supported by the source text, which explicitly states this purpose."
+              }
+            ]
+          },
+          {
+            "key": "t8c0",
+            "complete": true,
+            "scopeCorrect": true,
+            "atomic": true,
+            "unambiguous": true,
+            "relevant": true,
+            "requiresVisualEvidence": false,
+            "duplicateOf": "",
+            "reason": "",
+            "claims": [
+              {
+                "text": "Topic: Health and accident insurance\nConcept definition: The financial features of health and accident insurance are claims experience and healthcare inflation.\nQuestion: What financial features are associated with health and accident insurance?\nAnswer: Claims experience and healthcare inflation.",
+                "verdict": "supported",
+                "evidence": [
+                  {
+                    "sourceId": "p23s0",
+                    "quote": "Main insurance product families\n44\nFamily Customer need Typical risk or benefit Financial feature\nLife Protect income or build\nsavings\nDeath, longevity, retirement or\nsavings benefit\nLong duration and investment\nsensitivity\nProperty and\ncasualty\nProtect property and legal\nliability\nMotor, property, accident or liability\nloss\nClaims frequency and severity\nHealth and\naccident\nFund medical care or replace\nincome\nMedical expense, disability or\naccident\nClaims experience and\nhealthcare inflation\nReinsurance Protect an insurer Large, volatile or accumulated\ninsurance losses\nCeded premium and claim\nrecoveries\nCaptive\ninsurance\nFinance a corporate group's\nown risks\nRisks retained within the group Risk retention with external\nprotection when needed\nProduct classification can overlap. The purpose and risk transfer matter more than the label."
+                  }
+                ],
+                "reasoning": "The claim regarding the financial features of health and accident insurance being claims experience and healthcare inflation is directly supported by the source text, which lists these features."
+              }
+            ]
+          },
+          {
+            "key": "t9c0",
+            "complete": true,
+            "scopeCorrect": true,
+            "atomic": true,
+            "unambiguous": true,
+            "relevant": true,
+            "requiresVisualEvidence": false,
+            "duplicateOf": "",
+            "reason": "",
+            "claims": [
+              {
+                "text": "Topic: Reinsurance\nConcept definition: The purpose of reinsurance is to protect an insurer.\nQuestion: What is the main purpose of reinsurance?\nAnswer: Protect an insurer.",
+                "verdict": "supported",
+                "evidence": [
+                  {
+                    "sourceId": "p23s0",
+                    "quote": "Main insurance product families\n44\nFamily Customer need Typical risk or benefit Financial feature\nLife Protect income or build\nsavings\nDeath, longevity, retirement or\nsavings benefit\nLong duration and investment\nsensitivity\nProperty and\ncasualty\nProtect property and legal\nliability\nMotor, property, accident or liability\nloss\nClaims frequency and severity\nHealth and\naccident\nFund medical care or replace\nincome\nMedical expense, disability or\naccident\nClaims experience and\nhealthcare inflation\nReinsurance Protect an insurer Large, volatile or accumulated\ninsurance losses\nCeded premium and claim\nrecoveries\nCaptive\ninsurance\nFinance a corporate group's\nown risks\nRisks retained within the group Risk retention with external\nprotection when needed\nProduct classification can overlap. The purpose and risk transfer matter more than the label."
+                  }
+                ],
+                "reasoning": "The claim that the purpose of reinsurance is to protect an insurer is directly supported by the source text, which explicitly states this purpose."
+              }
+            ]
+          },
+          {
+            "key": "t11c0",
+            "complete": true,
+            "scopeCorrect": true,
+            "atomic": true,
+            "unambiguous": true,
+            "relevant": true,
+            "requiresVisualEvidence": false,
+            "duplicateOf": "",
+            "reason": "",
+            "claims": [
+              {
+                "text": "Topic: Reinsurance\nConcept definition: The financial features of reinsurance are ceded premium and claim recoveries.\nQuestion: What financial features are associated with reinsurance?\nAnswer: Ceded premium and claim recoveries.",
+                "verdict": "supported",
+                "evidence": [
+                  {
+                    "sourceId": "p23s0",
+                    "quote": "Main insurance product families\n44\nFamily Customer need Typical risk or benefit Financial feature\nLife Protect income or build\nsavings\nDeath, longevity, retirement or\nsavings benefit\nLong duration and investment\nsensitivity\nProperty and\ncasualty\nProtect property and legal\nliability\nMotor, property, accident or liability\nloss\nClaims frequency and severity\nHealth and\naccident\nFund medical care or replace\nincome\nMedical expense, disability or\naccident\nClaims experience and\nhealthcare inflation\nReinsurance Protect an insurer Large, volatile or accumulated\ninsurance losses\nCeded premium and claim\nrecoveries\nCaptive\ninsurance\nFinance a corporate group's\nown risks\nRisks retained within the group Risk retention with external\nprotection when needed\nProduct classification can overlap. The purpose and risk transfer matter more than the label."
+                  }
+                ],
+                "reasoning": "The claim regarding the financial features of reinsurance being ceded premium and claim recoveries is directly supported by the source text, which lists these features."
+              }
+            ]
+          },
+          {
+            "key": "t12c0",
+            "complete": true,
+            "scopeCorrect": true,
+            "atomic": true,
+            "unambiguous": true,
+            "relevant": true,
+            "requiresVisualEvidence": false,
+            "duplicateOf": "",
+            "reason": "",
+            "claims": [
+              {
+                "text": "Topic: Captive insurance\nConcept definition: The purpose of captive insurance is to finance a corporate group's own risks.\nQuestion: What is the main purpose of captive insurance?\nAnswer: Finance a corporate group's own risks.",
+                "verdict": "supported",
+                "evidence": [
+                  {
+                    "sourceId": "p23s0",
+                    "quote": "Main insurance product families\n44\nFamily Customer need Typical risk or benefit Financial feature\nLife Protect income or build\nsavings\nDeath, longevity, retirement or\nsavings benefit\nLong duration and investment\nsensitivity\nProperty and\ncasualty\nProtect property and legal\nliability\nMotor, property, accident or liability\nloss\nClaims frequency and severity\nHealth and\naccident\nFund medical care or replace\nincome\nMedical expense, disability or\naccident\nClaims experience and\nhealthcare inflation\nReinsurance Protect an insurer Large, volatile or accumulated\ninsurance losses\nCeded premium and claim\nrecoveries\nCaptive\ninsurance\nFinance a corporate group's\nown risks\nRisks retained within the group Risk retention with external\nprotection when needed\nProduct classification can overlap. The purpose and risk transfer matter more than the label."
+                  }
+                ],
+                "reasoning": "The claim that the purpose of captive insurance is to finance a corporate group's own risks is directly supported by the source text, which explicitly states this purpose."
+              }
+            ]
+          },
+          {
+            "key": "t14c0",
+            "complete": true,
+            "scopeCorrect": true,
+            "atomic": true,
+            "unambiguous": true,
+            "relevant": true,
+            "requiresVisualEvidence": false,
+            "duplicateOf": "",
+            "reason": "",
+            "claims": [
+              {
+                "text": "Topic: Captive insurance\nConcept definition: The financial features of captive insurance are risk retention with external protection when needed.\nQuestion: What financial features are associated with captive insurance?\nAnswer: Risk retention with external protection when needed.",
+                "verdict": "supported",
+                "evidence": [
+                  {
+                    "sourceId": "p23s0",
+                    "quote": "Main insurance product families\n44\nFamily Customer need Typical risk or benefit Financial feature\nLife Protect income or build\nsavings\nDeath, longevity, retirement or\nsavings benefit\nLong duration and investment\nsensitivity\nProperty and\ncasualty\nProtect property and legal\nliability\nMotor, property, accident or liability\nloss\nClaims frequency and severity\nHealth and\naccident\nFund medical care or replace\nincome\nMedical expense, disability or\naccident\nClaims experience and\nhealthcare inflation\nReinsurance Protect an insurer Large, volatile or accumulated\ninsurance losses\nCeded premium and claim\nrecoveries\nCaptive\ninsurance\nFinance a corporate group's\nown risks\nRisks retained within the group Risk retention with external\nprotection when needed\nProduct classification can overlap. The purpose and risk transfer matter more than the label."
+                  }
+                ],
+                "reasoning": "The claim regarding the financial features of captive insurance being risk retention with external protection when needed is directly supported by the source text, which lists these features."
+              }
+            ]
+          },
+          {
+            "key": "t15c0",
+            "complete": true,
+            "scopeCorrect": true,
+            "atomic": true,
+            "unambiguous": true,
+            "relevant": true,
+            "requiresVisualEvidence": false,
+            "duplicateOf": "",
+            "reason": "",
+            "claims": [
+              {
+                "text": "Topic: Insurance product classification\nConcept definition: Product classification can overlap. The purpose and risk transfer matter more than the label.\nQuestion: When insurance product classifications overlap, what matters more than the label?\nAnswer: The purpose and risk transfer.",
+                "verdict": "supported",
+                "evidence": [
+                  {
+                    "sourceId": "p23s0",
+                    "quote": "Main insurance product families\n44\nFamily Customer need Typical risk or benefit Financial feature\nLife Protect income or build\nsavings\nDeath, longevity, retirement or\nsavings benefit\nLong duration and investment\nsensitivity\nProperty and\ncasualty\nProtect property and legal\nliability\nMotor, property, accident or liability\nloss\nClaims frequency and severity\nHealth and\naccident\nFund medical care or replace\nincome\nMedical expense, disability or\naccident\nClaims experience and\nhealthcare inflation\nReinsurance Protect an insurer Large, volatile or accumulated\ninsurance losses\nCeded premium and claim\nrecoveries\nCaptive\ninsurance\nFinance a corporate group's\nown risks\nRisks retained within the group Risk retention with external\nprotection when needed\nProduct classification can overlap. The purpose and risk transfer matter more than the label."
+                  }
+                ],
+                "reasoning": "The claim that product classification can overlap and that the purpose and risk transfer matter more than the label is directly supported by the source text, which explicitly states this."
+              }
+            ]
+          }
+        ],
+        "pages": [
+          {
+            "page": 23,
+            "excluded": false,
+            "reason": "",
+            "objectives": [
+              {
+                "description": "The purpose of life insurance is to protect income or build savings.",
+                "cardKeys": [
+                  "t0c0"
+                ]
+              },
+              {
+                "description": "Life insurance is associated with death, longevity, retirement or savings benefit.",
+                "cardKeys": []
+              },
+              {
+                "description": "The financial features of life insurance are long duration and investment sensitivity.",
+                "cardKeys": [
+                  "t2c0"
+                ]
+              },
+              {
+                "description": "The purpose of property and casualty insurance is to protect property and legal liability.",
+                "cardKeys": [
+                  "t3c0"
+                ]
+              },
+              {
+                "description": "Property and casualty insurance is associated with motor, property, accident or liability loss.",
+                "cardKeys": []
+              },
+              {
+                "description": "The financial features of property and casualty insurance are claims frequency and severity.",
+                "cardKeys": [
+                  "t5c0"
+                ]
+              },
+              {
+                "description": "The purpose of health and accident insurance is to fund medical care or replace income.",
+                "cardKeys": [
+                  "t6c0"
+                ]
+              },
+              {
+                "description": "Health and accident insurance is associated with medical expense, disability or accident.",
+                "cardKeys": []
+              },
+              {
+                "description": "The financial features of health and accident insurance are claims experience and healthcare inflation.",
+                "cardKeys": [
+                  "t8c0"
+                ]
+              },
+              {
+                "description": "The purpose of reinsurance is to protect an insurer.",
+                "cardKeys": [
+                  "t9c0"
+                ]
+              },
+              {
+                "description": "Reinsurance is associated with large, volatile or accumulated insurance losses.",
+                "cardKeys": []
+              },
+              {
+                "description": "The financial features of reinsurance are ceded premium and claim recoveries.",
+                "cardKeys": [
+                  "t11c0"
+                ]
+              },
+              {
+                "description": "The purpose of captive insurance is to finance a corporate group's own risks.",
+                "cardKeys": [
+                  "t12c0"
+                ]
+              },
+              {
+                "description": "Captive insurance is associated with risks retained within the group.",
+                "cardKeys": []
+              },
+              {
+                "description": "The financial features of captive insurance are risk retention with external protection when needed.",
+                "cardKeys": [
+                  "t14c0"
+                ]
+              },
+              {
+                "description": "Product classification can overlap. The purpose and risk transfer matter more than the label.",
+                "cardKeys": [
+                  "t15c0"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "cards": [
+        {
+          "candidate": {
+            "topic": "Life insurance",
+            "question": "What is the main purpose of life insurance?",
+            "answer": "Protect income or build savings.",
+            "kind": "definition",
+            "key": "t0c0",
+            "topicDefinition": "The purpose of life insurance is to protect income or build savings.",
+            "explanation": "",
+            "objective": "The purpose of life insurance is to protect income or build savings.",
+            "sources": [
+              {
+                "sourceId": "p23s0"
+              }
+            ],
+            "visualDescription": ""
+          },
+          "evidence": [
+            {
+              "documentId": "8588233f-526d-444b-b8a6-a8bfd3f48566",
+              "page": 23,
+              "quote": "Main insurance product families\n44\nFamily Customer need Typical risk or benefit Financial feature\nLife Protect income or build\nsavings\nDeath, longevity, retirement or\nsavings benefit\nLong duration and investment\nsensitivity\nProperty and\ncasualty\nProtect property and legal\nliability\nMotor, property, accident or liability\nloss\nClaims frequency and severity\nHealth and\naccident\nFund medical care or replace\nincome\nMedical expense, disability or\naccident\nClaims experience and\nhealthcare inflation\nReinsurance Protect an insurer Large, volatile or accumulated\ninsurance losses\nCeded premium and claim\nrecoveries\nCaptive\ninsurance\nFinance a corporate group's\nown risks\nRisks retained within the group Risk retention with external\nprotection when needed\nProduct classification can overlap. The purpose and risk transfer matter more than the label."
+            }
+          ],
+          "issues": [],
+          "contractValid": true
+        },
+        {
+          "candidate": {
+            "topic": "Life insurance",
+            "question": "What financial features are associated with life insurance?",
+            "answer": "Long duration and investment sensitivity.",
+            "kind": "mechanism",
+            "key": "t2c0",
+            "topicDefinition": "The financial features of life insurance are long duration and investment sensitivity.",
+            "explanation": "",
+            "objective": "The financial features of life insurance are long duration and investment sensitivity.",
+            "sources": [
+              {
+                "sourceId": "p23s0"
+              }
+            ],
+            "visualDescription": ""
+          },
+          "evidence": [
+            {
+              "documentId": "8588233f-526d-444b-b8a6-a8bfd3f48566",
+              "page": 23,
+              "quote": "Main insurance product families\n44\nFamily Customer need Typical risk or benefit Financial feature\nLife Protect income or build\nsavings\nDeath, longevity, retirement or\nsavings benefit\nLong duration and investment\nsensitivity\nProperty and\ncasualty\nProtect property and legal\nliability\nMotor, property, accident or liability\nloss\nClaims frequency and severity\nHealth and\naccident\nFund medical care or replace\nincome\nMedical expense, disability or\naccident\nClaims experience and\nhealthcare inflation\nReinsurance Protect an insurer Large, volatile or accumulated\ninsurance losses\nCeded premium and claim\nrecoveries\nCaptive\ninsurance\nFinance a corporate group's\nown risks\nRisks retained within the group Risk retention with external\nprotection when needed\nProduct classification can overlap. The purpose and risk transfer matter more than the label."
+            }
+          ],
+          "issues": [],
+          "contractValid": true
+        },
+        {
+          "candidate": {
+            "topic": "Property and casualty insurance",
+            "question": "What is the main purpose of property and casualty insurance?",
+            "answer": "Protect property and legal liability.",
+            "kind": "definition",
+            "key": "t3c0",
+            "topicDefinition": "The purpose of property and casualty insurance is to protect property and legal liability.",
+            "explanation": "",
+            "objective": "The purpose of property and casualty insurance is to protect property and legal liability.",
+            "sources": [
+              {
+                "sourceId": "p23s0"
+              }
+            ],
+            "visualDescription": ""
+          },
+          "evidence": [
+            {
+              "documentId": "8588233f-526d-444b-b8a6-a8bfd3f48566",
+              "page": 23,
+              "quote": "Main insurance product families\n44\nFamily Customer need Typical risk or benefit Financial feature\nLife Protect income or build\nsavings\nDeath, longevity, retirement or\nsavings benefit\nLong duration and investment\nsensitivity\nProperty and\ncasualty\nProtect property and legal\nliability\nMotor, property, accident or liability\nloss\nClaims frequency and severity\nHealth and\naccident\nFund medical care or replace\nincome\nMedical expense, disability or\naccident\nClaims experience and\nhealthcare inflation\nReinsurance Protect an insurer Large, volatile or accumulated\ninsurance losses\nCeded premium and claim\nrecoveries\nCaptive\ninsurance\nFinance a corporate group's\nown risks\nRisks retained within the group Risk retention with external\nprotection when needed\nProduct classification can overlap. The purpose and risk transfer matter more than the label."
+            }
+          ],
+          "issues": [],
+          "contractValid": true
+        },
+        {
+          "candidate": {
+            "topic": "Property and casualty insurance",
+            "question": "What financial features are associated with property and casualty insurance?",
+            "answer": "Claims frequency and severity.",
+            "kind": "mechanism",
+            "key": "t5c0",
+            "topicDefinition": "The financial features of property and casualty insurance are claims frequency and severity.",
+            "explanation": "",
+            "objective": "The financial features of property and casualty insurance are claims frequency and severity.",
+            "sources": [
+              {
+                "sourceId": "p23s0"
+              }
+            ],
+            "visualDescription": ""
+          },
+          "evidence": [
+            {
+              "documentId": "8588233f-526d-444b-b8a6-a8bfd3f48566",
+              "page": 23,
+              "quote": "Main insurance product families\n44\nFamily Customer need Typical risk or benefit Financial feature\nLife Protect income or build\nsavings\nDeath, longevity, retirement or\nsavings benefit\nLong duration and investment\nsensitivity\nProperty and\ncasualty\nProtect property and legal\nliability\nMotor, property, accident or liability\nloss\nClaims frequency and severity\nHealth and\naccident\nFund medical care or replace\nincome\nMedical expense, disability or\naccident\nClaims experience and\nhealthcare inflation\nReinsurance Protect an insurer Large, volatile or accumulated\ninsurance losses\nCeded premium and claim\nrecoveries\nCaptive\ninsurance\nFinance a corporate group's\nown risks\nRisks retained within the group Risk retention with external\nprotection when needed\nProduct classification can overlap. The purpose and risk transfer matter more than the label."
+            }
+          ],
+          "issues": [],
+          "contractValid": true
+        },
+        {
+          "candidate": {
+            "topic": "Health and accident insurance",
+            "question": "What is the main purpose of health and accident insurance?",
+            "answer": "Fund medical care or replace income.",
+            "kind": "definition",
+            "key": "t6c0",
+            "topicDefinition": "The purpose of health and accident insurance is to fund medical care or replace income.",
+            "explanation": "",
+            "objective": "The purpose of health and accident insurance is to fund medical care or replace income.",
+            "sources": [
+              {
+                "sourceId": "p23s0"
+              }
+            ],
+            "visualDescription": ""
+          },
+          "evidence": [
+            {
+              "documentId": "8588233f-526d-444b-b8a6-a8bfd3f48566",
+              "page": 23,
+              "quote": "Main insurance product families\n44\nFamily Customer need Typical risk or benefit Financial feature\nLife Protect income or build\nsavings\nDeath, longevity, retirement or\nsavings benefit\nLong duration and investment\nsensitivity\nProperty and\ncasualty\nProtect property and legal\nliability\nMotor, property, accident or liability\nloss\nClaims frequency and severity\nHealth and\naccident\nFund medical care or replace\nincome\nMedical expense, disability or\naccident\nClaims experience and\nhealthcare inflation\nReinsurance Protect an insurer Large, volatile or accumulated\ninsurance losses\nCeded premium and claim\nrecoveries\nCaptive\ninsurance\nFinance a corporate group's\nown risks\nRisks retained within the group Risk retention with external\nprotection when needed\nProduct classification can overlap. The purpose and risk transfer matter more than the label."
+            }
+          ],
+          "issues": [],
+          "contractValid": true
+        },
+        {
+          "candidate": {
+            "topic": "Health and accident insurance",
+            "question": "What financial features are associated with health and accident insurance?",
+            "answer": "Claims experience and healthcare inflation.",
+            "kind": "mechanism",
+            "key": "t8c0",
+            "topicDefinition": "The financial features of health and accident insurance are claims experience and healthcare inflation.",
+            "explanation": "",
+            "objective": "The financial features of health and accident insurance are claims experience and healthcare inflation.",
+            "sources": [
+              {
+                "sourceId": "p23s0"
+              }
+            ],
+            "visualDescription": ""
+          },
+          "evidence": [
+            {
+              "documentId": "8588233f-526d-444b-b8a6-a8bfd3f48566",
+              "page": 23,
+              "quote": "Main insurance product families\n44\nFamily Customer need Typical risk or benefit Financial feature\nLife Protect income or build\nsavings\nDeath, longevity, retirement or\nsavings benefit\nLong duration and investment\nsensitivity\nProperty and\ncasualty\nProtect property and legal\nliability\nMotor, property, accident or liability\nloss\nClaims frequency and severity\nHealth and\naccident\nFund medical care or replace\nincome\nMedical expense, disability or\naccident\nClaims experience and\nhealthcare inflation\nReinsurance Protect an insurer Large, volatile or accumulated\ninsurance losses\nCeded premium and claim\nrecoveries\nCaptive\ninsurance\nFinance a corporate group's\nown risks\nRisks retained within the group Risk retention with external\nprotection when needed\nProduct classification can overlap. The purpose and risk transfer matter more than the label."
+            }
+          ],
+          "issues": [],
+          "contractValid": true
+        },
+        {
+          "candidate": {
+            "topic": "Reinsurance",
+            "question": "What is the main purpose of reinsurance?",
+            "answer": "Protect an insurer.",
+            "kind": "definition",
+            "key": "t9c0",
+            "topicDefinition": "The purpose of reinsurance is to protect an insurer.",
+            "explanation": "",
+            "objective": "The purpose of reinsurance is to protect an insurer.",
+            "sources": [
+              {
+                "sourceId": "p23s0"
+              }
+            ],
+            "visualDescription": ""
+          },
+          "evidence": [
+            {
+              "documentId": "8588233f-526d-444b-b8a6-a8bfd3f48566",
+              "page": 23,
+              "quote": "Main insurance product families\n44\nFamily Customer need Typical risk or benefit Financial feature\nLife Protect income or build\nsavings\nDeath, longevity, retirement or\nsavings benefit\nLong duration and investment\nsensitivity\nProperty and\ncasualty\nProtect property and legal\nliability\nMotor, property, accident or liability\nloss\nClaims frequency and severity\nHealth and\naccident\nFund medical care or replace\nincome\nMedical expense, disability or\naccident\nClaims experience and\nhealthcare inflation\nReinsurance Protect an insurer Large, volatile or accumulated\ninsurance losses\nCeded premium and claim\nrecoveries\nCaptive\ninsurance\nFinance a corporate group's\nown risks\nRisks retained within the group Risk retention with external\nprotection when needed\nProduct classification can overlap. The purpose and risk transfer matter more than the label."
+            }
+          ],
+          "issues": [],
+          "contractValid": true
+        },
+        {
+          "candidate": {
+            "topic": "Reinsurance",
+            "question": "What financial features are associated with reinsurance?",
+            "answer": "Ceded premium and claim recoveries.",
+            "kind": "mechanism",
+            "key": "t11c0",
+            "topicDefinition": "The financial features of reinsurance are ceded premium and claim recoveries.",
+            "explanation": "",
+            "objective": "The financial features of reinsurance are ceded premium and claim recoveries.",
+            "sources": [
+              {
+                "sourceId": "p23s0"
+              }
+            ],
+            "visualDescription": ""
+          },
+          "evidence": [
+            {
+              "documentId": "8588233f-526d-444b-b8a6-a8bfd3f48566",
+              "page": 23,
+              "quote": "Main insurance product families\n44\nFamily Customer need Typical risk or benefit Financial feature\nLife Protect income or build\nsavings\nDeath, longevity, retirement or\nsavings benefit\nLong duration and investment\nsensitivity\nProperty and\ncasualty\nProtect property and legal\nliability\nMotor, property, accident or liability\nloss\nClaims frequency and severity\nHealth and\naccident\nFund medical care or replace\nincome\nMedical expense, disability or\naccident\nClaims experience and\nhealthcare inflation\nReinsurance Protect an insurer Large, volatile or accumulated\ninsurance losses\nCeded premium and claim\nrecoveries\nCaptive\ninsurance\nFinance a corporate group's\nown risks\nRisks retained within the group Risk retention with external\nprotection when needed\nProduct classification can overlap. The purpose and risk transfer matter more than the label."
+            }
+          ],
+          "issues": [],
+          "contractValid": true
+        },
+        {
+          "candidate": {
+            "topic": "Captive insurance",
+            "question": "What is the main purpose of captive insurance?",
+            "answer": "Finance a corporate group's own risks.",
+            "kind": "definition",
+            "key": "t12c0",
+            "topicDefinition": "The purpose of captive insurance is to finance a corporate group's own risks.",
+            "explanation": "",
+            "objective": "The purpose of captive insurance is to finance a corporate group's own risks.",
+            "sources": [
+              {
+                "sourceId": "p23s0"
+              }
+            ],
+            "visualDescription": ""
+          },
+          "evidence": [
+            {
+              "documentId": "8588233f-526d-444b-b8a6-a8bfd3f48566",
+              "page": 23,
+              "quote": "Main insurance product families\n44\nFamily Customer need Typical risk or benefit Financial feature\nLife Protect income or build\nsavings\nDeath, longevity, retirement or\nsavings benefit\nLong duration and investment\nsensitivity\nProperty and\ncasualty\nProtect property and legal\nliability\nMotor, property, accident or liability\nloss\nClaims frequency and severity\nHealth and\naccident\nFund medical care or replace\nincome\nMedical expense, disability or\naccident\nClaims experience and\nhealthcare inflation\nReinsurance Protect an insurer Large, volatile or accumulated\ninsurance losses\nCeded premium and claim\nrecoveries\nCaptive\ninsurance\nFinance a corporate group's\nown risks\nRisks retained within the group Risk retention with external\nprotection when needed\nProduct classification can overlap. The purpose and risk transfer matter more than the label."
+            }
+          ],
+          "issues": [],
+          "contractValid": true
+        },
+        {
+          "candidate": {
+            "topic": "Captive insurance",
+            "question": "What financial features are associated with captive insurance?",
+            "answer": "Risk retention with external protection when needed.",
+            "kind": "mechanism",
+            "key": "t14c0",
+            "topicDefinition": "The financial features of captive insurance are risk retention with external protection when needed.",
+            "explanation": "",
+            "objective": "The financial features of captive insurance are risk retention with external protection when needed.",
+            "sources": [
+              {
+                "sourceId": "p23s0"
+              }
+            ],
+            "visualDescription": ""
+          },
+          "evidence": [
+            {
+              "documentId": "8588233f-526d-444b-b8a6-a8bfd3f48566",
+              "page": 23,
+              "quote": "Main insurance product families\n44\nFamily Customer need Typical risk or benefit Financial feature\nLife Protect income or build\nsavings\nDeath, longevity, retirement or\nsavings benefit\nLong duration and investment\nsensitivity\nProperty and\ncasualty\nProtect property and legal\nliability\nMotor, property, accident or liability\nloss\nClaims frequency and severity\nHealth and\naccident\nFund medical care or replace\nincome\nMedical expense, disability or\naccident\nClaims experience and\nhealthcare inflation\nReinsurance Protect an insurer Large, volatile or accumulated\ninsurance losses\nCeded premium and claim\nrecoveries\nCaptive\ninsurance\nFinance a corporate group's\nown risks\nRisks retained within the group Risk retention with external\nprotection when needed\nProduct classification can overlap. The purpose and risk transfer matter more than the label."
+            }
+          ],
+          "issues": [],
+          "contractValid": true
+        },
+        {
+          "candidate": {
+            "topic": "Insurance product classification",
+            "question": "When insurance product classifications overlap, what matters more than the label?",
+            "answer": "The purpose and risk transfer.",
+            "key": "t15c0",
+            "topicDefinition": "Product classification can overlap. The purpose and risk transfer matter more than the label.",
+            "explanation": "",
+            "kind": "mechanism",
+            "objective": "Product classification can overlap. The purpose and risk transfer matter more than the label.",
+            "sources": [
+              {
+                "sourceId": "p23s0"
+              }
+            ],
+            "visualDescription": ""
+          },
+          "evidence": [
+            {
+              "documentId": "8588233f-526d-444b-b8a6-a8bfd3f48566",
+              "page": 23,
+              "quote": "Main insurance product families\n44\nFamily Customer need Typical risk or benefit Financial feature\nLife Protect income or build\nsavings\nDeath, longevity, retirement or\nsavings benefit\nLong duration and investment\nsensitivity\nProperty and\ncasualty\nProtect property and legal\nliability\nMotor, property, accident or liability\nloss\nClaims frequency and severity\nHealth and\naccident\nFund medical care or replace\nincome\nMedical expense, disability or\naccident\nClaims experience and\nhealthcare inflation\nReinsurance Protect an insurer Large, volatile or accumulated\ninsurance losses\nCeded premium and claim\nrecoveries\nCaptive\ninsurance\nFinance a corporate group's\nown risks\nRisks retained within the group Risk retention with external\nprotection when needed\nProduct classification can overlap. The purpose and risk transfer matter more than the label."
+            }
+          ],
+          "issues": [],
+          "contractValid": true
+        }
+      ],
+      "excludedCards": [],
+      "diagnostics": []
+    }
+  ],
+  "activeAfter": "default"
+}

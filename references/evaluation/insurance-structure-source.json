@@ -1,0 +1,276 @@
+{
+  "page": 32,
+  "text": "Possible structure of an insurance company\n32\nLegal & General\nCounsel\nGroup /central\nFunctions\nIT/Digital\nstrategy\n(CTO)\nHR/People Mgmt Actuarial\nfunction\n(CRO)\nInvestment\nMgmt\n(CIO)\nDistribution &\nPartnerships\nAudit (internal\ncontrol)\nFinance &\nAccounting\n(CFO)\nCompliance Risk\nMgmt/ERM",
+  "layout": {
+    "width": 842,
+    "height": 596,
+    "origin": "pdf",
+    "blocks": [
+      {
+        "id": "B1",
+        "text": "Possible structure of an insurance company",
+        "x": 82.421577,
+        "y": 45.01315099999998,
+        "width": 516.1691792933058,
+        "height": 27.916025,
+        "fontSize": 27.916025,
+        "kind": "text"
+      },
+      {
+        "id": "B2",
+        "text": "32",
+        "x": 742.292664,
+        "y": 552.510246,
+        "width": 14.235200647582094,
+        "height": 12.961006,
+        "fontSize": 12.961006,
+        "kind": "text"
+      },
+      {
+        "id": "B3",
+        "text": "Legal & General",
+        "x": 114.146988,
+        "y": 288.717003,
+        "width": 90.40982160664458,
+        "height": 12.961006,
+        "fontSize": 12.961006,
+        "kind": "text"
+      },
+      {
+        "id": "B4",
+        "text": "Counsel",
+        "x": 135.016522212457,
+        "y": 303.838919764344,
+        "width": 48.67017358873649,
+        "height": 12.961006,
+        "fontSize": 12.961006,
+        "kind": "text"
+      },
+      {
+        "id": "B5",
+        "text": "Group /central",
+        "x": 402.01532,
+        "y": 161.26093300000002,
+        "width": 83.7309736589513,
+        "height": 12.961006,
+        "fontSize": 12.961006,
+        "kind": "text"
+      },
+      {
+        "id": "B6",
+        "text": "Functions",
+        "x": 414.803408599818,
+        "y": 176.38284976434397,
+        "width": 58.09924855345894,
+        "height": 12.961006,
+        "fontSize": 12.961006,
+        "kind": "text"
+      },
+      {
+        "id": "B7",
+        "text": "IT/Digital",
+        "x": 127.257607,
+        "y": 421.453728,
+        "width": 52.30509468037104,
+        "height": 12.961006,
+        "fontSize": 12.961006,
+        "kind": "text"
+      },
+      {
+        "id": "B8",
+        "text": "strategy",
+        "x": 130.053983127384,
+        "y": 436.575644764344,
+        "width": 46.7699596435723,
+        "height": 12.961006,
+        "fontSize": 12.961006,
+        "kind": "text"
+      },
+      {
+        "id": "B9",
+        "text": "(CTO)",
+        "x": 137.413743568396,
+        "y": 451.457510736562,
+        "width": 31.951055334679808,
+        "height": 12.961006,
+        "fontSize": 12.961006,
+        "kind": "text"
+      },
+      {
+        "id": "B10",
+        "text": "HR/People Mgmt",
+        "x": 231.964508,
+        "y": 420.973686,
+        "width": 97.57754480024413,
+        "height": 12.961006,
+        "fontSize": 12.961006,
+        "kind": "text"
+      },
+      {
+        "id": "B11",
+        "text": "Actuarial",
+        "x": 419.411591,
+        "y": 421.453728,
+        "width": 52.940490744859375,
+        "height": 12.961006,
+        "fontSize": 12.961006,
+        "kind": "text"
+      },
+      {
+        "id": "B12",
+        "text": "function",
+        "x": 421.401464733309,
+        "y": 436.575644764344,
+        "width": 48.89319505743749,
+        "height": 12.961006,
+        "fontSize": 12.961006,
+        "kind": "text"
+      },
+      {
+        "id": "B13",
+        "text": "(CRO)",
+        "x": 428.936342150558,
+        "y": 451.457510736562,
+        "width": 33.8228662939316,
+        "height": 12.961006,
+        "fontSize": 12.961006,
+        "kind": "text"
+      },
+      {
+        "id": "B14",
+        "text": "Investment",
+        "x": 546.497559,
+        "y": 421.453728,
+        "width": 65.60669345764839,
+        "height": 12.961006,
+        "fontSize": 12.961006,
+        "kind": "text"
+      },
+      {
+        "id": "B15",
+        "text": "Mgmt",
+        "x": 562.867308854598,
+        "y": 436.575644764344,
+        "width": 32.864861171146444,
+        "height": 12.961006,
+        "fontSize": 12.961006,
+        "kind": "text"
+      },
+      {
+        "id": "B16",
+        "text": "(CIO)",
+        "x": 565.7857004667201,
+        "y": 451.457510736562,
+        "width": 29.66438895365048,
+        "height": 12.961006,
+        "fontSize": 12.961006,
+        "kind": "text"
+      },
+      {
+        "id": "B17",
+        "text": "Distribution &",
+        "x": 667.054626,
+        "y": 420.733635,
+        "width": 80.57900415196663,
+        "height": 12.961006,
+        "fontSize": 12.961006,
+        "kind": "text"
+      },
+      {
+        "id": "B18",
+        "text": "Partnerships",
+        "x": 670.249088339222,
+        "y": 435.61552689423,
+        "width": 74.0864209035097,
+        "height": 12.961006,
+        "fontSize": 12.961006,
+        "kind": "text"
+      },
+      {
+        "id": "B19",
+        "text": "Audit (internal",
+        "x": 390.849762,
+        "y": 288.717003,
+        "width": 82.45557427244911,
+        "height": 12.961006,
+        "fontSize": 12.961006,
+        "kind": "text"
+      },
+      {
+        "id": "B20",
+        "text": "control)",
+        "x": 409.262487079406,
+        "y": 303.838919764344,
+        "width": 45.56969396825789,
+        "height": 12.961006,
+        "fontSize": 12.961006,
+        "kind": "text"
+      },
+      {
+        "id": "B21",
+        "text": "Finance &",
+        "x": 663.181213,
+        "y": 287.276817,
+        "width": 57.668799347947065,
+        "height": 12.961006,
+        "fontSize": 12.961006,
+        "kind": "text"
+      },
+      {
+        "id": "B22",
+        "text": "Accounting",
+        "x": 658.904358994541,
+        "y": 302.398733764344,
+        "width": 66.19900410991617,
+        "height": 12.961006,
+        "fontSize": 12.961006,
+        "kind": "text"
+      },
+      {
+        "id": "B23",
+        "text": "(CFO)",
+        "x": 675.581908268255,
+        "y": 317.280599736562,
+        "width": 32.78380388942977,
+        "height": 12.961006,
+        "fontSize": 12.961006,
+        "kind": "text"
+      },
+      {
+        "id": "B24",
+        "text": "Compliance",
+        "x": 263.251068,
+        "y": 289.677117,
+        "width": 70.89931479931826,
+        "height": 12.961006,
+        "fontSize": 12.961006,
+        "kind": "text"
+      },
+      {
+        "id": "B25",
+        "text": "Risk",
+        "x": 549.980042,
+        "y": 287.276817,
+        "width": 25.101182038146458,
+        "height": 12.961006,
+        "fontSize": 12.961006,
+        "kind": "text"
+      },
+      {
+        "id": "B26",
+        "text": "Mgmt/ERM",
+        "x": 530.6759065766021,
+        "y": 302.398733764344,
+        "width": 63.706378273589586,
+        "height": 12.961006,
+        "fontSize": 12.961006,
+        "kind": "text"
+      }
+    ],
+    "tableCandidates": [],
+    "requiresVisualReview": true,
+    "warnings": [
+      "Multiple reading columns detected; raw PDF item order must be verified against the page image."
+    ]
+  }
+}

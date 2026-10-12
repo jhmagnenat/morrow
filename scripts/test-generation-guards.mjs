@@ -1,0 +1,34 @@
+import assert from 'node:assert/strict';
+import {isolatedModules} from './isolated-modules.mjs';
+const env=await isolatedModules(['sourceCatalog','generationLimits','llmTelemetry','sectionEvidence']);
+const catalog=await env.load('sourceCatalog'),limits=await env.load('generationLimits'),telemetry=await env.load('llmTelemetry');
+const text=('A source-specific claim with conditions, units and limitations. ').repeat(100);
+const snippets=catalog.sourceCatalog([{page:7,text}]);
+assert.equal(snippets.map(s=>s.text).join(''),text,'Snippet catalog retains every character, including boundaries');
+assert(snippets.every(s=>s.text.length<=1001));
+const row='Source condition applies only to the stated scope.\n';
+const rows=catalog.sourceCatalog([{page:1,text:row.repeat(40)}]);
+assert.equal(rows.map(s=>s.text).join(''),row.repeat(40));
+assert(rows.slice(0,-1).every(s=>s.text.endsWith('\n')),'Long sources split at complete rows when available');
+assert.deepEqual(catalog.resolveSourceIds([{sourceId:snippets[1].id}],snippets),[{page:7,quote:snippets[1].text}]);
+assert.throws(()=>catalog.resolveSourceIds([{sourceId:'invented'}],snippets),/Unknown/);
+const repeated=Array.from({length:12},()=>({page:7,quote:text}));
+const identifiers=Array.from({length:12},()=>({sourceId:snippets[0].id}));
+assert(JSON.stringify(identifiers).length<JSON.stringify(repeated).length*.05,'Source identifiers eliminate repeated quotation output on this fixture');
+process.env.MORROW_GENERATION_MAX_REQUESTS='2';process.env.MORROW_GENERATION_MAX_TOKENS='100';
+let calls=0;
+await telemetry.withGenerationBudget({requests:0,inputTokens:0,outputTokens:0},async()=>{
+  await Promise.all([1,2].map(()=>telemetry.observeLlm(async()=>{calls++;return 1;},()=>({input:10,output:10}))));
+  await assert.rejects(telemetry.observeLlm(async()=>{calls++;}),/budget reached/);
+});
+assert.equal(calls,2,'Parallel sections share one request budget and cannot launch a third paid call');
+process.env.MORROW_GENERATION_MAX_REQUESTS='10';
+await telemetry.withGenerationBudget({requests:0,inputTokens:95,outputTokens:5},async()=>{
+  await assert.rejects(telemetry.observeLlm(async()=>{calls++;}),/budget reached/);
+});
+assert.equal(calls,2,'A resumed job retains its spent token budget');
+process.env.MORROW_INPUT_USD_PER_MILLION='1';process.env.MORROW_OUTPUT_USD_PER_MILLION='4';
+assert.equal(limits.estimatedGenerationCost(1000,500),.003);
+delete process.env.MORROW_INPUT_USD_PER_MILLION;
+assert.equal(limits.estimatedGenerationCost(1000,500),null,'Missing prices never invent a monetary saving');
+console.log('PASS: lossless source catalog, forged-ID rejection, bounded quotation output, shared concurrent/resumed billing budgets and explicit cost estimates. No provider calls.');

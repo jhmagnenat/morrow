@@ -1,0 +1,38 @@
+{
+  "pdfSha256": "438f0286f8310855dd51bcb0db76aafbea5c5551b8dcf160cbc0a5feeb4160af",
+  "reviewer": "Codex original-native-source inspection",
+  "reviewedAt": "2026-10-11T11:24:47.443Z",
+  "inspection": "Original source and all five saved responses explicitly inspected. Assistant inspection, not a fresh model or human quality score.",
+  "questions": [
+    {
+      "key": "p35q1",
+      "cardId": "ea38c6d4-f58c-4ebc-a14c-5f4a8a7c7da8",
+      "contentHash": "ca98d06616c806096d632b112424cf777a03ab9cc33aca3270c9bd38b119c0f7",
+      "reason": "Original question 1 asks which product pays on death within a fixed coverage period. The card recalls exactly that condition for term life, also explicitly supported by the original page-23 product table."
+    },
+    {
+      "key": "p35q2",
+      "cardId": "9c25afbf-dccd-4dfb-8b61-7c6c93737247",
+      "contentHash": "a1a87f37b91742492b6d299bccdaa46836b8831646c06f2ed93911baa66eb42b",
+      "reason": "Original question 2 asks the scope of motor liability. The answer preserves injury or damage to others caused by an insured driver, matching the original quiz and product table."
+    },
+    {
+      "key": "p35q3",
+      "cardId": "414df9a1-c92a-4039-84a5-d0c149303704",
+      "contentHash": "dcad638d5af42416e0f33fee33ef37ac1b482019afe557f21ad3cadb7f2755ca",
+      "reason": "Original question 3 asks the purpose of reinsurance. The original product table on page 23 supplies both the protected party and large, volatile or accumulated insurance-loss scope; the question-35 alternative matches these conditions."
+    },
+    {
+      "key": "p35q4",
+      "cardId": "82907e64-7b44-4ad3-9fca-7cba07384eff",
+      "contentHash": "fdc03cf6f49a039ca620a64c97852b14559f04ae4a74d8fbbf59579a8e063567",
+      "reason": "Original question 4 asks what premium market share measures. The saved answer matches original option C, the share of written premiums; the inspected 2025 chart specifies gross premiums written."
+    },
+    {
+      "key": "p35q5",
+      "cardId": "32b0327b-facf-4e2a-a97f-17dca4a8b610",
+      "contentHash": "880fe52ff9b8dbdc5189d0bba74ed927040def8e7cec3b18c03354460e0f0478",
+      "reason": "Original question 5 contrasts largest Life premium market share with profitability, service and solvency. None follows from the premium-share metric alone; the saved question names these three attributes and avoids an invented ranking or causal claim."
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+import assert from 'node:assert/strict';
+import {packPlanFixture,packReviewFixture,isolatedModules,packDirectFixture,planDirectFixture,targetReviewFixture} from './isolated-modules.mjs';
+const env=await isolatedModules(['generationEngine','contentReview']);
+const {runGenerationEngine}=await env.load('generationEngine');
+const {administrativeContentReason,planSourceBatches}=await env.load('sourceSections');
+const {createCardReview,cardReviewIssues}=await env.load('contentReview');
+const text='Underwriting decides whether to accept a risk and on what terms. Pricing estimates the premium needed for the expected risk. They are distinct functions in this course.';
+const source={documentId:'course',title:'Insurance functions',revision:'fixture',primaryPages:[1],snippets:[{id:'p1s0',page:1,text}],imagePages:[1],images:['fixture'],uncertainOcrPages:[]};
+const candidate={key:'underwriting',topic:'Underwriting',topicDefinition:'Underwriting is deciding whether to accept a risk and on what terms.',question:'Which function decides whether to accept a risk and on what terms?',answer:'Underwriting.',explanation:'Pricing estimates the premium needed for the expected risk.',kind:'mechanism',objective:'Distinguish risk acceptance from premium estimation',sources:[{sourceId:'p1s0'}],visualDescription:'The image shows underwriting and pricing as distinct functions.'};
+let mode='text';let seen=[];
+const model={async complete(_system,input,tool){
+  seen.push({tool,input});
+  if(tool==='direct_cards'||tool==='plan_direct_cards'){const fixture={knowledge:[{key:'underwriting',page:1,claim:'Underwriting decides risk acceptance.',sourceIds:['p1s0'],cardKeys:['underwriting'],exclusionReason:mode==='logistics'?'Course logistics':''}],cards:[mode==='logistics'?{...candidate,topic:'Course logistics',question:'What password is required to access Moodle?',objective:'Access the course Moodle page'}:mode==='long'?{...candidate,answer:'Long answer. '.repeat(65)}:candidate]};return tool==='plan_direct_cards'?packPlanFixture(planDirectFixture(fixture),input):packDirectFixture(fixture,input);}
+  return packReviewFixture({targets:targetReviewFixture(input),decisions:input.fields.map(f=>({key:f.key,complete:true,scopeCorrect:true,atomic:true,requiresVisualEvidence:mode==='visual',unambiguous:true,relevant:true,duplicateOf:'',reason:'Fixture decision.',verdict:'supported',evidence:[{sourceId:mode==='visual'?'p1s0':mode==='forged'?'invented-source':'p1s0'}],reasoning:'Fixture only; not an expert quality assessment.'})),pages:[{page:1,excluded:mode==='logistics',reason:'Fixture coverage.',objectives:mode==='logistics'?[]:[{description:'Distinguish underwriting from pricing',cardKeys:input.cards.map(c=>c.key)}]}]},input);
+}};
+let output=await runGenerationEngine(source,[],model);
+assert.deepEqual(output.cards[0].issues,[],'Incidental image citation must not block a fully text-supported review');
+assert(output.cards[0].evidence.every(e=>e.quote),'Only text evidence supporting the reviewed field is materialized');
+assert(seen[2].input.fields[0].text.includes(output.draft.knowledge[0].claim),'The independently reviewed source claim defines the notion');
+assert.equal(output.cards[0].candidate.topicDefinition,output.draft.knowledge[0].claim,'Do not expand a sparse source into an invented textbook definition');
+assert(seen[2].input.fields[0].text.includes(candidate.explanation),'Hidden explanation remains part of the factual gate');
+assert(!seen[2].input.cards[0].answer,'Audit metadata does not duplicate the entire answer');
+const savedDefinition=candidate.topicDefinition,savedExplanation=candidate.explanation;
+candidate.topicDefinition='Underwriting guarantees a profitable portfolio.';
+candidate.explanation='Insurers always exclude losses on unprofitable policies.';
+output=await runGenerationEngine(source,[],model);
+assert.equal(output.cards[0].candidate.topicDefinition,output.draft.knowledge[0].claim,'Even an optimistic auditor cannot preserve writer-invented definitions');
+assert.equal(output.cards[0].candidate.explanation,'','Background absent from the original source is removed before review');
+candidate.topicDefinition=savedDefinition;candidate.explanation=savedExplanation;
+for(const scenario of ['visual','long']){mode=scenario;output=await runGenerationEngine(source,[],model);assert(output.cards[0].issues.length,scenario+' must remain unpublished');}
+mode='forged';await assert.rejects(runGenerationEngine(source,[],model),/Invalid direct card review/);
+mode='logistics';output=await runGenerationEngine(source,[],model);assert.equal(output.cards.length,0);assert.equal(output.draft.knowledge[0].exclusionReason,'Course logistics');
+for(const example of ['What does accessing the Moodle link require after enrollment?','When is Q&A available for the course by appointment via email?','Which Slido app should students install?','What are the academic backgrounds of participants in the session?'])assert(administrativeContentReason(example),example);
+for(const example of ['Which function decides whether to accept an insurance risk?','What is a password in cryptography?','How do operating systems schedule processes?'])assert.equal(administrativeContentReason(example),undefined,'Do not exclude actual subject knowledge');
+const batches=planSourceBatches([1,2,3,4],[{page:1,text:'First topic.'},{page:2,text:'Continued topic.'},{page:3,text:'Chapter 2\nNew topic.'},{page:4,text:'Continued new topic.'}]);
+assert.deepEqual(batches.map(b=>b.pages),[[1],[2],[3,4]],'Explicit chapter boundary starts a new source batch');
+const card={question:candidate.question,answer:candidate.answer,example:'',explanation:candidate.explanation,kind:candidate.kind,evidence:[{documentId:'course',page:1,quote:text}]};
+const sources=new Map([['course:1',text]]);card.accuracyReview=createCardReview(card,sources);
+assert.deepEqual(cardReviewIssues(card,sources),[]);assert(cardReviewIssues({...card,explanation:'Underwriting guarantees profitability.'},sources).length,'Changing a collapsed explanation invalidates approval');
+console.log('PASS: text-supported mixed evidence, visual/forged quarantine, reviewed concept definitions and explanations, short recall contract, logistics exclusion and chapter boundaries. Simulated models; no quality score.');

@@ -1,0 +1,38 @@
+{
+  "pdfSha256": "438f0286f8310855dd51bcb0db76aafbea5c5551b8dcf160cbc0a5feeb4160af",
+  "reviewer": "Codex original-native-source inspection",
+  "reviewedAt": "2026-10-11T11:21:08.788Z",
+  "inspection": "Each original page-36 question was read against its saved answer and original page-33 context. Explicit assistant source inspection, not a new provider or human quality score.",
+  "questions": [
+    {
+      "key": "p36q6",
+      "cardId": "32ab3c04-1b2f-480f-aeb3-7c039d030fba",
+      "contentHash": "8eca704e515dcede016eb707c504f9f0bf28cefd8d0731e1415d1f71dd15677c",
+      "reason": "Original question 6 asks which function accepts risks and sets terms. Underwriting is the corresponding original alternative; original page 33 identifies underwriting in the pricing/underwriting stage."
+    },
+    {
+      "key": "p36q7",
+      "cardId": "f3671d6e-5c67-49a9-8d27-bf9d579159ea",
+      "contentHash": "ad7d382ef05a81fc03bceb4b18c9e355423b138a30d5d5ce0fe28d61b6dc404d",
+      "reason": "Original question 7 asks which function estimates premium for expected risk. Pricing is the corresponding original alternative; page 33 explains that premium covers expected claims, expenses and margin."
+    },
+    {
+      "key": "p36q8",
+      "cardId": "052ad081-bb53-4625-a599-e7bbbbfcbc01",
+      "contentHash": "28a0993d483f569e707bcfb4b38d5db5504da077a6862e772d9c9eb4da5c1a57",
+      "reason": "Original question 8 asks the purpose of claims reserving. The saved answer matches original option C: estimate unpaid claim costs. Page 33 links claims/reserving to ultimate costs and provisions."
+    },
+    {
+      "key": "p36q9",
+      "cardId": "9dd271a3-56a4-493f-92d1-02555eab61fb",
+      "contentHash": "5649c9be7e0977d23f3c60d095c4830ba0f1c587ff2a71b49ad1362f2b6fa260",
+      "reason": "Original question 9 asks the course value-chain sequence. The saved answer reproduces original option B in its original order: product/pricing, underwriting, admin, claims."
+    },
+    {
+      "key": "p36q10",
+      "cardId": "7df3a494-b966-4871-b61a-8804c8de3cc8",
+      "contentHash": "84d725aa3a205885df9f2111ffb36e8b011b59cee1eb60b9528b32d7dc91f6c5",
+      "reason": "Original question 10 asks the response to claim frequency 20% above plan. Coordination is a source-supported inference: original option C says several functions together, and original page 33 supplies explicit financial links and downstream constraints. No specific actors or repricing percentage is inferred."
+    }
+  ]
+}

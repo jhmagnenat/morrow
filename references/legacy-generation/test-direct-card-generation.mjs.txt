@@ -1,0 +1,120 @@
+import assert from 'node:assert/strict';
+import {packPlanFixture,packReviewFixture,isolatedModules,DATABASE_MODULES,packDirectFixture,planDirectFixture,targetReviewFixture} from './isolated-modules.mjs';
+process.env.MORROW_DIRECT_REPAIR='0';
+const env=await isolatedModules([...DATABASE_MODULES],{
+  llm:`import {observeLlm} from './llmTelemetry.mjs';export function currentProviderLabel(){return 'direct-fixture';}export function isLlmConfigured(){return true;}export async function structuredCompletion(...args){return observeLlm(()=>globalThis.__direct(...args),()=>({input:100,output:100}));}`,
+  pdf:`export async function renderPdfPageAsDataUrl(_pdf,page){globalThis.__rendered.push(page);return 'data:image/png;base64,fixture';}export async function renderPdfPagesAsDataUrls(pdf,pages){return Promise.all(pages.map(page=>renderPdfPageAsDataUrl(pdf,page)));}`,
+  generateSlides:`export function generationLocks(){return globalThis.__directLocks??=new Set();}export async function generateSlides(){throw Error('Legacy diagram engine must not run');}`,
+});
+process.chdir(env.workspace);
+const db=await env.load('db'),quality=await env.load('qualityDb'),storage=await env.load('pdfStorage');
+const dispatch=await env.load('generationDispatch'),jobs=await env.load('documentGeneration'),schema=await env.load('structuredSchema'),planning=await env.load('sectionPlanning');
+const source='For a rectangle, area equals width multiplied by height. Both lengths must use the same unit. The resulting area is expressed in square units. This rule applies to rectangles, not arbitrary shapes.';
+let scenario='good',calls=[],changeSource;
+globalThis.__rendered=[];
+globalThis.__direct=async(_system,prompt,tool,_description,inputSchema,images)=>{
+  calls.push(tool);const input=JSON.parse(prompt);let output;
+  if(tool==='direct_cards'||tool==='plan_direct_cards'){
+    assert.equal(input.existingCards,undefined,'Design input is grounded in immutable source, not generated answers');
+    assert(input.sources.every(s=>s.role===(input.primaryPages.includes(s.page)?'primary':'context')),'Each original source explicitly distinguishes teaching targets from context');
+    const snippet=input.sources.find(s=>input.primaryPages.includes(s.page)&&s.text.length>12);
+    const page=input.primaryPages[0];
+    const card={key:'area',topic:'Rectangle area',topicDefinition:'The area of a rectangle is the product of its width and height, expressed in square units.',explanation:'Both lengths must use the same unit.',question:'How is the area of a rectangle calculated?',answer:'Multiply width by height, using the same unit for both lengths; the area is in square units.',kind:'definition',objective:'Calculate rectangle area with consistent length units',sources:[{sourceId:snippet?.id??`p${page}image`}],visualDescription:snippet?'':'The primary diagram explicitly labels width and height and gives their product as the area.'};
+    if(scenario==='forged')card.sources=[{sourceId:'unknown'}];
+    if(scenario==='administrative-candidate')Object.assign(card,{topic:'Course grading',question:'What is the weight of individual submission in the final grade?',objective:'Determine the weight of individual submission in the final grade.',answer:'Thirty percent.'});
+    if(scenario==='partial-rejection')output={cards:[card,{...card,key:'units',question:'How must the width and height units compare when calculating rectangle area?',answer:'Both lengths must use the same unit.',objective:'Use consistent units for rectangle dimensions'}]};
+    else if(scenario==='local-duplicate')output={cards:[card,{...card,key:'area-duplicate'}]};
+    else output={cards:scenario==='empty'||scenario==='excluded'?[]:[card]};
+    output.knowledge=output.cards.map(c=>({key:c.key,page:input.primaryPages[0],claim:c.key==='units'?c.answer:c.topicDefinition,sourceIds:c.sources.map(s=>s.sourceId),cardKeys:[c.key],exclusionReason:''}));
+    if(scenario==='knowledge-gap')output.knowledge.push({...output.knowledge[0],key:'units-missing',claim:'The area is expressed in square units.',cardKeys:[]});
+    output=tool==='plan_direct_cards'?planDirectFixture(output):packDirectFixture(output,input);
+  }else if(tool==='audit_direct_cards'){
+    if(input.imagePages.length)assert.equal(images.length,input.imagePages.length,'The same primary images reach the reviewer');
+    output={targets:targetReviewFixture(input),decisions:input.fields.map(field=>({key:field.key,complete:scenario!=='omitted',scopeCorrect:true,atomic:true,requiresVisualEvidence:input.imagePages.length>0&&!input.sources.some(s=>s.text.length>12),unambiguous:true,relevant:scenario!=='irrelevant',duplicateOf:input.existingCards[0]?.id??'',reason:'Synthetic contract decision, not a pedagogical measurement.',verdict:scenario==='rejected'?'unsupported':'supported',evidence:field.sourceIds.map(sourceId=>({sourceId})),reasoning:'Fixture only.'})),pages:input.primaryPages.map(page=>({page,excluded:scenario==='excluded',reason:'Synthetic source coverage.',objectives:scenario==='excluded'?[]:[{description:'Calculate rectangle area with consistent units.',cardKeys:scenario==='coverage-gap'?[]:input.cards.map(c=>c.key)}]}))};
+    if(scenario==='partial-rejection')output.decisions[0].verdict='unsupported';
+    if(scenario==='forged-evidence')output.decisions[0].evidence[0].quote='This purported quotation does not exist in the source.';
+    if(scenario==='quotation-warning'){output.decisions[0].verdict='unsupported';output.decisions[0].reason='The source quotation needs verification.';output.decisions[0].reasoning='The source quotation needs verification.';}
+    if(scenario==='duplicate-review')output.decisions.push(output.decisions[0]);
+    if(['source-race','concurrent-add','concurrent-duplicate','concurrent-edit','concurrent-delete'].includes(scenario))changeSource();
+  }else throw Error('Unexpected legacy or lesson stage: '+tool);
+  if(tool==='plan_direct_cards')output=packPlanFixture(output,input);
+  if(tool==='audit_direct_cards')output=packReviewFixture(output,input);
+  if(scenario!=='forged'&&scenario!=='duplicate-review')assert.deepEqual(schema.findSchemaViolations(output,inputSchema),[],tool);
+  return output;
+};
+function document(text=source){const doc=db.insertDocument({title:'Geometry fixture',kind:'course',pageCount:1});db.insertPassages([{documentId:doc.id,page:1,ordinal:0,text}]);return doc;}
+const generate=doc=>dispatch.generateConfiguredSection(doc.id,{mode:'strict',enrichment:false,pages:[1]});
+try{
+  delete process.env.MORROW_GENERATION_PIPELINE;
+  const doc=document(),first=await generate(doc);
+  assert.deepEqual(calls,['plan_direct_cards','direct_cards','audit_direct_cards']);assert.equal(first.usage.requests,3);
+  assert.equal(first.readyCards,1);assert.equal(first.processed,1);assert.equal(quality.pageAnalyses(doc.id)[0].status,'complete');
+  let card=quality.getStudyCards().find(c=>c.evidence.some(e=>e.documentId===doc.id));assert.equal(card.promptVersion,'direct-cards-v8-reset-independent-visual');assert(card.accuracyReview);assert(card.accuracyReview.sources[0].revision);
+  assert.equal(db.getGraph().notions.find(n=>n.id===card.notionId).definition,'The area of a rectangle is the product of its width and height, expressed in square units.');
+  assert.equal(card.explanation,'Both lengths must use the same unit.');
+  assert.equal(db.getGraph().notions.find(n=>n.id===card.notionId).explanation,'');assert.equal(db.getGraph().links.length,0);
+  db.gradeCard('notion',card.id,'easy');const reviews=db.exportSnapshot().reviewState;
+  quality.retryPages(doc.id,[1]);calls=[];const second=await generate(doc);assert.equal(second.cardsCreated,0);assert.deepEqual(calls,[],'Publishing or studying cards cannot invalidate immutable source/design review');assert.deepEqual(db.exportSnapshot().reviewState,reviews);assert.equal(quality.getStudyCards().find(c=>c.id===card.id).id,card.id);
+  quality.retryPages(doc.id,[1]);calls=[];const cached=await generate(doc);assert.equal(cached.usage.requests,0);assert.deepEqual(calls,[],'Unchanged candidates and their reviews are reused');
+  for(const name of ['rejected','omitted','irrelevant','coverage-gap','knowledge-gap','empty','forged','forged-evidence','duplicate-review','local-duplicate']){
+    scenario=name;calls=[];const doc=document(),result=await generate(doc);
+    assert.equal(quality.pageAnalyses(doc.id)[0].status,name==='local-duplicate'?'complete':'retry',name);
+    if(!['coverage-gap','knowledge-gap','local-duplicate'].includes(name)){assert.equal(result.readyCards,0,name);assert.equal(result.notions.length,0,'Rejected answers must not become notion definitions');}
+    if(name==='local-duplicate')assert.equal(result.readyCards,1,'Local duplicate must not discard the valid original');
+    assert(calls.length<=3,'No unbounded repair or legacy fallback calls');
+    if(name==='rejected'){quality.retryPages(doc.id,[1]);calls=[];await generate(doc);assert(calls.length<=3,'Bounded reconsideration when existing draft context changes');}
+  }
+  scenario='excluded';calls=[];const excluded=document();await generate(excluded);assert.equal(quality.pageAnalyses(excluded.id)[0].status,'retry','An empty optimistic inventory must not exclude a substantive teaching page');
+  scenario='good';calls=[];const administrative=document('The final grade includes an individual submission (30%), an exam (70%) and attendance requirements. Submit your assignment before the deadline.');
+  await generate(administrative);assert.deepEqual(calls,[],'Student grading slides require no provider call');assert.equal(quality.pageAnalyses(administrative.id)[0].status,'skipped');assert.equal(quality.getDocumentStudyCards(administrative.id).length,0);
+  scenario='administrative-candidate';calls=[];const mixed=document();await generate(mixed);assert.equal(quality.getDocumentStudyCards(mixed.id).length,0,'Academic grading candidate is excluded even on a mixed/content page');
+  scenario='rejected';calls=[];const rejection=document();const rejectionJob=jobs.startDocumentGeneration(rejection.id,{mode:'strict',enrichment:false});await jobs.waitForDocumentGeneration(rejectionJob.id);
+  const rejectedJob=jobs.getDocumentGeneration(rejection.id);assert.equal(rejectedJob.status,'needs_review');assert.equal(rejectedJob.processedPages,1);assert.equal(rejectedJob.draftCards,1);assert.equal(rejectedJob.completedPages,0,'Processing is not falsely called verified coverage');
+  calls=[];const resume=jobs.startDocumentGeneration(rejection.id,{mode:'strict',enrichment:false});await jobs.waitForDocumentGeneration(resume.id);assert.deepEqual(calls,[],'Rejected objectives do not trigger automatic regeneration or additional billing');
+  scenario='quotation-warning';const quoteDoc=document();const quoteJob=jobs.startDocumentGeneration(quoteDoc.id,{mode:'strict',enrichment:false});await jobs.waitForDocumentGeneration(quoteJob.id);assert.notEqual(jobs.getDocumentGeneration(quoteDoc.id).status,'failed','Quotation must not match quota billing errors');
+  scenario='partial-rejection';const partial=document();const partialResult=await generate(partial);assert.equal(partialResult.readyCards,1);assert.equal(partialResult.cardsCreated,2);assert.equal(quality.pageAnalyses(partial.id)[0].status,'retry');assert.equal(quality.pageAnalyses(partial.id)[0].generationComplete,true,'Rejected objective does not block publication of the accepted objective');
+  const sections=await env.load('sourceSections');
+  assert.equal(sections.administrativePageReason({page:1,text:'Underwriting is a stage in the insurance value chain. Individual submission counts toward the final grade.'}),undefined,'Mixed teaching pages must be preserved');
+  assert.equal(sections.administrativeContentReason('Identify who should respond to a significant change in claim frequency.'),undefined,'Domain risk assessment is not student grading');
+  scenario='concurrent-add';calls=[];const added=document();
+  changeSource=()=>quality.saveStudyCard({id:'parallel-other-objective',cardType:'notion',question:'Which unit is used for a length?',answer:'A length uses a linear unit.',example:'',kind:'definition',objective:'Recall linear length units',status:'draft',evidence:[{documentId:added.id,page:1,quote:source}],warnings:[],userEdited:false,model:'fixture',promptVersion:'fixture'});
+  const concurrent=await generate(added);assert.equal(concurrent.readyCards,1);assert.equal(quality.pageAnalyses(added.id)[0].status,'complete');assert(quality.getStudyCard('parallel-other-objective'));
+  scenario='concurrent-duplicate';const parallel=document();
+  changeSource=()=>quality.saveStudyCard({...quality.getDocumentStudyCards(added.id).find(c=>c.status==='ready'),id:'parallel-same-objective',notionId:undefined,status:'draft',accuracyReview:undefined,evidence:[{documentId:parallel.id,page:1,quote:source}]});
+  const duplicateRun=await generate(parallel);assert.equal(duplicateRun.cardsCreated,0);assert.equal(quality.getDocumentStudyCards(parallel.id).length,1,'Parallel duplicates are preserved rather than multiplied or overwritten');
+  scenario='good';const editable=document();await generate(editable);const initial=quality.getDocumentStudyCards(editable.id)[0];
+  quality.retryPages(editable.id,[1]);scenario='concurrent-edit';calls=[];
+  // Force a new audit so the injected concurrent mutation actually runs.
+  db.openDb().prepare("DELETE FROM quality_settings WHERE key LIKE ?").run(`generation-output:${editable.id}:%`);
+  changeSource=()=>quality.saveStudyCard({...initial,answer:'My manual correction must survive.',status:'draft',userEdited:true});
+  const edited=await generate(editable);assert.equal(edited.readyCards,0);assert.equal(quality.getStudyCard(initial.id).answer,'My manual correction must survive.');assert.equal(quality.pageAnalyses(editable.id)[0].status,'retry');
+  scenario='good';const deleted=document();await generate(deleted);const removed=quality.getDocumentStudyCards(deleted.id)[0];quality.retryPages(deleted.id,[1]);scenario='concurrent-delete';
+  db.openDb().prepare("DELETE FROM quality_settings WHERE key LIKE ?").run(`generation-output:${deleted.id}:%`);
+  changeSource=()=>db.openDb().prepare('DELETE FROM study_cards WHERE id=?').run(removed.id);
+  const deletion=await generate(deleted);assert.equal(deletion.cardsCreated,0);assert.equal(quality.getStudyCard(removed.id),undefined);
+  scenario='good';calls=[];const visual=document('');storage.savePdfFile(visual.id,new TextEncoder().encode('%PDF fixture').buffer);const imageResult=await generate(visual);
+  assert.deepEqual(calls,['plan_direct_cards','direct_cards','audit_direct_cards','audit_visual_cards']);assert.deepEqual(globalThis.__rendered,[1]);assert.equal(imageResult.readyCards,0);assert.equal(imageResult.cardsCreated,1);
+  const imageCard=quality.getStudyCards().find(c=>c.evidence.some(e=>e.documentId===visual.id));assert.equal(imageCard.status,'draft');assert(imageCard.evidence[0].visualDescription.includes('width'));assert(!imageCard.evidence[0].visualReview);
+  calls=[];const missingPdf=document('');await generate(missingPdf);assert.deepEqual(calls,[],'Missing original visual source fails before a provider call');
+  scenario='source-race';calls=[];const race=document();changeSource=()=>db.insertPassages([{documentId:race.id,page:1,ordinal:1,text:'Changed source.'}]);await assert.rejects(generate(race),/source document changed/);assert(!quality.getStudyCards().some(c=>c.evidence.some(e=>e.documentId===race.id)));
+  scenario='good';calls=[];const jobDoc=document();const job=jobs.startDocumentGeneration(jobDoc.id,{mode:'strict',enrichment:false});await jobs.waitForDocumentGeneration(job.id);
+  assert.equal(jobs.getDocumentGeneration(jobDoc.id).pipeline,'direct');assert.equal(jobs.getDocumentGeneration(jobDoc.id).status,'complete');assert.deepEqual(calls,['plan_direct_cards','direct_cards','audit_direct_cards']);
+  const jobCard=quality.getStudyCards().find(c=>c.evidence.some(e=>e.documentId===jobDoc.id));
+  const withoutReview=quality.saveStudyCard({...jobCard,id:'missing-direct-approval',accuracyReview:undefined});assert.equal(withoutReview.status,'draft','A stored ready flag without claim approval cannot enter study');
+  db.gradeCard('notion',jobCard.id,'good');const beforeRebuild=db.exportSnapshot().reviewState;
+  const rebuilt=jobs.startDocumentGeneration(jobDoc.id,{mode:'strict',enrichment:false,reprocess:true,cardDetail:'key-ideas'});await jobs.waitForDocumentGeneration(rebuilt.id);
+  assert.equal(jobs.getDocumentGeneration(jobDoc.id).status,'complete');assert.deepEqual(db.exportSnapshot().reviewState,beforeRebuild,'UI rebuild preserves scheduling and review identities');
+  assert((await env.load('recovery')).listRecoveryPoints().some(p=>p.reason==='before-card-regeneration'),'Regeneration has a recoverable prior snapshot');
+  const editor=await env.route('app/api/cards/[id]/route.ts','card-explanation-editor');
+  const editedResponse=await editor.PATCH(new Request('http://localhost/api/cards/'+jobCard.id,{method:'PATCH',headers:{'Content-Type':'application/json'},body:JSON.stringify({explanation:'Both dimensions use the same length unit.',status:'ready'})}),{params:Promise.resolve({id:jobCard.id})});
+  assert.equal(editedResponse.status,200);const human=(await editedResponse.json()).card;
+  assert.equal(human.status,'ready');assert.equal(human.accuracyReview,undefined,'Human approval does not reuse model proof for changed explanation');assert(human.revisions.some(r=>r.explanation==='Both lengths must use the same unit.'));
+  const batches=planning.planDirectCardBatches([1,2,3,4,5,6,7],[1,2,3,4,5,6,7].map(page=>({page,text:source})),new Set([2,3,4]));
+  assert.deepEqual(batches.map(b=>b.pages),[[1],[2,3],[4,5,6],[7]]);assert(batches.every(b=>b.pages.length<=3));
+  const proof=await env.load('contentReview');
+  let obsolete={...jobCard,id:'obsolete-instruction',question:'What activity is suggested on page 25 to understand insurance products in practice?',answer:'Watch a video about insurance products.',explanation:'',userEdited:false,status:'ready'};
+  obsolete.accuracyReview=proof.createCardReview(obsolete,new Map([[`${jobDoc.id}:1`,source]]),new Map([[jobDoc.id,jobCard.accuracyReview.sources[0].revision]]));
+  const quarantined=quality.saveStudyCard(obsolete);assert.equal(quarantined.status,'draft');assert(quarantined.warnings.includes('Course instruction or source location is not a learning objective'),'Existing generated cards also pass the pedagogical gate');
+  const manual=quality.saveStudyCard({...obsolete,id:'manual-instruction',userEdited:true,accuracyReview:undefined});assert.equal(manual.status,'ready','Explicit manual approval is preserved');
+  console.log('PASS: default direct dispatch and durable job, planned source-grounded text/image path, no lessons/graph/legacy fallback, exact claim gates, coverage gaps, cached verdicts, protected scheduling, original-image requirements and source-race rollback. Synthetic model responses only; no API calls or pedagogical score.');
+}finally{delete globalThis.__direct;delete globalThis.__rendered;}

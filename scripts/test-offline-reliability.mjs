@@ -1,0 +1,70 @@
+import assert from 'node:assert/strict';
+import {isolatedModules,DATABASE_MODULES} from './isolated-modules.mjs';
+const env=await isolatedModules([...DATABASE_MODULES,'learningPath']);process.chdir(env.workspace);
+const db=await env.load('db'),quality=await env.load('qualityDb'),scope=await env.load('courseScope'),courses=await env.load('courses'),recovery=await env.load('recovery'),sync=await env.load('reviewSync'),backup=await env.load('backup');
+try{
+  for(const kind of ['vocabulary','pronunciation']){
+    const course=courses.createCourse(`Only ${kind}`);
+    scope.withCourse(course.id,()=>{
+      if(kind==='vocabulary')db.insertVocabularyCard({phrase:'durable',translationFr:'durable'});
+      else db.insertPronunciationCard({text:'A durable answer',words:[]});
+      const point=recovery.createRecoveryPoint('before-reset');assert(point,'Unreviewed language work must be protected');
+      const saved=recovery.recoverySnapshot(point.id);db.resetAllData();backup.restoreWithPdfs(saved);
+      assert.equal(db.exportSnapshot()[kind==='vocabulary'?'vocabularyCards':'pronunciationCards'].length,1);
+    });
+  }
+  assert.equal(recovery.createRecoveryPoint('empty'),undefined);
+  const n=db.insertNotion({label:'Offline mechanism',domain:'Testing',definition:'Changing the input changes the output.',sources:[],status:'draft'});
+  quality.saveStudyCard({id:n.id,cardType:'notion',notionId:n.id,question:'How does the input change the output?',answer:'The source rule maps each input to its corresponding output.',example:'',kind:'mechanism',objective:'Input and output dependency',status:'ready',evidence:[],warnings:[],userEdited:true,model:'fixture',promptVersion:'fixture'});
+  const route=await env.route('app/api/review/[cardType]/[cardId]/grade/route.ts','grade-offline');
+  const submit=(body,course)=>route.POST(new Request(`http://localhost/api/review/notion/${n.id}/grade`,{method:'POST',headers:{'Content-Type':'application/json',...(course?{'X-Course-Id':course}:{})},body:JSON.stringify(body)}),{params:Promise.resolve({cardType:'notion',cardId:n.id})});
+  const baseline=sync.reviewRevision('notion',n.id),time=new Date(Date.now()-3600000).toISOString();
+  const body={grade:'good',requestId:'offline-once',baseRevision:baseline,reviewedAt:time};
+  const response=await submit(body);assert.equal(response.status,200);const receipt=await response.json();
+  assert.equal(db.exportSnapshot().reviewLog[0].reviewedAt,time,'Scheduling uses actual offline time, not upload time');
+  assert.deepEqual(await(await submit(body)).json(),receipt);assert.equal(db.exportSnapshot().reviewLog.length,1,'Retry after a lost acknowledgement cannot duplicate a review');
+  assert.equal((await submit({...body,requestId:'second-device'})).status,409,'A competing device must not overwrite the first schedule');
+  const nextBody={grade:'good',requestId:'offline-next',baseRevision:baseline,previousRequestId:'offline-once',reviewedAt:new Date(Date.parse(time)+11*60000).toISOString()};
+  const nextResponse=await submit(nextBody);assert.equal(nextResponse.status,200,'A due follow-up offline review follows its durable parent receipt');
+  const nextReceipt=await nextResponse.json();assert.equal(nextReceipt.revision,sync.reviewRevision('notion',n.id));
+  assert.deepEqual(await(await submit(nextBody)).json(),nextReceipt);assert.equal(db.exportSnapshot().reviewLog.length,2);
+  assert.equal((await submit({...nextBody,requestId:'missing-parent',previousRequestId:'nonexistent'})).status,409);
+  assert.equal((await submit({...nextBody,requestId:'out-of-order',reviewedAt:new Date(Date.parse(time)-1).toISOString()})).status,409);
+  db.resetCardProgress('notion',n.id);assert.notEqual(sync.reviewRevision('notion',n.id),baseline);
+  assert.equal((await submit({...body,requestId:'after-reset'})).status,409);
+  assert.equal((await submit({...nextBody,requestId:'chain-after-reset'})).status,409,'A preceding receipt cannot bypass a later reset');
+  const snapshotRoute=await env.route('app/api/offline/route.ts','offline-snapshot');
+  const inventory=await(await snapshotRoute.GET(new Request('http://localhost/api/offline'))).json();assert(inventory.reviews[`notion:${n.id}`]);
+  const firstInventory=await snapshotRoute.GET(new Request('http://localhost/api/offline'));
+  const firstTag=firstInventory.headers.get('ETag');
+  assert.equal((await snapshotRoute.GET(new Request('http://localhost/api/offline',{headers:{'If-None-Match':firstTag}}))).status,304);
+  db.openDb().prepare('UPDATE notions SET explanation=? WHERE id=?').run('A corrected lesson without any card or scheduling change.',n.id);
+  const lessonUpdate=await snapshotRoute.GET(new Request('http://localhost/api/offline',{headers:{'If-None-Match':firstTag}}));
+  assert.equal(lessonUpdate.status,200,'Lesson-only corrections must reach other devices');
+  assert.notEqual((await lessonUpdate.json()).contentVersion,inventory.contentVersion);
+  const revision=sync.reviewRevision('notion',n.id);
+  quality.saveStudyCard({...quality.getStudyCards()[0],answer:'A corrected explanation.',userEdited:true});assert.notEqual(sync.reviewRevision('notion',n.id),revision);
+  assert.equal((await submit({...body,requestId:'future',baseRevision:sync.reviewRevision('notion',n.id),reviewedAt:new Date(Date.now()+120000).toISOString()})).status,400);
+  const second=courses.createCourse('Isolated');
+  assert.equal((await submit({...body,requestId:'other-course'},second.id)).status,404);
+  let selected;
+  const read=scope.courseRoute(async()=>{selected=scope.scopedCourseId();return new Response('ok');});
+  await read(new Request('http://localhost/api/graph',{headers:{Cookie:`morrow-course=${second.id}`}}));assert.equal(selected,second.id);
+  await read(new Request('http://localhost/api/graph',{headers:{Cookie:`morrow-course=${second.id}`,'X-Course-Id':'default'}}));assert.equal(selected,'default','Explicit asynchronous work retains its original course');
+  let mutationCalled=false;
+  const mutate=scope.courseRoute(async()=>{mutationCalled=true;return new Response('ok');});
+  assert.equal((await mutate(new Request('http://localhost/api/reset',{method:'POST',headers:{Origin:'https://unrelated.example'}}))).status,403);
+  assert.equal((await mutate(new Request('http://localhost/api/reset',{method:'POST',headers:{'Sec-Fetch-Site':'cross-site'}}))).status,403);
+  assert.equal(mutationCalled,false,'A foreign browser origin cannot clear courses or start generation');
+  assert.equal((await mutate(new Request('http://localhost/api/reset',{method:'POST',headers:{Origin:'http://localhost'}}))).status,200);
+  // The retention metric excludes first/same-day learning and counts Hard as recall.
+  const connection=db.openDb();connection.exec('DELETE FROM review_log');
+  const insert=connection.prepare('INSERT INTO review_log VALUES(?,?,?,?,?)');
+  for(const [i,grade,at] of [[0,'good','2025-01-01T12:00:00Z'],[1,'again','2025-01-01T12:01:00Z'],[2,'hard','2025-01-03T12:00:00Z'],[3,'again','2025-01-05T12:00:00Z']])insert.run(`ret-${i}`,'notion',n.id,grade,at);
+  assert.equal(db.getRetentionRate(),.5);
+  assert.equal(db.getDomainMastery()[0].mature,0,'A long interval does not certify understanding');
+  const learning=await env.load('learningPath');
+  const notions=[{id:'a',label:'A known topic'},{id:'b',label:'B weak topic'},{id:'c',label:'C dependent topic'}];
+  assert.deepEqual(learning.learningPath(notions,[{source:'b',target:'c',type:'prerequisite'}],{a:{score:.9},b:{score:.2},c:{score:.05}}).topics.map(t=>t.notion.id),['b','a','c'],'Weak concepts lead without bypassing prerequisites');
+  console.log('PASS: language-only recovery, actual offline timestamps, durable receipts, competing-device/edit/reset conflicts, course cookies, delayed retention and mastery semantics. No model calls.');
+}finally{for(const connection of globalThis.__courseDbs?.values()??[])connection.close();}

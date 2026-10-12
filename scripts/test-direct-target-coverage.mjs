@@ -1,0 +1,74 @@
+import assert from 'node:assert/strict';
+import fs from 'node:fs';
+import {packPlanFixture,packReviewFixture,isolatedModules,DATABASE_MODULES} from './isolated-modules.mjs';
+const reference=JSON.parse(fs.readFileSync('references/evaluation/insurance-generation-reference.json','utf8'));
+const env=await isolatedModules(DATABASE_MODULES);process.chdir(env.workspace);
+const db=await env.load('db'),sources=await env.load('sourceDocument'),engine=await env.load('generationEngine'),repo=await env.load('generationRepository'),quality=await env.load('qualityDb');
+const text=reference.pages.find(p=>p.page===23).text;
+const facts=[['Life insurance protects income or builds savings.','Life insurance','What is the purpose of life insurance?','Protect income or build savings.'],['Reinsurance protects an insurer.','Reinsurance','Who is protected by reinsurance?','An insurer.'],['Health and accident insurance funds medical care or replaces income.','Health and accident insurance','What need does health and accident insurance meet?','Fund medical care or replace income.'],["Captive insurance finances a corporate group\'s own risks.",'Captive insurance','Whose risks does captive insurance finance?',"A corporate group\'s own risks."],['Property and casualty insurance protects property and legal liability.','Property and casualty insurance','What does property and casualty insurance protect?','Property and legal liability.']];
+let mode='bad',calls=[],duplicateId='';
+const model={async complete(_system,input,tool){
+ calls.push(tool);
+ if(tool==='plan_direct_cards')return packPlanFixture({targets:facts.map(f=>({page:23,claim:f[0],sourceIds:['p23s0'],exclusionReason:''}))},input);
+ if(tool==='direct_cards'){
+  if(mode==='repair-failure'&&input.repairTargets.length)throw Error('Simulated repair transport failure');
+  return {cards:Object.fromEntries(input.knowledge.map(k=>{const f=mode==='separate-facts'?facts.find(f=>f[0]===k.claim):mode==='bad'||!input.repairTargets.length?facts[0]:facts.find(f=>f[0]===k.claim);return [k.key,{topic:f[1],topicDefinition:f[0],question:f[2],answer:f[3],explanation:'',kind:'definition',objective:mode==='separate-facts'?'Understand insurance family purposes':f[0],sources:[{sourceId:'p23s0'}],visualDescription:''}];}))};
+ }
+ return packReviewFixture({targets:input.knowledge.map(k=>({key:k.key,verdict:'supported',atomic:true,coverageComplete:input.targetCards.find(c=>c.key===k.key).cards.some(c=>c.answer===facts.find(f=>f[0]===k.claim)[3]),reason:'Only the tested short answer counts toward this target.'})),decisions:input.fields.map(f=>({key:f.key,complete:true,scopeCorrect:true,atomic:true,unambiguous:true,relevant:true,requiresVisualEvidence:false,duplicateOf:duplicateId,reason:'Explicit source-based fixture verdict.',verdict:'supported',evidence:[{sourceId:'p23s0'}],reasoning:'Test fixture.'})),pages:[{page:23,excluded:false,reason:'Five distinct family purposes.',objectives:input.knowledge.map(k=>({description:k.claim,cardKeys:k.cardKeys}))}]},input);
+}};
+function create(){const doc=db.insertDocument({title:'Insurance products',kind:'course',pageCount:23});db.insertPassages([{documentId:doc.id,page:23,ordinal:0,text}]);const source=sources.ensureSourceDocument(db.openDb(),doc.id);return {doc,source,input:{documentId:doc.id,title:doc.title,revision:source.revision,primaryPages:[23],snippets:[{id:'p23s0',page:23,text}],imagePages:[],images:[],uncertainOcrPages:[]}};}
+let c=create(),output=await engine.runGenerationEngine(c.input,[],model);repo.publishGeneration(c.source,c.doc.title,[23],output,[],{mode:'strict',enrichment:false},'fixture');
+let page=quality.pageAnalyses(c.doc.id)[0];assert.equal(page.status,'retry');assert.equal(page.knowledgeCoverage.filter(k=>k.status==='covered').length,1,'A life card cannot cover five different families');assert.equal(quality.getDocumentStudyCards(c.doc.id).filter(c=>c.status==='ready').length,1,'Keep the useful original instead of rejecting its whole batch');
+mode='repair';calls=[];c=create();output=await engine.runGenerationEngine(c.input,[],model,'key-ideas',true);repo.publishGeneration(c.source,c.doc.title,[23],output,[],{mode:'strict',enrichment:false},'fixture');page=quality.pageAnalyses(c.doc.id)[0];assert.equal(page.status,'complete');assert.equal(page.knowledgeCoverage.filter(k=>k.status==='covered').length,5);assert.equal(calls.length,5,'One plan, writer, review, followed by only one targeted writer/review round');
+mode='repair-failure';calls=[];c=create();output=await engine.runGenerationEngine(c.input,[],model,'key-ideas',true);repo.publishGeneration(c.source,c.doc.title,[23],output,[],{mode:'strict',enrichment:false},'fixture');assert.equal(quality.getDocumentStudyCards(c.doc.id).filter(c=>c.status==='ready').length,1);assert.equal(quality.pageAnalyses(c.doc.id)[0].status,'retry');assert.equal(calls.length,4,'Failed repair stops without repeated paid retries');
+mode='separate-facts';c=create();output=await engine.runGenerationEngine(c.input,[],model);repo.publishGeneration(c.source,c.doc.title,[23],output,[],{mode:'strict',enrichment:false},'fixture');
+assert.equal(quality.getDocumentStudyCards(c.doc.id).filter(c=>c.status==='ready').length,5,'A generic writer objective must not merge five distinct source facts');
+const {createCardReview}=await env.load('contentReview');
+c=create();
+for(const [id,question,userEdited] of [['old-auto','Who buys reinsurance protection?',false],['human-owned','Who is the reinsurance customer?',true],['already-studied','Who gets reinsurance protection?',false]]){
+ let card={id,cardType:'notion',question,answer:'An insurer.',example:'',explanation:'',kind:'definition',objective:'An earlier source overview',status:'ready',evidence:[{documentId:c.doc.id,page:23,quote:text}],warnings:[],userEdited,model:'fixture',promptVersion:'direct-cards-v5-reviewed-targets'};
+ card={...card,accuracyReview:createCardReview(card,new Map([[c.doc.id+':23',text]]),new Map([[c.doc.id,c.source.revision]]))};quality.saveStudyCard(card);
+}
+db.gradeCard('notion','already-studied','easy');const history=db.exportSnapshot().reviewState;
+const before=quality.getDocumentStudyCards(c.doc.id);output=await engine.runGenerationEngine(c.input,before,model);repo.publishGeneration(c.source,c.doc.title,[23],output,before,{mode:'strict',enrichment:false},'fixture');
+const after=quality.getDocumentStudyCards(c.doc.id);
+assert.equal(after.find(c=>c.id==='old-auto').status,'suspended','Complete selection reversibly archives unchecked older variants');
+assert.equal(after.find(c=>c.id==='human-owned').status,'ready');assert.equal(after.find(c=>c.id==='already-studied').status,'ready');
+assert.deepEqual(db.exportSnapshot().reviewState,history,'Archiving must not reset or delete review history');
+c=create();
+const {SUPERSEDED_SELECTION_WARNING}=await env.load('contentQuality');
+for(const [id,fact,automatic] of [['archived-auto',facts[1],true],['manual-suspension',facts[0],false]])quality.saveStudyCard({id,cardType:'notion',question:fact[2],answer:fact[3],example:'',explanation:'',kind:'definition',objective:fact[0],status:'suspended',evidence:[{documentId:c.doc.id,page:23,quote:text}],warnings:automatic?[SUPERSEDED_SELECTION_WARNING]:['Manually suspended'],userEdited:false,model:'fixture',promptVersion:'direct-cards-v6-fixed-review-slots'});
+const archived=quality.getDocumentStudyCards(c.doc.id);output=await engine.runGenerationEngine(c.input,archived,model);repo.publishGeneration(c.source,c.doc.title,[23],output,archived,{mode:'strict',enrichment:false},'fixture');
+assert.equal(quality.getStudyCard('archived-auto').status,'ready','A freshly audited automatic archive can be reused with its original ID');
+assert.equal(quality.getStudyCard('manual-suspension').status,'suspended','Manual suspension remains protected');
+c=create();output=await engine.runGenerationEngine(c.input,[],model);
+for(const item of output.cards)item.candidate.topic='Insurance product purposes';
+repo.publishGeneration(c.source,c.doc.title,[23],output,[],{mode:'strict',enrichment:false},'fixture');
+const group=db.getGraph().notions.find(n=>n.label==='Insurance product purposes');
+assert(facts.every(f=>group.definition.includes(f[0])),'A shared automatic notion combines its independently reviewed source claims');
+db.openDb().prepare("UPDATE notions SET definition=?,status='validated' WHERE id=?").run('My approved definition',group.id);
+repo.publishGeneration(c.source,c.doc.title,[23],output,quality.getDocumentStudyCards(c.doc.id),{mode:'strict',enrichment:false},'fixture');
+assert.equal(db.getGraph().notions.find(n=>n.id===group.id).definition,'My approved definition','Validated definitions are preserved');
+c=create();
+let overview={id:'older-overview',cardType:'notion',question:'Who buys insurance protection?',answer:'An insured party.',example:'',explanation:'',kind:'definition',objective:'An older broad overview',status:'ready',evidence:[{documentId:c.doc.id,page:23,quote:text}],warnings:[],userEdited:false,model:'fixture',promptVersion:'direct-cards-v6-fixed-review-slots'};
+overview={...overview,accuracyReview:createCardReview(overview,new Map([[c.doc.id+':23',text]]),new Map([[c.doc.id,c.source.revision]]))};quality.saveStudyCard(overview);
+const baseline=quality.getDocumentStudyCards(c.doc.id);output=await engine.runGenerationEngine(c.input,baseline,model);for(const decision of output.review.decisions)decision.duplicateOf=overview.id;repo.publishGeneration(c.source,c.doc.title,[23],output,baseline,{mode:'strict',enrichment:false},'fixture');duplicateId='';
+assert.equal(quality.pageAnalyses(c.doc.id)[0].status,'complete','One older overview mapped to multiple targets must not block the remaining cards');
+assert.equal(quality.getDocumentStudyCards(c.doc.id).filter(c=>c.status==='ready').length,5,'Each distinct target receives its own published identity');
+c=create();output=await engine.runGenerationEngine(c.input,[],model);
+const deferred=output.draft.knowledge[0],deferredKeys=new Set(deferred.cardKeys);
+deferred.selected=false;deferred.cardKeys=[];
+output.cards=output.cards.filter(c=>!deferredKeys.has(c.candidate.key));
+output.draft.cards=output.draft.cards.filter(c=>!deferredKeys.has(c.key));
+output.review.targets.find(t=>t.key===deferred.key).selectionCorrect=true;
+for(const p of output.review.pages)p.objectives=p.objectives.filter(o=>!o.cardKeys.some(k=>deferredKeys.has(k)));
+repo.publishGeneration(c.source,c.doc.title,[23],output,[],{mode:'strict',enrichment:false},'fixture');
+assert.equal(quality.pageAnalyses(c.doc.id)[0].status,'complete');
+assert.equal(quality.pageAnalyses(c.doc.id)[0].knowledgeCoverage.find(k=>k.key===deferred.key).status,'deferred','An intentional secondary omission must never be reported as learned');
+const obsolete=db.insertNotion({label:'Rejected automatic notion',domain:c.doc.title,status:'draft',definition:'Rejected source claim',sources:[{documentId:c.doc.id,page:23}]});
+quality.setNotionMetadata(obsolete.id,'course',[], 'direct-cards-v7-selected-knowledge',[]);
+assert(!db.getGraph(true).notions.some(n=>n.id===obsolete.id),'Unsupported automatic notions do not appear on the active map');
+assert(db.getGraph(false).notions.some(n=>n.id===obsolete.id),'Original notion remains available for recovery');
+db.openDb().prepare("UPDATE notions SET status='validated' WHERE id=?").run(obsolete.id);
+assert(db.getGraph(true).notions.some(n=>n.id===obsolete.id),'User-approved notions remain visible');
+console.log('PASS: target coverage, bounded repair, deferred knowledge, safe active map, recovery and preserved user content. Fixture decisions are explicit, not live scores.');

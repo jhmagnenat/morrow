@@ -1,0 +1,261 @@
+{
+  "auditedAt": "2026-10-10T21:22:56.822Z",
+  "database": "data/encyclopedia.db",
+  "readOnlyDatabase": true,
+  "limitations": [
+    "Stored statuses are not runtime eligibility or factual accuracy.",
+    "Cumulative runs include retries and cached calls; not a single-import benchmark.",
+    "Older artifacts may use previous review contracts despite shared version labels.",
+    "No new provider requests or human factual evaluation."
+  ],
+  "cards": {
+    "count": 74,
+    "status": {
+      "draft": 64,
+      "ready": 10
+    },
+    "versions": {
+      "direct-cards-v2-source-foundation": 67,
+      "legacy": 7
+    },
+    "newReady": 10,
+    "imageEvidence": 42
+  },
+  "notions": [
+    {
+      "label": "Course Logistics",
+      "definition": "What does accessing the Moodle link require after the enrollment phase?\nA password."
+    },
+    {
+      "label": "Academic Background",
+      "definition": "What are some examples of academic backgrounds relevant to the session?\nEconomics, management, and data science."
+    },
+    {
+      "label": "Insurance Fields",
+      "definition": "What are some areas of interest within the insurance world?\nLife, non-life, capital, data, investment, communications, legal, accounting, controlling, compliance, risk management."
+    },
+    {
+      "label": "Insurance Industry Challenges",
+      "definition": "What are some macroeconomic challenges faced by the insurance industry?\nLow/negative interest rates, inflation rising, and volatility & uncertainty (e.g., Covid, geopolitical tensions, energy crisis)."
+    },
+    {
+      "label": "Insurance Product Families",
+      "definition": "What are the typical risks covered by life insurance products?\nDeath, longevity, retirement, or savings benefit."
+    },
+    {
+      "label": "Actuarial Role",
+      "definition": "What is one of the main functions of an actuary according to the document?\nTranslate uncertainty into assumptions, cash flows, and risk measures."
+    },
+    {
+      "label": "Insurance Functions",
+      "definition": "Which function decides whether to accept a risk and on what terms?\nUnderwriting"
+    }
+  ],
+  "pages": {
+    "retry": 21,
+    "complete": 4,
+    "skipped": 13
+  },
+  "runs": {
+    "count": 35,
+    "status": {
+      "needs_review": 33,
+      "complete": 2
+    },
+    "usage": {
+      "requests": 59,
+      "inputTokens": 200971,
+      "outputTokens": 32041,
+      "failures": 0
+    },
+    "recent": [
+      {
+        "id": "3ff138f2-33c9-4338-8214-be370f1a5cad",
+        "documentId": "a734098b-b559-4231-a198-7265044d2f71",
+        "status": "needs_review",
+        "version": "direct-cards-v2-source-foundation",
+        "sourceRevision": "f23b2858f8bec376430639251573c9d86d799c915932cf6bef2d167cb0ee0435",
+        "startedAt": "2026-10-10T21:05:52.891Z",
+        "finishedAt": "2026-10-10T21:05:59.339Z",
+        "usage": {
+          "requests": 1,
+          "inputTokens": 4278,
+          "outputTokens": 858,
+          "elapsedMs": 6060,
+          "failures": 0,
+          "callTraces": [
+            {
+              "tool": "audit_direct_cards",
+              "model": "OpenAI (gpt-4o)",
+              "inputTokens": 4278,
+              "outputTokens": 858,
+              "elapsedMs": 6060,
+              "status": "succeeded",
+              "providerModel": "gpt-4o-2024-08-06"
+            }
+          ]
+        },
+        "artifactKey": "direct-card-run:a734098b-b559-4231-a198-7265044d2f71:3ff138f2-33c9-4338-8214-be370f1a5cad",
+        "warnings": [
+          "Accuracy review requires original source evidence",
+          "A claim cites missing, forged or unrelated source evidence",
+          "The card matches an existing card both in content and scope.",
+          "Image-supported answer requires visual review against the original PDF",
+          "The card content and objective match an existing card.",
+          "The card matches an existing card's content and scope, covering the same financial link.",
+          "The card matches an existing card's content and scope related to term life insurance.",
+          "No primary-page evidence",
+          "Missing or rejected card design review",
+          "Identify the main business question for customer needs in insurance.",
+          "Recognize the stage involving reinsurance and capital management.",
+          "Understand the financial link for pricing and underwriting in insurance.",
+          "Unpublished objective: Identify the main business question for customer needs in insurance.",
+          "Unpublished objective: Recognize the stage involving reinsurance and capital management.",
+          "Unpublished objective: Understand the financial link for pricing and underwriting in insurance.",
+          "Unattributed invalid source references require review",
+          "Identify the insurance product linked to death during a fixed period.",
+          "Unpublished objective: Identify the insurance product linked to death during a fixed period."
+        ]
+      },
+      {
+        "id": "21fc3966-abce-4797-a858-a5eac7b79632",
+        "documentId": "a734098b-b559-4231-a198-7265044d2f71",
+        "status": "needs_review",
+        "version": "direct-cards-v2-source-foundation",
+        "sourceRevision": "f23b2858f8bec376430639251573c9d86d799c915932cf6bef2d167cb0ee0435",
+        "startedAt": "2026-10-10T21:05:51.570Z",
+        "finishedAt": "2026-10-10T21:05:59.608Z",
+        "usage": {
+          "requests": 1,
+          "inputTokens": 5195,
+          "outputTokens": 873,
+          "elapsedMs": 7230,
+          "failures": 0,
+          "callTraces": [
+            {
+              "tool": "audit_direct_cards",
+              "model": "OpenAI (gpt-4o)",
+              "inputTokens": 5195,
+              "outputTokens": 873,
+              "elapsedMs": 7230,
+              "status": "succeeded",
+              "providerModel": "gpt-4o-2024-08-06"
+            }
+          ]
+        },
+        "artifactKey": "direct-card-run:a734098b-b559-4231-a198-7265044d2f71:21fc3966-abce-4797-a858-a5eac7b79632",
+        "warnings": [
+          "Accuracy review requires original source evidence",
+          "A claim cites missing, forged or unrelated source evidence",
+          "This card provides a complete and relevant description of the functions associated with assets in a company's balance sheet as shown in the source.",
+          "Image-supported answer requires visual review against the original PDF",
+          "The card accurately reflects the functions related to liabilities as presented in the source material.",
+          "The card accurately describes the functions associated with capital and result, directly supported by the source content.",
+          "The card effectively captures the possible structure of an insurance company as depicted in the source images and text.",
+          "Understand the functions associated with assets, liabilities, and capital in a balance sheet.",
+          "Unpublished objective: Identify key functions related to assets in a balance sheet.",
+          "Unpublished objective: Identify key functions related to liabilities in a balance sheet.",
+          "Unpublished objective: Identify key functions related to capital and result in a balance sheet.",
+          "Learn about the possible organizational structure of an insurance company.",
+          "Unpublished objective: Identify the possible organizational structure of an insurance company."
+        ]
+      },
+      {
+        "id": "8478cd68-e1b5-45d8-bb88-4806983e760e",
+        "documentId": "a734098b-b559-4231-a198-7265044d2f71",
+        "status": "complete",
+        "version": "direct-cards-v2-source-foundation",
+        "sourceRevision": "f23b2858f8bec376430639251573c9d86d799c915932cf6bef2d167cb0ee0435",
+        "startedAt": "2026-10-10T21:05:52.999Z",
+        "finishedAt": "2026-10-10T21:06:05.326Z",
+        "usage": {
+          "requests": 2,
+          "inputTokens": 5956,
+          "outputTokens": 1488,
+          "elapsedMs": 11925,
+          "failures": 0,
+          "callTraces": [
+            {
+              "tool": "direct_cards",
+              "model": "OpenAI (gpt-4o)",
+              "inputTokens": 2104,
+              "outputTokens": 400,
+              "elapsedMs": 3423,
+              "status": "succeeded",
+              "providerModel": "gpt-4o-2024-08-06"
+            },
+            {
+              "tool": "audit_direct_cards",
+              "model": "OpenAI (gpt-4o)",
+              "inputTokens": 3852,
+              "outputTokens": 1088,
+              "elapsedMs": 8502,
+              "status": "succeeded",
+              "providerModel": "gpt-4o-2024-08-06"
+            }
+          ]
+        },
+        "artifactKey": "direct-card-run:a734098b-b559-4231-a198-7265044d2f71:8478cd68-e1b5-45d8-bb88-4806983e760e",
+        "warnings": []
+      }
+    ]
+  },
+  "storedWarnings": {
+    "Accuracy review requires original source evidence": 42,
+    "Claim review omits or rewrites displayed content": 47,
+    "A claim cites missing, forged or unrelated source evidence": 31,
+    "The card effectively addresses motivations for exploring company functions, supported by quoted text.": 1,
+    "Image-supported answer requires visual review against the original PDF": 42,
+    "The card clearly identifies expected skills development aligned with the course's objectives, supported by source text.": 1,
+    "Course methodology or explicitly non-taught material: archived from the mapping, retained for verification.": 7,
+    "The card content matches the description of what students should not expect from the course, as depicted in the image and text sources.": 1,
+    "The card accurately captures the tone of the email response using descriptions from the source material.": 1,
+    "The card accurately identifies challenges mentioned by participants for the class.": 1,
+    "The card specifically addresses the factors aiding understanding as provided by the image source.": 1,
+    "The card correctly discusses what the participants are most proud of, matching source content.": 1,
+    "The installation requirement for the Slido app is repeatedly stated across multiple pages, supporting the claim.": 1,
+    "Claim review leaves displayed content unaudited": 25,
+    "The card correctly identifies that individual reflections contribute 30% to the final grade, as supported by the source statements and images.": 1,
+    "The card accurately reflects that the first submission is not graded, as substantiated by the provided sources.": 1,
+    "The card correctly states the submission deadline for individual reflections, corresponding with the data provided.": 1,
+    "The card accurately summarizes the roles of insurance in the economy as supported by the source text and image on page 19.": 1,
+    "The card outlines the core operations of an insurance company as detailed in the source text and image.": 1,
+    "The explanation of underwriting is consistent with the description provided in the source material.": 1,
+    "This description of risk pooling aligns with the source details provided.": 1,
+    "The card's focus on claims management is consistent with the source details, focusing on loss payment.": 1,
+    "The card is complete and accurately reflects the challenges students faced in managing their time, as stated in the image of page 10.": 1,
+    "The card correctly captures the challenge students faced in being prepared for each class, which aligns with the source content.": 1,
+    "The card accurately reflects the rewarding nature of gradually understanding the material, as described in the source.": 1,
+    "The card reflects how group project pressure contributed to understanding Excel, aligning with the depicted challenges.": 1,
+    "The card is complete and relevant, containing detailed information about course evaluation components and their provided weights.": 1,
+    "The card accurately lists the materials used in the course and fits the topic of course structure.": 1,
+    "This card correctly describes required activities outside of class, aligning with the course description.": 1,
+    "The card accurately describes the role of risk pooling in the insurance industry as mentioned in the source.": 1,
+    "The card correctly explains how the law of large numbers assists in risk pricing, as referenced in the source text.": 1,
+    "The information is clearly presented in the chart on page 26, where Zurich is marked with the highest premium income among Swiss insurers.": 1,
+    "The number of life insurance companies in Switzerland in 2024 is specifically mentioned in the table on page 27.": 1,
+    "The change in the number of supplementary health insurance companies is clearly shown in the table on page 27.": 1,
+    "AXA's premium income as the largest European insurer is clearly presented in the chart on page 26.": 1,
+    "The number of non-life insurance companies in Switzerland for 2024 is accurately listed in the table on page 27.": 1,
+    "The answer provided matches the source information, stating that the typical customer need for life insurance is to protect income or build savings.": 1,
+    "The answer is consistent with the source, listing motor, property, accident, or liability loss as typical risks covered by property and casualty insurance.": 1,
+    "The information regarding claims experience and healthcare inflation is aligned with the source for health and accident insurance.": 1,
+    "The provided answer accurately reflects the source, which states that reinsurance protects insurers from large, volatile, or accumulated losses.": 1,
+    "Captive insurance's role in risk retention within a corporate group with external protection as needed matches the source description.": 1,
+    "The source emphasizes that purpose and risk transfer are more vital than labels in insurance product classification, aligning with the provided claim.": 1,
+    "The claim accurately lists functions associated with assets as stated in the source.": 1,
+    "The claim correctly identifies functions related to liabilities according to the source text.": 1,
+    "The functions associated with capital are correctly mentioned according to the source material.": 1,
+    "The structure of an insurance company as described matches the source details.": 1,
+    "The card accurately states that 30% of the final grade is attributed to individual submission.": 1,
+    "The card correctly states that teams are comprised of 5-6 students.": 1,
+    "The card correctly lists the components of the second project submission as report, slides, presentation.": 1,
+    "The named product families match those listed in the source.": 1,
+    "The claim about the top three European insurers by premium income in 2022 is directly supported by the chart in the image on page 26, showing AXA, Allianz, and Generali ranked by premium income.": 1,
+    "The claim about the total number of insurance companies in Switzerland in 2023 is supported by the table in the image on page 27, showing a total of 194 companies.": 1,
+    "The information on the number of captives in Switzerland as of 2024 is supported by the table in the image on page 27.": 1,
+    "Legacy card: source support has not been checked": 7,
+    "Course logistics are excluded from learning content; retained for manual review": 1
+  },
+  "artifactCount": 36
+}

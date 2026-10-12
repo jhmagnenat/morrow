@@ -1,0 +1,24 @@
+import assert from 'node:assert/strict';
+import {readFile} from 'node:fs/promises';
+import vm from 'node:vm';
+const listeners={},saved=new Map();let full=false,offline=false;
+const key=request=>typeof request==='string'?request:request.url;
+const cache={async match(request){return saved.get(key(request))?.clone();},async put(request,response){if(full)throw Error('QuotaExceededError');saved.set(key(request),response.clone());},async keys(){return [...saved.keys()].map(url=>new Request(url));},async delete(request){return saved.delete(key(request));}};
+vm.runInNewContext(await readFile('public/study-worker.js','utf8'),{self:{location:{origin:'http://localhost'},addEventListener(name,callback){listeners[name]=callback;}},caches:{async open(){return cache;}},Request,Response,Headers,URL,fetch:async()=>{if(offline)throw Error('Network offline');return new Response('actual server response',{headers:{'Content-Length':'22','Content-Type':'application/pdf'}});}});
+async function request(url,headers={}){let work;listeners.fetch({request:new Request(url,{headers}),respondWith(value){work=value;}});return await work;}
+full=true;
+assert.equal(await(await request('http://localhost/api/review/today')).text(),'actual server response','Cache quota must not hide a successful online response');
+full=false;
+const media='http://localhost/api/anki/packages/'+ 'a'.repeat(64)+'/media/diagram.png?courseId=geometry';
+assert.equal((await request(media)).status,200);
+offline=true;
+assert.equal(await(await request(media)).text(),'actual server response','Visited imported media survives network loss');
+assert.equal((await request(media.replace('geometry','foreign-course'))).status,503,'Another course cannot reuse cached private media');
+offline=false;
+const pdf='http://localhost/api/documents/original/file?courseId=geometry';
+assert.equal((await request(pdf)).status,200);offline=true;
+const range=await request(pdf,{'Range':'bytes=0-5'});assert.equal(range.status,206);assert.equal(await range.text(),'actual');assert.equal(range.headers.get('Content-Range'),'bytes 0-5/22');
+assert.equal(await(await request(pdf,{'Range':'bytes=-8'})).text(),'response');
+assert.equal((await request(pdf,{'Range':'bytes=500-600'})).status,416);
+assert.equal((await request(pdf.replace('geometry','foreign-course'))).status,503,'Cached PDF access stays bound to its course');
+console.log('PASS: successful responses survive cache-quota failure; visited Anki media remains available offline and isolated by course. No model calls.');

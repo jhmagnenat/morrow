@@ -1,0 +1,22 @@
+{
+  "recordPath": "references/evaluation/insurance-inspected-questions-35.json",
+  "courseId": "default",
+  "documentId": "8b6f4739-c98f-4a73-98c2-39df80dcbb4f",
+  "result": {
+    "page": 35,
+    "questions": 5,
+    "providerCalls": 0,
+    "recovery": {
+      "version": 1,
+      "id": "50dbd19d-7e94-4b47-bc7d-b31f5a601dd1",
+      "courseId": "default",
+      "createdAt": "2026-10-11T11:24:50.704Z",
+      "reason": "before-inspected-question-coverage",
+      "digest": "22cb9dc3452ce49cb14a582966a0b1f58eac303f25c4403ea173d9a511c0c7eb",
+      "bytes": 465818,
+      "pdfs": [
+        "438f0286f8310855dd51bcb0db76aafbea5c5551b8dcf160cbc0a5feeb4160af"
+      ]
+    }
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "version": 1,
+  "purpose": "Concrete reference questions for evaluating generated cards against the actual uploaded course. These are development review targets, not a measured quality score or automatically published cards.",
+  "document": "Session_1_Introduction.pdf",
+  "language": "en",
+  "cases": [
+    {
+      "page": 23,
+      "objective": "Captive-insurance customer need",
+      "question": "Whose risks does captive insurance finance?",
+      "answer": "A corporate group's own risks.",
+      "mustNotAdd": ["Guaranteed cost savings", "Mandatory catastrophe threshold", "Universal claims-control benefit"]
+    },
+    {
+      "page": 23,
+      "objective": "Reinsurance versus captive insurance",
+      "question": "Who does reinsurance protect, compared with captive insurance?",
+      "answer": "Reinsurance protects an insurer; captive insurance finances a corporate group's own risks.",
+      "mustNotAdd": ["Guaranteed financial stability", "Unstated treaty terms"]
+    },
+    {
+      "page": 23,
+      "objective": "Property-and-casualty financial feature",
+      "question": "Which two claims characteristics distinguish the financial behavior of property and casualty insurance in the course table?",
+      "answer": "Claims frequency and severity.",
+      "mustNotAdd": ["An unstated pricing formula", "Guaranteed premium response"]
+    },
+    {
+      "page": 23,
+      "objective": "Health-and-accident customer need",
+      "question": "Which two customer needs does health and accident insurance address in the course table?",
+      "answer": "Funding medical care and replacing income.",
+      "mustNotAdd": ["Universal medical coverage", "Unspecified policy benefits"]
+    },
+    {
+      "page": 23,
+      "objective": "Classification boundary",
+      "question": "When insurance-product classifications overlap, what matters more than the product label?",
+      "answer": "The purpose and the risk transfer.",
+      "mustNotAdd": ["Mutually exclusive product families", "Unstated legal classification"]
+    },
+    {
+      "page": 32,
+      "objective": "Shown CFO association",
+      "question": "In the possible insurer organization shown, which function is associated with the CFO?",
+      "answer": "Finance and accounting.",
+      "mustNotAdd": ["A universal organizational requirement", "An invented reporting hierarchy"]
+    },
+    {
+      "page": 32,
+      "objective": "Shown CIO association",
+      "question": "In the possible insurer organization shown, which function is associated with the CIO?",
+      "answer": "Investment management.",
+      "mustNotAdd": ["Guaranteed investment returns", "An invented responsibility"]
+    },
+    {
+      "page": 32,
+      "objective": "Shown CTO association",
+      "question": "In the possible insurer organization shown, which function is associated with the CTO?",
+      "answer": "IT and digital strategy.",
+      "mustNotAdd": ["An unstated digital-transformation strategy", "A universal job mandate"]
+    },
+    {
+      "page": 24,
+      "objective": "No fabricated teaching from a standalone advertisement",
+      "expectedCards": 0,
+      "mustNotAdd": ["National symbols increased trust", "An experiment or its result", "A marketing strategy inferred from the photo"]
+    }
+  ]
+}

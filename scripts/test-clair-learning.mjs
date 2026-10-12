@@ -1,0 +1,114 @@
+import assert from 'node:assert/strict';
+import {isolatedModules, DATABASE_MODULES} from './isolated-modules.mjs';
+const env = await isolatedModules([...DATABASE_MODULES, 'learningPath', 'learningTasks', 'reliabilityReport', 'ankiExport'], {
+  llm: `export function currentProviderLabel(){return 'fixture';}export class LlmNotConfiguredError extends Error {} export class LlmProviderError extends Error {} export async function structuredCompletion(system,prompt){globalThis.__assessmentCalls=(globalThis.__assessmentCalls??0)+1;globalThis.__assessmentPrompt=system;globalThis.__assessmentInput=JSON.parse(prompt);return {feedback:'Check the causal steps.',correctedAnswer:'Area doubles when height stays fixed.',score:0.95};}`,
+  pdf: `export async function extractPdfPages(){throw Error('Unexpected PDF extraction in course Interview');}`,
+});
+process.chdir(env.workspace);
+const db = await env.load('db'), quality = await env.load('qualityDb'), mastery = await env.load('mastery');
+const {clairFromLesson} = await env.load('clair'), {learningPath} = await env.load('learningPath'), {courseTasks} = await env.load('learningTasks');
+const {arithmeticIssues} = await env.load('reliabilityChecks'), {cardQuality} = await env.load('contentQuality');
+const {reliabilityReport} = await env.load('reliabilityReport'), {ankiExport} = await env.load('ankiExport');
+const source = 'A rectangle has area equal to width multiplied by height. Holding height fixed, doubling width doubles area. For width 3 and height 4, area is 12 square units. Perimeter measures boundary length, not area.';
+const lesson = {intuition:'How much surface does a rectangle cover?', goalAnswer:'Area counts unit squares: width counts columns and height counts rows, so their product counts all squares.', mechanism:['Each row contains width unit squares.', 'Multiplying squares per row by the number of rows gives area.'], analogy:{model:'',mapping:'',limit:''}, experiment:{setup:'Hypothetically, a rectangle is 3 units wide and 4 units high.',rule:'Area equals width times height; keep height fixed and double width to 6.',question:'What is the new area and why?',answer:'24 square units.',why:'6 × 4 = 24. Doubling the number of columns doubles the count of unit squares.'},technical:'For a rectangle, A = width × height; area has squared length units.'};
+const doc = db.insertDocument({title:'Geometry',kind:'course',pageCount:1});
+db.insertPassages([{documentId:doc.id,page:1,ordinal:0,text:source}]);
+const evidence = [{documentId:doc.id,page:1,quote:source}];
+const make = label => db.insertNotion({label,domain:'Geometry',status:'draft',definition:'Area counts unit squares covered by a rectangle.',explanation:lesson.goalAnswer,sources:[{documentId:doc.id,page:1}]});
+const area = make('Rectangle area'), perimeter = make('Perimeter');
+quality.setNotionMetadata(area.id,'course',evidence); quality.setNotionMetadata(perimeter.id,'course',evidence);
+const lessonData = clairFromLesson(area.label,lesson,evidence,[{notionId:perimeter.id,label:'Perimeter',type:'related',direction:'outgoing',explanation:'Area measures surface; perimeter measures boundary length.',evidence}]);
+quality.setNotionClair(area.id,lessonData);
+const notion = db.getGraph().notions.find(n=>n.id===area.id);
+assert.deepEqual(notion.clair,lessonData,'Structured dimensions persist through the existing graph model');
+assert.equal(lessonData.implications.origin,'generated','A hypothetical situation is never attributed to the lecturer');
+assert(lessonData.reconstruction.question.includes('Without consulting'));
+
+for (let i=0;i<12;i++) db.recordMasterySignal(area.id,'drill',1,'definition');
+assert.notEqual(db.getMasteryForNotion(area.id).level,'mastered','Repeated perfect definitions cannot establish deep mastery');
+assert.equal(db.getMasteryForNotion(area.id).dimensions.mechanism.score,null,'Unassessed skills remain unknown');
+for (const dimension of mastery.MASTERY_DIMENSIONS) for(let i=0;i<2;i++) db.recordMasterySignal(area.id,'interview',0.95,dimension,dimension==='reconstruction',dimension==='application'?'same-application':`fixture-${dimension}-${i}`);
+assert.notEqual(db.getMasteryForNotion(area.id).level,'mastered','Repeating one perfect application cannot certify transferable mastery');
+db.recordMasterySignal(area.id,'interview',0.95,'application',false,'different-application');
+assert.equal(db.getMasteryForNotion(area.id).level,'mastered','All five skills plus unaided assessed reconstruction can establish mastery');
+
+const card = (id,kind) => quality.saveStudyCard({id,cardType:'notion',notionId:area.id,kind,question:kind==='definition'?'What does rectangle area measure?':'How do width and height determine rectangle area?',answer:kind==='definition'?'The surface covered, measured in square units.':'Width counts unit squares per row; multiplying by the number of rows gives total area.',example:'',status:'ready',evidence,objective:id,warnings:[],userEdited:false,model:'fixture',promptVersion:'fixture'});
+card('definition-card','definition'); card('mechanism-card','mechanism');
+db.gradeCard('notion','definition-card','easy'); db.gradeCard('notion','mechanism-card','easy');
+const definitionDue = db.openDb().prepare('SELECT due_at FROM review_state WHERE card_id=?').get('definition-card').due_at;
+const reviewLogBefore = db.exportSnapshot().reviewLog;
+const session = db.insertInterviewSession({jobTitle:'Course understanding',jobDescription:'',cvText:'',coverLetter:'',durationMinutes:20,exchanges:[{question:'How does doubling width affect area?',relatedNotionIds:[area.id],learningDimension:'mechanism',referenceAnswer:'Area doubles when height stays fixed.',sourceEvidence:evidence}]});
+db.recordInterviewAnswer(session.id,0,'It stays unchanged.',{feedback:'The number of columns doubles.',correctedAnswer:'Area doubles when height stays fixed.',score:0.2},false);
+assert.equal(db.getMasteryForNotion(area.id).dimensions.mechanism.level,'weak');
+assert.equal(db.getMasteryForNotion(area.id).dimensions.definition.level,'mastered','A mechanism failure does not erase definition knowledge');
+assert.equal(db.openDb().prepare('SELECT due_at FROM review_state WHERE card_id=?').get('definition-card').due_at,definitionDue,'Only matching skills are brought forward');
+assert(Date.parse(db.openDb().prepare('SELECT due_at FROM review_state WHERE card_id=?').get('mechanism-card').due_at)<=Date.now()+601000);
+assert.deepEqual(db.exportSnapshot().reviewLog,reviewLogBefore,'Interview remediation fabricates neither a review nor XP');
+const signalCount = db.exportSnapshot().masterySignals.length;
+db.recordInterviewAnswer(session.id,0,'It stays unchanged.',{feedback:'Repeated delivery',correctedAnswer:'Repeated delivery',score:1},false);
+assert.equal(db.exportSnapshot().masterySignals.length,signalCount,'A retried answer cannot duplicate progress');
+assert.throws(()=>db.recordInterviewAnswer(session.id,0,'A different answer',{feedback:'',correctedAnswer:'',score:1},false),/already/);
+const tasks = courseTasks(db.getGraph().notions,db.getMasteryMap());
+assert.equal(tasks[0].learningDimension,'mechanism','An Interview failure influences the next course questions');
+assert(tasks.some(t=>t.learningDimension==='application'&&t.question.includes('Assume:')));
+assert(tasks.some(t=>t.learningDimension==='relations'));
+const visualHash='a'.repeat(64),visualDescription='Inspected rectangle diagram';
+const visualNotion={...notion,clair:{...notion.clair,sources:[{documentId:doc.id,page:1,quote:'',visualDescription,visualReview:{reviewer:'Fixture reviewer',reviewedAt:'2026-10-09T12:00:00Z',pdfSha256:visualHash,page:1,description:visualDescription,scope:'visible-facts-only'}}]}};
+assert(courseTasks([visualNotion],{},10,[],{[doc.id]:visualHash}).length,'Verified image-only lessons remain eligible for Interview');
+assert.equal(courseTasks([visualNotion],{},10,[],{[doc.id]:'b'.repeat(64)}).length,0,'A replaced PDF invalidates the visual lesson');
+
+const prerequisite = db.insertLink({source:perimeter.id,target:area.id,type:'prerequisite',description:'Fixture dependency'});
+const path = learningPath(db.getGraph().notions,[prerequisite],db.getMasteryMap());
+assert.equal(path.topics[0].notion.id,perimeter.id,'Prerequisites precede dependent concepts');
+assert.deepEqual(path.topics[1].suggestedPreparation,[perimeter.id]);
+const cycle = learningPath(db.getGraph().notions,[prerequisite,{...prerequisite,id:'cycle',source:area.id,target:perimeter.id}]);
+assert.equal(cycle.topics.length,2,'Cycles never make concepts inaccessible');
+assert.equal(cycle.cycles.length,2);
+
+for(const equation of ['20-2-5 = 13.','2+3*4 = 14.','2*-3 = -6.','0.1+0.2 = 0.30.','1/3 = 0.33.','(2+3)*4+1=21.'])assert.deepEqual(arithmeticIssues(equation),[],equation);
+for(const equation of ['20-2-5 = 14.','2+3*4 = 20.','1/0 = 0.'])assert(arithmeticIssues(equation).length,equation);
+assert(cardQuality('Why does life insurance have investment sensitivity?','It covers death and savings over a long duration, making it sensitive to investments.','mechanism').length,'Observed circular explanation is blocked');
+const input = {...db.getGraph(),cards:quality.getStudyCards(),passages:db.getPassagesForDocument(doc.id)};
+assert.equal(reliabilityReport(input).summary.readyCardsWithIssues,0);
+const exported = ankiExport(input);
+assert.equal(exported.exported,2); assert(exported.text.includes('#columns:ID\tFront\tBack\tSources\tTags'));
+assert(exported.text.includes(source));
+const unsafe = {...input.cards[0],id:'unsafe',answer:'2+3 = 9.',evidence:[{...evidence[0],quote:'A fabricated quotation that does not exist.'}]};
+assert.equal(ankiExport({...input,cards:[...input.cards,unsafe]}).excluded,1,'Unsafe ready labels alone do not permit export');
+const escaped = ankiExport({...input,cards:[{...input.cards[0],question:'What does <script>alert(1)</script> measure?'}]});
+assert(escaped.text.includes('&lt;script&gt;')); assert(!escaped.text.includes('<script>'));
+
+const before = db.exportSnapshot(); db.importSnapshot(before);
+assert.deepEqual(db.getGraph().notions.find(n=>n.id===area.id).clair,lessonData);
+assert.deepEqual(db.exportSnapshot().masterySignals,before.masterySignals,'Backups retain all dimensional scores and unaided evidence');
+const invalid = {...before,masterySignals:[{...before.masterySignals[0],dimension:'invented'}]};
+assert.throws(()=>db.importSnapshot(invalid),/Invalid mastery/);
+assert.deepEqual(db.exportSnapshot().masterySignals,before.masterySignals,'Invalid restore does not wipe the current course');
+const legacy = structuredClone(before); for(const s of legacy.masterySignals){delete s.dimension;delete s.unaided;}
+db.importSnapshot(legacy);
+assert.notEqual(db.getMasteryForNotion(area.id).level,'mastered','Historical scalar scores cannot certify untested dimensions');
+
+const routes = await Promise.all([env.route('app/api/learning/route.ts','learning-route'),env.route('app/api/reliability/route.ts','reliability-route'),env.route('app/api/export/route.ts','export-route')]);
+for(const route of routes)assert.equal((await route.GET(new Request('http://localhost/api/export?format=json'))).status,200);
+assert.equal((await routes[2].GET(new Request('http://localhost/api/export?format=anki'))).headers.get('X-Exported-Cards'),'2');
+const startRoute=await env.route('app/api/interview/start/route.ts','interview-start-route');
+const answerRoute=await env.route('app/api/interview/[sessionId]/answer/route.ts','interview-answer-route');
+const completeRoute=await env.route('app/api/interview/[sessionId]/complete/route.ts','interview-complete-route');
+const form=new FormData();form.set('mode','course');
+const startResponse=await startRoute.POST(new Request('http://localhost/api/interview/start',{method:'POST',body:form}));
+assert.equal(startResponse.status,200);const started=(await startResponse.json()).session;
+assert.equal(started.mode,'course');assert.equal(globalThis.__assessmentCalls,undefined,'Course question selection makes no model call');
+const routeContext={params:Promise.resolve({sessionId:started.id})};
+const postAnswer=body=>answerRoute.POST(new Request('http://localhost/api/interview/answer',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(body)}),routeContext);
+assert.equal((await postAnswer({questionIndex:0.5,answerText:'An answer'})).status,400);
+const arithmeticAnswer={questionIndex:0,answerText:'2+3 = 9. Therefore the area is nine.',unaided:true};
+assert.equal((await postAnswer(arithmeticAnswer)).status,200);
+assert(globalThis.__assessmentPrompt.includes('ORIGINAL documents'));
+assert(globalThis.__assessmentInput.originalSources.some(s=>s.text===source),'Grading receives the actual source document, not only a stored reference answer');
+assert.equal(db.getInterviewSessionById(started.id).exchanges[0].score,0.4,'An explicit arithmetic mistake cannot receive a high assessment');
+assert.equal((await postAnswer(arithmeticAnswer)).status,200);assert.equal(globalThis.__assessmentCalls,1,'API retries neither regrade nor duplicate progression');
+assert.equal((await postAnswer({...arithmeticAnswer,answerText:'Changed answer'})).status,409);
+assert.equal((await completeRoute.POST(new Request('http://localhost/api/interview/complete',{method:'POST'}),routeContext)).status,200);
+assert.equal(globalThis.__assessmentCalls,1,'The course summary uses actual tested skills without a second model call');
+console.log('PASS: persisted C.L.A.I.R., five distinct skills, unaided reconstruction, shared Interview/Drill remediation, idempotent answers, source-safe Anki export, arithmetic guards, learning path, legacy/backup rollback and API compatibility. No model calls.');
+for(const connection of globalThis.__courseDbs?.values()??[])connection.close();

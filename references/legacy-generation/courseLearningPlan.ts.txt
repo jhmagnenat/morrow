@@ -1,0 +1,47 @@
+import {createHash} from 'node:crypto';
+import {openDb} from '@/lib/db';
+import {structuredCompletion,currentProviderLabel} from '@/lib/llm';
+import {COURSE_NOTES_MISSION,courseOverview,nonTeachingSlideReason} from '@/lib/coursePedagogy';
+import {TEACHING_POLICY} from '@/lib/teachingPolicy';
+import {GENERATION_VERSION} from '@/lib/contentQuality';
+import {scopedCourseId} from '@/lib/courseScope';
+export interface CourseBranch {key:string;label:string;question:string;summary:string[];pages:number[];scope:string;}
+export interface CourseLearningPlan {purpose:string;learnerStartingPoint:string;branches:CourseBranch[];progression:string[];}
+const str={type:'string'},array=(items:unknown)=>({type:'array',items}),object=(properties:Record<string,unknown>)=>({type:'object',properties,required:Object.keys(properties),additionalProperties:false});
+const planning=new Map<string,Promise<{plan:CourseLearningPlan;requests:number}>>();
+export function courseLearningPlan(documentId:string,title:string,passages:Array<{page:number;text:string}>,insurance:boolean,primary?:{page:number;images:string[]}) {
+ const key=`${scopedCourseId()}:${documentId}:${createHash('sha256').update(JSON.stringify(passages)).digest('hex')}`;
+ const current=planning.get(key);if(current)return current.then(result=>({...result,requests:0}));
+ const promise=buildCourseLearningPlan(documentId,title,passages,insurance,primary).finally(()=>planning.delete(key));planning.set(key,promise);return promise;
+}
+async function buildCourseLearningPlan(documentId:string,title:string,passages:Array<{page:number;text:string}>,insurance:boolean,primary?:{page:number;images:string[]}) {
+  const fingerprint=createHash('sha256').update(JSON.stringify({title,passages:passages.map(({page,text})=>({page,text})),version:GENERATION_VERSION,model:currentProviderLabel()})).digest('hex');
+  const cacheKey=`course-learning-plan:${documentId}:${fingerprint}`;
+  const db=openDb(),cached=db.prepare('SELECT value FROM quality_settings WHERE key=?').get(cacheKey);
+  if(cached)return {plan:JSON.parse(String(cached.value)) as CourseLearningPlan,requests:0};
+  const outline=courseOverview(passages).filter(p=>!nonTeachingSlideReason(p.text,insurance));
+  if(!outline.length)throw new Error('No subject material for a course plan');
+  const existingBranches=db.prepare("SELECT n.label,n.course_context scope FROM notions n JOIN notion_metadata m ON m.notion_id=n.id WHERE m.layer='organizer' AND m.generation_version LIKE 'planned-course-%' AND n.mapping_visible=1").all();
+  let requests=0;
+  const createPlan=async(repair?:{reason:string;previous:CourseLearningPlan})=>{
+  requests++;
+  return structuredCompletion<CourseLearningPlan>(COURSE_NOTES_MISSION+'\n'+TEACHING_POLICY+`
+Design the logical course BEFORE explaining individual slides. The slides set the subject, level, examples and boundaries; they are not the maximum depth of explanation. Infer the central learner question and the coherent model a beginner should build. Identify 4–8 compact top-level branches when enough content exists, fewer for a genuinely small lesson. Separate product/type families, actors/roles, processes, and measurements without imposing this taxonomy on unrelated subjects. Keep comparable levels; specific products must not be peers of whole product families or business processes.
+For each branch give a stable key, short label, a learner question, one to four compact summary lines showing meaningful relations or category → concrete example, supporting pages, and scope defining what belongs there. These are course navigation syntheses, not claims that the lecturer literally wrote every line. Supply a progression from concrete intuition to precise mechanisms. No administrative branches, no chronological Slide 1/Slide 2 catalogue, no generic miscellaneous bucket. Summaries must explain something, not list abstract headings. Source pages must be supplied pages; image-only sparse pages may indicate material to examine later, never invented chart figures. Do not fabricate external rules or create an advanced course outside the source subject.
+This document is part of the same course as existingBranches. Reuse their EXACT labels whenever their scope fits; do not create synonymous navigation branches for a second slide deck. New branches are justified only by genuinely distinct subject scope. Keep exercise activities within the mechanisms they exercise, not an Interactive Learning branch. Assign every substantive teaching page to its theme, including continued examples and diagrams on non-adjacent pages. Exclude non-teaching pages. Use at most 8 branches, at most 4 summary lines per branch, unique keys and labels, nonempty supporting pages drawn from supplied page numbers. If repair is supplied, fix its named structural problem while keeping the subject content.`,JSON.stringify({title,pages:outline,existingBranches,primaryImagePage:primary?.page,repair}),'plan_course','Design a coherent course and compact mapping',object({purpose:str,learnerStartingPoint:str,branches:array(object({key:str,label:str,question:str,summary:array(str),pages:array({type:'integer',enum:outline.map(p=>p.page)}),scope:str})),progression:array(str)}),primary?.images??[]);
+  };
+  let plan=await createPlan();
+  try{validateCoursePlan(plan,outline.map(p=>p.page));}catch(error){
+    plan=await createPlan({reason:error instanceof Error?error.message:'Invalid course plan',previous:plan});
+    validateCoursePlan(plan,outline.map(p=>p.page));
+  }
+  db.prepare('INSERT INTO quality_settings(key,value) VALUES(?,?) ON CONFLICT(key) DO UPDATE SET value=excluded.value').run(cacheKey,JSON.stringify(plan));
+  return {plan,requests};
+}
+
+export function validateCoursePlan(plan:CourseLearningPlan,pages:number[]) {
+  if(!plan.purpose.trim() || !plan.learnerStartingPoint.trim() || !plan.progression.length || plan.progression.some(p=>!p.trim()))throw new Error('Course plan requires a purpose, learner starting point and nonempty progression');
+  if(!plan.branches.length || plan.branches.length>8)throw new Error('Course plan requires between 1 and 8 branches');
+  if(new Set(plan.branches.map(b=>b.key)).size!==plan.branches.length || new Set(plan.branches.map(b=>b.label.trim().toLowerCase())).size!==plan.branches.length)throw new Error('Course branch keys and labels must be unique');
+  if(plan.branches.some(b=>!b.key.trim() || !b.label.trim() || !b.question.trim() || !b.scope.trim() || !b.summary.length || b.summary.length>4 || b.summary.some(s=>!s.trim()) || !b.pages.length || b.pages.some(page=>!pages.includes(page))))throw new Error('Course branches require 1–4 summary lines, a learner question, a scope, and supplied supporting pages');
+}

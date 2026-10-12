@@ -1,0 +1,1708 @@
+{
+  "document": {
+    "id": "8b6f4739-c98f-4a73-98c2-39df80dcbb4f",
+    "title": "Session_1_Introduction - Session_1_Introduction.pdf",
+    "page_count": 38
+  },
+  "cards": [
+    {
+      "id": "33eebd1c-6273-42a0-a278-c4fc9f4f66b7",
+      "cardType": "notion",
+      "question": "What is the insurance value chain?",
+      "answer": "The insurance value chain encompasses all stages from identifying customer needs and defining products to pricing, underwriting, risk retention, claims, and financial reporting, reflecting the interconnected functions and financial links in the insurance industry.",
+      "explanation": "The insurance value chain details the sequence of interconnected processes that insurance companies follow to deliver value, from understanding customer needs through to financial reporting.",
+      "example": "",
+      "kind": "definition",
+      "objective": "Define the insurance value chain and understand its components and roles.",
+      "status": "draft",
+      "evidence": [
+        {
+          "documentId": "8b6f4739-c98f-4a73-98c2-39df80dcbb4f",
+          "page": 33,
+          "quote": "Insurance value chain and financial links\n45\nStage Business question Main functions Financial link\nCustomer need and\nproduct\nWhat protection or savings need should\nthe product meet?\nProduct, distribution, legal and\ncompliance\nProduct terms define future\ncash flows\nPricing and\nunderwriting\nWhich risks will the insurer accept and\nat what price?\nPricing, underwriting and data Premium must cover expected\nclaims, expenses and margin\nRisk transfer and\ncapital\nHow much risk should the insurer\nretain?\nReinsurance and capital\nmanagement\nRetention changes volatility\nand capital needs\nClaims and reserving What has happened and what will it\nultimately cost?\nClaims and reserving Claims and provisions affect\nprofit and liabilities\nInvestment and\nreporting\nCan assets support obligations and\nreported performance?\nInvestment, finance, risk and\naudit\nInvestment result, liquidity,\nequity and disclosures\nA decision in one stage changes the information or constraints faced by the next stage."
+        }
+      ],
+      "warnings": [
+        "A claim cites missing, forged or unrelated source evidence",
+        "The claim accurately describes the stages of the insurance value chain as verified by the source text.",
+        "No reviewed primary-page evidence"
+      ],
+      "userEdited": false,
+      "model": "OpenAI (gpt-4o)",
+      "promptVersion": "direct-cards-v4-knowledge-coverage",
+      "knowledgeTrace": {
+        "unitId": "insurance-industry-and-value-chain",
+        "planKey": "5cdfaabc2c7a81d5559c7fb1491e965c535f16faa38982ab8b45acae979ce871",
+        "claim": "The lesson covers the insurance industry and its value chain, emphasizing the roles of insurers and actuaries.",
+        "conditions": []
+      }
+    },
+    {
+      "id": "3753d189-5912-40f2-918d-af6adc0609ee",
+      "notionId": "5f8f8721-3ac7-46b6-8e00-0acd49f4bafc",
+      "cardType": "notion",
+      "question": "What communication tones should be avoided according to the session?",
+      "answer": "Defensive, dismissive, or undermining tones should be avoided.",
+      "explanation": "These tones can negatively affect the perception and clarity of communication, and are not conducive to constructive interaction.",
+      "example": "",
+      "kind": "definition",
+      "objective": "Recognize tones to avoid in professional settings.",
+      "status": "ready",
+      "evidence": [
+        {
+          "documentId": "8b6f4739-c98f-4a73-98c2-39df80dcbb4f",
+          "page": 7,
+          "quote": "What else?\n7\n- Defensive\n- Undermines the value\n- Dismissive"
+        }
+      ],
+      "warnings": [],
+      "userEdited": false,
+      "model": "OpenAI (gpt-4o)",
+      "promptVersion": "direct-cards-v4-knowledge-coverage",
+      "knowledgeTrace": {
+        "unitId": "communication_tone",
+        "planKey": "6a65f790f21ee63638727f401f29d4323a37c47b580f49302373e8f12777ee36",
+        "claim": "A tone that is defensive, dismissive, or undermines value should be avoided in communication.",
+        "conditions": []
+      },
+      "accuracyReview": {
+        "version": "accuracy-v2-scientific-quotations",
+        "contentHash": "18236896fc1d7dc3dd4f7c93df1452edced0b208c95224da7a95a1371214a99c",
+        "sources": [
+          {
+            "documentId": "8b6f4739-c98f-4a73-98c2-39df80dcbb4f",
+            "page": 7,
+            "sha256": "386d079445a61860ed6ec667435910470916ca0343d746d35a832f8f8f257600",
+            "revision": "a4d5bd7455f80a62e59225effb44c22513361f52f353028ede576097a0480c89"
+          }
+        ]
+      }
+    },
+    {
+      "id": "a0843166-9588-450d-847f-df44a9641340",
+      "cardType": "notion",
+      "question": "Which insurers were the top three in Europe by premium income in 2022?",
+      "answer": "AXA, Allianz, and Generali, with premium incomes of 106.2, 100.6, and 85.2 billion USD respectively.",
+      "explanation": "These companies lead in the European insurance market based on their substantial premium income, reflecting their market dominance and capability to underwrite significant volumes of insurance.",
+      "example": "",
+      "kind": "mechanism",
+      "objective": "Understand the leading insurers by premium income.",
+      "status": "draft",
+      "evidence": [
+        {
+          "documentId": "8b6f4739-c98f-4a73-98c2-39df80dcbb4f",
+          "page": 26,
+          "quote": "",
+          "visualDescription": "A bar chart showing top European insurers by premium income in 2022."
+        }
+      ],
+      "warnings": [
+        "Accuracy review requires original source evidence",
+        "A claim cites missing, forged or unrelated source evidence",
+        "The claim is supported by the image on page 26, which shows a chart of the top European insurers by premium income in 2022.",
+        "Image-supported answer requires visual review against the original PDF"
+      ],
+      "userEdited": false,
+      "model": "OpenAI (gpt-4o)",
+      "promptVersion": "direct-cards-v4-knowledge-coverage",
+      "knowledgeTrace": {
+        "unitId": "insurers_market_shares",
+        "planKey": "788327a5d60b8388aa67f032b4367d75c39f1e51f502ba4788d1f8272c884d17",
+        "claim": "Top European insurers by premium income in 2022 include AXA, Allianz, and Generali, with premium incomes of 106.2, 100.6, and 85.2 billion USD respectively.",
+        "conditions": []
+      }
+    },
+    {
+      "id": "cba5ac3f-7822-4849-8784-8e1e2ecf36a3",
+      "notionId": "d47a5791-6ce4-449e-b3bf-7c11467e4ecf",
+      "cardType": "notion",
+      "question": "What is the main purpose of life insurance?",
+      "answer": "Protect income or build savings.",
+      "explanation": "Life insurance is designed to provide financial security by protecting income or building savings, addressing risks such as death and longevity. Financial features include long duration and sensitivity to investment returns.",
+      "example": "",
+      "kind": "application",
+      "objective": "Identify purposes of various insurance products.",
+      "status": "ready",
+      "evidence": [
+        {
+          "documentId": "8b6f4739-c98f-4a73-98c2-39df80dcbb4f",
+          "page": 23,
+          "quote": "Main insurance product families\n44\nFamily Customer need Typical risk or benefit Financial feature\nLife Protect income or build\nsavings\nDeath, longevity, retirement or\nsavings benefit\nLong duration and investment\nsensitivity\nProperty and\ncasualty\nProtect property and legal\nliability\nMotor, property, accident or liability\nloss\nClaims frequency and severity\nHealth and\naccident\nFund medical care or replace\nincome\nMedical expense, disability or\naccident\nClaims experience and\nhealthcare inflation\nReinsurance Protect an insurer Large, volatile or accumulated\ninsurance losses\nCeded premium and claim\nrecoveries\nCaptive\ninsurance\nFinance a corporate group's\nown risks\nRisks retained within the group Risk retention with external\nprotection when needed\nProduct classification can overlap. The purpose and risk transfer matter more than the label."
+        }
+      ],
+      "warnings": [],
+      "userEdited": false,
+      "model": "OpenAI (gpt-4o)",
+      "promptVersion": "direct-cards-v4-knowledge-coverage",
+      "knowledgeTrace": {
+        "unitId": "insurance_product_families_life",
+        "planKey": "d86aa16c5703798e07d2843f09f47b8c3a8c806c0ef92c162de42c4922e46551",
+        "claim": "Life insurance aims to protect income or build savings, addressing risks like death and longevity, with long duration and investment sensitivity as financial features.",
+        "conditions": []
+      },
+      "accuracyReview": {
+        "version": "accuracy-v2-scientific-quotations",
+        "contentHash": "6b36b8232c2a1e72b803aef349f8290de2e9b62c23b2cf66dedc73087ee84a9a",
+        "sources": [
+          {
+            "documentId": "8b6f4739-c98f-4a73-98c2-39df80dcbb4f",
+            "page": 23,
+            "sha256": "8b6fbf6418a1867022d38b551ccfecf9764f0025b7c21dbc19949493cec98613",
+            "revision": "a4d5bd7455f80a62e59225effb44c22513361f52f353028ede576097a0480c89"
+          }
+        ]
+      }
+    },
+    {
+      "id": "9656c112-1bd3-4e55-a0b9-e7158c4cf269",
+      "notionId": "e141ad17-4cb5-4cb8-bf72-e8540cd47278",
+      "cardType": "notion",
+      "question": "What are the different categories of insurance companies in Switzerland?",
+      "answer": "The categories include life, property and casualty (P&C), health, reinsurance, and captives.",
+      "explanation": "",
+      "example": "",
+      "kind": "definition",
+      "objective": "Define the categories of insurance companies in Switzerland.",
+      "status": "ready",
+      "evidence": [
+        {
+          "documentId": "8b6f4739-c98f-4a73-98c2-39df80dcbb4f",
+          "page": 27,
+          "quote": "• Life\n• P&C\n• Health\n• Reinsurance\n• Captives\n27\nInsurance companies in Switzerland"
+        }
+      ],
+      "warnings": [],
+      "userEdited": false,
+      "model": "OpenAI (gpt-4o)",
+      "promptVersion": "direct-cards-v4-knowledge-coverage",
+      "knowledgeTrace": {
+        "unitId": "insurance_types_Switzerland",
+        "planKey": "bbc0c45f59b21e5948c957ab3630061bee1ba9fb8bd6326fd3d463df4460383f",
+        "claim": "In Switzerland, insurance companies are categorized into life, property and casualty (P&C), health, reinsurance, and captives.",
+        "conditions": []
+      },
+      "accuracyReview": {
+        "version": "accuracy-v2-scientific-quotations",
+        "contentHash": "74bfc851b143d5fa03dab500d02427e44e12ff6a2dae23b745409143d1add6e8",
+        "sources": [
+          {
+            "documentId": "8b6f4739-c98f-4a73-98c2-39df80dcbb4f",
+            "page": 27,
+            "sha256": "6494d3809a42b756881382305c2acc4da857b01c46682b8a4467b3f2cc755f85",
+            "revision": "a4d5bd7455f80a62e59225effb44c22513361f52f353028ede576097a0480c89"
+          }
+        ]
+      }
+    },
+    {
+      "id": "b505e7f5-0581-4f82-a552-045987cca5ba",
+      "notionId": "4ab541f1-5a9f-4f0b-ab45-f55f4a1e9e84",
+      "cardType": "notion",
+      "question": "Why is it important to know the top 3 players in different insurance sectors in Switzerland?",
+      "answer": "Knowing the top players is crucial for understanding market trends and dynamics.",
+      "explanation": "",
+      "example": "",
+      "kind": "application",
+      "objective": "Explain the importance of identifying top insurance companies in Switzerland.",
+      "status": "ready",
+      "evidence": [
+        {
+          "documentId": "8b6f4739-c98f-4a73-98c2-39df80dcbb4f",
+          "page": 28,
+          "quote": "28\n• Who are the top 3\nplayers in\n• Non-life insurers\n• life insurers?\n• accident insurers?\n• health insurers?\n• Reinsurers?\nhttps://www.svv.ch/en/swiss-insurance-market-companies-and-market-shares\nMarket shares"
+        }
+      ],
+      "warnings": [],
+      "userEdited": false,
+      "model": "OpenAI (gpt-4o)",
+      "promptVersion": "direct-cards-v4-knowledge-coverage",
+      "knowledgeTrace": {
+        "unitId": "market_shares_question",
+        "planKey": "ccc8b72b1813e58505e0ea15542d731e1bf495f73d2bfa5915f4eac01bf43607",
+        "claim": "In Switzerland, identifying the top 3 players in non-life insurers, life insurers, accident insurers, health insurers, and reinsurers is crucial for understanding market trends.",
+        "conditions": []
+      },
+      "accuracyReview": {
+        "version": "accuracy-v2-scientific-quotations",
+        "contentHash": "27faf6276df7a8825d24c0b1f0f536e6fb89e597a68157dffd3d4a8c6858a212",
+        "sources": [
+          {
+            "documentId": "8b6f4739-c98f-4a73-98c2-39df80dcbb4f",
+            "page": 28,
+            "sha256": "abea8a01ae5000036021a7e37583a7a3a2365833f3b77bf69518b086b932b8b5",
+            "revision": "a4d5bd7455f80a62e59225effb44c22513361f52f353028ede576097a0480c89"
+          }
+        ]
+      }
+    },
+    {
+      "id": "29789e70-df51-48d6-b3d8-02f9f53b4758",
+      "cardType": "notion",
+      "question": "Which life insurance company holds the largest market share in Switzerland for 2025 based on gross premiums written?",
+      "answer": "Swiss Life, with a 41.8% market share.",
+      "explanation": "",
+      "example": "",
+      "kind": "mechanism",
+      "objective": "Identify the leading life insurance company in Switzerland based on 2025 market share.",
+      "status": "draft",
+      "evidence": [
+        {
+          "documentId": "8b6f4739-c98f-4a73-98c2-39df80dcbb4f",
+          "page": 29,
+          "quote": "",
+          "visualDescription": "Donut chart showing Swiss Life leading with 41.8%, followed by Helvetia with 11.8%."
+        }
+      ],
+      "warnings": [
+        "Accuracy review requires original source evidence",
+        "Missing or misleading conditions, scope or exceptions",
+        "Accuracy review rejected a claim: unsupported. While the image provides data about market shares, it cannot be validated fully through text regarding the specific year and percentages without the visual.",
+        "A claim cites missing, forged or unrelated source evidence",
+        "The claim specifically cites visual data for validation, and text does not independently support the temporal specificity or the stated figures.",
+        "Image-supported answer requires visual review against the original PDF"
+      ],
+      "userEdited": false,
+      "model": "OpenAI (gpt-4o)",
+      "promptVersion": "direct-cards-v4-knowledge-coverage",
+      "knowledgeTrace": {
+        "unitId": "market_shares_visual",
+        "planKey": "eba102b4de0068e23f85e617a0347134a6b2e81ac6dbd89b8e49aedb922912b6",
+        "claim": "The market shares for life insurers in Switzerland for 2025, based on gross premiums written, show Swiss Life as the largest with 41.8% share, followed by Helvetia with 11.8%.",
+        "conditions": []
+      }
+    },
+    {
+      "id": "32ab3c04-1b2f-480f-aeb3-7c039d030fba",
+      "notionId": "7c47a462-1601-4374-ad7d-7a75c246845d",
+      "cardType": "notion",
+      "question": "Which function decides whether to accept a risk and on what terms?",
+      "answer": "Underwriting.",
+      "explanation": "Underwriting involves assessing risks and determining the terms under which an insurer is willing to accept them. This is crucial to ensuring that the premiums collected adequately cover the potential costs of claims.",
+      "example": "",
+      "kind": "mechanism",
+      "objective": "Identify the function responsible for risk acceptance in insurance.",
+      "status": "ready",
+      "evidence": [
+        {
+          "documentId": "8b6f4739-c98f-4a73-98c2-39df80dcbb4f",
+          "page": 36,
+          "quote": "KNOWLEDGE CHECK\nFunctions and the insurance value chain\nChoose an answer, then click to reveal the correct response.\n6 Which function decides whether to accept a risk and on what terms?\nA Claims B Underwriting C Finance D Distribution\n7 Which function estimates the premium needed for the expected risk?\nA Pricing B Reserving C Investment D Compliance\n8 What is the purpose of claims reserving?\nA Record sales B Set investment return C Estimate unpaid claim costs D Choose clients\n9 Which sequence best represents the insurance value chain?\nA Claims, sales, pricing, admin B Product/pricing, underwriting, admin, claims C Investment, claims, sales D Reserving,\nmarketing, pricing\n10 Claim frequency is 20% above plan. Who should respond?\nA Claims only B Pricing only C Several functions together D Marketing only\nSESSION 1 REVIEW 2 OF 2"
+        }
+      ],
+      "warnings": [],
+      "userEdited": false,
+      "model": "OpenAI (gpt-4o)",
+      "promptVersion": "direct-cards-v4-knowledge-coverage",
+      "knowledgeTrace": {
+        "unitId": "risk_acceptance",
+        "planKey": "87248a12f18801eabda82414a914f13db3b707a4af328375bf5a166b50d6f1e2",
+        "claim": "The function that decides whether to accept a risk and on what terms is Underwriting.",
+        "conditions": []
+      },
+      "accuracyReview": {
+        "version": "accuracy-v2-scientific-quotations",
+        "contentHash": "c2c74ffe48ff19881043a22f78389a55b56dfa8873abe832011ba8df361dbdbc",
+        "sources": [
+          {
+            "documentId": "8b6f4739-c98f-4a73-98c2-39df80dcbb4f",
+            "page": 36,
+            "sha256": "1f91416c944fd3c8ef762934e5d0eac1c8386a1a1a79ff39a8a961a511e84b4a",
+            "revision": "a4d5bd7455f80a62e59225effb44c22513361f52f353028ede576097a0480c89"
+          }
+        ]
+      }
+    },
+    {
+      "id": "f3671d6e-5c67-49a9-8d27-bf9d579159ea",
+      "notionId": "76f30a4c-8797-412a-95ce-315aa147fd95",
+      "cardType": "notion",
+      "question": "Which function estimates the premium needed for the expected risk?",
+      "answer": "Pricing.",
+      "explanation": "Pricing involves calculating the amount that should be charged for an insurance policy to adequately cover expected claims, expenses, and provide a profit margin. Accurate pricing is crucial for the profitability and competitiveness of an insurance company.",
+      "example": "",
+      "kind": "mechanism",
+      "objective": "Understand the role of pricing in insurance premiums.",
+      "status": "ready",
+      "evidence": [
+        {
+          "documentId": "8b6f4739-c98f-4a73-98c2-39df80dcbb4f",
+          "page": 36,
+          "quote": "KNOWLEDGE CHECK\nFunctions and the insurance value chain\nChoose an answer, then click to reveal the correct response.\n6 Which function decides whether to accept a risk and on what terms?\nA Claims B Underwriting C Finance D Distribution\n7 Which function estimates the premium needed for the expected risk?\nA Pricing B Reserving C Investment D Compliance\n8 What is the purpose of claims reserving?\nA Record sales B Set investment return C Estimate unpaid claim costs D Choose clients\n9 Which sequence best represents the insurance value chain?\nA Claims, sales, pricing, admin B Product/pricing, underwriting, admin, claims C Investment, claims, sales D Reserving,\nmarketing, pricing\n10 Claim frequency is 20% above plan. Who should respond?\nA Claims only B Pricing only C Several functions together D Marketing only\nSESSION 1 REVIEW 2 OF 2"
+        }
+      ],
+      "warnings": [],
+      "userEdited": false,
+      "model": "OpenAI (gpt-4o)",
+      "promptVersion": "direct-cards-v4-knowledge-coverage",
+      "knowledgeTrace": {
+        "unitId": "premium_estimation",
+        "planKey": "87248a12f18801eabda82414a914f13db3b707a4af328375bf5a166b50d6f1e2",
+        "claim": "Pricing is the function that estimates the premium needed for the expected risk.",
+        "conditions": []
+      },
+      "accuracyReview": {
+        "version": "accuracy-v2-scientific-quotations",
+        "contentHash": "224047ae9f23d836eed6646bec9a7e1d5c8151e0c90824e2dcebeaf254a2446d",
+        "sources": [
+          {
+            "documentId": "8b6f4739-c98f-4a73-98c2-39df80dcbb4f",
+            "page": 36,
+            "sha256": "1f91416c944fd3c8ef762934e5d0eac1c8386a1a1a79ff39a8a961a511e84b4a",
+            "revision": "a4d5bd7455f80a62e59225effb44c22513361f52f353028ede576097a0480c89"
+          }
+        ]
+      }
+    },
+    {
+      "id": "052ad081-bb53-4625-a599-e7bbbbfcbc01",
+      "notionId": "c563fb1e-d119-459a-9d8a-c9aae200b1de",
+      "cardType": "notion",
+      "question": "What is the purpose of claims reserving?",
+      "answer": "Estimate unpaid claim costs.",
+      "explanation": "Claims reserving ensures that an insurance company has sufficient funds to meet the future costs of claims that have been reported but not yet paid. This is critical for maintaining financial stability and regulatory compliance.",
+      "example": "",
+      "kind": "mechanism",
+      "objective": "Explain the purpose of claims reserving in insurance.",
+      "status": "ready",
+      "evidence": [
+        {
+          "documentId": "8b6f4739-c98f-4a73-98c2-39df80dcbb4f",
+          "page": 36,
+          "quote": "KNOWLEDGE CHECK\nFunctions and the insurance value chain\nChoose an answer, then click to reveal the correct response.\n6 Which function decides whether to accept a risk and on what terms?\nA Claims B Underwriting C Finance D Distribution\n7 Which function estimates the premium needed for the expected risk?\nA Pricing B Reserving C Investment D Compliance\n8 What is the purpose of claims reserving?\nA Record sales B Set investment return C Estimate unpaid claim costs D Choose clients\n9 Which sequence best represents the insurance value chain?\nA Claims, sales, pricing, admin B Product/pricing, underwriting, admin, claims C Investment, claims, sales D Reserving,\nmarketing, pricing\n10 Claim frequency is 20% above plan. Who should respond?\nA Claims only B Pricing only C Several functions together D Marketing only\nSESSION 1 REVIEW 2 OF 2"
+        }
+      ],
+      "warnings": [],
+      "userEdited": false,
+      "model": "OpenAI (gpt-4o)",
+      "promptVersion": "direct-cards-v4-knowledge-coverage",
+      "knowledgeTrace": {
+        "unitId": "claims_reserving_purpose",
+        "planKey": "87248a12f18801eabda82414a914f13db3b707a4af328375bf5a166b50d6f1e2",
+        "claim": "The purpose of claims reserving is to estimate unpaid claim costs.",
+        "conditions": []
+      },
+      "accuracyReview": {
+        "version": "accuracy-v2-scientific-quotations",
+        "contentHash": "62b084a7685db25f6070e2788cee140c40d5ff76164265ff4a99a4f44cfbd620",
+        "sources": [
+          {
+            "documentId": "8b6f4739-c98f-4a73-98c2-39df80dcbb4f",
+            "page": 36,
+            "sha256": "1f91416c944fd3c8ef762934e5d0eac1c8386a1a1a79ff39a8a961a511e84b4a",
+            "revision": "a4d5bd7455f80a62e59225effb44c22513361f52f353028ede576097a0480c89"
+          }
+        ]
+      }
+    },
+    {
+      "id": "9dd271a3-56a4-493f-92d1-02555eab61fb",
+      "notionId": "388107cc-0910-4628-a669-3cbe76385aee",
+      "cardType": "notion",
+      "question": "Which sequence best represents the insurance value chain?",
+      "answer": "Product/pricing, underwriting, admin, claims.",
+      "explanation": "The insurance value chain begins with understanding customer needs and creating products, followed by underwriting to assess risk, administration to manage policy details, and claims to handle losses and payouts.",
+      "example": "",
+      "kind": "mechanism",
+      "objective": "Identify the correct sequence in the insurance value chain.",
+      "status": "ready",
+      "evidence": [
+        {
+          "documentId": "8b6f4739-c98f-4a73-98c2-39df80dcbb4f",
+          "page": 36,
+          "quote": "KNOWLEDGE CHECK\nFunctions and the insurance value chain\nChoose an answer, then click to reveal the correct response.\n6 Which function decides whether to accept a risk and on what terms?\nA Claims B Underwriting C Finance D Distribution\n7 Which function estimates the premium needed for the expected risk?\nA Pricing B Reserving C Investment D Compliance\n8 What is the purpose of claims reserving?\nA Record sales B Set investment return C Estimate unpaid claim costs D Choose clients\n9 Which sequence best represents the insurance value chain?\nA Claims, sales, pricing, admin B Product/pricing, underwriting, admin, claims C Investment, claims, sales D Reserving,\nmarketing, pricing\n10 Claim frequency is 20% above plan. Who should respond?\nA Claims only B Pricing only C Several functions together D Marketing only\nSESSION 1 REVIEW 2 OF 2"
+        }
+      ],
+      "warnings": [],
+      "userEdited": false,
+      "model": "OpenAI (gpt-4o)",
+      "promptVersion": "direct-cards-v4-knowledge-coverage",
+      "knowledgeTrace": {
+        "unitId": "insurance_value_chain_sequence",
+        "planKey": "87248a12f18801eabda82414a914f13db3b707a4af328375bf5a166b50d6f1e2",
+        "claim": "The sequence that best represents the insurance value chain is: Product/pricing, underwriting, admin, claims.",
+        "conditions": []
+      },
+      "accuracyReview": {
+        "version": "accuracy-v2-scientific-quotations",
+        "contentHash": "a4c5d25157b70b4e4119e6dcf20de4e10c77ea0402928189960d015b97f922c9",
+        "sources": [
+          {
+            "documentId": "8b6f4739-c98f-4a73-98c2-39df80dcbb4f",
+            "page": 36,
+            "sha256": "1f91416c944fd3c8ef762934e5d0eac1c8386a1a1a79ff39a8a961a511e84b4a",
+            "revision": "a4d5bd7455f80a62e59225effb44c22513361f52f353028ede576097a0480c89"
+          }
+        ]
+      }
+    },
+    {
+      "id": "5f8f8721-3ac7-46b6-8e00-0acd49f4bafc",
+      "cardType": "notion",
+      "notionId": "5f8f8721-3ac7-46b6-8e00-0acd49f4bafc",
+      "question": "What is Communication Tone?",
+      "answer": "Appropriate tone to maintain in professional communication.",
+      "example": "",
+      "kind": "definition",
+      "status": "draft",
+      "evidence": [
+        {
+          "documentId": "8b6f4739-c98f-4a73-98c2-39df80dcbb4f",
+          "page": 7,
+          "quote": ""
+        }
+      ],
+      "objective": "Communication Tone",
+      "warnings": [
+        "Legacy card: source support has not been checked"
+      ],
+      "userEdited": false,
+      "model": "legacy",
+      "promptVersion": "legacy"
+    },
+    {
+      "id": "d47a5791-6ce4-449e-b3bf-7c11467e4ecf",
+      "cardType": "notion",
+      "notionId": "d47a5791-6ce4-449e-b3bf-7c11467e4ecf",
+      "question": "What is Main Insurance Product Families?",
+      "answer": "Insurance product families include life, property and casualty, health and accident, reinsurance, and captive insurance.",
+      "example": "",
+      "kind": "definition",
+      "status": "draft",
+      "evidence": [
+        {
+          "documentId": "8b6f4739-c98f-4a73-98c2-39df80dcbb4f",
+          "page": 23,
+          "quote": ""
+        }
+      ],
+      "objective": "Main Insurance Product Families",
+      "warnings": [
+        "Legacy card: source support has not been checked"
+      ],
+      "userEdited": false,
+      "model": "legacy",
+      "promptVersion": "legacy"
+    },
+    {
+      "id": "e141ad17-4cb5-4cb8-bf72-e8540cd47278",
+      "cardType": "notion",
+      "notionId": "e141ad17-4cb5-4cb8-bf72-e8540cd47278",
+      "question": "What is Swiss Insurance Categories?",
+      "answer": "The categorization of insurance companies in Switzerland into different types such as life, P&C, health, reinsurance, and captives.",
+      "example": "",
+      "kind": "definition",
+      "status": "draft",
+      "evidence": [
+        {
+          "documentId": "8b6f4739-c98f-4a73-98c2-39df80dcbb4f",
+          "page": 27,
+          "quote": ""
+        }
+      ],
+      "objective": "Swiss Insurance Categories",
+      "warnings": [
+        "Legacy card: source support has not been checked"
+      ],
+      "userEdited": false,
+      "model": "legacy",
+      "promptVersion": "legacy"
+    },
+    {
+      "id": "4ab541f1-5a9f-4f0b-ab45-f55f4a1e9e84",
+      "cardType": "notion",
+      "notionId": "4ab541f1-5a9f-4f0b-ab45-f55f4a1e9e84",
+      "question": "What is Swiss Insurance Market Importance?",
+      "answer": "Understanding the significance of market shares in the Swiss insurance industry, highlighting major players across different sectors.",
+      "example": "",
+      "kind": "definition",
+      "status": "draft",
+      "evidence": [
+        {
+          "documentId": "8b6f4739-c98f-4a73-98c2-39df80dcbb4f",
+          "page": 28,
+          "quote": ""
+        }
+      ],
+      "objective": "Swiss Insurance Market Importance",
+      "warnings": [
+        "Legacy card: source support has not been checked"
+      ],
+      "userEdited": false,
+      "model": "legacy",
+      "promptVersion": "legacy"
+    },
+    {
+      "id": "7c47a462-1601-4374-ad7d-7a75c246845d",
+      "cardType": "notion",
+      "notionId": "7c47a462-1601-4374-ad7d-7a75c246845d",
+      "question": "What is Underwriting?",
+      "answer": "Underwriting is the process and function of assessing a risk and determining the terms of its acceptance.",
+      "example": "",
+      "kind": "definition",
+      "status": "draft",
+      "evidence": [
+        {
+          "documentId": "8b6f4739-c98f-4a73-98c2-39df80dcbb4f",
+          "page": 36,
+          "quote": ""
+        }
+      ],
+      "objective": "Underwriting",
+      "warnings": [
+        "Legacy card: source support has not been checked"
+      ],
+      "userEdited": false,
+      "model": "legacy",
+      "promptVersion": "legacy"
+    },
+    {
+      "id": "76f30a4c-8797-412a-95ce-315aa147fd95",
+      "cardType": "notion",
+      "notionId": "76f30a4c-8797-412a-95ce-315aa147fd95",
+      "question": "What is Pricing?",
+      "answer": "Pricing in insurance refers to estimating the premium required to cover the expected risk, expenses, and profit margin.",
+      "example": "",
+      "kind": "definition",
+      "status": "draft",
+      "evidence": [
+        {
+          "documentId": "8b6f4739-c98f-4a73-98c2-39df80dcbb4f",
+          "page": 36,
+          "quote": ""
+        }
+      ],
+      "objective": "Pricing",
+      "warnings": [
+        "Legacy card: source support has not been checked"
+      ],
+      "userEdited": false,
+      "model": "legacy",
+      "promptVersion": "legacy"
+    },
+    {
+      "id": "c563fb1e-d119-459a-9d8a-c9aae200b1de",
+      "cardType": "notion",
+      "notionId": "c563fb1e-d119-459a-9d8a-c9aae200b1de",
+      "question": "What is Claims Reserving?",
+      "answer": "Claims reserving is the process of estimating the cost of unpaid claims and setting aside funds to cover these future liabilities.",
+      "example": "",
+      "kind": "definition",
+      "status": "draft",
+      "evidence": [
+        {
+          "documentId": "8b6f4739-c98f-4a73-98c2-39df80dcbb4f",
+          "page": 36,
+          "quote": ""
+        }
+      ],
+      "objective": "Claims Reserving",
+      "warnings": [
+        "Legacy card: source support has not been checked"
+      ],
+      "userEdited": false,
+      "model": "legacy",
+      "promptVersion": "legacy"
+    },
+    {
+      "id": "388107cc-0910-4628-a669-3cbe76385aee",
+      "cardType": "notion",
+      "notionId": "388107cc-0910-4628-a669-3cbe76385aee",
+      "question": "What is Insurance Value Chain?",
+      "answer": "The insurance value chain outlines the stages and interactions in the provisioning of insurance products, from customer interaction to claims.",
+      "example": "",
+      "kind": "definition",
+      "status": "draft",
+      "evidence": [
+        {
+          "documentId": "8b6f4739-c98f-4a73-98c2-39df80dcbb4f",
+          "page": 36,
+          "quote": ""
+        }
+      ],
+      "objective": "Insurance Value Chain",
+      "warnings": [
+        "Legacy card: source support has not been checked"
+      ],
+      "userEdited": false,
+      "model": "legacy",
+      "promptVersion": "legacy"
+    }
+  ],
+  "pages": [
+    {
+      "page": 1,
+      "kind": "content",
+      "status": "retry",
+      "generationComplete": false,
+      "failureKind": "contract",
+      "reason": "Invalid direct card knowledge inventory",
+      "warnings": [
+        "Invalid direct card knowledge inventory"
+      ],
+      "concepts": 0,
+      "cards": 0,
+      "missingObjectives": [
+        "Invalid direct card knowledge inventory"
+      ],
+      "version": "direct-cards-v4-knowledge-coverage",
+      "sourceRevision": "a4d5bd7455f80a62e59225effb44c22513361f52f353028ede576097a0480c89",
+      "updatedAt": "2026-10-10T22:11:56.798Z"
+    },
+    {
+      "page": 2,
+      "kind": "content",
+      "status": "retry",
+      "generationComplete": true,
+      "reason": "The page contains primary teaching material related to the insurance industry and value chain.",
+      "warnings": [
+        "Uncovered knowledge: The lesson covers the insurance industry and its value chain, emphasizing the roles of insurers and actuaries.",
+        "Understand the components and roles within the insurance value chain."
+      ],
+      "concepts": 0,
+      "cards": 0,
+      "readyCards": 0,
+      "draftCards": 0,
+      "knowledgeCoverage": [
+        {
+          "key": "insurance-industry-and-value-chain",
+          "claim": "The lesson covers the insurance industry and its value chain, emphasizing the roles of insurers and actuaries.",
+          "status": "unresolved",
+          "reason": "",
+          "sourceIds": [
+            "p2s0"
+          ],
+          "cardKeys": [
+            "insurance-value-chain-definition"
+          ]
+        }
+      ],
+      "missingObjectives": [
+        "Uncovered knowledge: The lesson covers the insurance industry and its value chain, emphasizing the roles of insurers and actuaries.",
+        "Understand the components and roles within the insurance value chain."
+      ],
+      "version": "direct-cards-v4-knowledge-coverage",
+      "sourceRevision": "a4d5bd7455f80a62e59225effb44c22513361f52f353028ede576097a0480c89",
+      "updatedAt": "2026-10-10T22:11:57.722Z"
+    },
+    {
+      "page": 3,
+      "kind": "content",
+      "status": "retry",
+      "generationComplete": true,
+      "reason": "The page primarily contains biographical and non-teaching content.",
+      "warnings": [
+        "Uncovered knowledge: The lesson does not provide an overview of the entire insurance industry or detailed technical training.",
+        "No essential knowledge coverage established for this page",
+        "Contradictory non-teaching classification"
+      ],
+      "concepts": 0,
+      "cards": 0,
+      "readyCards": 0,
+      "draftCards": 0,
+      "knowledgeCoverage": [
+        {
+          "key": "course-expectations-exclusions",
+          "claim": "The lesson does not provide an overview of the entire insurance industry or detailed technical training.",
+          "status": "unresolved",
+          "reason": "",
+          "sourceIds": [
+            "p3s0"
+          ],
+          "cardKeys": []
+        }
+      ],
+      "missingObjectives": [
+        "Uncovered knowledge: The lesson does not provide an overview of the entire insurance industry or detailed technical training.",
+        "No essential knowledge coverage established for this page",
+        "Contradictory non-teaching classification"
+      ],
+      "version": "direct-cards-v4-knowledge-coverage",
+      "sourceRevision": "a4d5bd7455f80a62e59225effb44c22513361f52f353028ede576097a0480c89",
+      "updatedAt": "2026-10-10T22:11:57.722Z"
+    },
+    {
+      "page": 4,
+      "kind": "administrative",
+      "status": "skipped",
+      "generationComplete": true,
+      "reason": "Participant introductions and course feedback are not subject knowledge",
+      "warnings": [],
+      "concepts": 0,
+      "cards": 0,
+      "readyCards": 0,
+      "draftCards": 0,
+      "missingObjectives": [],
+      "version": "direct-cards-v4-knowledge-coverage",
+      "sourceRevision": "a4d5bd7455f80a62e59225effb44c22513361f52f353028ede576097a0480c89",
+      "updatedAt": "2026-10-10T22:11:52.409Z"
+    },
+    {
+      "page": 5,
+      "kind": "administrative",
+      "status": "skipped",
+      "generationComplete": true,
+      "reason": "Course access and logistics are not subject knowledge",
+      "warnings": [],
+      "concepts": 0,
+      "cards": 0,
+      "readyCards": 0,
+      "draftCards": 0,
+      "missingObjectives": [],
+      "version": "direct-cards-v4-knowledge-coverage",
+      "sourceRevision": "a4d5bd7455f80a62e59225effb44c22513361f52f353028ede576097a0480c89",
+      "updatedAt": "2026-10-10T22:11:52.472Z"
+    },
+    {
+      "page": 6,
+      "kind": "content",
+      "status": "retry",
+      "generationComplete": true,
+      "reason": "The page primarily outlines what the course will not cover, which is not substantive for teaching purposes.",
+      "warnings": [
+        "Uncovered knowledge: The course does not provide a complete overview of the insurance industry, detailed technical training in calculations, coverage of specific business sectors, or advanced knowledge of operational areas.",
+        "Unpublished objective: Identify what the course does not include.",
+        "No essential knowledge coverage established for this page",
+        "Contradictory non-teaching classification"
+      ],
+      "concepts": 0,
+      "cards": 0,
+      "readyCards": 0,
+      "draftCards": 0,
+      "knowledgeCoverage": [
+        {
+          "key": "course_expectations",
+          "claim": "The course does not provide a complete overview of the insurance industry, detailed technical training in calculations, coverage of specific business sectors, or advanced knowledge of operational areas.",
+          "status": "unresolved",
+          "reason": "",
+          "sourceIds": [
+            "p6s0",
+            "p6image"
+          ],
+          "cardKeys": [
+            "what_not_to_expect_card"
+          ]
+        }
+      ],
+      "missingObjectives": [
+        "Uncovered knowledge: The course does not provide a complete overview of the insurance industry, detailed technical training in calculations, coverage of specific business sectors, or advanced knowledge of operational areas.",
+        "Unpublished objective: Identify what the course does not include.",
+        "No essential knowledge coverage established for this page",
+        "Contradictory non-teaching classification"
+      ],
+      "version": "direct-cards-v4-knowledge-coverage",
+      "sourceRevision": "a4d5bd7455f80a62e59225effb44c22513361f52f353028ede576097a0480c89",
+      "updatedAt": "2026-10-10T22:12:01.089Z"
+    },
+    {
+      "page": 7,
+      "kind": "content",
+      "status": "complete",
+      "generationComplete": true,
+      "reason": "The page provides a clear objective about the types of communication tones to avoid, which is substantive knowledge.",
+      "warnings": [],
+      "concepts": 1,
+      "cards": 1,
+      "readyCards": 1,
+      "draftCards": 0,
+      "knowledgeCoverage": [
+        {
+          "key": "communication_tone",
+          "claim": "A tone that is defensive, dismissive, or undermines value should be avoided in communication.",
+          "status": "covered",
+          "reason": "",
+          "sourceIds": [
+            "p7s0",
+            "p7image"
+          ],
+          "cardKeys": [
+            "communication_tone_card"
+          ]
+        }
+      ],
+      "missingObjectives": [],
+      "version": "direct-cards-v4-knowledge-coverage",
+      "sourceRevision": "a4d5bd7455f80a62e59225effb44c22513361f52f353028ede576097a0480c89",
+      "updatedAt": "2026-10-10T22:12:01.089Z"
+    },
+    {
+      "page": 8,
+      "kind": "administrative",
+      "status": "skipped",
+      "generationComplete": true,
+      "reason": "The page offers little substantive educational value about the insurance industry itself.",
+      "warnings": [],
+      "concepts": 0,
+      "cards": 0,
+      "readyCards": 0,
+      "draftCards": 0,
+      "knowledgeCoverage": [
+        {
+          "key": "p8-1",
+          "claim": "The content on page 8 suggests a summary of an insurance company simulation after the class.",
+          "status": "excluded",
+          "reason": "The page offers little substantive educational value about the insurance industry itself.",
+          "sourceIds": [
+            "p8s0",
+            "p8image"
+          ],
+          "cardKeys": []
+        }
+      ],
+      "missingObjectives": [],
+      "version": "direct-cards-v4-knowledge-coverage",
+      "sourceRevision": "a4d5bd7455f80a62e59225effb44c22513361f52f353028ede576097a0480c89",
+      "updatedAt": "2026-10-10T22:12:02.819Z"
+    },
+    {
+      "page": 9,
+      "kind": "administrative",
+      "status": "skipped",
+      "generationComplete": true,
+      "reason": "Reflections do not convey substantive knowledge about insurance topics.",
+      "warnings": [],
+      "concepts": 0,
+      "cards": 0,
+      "readyCards": 0,
+      "draftCards": 0,
+      "knowledgeCoverage": [
+        {
+          "key": "p9-1",
+          "claim": "The page includes personal reflections on challenges faced by students in the class.",
+          "status": "excluded",
+          "reason": "Reflections do not convey substantive knowledge about insurance topics.",
+          "sourceIds": [
+            "p9s0"
+          ],
+          "cardKeys": []
+        }
+      ],
+      "missingObjectives": [],
+      "version": "direct-cards-v4-knowledge-coverage",
+      "sourceRevision": "a4d5bd7455f80a62e59225effb44c22513361f52f353028ede576097a0480c89",
+      "updatedAt": "2026-10-10T22:12:02.819Z"
+    },
+    {
+      "page": 10,
+      "kind": "administrative",
+      "status": "skipped",
+      "generationComplete": true,
+      "reason": "The comments are related to personal learning experiences rather than core subject matter.",
+      "warnings": [],
+      "concepts": 0,
+      "cards": 0,
+      "readyCards": 0,
+      "draftCards": 0,
+      "knowledgeCoverage": [
+        {
+          "key": "p10-1",
+          "claim": "The page contains student feedback on learning tools and group projects.",
+          "status": "excluded",
+          "reason": "The comments are related to personal learning experiences rather than core subject matter.",
+          "sourceIds": [
+            "p10s0",
+            "p10image"
+          ],
+          "cardKeys": []
+        }
+      ],
+      "missingObjectives": [],
+      "version": "direct-cards-v4-knowledge-coverage",
+      "sourceRevision": "a4d5bd7455f80a62e59225effb44c22513361f52f353028ede576097a0480c89",
+      "updatedAt": "2026-10-10T22:12:02.820Z"
+    },
+    {
+      "page": 11,
+      "kind": "administrative",
+      "status": "skipped",
+      "generationComplete": true,
+      "reason": "Course access and logistics are not subject knowledge",
+      "warnings": [],
+      "concepts": 0,
+      "cards": 0,
+      "readyCards": 0,
+      "draftCards": 0,
+      "missingObjectives": [],
+      "version": "direct-cards-v4-knowledge-coverage",
+      "sourceRevision": "a4d5bd7455f80a62e59225effb44c22513361f52f353028ede576097a0480c89",
+      "updatedAt": "2026-10-10T22:11:57.767Z"
+    },
+    {
+      "page": 12,
+      "kind": "administrative",
+      "status": "skipped",
+      "generationComplete": true,
+      "reason": "Course access and logistics are not subject knowledge",
+      "warnings": [],
+      "concepts": 0,
+      "cards": 0,
+      "readyCards": 0,
+      "draftCards": 0,
+      "missingObjectives": [],
+      "version": "direct-cards-v4-knowledge-coverage",
+      "sourceRevision": "a4d5bd7455f80a62e59225effb44c22513361f52f353028ede576097a0480c89",
+      "updatedAt": "2026-10-10T22:11:57.768Z"
+    },
+    {
+      "page": 13,
+      "kind": "administrative",
+      "status": "skipped",
+      "generationComplete": true,
+      "reason": "Course access and logistics are not subject knowledge",
+      "warnings": [],
+      "concepts": 0,
+      "cards": 0,
+      "readyCards": 0,
+      "draftCards": 0,
+      "missingObjectives": [],
+      "version": "direct-cards-v4-knowledge-coverage",
+      "sourceRevision": "a4d5bd7455f80a62e59225effb44c22513361f52f353028ede576097a0480c89",
+      "updatedAt": "2026-10-10T22:11:57.770Z"
+    },
+    {
+      "page": 14,
+      "kind": "administrative",
+      "status": "skipped",
+      "generationComplete": true,
+      "reason": "Course access and logistics are not subject knowledge",
+      "warnings": [],
+      "concepts": 0,
+      "cards": 0,
+      "readyCards": 0,
+      "draftCards": 0,
+      "missingObjectives": [],
+      "version": "direct-cards-v4-knowledge-coverage",
+      "sourceRevision": "a4d5bd7455f80a62e59225effb44c22513361f52f353028ede576097a0480c89",
+      "updatedAt": "2026-10-10T22:11:57.814Z"
+    },
+    {
+      "page": 15,
+      "kind": "administrative",
+      "status": "skipped",
+      "generationComplete": true,
+      "reason": "Course access and logistics are not subject knowledge",
+      "warnings": [],
+      "concepts": 0,
+      "cards": 0,
+      "readyCards": 0,
+      "draftCards": 0,
+      "missingObjectives": [],
+      "version": "direct-cards-v4-knowledge-coverage",
+      "sourceRevision": "a4d5bd7455f80a62e59225effb44c22513361f52f353028ede576097a0480c89",
+      "updatedAt": "2026-10-10T22:11:57.815Z"
+    },
+    {
+      "page": 16,
+      "kind": "administrative",
+      "status": "skipped",
+      "generationComplete": true,
+      "reason": "Course access and logistics are not subject knowledge",
+      "warnings": [],
+      "concepts": 0,
+      "cards": 0,
+      "readyCards": 0,
+      "draftCards": 0,
+      "missingObjectives": [],
+      "version": "direct-cards-v4-knowledge-coverage",
+      "sourceRevision": "a4d5bd7455f80a62e59225effb44c22513361f52f353028ede576097a0480c89",
+      "updatedAt": "2026-10-10T22:11:57.816Z"
+    },
+    {
+      "page": 17,
+      "kind": "administrative",
+      "status": "skipped",
+      "generationComplete": true,
+      "reason": "Student organization and submissions are not subject knowledge",
+      "warnings": [],
+      "concepts": 0,
+      "cards": 0,
+      "readyCards": 0,
+      "draftCards": 0,
+      "missingObjectives": [],
+      "version": "direct-cards-v4-knowledge-coverage",
+      "sourceRevision": "a4d5bd7455f80a62e59225effb44c22513361f52f353028ede576097a0480c89",
+      "updatedAt": "2026-10-10T22:11:57.863Z"
+    },
+    {
+      "page": 18,
+      "kind": "administrative",
+      "status": "skipped",
+      "generationComplete": true,
+      "reason": "Student organization and submissions are not subject knowledge",
+      "warnings": [],
+      "concepts": 0,
+      "cards": 0,
+      "readyCards": 0,
+      "draftCards": 0,
+      "missingObjectives": [],
+      "version": "direct-cards-v4-knowledge-coverage",
+      "sourceRevision": "a4d5bd7455f80a62e59225effb44c22513361f52f353028ede576097a0480c89",
+      "updatedAt": "2026-10-10T22:11:57.863Z"
+    },
+    {
+      "page": 19,
+      "kind": "content",
+      "status": "retry",
+      "generationComplete": false,
+      "failureKind": "contract",
+      "reason": "Invalid direct card knowledge inventory",
+      "warnings": [
+        "Invalid direct card knowledge inventory"
+      ],
+      "concepts": 0,
+      "cards": 0,
+      "missingObjectives": [
+        "Invalid direct card knowledge inventory"
+      ],
+      "version": "direct-cards-v4-knowledge-coverage",
+      "sourceRevision": "a4d5bd7455f80a62e59225effb44c22513361f52f353028ede576097a0480c89",
+      "updatedAt": "2026-10-10T22:12:05.956Z"
+    },
+    {
+      "page": 20,
+      "kind": "content",
+      "status": "retry",
+      "generationComplete": false,
+      "failureKind": "contract",
+      "reason": "Invalid direct card knowledge inventory",
+      "warnings": [
+        "Invalid direct card knowledge inventory"
+      ],
+      "concepts": 0,
+      "cards": 0,
+      "missingObjectives": [
+        "Invalid direct card knowledge inventory"
+      ],
+      "version": "direct-cards-v4-knowledge-coverage",
+      "sourceRevision": "a4d5bd7455f80a62e59225effb44c22513361f52f353028ede576097a0480c89",
+      "updatedAt": "2026-10-10T22:12:05.957Z"
+    },
+    {
+      "page": 21,
+      "kind": "content",
+      "status": "retry",
+      "generationComplete": true,
+      "reason": "The primary focus is on challenges within the insurance industry, not the key knowledge targets for teaching insurance product families.",
+      "warnings": [
+        "Uncovered knowledge: Macroeconomic challenges for the insurance industry include low or negative interest rates, which particularly affect life insurers with guaranteed products.",
+        "Uncovered knowledge: Rising inflation impacts claim costs and causes mismatches in assets and liabilities for insurers.",
+        "Uncovered knowledge: Volatility and uncertainty from events like Covid, geopolitical tensions, and energy crises are challenges for the insurance industry.",
+        "Uncovered knowledge: Regulatory and capital requirements pose challenges for the insurance industry.",
+        "Uncovered knowledge: Technology and digital transformation are major challenges for the insurance industry.",
+        "Uncovered knowledge: Climate change and emerging risks, such as catastrophe losses from wildfires and floods, pose challenges for the insurance industry.",
+        "Unpublished objective: Understand macroeconomic challenges in insurance.",
+        "Unpublished objective: Understand regulatory challenges in insurance.",
+        "Unpublished objective: Understand technological challenges in insurance.",
+        "Unpublished objective: Understand climate-related challenges in insurance.",
+        "No essential knowledge coverage established for this page",
+        "Contradictory non-teaching classification"
+      ],
+      "concepts": 0,
+      "cards": 0,
+      "readyCards": 0,
+      "draftCards": 0,
+      "knowledgeCoverage": [
+        {
+          "key": "insurance_challenges_economic",
+          "claim": "Macroeconomic challenges for the insurance industry include low or negative interest rates, which particularly affect life insurers with guaranteed products.",
+          "status": "unresolved",
+          "reason": "",
+          "sourceIds": [
+            "p21s0"
+          ],
+          "cardKeys": [
+            "insurance_challenges_macro"
+          ]
+        },
+        {
+          "key": "insurance_challenges_inflation",
+          "claim": "Rising inflation impacts claim costs and causes mismatches in assets and liabilities for insurers.",
+          "status": "unresolved",
+          "reason": "",
+          "sourceIds": [
+            "p21s0"
+          ],
+          "cardKeys": [
+            "insurance_challenges_macro"
+          ]
+        },
+        {
+          "key": "insurance_challenges_volatility",
+          "claim": "Volatility and uncertainty from events like Covid, geopolitical tensions, and energy crises are challenges for the insurance industry.",
+          "status": "unresolved",
+          "reason": "",
+          "sourceIds": [
+            "p21s0"
+          ],
+          "cardKeys": [
+            "insurance_challenges_macro"
+          ]
+        },
+        {
+          "key": "insurance_challenges_regulatory",
+          "claim": "Regulatory and capital requirements pose challenges for the insurance industry.",
+          "status": "unresolved",
+          "reason": "",
+          "sourceIds": [
+            "p21s0"
+          ],
+          "cardKeys": [
+            "insurance_challenges_regulatory"
+          ]
+        },
+        {
+          "key": "insurance_challenges_technology",
+          "claim": "Technology and digital transformation are major challenges for the insurance industry.",
+          "status": "unresolved",
+          "reason": "",
+          "sourceIds": [
+            "p21s0"
+          ],
+          "cardKeys": [
+            "insurance_challenges_technology"
+          ]
+        },
+        {
+          "key": "insurance_challenges_climate_change",
+          "claim": "Climate change and emerging risks, such as catastrophe losses from wildfires and floods, pose challenges for the insurance industry.",
+          "status": "unresolved",
+          "reason": "",
+          "sourceIds": [
+            "p21s0"
+          ],
+          "cardKeys": [
+            "insurance_challenges_climate"
+          ]
+        }
+      ],
+      "missingObjectives": [
+        "Uncovered knowledge: Macroeconomic challenges for the insurance industry include low or negative interest rates, which particularly affect life insurers with guaranteed products.",
+        "Uncovered knowledge: Rising inflation impacts claim costs and causes mismatches in assets and liabilities for insurers.",
+        "Uncovered knowledge: Volatility and uncertainty from events like Covid, geopolitical tensions, and energy crises are challenges for the insurance industry.",
+        "Uncovered knowledge: Regulatory and capital requirements pose challenges for the insurance industry.",
+        "Uncovered knowledge: Technology and digital transformation are major challenges for the insurance industry.",
+        "Uncovered knowledge: Climate change and emerging risks, such as catastrophe losses from wildfires and floods, pose challenges for the insurance industry.",
+        "Unpublished objective: Understand macroeconomic challenges in insurance.",
+        "Unpublished objective: Understand regulatory challenges in insurance.",
+        "Unpublished objective: Understand technological challenges in insurance.",
+        "Unpublished objective: Understand climate-related challenges in insurance.",
+        "No essential knowledge coverage established for this page",
+        "Contradictory non-teaching classification"
+      ],
+      "version": "direct-cards-v4-knowledge-coverage",
+      "sourceRevision": "a4d5bd7455f80a62e59225effb44c22513361f52f353028ede576097a0480c89",
+      "updatedAt": "2026-10-10T22:12:15.832Z"
+    },
+    {
+      "page": 22,
+      "kind": "administrative",
+      "status": "skipped",
+      "generationComplete": true,
+      "reason": "The page references spending data and context source citation without substantive content directly relevant to the key teaching objectives about insurance product families or specific knowledge outcomes.",
+      "warnings": [],
+      "concepts": 0,
+      "cards": 0,
+      "readyCards": 0,
+      "draftCards": 0,
+      "knowledgeCoverage": [],
+      "missingObjectives": [],
+      "version": "direct-cards-v4-knowledge-coverage",
+      "sourceRevision": "a4d5bd7455f80a62e59225effb44c22513361f52f353028ede576097a0480c89",
+      "updatedAt": "2026-10-10T22:12:15.833Z"
+    },
+    {
+      "page": 23,
+      "kind": "content",
+      "status": "complete",
+      "generationComplete": true,
+      "reason": "Page 23 is integral to understanding the main insurance product families, detailing purposes, risks, and financial features, which aligns with the primary teaching focus.",
+      "warnings": [],
+      "concepts": 1,
+      "cards": 1,
+      "readyCards": 1,
+      "draftCards": 0,
+      "knowledgeCoverage": [
+        {
+          "key": "insurance_product_families_life",
+          "claim": "Life insurance aims to protect income or build savings, addressing risks like death and longevity, with long duration and investment sensitivity as financial features.",
+          "status": "covered",
+          "reason": "",
+          "sourceIds": [
+            "p23s0"
+          ],
+          "cardKeys": [
+            "insurance_products_overview"
+          ]
+        },
+        {
+          "key": "insurance_product_families_property",
+          "claim": "Property and casualty insurance protects against property and legal liability losses, focusing on motor, property, accident, or liability losses, with claims frequency and severity as financial features.",
+          "status": "covered",
+          "reason": "",
+          "sourceIds": [
+            "p23s0"
+          ],
+          "cardKeys": [
+            "insurance_products_overview"
+          ]
+        },
+        {
+          "key": "insurance_product_families_health",
+          "claim": "Health and accident insurance funds medical care or replaces income, dealing with medical expenses, disability, or accidents, with claims experience and healthcare inflation as financial features.",
+          "status": "covered",
+          "reason": "",
+          "sourceIds": [
+            "p23s0"
+          ],
+          "cardKeys": [
+            "insurance_products_overview"
+          ]
+        },
+        {
+          "key": "insurance_product_families_reinsurance",
+          "claim": "Reinsurance protects insurers from large, volatile, or accumulated insurance losses, involving ceded premiums and claim recoveries as financial features.",
+          "status": "covered",
+          "reason": "",
+          "sourceIds": [
+            "p23s0"
+          ],
+          "cardKeys": [
+            "insurance_products_overview"
+          ]
+        },
+        {
+          "key": "insurance_product_families_captive",
+          "claim": "Captive insurance is used to finance a corporate group's own risks, retaining risks within the group with external protection when needed.",
+          "status": "covered",
+          "reason": "",
+          "sourceIds": [
+            "p23s0"
+          ],
+          "cardKeys": [
+            "insurance_products_overview"
+          ]
+        }
+      ],
+      "missingObjectives": [],
+      "version": "direct-cards-v4-knowledge-coverage",
+      "sourceRevision": "a4d5bd7455f80a62e59225effb44c22513361f52f353028ede576097a0480c89",
+      "updatedAt": "2026-10-10T22:12:15.833Z"
+    },
+    {
+      "page": 24,
+      "kind": "administrative",
+      "status": "skipped",
+      "generationComplete": true,
+      "reason": "Page 24 does not contain primary text or knowledge relevant to the task.",
+      "warnings": [],
+      "concepts": 0,
+      "cards": 0,
+      "readyCards": 0,
+      "draftCards": 0,
+      "knowledgeCoverage": [],
+      "missingObjectives": [],
+      "version": "direct-cards-v4-knowledge-coverage",
+      "sourceRevision": "a4d5bd7455f80a62e59225effb44c22513361f52f353028ede576097a0480c89",
+      "updatedAt": "2026-10-10T22:12:11.360Z"
+    },
+    {
+      "page": 25,
+      "kind": "administrative",
+      "status": "skipped",
+      "generationComplete": true,
+      "reason": "Course expectations and media instructions are not subject knowledge",
+      "warnings": [],
+      "concepts": 0,
+      "cards": 0,
+      "readyCards": 0,
+      "draftCards": 0,
+      "missingObjectives": [],
+      "version": "direct-cards-v4-knowledge-coverage",
+      "sourceRevision": "a4d5bd7455f80a62e59225effb44c22513361f52f353028ede576097a0480c89",
+      "updatedAt": "2026-10-10T22:12:02.863Z"
+    },
+    {
+      "page": 26,
+      "kind": "content",
+      "status": "retry",
+      "generationComplete": true,
+      "reason": "Page 26 contains substantive information about insurers and market shares relevant to the teaching objectives.",
+      "warnings": [
+        "Uncovered knowledge: Top European insurers by premium income in 2022 include AXA, Allianz, and Generali, with premium incomes of 106.2, 100.6, and 85.2 billion USD respectively.",
+        "Identify the top European insurers by premium income in 2022.",
+        "Unpublished objective: Understand the leading insurers by premium income."
+      ],
+      "concepts": 0,
+      "cards": 1,
+      "readyCards": 0,
+      "draftCards": 1,
+      "knowledgeCoverage": [
+        {
+          "key": "insurers_market_shares",
+          "claim": "Top European insurers by premium income in 2022 include AXA, Allianz, and Generali, with premium incomes of 106.2, 100.6, and 85.2 billion USD respectively.",
+          "status": "unresolved",
+          "reason": "",
+          "sourceIds": [
+            "p26image"
+          ],
+          "cardKeys": [
+            "insurers_market_shares_card"
+          ]
+        }
+      ],
+      "missingObjectives": [
+        "Uncovered knowledge: Top European insurers by premium income in 2022 include AXA, Allianz, and Generali, with premium incomes of 106.2, 100.6, and 85.2 billion USD respectively.",
+        "Identify the top European insurers by premium income in 2022.",
+        "Unpublished objective: Understand the leading insurers by premium income."
+      ],
+      "version": "direct-cards-v4-knowledge-coverage",
+      "sourceRevision": "a4d5bd7455f80a62e59225effb44c22513361f52f353028ede576097a0480c89",
+      "updatedAt": "2026-10-10T22:12:11.361Z"
+    },
+    {
+      "page": 27,
+      "kind": "content",
+      "status": "complete",
+      "generationComplete": true,
+      "reason": "The page contains both a text and visual representation of the categories of insurance companies in Switzerland, providing essential information.",
+      "warnings": [],
+      "concepts": 1,
+      "cards": 1,
+      "readyCards": 1,
+      "draftCards": 0,
+      "knowledgeCoverage": [
+        {
+          "key": "insurance_types_Switzerland",
+          "claim": "In Switzerland, insurance companies are categorized into life, property and casualty (P&C), health, reinsurance, and captives.",
+          "status": "covered",
+          "reason": "",
+          "sourceIds": [
+            "p27s0",
+            "p27image"
+          ],
+          "cardKeys": [
+            "insurance_types_question"
+          ]
+        }
+      ],
+      "missingObjectives": [],
+      "version": "direct-cards-v4-knowledge-coverage",
+      "sourceRevision": "a4d5bd7455f80a62e59225effb44c22513361f52f353028ede576097a0480c89",
+      "updatedAt": "2026-10-10T22:12:17.279Z"
+    },
+    {
+      "page": 28,
+      "kind": "content",
+      "status": "complete",
+      "generationComplete": true,
+      "reason": "The content provides context and supporting information regarding the significance of understanding market shares in the Swiss insurance industry.",
+      "warnings": [],
+      "concepts": 1,
+      "cards": 1,
+      "readyCards": 1,
+      "draftCards": 0,
+      "knowledgeCoverage": [
+        {
+          "key": "market_shares_question",
+          "claim": "In Switzerland, identifying the top 3 players in non-life insurers, life insurers, accident insurers, health insurers, and reinsurers is crucial for understanding market trends.",
+          "status": "covered",
+          "reason": "",
+          "sourceIds": [
+            "p28s0"
+          ],
+          "cardKeys": [
+            "market_shares_importance"
+          ]
+        }
+      ],
+      "missingObjectives": [],
+      "version": "direct-cards-v4-knowledge-coverage",
+      "sourceRevision": "a4d5bd7455f80a62e59225effb44c22513361f52f353028ede576097a0480c89",
+      "updatedAt": "2026-10-10T22:12:17.280Z"
+    },
+    {
+      "page": 29,
+      "kind": "content",
+      "status": "retry",
+      "generationComplete": true,
+      "reason": "Contains essential visual information about market shares that cannot be inferred from text alone.",
+      "warnings": [
+        "Uncovered knowledge: The market shares for life insurers in Switzerland for 2025, based on gross premiums written, show Swiss Life as the largest with 41.8% share, followed by Helvetia with 11.8%.",
+        "Visualize market shares among life insurers in Switzerland for 2025.",
+        "Unpublished objective: Identify the leading life insurance company in Switzerland based on 2025 market share."
+      ],
+      "concepts": 0,
+      "cards": 1,
+      "readyCards": 0,
+      "draftCards": 1,
+      "knowledgeCoverage": [
+        {
+          "key": "market_shares_visual",
+          "claim": "The market shares for life insurers in Switzerland for 2025, based on gross premiums written, show Swiss Life as the largest with 41.8% share, followed by Helvetia with 11.8%.",
+          "status": "unresolved",
+          "reason": "",
+          "sourceIds": [
+            "p29image"
+          ],
+          "cardKeys": [
+            "market_shares_visualization"
+          ]
+        }
+      ],
+      "missingObjectives": [
+        "Uncovered knowledge: The market shares for life insurers in Switzerland for 2025, based on gross premiums written, show Swiss Life as the largest with 41.8% share, followed by Helvetia with 11.8%.",
+        "Visualize market shares among life insurers in Switzerland for 2025.",
+        "Unpublished objective: Identify the leading life insurance company in Switzerland based on 2025 market share."
+      ],
+      "version": "direct-cards-v4-knowledge-coverage",
+      "sourceRevision": "a4d5bd7455f80a62e59225effb44c22513361f52f353028ede576097a0480c89",
+      "updatedAt": "2026-10-10T22:12:17.280Z"
+    },
+    {
+      "page": 30,
+      "kind": "content",
+      "status": "retry",
+      "generationComplete": false,
+      "failureKind": "contract",
+      "reason": "Invalid direct card knowledge inventory",
+      "warnings": [
+        "Invalid direct card knowledge inventory"
+      ],
+      "concepts": 0,
+      "cards": 0,
+      "missingObjectives": [
+        "Invalid direct card knowledge inventory"
+      ],
+      "version": "direct-cards-v4-knowledge-coverage",
+      "sourceRevision": "a4d5bd7455f80a62e59225effb44c22513361f52f353028ede576097a0480c89",
+      "updatedAt": "2026-10-10T22:12:18.194Z"
+    },
+    {
+      "page": 31,
+      "kind": "content",
+      "status": "retry",
+      "generationComplete": false,
+      "failureKind": "contract",
+      "reason": "Invalid direct card knowledge inventory",
+      "warnings": [
+        "Invalid direct card knowledge inventory"
+      ],
+      "concepts": 0,
+      "cards": 0,
+      "missingObjectives": [
+        "Invalid direct card knowledge inventory"
+      ],
+      "version": "direct-cards-v4-knowledge-coverage",
+      "sourceRevision": "a4d5bd7455f80a62e59225effb44c22513361f52f353028ede576097a0480c89",
+      "updatedAt": "2026-10-10T22:12:18.195Z"
+    },
+    {
+      "page": 32,
+      "kind": "content",
+      "status": "retry",
+      "generationComplete": false,
+      "failureKind": "contract",
+      "reason": "Invalid direct card knowledge inventory",
+      "warnings": [
+        "Invalid direct card knowledge inventory"
+      ],
+      "concepts": 0,
+      "cards": 0,
+      "missingObjectives": [
+        "Invalid direct card knowledge inventory"
+      ],
+      "version": "direct-cards-v4-knowledge-coverage",
+      "sourceRevision": "a4d5bd7455f80a62e59225effb44c22513361f52f353028ede576097a0480c89",
+      "updatedAt": "2026-10-10T22:12:24.075Z"
+    },
+    {
+      "page": 33,
+      "kind": "content",
+      "status": "retry",
+      "generationComplete": false,
+      "failureKind": "contract",
+      "reason": "Invalid direct card knowledge inventory",
+      "warnings": [
+        "Invalid direct card knowledge inventory"
+      ],
+      "concepts": 0,
+      "cards": 0,
+      "missingObjectives": [
+        "Invalid direct card knowledge inventory"
+      ],
+      "version": "direct-cards-v4-knowledge-coverage",
+      "sourceRevision": "a4d5bd7455f80a62e59225effb44c22513361f52f353028ede576097a0480c89",
+      "updatedAt": "2026-10-10T22:12:24.077Z"
+    },
+    {
+      "page": 34,
+      "kind": "content",
+      "status": "retry",
+      "generationComplete": false,
+      "failureKind": "contract",
+      "reason": "Invalid direct card knowledge inventory",
+      "warnings": [
+        "Invalid direct card knowledge inventory"
+      ],
+      "concepts": 0,
+      "cards": 0,
+      "missingObjectives": [
+        "Invalid direct card knowledge inventory"
+      ],
+      "version": "direct-cards-v4-knowledge-coverage",
+      "sourceRevision": "a4d5bd7455f80a62e59225effb44c22513361f52f353028ede576097a0480c89",
+      "updatedAt": "2026-10-10T22:12:24.079Z"
+    },
+    {
+      "page": 35,
+      "kind": "content",
+      "status": "retry",
+      "generationComplete": true,
+      "reason": "Page contains knowledge check questions relevant to insurance products and market share, directly connecting with primary insurance knowledge objectives.",
+      "warnings": [
+        "Identify which product pays if the insured dies during a fixed coverage period.",
+        "Identify which product covers injury or damage caused by an insured driver.",
+        "Understand the main purpose of reinsurance.",
+        "Explain what premium market share measures.",
+        "Evaluate certainty in company market share leading to solvency, service, or profit."
+      ],
+      "concepts": 0,
+      "cards": 0,
+      "readyCards": 0,
+      "draftCards": 0,
+      "knowledgeCoverage": [],
+      "missingObjectives": [
+        "Identify which product pays if the insured dies during a fixed coverage period.",
+        "Identify which product covers injury or damage caused by an insured driver.",
+        "Understand the main purpose of reinsurance.",
+        "Explain what premium market share measures.",
+        "Evaluate certainty in company market share leading to solvency, service, or profit."
+      ],
+      "version": "direct-cards-v4-knowledge-coverage",
+      "sourceRevision": "a4d5bd7455f80a62e59225effb44c22513361f52f353028ede576097a0480c89",
+      "updatedAt": "2026-10-10T22:12:30.718Z"
+    },
+    {
+      "page": 36,
+      "kind": "content",
+      "status": "retry",
+      "reason": "Page includes key insurance function and value chain questions directly linked to primary instructional objectives.",
+      "concepts": 4,
+      "cards": 4,
+      "generationComplete": true,
+      "warnings": [
+        "Uncovered knowledge: When claim frequency is 20% above plan, several functions together should respond.",
+        "Recognize appropriate responses to increased claim frequency.",
+        "Unpublished objective: Determine who should respond to increased claim frequency in insurance management.",
+        "Consistency recheck — Claims Reserving: A cash-setting-aside analogy misrepresents claim reserving; distinguish the estimated liability from funding it.",
+        "Consistency recheck — Claims Reserving: Reserving estimates an obligation; it is not the act of setting aside cash."
+      ],
+      "readyCards": 4,
+      "draftCards": 0,
+      "knowledgeCoverage": [
+        {
+          "key": "risk_acceptance",
+          "claim": "The function that decides whether to accept a risk and on what terms is Underwriting.",
+          "status": "covered",
+          "reason": "",
+          "sourceIds": [
+            "p36s0"
+          ],
+          "cardKeys": [
+            "risk_acceptance_1"
+          ]
+        },
+        {
+          "key": "premium_estimation",
+          "claim": "Pricing is the function that estimates the premium needed for the expected risk.",
+          "status": "covered",
+          "reason": "",
+          "sourceIds": [
+            "p36s0"
+          ],
+          "cardKeys": [
+            "premium_estimation_1"
+          ]
+        },
+        {
+          "key": "claims_reserving_purpose",
+          "claim": "The purpose of claims reserving is to estimate unpaid claim costs.",
+          "status": "covered",
+          "reason": "",
+          "sourceIds": [
+            "p36s0"
+          ],
+          "cardKeys": [
+            "claims_reserving_purpose_1"
+          ]
+        },
+        {
+          "key": "insurance_value_chain_sequence",
+          "claim": "The sequence that best represents the insurance value chain is: Product/pricing, underwriting, admin, claims.",
+          "status": "covered",
+          "reason": "",
+          "sourceIds": [
+            "p36s0"
+          ],
+          "cardKeys": [
+            "insurance_value_chain_sequence_1"
+          ]
+        },
+        {
+          "key": "claim_frequency_response",
+          "claim": "When claim frequency is 20% above plan, several functions together should respond.",
+          "status": "unresolved",
+          "reason": "",
+          "sourceIds": [
+            "p36s0"
+          ],
+          "cardKeys": [
+            "claim_frequency_response_1"
+          ]
+        }
+      ],
+      "missingObjectives": [
+        "Uncovered knowledge: When claim frequency is 20% above plan, several functions together should respond.",
+        "Recognize appropriate responses to increased claim frequency.",
+        "Unpublished objective: Determine who should respond to increased claim frequency in insurance management.",
+        "Consistency recheck — Claims Reserving: A cash-setting-aside analogy misrepresents claim reserving; distinguish the estimated liability from funding it.",
+        "Consistency recheck — Claims Reserving: Reserving estimates an obligation; it is not the act of setting aside cash."
+      ],
+      "version": "direct-cards-v4-knowledge-coverage",
+      "sourceRevision": "a4d5bd7455f80a62e59225effb44c22513361f52f353028ede576097a0480c89",
+      "updatedAt": "2026-10-10T22:39:00.095Z"
+    },
+    {
+      "page": 37,
+      "kind": "administrative",
+      "status": "skipped",
+      "generationComplete": true,
+      "reason": "Course access and logistics are not subject knowledge",
+      "warnings": [],
+      "concepts": 0,
+      "cards": 0,
+      "readyCards": 0,
+      "draftCards": 0,
+      "missingObjectives": [],
+      "version": "direct-cards-v4-knowledge-coverage",
+      "sourceRevision": "a4d5bd7455f80a62e59225effb44c22513361f52f353028ede576097a0480c89",
+      "updatedAt": "2026-10-10T22:12:17.315Z"
+    },
+    {
+      "page": 38,
+      "kind": "administrative",
+      "status": "skipped",
+      "generationComplete": true,
+      "reason": "No substantive knowledge content is provided on page 38. It merely contains references for further reading without any educational objectives, roles, mechanisms, or distinctions that need to be taught or assessed.",
+      "warnings": [],
+      "concepts": 0,
+      "cards": 0,
+      "readyCards": 0,
+      "draftCards": 0,
+      "knowledgeCoverage": [],
+      "missingObjectives": [],
+      "version": "direct-cards-v4-knowledge-coverage",
+      "sourceRevision": "a4d5bd7455f80a62e59225effb44c22513361f52f353028ede576097a0480c89",
+      "updatedAt": "2026-10-10T22:12:20.205Z"
+    }
+  ]
+}

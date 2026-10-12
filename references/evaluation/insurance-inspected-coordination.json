@@ -1,0 +1,17 @@
+{
+  "pdfSha256":"438f0286f8310855dd51bcb0db76aafbea5c5551b8dcf160cbc0a5feeb4160af",
+  "reviewer":"Codex original-native-source inspection",
+  "reviewedAt":"2026-10-11T10:49:55.729Z",
+  "coverage":"partial",
+  "inspection":"Source-supported inference for the original coordination question. Page 36 supplies the scenario and alternatives; page 33 explicitly links claims/provisions to profit/liabilities and stage decisions to downstream information/constraints. No invented actors, repricing requirement or loss assumption is added. This is assistant inspection, not fresh provider validation.",
+  "facts":[{
+    "page":36,
+    "topic":"Cross-function response to claim deviations",
+    "claim":"In the course's 20%-above-plan claim-frequency scenario, the appropriate response is coordinated across functions: claims and provisions affect profit and liabilities, and value-chain decisions change downstream information or constraints.",
+    "question":"What kind of response is appropriate when claim frequency is 20% above plan, and why?",
+    "answer":"A coordinated response across functions: claims and provisions affect profit and liabilities, and value-chain decisions change downstream information or constraints.",
+    "kind":"application",
+    "evidenceKind":"text",
+    "contextPages":[33]
+  }]
+}

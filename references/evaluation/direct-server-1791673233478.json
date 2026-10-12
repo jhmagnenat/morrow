@@ -1,0 +1,3876 @@
+{
+  "version": "direct-cards-v5-reviewed-targets",
+  "selected": [
+    31,
+    32,
+    36
+  ],
+  "activeBefore": "default",
+  "startedAt": "2026-10-10T23:00:12.681Z",
+  "complete": true,
+  "humanQualityScore": null,
+  "jobs": [
+    {
+      "id": "b318d2d1-8fba-4a3b-90e8-d91ef126e53b",
+      "documentId": "eaf7312d-3a44-4e51-957e-ea03c4d0499e",
+      "courseId": "197fae17-687c-4532-994c-f9c37c0a01a8",
+      "workerPid": 6256,
+      "status": "complete",
+      "mode": "strict",
+      "enrichment": false,
+      "cardDetail": "key-ideas",
+      "pages": [
+        31,
+        32,
+        36
+      ],
+      "reprocess": false,
+      "startedAt": "2026-10-10T23:00:12.955Z",
+      "updatedAt": "2026-10-10T23:00:32.665Z",
+      "totalPages": 3,
+      "attemptedPages": [
+        32,
+        36,
+        31
+      ],
+      "completedPages": 3,
+      "reviewPages": [],
+      "notionsCreated": 22,
+      "cardsCreated": 22,
+      "requests": 7,
+      "inputTokens": 31143,
+      "outputTokens": 5511,
+      "warnings": [],
+      "execution": "inline",
+      "concurrency": 3,
+      "pipeline": "direct",
+      "sectionCount": 3,
+      "activeStages": {},
+      "elapsedMs": 19707,
+      "estimatedCostUsd": null,
+      "readyCards": 22,
+      "draftCards": 0,
+      "firstReadyAt": "2026-10-10T23:00:19.261Z",
+      "firstReadyMs": 6306,
+      "sectionsCompleted": 3,
+      "coveredPages": 3,
+      "skippedPages": 0,
+      "processedPages": 3
+    }
+  ],
+  "job": {
+    "id": "b318d2d1-8fba-4a3b-90e8-d91ef126e53b",
+    "documentId": "eaf7312d-3a44-4e51-957e-ea03c4d0499e",
+    "courseId": "197fae17-687c-4532-994c-f9c37c0a01a8",
+    "workerPid": 6256,
+    "status": "complete",
+    "mode": "strict",
+    "enrichment": false,
+    "cardDetail": "key-ideas",
+    "pages": [
+      31,
+      32,
+      36
+    ],
+    "reprocess": false,
+    "startedAt": "2026-10-10T23:00:12.955Z",
+    "updatedAt": "2026-10-10T23:00:32.665Z",
+    "totalPages": 3,
+    "attemptedPages": [
+      32,
+      36,
+      31
+    ],
+    "completedPages": 3,
+    "reviewPages": [],
+    "notionsCreated": 22,
+    "cardsCreated": 22,
+    "requests": 7,
+    "inputTokens": 31143,
+    "outputTokens": 5511,
+    "warnings": [],
+    "execution": "inline",
+    "concurrency": 3,
+    "pipeline": "direct",
+    "sectionCount": 3,
+    "activeStages": {},
+    "elapsedMs": 19707,
+    "estimatedCostUsd": null,
+    "readyCards": 22,
+    "draftCards": 0,
+    "firstReadyAt": "2026-10-10T23:00:19.261Z",
+    "firstReadyMs": 6306,
+    "sectionsCompleted": 3,
+    "coveredPages": 3,
+    "skippedPages": 0,
+    "processedPages": 3
+  },
+  "elapsedMs": 20567,
+  "runs": [
+    {
+      "id": "826ce154-db4f-457a-b353-2a4d2a4b8a64",
+      "documentId": "eaf7312d-3a44-4e51-957e-ea03c4d0499e",
+      "status": "complete",
+      "version": "direct-cards-v5-reviewed-targets",
+      "planPromptHash": "8cc1b362bd8d2c5de1bdcaaebfcda1af994595ea4972358f304204ec2ef6072d",
+      "writerPromptHash": "6f076c8fd18baa6af512108f2c24026408e1f481b1bf27351dd05e3f10bf1fec",
+      "reviewPromptHash": "8cb9bd35df2bc7c9e82e7a15f9629f8fe6c9408f66b66deced2b58393e98e322",
+      "writerModel": "OpenAI (gpt-4o)",
+      "reviewModel": "OpenAI (gpt-4o)",
+      "cardDetail": "key-ideas",
+      "sourceRevision": "925408a8c7bbc0b75e3781deb2c54cd33a0ca7517f2b9330b4c363c42b2ea129",
+      "startedAt": "2026-10-10T23:00:13.025Z",
+      "finishedAt": "2026-10-10T23:00:19.258Z",
+      "usage": {
+        "requests": 1,
+        "inputTokens": 4750,
+        "outputTokens": 797,
+        "elapsedMs": 6087,
+        "failures": 0,
+        "callTraces": [
+          {
+            "tool": "audit_direct_cards",
+            "model": "OpenAI (gpt-4o)",
+            "inputTokens": 4750,
+            "outputTokens": 797,
+            "elapsedMs": 6087,
+            "status": "succeeded",
+            "providerModel": "gpt-4o-2024-08-06"
+          }
+        ]
+      },
+      "readyCards": 4,
+      "cardsCreated": 4,
+      "artifactKey": "direct-card-run:eaf7312d-3a44-4e51-957e-ea03c4d0499e:826ce154-db4f-457a-b353-2a4d2a4b8a64",
+      "warnings": []
+    },
+    {
+      "id": "aef0adc4-4b0e-4cd4-8907-02127aef047b",
+      "documentId": "eaf7312d-3a44-4e51-957e-ea03c4d0499e",
+      "status": "complete",
+      "version": "direct-cards-v5-reviewed-targets",
+      "planPromptHash": "8cc1b362bd8d2c5de1bdcaaebfcda1af994595ea4972358f304204ec2ef6072d",
+      "writerPromptHash": "6f076c8fd18baa6af512108f2c24026408e1f481b1bf27351dd05e3f10bf1fec",
+      "reviewPromptHash": "8cb9bd35df2bc7c9e82e7a15f9629f8fe6c9408f66b66deced2b58393e98e322",
+      "writerModel": "OpenAI (gpt-4o)",
+      "reviewModel": "OpenAI (gpt-4o)",
+      "cardDetail": "key-ideas",
+      "sourceRevision": "925408a8c7bbc0b75e3781deb2c54cd33a0ca7517f2b9330b4c363c42b2ea129",
+      "startedAt": "2026-10-10T23:00:13.062Z",
+      "finishedAt": "2026-10-10T23:00:32.551Z",
+      "usage": {
+        "requests": 5,
+        "inputTokens": 19988,
+        "outputTokens": 2111,
+        "elapsedMs": 19346,
+        "failures": 0,
+        "callTraces": [
+          {
+            "tool": "plan_direct_cards",
+            "model": "OpenAI (gpt-4o)",
+            "inputTokens": 2933,
+            "outputTokens": 178,
+            "elapsedMs": 2014,
+            "status": "succeeded",
+            "providerModel": "gpt-4o-2024-08-06"
+          },
+          {
+            "tool": "direct_cards",
+            "model": "OpenAI (gpt-4o)",
+            "inputTokens": 4311,
+            "outputTokens": 444,
+            "elapsedMs": 2795,
+            "status": "succeeded",
+            "providerModel": "gpt-4o-2024-08-06"
+          },
+          {
+            "tool": "audit_direct_cards",
+            "model": "OpenAI (gpt-4o)",
+            "inputTokens": 4852,
+            "outputTokens": 1179,
+            "elapsedMs": 10960,
+            "status": "succeeded",
+            "providerModel": "gpt-4o-2024-08-06"
+          },
+          {
+            "tool": "direct_cards",
+            "model": "OpenAI (gpt-4o)",
+            "inputTokens": 3702,
+            "outputTokens": 110,
+            "elapsedMs": 1238,
+            "status": "succeeded",
+            "providerModel": "gpt-4o-2024-08-06"
+          },
+          {
+            "tool": "audit_direct_cards",
+            "model": "OpenAI (gpt-4o)",
+            "inputTokens": 4190,
+            "outputTokens": 200,
+            "elapsedMs": 2339,
+            "status": "succeeded",
+            "providerModel": "gpt-4o-2024-08-06"
+          }
+        ]
+      },
+      "readyCards": 5,
+      "cardsCreated": 5,
+      "artifactKey": "direct-card-run:eaf7312d-3a44-4e51-957e-ea03c4d0499e:aef0adc4-4b0e-4cd4-8907-02127aef047b",
+      "warnings": []
+    },
+    {
+      "id": "9c8153b6-8fd9-4814-83a9-35dd9d121304",
+      "documentId": "eaf7312d-3a44-4e51-957e-ea03c4d0499e",
+      "status": "complete",
+      "version": "direct-cards-v5-reviewed-targets",
+      "planPromptHash": "8cc1b362bd8d2c5de1bdcaaebfcda1af994595ea4972358f304204ec2ef6072d",
+      "writerPromptHash": "6f076c8fd18baa6af512108f2c24026408e1f481b1bf27351dd05e3f10bf1fec",
+      "reviewPromptHash": "8cb9bd35df2bc7c9e82e7a15f9629f8fe6c9408f66b66deced2b58393e98e322",
+      "writerModel": "OpenAI (gpt-4o)",
+      "reviewModel": "OpenAI (gpt-4o)",
+      "cardDetail": "key-ideas",
+      "sourceRevision": "925408a8c7bbc0b75e3781deb2c54cd33a0ca7517f2b9330b4c363c42b2ea129",
+      "startedAt": "2026-10-10T23:00:12.988Z",
+      "finishedAt": "2026-10-10T23:00:32.657Z",
+      "usage": {
+        "requests": 1,
+        "inputTokens": 6405,
+        "outputTokens": 2603,
+        "elapsedMs": 19503,
+        "failures": 0,
+        "callTraces": [
+          {
+            "tool": "audit_direct_cards",
+            "model": "OpenAI (gpt-4o)",
+            "inputTokens": 6405,
+            "outputTokens": 2603,
+            "elapsedMs": 19503,
+            "status": "succeeded",
+            "providerModel": "gpt-4o-2024-08-06"
+          }
+        ]
+      },
+      "readyCards": 13,
+      "cardsCreated": 13,
+      "artifactKey": "direct-card-run:eaf7312d-3a44-4e51-957e-ea03c4d0499e:9c8153b6-8fd9-4814-83a9-35dd9d121304",
+      "warnings": []
+    }
+  ],
+  "cards": [
+    {
+      "id": "090e66d4-7fa5-4843-8478-ef266b7cb48f",
+      "notionId": "3cfdc381-f091-4853-a999-2f6ad66871f1",
+      "cardType": "notion",
+      "question": "In the example of an insurance company, which officer is associated with IT/Digital strategy?",
+      "answer": "CTO.",
+      "explanation": "",
+      "example": "",
+      "kind": "mechanism",
+      "objective": "In the example of an insurance company, IT/Digital strategy is associated with CTO.",
+      "status": "ready",
+      "evidence": [
+        {
+          "documentId": "eaf7312d-3a44-4e51-957e-ea03c4d0499e",
+          "page": 32,
+          "quote": "Possible structure of an insurance company\n32\nLegal & General\nCounsel\nGroup /central\nFunctions\nIT/Digital\nstrategy\n(CTO)\nHR/People Mgmt Actuarial\nfunction\n(CRO)\nInvestment\nMgmt\n(CIO)\nDistribution &\nPartnerships\nAudit (internal\ncontrol)\nFinance &\nAccounting\n(CFO)\nCompliance Risk\nMgmt/ERM"
+        }
+      ],
+      "warnings": [],
+      "userEdited": false,
+      "model": "OpenAI (gpt-4o)",
+      "promptVersion": "direct-cards-v5-reviewed-targets",
+      "knowledgeTrace": {
+        "unitId": "t0",
+        "planKey": "7eb3ed08c54278f08f7a7b88b6db325070e1b84852ec0f9971ef90dfdc44da91",
+        "claim": "In the example of an insurance company, IT/Digital strategy is associated with CTO.",
+        "conditions": []
+      },
+      "accuracyReview": {
+        "version": "accuracy-v2-scientific-quotations",
+        "contentHash": "1219f8a15889987ed6bb09cdea761737bc23bb1c3bc96910c27275d1571c73b6",
+        "sources": [
+          {
+            "documentId": "eaf7312d-3a44-4e51-957e-ea03c4d0499e",
+            "page": 32,
+            "sha256": "b2c5f59e36d26c0c23015213e77ae0e0f80ecaa35e38913dc4e57544d0e01333",
+            "revision": "925408a8c7bbc0b75e3781deb2c54cd33a0ca7517f2b9330b4c363c42b2ea129"
+          }
+        ]
+      }
+    },
+    {
+      "id": "6e7193c8-8667-4778-970d-1c2e8936a1bf",
+      "notionId": "cb2c4aff-3838-4674-bf89-78495b3da3d5",
+      "cardType": "notion",
+      "question": "In the example of an insurance company, which officer is associated with Actuarial function?",
+      "answer": "CRO.",
+      "explanation": "",
+      "example": "",
+      "kind": "mechanism",
+      "objective": "In the example of an insurance company, Actuarial function is associated with CRO.",
+      "status": "ready",
+      "evidence": [
+        {
+          "documentId": "eaf7312d-3a44-4e51-957e-ea03c4d0499e",
+          "page": 32,
+          "quote": "Possible structure of an insurance company\n32\nLegal & General\nCounsel\nGroup /central\nFunctions\nIT/Digital\nstrategy\n(CTO)\nHR/People Mgmt Actuarial\nfunction\n(CRO)\nInvestment\nMgmt\n(CIO)\nDistribution &\nPartnerships\nAudit (internal\ncontrol)\nFinance &\nAccounting\n(CFO)\nCompliance Risk\nMgmt/ERM"
+        }
+      ],
+      "warnings": [],
+      "userEdited": false,
+      "model": "OpenAI (gpt-4o)",
+      "promptVersion": "direct-cards-v5-reviewed-targets",
+      "knowledgeTrace": {
+        "unitId": "t1",
+        "planKey": "7eb3ed08c54278f08f7a7b88b6db325070e1b84852ec0f9971ef90dfdc44da91",
+        "claim": "In the example of an insurance company, Actuarial function is associated with CRO.",
+        "conditions": []
+      },
+      "accuracyReview": {
+        "version": "accuracy-v2-scientific-quotations",
+        "contentHash": "16766fdd2894d198676477c36ce605a2b97453ec27ed112f2f803163b0a9b9d3",
+        "sources": [
+          {
+            "documentId": "eaf7312d-3a44-4e51-957e-ea03c4d0499e",
+            "page": 32,
+            "sha256": "b2c5f59e36d26c0c23015213e77ae0e0f80ecaa35e38913dc4e57544d0e01333",
+            "revision": "925408a8c7bbc0b75e3781deb2c54cd33a0ca7517f2b9330b4c363c42b2ea129"
+          }
+        ]
+      }
+    },
+    {
+      "id": "888fdf48-a34c-43b6-ad20-bbeb43df2353",
+      "notionId": "58c1ab47-022a-4dcd-9586-f09e489b9a11",
+      "cardType": "notion",
+      "question": "In the example of an insurance company, which officer is associated with Investment Mgmt?",
+      "answer": "CIO.",
+      "explanation": "",
+      "example": "",
+      "kind": "mechanism",
+      "objective": "In the example of an insurance company, Investment Mgmt is associated with CIO.",
+      "status": "ready",
+      "evidence": [
+        {
+          "documentId": "eaf7312d-3a44-4e51-957e-ea03c4d0499e",
+          "page": 32,
+          "quote": "Possible structure of an insurance company\n32\nLegal & General\nCounsel\nGroup /central\nFunctions\nIT/Digital\nstrategy\n(CTO)\nHR/People Mgmt Actuarial\nfunction\n(CRO)\nInvestment\nMgmt\n(CIO)\nDistribution &\nPartnerships\nAudit (internal\ncontrol)\nFinance &\nAccounting\n(CFO)\nCompliance Risk\nMgmt/ERM"
+        }
+      ],
+      "warnings": [],
+      "userEdited": false,
+      "model": "OpenAI (gpt-4o)",
+      "promptVersion": "direct-cards-v5-reviewed-targets",
+      "knowledgeTrace": {
+        "unitId": "t2",
+        "planKey": "7eb3ed08c54278f08f7a7b88b6db325070e1b84852ec0f9971ef90dfdc44da91",
+        "claim": "In the example of an insurance company, Investment Mgmt is associated with CIO.",
+        "conditions": []
+      },
+      "accuracyReview": {
+        "version": "accuracy-v2-scientific-quotations",
+        "contentHash": "d0e1b5a4e35c2de2ec06334df82cfe6a182ca891360603b862b153ddffa19beb",
+        "sources": [
+          {
+            "documentId": "eaf7312d-3a44-4e51-957e-ea03c4d0499e",
+            "page": 32,
+            "sha256": "b2c5f59e36d26c0c23015213e77ae0e0f80ecaa35e38913dc4e57544d0e01333",
+            "revision": "925408a8c7bbc0b75e3781deb2c54cd33a0ca7517f2b9330b4c363c42b2ea129"
+          }
+        ]
+      }
+    },
+    {
+      "id": "b32f09b0-febb-4f6d-a0fb-991fca6d4007",
+      "notionId": "191dcee0-a356-4453-a792-347c6c01f512",
+      "cardType": "notion",
+      "question": "In the example of an insurance company, which officer is associated with Finance & Accounting?",
+      "answer": "CFO.",
+      "explanation": "",
+      "example": "",
+      "kind": "mechanism",
+      "objective": "In the example of an insurance company, Finance & Accounting is associated with CFO.",
+      "status": "ready",
+      "evidence": [
+        {
+          "documentId": "eaf7312d-3a44-4e51-957e-ea03c4d0499e",
+          "page": 32,
+          "quote": "Possible structure of an insurance company\n32\nLegal & General\nCounsel\nGroup /central\nFunctions\nIT/Digital\nstrategy\n(CTO)\nHR/People Mgmt Actuarial\nfunction\n(CRO)\nInvestment\nMgmt\n(CIO)\nDistribution &\nPartnerships\nAudit (internal\ncontrol)\nFinance &\nAccounting\n(CFO)\nCompliance Risk\nMgmt/ERM"
+        }
+      ],
+      "warnings": [],
+      "userEdited": false,
+      "model": "OpenAI (gpt-4o)",
+      "promptVersion": "direct-cards-v5-reviewed-targets",
+      "knowledgeTrace": {
+        "unitId": "t3",
+        "planKey": "7eb3ed08c54278f08f7a7b88b6db325070e1b84852ec0f9971ef90dfdc44da91",
+        "claim": "In the example of an insurance company, Finance & Accounting is associated with CFO.",
+        "conditions": []
+      },
+      "accuracyReview": {
+        "version": "accuracy-v2-scientific-quotations",
+        "contentHash": "a17b430831c9d9b712dc76c1a0e232f7734982401ed73dbcd56c0d0886711660",
+        "sources": [
+          {
+            "documentId": "eaf7312d-3a44-4e51-957e-ea03c4d0499e",
+            "page": 32,
+            "sha256": "b2c5f59e36d26c0c23015213e77ae0e0f80ecaa35e38913dc4e57544d0e01333",
+            "revision": "925408a8c7bbc0b75e3781deb2c54cd33a0ca7517f2b9330b4c363c42b2ea129"
+          }
+        ]
+      }
+    },
+    {
+      "id": "51ca75b9-2ea2-427d-9121-8c2b2fe90b41",
+      "notionId": "37c83db9-4203-4e59-a59a-6f498f64a521",
+      "cardType": "notion",
+      "question": "Which function decides whether to accept a risk and on what terms?",
+      "answer": "Underwriting.",
+      "explanation": "",
+      "example": "",
+      "kind": "definition",
+      "objective": "Underwriting decides whether to accept a risk and on what terms.",
+      "status": "ready",
+      "evidence": [
+        {
+          "documentId": "eaf7312d-3a44-4e51-957e-ea03c4d0499e",
+          "page": 36,
+          "quote": "KNOWLEDGE CHECK\nFunctions and the insurance value chain\nChoose an answer, then click to reveal the correct response.\n6 Which function decides whether to accept a risk and on what terms?\nA Claims B Underwriting C Finance D Distribution\n7 Which function estimates the premium needed for the expected risk?\nA Pricing B Reserving C Investment D Compliance\n8 What is the purpose of claims reserving?\nA Record sales B Set investment return C Estimate unpaid claim costs D Choose clients\n9 Which sequence best represents the insurance value chain?\nA Claims, sales, pricing, admin B Product/pricing, underwriting, admin, claims C Investment, claims, sales D Reserving,\nmarketing, pricing\n10 Claim frequency is 20% above plan. Who should respond?\nA Claims only B Pricing only C Several functions together D Marketing only\nSESSION 1 REVIEW 2 OF 2"
+        }
+      ],
+      "warnings": [],
+      "userEdited": false,
+      "model": "OpenAI (gpt-4o)",
+      "promptVersion": "direct-cards-v5-reviewed-targets",
+      "knowledgeTrace": {
+        "unitId": "t0",
+        "planKey": "30879a0e65684877195944ad68f0760198874e30a42ad6f6e6d160cb436225e9",
+        "claim": "Underwriting decides whether to accept a risk and on what terms.",
+        "conditions": []
+      },
+      "accuracyReview": {
+        "version": "accuracy-v2-scientific-quotations",
+        "contentHash": "06a1217d29a0deec33e85d2fc2440d55bd011f69565a346dde923ad5b8b1f6ff",
+        "sources": [
+          {
+            "documentId": "eaf7312d-3a44-4e51-957e-ea03c4d0499e",
+            "page": 36,
+            "sha256": "1f91416c944fd3c8ef762934e5d0eac1c8386a1a1a79ff39a8a961a511e84b4a",
+            "revision": "925408a8c7bbc0b75e3781deb2c54cd33a0ca7517f2b9330b4c363c42b2ea129"
+          }
+        ]
+      }
+    },
+    {
+      "id": "77c6cc0f-6b18-4d99-8afa-05d2e6816591",
+      "notionId": "004c479d-65c1-44fc-ba33-adf6024576a9",
+      "cardType": "notion",
+      "question": "Which function estimates the premium needed for the expected risk?",
+      "answer": "Pricing.",
+      "explanation": "",
+      "example": "",
+      "kind": "definition",
+      "objective": "Pricing estimates the premium needed for the expected risk.",
+      "status": "ready",
+      "evidence": [
+        {
+          "documentId": "eaf7312d-3a44-4e51-957e-ea03c4d0499e",
+          "page": 36,
+          "quote": "KNOWLEDGE CHECK\nFunctions and the insurance value chain\nChoose an answer, then click to reveal the correct response.\n6 Which function decides whether to accept a risk and on what terms?\nA Claims B Underwriting C Finance D Distribution\n7 Which function estimates the premium needed for the expected risk?\nA Pricing B Reserving C Investment D Compliance\n8 What is the purpose of claims reserving?\nA Record sales B Set investment return C Estimate unpaid claim costs D Choose clients\n9 Which sequence best represents the insurance value chain?\nA Claims, sales, pricing, admin B Product/pricing, underwriting, admin, claims C Investment, claims, sales D Reserving,\nmarketing, pricing\n10 Claim frequency is 20% above plan. Who should respond?\nA Claims only B Pricing only C Several functions together D Marketing only\nSESSION 1 REVIEW 2 OF 2"
+        }
+      ],
+      "warnings": [],
+      "userEdited": false,
+      "model": "OpenAI (gpt-4o)",
+      "promptVersion": "direct-cards-v5-reviewed-targets",
+      "knowledgeTrace": {
+        "unitId": "t1",
+        "planKey": "30879a0e65684877195944ad68f0760198874e30a42ad6f6e6d160cb436225e9",
+        "claim": "Pricing estimates the premium needed for the expected risk.",
+        "conditions": []
+      },
+      "accuracyReview": {
+        "version": "accuracy-v2-scientific-quotations",
+        "contentHash": "284f547ac9dd9d4cc681b69004faffe36d2cc233f7dc4298e56b74fe384c51b0",
+        "sources": [
+          {
+            "documentId": "eaf7312d-3a44-4e51-957e-ea03c4d0499e",
+            "page": 36,
+            "sha256": "1f91416c944fd3c8ef762934e5d0eac1c8386a1a1a79ff39a8a961a511e84b4a",
+            "revision": "925408a8c7bbc0b75e3781deb2c54cd33a0ca7517f2b9330b4c363c42b2ea129"
+          }
+        ]
+      }
+    },
+    {
+      "id": "dca78f2f-b665-44a9-829a-5bfaa00fbb2a",
+      "notionId": "df017934-c352-4b77-ae09-ba85e0a5df2a",
+      "cardType": "notion",
+      "question": "What is the purpose of claims reserving?",
+      "answer": "To estimate unpaid claim costs.",
+      "explanation": "",
+      "example": "",
+      "kind": "definition",
+      "objective": "The purpose of claims reserving is to estimate unpaid claim costs.",
+      "status": "ready",
+      "evidence": [
+        {
+          "documentId": "eaf7312d-3a44-4e51-957e-ea03c4d0499e",
+          "page": 36,
+          "quote": "KNOWLEDGE CHECK\nFunctions and the insurance value chain\nChoose an answer, then click to reveal the correct response.\n6 Which function decides whether to accept a risk and on what terms?\nA Claims B Underwriting C Finance D Distribution\n7 Which function estimates the premium needed for the expected risk?\nA Pricing B Reserving C Investment D Compliance\n8 What is the purpose of claims reserving?\nA Record sales B Set investment return C Estimate unpaid claim costs D Choose clients\n9 Which sequence best represents the insurance value chain?\nA Claims, sales, pricing, admin B Product/pricing, underwriting, admin, claims C Investment, claims, sales D Reserving,\nmarketing, pricing\n10 Claim frequency is 20% above plan. Who should respond?\nA Claims only B Pricing only C Several functions together D Marketing only\nSESSION 1 REVIEW 2 OF 2"
+        }
+      ],
+      "warnings": [],
+      "userEdited": false,
+      "model": "OpenAI (gpt-4o)",
+      "promptVersion": "direct-cards-v5-reviewed-targets",
+      "knowledgeTrace": {
+        "unitId": "t2",
+        "planKey": "30879a0e65684877195944ad68f0760198874e30a42ad6f6e6d160cb436225e9",
+        "claim": "The purpose of claims reserving is to estimate unpaid claim costs.",
+        "conditions": []
+      },
+      "accuracyReview": {
+        "version": "accuracy-v2-scientific-quotations",
+        "contentHash": "2612be6f402ec782929f68bbb1fc402300e3e7e249a8bc6349fe49ffe0c48c27",
+        "sources": [
+          {
+            "documentId": "eaf7312d-3a44-4e51-957e-ea03c4d0499e",
+            "page": 36,
+            "sha256": "1f91416c944fd3c8ef762934e5d0eac1c8386a1a1a79ff39a8a961a511e84b4a",
+            "revision": "925408a8c7bbc0b75e3781deb2c54cd33a0ca7517f2b9330b4c363c42b2ea129"
+          }
+        ]
+      }
+    },
+    {
+      "id": "7b08ef72-b693-4b2e-bdae-c2667d11ffe5",
+      "notionId": "85081c77-a82c-4fc1-b6c8-736a9642716c",
+      "cardType": "notion",
+      "question": "Which sequence best represents the insurance value chain?",
+      "answer": "Product/pricing, underwriting, admin, claims.",
+      "explanation": "",
+      "example": "",
+      "kind": "definition",
+      "objective": "The insurance value chain sequence is product/pricing, underwriting, admin, claims.",
+      "status": "ready",
+      "evidence": [
+        {
+          "documentId": "eaf7312d-3a44-4e51-957e-ea03c4d0499e",
+          "page": 36,
+          "quote": "KNOWLEDGE CHECK\nFunctions and the insurance value chain\nChoose an answer, then click to reveal the correct response.\n6 Which function decides whether to accept a risk and on what terms?\nA Claims B Underwriting C Finance D Distribution\n7 Which function estimates the premium needed for the expected risk?\nA Pricing B Reserving C Investment D Compliance\n8 What is the purpose of claims reserving?\nA Record sales B Set investment return C Estimate unpaid claim costs D Choose clients\n9 Which sequence best represents the insurance value chain?\nA Claims, sales, pricing, admin B Product/pricing, underwriting, admin, claims C Investment, claims, sales D Reserving,\nmarketing, pricing\n10 Claim frequency is 20% above plan. Who should respond?\nA Claims only B Pricing only C Several functions together D Marketing only\nSESSION 1 REVIEW 2 OF 2"
+        }
+      ],
+      "warnings": [],
+      "userEdited": false,
+      "model": "OpenAI (gpt-4o)",
+      "promptVersion": "direct-cards-v5-reviewed-targets",
+      "knowledgeTrace": {
+        "unitId": "t3",
+        "planKey": "30879a0e65684877195944ad68f0760198874e30a42ad6f6e6d160cb436225e9",
+        "claim": "The insurance value chain sequence is product/pricing, underwriting, admin, claims.",
+        "conditions": []
+      },
+      "accuracyReview": {
+        "version": "accuracy-v2-scientific-quotations",
+        "contentHash": "20d5636c74c393e9f345e8b924cae747a67a9d51b4b088fbf953dfa03c760a9e",
+        "sources": [
+          {
+            "documentId": "eaf7312d-3a44-4e51-957e-ea03c4d0499e",
+            "page": 36,
+            "sha256": "1f91416c944fd3c8ef762934e5d0eac1c8386a1a1a79ff39a8a961a511e84b4a",
+            "revision": "925408a8c7bbc0b75e3781deb2c54cd33a0ca7517f2b9330b4c363c42b2ea129"
+          }
+        ]
+      }
+    },
+    {
+      "id": "2af0f00f-d189-481d-8adf-4a3738b22503",
+      "notionId": "796856e4-5714-4132-84f1-3ed43ec59146",
+      "cardType": "notion",
+      "question": "Who should respond when claim frequency is 20% above plan?",
+      "answer": "Several functions together should respond.",
+      "explanation": "",
+      "example": "",
+      "kind": "application",
+      "objective": "When claim frequency is 20% above plan, several functions together should respond.",
+      "status": "ready",
+      "evidence": [
+        {
+          "documentId": "eaf7312d-3a44-4e51-957e-ea03c4d0499e",
+          "page": 36,
+          "quote": "KNOWLEDGE CHECK\nFunctions and the insurance value chain\nChoose an answer, then click to reveal the correct response.\n6 Which function decides whether to accept a risk and on what terms?\nA Claims B Underwriting C Finance D Distribution\n7 Which function estimates the premium needed for the expected risk?\nA Pricing B Reserving C Investment D Compliance\n8 What is the purpose of claims reserving?\nA Record sales B Set investment return C Estimate unpaid claim costs D Choose clients\n9 Which sequence best represents the insurance value chain?\nA Claims, sales, pricing, admin B Product/pricing, underwriting, admin, claims C Investment, claims, sales D Reserving,\nmarketing, pricing\n10 Claim frequency is 20% above plan. Who should respond?\nA Claims only B Pricing only C Several functions together D Marketing only\nSESSION 1 REVIEW 2 OF 2"
+        }
+      ],
+      "warnings": [],
+      "userEdited": false,
+      "model": "OpenAI (gpt-4o)",
+      "promptVersion": "direct-cards-v5-reviewed-targets",
+      "knowledgeTrace": {
+        "unitId": "t4",
+        "planKey": "30879a0e65684877195944ad68f0760198874e30a42ad6f6e6d160cb436225e9",
+        "claim": "When claim frequency is 20% above plan, several functions together should respond.",
+        "conditions": []
+      },
+      "accuracyReview": {
+        "version": "accuracy-v2-scientific-quotations",
+        "contentHash": "be1529662d39a35b0397494062d4822fb9b634e61c537deca673d92bc86b20b4",
+        "sources": [
+          {
+            "documentId": "eaf7312d-3a44-4e51-957e-ea03c4d0499e",
+            "page": 36,
+            "sha256": "1f91416c944fd3c8ef762934e5d0eac1c8386a1a1a79ff39a8a961a511e84b4a",
+            "revision": "925408a8c7bbc0b75e3781deb2c54cd33a0ca7517f2b9330b4c363c42b2ea129"
+          }
+        ]
+      }
+    },
+    {
+      "id": "9dc21205-2749-42ee-b380-f332b0a06efd",
+      "notionId": "4c5fe548-727d-4a35-866b-3432e90c155c",
+      "cardType": "notion",
+      "question": "Which financial statement connects business functions in this model?",
+      "answer": "The balance sheet.",
+      "explanation": "",
+      "example": "",
+      "kind": "mechanism",
+      "objective": "The balance sheet connects business functions.",
+      "status": "ready",
+      "evidence": [
+        {
+          "documentId": "eaf7312d-3a44-4e51-957e-ea03c4d0499e",
+          "page": 31,
+          "quote": "5. Company functions\n31\nThe balance sheet connects business functions\nAssets\nInvestment and ALM\nLiquidity management\nMarket and credit risk\nSupports future claim\npayments\nLiabilities\nPricing assumptions\nClaims management\nReserving and provisions\nTiming and amount of\nobligations\nCapital and result\nRisk and capital\nmanagement\nFinance and reporting\nReinsurance\nProfitability and solvency"
+        }
+      ],
+      "warnings": [],
+      "userEdited": false,
+      "model": "OpenAI (gpt-4o)",
+      "promptVersion": "direct-cards-v5-reviewed-targets",
+      "knowledgeTrace": {
+        "unitId": "t0",
+        "planKey": "98cb95b951857c8fe96e8db5ae8a903d5619adb454975de7a7f7d960aa0dfd55",
+        "claim": "The balance sheet connects business functions.",
+        "conditions": []
+      },
+      "accuracyReview": {
+        "version": "accuracy-v2-scientific-quotations",
+        "contentHash": "a25caf996a35db39dbcd820e919ddd6c66108f43bf68b866670175816b843fa9",
+        "sources": [
+          {
+            "documentId": "eaf7312d-3a44-4e51-957e-ea03c4d0499e",
+            "page": 31,
+            "sha256": "c7872a20bdd912309e08c78a7b0b80bf4bd1db20371beb796d8172a371beb795",
+            "revision": "925408a8c7bbc0b75e3781deb2c54cd33a0ca7517f2b9330b4c363c42b2ea129"
+          }
+        ]
+      }
+    },
+    {
+      "id": "4ce51977-3847-43a5-8887-84f076c156b9",
+      "notionId": "bfbefebf-36f6-4d6a-99b6-2e74ef7592ab",
+      "cardType": "notion",
+      "question": "Which balance-sheet category is associated with Investment and ALM?",
+      "answer": "Assets.",
+      "explanation": "",
+      "example": "",
+      "kind": "mechanism",
+      "objective": "Investment and ALM is associated with assets on the balance sheet.",
+      "status": "ready",
+      "evidence": [
+        {
+          "documentId": "eaf7312d-3a44-4e51-957e-ea03c4d0499e",
+          "page": 31,
+          "quote": "5. Company functions\n31\nThe balance sheet connects business functions\nAssets\nInvestment and ALM\nLiquidity management\nMarket and credit risk\nSupports future claim\npayments\nLiabilities\nPricing assumptions\nClaims management\nReserving and provisions\nTiming and amount of\nobligations\nCapital and result\nRisk and capital\nmanagement\nFinance and reporting\nReinsurance\nProfitability and solvency"
+        }
+      ],
+      "warnings": [],
+      "userEdited": false,
+      "model": "OpenAI (gpt-4o)",
+      "promptVersion": "direct-cards-v5-reviewed-targets",
+      "knowledgeTrace": {
+        "unitId": "t1",
+        "planKey": "98cb95b951857c8fe96e8db5ae8a903d5619adb454975de7a7f7d960aa0dfd55",
+        "claim": "Investment and ALM is associated with assets on the balance sheet.",
+        "conditions": []
+      },
+      "accuracyReview": {
+        "version": "accuracy-v2-scientific-quotations",
+        "contentHash": "505197971c340823228e49159f865b936b16b032d7a15e6eedff8a26532ca746",
+        "sources": [
+          {
+            "documentId": "eaf7312d-3a44-4e51-957e-ea03c4d0499e",
+            "page": 31,
+            "sha256": "c7872a20bdd912309e08c78a7b0b80bf4bd1db20371beb796d8172a371beb795",
+            "revision": "925408a8c7bbc0b75e3781deb2c54cd33a0ca7517f2b9330b4c363c42b2ea129"
+          }
+        ]
+      }
+    },
+    {
+      "id": "11899755-8787-4019-aa15-9c23bf1bd555",
+      "notionId": "f5be6d07-1c1a-4972-bec7-c1e847f368d2",
+      "cardType": "notion",
+      "question": "Which balance-sheet category is associated with Liquidity management?",
+      "answer": "Assets.",
+      "explanation": "",
+      "example": "",
+      "kind": "mechanism",
+      "objective": "Liquidity management is associated with assets on the balance sheet.",
+      "status": "ready",
+      "evidence": [
+        {
+          "documentId": "eaf7312d-3a44-4e51-957e-ea03c4d0499e",
+          "page": 31,
+          "quote": "5. Company functions\n31\nThe balance sheet connects business functions\nAssets\nInvestment and ALM\nLiquidity management\nMarket and credit risk\nSupports future claim\npayments\nLiabilities\nPricing assumptions\nClaims management\nReserving and provisions\nTiming and amount of\nobligations\nCapital and result\nRisk and capital\nmanagement\nFinance and reporting\nReinsurance\nProfitability and solvency"
+        }
+      ],
+      "warnings": [],
+      "userEdited": false,
+      "model": "OpenAI (gpt-4o)",
+      "promptVersion": "direct-cards-v5-reviewed-targets",
+      "knowledgeTrace": {
+        "unitId": "t2",
+        "planKey": "98cb95b951857c8fe96e8db5ae8a903d5619adb454975de7a7f7d960aa0dfd55",
+        "claim": "Liquidity management is associated with assets on the balance sheet.",
+        "conditions": []
+      },
+      "accuracyReview": {
+        "version": "accuracy-v2-scientific-quotations",
+        "contentHash": "15fc781dcf48a1e4f7606bcd9d03be54c5005973b6fa8b56cfe6b314547127fe",
+        "sources": [
+          {
+            "documentId": "eaf7312d-3a44-4e51-957e-ea03c4d0499e",
+            "page": 31,
+            "sha256": "c7872a20bdd912309e08c78a7b0b80bf4bd1db20371beb796d8172a371beb795",
+            "revision": "925408a8c7bbc0b75e3781deb2c54cd33a0ca7517f2b9330b4c363c42b2ea129"
+          }
+        ]
+      }
+    },
+    {
+      "id": "720f3bd2-c704-47fb-b52e-3d7f2fa86627",
+      "notionId": "ba4e5543-7cfb-4e12-9464-5872d0c17977",
+      "cardType": "notion",
+      "question": "Which balance-sheet category is associated with Market and credit risk?",
+      "answer": "Assets.",
+      "explanation": "",
+      "example": "",
+      "kind": "mechanism",
+      "objective": "Market and credit risk is associated with assets on the balance sheet.",
+      "status": "ready",
+      "evidence": [
+        {
+          "documentId": "eaf7312d-3a44-4e51-957e-ea03c4d0499e",
+          "page": 31,
+          "quote": "5. Company functions\n31\nThe balance sheet connects business functions\nAssets\nInvestment and ALM\nLiquidity management\nMarket and credit risk\nSupports future claim\npayments\nLiabilities\nPricing assumptions\nClaims management\nReserving and provisions\nTiming and amount of\nobligations\nCapital and result\nRisk and capital\nmanagement\nFinance and reporting\nReinsurance\nProfitability and solvency"
+        }
+      ],
+      "warnings": [],
+      "userEdited": false,
+      "model": "OpenAI (gpt-4o)",
+      "promptVersion": "direct-cards-v5-reviewed-targets",
+      "knowledgeTrace": {
+        "unitId": "t3",
+        "planKey": "98cb95b951857c8fe96e8db5ae8a903d5619adb454975de7a7f7d960aa0dfd55",
+        "claim": "Market and credit risk is associated with assets on the balance sheet.",
+        "conditions": []
+      },
+      "accuracyReview": {
+        "version": "accuracy-v2-scientific-quotations",
+        "contentHash": "c7e7d09bf7b51412acf37324d79cb2db6c6d1d2484adc3e537d27b58db61eb1f",
+        "sources": [
+          {
+            "documentId": "eaf7312d-3a44-4e51-957e-ea03c4d0499e",
+            "page": 31,
+            "sha256": "c7872a20bdd912309e08c78a7b0b80bf4bd1db20371beb796d8172a371beb795",
+            "revision": "925408a8c7bbc0b75e3781deb2c54cd33a0ca7517f2b9330b4c363c42b2ea129"
+          }
+        ]
+      }
+    },
+    {
+      "id": "b160aa52-71db-4e46-9a02-3c14fe13fe40",
+      "notionId": "513c9a5a-7b16-481b-baa7-39951b851273",
+      "cardType": "notion",
+      "question": "What do assets support in the balance-sheet model?",
+      "answer": "future claim payments.",
+      "explanation": "",
+      "example": "",
+      "kind": "mechanism",
+      "objective": "Assets support future claim payments.",
+      "status": "ready",
+      "evidence": [
+        {
+          "documentId": "eaf7312d-3a44-4e51-957e-ea03c4d0499e",
+          "page": 31,
+          "quote": "5. Company functions\n31\nThe balance sheet connects business functions\nAssets\nInvestment and ALM\nLiquidity management\nMarket and credit risk\nSupports future claim\npayments\nLiabilities\nPricing assumptions\nClaims management\nReserving and provisions\nTiming and amount of\nobligations\nCapital and result\nRisk and capital\nmanagement\nFinance and reporting\nReinsurance\nProfitability and solvency"
+        }
+      ],
+      "warnings": [],
+      "userEdited": false,
+      "model": "OpenAI (gpt-4o)",
+      "promptVersion": "direct-cards-v5-reviewed-targets",
+      "knowledgeTrace": {
+        "unitId": "t4",
+        "planKey": "98cb95b951857c8fe96e8db5ae8a903d5619adb454975de7a7f7d960aa0dfd55",
+        "claim": "Assets support future claim payments.",
+        "conditions": []
+      },
+      "accuracyReview": {
+        "version": "accuracy-v2-scientific-quotations",
+        "contentHash": "7d45d1a1fb2e565f457e0411c381bcbf6f4e40cc966a2b20ce76884afcf6c13c",
+        "sources": [
+          {
+            "documentId": "eaf7312d-3a44-4e51-957e-ea03c4d0499e",
+            "page": 31,
+            "sha256": "c7872a20bdd912309e08c78a7b0b80bf4bd1db20371beb796d8172a371beb795",
+            "revision": "925408a8c7bbc0b75e3781deb2c54cd33a0ca7517f2b9330b4c363c42b2ea129"
+          }
+        ]
+      }
+    },
+    {
+      "id": "933ad0f7-2c22-4c63-90e6-af4bbe106831",
+      "notionId": "71cf1938-368d-4643-9a2d-2cc87196489f",
+      "cardType": "notion",
+      "question": "Which balance-sheet category is associated with Pricing assumptions?",
+      "answer": "Liabilities.",
+      "explanation": "",
+      "example": "",
+      "kind": "mechanism",
+      "objective": "Pricing assumptions is associated with liabilities on the balance sheet.",
+      "status": "ready",
+      "evidence": [
+        {
+          "documentId": "eaf7312d-3a44-4e51-957e-ea03c4d0499e",
+          "page": 31,
+          "quote": "5. Company functions\n31\nThe balance sheet connects business functions\nAssets\nInvestment and ALM\nLiquidity management\nMarket and credit risk\nSupports future claim\npayments\nLiabilities\nPricing assumptions\nClaims management\nReserving and provisions\nTiming and amount of\nobligations\nCapital and result\nRisk and capital\nmanagement\nFinance and reporting\nReinsurance\nProfitability and solvency"
+        }
+      ],
+      "warnings": [],
+      "userEdited": false,
+      "model": "OpenAI (gpt-4o)",
+      "promptVersion": "direct-cards-v5-reviewed-targets",
+      "knowledgeTrace": {
+        "unitId": "t5",
+        "planKey": "98cb95b951857c8fe96e8db5ae8a903d5619adb454975de7a7f7d960aa0dfd55",
+        "claim": "Pricing assumptions is associated with liabilities on the balance sheet.",
+        "conditions": []
+      },
+      "accuracyReview": {
+        "version": "accuracy-v2-scientific-quotations",
+        "contentHash": "b50c44518d22a1c1e66a39611a74db68e79698acca3349503e30028378060591",
+        "sources": [
+          {
+            "documentId": "eaf7312d-3a44-4e51-957e-ea03c4d0499e",
+            "page": 31,
+            "sha256": "c7872a20bdd912309e08c78a7b0b80bf4bd1db20371beb796d8172a371beb795",
+            "revision": "925408a8c7bbc0b75e3781deb2c54cd33a0ca7517f2b9330b4c363c42b2ea129"
+          }
+        ]
+      }
+    },
+    {
+      "id": "322168ed-f13d-40cf-a1b9-e0c5b131ff27",
+      "notionId": "07374e81-a3ca-42ba-a7b2-40fef2afb4c3",
+      "cardType": "notion",
+      "question": "Which balance-sheet category is associated with Claims management?",
+      "answer": "Liabilities.",
+      "explanation": "",
+      "example": "",
+      "kind": "mechanism",
+      "objective": "Claims management is associated with liabilities on the balance sheet.",
+      "status": "ready",
+      "evidence": [
+        {
+          "documentId": "eaf7312d-3a44-4e51-957e-ea03c4d0499e",
+          "page": 31,
+          "quote": "5. Company functions\n31\nThe balance sheet connects business functions\nAssets\nInvestment and ALM\nLiquidity management\nMarket and credit risk\nSupports future claim\npayments\nLiabilities\nPricing assumptions\nClaims management\nReserving and provisions\nTiming and amount of\nobligations\nCapital and result\nRisk and capital\nmanagement\nFinance and reporting\nReinsurance\nProfitability and solvency"
+        }
+      ],
+      "warnings": [],
+      "userEdited": false,
+      "model": "OpenAI (gpt-4o)",
+      "promptVersion": "direct-cards-v5-reviewed-targets",
+      "knowledgeTrace": {
+        "unitId": "t6",
+        "planKey": "98cb95b951857c8fe96e8db5ae8a903d5619adb454975de7a7f7d960aa0dfd55",
+        "claim": "Claims management is associated with liabilities on the balance sheet.",
+        "conditions": []
+      },
+      "accuracyReview": {
+        "version": "accuracy-v2-scientific-quotations",
+        "contentHash": "3cfc7d090f9c47e5575eb47e47549293dd084bad29e988504649115ff47c45de",
+        "sources": [
+          {
+            "documentId": "eaf7312d-3a44-4e51-957e-ea03c4d0499e",
+            "page": 31,
+            "sha256": "c7872a20bdd912309e08c78a7b0b80bf4bd1db20371beb796d8172a371beb795",
+            "revision": "925408a8c7bbc0b75e3781deb2c54cd33a0ca7517f2b9330b4c363c42b2ea129"
+          }
+        ]
+      }
+    },
+    {
+      "id": "a6f15938-acea-40af-98ed-0a331e7e80a0",
+      "notionId": "6a5105e4-b4a7-4e28-87e4-eb732fda002b",
+      "cardType": "notion",
+      "question": "Which balance-sheet category is associated with Reserving and provisions?",
+      "answer": "Liabilities.",
+      "explanation": "",
+      "example": "",
+      "kind": "mechanism",
+      "objective": "Reserving and provisions is associated with liabilities on the balance sheet.",
+      "status": "ready",
+      "evidence": [
+        {
+          "documentId": "eaf7312d-3a44-4e51-957e-ea03c4d0499e",
+          "page": 31,
+          "quote": "5. Company functions\n31\nThe balance sheet connects business functions\nAssets\nInvestment and ALM\nLiquidity management\nMarket and credit risk\nSupports future claim\npayments\nLiabilities\nPricing assumptions\nClaims management\nReserving and provisions\nTiming and amount of\nobligations\nCapital and result\nRisk and capital\nmanagement\nFinance and reporting\nReinsurance\nProfitability and solvency"
+        }
+      ],
+      "warnings": [],
+      "userEdited": false,
+      "model": "OpenAI (gpt-4o)",
+      "promptVersion": "direct-cards-v5-reviewed-targets",
+      "knowledgeTrace": {
+        "unitId": "t7",
+        "planKey": "98cb95b951857c8fe96e8db5ae8a903d5619adb454975de7a7f7d960aa0dfd55",
+        "claim": "Reserving and provisions is associated with liabilities on the balance sheet.",
+        "conditions": []
+      },
+      "accuracyReview": {
+        "version": "accuracy-v2-scientific-quotations",
+        "contentHash": "7cb6d8ff81c2ec965d631385cb5830b72e05373a555b3b4eaf385d5e3e9eb30b",
+        "sources": [
+          {
+            "documentId": "eaf7312d-3a44-4e51-957e-ea03c4d0499e",
+            "page": 31,
+            "sha256": "c7872a20bdd912309e08c78a7b0b80bf4bd1db20371beb796d8172a371beb795",
+            "revision": "925408a8c7bbc0b75e3781deb2c54cd33a0ca7517f2b9330b4c363c42b2ea129"
+          }
+        ]
+      }
+    },
+    {
+      "id": "d4505cdc-ca96-4c66-b7f0-be8005263cfa",
+      "notionId": "76374761-bc4b-4a48-875c-e0c0ea2128a2",
+      "cardType": "notion",
+      "question": "Which balance-sheet category is associated with Timing and amount of obligations?",
+      "answer": "Liabilities.",
+      "explanation": "",
+      "example": "",
+      "kind": "mechanism",
+      "objective": "Timing and amount of obligations is associated with liabilities on the balance sheet.",
+      "status": "ready",
+      "evidence": [
+        {
+          "documentId": "eaf7312d-3a44-4e51-957e-ea03c4d0499e",
+          "page": 31,
+          "quote": "5. Company functions\n31\nThe balance sheet connects business functions\nAssets\nInvestment and ALM\nLiquidity management\nMarket and credit risk\nSupports future claim\npayments\nLiabilities\nPricing assumptions\nClaims management\nReserving and provisions\nTiming and amount of\nobligations\nCapital and result\nRisk and capital\nmanagement\nFinance and reporting\nReinsurance\nProfitability and solvency"
+        }
+      ],
+      "warnings": [],
+      "userEdited": false,
+      "model": "OpenAI (gpt-4o)",
+      "promptVersion": "direct-cards-v5-reviewed-targets",
+      "knowledgeTrace": {
+        "unitId": "t8",
+        "planKey": "98cb95b951857c8fe96e8db5ae8a903d5619adb454975de7a7f7d960aa0dfd55",
+        "claim": "Timing and amount of obligations is associated with liabilities on the balance sheet.",
+        "conditions": []
+      },
+      "accuracyReview": {
+        "version": "accuracy-v2-scientific-quotations",
+        "contentHash": "4c36d436eb9b0fc6711e1af5bc1ac13295ebfe951eb655e74885de38915d5ea6",
+        "sources": [
+          {
+            "documentId": "eaf7312d-3a44-4e51-957e-ea03c4d0499e",
+            "page": 31,
+            "sha256": "c7872a20bdd912309e08c78a7b0b80bf4bd1db20371beb796d8172a371beb795",
+            "revision": "925408a8c7bbc0b75e3781deb2c54cd33a0ca7517f2b9330b4c363c42b2ea129"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ab0b0c5d-6371-4b11-ae6c-0bc5e0f8f7f3",
+      "notionId": "fccbad58-def0-4cc6-89ec-5934afd7d9c2",
+      "cardType": "notion",
+      "question": "Which balance-sheet category is associated with Risk and capital management?",
+      "answer": "Capital and result.",
+      "explanation": "",
+      "example": "",
+      "kind": "mechanism",
+      "objective": "Risk and capital management is associated with capital and result on the balance sheet.",
+      "status": "ready",
+      "evidence": [
+        {
+          "documentId": "eaf7312d-3a44-4e51-957e-ea03c4d0499e",
+          "page": 31,
+          "quote": "5. Company functions\n31\nThe balance sheet connects business functions\nAssets\nInvestment and ALM\nLiquidity management\nMarket and credit risk\nSupports future claim\npayments\nLiabilities\nPricing assumptions\nClaims management\nReserving and provisions\nTiming and amount of\nobligations\nCapital and result\nRisk and capital\nmanagement\nFinance and reporting\nReinsurance\nProfitability and solvency"
+        }
+      ],
+      "warnings": [],
+      "userEdited": false,
+      "model": "OpenAI (gpt-4o)",
+      "promptVersion": "direct-cards-v5-reviewed-targets",
+      "knowledgeTrace": {
+        "unitId": "t9",
+        "planKey": "98cb95b951857c8fe96e8db5ae8a903d5619adb454975de7a7f7d960aa0dfd55",
+        "claim": "Risk and capital management is associated with capital and result on the balance sheet.",
+        "conditions": []
+      },
+      "accuracyReview": {
+        "version": "accuracy-v2-scientific-quotations",
+        "contentHash": "a46943a8287aef8c570bc42fe7501f91eb13d637ab800432a8dfc12ba6316664",
+        "sources": [
+          {
+            "documentId": "eaf7312d-3a44-4e51-957e-ea03c4d0499e",
+            "page": 31,
+            "sha256": "c7872a20bdd912309e08c78a7b0b80bf4bd1db20371beb796d8172a371beb795",
+            "revision": "925408a8c7bbc0b75e3781deb2c54cd33a0ca7517f2b9330b4c363c42b2ea129"
+          }
+        ]
+      }
+    },
+    {
+      "id": "0d60d0d3-f8c6-44d0-ae02-5359f29e5070",
+      "notionId": "52f3103e-ccda-4ec7-be91-2337642fbda3",
+      "cardType": "notion",
+      "question": "Which balance-sheet category is associated with Finance and reporting?",
+      "answer": "Capital and result.",
+      "explanation": "",
+      "example": "",
+      "kind": "mechanism",
+      "objective": "Finance and reporting is associated with capital and result on the balance sheet.",
+      "status": "ready",
+      "evidence": [
+        {
+          "documentId": "eaf7312d-3a44-4e51-957e-ea03c4d0499e",
+          "page": 31,
+          "quote": "5. Company functions\n31\nThe balance sheet connects business functions\nAssets\nInvestment and ALM\nLiquidity management\nMarket and credit risk\nSupports future claim\npayments\nLiabilities\nPricing assumptions\nClaims management\nReserving and provisions\nTiming and amount of\nobligations\nCapital and result\nRisk and capital\nmanagement\nFinance and reporting\nReinsurance\nProfitability and solvency"
+        }
+      ],
+      "warnings": [],
+      "userEdited": false,
+      "model": "OpenAI (gpt-4o)",
+      "promptVersion": "direct-cards-v5-reviewed-targets",
+      "knowledgeTrace": {
+        "unitId": "t10",
+        "planKey": "98cb95b951857c8fe96e8db5ae8a903d5619adb454975de7a7f7d960aa0dfd55",
+        "claim": "Finance and reporting is associated with capital and result on the balance sheet.",
+        "conditions": []
+      },
+      "accuracyReview": {
+        "version": "accuracy-v2-scientific-quotations",
+        "contentHash": "8c8012f04e9a9ac060d182a0f53be328761d058ec61fdefdcac0efeb55caf391",
+        "sources": [
+          {
+            "documentId": "eaf7312d-3a44-4e51-957e-ea03c4d0499e",
+            "page": 31,
+            "sha256": "c7872a20bdd912309e08c78a7b0b80bf4bd1db20371beb796d8172a371beb795",
+            "revision": "925408a8c7bbc0b75e3781deb2c54cd33a0ca7517f2b9330b4c363c42b2ea129"
+          }
+        ]
+      }
+    },
+    {
+      "id": "f574d7cc-e047-4103-bd3d-872b13a727f8",
+      "notionId": "fa532570-2fb6-4399-b634-7e079aa9a587",
+      "cardType": "notion",
+      "question": "Which balance-sheet category is associated with Reinsurance?",
+      "answer": "Capital and result.",
+      "explanation": "",
+      "example": "",
+      "kind": "mechanism",
+      "objective": "Reinsurance is associated with capital and result on the balance sheet.",
+      "status": "ready",
+      "evidence": [
+        {
+          "documentId": "eaf7312d-3a44-4e51-957e-ea03c4d0499e",
+          "page": 31,
+          "quote": "5. Company functions\n31\nThe balance sheet connects business functions\nAssets\nInvestment and ALM\nLiquidity management\nMarket and credit risk\nSupports future claim\npayments\nLiabilities\nPricing assumptions\nClaims management\nReserving and provisions\nTiming and amount of\nobligations\nCapital and result\nRisk and capital\nmanagement\nFinance and reporting\nReinsurance\nProfitability and solvency"
+        }
+      ],
+      "warnings": [],
+      "userEdited": false,
+      "model": "OpenAI (gpt-4o)",
+      "promptVersion": "direct-cards-v5-reviewed-targets",
+      "knowledgeTrace": {
+        "unitId": "t11",
+        "planKey": "98cb95b951857c8fe96e8db5ae8a903d5619adb454975de7a7f7d960aa0dfd55",
+        "claim": "Reinsurance is associated with capital and result on the balance sheet.",
+        "conditions": []
+      },
+      "accuracyReview": {
+        "version": "accuracy-v2-scientific-quotations",
+        "contentHash": "f7b584a7b20dff43917da2527fe76d7c89f8be735dbc8a58c618ffa4ad0c19d0",
+        "sources": [
+          {
+            "documentId": "eaf7312d-3a44-4e51-957e-ea03c4d0499e",
+            "page": 31,
+            "sha256": "c7872a20bdd912309e08c78a7b0b80bf4bd1db20371beb796d8172a371beb795",
+            "revision": "925408a8c7bbc0b75e3781deb2c54cd33a0ca7517f2b9330b4c363c42b2ea129"
+          }
+        ]
+      }
+    },
+    {
+      "id": "03af4f56-7271-439f-902e-1ab2104d0dc4",
+      "notionId": "a93c28c4-157b-48ba-bf6b-49594b755c65",
+      "cardType": "notion",
+      "question": "Which balance-sheet category is associated with Profitability and solvency?",
+      "answer": "Capital and result.",
+      "explanation": "",
+      "example": "",
+      "kind": "mechanism",
+      "objective": "Profitability and solvency is associated with capital and result on the balance sheet.",
+      "status": "ready",
+      "evidence": [
+        {
+          "documentId": "eaf7312d-3a44-4e51-957e-ea03c4d0499e",
+          "page": 31,
+          "quote": "5. Company functions\n31\nThe balance sheet connects business functions\nAssets\nInvestment and ALM\nLiquidity management\nMarket and credit risk\nSupports future claim\npayments\nLiabilities\nPricing assumptions\nClaims management\nReserving and provisions\nTiming and amount of\nobligations\nCapital and result\nRisk and capital\nmanagement\nFinance and reporting\nReinsurance\nProfitability and solvency"
+        }
+      ],
+      "warnings": [],
+      "userEdited": false,
+      "model": "OpenAI (gpt-4o)",
+      "promptVersion": "direct-cards-v5-reviewed-targets",
+      "knowledgeTrace": {
+        "unitId": "t12",
+        "planKey": "98cb95b951857c8fe96e8db5ae8a903d5619adb454975de7a7f7d960aa0dfd55",
+        "claim": "Profitability and solvency is associated with capital and result on the balance sheet.",
+        "conditions": []
+      },
+      "accuracyReview": {
+        "version": "accuracy-v2-scientific-quotations",
+        "contentHash": "476c8efbdfc84c211c1fcb3937bdd3bc86ce1eaa83e131c043ae4207107fac45",
+        "sources": [
+          {
+            "documentId": "eaf7312d-3a44-4e51-957e-ea03c4d0499e",
+            "page": 31,
+            "sha256": "c7872a20bdd912309e08c78a7b0b80bf4bd1db20371beb796d8172a371beb795",
+            "revision": "925408a8c7bbc0b75e3781deb2c54cd33a0ca7517f2b9330b4c363c42b2ea129"
+          }
+        ]
+      }
+    }
+  ],
+  "pages": [
+    {
+      "page": 32,
+      "kind": "content",
+      "status": "complete",
+      "generationComplete": true,
+      "reason": "",
+      "warnings": [],
+      "concepts": 4,
+      "cards": 4,
+      "readyCards": 4,
+      "draftCards": 0,
+      "knowledgeCoverage": [
+        {
+          "key": "t0",
+          "claim": "In the example of an insurance company, IT/Digital strategy is associated with CTO.",
+          "status": "covered",
+          "reason": "The text directly states that IT/Digital strategy is associated with the CTO as shown in the primary source (p32s0).",
+          "sourceIds": [
+            "p32s0"
+          ],
+          "cardKeys": [
+            "t0c0"
+          ]
+        },
+        {
+          "key": "t1",
+          "claim": "In the example of an insurance company, Actuarial function is associated with CRO.",
+          "status": "covered",
+          "reason": "The text directly states that the Actuarial function is associated with the CRO as shown in the primary source (p32s0).",
+          "sourceIds": [
+            "p32s0"
+          ],
+          "cardKeys": [
+            "t1c0"
+          ]
+        },
+        {
+          "key": "t2",
+          "claim": "In the example of an insurance company, Investment Mgmt is associated with CIO.",
+          "status": "covered",
+          "reason": "The text directly states that Investment Mgmt is associated with the CIO as shown in the primary source (p32s0).",
+          "sourceIds": [
+            "p32s0"
+          ],
+          "cardKeys": [
+            "t2c0"
+          ]
+        },
+        {
+          "key": "t3",
+          "claim": "In the example of an insurance company, Finance & Accounting is associated with CFO.",
+          "status": "covered",
+          "reason": "The text directly states that Finance & Accounting is associated with the CFO as shown in the primary source (p32s0).",
+          "sourceIds": [
+            "p32s0"
+          ],
+          "cardKeys": [
+            "t3c0"
+          ]
+        }
+      ],
+      "missingObjectives": [],
+      "version": "direct-cards-v5-reviewed-targets",
+      "sourceRevision": "925408a8c7bbc0b75e3781deb2c54cd33a0ca7517f2b9330b4c363c42b2ea129",
+      "updatedAt": "2026-10-10T23:00:19.256Z"
+    },
+    {
+      "page": 36,
+      "kind": "content",
+      "status": "complete",
+      "generationComplete": true,
+      "reason": "",
+      "warnings": [],
+      "concepts": 5,
+      "cards": 5,
+      "readyCards": 5,
+      "draftCards": 0,
+      "knowledgeCoverage": [
+        {
+          "key": "t0",
+          "claim": "Underwriting decides whether to accept a risk and on what terms.",
+          "status": "covered",
+          "reason": "",
+          "sourceIds": [
+            "p36s0"
+          ],
+          "cardKeys": [
+            "t0c0"
+          ]
+        },
+        {
+          "key": "t1",
+          "claim": "Pricing estimates the premium needed for the expected risk.",
+          "status": "covered",
+          "reason": "",
+          "sourceIds": [
+            "p36s0"
+          ],
+          "cardKeys": [
+            "t1c0"
+          ]
+        },
+        {
+          "key": "t2",
+          "claim": "The purpose of claims reserving is to estimate unpaid claim costs.",
+          "status": "covered",
+          "reason": "",
+          "sourceIds": [
+            "p36s0"
+          ],
+          "cardKeys": [
+            "t2c0"
+          ]
+        },
+        {
+          "key": "t3",
+          "claim": "The insurance value chain sequence is product/pricing, underwriting, admin, claims.",
+          "status": "covered",
+          "reason": "",
+          "sourceIds": [
+            "p36s0"
+          ],
+          "cardKeys": [
+            "t3c0"
+          ]
+        },
+        {
+          "key": "t4",
+          "claim": "When claim frequency is 20% above plan, several functions together should respond.",
+          "status": "covered",
+          "reason": "",
+          "sourceIds": [
+            "p36s0"
+          ],
+          "cardKeys": [
+            "repair-t4c0"
+          ]
+        }
+      ],
+      "missingObjectives": [],
+      "version": "direct-cards-v5-reviewed-targets",
+      "sourceRevision": "925408a8c7bbc0b75e3781deb2c54cd33a0ca7517f2b9330b4c363c42b2ea129",
+      "updatedAt": "2026-10-10T23:00:32.549Z"
+    },
+    {
+      "page": 31,
+      "kind": "content",
+      "status": "complete",
+      "generationComplete": true,
+      "reason": "",
+      "warnings": [],
+      "concepts": 13,
+      "cards": 13,
+      "readyCards": 13,
+      "draftCards": 0,
+      "knowledgeCoverage": [
+        {
+          "key": "t0",
+          "claim": "The balance sheet connects business functions.",
+          "status": "covered",
+          "reason": "The claim that the balance sheet connects business functions is directly supported by the source text from page 31.",
+          "sourceIds": [
+            "p31s0"
+          ],
+          "cardKeys": [
+            "t0c0"
+          ]
+        },
+        {
+          "key": "t1",
+          "claim": "Investment and ALM is associated with assets on the balance sheet.",
+          "status": "covered",
+          "reason": "The association of Investment and ALM with assets on the balance sheet is straightforwardly supported by the source text from page 31.",
+          "sourceIds": [
+            "p31s0"
+          ],
+          "cardKeys": [
+            "t1c0"
+          ]
+        },
+        {
+          "key": "t2",
+          "claim": "Liquidity management is associated with assets on the balance sheet.",
+          "status": "covered",
+          "reason": "Liquidity management's association with assets on the balance sheet is directly supported by the source text from page 31.",
+          "sourceIds": [
+            "p31s0"
+          ],
+          "cardKeys": [
+            "t2c0"
+          ]
+        },
+        {
+          "key": "t3",
+          "claim": "Market and credit risk is associated with assets on the balance sheet.",
+          "status": "covered",
+          "reason": "The association of Market and credit risk with assets on the balance sheet is directly supported by the source text from page 31.",
+          "sourceIds": [
+            "p31s0"
+          ],
+          "cardKeys": [
+            "t3c0"
+          ]
+        },
+        {
+          "key": "t4",
+          "claim": "Assets support future claim payments.",
+          "status": "covered",
+          "reason": "The claim that assets support future claim payments is directly supported by the source text from page 31.",
+          "sourceIds": [
+            "p31s0"
+          ],
+          "cardKeys": [
+            "t4c0"
+          ]
+        },
+        {
+          "key": "t5",
+          "claim": "Pricing assumptions is associated with liabilities on the balance sheet.",
+          "status": "covered",
+          "reason": "The association of Pricing assumptions with liabilities on the balance sheet is directly supported by the source text from page 31.",
+          "sourceIds": [
+            "p31s0"
+          ],
+          "cardKeys": [
+            "t5c0"
+          ]
+        },
+        {
+          "key": "t6",
+          "claim": "Claims management is associated with liabilities on the balance sheet.",
+          "status": "covered",
+          "reason": "The association of Claims management with liabilities on the balance sheet is directly supported by the source text from page 31.",
+          "sourceIds": [
+            "p31s0"
+          ],
+          "cardKeys": [
+            "t6c0"
+          ]
+        },
+        {
+          "key": "t7",
+          "claim": "Reserving and provisions is associated with liabilities on the balance sheet.",
+          "status": "covered",
+          "reason": "The association of Reserving and provisions with liabilities on the balance sheet is directly supported by the source text from page 31.",
+          "sourceIds": [
+            "p31s0"
+          ],
+          "cardKeys": [
+            "t7c0"
+          ]
+        },
+        {
+          "key": "t8",
+          "claim": "Timing and amount of obligations is associated with liabilities on the balance sheet.",
+          "status": "covered",
+          "reason": "The association of Timing and amount of obligations with liabilities on the balance sheet is directly supported by the source text from page 31.",
+          "sourceIds": [
+            "p31s0"
+          ],
+          "cardKeys": [
+            "t8c0"
+          ]
+        },
+        {
+          "key": "t9",
+          "claim": "Risk and capital management is associated with capital and result on the balance sheet.",
+          "status": "covered",
+          "reason": "The association of Risk and capital management with capital and result on the balance sheet is directly supported by the source text from page 31.",
+          "sourceIds": [
+            "p31s0"
+          ],
+          "cardKeys": [
+            "t9c0"
+          ]
+        },
+        {
+          "key": "t10",
+          "claim": "Finance and reporting is associated with capital and result on the balance sheet.",
+          "status": "covered",
+          "reason": "The association of Finance and reporting with capital and result on the balance sheet is directly supported by the source text from page 31.",
+          "sourceIds": [
+            "p31s0"
+          ],
+          "cardKeys": [
+            "t10c0"
+          ]
+        },
+        {
+          "key": "t11",
+          "claim": "Reinsurance is associated with capital and result on the balance sheet.",
+          "status": "covered",
+          "reason": "The association of Reinsurance with capital and result on the balance sheet is directly supported by the source text from page 31.",
+          "sourceIds": [
+            "p31s0"
+          ],
+          "cardKeys": [
+            "t11c0"
+          ]
+        },
+        {
+          "key": "t12",
+          "claim": "Profitability and solvency is associated with capital and result on the balance sheet.",
+          "status": "covered",
+          "reason": "The association of Profitability and solvency with capital and result on the balance sheet is directly supported by the source text from page 31.",
+          "sourceIds": [
+            "p31s0"
+          ],
+          "cardKeys": [
+            "t12c0"
+          ]
+        }
+      ],
+      "missingObjectives": [],
+      "version": "direct-cards-v5-reviewed-targets",
+      "sourceRevision": "925408a8c7bbc0b75e3781deb2c54cd33a0ca7517f2b9330b4c363c42b2ea129",
+      "updatedAt": "2026-10-10T23:00:32.655Z"
+    }
+  ],
+  "artifacts": [
+    {
+      "version": "direct-cards-v5-reviewed-targets",
+      "planPromptHash": "8cc1b362bd8d2c5de1bdcaaebfcda1af994595ea4972358f304204ec2ef6072d",
+      "writerPromptHash": "6f076c8fd18baa6af512108f2c24026408e1f481b1bf27351dd05e3f10bf1fec",
+      "reviewPromptHash": "8cb9bd35df2bc7c9e82e7a15f9629f8fe6c9408f66b66deced2b58393e98e322",
+      "writerModel": "OpenAI (gpt-4o)",
+      "reviewModel": "OpenAI (gpt-4o)",
+      "cardDetail": "key-ideas",
+      "sourceRevision": "925408a8c7bbc0b75e3781deb2c54cd33a0ca7517f2b9330b4c363c42b2ea129",
+      "pdfSha256": "438f0286f8310855dd51bcb0db76aafbea5c5551b8dcf160cbc0a5feeb4160af",
+      "sourceOrigin": "pdf",
+      "pages": [
+        32
+      ],
+      "imagePages": [
+        32
+      ],
+      "draft": {
+        "knowledge": [
+          {
+            "page": 32,
+            "claim": "In the example of an insurance company, IT/Digital strategy is associated with CTO.",
+            "sourceIds": [
+              "p32s0"
+            ],
+            "exclusionReason": "",
+            "recall": {
+              "topic": "IT/Digital strategy",
+              "question": "In the example of an insurance company, which officer is associated with IT/Digital strategy?",
+              "answer": "CTO."
+            },
+            "key": "t0",
+            "cardKeys": [
+              "t0c0"
+            ],
+            "issues": []
+          },
+          {
+            "page": 32,
+            "claim": "In the example of an insurance company, Actuarial function is associated with CRO.",
+            "sourceIds": [
+              "p32s0"
+            ],
+            "exclusionReason": "",
+            "recall": {
+              "topic": "Actuarial function",
+              "question": "In the example of an insurance company, which officer is associated with Actuarial function?",
+              "answer": "CRO."
+            },
+            "key": "t1",
+            "cardKeys": [
+              "t1c0"
+            ],
+            "issues": []
+          },
+          {
+            "page": 32,
+            "claim": "In the example of an insurance company, Investment Mgmt is associated with CIO.",
+            "sourceIds": [
+              "p32s0"
+            ],
+            "exclusionReason": "",
+            "recall": {
+              "topic": "Investment Mgmt",
+              "question": "In the example of an insurance company, which officer is associated with Investment Mgmt?",
+              "answer": "CIO."
+            },
+            "key": "t2",
+            "cardKeys": [
+              "t2c0"
+            ],
+            "issues": []
+          },
+          {
+            "page": 32,
+            "claim": "In the example of an insurance company, Finance & Accounting is associated with CFO.",
+            "sourceIds": [
+              "p32s0"
+            ],
+            "exclusionReason": "",
+            "recall": {
+              "topic": "Finance & Accounting",
+              "question": "In the example of an insurance company, which officer is associated with Finance & Accounting?",
+              "answer": "CFO."
+            },
+            "key": "t3",
+            "cardKeys": [
+              "t3c0"
+            ],
+            "issues": []
+          }
+        ],
+        "cards": [
+          {
+            "topic": "IT/Digital strategy",
+            "question": "In the example of an insurance company, which officer is associated with IT/Digital strategy?",
+            "answer": "CTO.",
+            "key": "t0c0",
+            "topicDefinition": "In the example of an insurance company, IT/Digital strategy is associated with CTO.",
+            "explanation": "",
+            "kind": "mechanism",
+            "objective": "In the example of an insurance company, IT/Digital strategy is associated with CTO.",
+            "sources": [
+              {
+                "sourceId": "p32s0"
+              }
+            ],
+            "visualDescription": ""
+          },
+          {
+            "topic": "Actuarial function",
+            "question": "In the example of an insurance company, which officer is associated with Actuarial function?",
+            "answer": "CRO.",
+            "key": "t1c0",
+            "topicDefinition": "In the example of an insurance company, Actuarial function is associated with CRO.",
+            "explanation": "",
+            "kind": "mechanism",
+            "objective": "In the example of an insurance company, Actuarial function is associated with CRO.",
+            "sources": [
+              {
+                "sourceId": "p32s0"
+              }
+            ],
+            "visualDescription": ""
+          },
+          {
+            "topic": "Investment Mgmt",
+            "question": "In the example of an insurance company, which officer is associated with Investment Mgmt?",
+            "answer": "CIO.",
+            "key": "t2c0",
+            "topicDefinition": "In the example of an insurance company, Investment Mgmt is associated with CIO.",
+            "explanation": "",
+            "kind": "mechanism",
+            "objective": "In the example of an insurance company, Investment Mgmt is associated with CIO.",
+            "sources": [
+              {
+                "sourceId": "p32s0"
+              }
+            ],
+            "visualDescription": ""
+          },
+          {
+            "topic": "Finance & Accounting",
+            "question": "In the example of an insurance company, which officer is associated with Finance & Accounting?",
+            "answer": "CFO.",
+            "key": "t3c0",
+            "topicDefinition": "In the example of an insurance company, Finance & Accounting is associated with CFO.",
+            "explanation": "",
+            "kind": "mechanism",
+            "objective": "In the example of an insurance company, Finance & Accounting is associated with CFO.",
+            "sources": [
+              {
+                "sourceId": "p32s0"
+              }
+            ],
+            "visualDescription": ""
+          }
+        ]
+      },
+      "review": {
+        "targets": [
+          {
+            "key": "t0",
+            "verdict": "supported",
+            "atomic": true,
+            "coverageComplete": true,
+            "reason": "The text directly states that IT/Digital strategy is associated with the CTO as shown in the primary source (p32s0)."
+          },
+          {
+            "key": "t1",
+            "verdict": "supported",
+            "atomic": true,
+            "coverageComplete": true,
+            "reason": "The text directly states that the Actuarial function is associated with the CRO as shown in the primary source (p32s0)."
+          },
+          {
+            "key": "t2",
+            "verdict": "supported",
+            "atomic": true,
+            "coverageComplete": true,
+            "reason": "The text directly states that Investment Mgmt is associated with the CIO as shown in the primary source (p32s0)."
+          },
+          {
+            "key": "t3",
+            "verdict": "supported",
+            "atomic": true,
+            "coverageComplete": true,
+            "reason": "The text directly states that Finance & Accounting is associated with the CFO as shown in the primary source (p32s0)."
+          }
+        ],
+        "decisions": [
+          {
+            "key": "t0c0",
+            "complete": true,
+            "scopeCorrect": true,
+            "atomic": true,
+            "unambiguous": true,
+            "relevant": true,
+            "requiresVisualEvidence": false,
+            "duplicateOf": "",
+            "reason": "The statement is directly supported by the information given in the primary source. The association between IT/Digital strategy and CTO is clearly made and accurate.",
+            "claims": [
+              {
+                "text": "Topic: IT/Digital strategy\nConcept definition: In the example of an insurance company, IT/Digital strategy is associated with CTO.\nQuestion: In the example of an insurance company, which officer is associated with IT/Digital strategy?\nAnswer: CTO.",
+                "verdict": "supported",
+                "evidence": [
+                  {
+                    "sourceId": "p32s0",
+                    "quote": "Possible structure of an insurance company\n32\nLegal & General\nCounsel\nGroup /central\nFunctions\nIT/Digital\nstrategy\n(CTO)\nHR/People Mgmt Actuarial\nfunction\n(CRO)\nInvestment\nMgmt\n(CIO)\nDistribution &\nPartnerships\nAudit (internal\ncontrol)\nFinance &\nAccounting\n(CFO)\nCompliance Risk\nMgmt/ERM"
+                  }
+                ],
+                "reasoning": "The text precisely details that IT/Digital strategy is linked with the CTO in the primary source, allowing direct support for the association claim."
+              }
+            ]
+          },
+          {
+            "key": "t1c0",
+            "complete": true,
+            "scopeCorrect": true,
+            "atomic": true,
+            "unambiguous": true,
+            "relevant": true,
+            "requiresVisualEvidence": false,
+            "duplicateOf": "",
+            "reason": "The statement is directly supported by the information given in the primary source. The association between Actuarial function and CRO is clearly made and accurate.",
+            "claims": [
+              {
+                "text": "Topic: Actuarial function\nConcept definition: In the example of an insurance company, Actuarial function is associated with CRO.\nQuestion: In the example of an insurance company, which officer is associated with Actuarial function?\nAnswer: CRO.",
+                "verdict": "supported",
+                "evidence": [
+                  {
+                    "sourceId": "p32s0",
+                    "quote": "Possible structure of an insurance company\n32\nLegal & General\nCounsel\nGroup /central\nFunctions\nIT/Digital\nstrategy\n(CTO)\nHR/People Mgmt Actuarial\nfunction\n(CRO)\nInvestment\nMgmt\n(CIO)\nDistribution &\nPartnerships\nAudit (internal\ncontrol)\nFinance &\nAccounting\n(CFO)\nCompliance Risk\nMgmt/ERM"
+                  }
+                ],
+                "reasoning": "The primary source explicitly states the association of the Actuarial function with the CRO, providing a direct support for the claim."
+              }
+            ]
+          },
+          {
+            "key": "t2c0",
+            "complete": true,
+            "scopeCorrect": true,
+            "atomic": true,
+            "unambiguous": true,
+            "relevant": true,
+            "requiresVisualEvidence": false,
+            "duplicateOf": "",
+            "reason": "The statement is directly supported by the information given in the primary source. The association between Investment Mgmt and CIO is clearly made and accurate.",
+            "claims": [
+              {
+                "text": "Topic: Investment Mgmt\nConcept definition: In the example of an insurance company, Investment Mgmt is associated with CIO.\nQuestion: In the example of an insurance company, which officer is associated with Investment Mgmt?\nAnswer: CIO.",
+                "verdict": "supported",
+                "evidence": [
+                  {
+                    "sourceId": "p32s0",
+                    "quote": "Possible structure of an insurance company\n32\nLegal & General\nCounsel\nGroup /central\nFunctions\nIT/Digital\nstrategy\n(CTO)\nHR/People Mgmt Actuarial\nfunction\n(CRO)\nInvestment\nMgmt\n(CIO)\nDistribution &\nPartnerships\nAudit (internal\ncontrol)\nFinance &\nAccounting\n(CFO)\nCompliance Risk\nMgmt/ERM"
+                  }
+                ],
+                "reasoning": "The primary source includes an explicit mention associating Investment Mgmt with the CIO, thereby supporting the claim."
+              }
+            ]
+          },
+          {
+            "key": "t3c0",
+            "complete": true,
+            "scopeCorrect": true,
+            "atomic": true,
+            "unambiguous": true,
+            "relevant": true,
+            "requiresVisualEvidence": false,
+            "duplicateOf": "",
+            "reason": "The statement is directly supported by the information given in the primary source. The association between Finance & Accounting and CFO is clearly made and accurate.",
+            "claims": [
+              {
+                "text": "Topic: Finance & Accounting\nConcept definition: In the example of an insurance company, Finance & Accounting is associated with CFO.\nQuestion: In the example of an insurance company, which officer is associated with Finance & Accounting?\nAnswer: CFO.",
+                "verdict": "supported",
+                "evidence": [
+                  {
+                    "sourceId": "p32s0",
+                    "quote": "Possible structure of an insurance company\n32\nLegal & General\nCounsel\nGroup /central\nFunctions\nIT/Digital\nstrategy\n(CTO)\nHR/People Mgmt Actuarial\nfunction\n(CRO)\nInvestment\nMgmt\n(CIO)\nDistribution &\nPartnerships\nAudit (internal\ncontrol)\nFinance &\nAccounting\n(CFO)\nCompliance Risk\nMgmt/ERM"
+                  }
+                ],
+                "reasoning": "The primary source clearly identifies Finance & Accounting's association with the CFO, allowing direct support for the claim."
+              }
+            ]
+          }
+        ],
+        "pages": [
+          {
+            "page": 32,
+            "excluded": false,
+            "reason": "",
+            "objectives": [
+              {
+                "description": "In the example of an insurance company, IT/Digital strategy is associated with CTO.",
+                "cardKeys": [
+                  "t0c0"
+                ]
+              },
+              {
+                "description": "In the example of an insurance company, Actuarial function is associated with CRO.",
+                "cardKeys": [
+                  "t1c0"
+                ]
+              },
+              {
+                "description": "In the example of an insurance company, Investment Mgmt is associated with CIO.",
+                "cardKeys": [
+                  "t2c0"
+                ]
+              },
+              {
+                "description": "In the example of an insurance company, Finance & Accounting is associated with CFO.",
+                "cardKeys": [
+                  "t3c0"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "cards": [
+        {
+          "candidate": {
+            "topic": "IT/Digital strategy",
+            "question": "In the example of an insurance company, which officer is associated with IT/Digital strategy?",
+            "answer": "CTO.",
+            "key": "t0c0",
+            "topicDefinition": "In the example of an insurance company, IT/Digital strategy is associated with CTO.",
+            "explanation": "",
+            "kind": "mechanism",
+            "objective": "In the example of an insurance company, IT/Digital strategy is associated with CTO.",
+            "sources": [
+              {
+                "sourceId": "p32s0"
+              }
+            ],
+            "visualDescription": ""
+          },
+          "evidence": [
+            {
+              "documentId": "eaf7312d-3a44-4e51-957e-ea03c4d0499e",
+              "page": 32,
+              "quote": "Possible structure of an insurance company\n32\nLegal & General\nCounsel\nGroup /central\nFunctions\nIT/Digital\nstrategy\n(CTO)\nHR/People Mgmt Actuarial\nfunction\n(CRO)\nInvestment\nMgmt\n(CIO)\nDistribution &\nPartnerships\nAudit (internal\ncontrol)\nFinance &\nAccounting\n(CFO)\nCompliance Risk\nMgmt/ERM"
+            }
+          ],
+          "issues": [],
+          "contractValid": true
+        },
+        {
+          "candidate": {
+            "topic": "Actuarial function",
+            "question": "In the example of an insurance company, which officer is associated with Actuarial function?",
+            "answer": "CRO.",
+            "key": "t1c0",
+            "topicDefinition": "In the example of an insurance company, Actuarial function is associated with CRO.",
+            "explanation": "",
+            "kind": "mechanism",
+            "objective": "In the example of an insurance company, Actuarial function is associated with CRO.",
+            "sources": [
+              {
+                "sourceId": "p32s0"
+              }
+            ],
+            "visualDescription": ""
+          },
+          "evidence": [
+            {
+              "documentId": "eaf7312d-3a44-4e51-957e-ea03c4d0499e",
+              "page": 32,
+              "quote": "Possible structure of an insurance company\n32\nLegal & General\nCounsel\nGroup /central\nFunctions\nIT/Digital\nstrategy\n(CTO)\nHR/People Mgmt Actuarial\nfunction\n(CRO)\nInvestment\nMgmt\n(CIO)\nDistribution &\nPartnerships\nAudit (internal\ncontrol)\nFinance &\nAccounting\n(CFO)\nCompliance Risk\nMgmt/ERM"
+            }
+          ],
+          "issues": [],
+          "contractValid": true
+        },
+        {
+          "candidate": {
+            "topic": "Investment Mgmt",
+            "question": "In the example of an insurance company, which officer is associated with Investment Mgmt?",
+            "answer": "CIO.",
+            "key": "t2c0",
+            "topicDefinition": "In the example of an insurance company, Investment Mgmt is associated with CIO.",
+            "explanation": "",
+            "kind": "mechanism",
+            "objective": "In the example of an insurance company, Investment Mgmt is associated with CIO.",
+            "sources": [
+              {
+                "sourceId": "p32s0"
+              }
+            ],
+            "visualDescription": ""
+          },
+          "evidence": [
+            {
+              "documentId": "eaf7312d-3a44-4e51-957e-ea03c4d0499e",
+              "page": 32,
+              "quote": "Possible structure of an insurance company\n32\nLegal & General\nCounsel\nGroup /central\nFunctions\nIT/Digital\nstrategy\n(CTO)\nHR/People Mgmt Actuarial\nfunction\n(CRO)\nInvestment\nMgmt\n(CIO)\nDistribution &\nPartnerships\nAudit (internal\ncontrol)\nFinance &\nAccounting\n(CFO)\nCompliance Risk\nMgmt/ERM"
+            }
+          ],
+          "issues": [],
+          "contractValid": true
+        },
+        {
+          "candidate": {
+            "topic": "Finance & Accounting",
+            "question": "In the example of an insurance company, which officer is associated with Finance & Accounting?",
+            "answer": "CFO.",
+            "key": "t3c0",
+            "topicDefinition": "In the example of an insurance company, Finance & Accounting is associated with CFO.",
+            "explanation": "",
+            "kind": "mechanism",
+            "objective": "In the example of an insurance company, Finance & Accounting is associated with CFO.",
+            "sources": [
+              {
+                "sourceId": "p32s0"
+              }
+            ],
+            "visualDescription": ""
+          },
+          "evidence": [
+            {
+              "documentId": "eaf7312d-3a44-4e51-957e-ea03c4d0499e",
+              "page": 32,
+              "quote": "Possible structure of an insurance company\n32\nLegal & General\nCounsel\nGroup /central\nFunctions\nIT/Digital\nstrategy\n(CTO)\nHR/People Mgmt Actuarial\nfunction\n(CRO)\nInvestment\nMgmt\n(CIO)\nDistribution &\nPartnerships\nAudit (internal\ncontrol)\nFinance &\nAccounting\n(CFO)\nCompliance Risk\nMgmt/ERM"
+            }
+          ],
+          "issues": [],
+          "contractValid": true
+        }
+      ],
+      "excludedCards": [],
+      "diagnostics": []
+    },
+    {
+      "version": "direct-cards-v5-reviewed-targets",
+      "planPromptHash": "8cc1b362bd8d2c5de1bdcaaebfcda1af994595ea4972358f304204ec2ef6072d",
+      "writerPromptHash": "6f076c8fd18baa6af512108f2c24026408e1f481b1bf27351dd05e3f10bf1fec",
+      "reviewPromptHash": "8cb9bd35df2bc7c9e82e7a15f9629f8fe6c9408f66b66deced2b58393e98e322",
+      "writerModel": "OpenAI (gpt-4o)",
+      "reviewModel": "OpenAI (gpt-4o)",
+      "cardDetail": "key-ideas",
+      "sourceRevision": "925408a8c7bbc0b75e3781deb2c54cd33a0ca7517f2b9330b4c363c42b2ea129",
+      "pdfSha256": "438f0286f8310855dd51bcb0db76aafbea5c5551b8dcf160cbc0a5feeb4160af",
+      "sourceOrigin": "pdf",
+      "pages": [
+        36
+      ],
+      "imagePages": [
+        36
+      ],
+      "draft": {
+        "knowledge": [
+          {
+            "page": 36,
+            "claim": "Underwriting decides whether to accept a risk and on what terms.",
+            "sourceIds": [
+              "p36s0"
+            ],
+            "exclusionReason": "",
+            "key": "t0",
+            "cardKeys": [
+              "t0c0"
+            ],
+            "issues": []
+          },
+          {
+            "page": 36,
+            "claim": "Pricing estimates the premium needed for the expected risk.",
+            "sourceIds": [
+              "p36s0"
+            ],
+            "exclusionReason": "",
+            "key": "t1",
+            "cardKeys": [
+              "t1c0"
+            ],
+            "issues": []
+          },
+          {
+            "page": 36,
+            "claim": "The purpose of claims reserving is to estimate unpaid claim costs.",
+            "sourceIds": [
+              "p36s0"
+            ],
+            "exclusionReason": "",
+            "key": "t2",
+            "cardKeys": [
+              "t2c0"
+            ],
+            "issues": []
+          },
+          {
+            "page": 36,
+            "claim": "The insurance value chain sequence is product/pricing, underwriting, admin, claims.",
+            "sourceIds": [
+              "p36s0"
+            ],
+            "exclusionReason": "",
+            "key": "t3",
+            "cardKeys": [
+              "t3c0"
+            ],
+            "issues": []
+          },
+          {
+            "page": 36,
+            "claim": "When claim frequency is 20% above plan, several functions together should respond.",
+            "sourceIds": [
+              "p36s0"
+            ],
+            "exclusionReason": "",
+            "key": "t4",
+            "cardKeys": [
+              "repair-t4c0"
+            ],
+            "issues": []
+          }
+        ],
+        "cards": [
+          {
+            "topic": "Underwriting decisions in insurance",
+            "topicDefinition": "Underwriting decides whether to accept a risk and on what terms.",
+            "question": "Which function decides whether to accept a risk and on what terms?",
+            "answer": "Underwriting.",
+            "explanation": "",
+            "kind": "definition",
+            "objective": "Underwriting decides whether to accept a risk and on what terms.",
+            "sources": [
+              {
+                "sourceId": "p36s0"
+              }
+            ],
+            "visualDescription": "",
+            "key": "t0c0"
+          },
+          {
+            "topic": "Pricing function in insurance",
+            "topicDefinition": "Pricing estimates the premium needed for the expected risk.",
+            "question": "Which function estimates the premium needed for the expected risk?",
+            "answer": "Pricing.",
+            "explanation": "",
+            "kind": "definition",
+            "objective": "Pricing estimates the premium needed for the expected risk.",
+            "sources": [
+              {
+                "sourceId": "p36s0"
+              }
+            ],
+            "visualDescription": "",
+            "key": "t1c0"
+          },
+          {
+            "topic": "Purpose of claims reserving",
+            "topicDefinition": "The purpose of claims reserving is to estimate unpaid claim costs.",
+            "question": "What is the purpose of claims reserving?",
+            "answer": "To estimate unpaid claim costs.",
+            "explanation": "",
+            "kind": "definition",
+            "objective": "The purpose of claims reserving is to estimate unpaid claim costs.",
+            "sources": [
+              {
+                "sourceId": "p36s0"
+              }
+            ],
+            "visualDescription": "",
+            "key": "t2c0"
+          },
+          {
+            "topic": "Insurance value chain sequence",
+            "topicDefinition": "The insurance value chain sequence is product/pricing, underwriting, admin, claims.",
+            "question": "Which sequence best represents the insurance value chain?",
+            "answer": "Product/pricing, underwriting, admin, claims.",
+            "explanation": "",
+            "kind": "definition",
+            "objective": "The insurance value chain sequence is product/pricing, underwriting, admin, claims.",
+            "sources": [
+              {
+                "sourceId": "p36s0"
+              }
+            ],
+            "visualDescription": "",
+            "key": "t3c0"
+          },
+          {
+            "topic": "When claim frequency is 20% above plan, several functions together should respond.",
+            "topicDefinition": "When claim frequency is 20% above plan, several functions together should respond.",
+            "question": "Who should respond when claim frequency is 20% above plan?",
+            "answer": "Several functions together should respond.",
+            "explanation": "",
+            "kind": "application",
+            "objective": "When claim frequency is 20% above plan, several functions together should respond.",
+            "sources": [
+              {
+                "sourceId": "p36s0"
+              }
+            ],
+            "visualDescription": "",
+            "key": "repair-t4c0"
+          }
+        ]
+      },
+      "review": {
+        "targets": [
+          {
+            "key": "t0",
+            "verdict": "supported",
+            "atomic": true,
+            "coverageComplete": true,
+            "reason": ""
+          },
+          {
+            "key": "t1",
+            "verdict": "supported",
+            "atomic": true,
+            "coverageComplete": true,
+            "reason": ""
+          },
+          {
+            "key": "t2",
+            "verdict": "supported",
+            "atomic": true,
+            "coverageComplete": true,
+            "reason": ""
+          },
+          {
+            "key": "t3",
+            "verdict": "supported",
+            "atomic": true,
+            "coverageComplete": true,
+            "reason": ""
+          },
+          {
+            "key": "t4",
+            "verdict": "supported",
+            "atomic": true,
+            "coverageComplete": true,
+            "reason": ""
+          }
+        ],
+        "decisions": [
+          {
+            "key": "t0c0",
+            "complete": true,
+            "scopeCorrect": true,
+            "atomic": true,
+            "unambiguous": true,
+            "relevant": true,
+            "requiresVisualEvidence": false,
+            "duplicateOf": "",
+            "reason": "",
+            "claims": [
+              {
+                "text": "Topic: Underwriting decisions in insurance\nConcept definition: Underwriting decides whether to accept a risk and on what terms.\nQuestion: Which function decides whether to accept a risk and on what terms?\nAnswer: Underwriting.",
+                "verdict": "supported",
+                "evidence": [
+                  {
+                    "sourceId": "p36s0",
+                    "quote": "KNOWLEDGE CHECK\nFunctions and the insurance value chain\nChoose an answer, then click to reveal the correct response.\n6 Which function decides whether to accept a risk and on what terms?\nA Claims B Underwriting C Finance D Distribution\n7 Which function estimates the premium needed for the expected risk?\nA Pricing B Reserving C Investment D Compliance\n8 What is the purpose of claims reserving?\nA Record sales B Set investment return C Estimate unpaid claim costs D Choose clients\n9 Which sequence best represents the insurance value chain?\nA Claims, sales, pricing, admin B Product/pricing, underwriting, admin, claims C Investment, claims, sales D Reserving,\nmarketing, pricing\n10 Claim frequency is 20% above plan. Who should respond?\nA Claims only B Pricing only C Several functions together D Marketing only\nSESSION 1 REVIEW 2 OF 2"
+                  }
+                ],
+                "reasoning": "The concept definition, question, and answer are directly supported by the source text on page 36, which provides the same information."
+              }
+            ]
+          },
+          {
+            "key": "t1c0",
+            "complete": true,
+            "scopeCorrect": true,
+            "atomic": true,
+            "unambiguous": true,
+            "relevant": true,
+            "requiresVisualEvidence": false,
+            "duplicateOf": "",
+            "reason": "",
+            "claims": [
+              {
+                "text": "Topic: Pricing function in insurance\nConcept definition: Pricing estimates the premium needed for the expected risk.\nQuestion: Which function estimates the premium needed for the expected risk?\nAnswer: Pricing.",
+                "verdict": "supported",
+                "evidence": [
+                  {
+                    "sourceId": "p36s0",
+                    "quote": "KNOWLEDGE CHECK\nFunctions and the insurance value chain\nChoose an answer, then click to reveal the correct response.\n6 Which function decides whether to accept a risk and on what terms?\nA Claims B Underwriting C Finance D Distribution\n7 Which function estimates the premium needed for the expected risk?\nA Pricing B Reserving C Investment D Compliance\n8 What is the purpose of claims reserving?\nA Record sales B Set investment return C Estimate unpaid claim costs D Choose clients\n9 Which sequence best represents the insurance value chain?\nA Claims, sales, pricing, admin B Product/pricing, underwriting, admin, claims C Investment, claims, sales D Reserving,\nmarketing, pricing\n10 Claim frequency is 20% above plan. Who should respond?\nA Claims only B Pricing only C Several functions together D Marketing only\nSESSION 1 REVIEW 2 OF 2"
+                  }
+                ],
+                "reasoning": "The source text on page 36 confirms that pricing estimates the premium needed for the expected risk, directly supporting the question and answer format."
+              }
+            ]
+          },
+          {
+            "key": "t2c0",
+            "complete": true,
+            "scopeCorrect": true,
+            "atomic": true,
+            "unambiguous": true,
+            "relevant": true,
+            "requiresVisualEvidence": false,
+            "duplicateOf": "",
+            "reason": "",
+            "claims": [
+              {
+                "text": "Topic: Purpose of claims reserving\nConcept definition: The purpose of claims reserving is to estimate unpaid claim costs.\nQuestion: What is the purpose of claims reserving?\nAnswer: To estimate unpaid claim costs.",
+                "verdict": "supported",
+                "evidence": [
+                  {
+                    "sourceId": "p36s0",
+                    "quote": "KNOWLEDGE CHECK\nFunctions and the insurance value chain\nChoose an answer, then click to reveal the correct response.\n6 Which function decides whether to accept a risk and on what terms?\nA Claims B Underwriting C Finance D Distribution\n7 Which function estimates the premium needed for the expected risk?\nA Pricing B Reserving C Investment D Compliance\n8 What is the purpose of claims reserving?\nA Record sales B Set investment return C Estimate unpaid claim costs D Choose clients\n9 Which sequence best represents the insurance value chain?\nA Claims, sales, pricing, admin B Product/pricing, underwriting, admin, claims C Investment, claims, sales D Reserving,\nmarketing, pricing\n10 Claim frequency is 20% above plan. Who should respond?\nA Claims only B Pricing only C Several functions together D Marketing only\nSESSION 1 REVIEW 2 OF 2"
+                  }
+                ],
+                "reasoning": "The source text on page 36 explicitly states that the purpose of claims reserving is to estimate unpaid claim costs, which aligns with the question and answer provided."
+              }
+            ]
+          },
+          {
+            "key": "t3c0",
+            "complete": true,
+            "scopeCorrect": true,
+            "atomic": true,
+            "unambiguous": true,
+            "relevant": true,
+            "requiresVisualEvidence": false,
+            "duplicateOf": "",
+            "reason": "",
+            "claims": [
+              {
+                "text": "Topic: Insurance value chain sequence\nConcept definition: The insurance value chain sequence is product/pricing, underwriting, admin, claims.\nQuestion: Which sequence best represents the insurance value chain?\nAnswer: Product/pricing, underwriting, admin, claims.",
+                "verdict": "supported",
+                "evidence": [
+                  {
+                    "sourceId": "p36s0",
+                    "quote": "KNOWLEDGE CHECK\nFunctions and the insurance value chain\nChoose an answer, then click to reveal the correct response.\n6 Which function decides whether to accept a risk and on what terms?\nA Claims B Underwriting C Finance D Distribution\n7 Which function estimates the premium needed for the expected risk?\nA Pricing B Reserving C Investment D Compliance\n8 What is the purpose of claims reserving?\nA Record sales B Set investment return C Estimate unpaid claim costs D Choose clients\n9 Which sequence best represents the insurance value chain?\nA Claims, sales, pricing, admin B Product/pricing, underwriting, admin, claims C Investment, claims, sales D Reserving,\nmarketing, pricing\n10 Claim frequency is 20% above plan. Who should respond?\nA Claims only B Pricing only C Several functions together D Marketing only\nSESSION 1 REVIEW 2 OF 2"
+                  }
+                ],
+                "reasoning": "The sequence of the insurance value chain is specified as product/pricing, underwriting, admin, claims in the source text on page 36, thus fully supporting the card."
+              }
+            ]
+          },
+          {
+            "key": "repair-t4c0",
+            "complete": true,
+            "scopeCorrect": true,
+            "atomic": true,
+            "unambiguous": true,
+            "relevant": true,
+            "requiresVisualEvidence": false,
+            "duplicateOf": "",
+            "reason": "",
+            "claims": [
+              {
+                "text": "Topic: When claim frequency is 20% above plan, several functions together should respond.\nConcept definition: When claim frequency is 20% above plan, several functions together should respond.\nQuestion: Who should respond when claim frequency is 20% above plan?\nAnswer: Several functions together should respond.",
+                "verdict": "supported",
+                "evidence": [
+                  {
+                    "sourceId": "p36s0",
+                    "quote": "KNOWLEDGE CHECK\nFunctions and the insurance value chain\nChoose an answer, then click to reveal the correct response.\n6 Which function decides whether to accept a risk and on what terms?\nA Claims B Underwriting C Finance D Distribution\n7 Which function estimates the premium needed for the expected risk?\nA Pricing B Reserving C Investment D Compliance\n8 What is the purpose of claims reserving?\nA Record sales B Set investment return C Estimate unpaid claim costs D Choose clients\n9 Which sequence best represents the insurance value chain?\nA Claims, sales, pricing, admin B Product/pricing, underwriting, admin, claims C Investment, claims, sales D Reserving,\nmarketing, pricing\n10 Claim frequency is 20% above plan. Who should respond?\nA Claims only B Pricing only C Several functions together D Marketing only\nSESSION 1 REVIEW 2 OF 2"
+                  }
+                ],
+                "reasoning": "The statement is supported by source p36s0, which explicitly lists several functions responding to claim frequency being 20% above plan as the correct answer. The knowledge check indicates this is an expected and supported response. The clause is complete and unambiguous in its context."
+              }
+            ]
+          }
+        ],
+        "pages": [
+          {
+            "page": 36,
+            "excluded": false,
+            "reason": "",
+            "objectives": [
+              {
+                "description": "Understand the function of underwriting in accepting risks.",
+                "cardKeys": [
+                  "t0c0"
+                ]
+              },
+              {
+                "description": "Comprehend the role of pricing in estimating premiums.",
+                "cardKeys": [
+                  "t1c0"
+                ]
+              },
+              {
+                "description": "Learn the purpose of claims reserving in estimating unpaid claim costs.",
+                "cardKeys": [
+                  "t2c0"
+                ]
+              },
+              {
+                "description": "Identify the sequence of the insurance value chain.",
+                "cardKeys": [
+                  "t3c0"
+                ]
+              },
+              {
+                "description": "Know which functions should respond when claim frequency is high.",
+                "cardKeys": [
+                  "t0c0"
+                ]
+              },
+              {
+                "description": "Understand how different insurance functions work together when claim frequency is above plan.",
+                "cardKeys": [
+                  "t0c0"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "cards": [
+        {
+          "candidate": {
+            "topic": "Underwriting decisions in insurance",
+            "topicDefinition": "Underwriting decides whether to accept a risk and on what terms.",
+            "question": "Which function decides whether to accept a risk and on what terms?",
+            "answer": "Underwriting.",
+            "explanation": "",
+            "kind": "definition",
+            "objective": "Underwriting decides whether to accept a risk and on what terms.",
+            "sources": [
+              {
+                "sourceId": "p36s0"
+              }
+            ],
+            "visualDescription": "",
+            "key": "t0c0"
+          },
+          "evidence": [
+            {
+              "documentId": "eaf7312d-3a44-4e51-957e-ea03c4d0499e",
+              "page": 36,
+              "quote": "KNOWLEDGE CHECK\nFunctions and the insurance value chain\nChoose an answer, then click to reveal the correct response.\n6 Which function decides whether to accept a risk and on what terms?\nA Claims B Underwriting C Finance D Distribution\n7 Which function estimates the premium needed for the expected risk?\nA Pricing B Reserving C Investment D Compliance\n8 What is the purpose of claims reserving?\nA Record sales B Set investment return C Estimate unpaid claim costs D Choose clients\n9 Which sequence best represents the insurance value chain?\nA Claims, sales, pricing, admin B Product/pricing, underwriting, admin, claims C Investment, claims, sales D Reserving,\nmarketing, pricing\n10 Claim frequency is 20% above plan. Who should respond?\nA Claims only B Pricing only C Several functions together D Marketing only\nSESSION 1 REVIEW 2 OF 2"
+            }
+          ],
+          "issues": [],
+          "contractValid": true
+        },
+        {
+          "candidate": {
+            "topic": "Pricing function in insurance",
+            "topicDefinition": "Pricing estimates the premium needed for the expected risk.",
+            "question": "Which function estimates the premium needed for the expected risk?",
+            "answer": "Pricing.",
+            "explanation": "",
+            "kind": "definition",
+            "objective": "Pricing estimates the premium needed for the expected risk.",
+            "sources": [
+              {
+                "sourceId": "p36s0"
+              }
+            ],
+            "visualDescription": "",
+            "key": "t1c0"
+          },
+          "evidence": [
+            {
+              "documentId": "eaf7312d-3a44-4e51-957e-ea03c4d0499e",
+              "page": 36,
+              "quote": "KNOWLEDGE CHECK\nFunctions and the insurance value chain\nChoose an answer, then click to reveal the correct response.\n6 Which function decides whether to accept a risk and on what terms?\nA Claims B Underwriting C Finance D Distribution\n7 Which function estimates the premium needed for the expected risk?\nA Pricing B Reserving C Investment D Compliance\n8 What is the purpose of claims reserving?\nA Record sales B Set investment return C Estimate unpaid claim costs D Choose clients\n9 Which sequence best represents the insurance value chain?\nA Claims, sales, pricing, admin B Product/pricing, underwriting, admin, claims C Investment, claims, sales D Reserving,\nmarketing, pricing\n10 Claim frequency is 20% above plan. Who should respond?\nA Claims only B Pricing only C Several functions together D Marketing only\nSESSION 1 REVIEW 2 OF 2"
+            }
+          ],
+          "issues": [],
+          "contractValid": true
+        },
+        {
+          "candidate": {
+            "topic": "Purpose of claims reserving",
+            "topicDefinition": "The purpose of claims reserving is to estimate unpaid claim costs.",
+            "question": "What is the purpose of claims reserving?",
+            "answer": "To estimate unpaid claim costs.",
+            "explanation": "",
+            "kind": "definition",
+            "objective": "The purpose of claims reserving is to estimate unpaid claim costs.",
+            "sources": [
+              {
+                "sourceId": "p36s0"
+              }
+            ],
+            "visualDescription": "",
+            "key": "t2c0"
+          },
+          "evidence": [
+            {
+              "documentId": "eaf7312d-3a44-4e51-957e-ea03c4d0499e",
+              "page": 36,
+              "quote": "KNOWLEDGE CHECK\nFunctions and the insurance value chain\nChoose an answer, then click to reveal the correct response.\n6 Which function decides whether to accept a risk and on what terms?\nA Claims B Underwriting C Finance D Distribution\n7 Which function estimates the premium needed for the expected risk?\nA Pricing B Reserving C Investment D Compliance\n8 What is the purpose of claims reserving?\nA Record sales B Set investment return C Estimate unpaid claim costs D Choose clients\n9 Which sequence best represents the insurance value chain?\nA Claims, sales, pricing, admin B Product/pricing, underwriting, admin, claims C Investment, claims, sales D Reserving,\nmarketing, pricing\n10 Claim frequency is 20% above plan. Who should respond?\nA Claims only B Pricing only C Several functions together D Marketing only\nSESSION 1 REVIEW 2 OF 2"
+            }
+          ],
+          "issues": [],
+          "contractValid": true
+        },
+        {
+          "candidate": {
+            "topic": "Insurance value chain sequence",
+            "topicDefinition": "The insurance value chain sequence is product/pricing, underwriting, admin, claims.",
+            "question": "Which sequence best represents the insurance value chain?",
+            "answer": "Product/pricing, underwriting, admin, claims.",
+            "explanation": "",
+            "kind": "definition",
+            "objective": "The insurance value chain sequence is product/pricing, underwriting, admin, claims.",
+            "sources": [
+              {
+                "sourceId": "p36s0"
+              }
+            ],
+            "visualDescription": "",
+            "key": "t3c0"
+          },
+          "evidence": [
+            {
+              "documentId": "eaf7312d-3a44-4e51-957e-ea03c4d0499e",
+              "page": 36,
+              "quote": "KNOWLEDGE CHECK\nFunctions and the insurance value chain\nChoose an answer, then click to reveal the correct response.\n6 Which function decides whether to accept a risk and on what terms?\nA Claims B Underwriting C Finance D Distribution\n7 Which function estimates the premium needed for the expected risk?\nA Pricing B Reserving C Investment D Compliance\n8 What is the purpose of claims reserving?\nA Record sales B Set investment return C Estimate unpaid claim costs D Choose clients\n9 Which sequence best represents the insurance value chain?\nA Claims, sales, pricing, admin B Product/pricing, underwriting, admin, claims C Investment, claims, sales D Reserving,\nmarketing, pricing\n10 Claim frequency is 20% above plan. Who should respond?\nA Claims only B Pricing only C Several functions together D Marketing only\nSESSION 1 REVIEW 2 OF 2"
+            }
+          ],
+          "issues": [],
+          "contractValid": true
+        },
+        {
+          "candidate": {
+            "topic": "When claim frequency is 20% above plan, several functions together should respond.",
+            "topicDefinition": "When claim frequency is 20% above plan, several functions together should respond.",
+            "question": "Who should respond when claim frequency is 20% above plan?",
+            "answer": "Several functions together should respond.",
+            "explanation": "",
+            "kind": "application",
+            "objective": "When claim frequency is 20% above plan, several functions together should respond.",
+            "sources": [
+              {
+                "sourceId": "p36s0"
+              }
+            ],
+            "visualDescription": "",
+            "key": "repair-t4c0"
+          },
+          "evidence": [
+            {
+              "documentId": "eaf7312d-3a44-4e51-957e-ea03c4d0499e",
+              "page": 36,
+              "quote": "KNOWLEDGE CHECK\nFunctions and the insurance value chain\nChoose an answer, then click to reveal the correct response.\n6 Which function decides whether to accept a risk and on what terms?\nA Claims B Underwriting C Finance D Distribution\n7 Which function estimates the premium needed for the expected risk?\nA Pricing B Reserving C Investment D Compliance\n8 What is the purpose of claims reserving?\nA Record sales B Set investment return C Estimate unpaid claim costs D Choose clients\n9 Which sequence best represents the insurance value chain?\nA Claims, sales, pricing, admin B Product/pricing, underwriting, admin, claims C Investment, claims, sales D Reserving,\nmarketing, pricing\n10 Claim frequency is 20% above plan. Who should respond?\nA Claims only B Pricing only C Several functions together D Marketing only\nSESSION 1 REVIEW 2 OF 2"
+            }
+          ],
+          "issues": [],
+          "contractValid": true
+        }
+      ],
+      "excludedCards": [],
+      "diagnostics": [
+        "Bounded repair reviewed 1 targets; no second repair round"
+      ],
+      "repairs": [
+        {
+          "draft": {
+            "knowledge": [
+              {
+                "page": 36,
+                "claim": "When claim frequency is 20% above plan, several functions together should respond.",
+                "sourceIds": [
+                  "p36s0"
+                ],
+                "exclusionReason": "",
+                "key": "t4",
+                "cardKeys": [
+                  "repair-t4c0"
+                ],
+                "issues": [],
+                "repairOf": "t4"
+              }
+            ],
+            "cards": [
+              {
+                "topic": "When claim frequency is 20% above plan, several functions together should respond.",
+                "topicDefinition": "When claim frequency is 20% above plan, several functions together should respond.",
+                "question": "Who should respond when claim frequency is 20% above plan?",
+                "answer": "Several functions together should respond.",
+                "explanation": "",
+                "kind": "application",
+                "objective": "When claim frequency is 20% above plan, several functions together should respond.",
+                "sources": [
+                  {
+                    "sourceId": "p36s0"
+                  }
+                ],
+                "visualDescription": "",
+                "key": "repair-t4c0"
+              }
+            ]
+          },
+          "review": {
+            "targets": [
+              {
+                "key": "t4",
+                "verdict": "supported",
+                "atomic": true,
+                "coverageComplete": true,
+                "reason": ""
+              }
+            ],
+            "decisions": [
+              {
+                "key": "repair-t4c0",
+                "complete": true,
+                "scopeCorrect": true,
+                "atomic": true,
+                "unambiguous": true,
+                "relevant": true,
+                "requiresVisualEvidence": false,
+                "duplicateOf": "",
+                "reason": "",
+                "claims": [
+                  {
+                    "text": "Topic: When claim frequency is 20% above plan, several functions together should respond.\nConcept definition: When claim frequency is 20% above plan, several functions together should respond.\nQuestion: Who should respond when claim frequency is 20% above plan?\nAnswer: Several functions together should respond.",
+                    "verdict": "supported",
+                    "evidence": [
+                      {
+                        "sourceId": "p36s0",
+                        "quote": "KNOWLEDGE CHECK\nFunctions and the insurance value chain\nChoose an answer, then click to reveal the correct response.\n6 Which function decides whether to accept a risk and on what terms?\nA Claims B Underwriting C Finance D Distribution\n7 Which function estimates the premium needed for the expected risk?\nA Pricing B Reserving C Investment D Compliance\n8 What is the purpose of claims reserving?\nA Record sales B Set investment return C Estimate unpaid claim costs D Choose clients\n9 Which sequence best represents the insurance value chain?\nA Claims, sales, pricing, admin B Product/pricing, underwriting, admin, claims C Investment, claims, sales D Reserving,\nmarketing, pricing\n10 Claim frequency is 20% above plan. Who should respond?\nA Claims only B Pricing only C Several functions together D Marketing only\nSESSION 1 REVIEW 2 OF 2"
+                      }
+                    ],
+                    "reasoning": "The statement is supported by source p36s0, which explicitly lists several functions responding to claim frequency being 20% above plan as the correct answer. The knowledge check indicates this is an expected and supported response. The clause is complete and unambiguous in its context."
+                  }
+                ]
+              }
+            ],
+            "pages": [
+              {
+                "page": 36,
+                "excluded": false,
+                "reason": "",
+                "objectives": [
+                  {
+                    "description": "When claim frequency is 20% above plan, several functions together should respond.",
+                    "cardKeys": [
+                      "repair-t4c0"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          "cards": [
+            {
+              "candidate": {
+                "topic": "When claim frequency is 20% above plan, several functions together should respond.",
+                "topicDefinition": "When claim frequency is 20% above plan, several functions together should respond.",
+                "question": "Who should respond when claim frequency is 20% above plan?",
+                "answer": "Several functions together should respond.",
+                "explanation": "",
+                "kind": "application",
+                "objective": "When claim frequency is 20% above plan, several functions together should respond.",
+                "sources": [
+                  {
+                    "sourceId": "p36s0"
+                  }
+                ],
+                "visualDescription": "",
+                "key": "repair-t4c0"
+              },
+              "evidence": [
+                {
+                  "documentId": "eaf7312d-3a44-4e51-957e-ea03c4d0499e",
+                  "page": 36,
+                  "quote": "KNOWLEDGE CHECK\nFunctions and the insurance value chain\nChoose an answer, then click to reveal the correct response.\n6 Which function decides whether to accept a risk and on what terms?\nA Claims B Underwriting C Finance D Distribution\n7 Which function estimates the premium needed for the expected risk?\nA Pricing B Reserving C Investment D Compliance\n8 What is the purpose of claims reserving?\nA Record sales B Set investment return C Estimate unpaid claim costs D Choose clients\n9 Which sequence best represents the insurance value chain?\nA Claims, sales, pricing, admin B Product/pricing, underwriting, admin, claims C Investment, claims, sales D Reserving,\nmarketing, pricing\n10 Claim frequency is 20% above plan. Who should respond?\nA Claims only B Pricing only C Several functions together D Marketing only\nSESSION 1 REVIEW 2 OF 2"
+                }
+              ],
+              "issues": [],
+              "contractValid": true
+            }
+          ],
+          "excludedCards": [],
+          "diagnostics": []
+        }
+      ]
+    },
+    {
+      "version": "direct-cards-v5-reviewed-targets",
+      "planPromptHash": "8cc1b362bd8d2c5de1bdcaaebfcda1af994595ea4972358f304204ec2ef6072d",
+      "writerPromptHash": "6f076c8fd18baa6af512108f2c24026408e1f481b1bf27351dd05e3f10bf1fec",
+      "reviewPromptHash": "8cb9bd35df2bc7c9e82e7a15f9629f8fe6c9408f66b66deced2b58393e98e322",
+      "writerModel": "OpenAI (gpt-4o)",
+      "reviewModel": "OpenAI (gpt-4o)",
+      "cardDetail": "key-ideas",
+      "sourceRevision": "925408a8c7bbc0b75e3781deb2c54cd33a0ca7517f2b9330b4c363c42b2ea129",
+      "pdfSha256": "438f0286f8310855dd51bcb0db76aafbea5c5551b8dcf160cbc0a5feeb4160af",
+      "sourceOrigin": "pdf",
+      "pages": [
+        31
+      ],
+      "imagePages": [
+        31
+      ],
+      "draft": {
+        "knowledge": [
+          {
+            "page": 31,
+            "claim": "The balance sheet connects business functions.",
+            "sourceIds": [
+              "p31s0"
+            ],
+            "exclusionReason": "",
+            "recall": {
+              "topic": "Balance sheet and business functions",
+              "question": "Which financial statement connects business functions in this model?",
+              "answer": "The balance sheet."
+            },
+            "key": "t0",
+            "cardKeys": [
+              "t0c0"
+            ],
+            "issues": []
+          },
+          {
+            "page": 31,
+            "claim": "Investment and ALM is associated with assets on the balance sheet.",
+            "sourceIds": [
+              "p31s0"
+            ],
+            "exclusionReason": "",
+            "recall": {
+              "topic": "Investment and ALM",
+              "question": "Which balance-sheet category is associated with Investment and ALM?",
+              "answer": "Assets."
+            },
+            "key": "t1",
+            "cardKeys": [
+              "t1c0"
+            ],
+            "issues": []
+          },
+          {
+            "page": 31,
+            "claim": "Liquidity management is associated with assets on the balance sheet.",
+            "sourceIds": [
+              "p31s0"
+            ],
+            "exclusionReason": "",
+            "recall": {
+              "topic": "Liquidity management",
+              "question": "Which balance-sheet category is associated with Liquidity management?",
+              "answer": "Assets."
+            },
+            "key": "t2",
+            "cardKeys": [
+              "t2c0"
+            ],
+            "issues": []
+          },
+          {
+            "page": 31,
+            "claim": "Market and credit risk is associated with assets on the balance sheet.",
+            "sourceIds": [
+              "p31s0"
+            ],
+            "exclusionReason": "",
+            "recall": {
+              "topic": "Market and credit risk",
+              "question": "Which balance-sheet category is associated with Market and credit risk?",
+              "answer": "Assets."
+            },
+            "key": "t3",
+            "cardKeys": [
+              "t3c0"
+            ],
+            "issues": []
+          },
+          {
+            "page": 31,
+            "claim": "Assets support future claim payments.",
+            "sourceIds": [
+              "p31s0"
+            ],
+            "exclusionReason": "",
+            "recall": {
+              "topic": "Asset support for claims",
+              "question": "What do assets support in the balance-sheet model?",
+              "answer": "future claim payments."
+            },
+            "key": "t4",
+            "cardKeys": [
+              "t4c0"
+            ],
+            "issues": []
+          },
+          {
+            "page": 31,
+            "claim": "Pricing assumptions is associated with liabilities on the balance sheet.",
+            "sourceIds": [
+              "p31s0"
+            ],
+            "exclusionReason": "",
+            "recall": {
+              "topic": "Pricing assumptions",
+              "question": "Which balance-sheet category is associated with Pricing assumptions?",
+              "answer": "Liabilities."
+            },
+            "key": "t5",
+            "cardKeys": [
+              "t5c0"
+            ],
+            "issues": []
+          },
+          {
+            "page": 31,
+            "claim": "Claims management is associated with liabilities on the balance sheet.",
+            "sourceIds": [
+              "p31s0"
+            ],
+            "exclusionReason": "",
+            "recall": {
+              "topic": "Claims management",
+              "question": "Which balance-sheet category is associated with Claims management?",
+              "answer": "Liabilities."
+            },
+            "key": "t6",
+            "cardKeys": [
+              "t6c0"
+            ],
+            "issues": []
+          },
+          {
+            "page": 31,
+            "claim": "Reserving and provisions is associated with liabilities on the balance sheet.",
+            "sourceIds": [
+              "p31s0"
+            ],
+            "exclusionReason": "",
+            "recall": {
+              "topic": "Reserving and provisions",
+              "question": "Which balance-sheet category is associated with Reserving and provisions?",
+              "answer": "Liabilities."
+            },
+            "key": "t7",
+            "cardKeys": [
+              "t7c0"
+            ],
+            "issues": []
+          },
+          {
+            "page": 31,
+            "claim": "Timing and amount of obligations is associated with liabilities on the balance sheet.",
+            "sourceIds": [
+              "p31s0"
+            ],
+            "exclusionReason": "",
+            "recall": {
+              "topic": "Timing and amount of obligations",
+              "question": "Which balance-sheet category is associated with Timing and amount of obligations?",
+              "answer": "Liabilities."
+            },
+            "key": "t8",
+            "cardKeys": [
+              "t8c0"
+            ],
+            "issues": []
+          },
+          {
+            "page": 31,
+            "claim": "Risk and capital management is associated with capital and result on the balance sheet.",
+            "sourceIds": [
+              "p31s0"
+            ],
+            "exclusionReason": "",
+            "recall": {
+              "topic": "Risk and capital management",
+              "question": "Which balance-sheet category is associated with Risk and capital management?",
+              "answer": "Capital and result."
+            },
+            "key": "t9",
+            "cardKeys": [
+              "t9c0"
+            ],
+            "issues": []
+          },
+          {
+            "page": 31,
+            "claim": "Finance and reporting is associated with capital and result on the balance sheet.",
+            "sourceIds": [
+              "p31s0"
+            ],
+            "exclusionReason": "",
+            "recall": {
+              "topic": "Finance and reporting",
+              "question": "Which balance-sheet category is associated with Finance and reporting?",
+              "answer": "Capital and result."
+            },
+            "key": "t10",
+            "cardKeys": [
+              "t10c0"
+            ],
+            "issues": []
+          },
+          {
+            "page": 31,
+            "claim": "Reinsurance is associated with capital and result on the balance sheet.",
+            "sourceIds": [
+              "p31s0"
+            ],
+            "exclusionReason": "",
+            "recall": {
+              "topic": "Reinsurance",
+              "question": "Which balance-sheet category is associated with Reinsurance?",
+              "answer": "Capital and result."
+            },
+            "key": "t11",
+            "cardKeys": [
+              "t11c0"
+            ],
+            "issues": []
+          },
+          {
+            "page": 31,
+            "claim": "Profitability and solvency is associated with capital and result on the balance sheet.",
+            "sourceIds": [
+              "p31s0"
+            ],
+            "exclusionReason": "",
+            "recall": {
+              "topic": "Profitability and solvency",
+              "question": "Which balance-sheet category is associated with Profitability and solvency?",
+              "answer": "Capital and result."
+            },
+            "key": "t12",
+            "cardKeys": [
+              "t12c0"
+            ],
+            "issues": []
+          }
+        ],
+        "cards": [
+          {
+            "topic": "Balance sheet and business functions",
+            "question": "Which financial statement connects business functions in this model?",
+            "answer": "The balance sheet.",
+            "key": "t0c0",
+            "topicDefinition": "The balance sheet connects business functions.",
+            "explanation": "",
+            "kind": "mechanism",
+            "objective": "The balance sheet connects business functions.",
+            "sources": [
+              {
+                "sourceId": "p31s0"
+              }
+            ],
+            "visualDescription": ""
+          },
+          {
+            "topic": "Investment and ALM",
+            "question": "Which balance-sheet category is associated with Investment and ALM?",
+            "answer": "Assets.",
+            "key": "t1c0",
+            "topicDefinition": "Investment and ALM is associated with assets on the balance sheet.",
+            "explanation": "",
+            "kind": "mechanism",
+            "objective": "Investment and ALM is associated with assets on the balance sheet.",
+            "sources": [
+              {
+                "sourceId": "p31s0"
+              }
+            ],
+            "visualDescription": ""
+          },
+          {
+            "topic": "Liquidity management",
+            "question": "Which balance-sheet category is associated with Liquidity management?",
+            "answer": "Assets.",
+            "key": "t2c0",
+            "topicDefinition": "Liquidity management is associated with assets on the balance sheet.",
+            "explanation": "",
+            "kind": "mechanism",
+            "objective": "Liquidity management is associated with assets on the balance sheet.",
+            "sources": [
+              {
+                "sourceId": "p31s0"
+              }
+            ],
+            "visualDescription": ""
+          },
+          {
+            "topic": "Market and credit risk",
+            "question": "Which balance-sheet category is associated with Market and credit risk?",
+            "answer": "Assets.",
+            "key": "t3c0",
+            "topicDefinition": "Market and credit risk is associated with assets on the balance sheet.",
+            "explanation": "",
+            "kind": "mechanism",
+            "objective": "Market and credit risk is associated with assets on the balance sheet.",
+            "sources": [
+              {
+                "sourceId": "p31s0"
+              }
+            ],
+            "visualDescription": ""
+          },
+          {
+            "topic": "Asset support for claims",
+            "question": "What do assets support in the balance-sheet model?",
+            "answer": "future claim payments.",
+            "key": "t4c0",
+            "topicDefinition": "Assets support future claim payments.",
+            "explanation": "",
+            "kind": "mechanism",
+            "objective": "Assets support future claim payments.",
+            "sources": [
+              {
+                "sourceId": "p31s0"
+              }
+            ],
+            "visualDescription": ""
+          },
+          {
+            "topic": "Pricing assumptions",
+            "question": "Which balance-sheet category is associated with Pricing assumptions?",
+            "answer": "Liabilities.",
+            "key": "t5c0",
+            "topicDefinition": "Pricing assumptions is associated with liabilities on the balance sheet.",
+            "explanation": "",
+            "kind": "mechanism",
+            "objective": "Pricing assumptions is associated with liabilities on the balance sheet.",
+            "sources": [
+              {
+                "sourceId": "p31s0"
+              }
+            ],
+            "visualDescription": ""
+          },
+          {
+            "topic": "Claims management",
+            "question": "Which balance-sheet category is associated with Claims management?",
+            "answer": "Liabilities.",
+            "key": "t6c0",
+            "topicDefinition": "Claims management is associated with liabilities on the balance sheet.",
+            "explanation": "",
+            "kind": "mechanism",
+            "objective": "Claims management is associated with liabilities on the balance sheet.",
+            "sources": [
+              {
+                "sourceId": "p31s0"
+              }
+            ],
+            "visualDescription": ""
+          },
+          {
+            "topic": "Reserving and provisions",
+            "question": "Which balance-sheet category is associated with Reserving and provisions?",
+            "answer": "Liabilities.",
+            "key": "t7c0",
+            "topicDefinition": "Reserving and provisions is associated with liabilities on the balance sheet.",
+            "explanation": "",
+            "kind": "mechanism",
+            "objective": "Reserving and provisions is associated with liabilities on the balance sheet.",
+            "sources": [
+              {
+                "sourceId": "p31s0"
+              }
+            ],
+            "visualDescription": ""
+          },
+          {
+            "topic": "Timing and amount of obligations",
+            "question": "Which balance-sheet category is associated with Timing and amount of obligations?",
+            "answer": "Liabilities.",
+            "key": "t8c0",
+            "topicDefinition": "Timing and amount of obligations is associated with liabilities on the balance sheet.",
+            "explanation": "",
+            "kind": "mechanism",
+            "objective": "Timing and amount of obligations is associated with liabilities on the balance sheet.",
+            "sources": [
+              {
+                "sourceId": "p31s0"
+              }
+            ],
+            "visualDescription": ""
+          },
+          {
+            "topic": "Risk and capital management",
+            "question": "Which balance-sheet category is associated with Risk and capital management?",
+            "answer": "Capital and result.",
+            "key": "t9c0",
+            "topicDefinition": "Risk and capital management is associated with capital and result on the balance sheet.",
+            "explanation": "",
+            "kind": "mechanism",
+            "objective": "Risk and capital management is associated with capital and result on the balance sheet.",
+            "sources": [
+              {
+                "sourceId": "p31s0"
+              }
+            ],
+            "visualDescription": ""
+          },
+          {
+            "topic": "Finance and reporting",
+            "question": "Which balance-sheet category is associated with Finance and reporting?",
+            "answer": "Capital and result.",
+            "key": "t10c0",
+            "topicDefinition": "Finance and reporting is associated with capital and result on the balance sheet.",
+            "explanation": "",
+            "kind": "mechanism",
+            "objective": "Finance and reporting is associated with capital and result on the balance sheet.",
+            "sources": [
+              {
+                "sourceId": "p31s0"
+              }
+            ],
+            "visualDescription": ""
+          },
+          {
+            "topic": "Reinsurance",
+            "question": "Which balance-sheet category is associated with Reinsurance?",
+            "answer": "Capital and result.",
+            "key": "t11c0",
+            "topicDefinition": "Reinsurance is associated with capital and result on the balance sheet.",
+            "explanation": "",
+            "kind": "mechanism",
+            "objective": "Reinsurance is associated with capital and result on the balance sheet.",
+            "sources": [
+              {
+                "sourceId": "p31s0"
+              }
+            ],
+            "visualDescription": ""
+          },
+          {
+            "topic": "Profitability and solvency",
+            "question": "Which balance-sheet category is associated with Profitability and solvency?",
+            "answer": "Capital and result.",
+            "key": "t12c0",
+            "topicDefinition": "Profitability and solvency is associated with capital and result on the balance sheet.",
+            "explanation": "",
+            "kind": "mechanism",
+            "objective": "Profitability and solvency is associated with capital and result on the balance sheet.",
+            "sources": [
+              {
+                "sourceId": "p31s0"
+              }
+            ],
+            "visualDescription": ""
+          }
+        ]
+      },
+      "review": {
+        "targets": [
+          {
+            "key": "t0",
+            "verdict": "supported",
+            "atomic": true,
+            "coverageComplete": true,
+            "reason": "The claim that the balance sheet connects business functions is directly supported by the source text from page 31."
+          },
+          {
+            "key": "t1",
+            "verdict": "supported",
+            "atomic": true,
+            "coverageComplete": true,
+            "reason": "The association of Investment and ALM with assets on the balance sheet is straightforwardly supported by the source text from page 31."
+          },
+          {
+            "key": "t2",
+            "verdict": "supported",
+            "atomic": true,
+            "coverageComplete": true,
+            "reason": "Liquidity management's association with assets on the balance sheet is directly supported by the source text from page 31."
+          },
+          {
+            "key": "t3",
+            "verdict": "supported",
+            "atomic": true,
+            "coverageComplete": true,
+            "reason": "The association of Market and credit risk with assets on the balance sheet is directly supported by the source text from page 31."
+          },
+          {
+            "key": "t4",
+            "verdict": "supported",
+            "atomic": true,
+            "coverageComplete": true,
+            "reason": "The claim that assets support future claim payments is directly supported by the source text from page 31."
+          },
+          {
+            "key": "t5",
+            "verdict": "supported",
+            "atomic": true,
+            "coverageComplete": true,
+            "reason": "The association of Pricing assumptions with liabilities on the balance sheet is directly supported by the source text from page 31."
+          },
+          {
+            "key": "t6",
+            "verdict": "supported",
+            "atomic": true,
+            "coverageComplete": true,
+            "reason": "The association of Claims management with liabilities on the balance sheet is directly supported by the source text from page 31."
+          },
+          {
+            "key": "t7",
+            "verdict": "supported",
+            "atomic": true,
+            "coverageComplete": true,
+            "reason": "The association of Reserving and provisions with liabilities on the balance sheet is directly supported by the source text from page 31."
+          },
+          {
+            "key": "t8",
+            "verdict": "supported",
+            "atomic": true,
+            "coverageComplete": true,
+            "reason": "The association of Timing and amount of obligations with liabilities on the balance sheet is directly supported by the source text from page 31."
+          },
+          {
+            "key": "t9",
+            "verdict": "supported",
+            "atomic": true,
+            "coverageComplete": true,
+            "reason": "The association of Risk and capital management with capital and result on the balance sheet is directly supported by the source text from page 31."
+          },
+          {
+            "key": "t10",
+            "verdict": "supported",
+            "atomic": true,
+            "coverageComplete": true,
+            "reason": "The association of Finance and reporting with capital and result on the balance sheet is directly supported by the source text from page 31."
+          },
+          {
+            "key": "t11",
+            "verdict": "supported",
+            "atomic": true,
+            "coverageComplete": true,
+            "reason": "The association of Reinsurance with capital and result on the balance sheet is directly supported by the source text from page 31."
+          },
+          {
+            "key": "t12",
+            "verdict": "supported",
+            "atomic": true,
+            "coverageComplete": true,
+            "reason": "The association of Profitability and solvency with capital and result on the balance sheet is directly supported by the source text from page 31."
+          }
+        ],
+        "decisions": [
+          {
+            "key": "t0c0",
+            "complete": true,
+            "scopeCorrect": true,
+            "atomic": true,
+            "unambiguous": true,
+            "relevant": true,
+            "requiresVisualEvidence": false,
+            "duplicateOf": "",
+            "reason": "The source clearly supports the concept that the balance sheet connects business functions. The field is complete, scope correct, atomic, unambiguous, and relevant based on the source provided.",
+            "claims": [
+              {
+                "text": "Topic: Balance sheet and business functions\nConcept definition: The balance sheet connects business functions.\nQuestion: Which financial statement connects business functions in this model?\nAnswer: The balance sheet.",
+                "verdict": "supported",
+                "evidence": [
+                  {
+                    "sourceId": "p31s0",
+                    "quote": "5. Company functions\n31\nThe balance sheet connects business functions\nAssets\nInvestment and ALM\nLiquidity management\nMarket and credit risk\nSupports future claim\npayments\nLiabilities\nPricing assumptions\nClaims management\nReserving and provisions\nTiming and amount of\nobligations\nCapital and result\nRisk and capital\nmanagement\nFinance and reporting\nReinsurance\nProfitability and solvency"
+                  }
+                ],
+                "reasoning": "The source text on page 31 explicitly states that the balance sheet connects business functions. This aligns correctly with the field text, which asks about which financial statement connects business functions, giving a precise answer. This substantiation makes the field supported."
+              }
+            ]
+          },
+          {
+            "key": "t1c0",
+            "complete": true,
+            "scopeCorrect": true,
+            "atomic": true,
+            "unambiguous": true,
+            "relevant": true,
+            "requiresVisualEvidence": false,
+            "duplicateOf": "",
+            "reason": "The source explicitly supports the association of Investment and ALM with assets on the balance sheet. The field is complete, scope correct, atomic, unambiguous, and relevant based on the source provided.",
+            "claims": [
+              {
+                "text": "Topic: Investment and ALM\nConcept definition: Investment and ALM is associated with assets on the balance sheet.\nQuestion: Which balance-sheet category is associated with Investment and ALM?\nAnswer: Assets.",
+                "verdict": "supported",
+                "evidence": [
+                  {
+                    "sourceId": "p31s0",
+                    "quote": "5. Company functions\n31\nThe balance sheet connects business functions\nAssets\nInvestment and ALM\nLiquidity management\nMarket and credit risk\nSupports future claim\npayments\nLiabilities\nPricing assumptions\nClaims management\nReserving and provisions\nTiming and amount of\nobligations\nCapital and result\nRisk and capital\nmanagement\nFinance and reporting\nReinsurance\nProfitability and solvency"
+                  }
+                ],
+                "reasoning": "The source text on page 31 clearly shows that Investment and ALM are associated with assets on the balance sheet. The field text accurately captures this association and asks which category is associated with Investment and ALM, providing the corresponding answer as 'Assets.' This correspondence supports the field."
+              }
+            ]
+          },
+          {
+            "key": "t2c0",
+            "complete": true,
+            "scopeCorrect": true,
+            "atomic": true,
+            "unambiguous": true,
+            "relevant": true,
+            "requiresVisualEvidence": false,
+            "duplicateOf": "",
+            "reason": "The source validates the association of Liquidity management with assets on the balance sheet. The field is complete, scope correct, atomic, unambiguous, and relevant based on the source provided.",
+            "claims": [
+              {
+                "text": "Topic: Liquidity management\nConcept definition: Liquidity management is associated with assets on the balance sheet.\nQuestion: Which balance-sheet category is associated with Liquidity management?\nAnswer: Assets.",
+                "verdict": "supported",
+                "evidence": [
+                  {
+                    "sourceId": "p31s0",
+                    "quote": "5. Company functions\n31\nThe balance sheet connects business functions\nAssets\nInvestment and ALM\nLiquidity management\nMarket and credit risk\nSupports future claim\npayments\nLiabilities\nPricing assumptions\nClaims management\nReserving and provisions\nTiming and amount of\nobligations\nCapital and result\nRisk and capital\nmanagement\nFinance and reporting\nReinsurance\nProfitability and solvency"
+                  }
+                ],
+                "reasoning": "On page 31, the source lists Liquidity management under the assets category on the balance sheet. The field accurately reflects this by questioning the balance-sheet category associated with Liquidity management and providing 'Assets' as the answer, thus supporting it."
+              }
+            ]
+          },
+          {
+            "key": "t3c0",
+            "complete": true,
+            "scopeCorrect": true,
+            "atomic": true,
+            "unambiguous": true,
+            "relevant": true,
+            "requiresVisualEvidence": false,
+            "duplicateOf": "",
+            "reason": "The source correctly supports the association of Market and credit risk with assets on the balance sheet. The field is complete, scope correct, atomic, unambiguous, and relevant based on the source provided.",
+            "claims": [
+              {
+                "text": "Topic: Market and credit risk\nConcept definition: Market and credit risk is associated with assets on the balance sheet.\nQuestion: Which balance-sheet category is associated with Market and credit risk?\nAnswer: Assets.",
+                "verdict": "supported",
+                "evidence": [
+                  {
+                    "sourceId": "p31s0",
+                    "quote": "5. Company functions\n31\nThe balance sheet connects business functions\nAssets\nInvestment and ALM\nLiquidity management\nMarket and credit risk\nSupports future claim\npayments\nLiabilities\nPricing assumptions\nClaims management\nReserving and provisions\nTiming and amount of\nobligations\nCapital and result\nRisk and capital\nmanagement\nFinance and reporting\nReinsurance\nProfitability and solvency"
+                  }
+                ],
+                "reasoning": "Page 31 lists Market and credit risk under the assets section of the balance sheet. The field's question and answer correctly convey this association, proving its support from the source."
+              }
+            ]
+          },
+          {
+            "key": "t4c0",
+            "complete": true,
+            "scopeCorrect": true,
+            "atomic": true,
+            "unambiguous": true,
+            "relevant": true,
+            "requiresVisualEvidence": false,
+            "duplicateOf": "",
+            "reason": "The source text indicates that assets support future claim payments, confirming the field's validity as it matches the information provided.",
+            "claims": [
+              {
+                "text": "Topic: Asset support for claims\nConcept definition: Assets support future claim payments.\nQuestion: What do assets support in the balance-sheet model?\nAnswer: future claim payments.",
+                "verdict": "supported",
+                "evidence": [
+                  {
+                    "sourceId": "p31s0",
+                    "quote": "5. Company functions\n31\nThe balance sheet connects business functions\nAssets\nInvestment and ALM\nLiquidity management\nMarket and credit risk\nSupports future claim\npayments\nLiabilities\nPricing assumptions\nClaims management\nReserving and provisions\nTiming and amount of\nobligations\nCapital and result\nRisk and capital\nmanagement\nFinance and reporting\nReinsurance\nProfitability and solvency"
+                  }
+                ],
+                "reasoning": "The source explains that assets support future claim payments, which aligns with the field's question about what assets support, with the matching answer 'future claim payments.' The content and structure of the source confirm this association clearly."
+              }
+            ]
+          },
+          {
+            "key": "t5c0",
+            "complete": true,
+            "scopeCorrect": true,
+            "atomic": true,
+            "unambiguous": true,
+            "relevant": true,
+            "requiresVisualEvidence": false,
+            "duplicateOf": "",
+            "reason": "The source supports the association of Pricing assumptions with liabilities on the balance sheet, making the field fully validated.",
+            "claims": [
+              {
+                "text": "Topic: Pricing assumptions\nConcept definition: Pricing assumptions is associated with liabilities on the balance sheet.\nQuestion: Which balance-sheet category is associated with Pricing assumptions?\nAnswer: Liabilities.",
+                "verdict": "supported",
+                "evidence": [
+                  {
+                    "sourceId": "p31s0",
+                    "quote": "5. Company functions\n31\nThe balance sheet connects business functions\nAssets\nInvestment and ALM\nLiquidity management\nMarket and credit risk\nSupports future claim\npayments\nLiabilities\nPricing assumptions\nClaims management\nReserving and provisions\nTiming and amount of\nobligations\nCapital and result\nRisk and capital\nmanagement\nFinance and reporting\nReinsurance\nProfitability and solvency"
+                  }
+                ],
+                "reasoning": "Page 31 explicitly associates Pricing assumptions with liabilities. The field encapsulates this parallel correctly through its question and answer format, aligning with the source."
+              }
+            ]
+          },
+          {
+            "key": "t6c0",
+            "complete": true,
+            "scopeCorrect": true,
+            "atomic": true,
+            "unambiguous": true,
+            "relevant": true,
+            "requiresVisualEvidence": false,
+            "duplicateOf": "",
+            "reason": "The source explicitly associates Claims management with liabilities on the balance sheet; thus, the field is fully substantiated.",
+            "claims": [
+              {
+                "text": "Topic: Claims management\nConcept definition: Claims management is associated with liabilities on the balance sheet.\nQuestion: Which balance-sheet category is associated with Claims management?\nAnswer: Liabilities.",
+                "verdict": "supported",
+                "evidence": [
+                  {
+                    "sourceId": "p31s0",
+                    "quote": "5. Company functions\n31\nThe balance sheet connects business functions\nAssets\nInvestment and ALM\nLiquidity management\nMarket and credit risk\nSupports future claim\npayments\nLiabilities\nPricing assumptions\nClaims management\nReserving and provisions\nTiming and amount of\nobligations\nCapital and result\nRisk and capital\nmanagement\nFinance and reporting\nReinsurance\nProfitability and solvency"
+                  }
+                ],
+                "reasoning": "The association of Claims management with liabilities is evident on page 31 of the source. The field accurately captures this connection through relevant questioning and definitive answering, thus supported by the source."
+              }
+            ]
+          },
+          {
+            "key": "t7c0",
+            "complete": true,
+            "scopeCorrect": true,
+            "atomic": true,
+            "unambiguous": true,
+            "relevant": true,
+            "requiresVisualEvidence": false,
+            "duplicateOf": "",
+            "reason": "The source substantiates the association of Reserving and provisions with liabilities on the balance sheet, ensuring the field is adequately supported.",
+            "claims": [
+              {
+                "text": "Topic: Reserving and provisions\nConcept definition: Reserving and provisions is associated with liabilities on the balance sheet.\nQuestion: Which balance-sheet category is associated with Reserving and provisions?\nAnswer: Liabilities.",
+                "verdict": "supported",
+                "evidence": [
+                  {
+                    "sourceId": "p31s0",
+                    "quote": "5. Company functions\n31\nThe balance sheet connects business functions\nAssets\nInvestment and ALM\nLiquidity management\nMarket and credit risk\nSupports future claim\npayments\nLiabilities\nPricing assumptions\nClaims management\nReserving and provisions\nTiming and amount of\nobligations\nCapital and result\nRisk and capital\nmanagement\nFinance and reporting\nReinsurance\nProfitability and solvency"
+                  }
+                ],
+                "reasoning": "Page 31 associates Reserving and provisions with liabilities, which is reflected accurately in the field's question and answer, confirming alignment and support from the source."
+              }
+            ]
+          },
+          {
+            "key": "t8c0",
+            "complete": true,
+            "scopeCorrect": true,
+            "atomic": true,
+            "unambiguous": true,
+            "relevant": true,
+            "requiresVisualEvidence": false,
+            "duplicateOf": "",
+            "reason": "The source supports the association of Timing and amount of obligations with liabilities on the balance sheet, validating the field's accuracy.",
+            "claims": [
+              {
+                "text": "Topic: Timing and amount of obligations\nConcept definition: Timing and amount of obligations is associated with liabilities on the balance sheet.\nQuestion: Which balance-sheet category is associated with Timing and amount of obligations?\nAnswer: Liabilities.",
+                "verdict": "supported",
+                "evidence": [
+                  {
+                    "sourceId": "p31s0",
+                    "quote": "5. Company functions\n31\nThe balance sheet connects business functions\nAssets\nInvestment and ALM\nLiquidity management\nMarket and credit risk\nSupports future claim\npayments\nLiabilities\nPricing assumptions\nClaims management\nReserving and provisions\nTiming and amount of\nobligations\nCapital and result\nRisk and capital\nmanagement\nFinance and reporting\nReinsurance\nProfitability and solvency"
+                  }
+                ],
+                "reasoning": "The source text clearly shows the connection between Timing and amount of obligations and liabilities, with the field capturing this connection via appropriate questioning and answering, thus supported."
+              }
+            ]
+          },
+          {
+            "key": "t9c0",
+            "complete": true,
+            "scopeCorrect": true,
+            "atomic": true,
+            "unambiguous": true,
+            "relevant": true,
+            "requiresVisualEvidence": false,
+            "duplicateOf": "",
+            "reason": "Risk and capital management's association with capital and result is explicitly supported by the source text.",
+            "claims": [
+              {
+                "text": "Topic: Risk and capital management\nConcept definition: Risk and capital management is associated with capital and result on the balance sheet.\nQuestion: Which balance-sheet category is associated with Risk and capital management?\nAnswer: Capital and result.",
+                "verdict": "supported",
+                "evidence": [
+                  {
+                    "sourceId": "p31s0",
+                    "quote": "5. Company functions\n31\nThe balance sheet connects business functions\nAssets\nInvestment and ALM\nLiquidity management\nMarket and credit risk\nSupports future claim\npayments\nLiabilities\nPricing assumptions\nClaims management\nReserving and provisions\nTiming and amount of\nobligations\nCapital and result\nRisk and capital\nmanagement\nFinance and reporting\nReinsurance\nProfitability and solvency"
+                  }
+                ],
+                "reasoning": "Page 31 describes Risk and capital management under the capital and result category. The field's corresponding question and answer align with this information, providing a complete and accurate representation."
+              }
+            ]
+          },
+          {
+            "key": "t10c0",
+            "complete": true,
+            "scopeCorrect": true,
+            "atomic": true,
+            "unambiguous": true,
+            "relevant": true,
+            "requiresVisualEvidence": false,
+            "duplicateOf": "",
+            "reason": "Finance and reporting is associated with capital and result on the balance sheet, as directly indicated in the source.",
+            "claims": [
+              {
+                "text": "Topic: Finance and reporting\nConcept definition: Finance and reporting is associated with capital and result on the balance sheet.\nQuestion: Which balance-sheet category is associated with Finance and reporting?\nAnswer: Capital and result.",
+                "verdict": "supported",
+                "evidence": [
+                  {
+                    "sourceId": "p31s0",
+                    "quote": "5. Company functions\n31\nThe balance sheet connects business functions\nAssets\nInvestment and ALM\nLiquidity management\nMarket and credit risk\nSupports future claim\npayments\nLiabilities\nPricing assumptions\nClaims management\nReserving and provisions\nTiming and amount of\nobligations\nCapital and result\nRisk and capital\nmanagement\nFinance and reporting\nReinsurance\nProfitability and solvency"
+                  }
+                ],
+                "reasoning": "The source on page 31 includes Finance and reporting with capital and result. The field accurately communicates this relationship through its structured question and correct answer."
+              }
+            ]
+          },
+          {
+            "key": "t11c0",
+            "complete": true,
+            "scopeCorrect": true,
+            "atomic": true,
+            "unambiguous": true,
+            "relevant": true,
+            "requiresVisualEvidence": false,
+            "duplicateOf": "",
+            "reason": "Reinsurance's association with capital and result is directly validated by the source text.",
+            "claims": [
+              {
+                "text": "Topic: Reinsurance\nConcept definition: Reinsurance is associated with capital and result on the balance sheet.\nQuestion: Which balance-sheet category is associated with Reinsurance?\nAnswer: Capital and result.",
+                "verdict": "supported",
+                "evidence": [
+                  {
+                    "sourceId": "p31s0",
+                    "quote": "5. Company functions\n31\nThe balance sheet connects business functions\nAssets\nInvestment and ALM\nLiquidity management\nMarket and credit risk\nSupports future claim\npayments\nLiabilities\nPricing assumptions\nClaims management\nReserving and provisions\nTiming and amount of\nobligations\nCapital and result\nRisk and capital\nmanagement\nFinance and reporting\nReinsurance\nProfitability and solvency"
+                  }
+                ],
+                "reasoning": "Page 31 depicts Reinsurance as part of capital and result, which the field captures accurately through corresponding question-answer pairs, verifying support from the source."
+              }
+            ]
+          },
+          {
+            "key": "t12c0",
+            "complete": true,
+            "scopeCorrect": true,
+            "atomic": true,
+            "unambiguous": true,
+            "relevant": true,
+            "requiresVisualEvidence": false,
+            "duplicateOf": "",
+            "reason": "Profitability and solvency's association with capital and result is supported explicitly by the source text.",
+            "claims": [
+              {
+                "text": "Topic: Profitability and solvency\nConcept definition: Profitability and solvency is associated with capital and result on the balance sheet.\nQuestion: Which balance-sheet category is associated with Profitability and solvency?\nAnswer: Capital and result.",
+                "verdict": "supported",
+                "evidence": [
+                  {
+                    "sourceId": "p31s0",
+                    "quote": "5. Company functions\n31\nThe balance sheet connects business functions\nAssets\nInvestment and ALM\nLiquidity management\nMarket and credit risk\nSupports future claim\npayments\nLiabilities\nPricing assumptions\nClaims management\nReserving and provisions\nTiming and amount of\nobligations\nCapital and result\nRisk and capital\nmanagement\nFinance and reporting\nReinsurance\nProfitability and solvency"
+                  }
+                ],
+                "reasoning": "Profitability and solvency are connected to capital and result as per page 31. Therefore, the field representing this association accurately is supported by the source."
+              }
+            ]
+          }
+        ],
+        "pages": [
+          {
+            "page": 31,
+            "excluded": false,
+            "reason": "",
+            "objectives": [
+              {
+                "description": "Understand how the balance sheet connects business functions.",
+                "cardKeys": [
+                  "t0c0"
+                ]
+              },
+              {
+                "description": "Learn the association of Investment and ALM with assets on the balance sheet.",
+                "cardKeys": [
+                  "t1c0"
+                ]
+              },
+              {
+                "description": "Learn the association of Liquidity management with assets on the balance sheet.",
+                "cardKeys": [
+                  "t2c0"
+                ]
+              },
+              {
+                "description": "Learn the association of Market and credit risk with assets on the balance sheet.",
+                "cardKeys": [
+                  "t3c0"
+                ]
+              },
+              {
+                "description": "Understand how assets support future claim payments.",
+                "cardKeys": [
+                  "t4c0"
+                ]
+              },
+              {
+                "description": "Learn the association of Pricing assumptions with liabilities on the balance sheet.",
+                "cardKeys": [
+                  "t5c0"
+                ]
+              },
+              {
+                "description": "Learn the association of Claims management with liabilities on the balance sheet.",
+                "cardKeys": [
+                  "t6c0"
+                ]
+              },
+              {
+                "description": "Learn the association of Reserving and provisions with liabilities on the balance sheet.",
+                "cardKeys": [
+                  "t7c0"
+                ]
+              },
+              {
+                "description": "Learn the association of Timing and amount of obligations with liabilities on the balance sheet.",
+                "cardKeys": [
+                  "t8c0"
+                ]
+              },
+              {
+                "description": "Learn the association of Risk and capital management with capital and result.",
+                "cardKeys": [
+                  "t9c0"
+                ]
+              },
+              {
+                "description": "Learn the association of Finance and reporting with capital and result.",
+                "cardKeys": [
+                  "t10c0"
+                ]
+              },
+              {
+                "description": "Learn the association of Reinsurance with capital and result.",
+                "cardKeys": [
+                  "t11c0"
+                ]
+              },
+              {
+                "description": "Learn the association of Profitability and solvency with capital and result.",
+                "cardKeys": [
+                  "t12c0"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "cards": [
+        {
+          "candidate": {
+            "topic": "Balance sheet and business functions",
+            "question": "Which financial statement connects business functions in this model?",
+            "answer": "The balance sheet.",
+            "key": "t0c0",
+            "topicDefinition": "The balance sheet connects business functions.",
+            "explanation": "",
+            "kind": "mechanism",
+            "objective": "The balance sheet connects business functions.",
+            "sources": [
+              {
+                "sourceId": "p31s0"
+              }
+            ],
+            "visualDescription": ""
+          },
+          "evidence": [
+            {
+              "documentId": "eaf7312d-3a44-4e51-957e-ea03c4d0499e",
+              "page": 31,
+              "quote": "5. Company functions\n31\nThe balance sheet connects business functions\nAssets\nInvestment and ALM\nLiquidity management\nMarket and credit risk\nSupports future claim\npayments\nLiabilities\nPricing assumptions\nClaims management\nReserving and provisions\nTiming and amount of\nobligations\nCapital and result\nRisk and capital\nmanagement\nFinance and reporting\nReinsurance\nProfitability and solvency"
+            }
+          ],
+          "issues": [],
+          "contractValid": true
+        },
+        {
+          "candidate": {
+            "topic": "Investment and ALM",
+            "question": "Which balance-sheet category is associated with Investment and ALM?",
+            "answer": "Assets.",
+            "key": "t1c0",
+            "topicDefinition": "Investment and ALM is associated with assets on the balance sheet.",
+            "explanation": "",
+            "kind": "mechanism",
+            "objective": "Investment and ALM is associated with assets on the balance sheet.",
+            "sources": [
+              {
+                "sourceId": "p31s0"
+              }
+            ],
+            "visualDescription": ""
+          },
+          "evidence": [
+            {
+              "documentId": "eaf7312d-3a44-4e51-957e-ea03c4d0499e",
+              "page": 31,
+              "quote": "5. Company functions\n31\nThe balance sheet connects business functions\nAssets\nInvestment and ALM\nLiquidity management\nMarket and credit risk\nSupports future claim\npayments\nLiabilities\nPricing assumptions\nClaims management\nReserving and provisions\nTiming and amount of\nobligations\nCapital and result\nRisk and capital\nmanagement\nFinance and reporting\nReinsurance\nProfitability and solvency"
+            }
+          ],
+          "issues": [],
+          "contractValid": true
+        },
+        {
+          "candidate": {
+            "topic": "Liquidity management",
+            "question": "Which balance-sheet category is associated with Liquidity management?",
+            "answer": "Assets.",
+            "key": "t2c0",
+            "topicDefinition": "Liquidity management is associated with assets on the balance sheet.",
+            "explanation": "",
+            "kind": "mechanism",
+            "objective": "Liquidity management is associated with assets on the balance sheet.",
+            "sources": [
+              {
+                "sourceId": "p31s0"
+              }
+            ],
+            "visualDescription": ""
+          },
+          "evidence": [
+            {
+              "documentId": "eaf7312d-3a44-4e51-957e-ea03c4d0499e",
+              "page": 31,
+              "quote": "5. Company functions\n31\nThe balance sheet connects business functions\nAssets\nInvestment and ALM\nLiquidity management\nMarket and credit risk\nSupports future claim\npayments\nLiabilities\nPricing assumptions\nClaims management\nReserving and provisions\nTiming and amount of\nobligations\nCapital and result\nRisk and capital\nmanagement\nFinance and reporting\nReinsurance\nProfitability and solvency"
+            }
+          ],
+          "issues": [],
+          "contractValid": true
+        },
+        {
+          "candidate": {
+            "topic": "Market and credit risk",
+            "question": "Which balance-sheet category is associated with Market and credit risk?",
+            "answer": "Assets.",
+            "key": "t3c0",
+            "topicDefinition": "Market and credit risk is associated with assets on the balance sheet.",
+            "explanation": "",
+            "kind": "mechanism",
+            "objective": "Market and credit risk is associated with assets on the balance sheet.",
+            "sources": [
+              {
+                "sourceId": "p31s0"
+              }
+            ],
+            "visualDescription": ""
+          },
+          "evidence": [
+            {
+              "documentId": "eaf7312d-3a44-4e51-957e-ea03c4d0499e",
+              "page": 31,
+              "quote": "5. Company functions\n31\nThe balance sheet connects business functions\nAssets\nInvestment and ALM\nLiquidity management\nMarket and credit risk\nSupports future claim\npayments\nLiabilities\nPricing assumptions\nClaims management\nReserving and provisions\nTiming and amount of\nobligations\nCapital and result\nRisk and capital\nmanagement\nFinance and reporting\nReinsurance\nProfitability and solvency"
+            }
+          ],
+          "issues": [],
+          "contractValid": true
+        },
+        {
+          "candidate": {
+            "topic": "Asset support for claims",
+            "question": "What do assets support in the balance-sheet model?",
+            "answer": "future claim payments.",
+            "key": "t4c0",
+            "topicDefinition": "Assets support future claim payments.",
+            "explanation": "",
+            "kind": "mechanism",
+            "objective": "Assets support future claim payments.",
+            "sources": [
+              {
+                "sourceId": "p31s0"
+              }
+            ],
+            "visualDescription": ""
+          },
+          "evidence": [
+            {
+              "documentId": "eaf7312d-3a44-4e51-957e-ea03c4d0499e",
+              "page": 31,
+              "quote": "5. Company functions\n31\nThe balance sheet connects business functions\nAssets\nInvestment and ALM\nLiquidity management\nMarket and credit risk\nSupports future claim\npayments\nLiabilities\nPricing assumptions\nClaims management\nReserving and provisions\nTiming and amount of\nobligations\nCapital and result\nRisk and capital\nmanagement\nFinance and reporting\nReinsurance\nProfitability and solvency"
+            }
+          ],
+          "issues": [],
+          "contractValid": true
+        },
+        {
+          "candidate": {
+            "topic": "Pricing assumptions",
+            "question": "Which balance-sheet category is associated with Pricing assumptions?",
+            "answer": "Liabilities.",
+            "key": "t5c0",
+            "topicDefinition": "Pricing assumptions is associated with liabilities on the balance sheet.",
+            "explanation": "",
+            "kind": "mechanism",
+            "objective": "Pricing assumptions is associated with liabilities on the balance sheet.",
+            "sources": [
+              {
+                "sourceId": "p31s0"
+              }
+            ],
+            "visualDescription": ""
+          },
+          "evidence": [
+            {
+              "documentId": "eaf7312d-3a44-4e51-957e-ea03c4d0499e",
+              "page": 31,
+              "quote": "5. Company functions\n31\nThe balance sheet connects business functions\nAssets\nInvestment and ALM\nLiquidity management\nMarket and credit risk\nSupports future claim\npayments\nLiabilities\nPricing assumptions\nClaims management\nReserving and provisions\nTiming and amount of\nobligations\nCapital and result\nRisk and capital\nmanagement\nFinance and reporting\nReinsurance\nProfitability and solvency"
+            }
+          ],
+          "issues": [],
+          "contractValid": true
+        },
+        {
+          "candidate": {
+            "topic": "Claims management",
+            "question": "Which balance-sheet category is associated with Claims management?",
+            "answer": "Liabilities.",
+            "key": "t6c0",
+            "topicDefinition": "Claims management is associated with liabilities on the balance sheet.",
+            "explanation": "",
+            "kind": "mechanism",
+            "objective": "Claims management is associated with liabilities on the balance sheet.",
+            "sources": [
+              {
+                "sourceId": "p31s0"
+              }
+            ],
+            "visualDescription": ""
+          },
+          "evidence": [
+            {
+              "documentId": "eaf7312d-3a44-4e51-957e-ea03c4d0499e",
+              "page": 31,
+              "quote": "5. Company functions\n31\nThe balance sheet connects business functions\nAssets\nInvestment and ALM\nLiquidity management\nMarket and credit risk\nSupports future claim\npayments\nLiabilities\nPricing assumptions\nClaims management\nReserving and provisions\nTiming and amount of\nobligations\nCapital and result\nRisk and capital\nmanagement\nFinance and reporting\nReinsurance\nProfitability and solvency"
+            }
+          ],
+          "issues": [],
+          "contractValid": true
+        },
+        {
+          "candidate": {
+            "topic": "Reserving and provisions",
+            "question": "Which balance-sheet category is associated with Reserving and provisions?",
+            "answer": "Liabilities.",
+            "key": "t7c0",
+            "topicDefinition": "Reserving and provisions is associated with liabilities on the balance sheet.",
+            "explanation": "",
+            "kind": "mechanism",
+            "objective": "Reserving and provisions is associated with liabilities on the balance sheet.",
+            "sources": [
+              {
+                "sourceId": "p31s0"
+              }
+            ],
+            "visualDescription": ""
+          },
+          "evidence": [
+            {
+              "documentId": "eaf7312d-3a44-4e51-957e-ea03c4d0499e",
+              "page": 31,
+              "quote": "5. Company functions\n31\nThe balance sheet connects business functions\nAssets\nInvestment and ALM\nLiquidity management\nMarket and credit risk\nSupports future claim\npayments\nLiabilities\nPricing assumptions\nClaims management\nReserving and provisions\nTiming and amount of\nobligations\nCapital and result\nRisk and capital\nmanagement\nFinance and reporting\nReinsurance\nProfitability and solvency"
+            }
+          ],
+          "issues": [],
+          "contractValid": true
+        },
+        {
+          "candidate": {
+            "topic": "Timing and amount of obligations",
+            "question": "Which balance-sheet category is associated with Timing and amount of obligations?",
+            "answer": "Liabilities.",
+            "key": "t8c0",
+            "topicDefinition": "Timing and amount of obligations is associated with liabilities on the balance sheet.",
+            "explanation": "",
+            "kind": "mechanism",
+            "objective": "Timing and amount of obligations is associated with liabilities on the balance sheet.",
+            "sources": [
+              {
+                "sourceId": "p31s0"
+              }
+            ],
+            "visualDescription": ""
+          },
+          "evidence": [
+            {
+              "documentId": "eaf7312d-3a44-4e51-957e-ea03c4d0499e",
+              "page": 31,
+              "quote": "5. Company functions\n31\nThe balance sheet connects business functions\nAssets\nInvestment and ALM\nLiquidity management\nMarket and credit risk\nSupports future claim\npayments\nLiabilities\nPricing assumptions\nClaims management\nReserving and provisions\nTiming and amount of\nobligations\nCapital and result\nRisk and capital\nmanagement\nFinance and reporting\nReinsurance\nProfitability and solvency"
+            }
+          ],
+          "issues": [],
+          "contractValid": true
+        },
+        {
+          "candidate": {
+            "topic": "Risk and capital management",
+            "question": "Which balance-sheet category is associated with Risk and capital management?",
+            "answer": "Capital and result.",
+            "key": "t9c0",
+            "topicDefinition": "Risk and capital management is associated with capital and result on the balance sheet.",
+            "explanation": "",
+            "kind": "mechanism",
+            "objective": "Risk and capital management is associated with capital and result on the balance sheet.",
+            "sources": [
+              {
+                "sourceId": "p31s0"
+              }
+            ],
+            "visualDescription": ""
+          },
+          "evidence": [
+            {
+              "documentId": "eaf7312d-3a44-4e51-957e-ea03c4d0499e",
+              "page": 31,
+              "quote": "5. Company functions\n31\nThe balance sheet connects business functions\nAssets\nInvestment and ALM\nLiquidity management\nMarket and credit risk\nSupports future claim\npayments\nLiabilities\nPricing assumptions\nClaims management\nReserving and provisions\nTiming and amount of\nobligations\nCapital and result\nRisk and capital\nmanagement\nFinance and reporting\nReinsurance\nProfitability and solvency"
+            }
+          ],
+          "issues": [],
+          "contractValid": true
+        },
+        {
+          "candidate": {
+            "topic": "Finance and reporting",
+            "question": "Which balance-sheet category is associated with Finance and reporting?",
+            "answer": "Capital and result.",
+            "key": "t10c0",
+            "topicDefinition": "Finance and reporting is associated with capital and result on the balance sheet.",
+            "explanation": "",
+            "kind": "mechanism",
+            "objective": "Finance and reporting is associated with capital and result on the balance sheet.",
+            "sources": [
+              {
+                "sourceId": "p31s0"
+              }
+            ],
+            "visualDescription": ""
+          },
+          "evidence": [
+            {
+              "documentId": "eaf7312d-3a44-4e51-957e-ea03c4d0499e",
+              "page": 31,
+              "quote": "5. Company functions\n31\nThe balance sheet connects business functions\nAssets\nInvestment and ALM\nLiquidity management\nMarket and credit risk\nSupports future claim\npayments\nLiabilities\nPricing assumptions\nClaims management\nReserving and provisions\nTiming and amount of\nobligations\nCapital and result\nRisk and capital\nmanagement\nFinance and reporting\nReinsurance\nProfitability and solvency"
+            }
+          ],
+          "issues": [],
+          "contractValid": true
+        },
+        {
+          "candidate": {
+            "topic": "Reinsurance",
+            "question": "Which balance-sheet category is associated with Reinsurance?",
+            "answer": "Capital and result.",
+            "key": "t11c0",
+            "topicDefinition": "Reinsurance is associated with capital and result on the balance sheet.",
+            "explanation": "",
+            "kind": "mechanism",
+            "objective": "Reinsurance is associated with capital and result on the balance sheet.",
+            "sources": [
+              {
+                "sourceId": "p31s0"
+              }
+            ],
+            "visualDescription": ""
+          },
+          "evidence": [
+            {
+              "documentId": "eaf7312d-3a44-4e51-957e-ea03c4d0499e",
+              "page": 31,
+              "quote": "5. Company functions\n31\nThe balance sheet connects business functions\nAssets\nInvestment and ALM\nLiquidity management\nMarket and credit risk\nSupports future claim\npayments\nLiabilities\nPricing assumptions\nClaims management\nReserving and provisions\nTiming and amount of\nobligations\nCapital and result\nRisk and capital\nmanagement\nFinance and reporting\nReinsurance\nProfitability and solvency"
+            }
+          ],
+          "issues": [],
+          "contractValid": true
+        },
+        {
+          "candidate": {
+            "topic": "Profitability and solvency",
+            "question": "Which balance-sheet category is associated with Profitability and solvency?",
+            "answer": "Capital and result.",
+            "key": "t12c0",
+            "topicDefinition": "Profitability and solvency is associated with capital and result on the balance sheet.",
+            "explanation": "",
+            "kind": "mechanism",
+            "objective": "Profitability and solvency is associated with capital and result on the balance sheet.",
+            "sources": [
+              {
+                "sourceId": "p31s0"
+              }
+            ],
+            "visualDescription": ""
+          },
+          "evidence": [
+            {
+              "documentId": "eaf7312d-3a44-4e51-957e-ea03c4d0499e",
+              "page": 31,
+              "quote": "5. Company functions\n31\nThe balance sheet connects business functions\nAssets\nInvestment and ALM\nLiquidity management\nMarket and credit risk\nSupports future claim\npayments\nLiabilities\nPricing assumptions\nClaims management\nReserving and provisions\nTiming and amount of\nobligations\nCapital and result\nRisk and capital\nmanagement\nFinance and reporting\nReinsurance\nProfitability and solvency"
+            }
+          ],
+          "issues": [],
+          "contractValid": true
+        }
+      ],
+      "excludedCards": [],
+      "diagnostics": []
+    }
+  ],
+  "activeAfter": "default"
+}

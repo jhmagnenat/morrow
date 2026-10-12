@@ -1,0 +1,25 @@
+{
+  "pdfSha256": "438f0286f8310855dd51bcb0db76aafbea5c5551b8dcf160cbc0a5feeb4160af",
+  "reviewer": "Codex original-native-source inspection",
+  "reviewedAt": "2026-10-11T10:49:53.885Z",
+  "coverage": "partial",
+  "inspection": "Recipient and loss scope checked against original table on page 23; original knowledge check on page 35 retained as context. No fresh model call.",
+  "facts": [
+    {
+      "page": 23,
+      "topic": "Reinsurance",
+      "claim": "The purpose of reinsurance is to protect an insurer against large, volatile or accumulated insurance losses.",
+      "question": "What is the main purpose of reinsurance?",
+      "answer": "Protect an insurer against large, volatile or accumulated insurance losses.",
+      "kind": "definition",
+      "evidenceKind": "text",
+      "contextPages": [
+        35
+      ],
+      "replace": {
+        "cardId": "414df9a1-c92a-4039-84a5-d0c149303704",
+        "contentHash": "6d2f935d4624e109e2939a1b261e7814cd58ee10708fc491b2473187bf0a42e0"
+      }
+    }
+  ]
+}

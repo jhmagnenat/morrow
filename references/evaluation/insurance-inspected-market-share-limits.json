@@ -1,0 +1,22 @@
+{
+  "pdfSha256": "438f0286f8310855dd51bcb0db76aafbea5c5551b8dcf160cbc0a5feeb4160af",
+  "reviewer": "Codex original-native-source inspection",
+  "reviewedAt": "2026-10-11T11:24:20.462Z",
+  "coverage": "partial",
+  "inspection": "Original question 5 supplies the comparison; market share is a measure of premiums, not a ranking by profit, service or solvency. Correct the awkward answer without creating unstated causal claims.",
+  "facts": [
+    {
+      "page": 35,
+      "topic": "Limits of premium market share",
+      "claim": "The largest life-insurance premium market share alone establishes none of profitability, service quality or solvency.",
+      "question": "Does the largest life-insurance premium market share establish profitability, service quality or solvency?",
+      "answer": "No. Premium market share alone establishes none of these.",
+      "kind": "application",
+      "evidenceKind": "text",
+      "replace": {
+        "cardId": "32b0327b-facf-4e2a-a97f-17dca4a8b610",
+        "contentHash": "a4ef3f9540afd92f98fc98d46656f4bf1298bb5a7889399ddf93a6a964c0d0bb"
+      }
+    }
+  ]
+}

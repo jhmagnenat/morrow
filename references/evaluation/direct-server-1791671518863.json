@@ -1,0 +1,3097 @@
+{
+  "version": "direct-cards-v5-reviewed-targets",
+  "selected": [
+    20,
+    23
+  ],
+  "activeBefore": "default",
+  "startedAt": "2026-10-10T22:31:27.835Z",
+  "complete": true,
+  "humanQualityScore": null,
+  "job": {
+    "id": "23820291-730b-4f52-8ba7-c9967c81e09e",
+    "documentId": "33d1997c-a357-4735-b507-8ba25e5292bd",
+    "courseId": "dd7191d3-0905-4e9f-b82d-137c411ae864",
+    "workerPid": 6256,
+    "status": "needs_review",
+    "mode": "strict",
+    "enrichment": false,
+    "cardDetail": "key-ideas",
+    "pages": [
+      20,
+      23
+    ],
+    "reprocess": false,
+    "startedAt": "2026-10-10T22:31:28.109Z",
+    "updatedAt": "2026-10-10T22:31:56.878Z",
+    "totalPages": 2,
+    "attemptedPages": [
+      23,
+      20
+    ],
+    "completedPages": 1,
+    "reviewPages": [
+      20
+    ],
+    "notionsCreated": 13,
+    "cardsCreated": 18,
+    "requests": 8,
+    "inputTokens": 24659,
+    "outputTokens": 7339,
+    "warnings": [
+      "Question already supplies the substantive recall answer",
+      "Missing or rejected card design review",
+      "Uncovered knowledge: Insurance companies offer savings and protection products.",
+      "Unpublished objective: Identify the types of savings and protection products offered by insurance companies."
+    ],
+    "execution": "inline",
+    "concurrency": 3,
+    "pipeline": "direct",
+    "sectionCount": 2,
+    "activeStages": {},
+    "elapsedMs": 28765,
+    "estimatedCostUsd": null,
+    "readyCards": 18,
+    "draftCards": 0,
+    "firstReadyAt": "2026-10-10T22:31:55.237Z",
+    "firstReadyMs": 27128,
+    "sectionsCompleted": 2,
+    "coveredPages": 1,
+    "skippedPages": 0,
+    "processedPages": 2
+  },
+  "elapsedMs": 30778,
+  "cards": [
+    {
+      "id": "8ca56197-1552-4431-a061-5dacc0969f23",
+      "notionId": "99f6c462-c427-4bb5-868e-d330819a1476",
+      "cardType": "notion",
+      "question": "What are life insurance products designed to do and what benefits are they associated with?",
+      "answer": "They are designed to protect income or build savings and are associated with death, longevity, retirement, or savings benefits.",
+      "explanation": "Life insurance products focus on providing financial protection or savings accumulation. The associated benefits are typically financial payouts upon events like death, reaching retirement age, or upon the completion of a savings term, ensuring financial security over a long duration.",
+      "example": "",
+      "kind": "mechanism",
+      "objective": "Understand the design and associated benefits of life insurance products.",
+      "status": "ready",
+      "evidence": [
+        {
+          "documentId": "33d1997c-a357-4735-b507-8ba25e5292bd",
+          "page": 23,
+          "quote": "Main insurance product families\n44\nFamily Customer need Typical risk or benefit Financial feature\nLife Protect income or build\nsavings\nDeath, longevity, retirement or\nsavings benefit\nLong duration and investment\nsensitivity\nProperty and\ncasualty\nProtect property and legal\nliability\nMotor, property, accident or liability\nloss\nClaims frequency and severity\nHealth and\naccident\nFund medical care or replace\nincome\nMedical expense, disability or\naccident\nClaims experience and\nhealthcare inflation\nReinsurance Protect an insurer Large, volatile or accumulated\ninsurance losses\nCeded premium and claim\nrecoveries\nCaptive\ninsurance\nFinance a corporate group's\nown risks\nRisks retained within the group Risk retention with external\nprotection when needed\nProduct classification can overlap. The purpose and risk transfer matter more than the label."
+        }
+      ],
+      "warnings": [],
+      "userEdited": false,
+      "model": "OpenAI (gpt-4o)",
+      "promptVersion": "direct-cards-v5-reviewed-targets",
+      "knowledgeTrace": {
+        "unitId": "t0",
+        "planKey": "21d3446ec21c8d7cae543337b16aa306a695eb53f7a3982979e0ef9591a16743",
+        "claim": "Life insurance products are designed to protect income or build savings and are associated with death, longevity, retirement, or savings benefits.",
+        "conditions": []
+      },
+      "accuracyReview": {
+        "version": "accuracy-v2-scientific-quotations",
+        "contentHash": "7d27d9609931b986db04694c8bf63c6a00e4d6f86eaef8fcf7b2769a72277380",
+        "sources": [
+          {
+            "documentId": "33d1997c-a357-4735-b507-8ba25e5292bd",
+            "page": 23,
+            "sha256": "8b6fbf6418a1867022d38b551ccfecf9764f0025b7c21dbc19949493cec98613",
+            "revision": "3891a9defa4b02dda9c1d0a8256103122a50b9b3ab970145448131f5e6740b86"
+          }
+        ]
+      }
+    },
+    {
+      "id": "02021c2c-2829-4488-a7bd-83775286c5b1",
+      "notionId": "99f6c462-c427-4bb5-868e-d330819a1476",
+      "cardType": "notion",
+      "question": "What are the financial features of life insurance products?",
+      "answer": "Long duration and investment sensitivity.",
+      "explanation": "Life insurance products often require long-term financial commitment, which makes their duration longer. They are sensitive to investment returns because the premiums collected are typically invested until they are paid out as benefits, hence investment sensitivity is a key feature.",
+      "example": "",
+      "kind": "mechanism",
+      "objective": "Identify the financial features of life insurance products.",
+      "status": "ready",
+      "evidence": [
+        {
+          "documentId": "33d1997c-a357-4735-b507-8ba25e5292bd",
+          "page": 23,
+          "quote": "Main insurance product families\n44\nFamily Customer need Typical risk or benefit Financial feature\nLife Protect income or build\nsavings\nDeath, longevity, retirement or\nsavings benefit\nLong duration and investment\nsensitivity\nProperty and\ncasualty\nProtect property and legal\nliability\nMotor, property, accident or liability\nloss\nClaims frequency and severity\nHealth and\naccident\nFund medical care or replace\nincome\nMedical expense, disability or\naccident\nClaims experience and\nhealthcare inflation\nReinsurance Protect an insurer Large, volatile or accumulated\ninsurance losses\nCeded premium and claim\nrecoveries\nCaptive\ninsurance\nFinance a corporate group's\nown risks\nRisks retained within the group Risk retention with external\nprotection when needed\nProduct classification can overlap. The purpose and risk transfer matter more than the label."
+        }
+      ],
+      "warnings": [],
+      "userEdited": false,
+      "model": "OpenAI (gpt-4o)",
+      "promptVersion": "direct-cards-v5-reviewed-targets",
+      "knowledgeTrace": {
+        "unitId": "t1",
+        "planKey": "21d3446ec21c8d7cae543337b16aa306a695eb53f7a3982979e0ef9591a16743",
+        "claim": "Life insurance products have long duration and investment sensitivity as their financial feature.",
+        "conditions": []
+      },
+      "accuracyReview": {
+        "version": "accuracy-v2-scientific-quotations",
+        "contentHash": "428955a12065690d9c36d7d6d64304aa6f3d0d3e4bdfb00b4c04413f8a5f3641",
+        "sources": [
+          {
+            "documentId": "33d1997c-a357-4735-b507-8ba25e5292bd",
+            "page": 23,
+            "sha256": "8b6fbf6418a1867022d38b551ccfecf9764f0025b7c21dbc19949493cec98613",
+            "revision": "3891a9defa4b02dda9c1d0a8256103122a50b9b3ab970145448131f5e6740b86"
+          }
+        ]
+      }
+    },
+    {
+      "id": "f756b391-b511-4055-ac04-076777da39d1",
+      "notionId": "a8a6d0aa-cc70-43fa-ae58-06626b1877e7",
+      "cardType": "notion",
+      "question": "What do property and casualty insurance products protect and cover?",
+      "answer": "They protect property and legal liability, covering motor, property, accident, or liability losses.",
+      "explanation": "These products provide coverage against tangible risks to property and potential legal claims against the insured. They encompass a range of protection from physical damage to properties to liabilities arising from accidents.",
+      "example": "",
+      "kind": "mechanism",
+      "objective": "Identify the protections and coverage provided by property and casualty insurance products.",
+      "status": "ready",
+      "evidence": [
+        {
+          "documentId": "33d1997c-a357-4735-b507-8ba25e5292bd",
+          "page": 23,
+          "quote": "Main insurance product families\n44\nFamily Customer need Typical risk or benefit Financial feature\nLife Protect income or build\nsavings\nDeath, longevity, retirement or\nsavings benefit\nLong duration and investment\nsensitivity\nProperty and\ncasualty\nProtect property and legal\nliability\nMotor, property, accident or liability\nloss\nClaims frequency and severity\nHealth and\naccident\nFund medical care or replace\nincome\nMedical expense, disability or\naccident\nClaims experience and\nhealthcare inflation\nReinsurance Protect an insurer Large, volatile or accumulated\ninsurance losses\nCeded premium and claim\nrecoveries\nCaptive\ninsurance\nFinance a corporate group's\nown risks\nRisks retained within the group Risk retention with external\nprotection when needed\nProduct classification can overlap. The purpose and risk transfer matter more than the label."
+        }
+      ],
+      "warnings": [],
+      "userEdited": false,
+      "model": "OpenAI (gpt-4o)",
+      "promptVersion": "direct-cards-v5-reviewed-targets",
+      "knowledgeTrace": {
+        "unitId": "t2",
+        "planKey": "21d3446ec21c8d7cae543337b16aa306a695eb53f7a3982979e0ef9591a16743",
+        "claim": "Property and casualty insurance products protect property and legal liability, and cover motor, property, accident, or liability losses.",
+        "conditions": []
+      },
+      "accuracyReview": {
+        "version": "accuracy-v2-scientific-quotations",
+        "contentHash": "f101f28609df0d861e70466bacce19ebd42089e3caed5a1d5c29eed5ae16e12e",
+        "sources": [
+          {
+            "documentId": "33d1997c-a357-4735-b507-8ba25e5292bd",
+            "page": 23,
+            "sha256": "8b6fbf6418a1867022d38b551ccfecf9764f0025b7c21dbc19949493cec98613",
+            "revision": "3891a9defa4b02dda9c1d0a8256103122a50b9b3ab970145448131f5e6740b86"
+          }
+        ]
+      }
+    },
+    {
+      "id": "fbc2b767-0aea-42ce-9abe-860bf74867f1",
+      "notionId": "a8a6d0aa-cc70-43fa-ae58-06626b1877e7",
+      "cardType": "notion",
+      "question": "What financial features are associated with property and casualty insurance products?",
+      "answer": "Claims frequency and severity.",
+      "explanation": "The financial stability of property and casualty insurance products relies heavily on understanding and predicting how often claims will occur (frequency) and how costly each claim might be (severity), impacting the insurer's profitability and pricing strategies.",
+      "example": "",
+      "kind": "mechanism",
+      "objective": "Understand the financial features important in property and casualty insurance.",
+      "status": "ready",
+      "evidence": [
+        {
+          "documentId": "33d1997c-a357-4735-b507-8ba25e5292bd",
+          "page": 23,
+          "quote": "Main insurance product families\n44\nFamily Customer need Typical risk or benefit Financial feature\nLife Protect income or build\nsavings\nDeath, longevity, retirement or\nsavings benefit\nLong duration and investment\nsensitivity\nProperty and\ncasualty\nProtect property and legal\nliability\nMotor, property, accident or liability\nloss\nClaims frequency and severity\nHealth and\naccident\nFund medical care or replace\nincome\nMedical expense, disability or\naccident\nClaims experience and\nhealthcare inflation\nReinsurance Protect an insurer Large, volatile or accumulated\ninsurance losses\nCeded premium and claim\nrecoveries\nCaptive\ninsurance\nFinance a corporate group's\nown risks\nRisks retained within the group Risk retention with external\nprotection when needed\nProduct classification can overlap. The purpose and risk transfer matter more than the label."
+        }
+      ],
+      "warnings": [],
+      "userEdited": false,
+      "model": "OpenAI (gpt-4o)",
+      "promptVersion": "direct-cards-v5-reviewed-targets",
+      "knowledgeTrace": {
+        "unitId": "t3",
+        "planKey": "21d3446ec21c8d7cae543337b16aa306a695eb53f7a3982979e0ef9591a16743",
+        "claim": "The financial feature of property and casualty insurance products includes claims frequency and severity.",
+        "conditions": []
+      },
+      "accuracyReview": {
+        "version": "accuracy-v2-scientific-quotations",
+        "contentHash": "e92a0aa02c5d7d9533b3e74f09332630207ba35402f1b7fcae1ff820271211cc",
+        "sources": [
+          {
+            "documentId": "33d1997c-a357-4735-b507-8ba25e5292bd",
+            "page": 23,
+            "sha256": "8b6fbf6418a1867022d38b551ccfecf9764f0025b7c21dbc19949493cec98613",
+            "revision": "3891a9defa4b02dda9c1d0a8256103122a50b9b3ab970145448131f5e6740b86"
+          }
+        ]
+      }
+    },
+    {
+      "id": "5c01a598-545b-4e85-b145-d3ed01030b5c",
+      "notionId": "8af1abeb-d581-497b-887b-1fe33fb89b96",
+      "cardType": "notion",
+      "question": "What are health and accident insurance products intended to fund, and what risks are they associated with?",
+      "answer": "They fund medical care or replace income, and are associated with medical expense, disability, or accident risks.",
+      "explanation": "These insurance products are specifically designed to provide financial assistance for medical treatment costs or loss of income due to disability or accidents, ensuring individuals can manage unforeseen health-related expenses.",
+      "example": "",
+      "kind": "mechanism",
+      "objective": "Identify the purpose and associated risks of health and accident insurance products.",
+      "status": "ready",
+      "evidence": [
+        {
+          "documentId": "33d1997c-a357-4735-b507-8ba25e5292bd",
+          "page": 23,
+          "quote": "Main insurance product families\n44\nFamily Customer need Typical risk or benefit Financial feature\nLife Protect income or build\nsavings\nDeath, longevity, retirement or\nsavings benefit\nLong duration and investment\nsensitivity\nProperty and\ncasualty\nProtect property and legal\nliability\nMotor, property, accident or liability\nloss\nClaims frequency and severity\nHealth and\naccident\nFund medical care or replace\nincome\nMedical expense, disability or\naccident\nClaims experience and\nhealthcare inflation\nReinsurance Protect an insurer Large, volatile or accumulated\ninsurance losses\nCeded premium and claim\nrecoveries\nCaptive\ninsurance\nFinance a corporate group's\nown risks\nRisks retained within the group Risk retention with external\nprotection when needed\nProduct classification can overlap. The purpose and risk transfer matter more than the label."
+        }
+      ],
+      "warnings": [],
+      "userEdited": false,
+      "model": "OpenAI (gpt-4o)",
+      "promptVersion": "direct-cards-v5-reviewed-targets",
+      "knowledgeTrace": {
+        "unitId": "t4",
+        "planKey": "21d3446ec21c8d7cae543337b16aa306a695eb53f7a3982979e0ef9591a16743",
+        "claim": "Health and accident insurance products are intended to fund medical care or replace income, and are associated with medical expense, disability, or accident risks.",
+        "conditions": []
+      },
+      "accuracyReview": {
+        "version": "accuracy-v2-scientific-quotations",
+        "contentHash": "6abd74801f7f53627e62db43b7f8cd54655d09cc462be68d025a58594048c90c",
+        "sources": [
+          {
+            "documentId": "33d1997c-a357-4735-b507-8ba25e5292bd",
+            "page": 23,
+            "sha256": "8b6fbf6418a1867022d38b551ccfecf9764f0025b7c21dbc19949493cec98613",
+            "revision": "3891a9defa4b02dda9c1d0a8256103122a50b9b3ab970145448131f5e6740b86"
+          }
+        ]
+      }
+    },
+    {
+      "id": "fdbccf85-b106-4ad2-ab23-ea3a7ce2b2ba",
+      "notionId": "8af1abeb-d581-497b-887b-1fe33fb89b96",
+      "cardType": "notion",
+      "question": "What financial features are commonly seen with health and accident insurance products?",
+      "answer": "Claims experience and healthcare inflation.",
+      "explanation": "The cost of claims in health and accident insurance is directly influenced by how frequent and severe the claims are (claims experience) as well as the inflation in healthcare costs, affecting long-term financial planning and premium determination.",
+      "example": "",
+      "kind": "mechanism",
+      "objective": "Understand the financial features of health and accident insurance products.",
+      "status": "ready",
+      "evidence": [
+        {
+          "documentId": "33d1997c-a357-4735-b507-8ba25e5292bd",
+          "page": 23,
+          "quote": "Main insurance product families\n44\nFamily Customer need Typical risk or benefit Financial feature\nLife Protect income or build\nsavings\nDeath, longevity, retirement or\nsavings benefit\nLong duration and investment\nsensitivity\nProperty and\ncasualty\nProtect property and legal\nliability\nMotor, property, accident or liability\nloss\nClaims frequency and severity\nHealth and\naccident\nFund medical care or replace\nincome\nMedical expense, disability or\naccident\nClaims experience and\nhealthcare inflation\nReinsurance Protect an insurer Large, volatile or accumulated\ninsurance losses\nCeded premium and claim\nrecoveries\nCaptive\ninsurance\nFinance a corporate group's\nown risks\nRisks retained within the group Risk retention with external\nprotection when needed\nProduct classification can overlap. The purpose and risk transfer matter more than the label."
+        }
+      ],
+      "warnings": [],
+      "userEdited": false,
+      "model": "OpenAI (gpt-4o)",
+      "promptVersion": "direct-cards-v5-reviewed-targets",
+      "knowledgeTrace": {
+        "unitId": "t5",
+        "planKey": "21d3446ec21c8d7cae543337b16aa306a695eb53f7a3982979e0ef9591a16743",
+        "claim": "Health and accident insurance products have claims experience and healthcare inflation as their financial feature.",
+        "conditions": []
+      },
+      "accuracyReview": {
+        "version": "accuracy-v2-scientific-quotations",
+        "contentHash": "96b37d26fac32656d2ddb7190c381857e277a0c432d043d342812c9cfd0c0766",
+        "sources": [
+          {
+            "documentId": "33d1997c-a357-4735-b507-8ba25e5292bd",
+            "page": 23,
+            "sha256": "8b6fbf6418a1867022d38b551ccfecf9764f0025b7c21dbc19949493cec98613",
+            "revision": "3891a9defa4b02dda9c1d0a8256103122a50b9b3ab970145448131f5e6740b86"
+          }
+        ]
+      }
+    },
+    {
+      "id": "caf2c701-3f6d-4705-88c8-6bb74885ba0e",
+      "notionId": "d876db9b-c394-4e7b-a0be-276fc9f451b0",
+      "cardType": "notion",
+      "question": "What is the primary purpose of reinsurance?",
+      "answer": "To protect an insurer from large, volatile, or accumulated insurance losses.",
+      "explanation": "Reinsurance allows primary insurers to mitigate risk by sharing potential huge losses with other insurers, providing stability and capacity to underwrite more policies or large individual risks.",
+      "example": "",
+      "kind": "mechanism",
+      "objective": "Understand the purpose of reinsurance in insurance risk management.",
+      "status": "ready",
+      "evidence": [
+        {
+          "documentId": "33d1997c-a357-4735-b507-8ba25e5292bd",
+          "page": 23,
+          "quote": "Main insurance product families\n44\nFamily Customer need Typical risk or benefit Financial feature\nLife Protect income or build\nsavings\nDeath, longevity, retirement or\nsavings benefit\nLong duration and investment\nsensitivity\nProperty and\ncasualty\nProtect property and legal\nliability\nMotor, property, accident or liability\nloss\nClaims frequency and severity\nHealth and\naccident\nFund medical care or replace\nincome\nMedical expense, disability or\naccident\nClaims experience and\nhealthcare inflation\nReinsurance Protect an insurer Large, volatile or accumulated\ninsurance losses\nCeded premium and claim\nrecoveries\nCaptive\ninsurance\nFinance a corporate group's\nown risks\nRisks retained within the group Risk retention with external\nprotection when needed\nProduct classification can overlap. The purpose and risk transfer matter more than the label."
+        }
+      ],
+      "warnings": [],
+      "userEdited": false,
+      "model": "OpenAI (gpt-4o)",
+      "promptVersion": "direct-cards-v5-reviewed-targets",
+      "knowledgeTrace": {
+        "unitId": "t6",
+        "planKey": "21d3446ec21c8d7cae543337b16aa306a695eb53f7a3982979e0ef9591a16743",
+        "claim": "Reinsurance is designed to protect an insurer from large, volatile, or accumulated insurance losses.",
+        "conditions": []
+      },
+      "accuracyReview": {
+        "version": "accuracy-v2-scientific-quotations",
+        "contentHash": "ccedf3980a96e9e4614611646d11f9923941a281223ae16e6afd289f0141f9b9",
+        "sources": [
+          {
+            "documentId": "33d1997c-a357-4735-b507-8ba25e5292bd",
+            "page": 23,
+            "sha256": "8b6fbf6418a1867022d38b551ccfecf9764f0025b7c21dbc19949493cec98613",
+            "revision": "3891a9defa4b02dda9c1d0a8256103122a50b9b3ab970145448131f5e6740b86"
+          }
+        ]
+      }
+    },
+    {
+      "id": "07bc6c93-3f65-4d9e-aa7f-9b09b3032779",
+      "notionId": "d876db9b-c394-4e7b-a0be-276fc9f451b0",
+      "cardType": "notion",
+      "question": "What financial features are associated with reinsurance?",
+      "answer": "Ceded premium and claim recoveries.",
+      "explanation": "Reinsurance involves the transfer of premium revenue—called ceded premium—to a reinsurer, which in return, reimburses or covers the primary insurer for claims made on the policies reinsured, supporting financial risk management.",
+      "example": "",
+      "kind": "mechanism",
+      "objective": "Identify the financial characteristics of reinsurance.",
+      "status": "ready",
+      "evidence": [
+        {
+          "documentId": "33d1997c-a357-4735-b507-8ba25e5292bd",
+          "page": 23,
+          "quote": "Main insurance product families\n44\nFamily Customer need Typical risk or benefit Financial feature\nLife Protect income or build\nsavings\nDeath, longevity, retirement or\nsavings benefit\nLong duration and investment\nsensitivity\nProperty and\ncasualty\nProtect property and legal\nliability\nMotor, property, accident or liability\nloss\nClaims frequency and severity\nHealth and\naccident\nFund medical care or replace\nincome\nMedical expense, disability or\naccident\nClaims experience and\nhealthcare inflation\nReinsurance Protect an insurer Large, volatile or accumulated\ninsurance losses\nCeded premium and claim\nrecoveries\nCaptive\ninsurance\nFinance a corporate group's\nown risks\nRisks retained within the group Risk retention with external\nprotection when needed\nProduct classification can overlap. The purpose and risk transfer matter more than the label."
+        }
+      ],
+      "warnings": [],
+      "userEdited": false,
+      "model": "OpenAI (gpt-4o)",
+      "promptVersion": "direct-cards-v5-reviewed-targets",
+      "knowledgeTrace": {
+        "unitId": "t7",
+        "planKey": "21d3446ec21c8d7cae543337b16aa306a695eb53f7a3982979e0ef9591a16743",
+        "claim": "Reinsurance involves ceded premium and claim recoveries as its financial feature.",
+        "conditions": []
+      },
+      "accuracyReview": {
+        "version": "accuracy-v2-scientific-quotations",
+        "contentHash": "8c7f27426a0567c799d33845eafa10ccf195167a6c9714cc5d21eb088457273e",
+        "sources": [
+          {
+            "documentId": "33d1997c-a357-4735-b507-8ba25e5292bd",
+            "page": 23,
+            "sha256": "8b6fbf6418a1867022d38b551ccfecf9764f0025b7c21dbc19949493cec98613",
+            "revision": "3891a9defa4b02dda9c1d0a8256103122a50b9b3ab970145448131f5e6740b86"
+          }
+        ]
+      }
+    },
+    {
+      "id": "093e6835-7833-48aa-a6ff-6ec0346ae95a",
+      "notionId": "47efc4e9-2946-4c78-beaf-07e671ec1fff",
+      "cardType": "notion",
+      "question": "What is the purpose of captive insurance?",
+      "answer": "To finance a corporate group's own risks with risks retained within the group.",
+      "explanation": "Captive insurance allows corporations to manage their own insurance needs directly, customize coverage, and potentially reduce costs by not relying solely on traditional insurers, retaining risks within the group up to an established threshold.",
+      "example": "",
+      "kind": "mechanism",
+      "objective": "Understand the purpose of captive insurance for corporate risk management.",
+      "status": "ready",
+      "evidence": [
+        {
+          "documentId": "33d1997c-a357-4735-b507-8ba25e5292bd",
+          "page": 23,
+          "quote": "Main insurance product families\n44\nFamily Customer need Typical risk or benefit Financial feature\nLife Protect income or build\nsavings\nDeath, longevity, retirement or\nsavings benefit\nLong duration and investment\nsensitivity\nProperty and\ncasualty\nProtect property and legal\nliability\nMotor, property, accident or liability\nloss\nClaims frequency and severity\nHealth and\naccident\nFund medical care or replace\nincome\nMedical expense, disability or\naccident\nClaims experience and\nhealthcare inflation\nReinsurance Protect an insurer Large, volatile or accumulated\ninsurance losses\nCeded premium and claim\nrecoveries\nCaptive\ninsurance\nFinance a corporate group's\nown risks\nRisks retained within the group Risk retention with external\nprotection when needed\nProduct classification can overlap. The purpose and risk transfer matter more than the label."
+        }
+      ],
+      "warnings": [],
+      "userEdited": false,
+      "model": "OpenAI (gpt-4o)",
+      "promptVersion": "direct-cards-v5-reviewed-targets",
+      "knowledgeTrace": {
+        "unitId": "t8",
+        "planKey": "21d3446ec21c8d7cae543337b16aa306a695eb53f7a3982979e0ef9591a16743",
+        "claim": "Captive insurance is used to finance a corporate group's own risks with risks retained within the group.",
+        "conditions": []
+      },
+      "accuracyReview": {
+        "version": "accuracy-v2-scientific-quotations",
+        "contentHash": "eff1bb4af676ed9c801c1266becb828f93574c528616cad34910812b4f9f220a",
+        "sources": [
+          {
+            "documentId": "33d1997c-a357-4735-b507-8ba25e5292bd",
+            "page": 23,
+            "sha256": "8b6fbf6418a1867022d38b551ccfecf9764f0025b7c21dbc19949493cec98613",
+            "revision": "3891a9defa4b02dda9c1d0a8256103122a50b9b3ab970145448131f5e6740b86"
+          }
+        ]
+      }
+    },
+    {
+      "id": "6c702a2a-6d8c-43e5-93cf-052799f34906",
+      "notionId": "47efc4e9-2946-4c78-beaf-07e671ec1fff",
+      "cardType": "notion",
+      "question": "What financial feature is involved in captive insurance?",
+      "answer": "Risk retention with external protection when needed.",
+      "explanation": "Captive insurance enables a corporate group to retain daily risk exposures, thereby financing them internally. However, for larger or unexpected losses, the group may secure external insurance protection to mitigate potential financial impacts.",
+      "example": "",
+      "kind": "mechanism",
+      "objective": "Identify the financial feature of captive insurance.",
+      "status": "ready",
+      "evidence": [
+        {
+          "documentId": "33d1997c-a357-4735-b507-8ba25e5292bd",
+          "page": 23,
+          "quote": "Main insurance product families\n44\nFamily Customer need Typical risk or benefit Financial feature\nLife Protect income or build\nsavings\nDeath, longevity, retirement or\nsavings benefit\nLong duration and investment\nsensitivity\nProperty and\ncasualty\nProtect property and legal\nliability\nMotor, property, accident or liability\nloss\nClaims frequency and severity\nHealth and\naccident\nFund medical care or replace\nincome\nMedical expense, disability or\naccident\nClaims experience and\nhealthcare inflation\nReinsurance Protect an insurer Large, volatile or accumulated\ninsurance losses\nCeded premium and claim\nrecoveries\nCaptive\ninsurance\nFinance a corporate group's\nown risks\nRisks retained within the group Risk retention with external\nprotection when needed\nProduct classification can overlap. The purpose and risk transfer matter more than the label."
+        }
+      ],
+      "warnings": [],
+      "userEdited": false,
+      "model": "OpenAI (gpt-4o)",
+      "promptVersion": "direct-cards-v5-reviewed-targets",
+      "knowledgeTrace": {
+        "unitId": "t9",
+        "planKey": "21d3446ec21c8d7cae543337b16aa306a695eb53f7a3982979e0ef9591a16743",
+        "claim": "Captive insurance involves risk retention with external protection when needed as a financial feature.",
+        "conditions": []
+      },
+      "accuracyReview": {
+        "version": "accuracy-v2-scientific-quotations",
+        "contentHash": "44498b3899f92214773ccb22bfb12b2db1686fac52fc40f8cf549b7bf4e395e6",
+        "sources": [
+          {
+            "documentId": "33d1997c-a357-4735-b507-8ba25e5292bd",
+            "page": 23,
+            "sha256": "8b6fbf6418a1867022d38b551ccfecf9764f0025b7c21dbc19949493cec98613",
+            "revision": "3891a9defa4b02dda9c1d0a8256103122a50b9b3ab970145448131f5e6740b86"
+          }
+        ]
+      }
+    },
+    {
+      "id": "9d51b12a-88ed-4c85-b446-2f848253fe82",
+      "notionId": "67093458-3022-4885-8b74-dc204082c2d8",
+      "cardType": "notion",
+      "question": "Why does insurance product classification sometimes overlap?",
+      "answer": "Because the purpose and risk transfer are more important than the label.",
+      "explanation": "While products may be labeled distinctly, such as life, health, or property insurance, the underlying risk management goals and mechanisms of risk transfer often overlap, indicating shared objectives across classifications.",
+      "example": "",
+      "kind": "mechanism",
+      "objective": "Understand why insurance product classification can overlap.",
+      "status": "ready",
+      "evidence": [
+        {
+          "documentId": "33d1997c-a357-4735-b507-8ba25e5292bd",
+          "page": 23,
+          "quote": "Main insurance product families\n44\nFamily Customer need Typical risk or benefit Financial feature\nLife Protect income or build\nsavings\nDeath, longevity, retirement or\nsavings benefit\nLong duration and investment\nsensitivity\nProperty and\ncasualty\nProtect property and legal\nliability\nMotor, property, accident or liability\nloss\nClaims frequency and severity\nHealth and\naccident\nFund medical care or replace\nincome\nMedical expense, disability or\naccident\nClaims experience and\nhealthcare inflation\nReinsurance Protect an insurer Large, volatile or accumulated\ninsurance losses\nCeded premium and claim\nrecoveries\nCaptive\ninsurance\nFinance a corporate group's\nown risks\nRisks retained within the group Risk retention with external\nprotection when needed\nProduct classification can overlap. The purpose and risk transfer matter more than the label."
+        }
+      ],
+      "warnings": [],
+      "userEdited": false,
+      "model": "OpenAI (gpt-4o)",
+      "promptVersion": "direct-cards-v5-reviewed-targets",
+      "knowledgeTrace": {
+        "unitId": "t10",
+        "planKey": "21d3446ec21c8d7cae543337b16aa306a695eb53f7a3982979e0ef9591a16743",
+        "claim": "Insurance product classification can overlap, but the purpose and risk transfer are more important than the label.",
+        "conditions": []
+      },
+      "accuracyReview": {
+        "version": "accuracy-v2-scientific-quotations",
+        "contentHash": "61e30490bc0efd25db50c6254cbd6a664862cda07f23d7762f9299f5f8d7e631",
+        "sources": [
+          {
+            "documentId": "33d1997c-a357-4735-b507-8ba25e5292bd",
+            "page": 23,
+            "sha256": "8b6fbf6418a1867022d38b551ccfecf9764f0025b7c21dbc19949493cec98613",
+            "revision": "3891a9defa4b02dda9c1d0a8256103122a50b9b3ab970145448131f5e6740b86"
+          }
+        ]
+      }
+    },
+    {
+      "id": "76493524-e997-430f-9028-13e402e90e50",
+      "notionId": "d351cb43-045e-4e87-913c-ea4489b0fd85",
+      "cardType": "notion",
+      "question": "What are the contributions of insurance companies to the economy and society?",
+      "answer": "Insurance companies contribute to capital markets, support businesses and individuals, and provide jobs.",
+      "explanation": "Insurance companies act as stabilizers in the economy by providing essential services, contributing to capital markets through investments, supporting business operations by covering risks, and generating employment opportunities across various functions.",
+      "example": "",
+      "kind": "application",
+      "objective": "Understand the broader impact of insurance companies on the economy and society.",
+      "status": "ready",
+      "evidence": [
+        {
+          "documentId": "33d1997c-a357-4735-b507-8ba25e5292bd",
+          "page": 20,
+          "quote": "Inside an insurance company\n20\nInsurance Company\nPolicyholders\nSociety / Economy\n(stability, protection\nContribution to cappital markets,\nsupport business&individuals, jobs)\nUnderwriting\n(Assess risk + Pricing)\nRisk Pooling &\nDiversification\nReserving\n(Set aside liabilities)\nClaims Management\n(Pay losses)\nInvestment Management\n(Invest premiums until claims are paid;\nGenerate returns; Support capital markets)\nSavings & Protection Products\nProperty and Casulty Products"
+        }
+      ],
+      "warnings": [],
+      "userEdited": false,
+      "model": "OpenAI (gpt-4o)",
+      "promptVersion": "direct-cards-v5-reviewed-targets",
+      "knowledgeTrace": {
+        "unitId": "t0",
+        "planKey": "854b9700c10884df31266c09286463ea3a7697ae8082baf10eeeb437bda01705",
+        "claim": "Insurance companies contribute to capital markets, support businesses and individuals, and provide jobs.",
+        "conditions": []
+      },
+      "accuracyReview": {
+        "version": "accuracy-v2-scientific-quotations",
+        "contentHash": "ba4300e6a4f217ed1fcca5464b7a3c2a78c3bdf2b6ef2c6821e143397af3ffa5",
+        "sources": [
+          {
+            "documentId": "33d1997c-a357-4735-b507-8ba25e5292bd",
+            "page": 20,
+            "sha256": "c83c5ce9b82f6f3416f4229efd9703badf8a38764ce3cd969d197b31fd76f43a",
+            "revision": "3891a9defa4b02dda9c1d0a8256103122a50b9b3ab970145448131f5e6740b86"
+          }
+        ]
+      }
+    },
+    {
+      "id": "8428ae43-0bd8-4b0d-9366-4624fe7c68f0",
+      "notionId": "b7e90e6d-ff46-479f-bf16-f3eb34edb6bb",
+      "cardType": "notion",
+      "question": "What does underwriting in an insurance company involve?",
+      "answer": "Underwriting in an insurance company involves assessing risk and pricing.",
+      "explanation": "Underwriting is a fundamental process in insurance companies where they evaluate the risks of insuring a client and set the appropriate premiums based on the likelihood of a claim being made. Effective underwriting ensures that the company is not taking on more risk than it can handle and is pricing policies adequately to cover potential claims.",
+      "example": "",
+      "kind": "definition",
+      "objective": "Define the role and function of underwriting in an insurance company.",
+      "status": "ready",
+      "evidence": [
+        {
+          "documentId": "33d1997c-a357-4735-b507-8ba25e5292bd",
+          "page": 20,
+          "quote": "Inside an insurance company\n20\nInsurance Company\nPolicyholders\nSociety / Economy\n(stability, protection\nContribution to cappital markets,\nsupport business&individuals, jobs)\nUnderwriting\n(Assess risk + Pricing)\nRisk Pooling &\nDiversification\nReserving\n(Set aside liabilities)\nClaims Management\n(Pay losses)\nInvestment Management\n(Invest premiums until claims are paid;\nGenerate returns; Support capital markets)\nSavings & Protection Products\nProperty and Casulty Products"
+        }
+      ],
+      "warnings": [],
+      "userEdited": false,
+      "model": "OpenAI (gpt-4o)",
+      "promptVersion": "direct-cards-v5-reviewed-targets",
+      "knowledgeTrace": {
+        "unitId": "t1",
+        "planKey": "854b9700c10884df31266c09286463ea3a7697ae8082baf10eeeb437bda01705",
+        "claim": "Underwriting in an insurance company involves assessing risk and pricing.",
+        "conditions": []
+      },
+      "accuracyReview": {
+        "version": "accuracy-v2-scientific-quotations",
+        "contentHash": "05a5f56776d5f00c25cffe91f360943ed2a2c2dba663b2d675326e5fec653cb2",
+        "sources": [
+          {
+            "documentId": "33d1997c-a357-4735-b507-8ba25e5292bd",
+            "page": 20,
+            "sha256": "c83c5ce9b82f6f3416f4229efd9703badf8a38764ce3cd969d197b31fd76f43a",
+            "revision": "3891a9defa4b02dda9c1d0a8256103122a50b9b3ab970145448131f5e6740b86"
+          }
+        ]
+      }
+    },
+    {
+      "id": "4bfcbc73-586a-432f-96a3-eede8abe155a",
+      "notionId": "b7aee721-7ab4-4839-bd98-8f1036c030c6",
+      "cardType": "notion",
+      "question": "What are risk pooling and diversification in the context of insurance company operations?",
+      "answer": "Risk pooling and diversification are part of the operations of an insurance company.",
+      "explanation": "Insurance companies employ risk pooling to aggregate individuals’ risks into a collective pool, which minimizes the impact of high-cost claims on any single entity. Diversification further mitigates risks by spreading them across different types of policies and geographic areas, thus enhancing stability and predictability in business operations.",
+      "example": "",
+      "kind": "mechanism",
+      "objective": "Explain how insurance companies manage risk through pooling and diversification.",
+      "status": "ready",
+      "evidence": [
+        {
+          "documentId": "33d1997c-a357-4735-b507-8ba25e5292bd",
+          "page": 20,
+          "quote": "Inside an insurance company\n20\nInsurance Company\nPolicyholders\nSociety / Economy\n(stability, protection\nContribution to cappital markets,\nsupport business&individuals, jobs)\nUnderwriting\n(Assess risk + Pricing)\nRisk Pooling &\nDiversification\nReserving\n(Set aside liabilities)\nClaims Management\n(Pay losses)\nInvestment Management\n(Invest premiums until claims are paid;\nGenerate returns; Support capital markets)\nSavings & Protection Products\nProperty and Casulty Products"
+        }
+      ],
+      "warnings": [],
+      "userEdited": false,
+      "model": "OpenAI (gpt-4o)",
+      "promptVersion": "direct-cards-v5-reviewed-targets",
+      "knowledgeTrace": {
+        "unitId": "t2",
+        "planKey": "854b9700c10884df31266c09286463ea3a7697ae8082baf10eeeb437bda01705",
+        "claim": "Risk pooling and diversification are part of the operations of an insurance company.",
+        "conditions": []
+      },
+      "accuracyReview": {
+        "version": "accuracy-v2-scientific-quotations",
+        "contentHash": "38623bcca1abecaf03e7d2f149bacc4bdedac665cec222893145789dd886c1b0",
+        "sources": [
+          {
+            "documentId": "33d1997c-a357-4735-b507-8ba25e5292bd",
+            "page": 20,
+            "sha256": "c83c5ce9b82f6f3416f4229efd9703badf8a38764ce3cd969d197b31fd76f43a",
+            "revision": "3891a9defa4b02dda9c1d0a8256103122a50b9b3ab970145448131f5e6740b86"
+          }
+        ]
+      }
+    },
+    {
+      "id": "4e85be23-c6eb-4af1-91a6-6a0a57b8a787",
+      "notionId": "c5ffb34c-81f5-40ee-9f02-9429234bd8c8",
+      "cardType": "notion",
+      "question": "What does reserving involve in an insurance company?",
+      "answer": "Reserving in an insurance company involves setting aside liabilities.",
+      "explanation": "The practice of reserving ensures that an insurance company maintains sufficient funds to cover its future obligations arising from the claims submitted by policyholders. This financial practice is critical for the company's solvency and operational stability.",
+      "example": "",
+      "kind": "definition",
+      "objective": "Understand the purpose and process of reserving within an insurance company.",
+      "status": "ready",
+      "evidence": [
+        {
+          "documentId": "33d1997c-a357-4735-b507-8ba25e5292bd",
+          "page": 20,
+          "quote": "Inside an insurance company\n20\nInsurance Company\nPolicyholders\nSociety / Economy\n(stability, protection\nContribution to cappital markets,\nsupport business&individuals, jobs)\nUnderwriting\n(Assess risk + Pricing)\nRisk Pooling &\nDiversification\nReserving\n(Set aside liabilities)\nClaims Management\n(Pay losses)\nInvestment Management\n(Invest premiums until claims are paid;\nGenerate returns; Support capital markets)\nSavings & Protection Products\nProperty and Casulty Products"
+        }
+      ],
+      "warnings": [],
+      "userEdited": false,
+      "model": "OpenAI (gpt-4o)",
+      "promptVersion": "direct-cards-v5-reviewed-targets",
+      "knowledgeTrace": {
+        "unitId": "t3",
+        "planKey": "854b9700c10884df31266c09286463ea3a7697ae8082baf10eeeb437bda01705",
+        "claim": "Reserving in an insurance company involves setting aside liabilities.",
+        "conditions": []
+      },
+      "accuracyReview": {
+        "version": "accuracy-v2-scientific-quotations",
+        "contentHash": "fb74b421349b6fe883e0a96f13dce1e49c3e836e94208e8d21809585719bbadd",
+        "sources": [
+          {
+            "documentId": "33d1997c-a357-4735-b507-8ba25e5292bd",
+            "page": 20,
+            "sha256": "c83c5ce9b82f6f3416f4229efd9703badf8a38764ce3cd969d197b31fd76f43a",
+            "revision": "3891a9defa4b02dda9c1d0a8256103122a50b9b3ab970145448131f5e6740b86"
+          }
+        ]
+      }
+    },
+    {
+      "id": "c2d732ad-cd37-4fb1-a9ec-d33802106834",
+      "notionId": "37177047-5f54-43f4-ac10-6917703d0ac6",
+      "cardType": "notion",
+      "question": "What does claims management in an insurance company involve?",
+      "answer": "Claims management in an insurance company involves paying losses.",
+      "explanation": "Claims management includes evaluating and processing insurance claims to ensure that genuine claims are settled accurately and efficiently. This process, which involves verifying the legitimacy of claims and calculating payouts, is vital for maintaining trust and satisfaction among policyholders.",
+      "example": "",
+      "kind": "definition",
+      "objective": "Define the role and function of claims management in an insurance company.",
+      "status": "ready",
+      "evidence": [
+        {
+          "documentId": "33d1997c-a357-4735-b507-8ba25e5292bd",
+          "page": 20,
+          "quote": "Inside an insurance company\n20\nInsurance Company\nPolicyholders\nSociety / Economy\n(stability, protection\nContribution to cappital markets,\nsupport business&individuals, jobs)\nUnderwriting\n(Assess risk + Pricing)\nRisk Pooling &\nDiversification\nReserving\n(Set aside liabilities)\nClaims Management\n(Pay losses)\nInvestment Management\n(Invest premiums until claims are paid;\nGenerate returns; Support capital markets)\nSavings & Protection Products\nProperty and Casulty Products"
+        }
+      ],
+      "warnings": [],
+      "userEdited": false,
+      "model": "OpenAI (gpt-4o)",
+      "promptVersion": "direct-cards-v5-reviewed-targets",
+      "knowledgeTrace": {
+        "unitId": "t4",
+        "planKey": "854b9700c10884df31266c09286463ea3a7697ae8082baf10eeeb437bda01705",
+        "claim": "Claims management in an insurance company involves paying losses.",
+        "conditions": []
+      },
+      "accuracyReview": {
+        "version": "accuracy-v2-scientific-quotations",
+        "contentHash": "439f927dfa0a33d68a7fcd68e57d95369339dc97b4561df15bde77553796dcad",
+        "sources": [
+          {
+            "documentId": "33d1997c-a357-4735-b507-8ba25e5292bd",
+            "page": 20,
+            "sha256": "c83c5ce9b82f6f3416f4229efd9703badf8a38764ce3cd969d197b31fd76f43a",
+            "revision": "3891a9defa4b02dda9c1d0a8256103122a50b9b3ab970145448131f5e6740b86"
+          }
+        ]
+      }
+    },
+    {
+      "id": "a9800a59-c6e1-46ec-9c91-e166e4adf238",
+      "notionId": "2ffd23ae-ba7d-4dfa-a990-a1c0ab5b5955",
+      "cardType": "notion",
+      "question": "What does investment management in an insurance company involve?",
+      "answer": "Investment management in an insurance company involves investing premiums until claims are paid, generating returns, and supporting capital markets.",
+      "explanation": "Insurance companies collect premiums from policyholders and invest these funds in various financial instruments to earn returns. This approach ensures the availability of funds when claims are made and contributes to the stability and growth of capital markets, providing an additional revenue stream for the company.",
+      "example": "",
+      "kind": "definition",
+      "objective": "Understand the investment responsibilities of insurance companies and their economic impact.",
+      "status": "ready",
+      "evidence": [
+        {
+          "documentId": "33d1997c-a357-4735-b507-8ba25e5292bd",
+          "page": 20,
+          "quote": "Inside an insurance company\n20\nInsurance Company\nPolicyholders\nSociety / Economy\n(stability, protection\nContribution to cappital markets,\nsupport business&individuals, jobs)\nUnderwriting\n(Assess risk + Pricing)\nRisk Pooling &\nDiversification\nReserving\n(Set aside liabilities)\nClaims Management\n(Pay losses)\nInvestment Management\n(Invest premiums until claims are paid;\nGenerate returns; Support capital markets)\nSavings & Protection Products\nProperty and Casulty Products"
+        }
+      ],
+      "warnings": [],
+      "userEdited": false,
+      "model": "OpenAI (gpt-4o)",
+      "promptVersion": "direct-cards-v5-reviewed-targets",
+      "knowledgeTrace": {
+        "unitId": "t5",
+        "planKey": "854b9700c10884df31266c09286463ea3a7697ae8082baf10eeeb437bda01705",
+        "claim": "Investment management in an insurance company involves investing premiums until claims are paid, generating returns, and supporting capital markets.",
+        "conditions": []
+      },
+      "accuracyReview": {
+        "version": "accuracy-v2-scientific-quotations",
+        "contentHash": "3f9f7f5353638ecc60912265de26d25ed3ce5208280b72100b07fe49b22e2b2d",
+        "sources": [
+          {
+            "documentId": "33d1997c-a357-4735-b507-8ba25e5292bd",
+            "page": 20,
+            "sha256": "c83c5ce9b82f6f3416f4229efd9703badf8a38764ce3cd969d197b31fd76f43a",
+            "revision": "3891a9defa4b02dda9c1d0a8256103122a50b9b3ab970145448131f5e6740b86"
+          }
+        ]
+      }
+    },
+    {
+      "id": "4f694157-d205-4e11-895c-3bd0485a4b9f",
+      "notionId": "2629b152-c262-4612-b6e5-aeba3b6d79be",
+      "cardType": "notion",
+      "question": "What type of products do insurance companies offer to protect against property damage and legal liability?",
+      "answer": "Property and casualty products.",
+      "explanation": "Property and casualty products are part of the offerings by insurance companies, providing coverage for risks associated with damage to property and liability for damages to others, ensuring financial protection in these areas.",
+      "example": "",
+      "kind": "definition",
+      "objective": "Identify types of products offered by insurance companies for property and liability protection.",
+      "status": "ready",
+      "evidence": [
+        {
+          "documentId": "33d1997c-a357-4735-b507-8ba25e5292bd",
+          "page": 20,
+          "quote": "Inside an insurance company\n20\nInsurance Company\nPolicyholders\nSociety / Economy\n(stability, protection\nContribution to cappital markets,\nsupport business&individuals, jobs)\nUnderwriting\n(Assess risk + Pricing)\nRisk Pooling &\nDiversification\nReserving\n(Set aside liabilities)\nClaims Management\n(Pay losses)\nInvestment Management\n(Invest premiums until claims are paid;\nGenerate returns; Support capital markets)\nSavings & Protection Products\nProperty and Casulty Products"
+        }
+      ],
+      "warnings": [],
+      "userEdited": false,
+      "model": "OpenAI (gpt-4o)",
+      "promptVersion": "direct-cards-v5-reviewed-targets",
+      "knowledgeTrace": {
+        "unitId": "t7",
+        "planKey": "854b9700c10884df31266c09286463ea3a7697ae8082baf10eeeb437bda01705",
+        "claim": "Insurance companies offer property and casualty products.",
+        "conditions": []
+      },
+      "accuracyReview": {
+        "version": "accuracy-v2-scientific-quotations",
+        "contentHash": "7fe89144dc8274f212f5ce2c9398b2b61255a1329fa9e78bc4889cce9576b957",
+        "sources": [
+          {
+            "documentId": "33d1997c-a357-4735-b507-8ba25e5292bd",
+            "page": 20,
+            "sha256": "c83c5ce9b82f6f3416f4229efd9703badf8a38764ce3cd969d197b31fd76f43a",
+            "revision": "3891a9defa4b02dda9c1d0a8256103122a50b9b3ab970145448131f5e6740b86"
+          }
+        ]
+      }
+    }
+  ],
+  "pages": [
+    {
+      "page": 23,
+      "kind": "content",
+      "status": "complete",
+      "generationComplete": true,
+      "reason": "Contains substantive knowledge about insurance products.",
+      "warnings": [],
+      "concepts": 6,
+      "cards": 11,
+      "readyCards": 11,
+      "draftCards": 0,
+      "knowledgeCoverage": [
+        {
+          "key": "t0",
+          "claim": "Life insurance products are designed to protect income or build savings and are associated with death, longevity, retirement, or savings benefits.",
+          "status": "covered",
+          "reason": "The target properly identifies life insurance products' design purpose and associated benefits, directly supported by the provided source.",
+          "sourceIds": [
+            "p23s0"
+          ],
+          "cardKeys": [
+            "t0c0"
+          ]
+        },
+        {
+          "key": "t1",
+          "claim": "Life insurance products have long duration and investment sensitivity as their financial feature.",
+          "status": "covered",
+          "reason": "The target accurately states the financial feature of life insurance products as per the source.",
+          "sourceIds": [
+            "p23s0"
+          ],
+          "cardKeys": [
+            "t1c0"
+          ]
+        },
+        {
+          "key": "t2",
+          "claim": "Property and casualty insurance products protect property and legal liability, and cover motor, property, accident, or liability losses.",
+          "status": "covered",
+          "reason": "The target correctly summarizes the purpose and coverage of property and casualty insurance products, directly supported by the source material.",
+          "sourceIds": [
+            "p23s0"
+          ],
+          "cardKeys": [
+            "t2c0"
+          ]
+        },
+        {
+          "key": "t3",
+          "claim": "The financial feature of property and casualty insurance products includes claims frequency and severity.",
+          "status": "covered",
+          "reason": "The target accurately describes the financial features of property and casualty insurance products, aligning with the source.",
+          "sourceIds": [
+            "p23s0"
+          ],
+          "cardKeys": [
+            "t3c0"
+          ]
+        },
+        {
+          "key": "t4",
+          "claim": "Health and accident insurance products are intended to fund medical care or replace income, and are associated with medical expense, disability, or accident risks.",
+          "status": "covered",
+          "reason": "The target accurately reflects the design purpose and associated risks of health and accident insurance products, supported by the source information.",
+          "sourceIds": [
+            "p23s0"
+          ],
+          "cardKeys": [
+            "t4c0"
+          ]
+        },
+        {
+          "key": "t5",
+          "claim": "Health and accident insurance products have claims experience and healthcare inflation as their financial feature.",
+          "status": "covered",
+          "reason": "The target correctly identifies the financial features associated with health and accident insurance products, directly supported by the source.",
+          "sourceIds": [
+            "p23s0"
+          ],
+          "cardKeys": [
+            "t5c0"
+          ]
+        },
+        {
+          "key": "t6",
+          "claim": "Reinsurance is designed to protect an insurer from large, volatile, or accumulated insurance losses.",
+          "status": "covered",
+          "reason": "The target correctly describes the purpose of reinsurance as per the source.",
+          "sourceIds": [
+            "p23s0"
+          ],
+          "cardKeys": [
+            "t6c0"
+          ]
+        },
+        {
+          "key": "t7",
+          "claim": "Reinsurance involves ceded premium and claim recoveries as its financial feature.",
+          "status": "covered",
+          "reason": "The target accurately describes financial features associated with reinsurance, as supported by the source.",
+          "sourceIds": [
+            "p23s0"
+          ],
+          "cardKeys": [
+            "t7c0"
+          ]
+        },
+        {
+          "key": "t8",
+          "claim": "Captive insurance is used to finance a corporate group's own risks with risks retained within the group.",
+          "status": "covered",
+          "reason": "The target accurately describes the purpose of captive insurance, aligning with the source text.",
+          "sourceIds": [
+            "p23s0"
+          ],
+          "cardKeys": [
+            "t8c0"
+          ]
+        },
+        {
+          "key": "t9",
+          "claim": "Captive insurance involves risk retention with external protection when needed as a financial feature.",
+          "status": "covered",
+          "reason": "The target correctly identifies the financial feature associated with captive insurance, as stated in the source.",
+          "sourceIds": [
+            "p23s0"
+          ],
+          "cardKeys": [
+            "t9c0"
+          ]
+        },
+        {
+          "key": "t10",
+          "claim": "Insurance product classification can overlap, but the purpose and risk transfer are more important than the label.",
+          "status": "covered",
+          "reason": "The target accurately explains why insurance product classification can overlap, directly supported by the source.",
+          "sourceIds": [
+            "p23s0"
+          ],
+          "cardKeys": [
+            "t10c0"
+          ]
+        }
+      ],
+      "missingObjectives": [],
+      "version": "direct-cards-v5-reviewed-targets",
+      "sourceRevision": "3891a9defa4b02dda9c1d0a8256103122a50b9b3ab970145448131f5e6740b86",
+      "updatedAt": "2026-10-10T22:31:55.227Z"
+    },
+    {
+      "page": 20,
+      "kind": "content",
+      "status": "retry",
+      "generationComplete": true,
+      "reason": "Page 20 is not excluded as it provides essential teaching material about the roles and functions within an insurance company.",
+      "warnings": [
+        "Uncovered knowledge: Insurance companies offer savings and protection products.",
+        "Unpublished objective: Identify the types of savings and protection products offered by insurance companies."
+      ],
+      "concepts": 7,
+      "cards": 7,
+      "readyCards": 7,
+      "draftCards": 0,
+      "knowledgeCoverage": [
+        {
+          "key": "t0",
+          "claim": "Insurance companies contribute to capital markets, support businesses and individuals, and provide jobs.",
+          "status": "covered",
+          "reason": "The target is clearly defined, specific, and focuses solely on the contributions of insurance companies to the economy and society, which matches the source.",
+          "sourceIds": [
+            "p20s0"
+          ],
+          "cardKeys": [
+            "t0c0"
+          ]
+        },
+        {
+          "key": "t1",
+          "claim": "Underwriting in an insurance company involves assessing risk and pricing.",
+          "status": "covered",
+          "reason": "The target focuses entirely on the function of underwriting, specifically assessing risk and pricing, which is directly supported by the source text.",
+          "sourceIds": [
+            "p20s0"
+          ],
+          "cardKeys": [
+            "t1c0"
+          ]
+        },
+        {
+          "key": "t2",
+          "claim": "Risk pooling and diversification are part of the operations of an insurance company.",
+          "status": "covered",
+          "reason": "The target specifically addresses risk pooling and diversification as operations, precisely aligning with information in the source.",
+          "sourceIds": [
+            "p20s0"
+          ],
+          "cardKeys": [
+            "t2c0"
+          ]
+        },
+        {
+          "key": "t3",
+          "claim": "Reserving in an insurance company involves setting aside liabilities.",
+          "status": "covered",
+          "reason": "The target exclusively covers the concept of reserving as involving setting aside liabilities, directly supported by the source text.",
+          "sourceIds": [
+            "p20s0"
+          ],
+          "cardKeys": [
+            "t3c0"
+          ]
+        },
+        {
+          "key": "t4",
+          "claim": "Claims management in an insurance company involves paying losses.",
+          "status": "covered",
+          "reason": "This target addresses claims management in terms of paying losses, as clearly stated in the source.",
+          "sourceIds": [
+            "p20s0"
+          ],
+          "cardKeys": [
+            "t4c0"
+          ]
+        },
+        {
+          "key": "t5",
+          "claim": "Investment management in an insurance company involves investing premiums until claims are paid, generating returns, and supporting capital markets.",
+          "status": "covered",
+          "reason": "The target explicitly mentions investment management roles of investing premiums, generating returns, and supporting capital markets, fully embracing the scope in the source.",
+          "sourceIds": [
+            "p20s0"
+          ],
+          "cardKeys": [
+            "t5c0"
+          ]
+        },
+        {
+          "key": "t6",
+          "claim": "Insurance companies offer savings and protection products.",
+          "status": "unresolved",
+          "reason": "The target focuses narrowly on offering savings and protection products, directly backed by the source.",
+          "sourceIds": [
+            "p20s0"
+          ],
+          "cardKeys": [
+            "t6c0"
+          ]
+        },
+        {
+          "key": "t7",
+          "claim": "Insurance companies offer property and casualty products.",
+          "status": "covered",
+          "reason": "The target card accurately covers the claim that insurance companies offer property and casualty products. The source on page 20 explicitly includes these types of products in the insurance company's offerings.",
+          "sourceIds": [
+            "p20s0"
+          ],
+          "cardKeys": [
+            "repair-t7c0"
+          ]
+        }
+      ],
+      "missingObjectives": [
+        "Uncovered knowledge: Insurance companies offer savings and protection products.",
+        "Unpublished objective: Identify the types of savings and protection products offered by insurance companies."
+      ],
+      "version": "direct-cards-v5-reviewed-targets",
+      "sourceRevision": "3891a9defa4b02dda9c1d0a8256103122a50b9b3ab970145448131f5e6740b86",
+      "updatedAt": "2026-10-10T22:31:56.867Z"
+    }
+  ],
+  "artifacts": [
+    {
+      "version": "direct-cards-v5-reviewed-targets",
+      "planPromptHash": "659162cc66be9f35d1ba64e86a5c33762de22b9aa8ea24f5fe3b34df909b91ed",
+      "writerPromptHash": "c44e9de277b03195fe3b9bf996350ff9f053e52c42950564b927116d6efe76b4",
+      "reviewPromptHash": "b3d35bcf40bd5fbbefa8c9ed29c449a1ec5acd145ea755aa0b43470f09937711",
+      "writerModel": "OpenAI (gpt-4o)",
+      "reviewModel": "OpenAI (gpt-4o)",
+      "cardDetail": "key-ideas",
+      "sourceRevision": "3891a9defa4b02dda9c1d0a8256103122a50b9b3ab970145448131f5e6740b86",
+      "pdfSha256": "438f0286f8310855dd51bcb0db76aafbea5c5551b8dcf160cbc0a5feeb4160af",
+      "sourceOrigin": "pdf",
+      "pages": [
+        23
+      ],
+      "imagePages": [
+        23
+      ],
+      "draft": {
+        "knowledge": [
+          {
+            "page": 23,
+            "claim": "Life insurance products are designed to protect income or build savings and are associated with death, longevity, retirement, or savings benefits.",
+            "sourceIds": [
+              "p23s0"
+            ],
+            "exclusionReason": "",
+            "key": "t0",
+            "cardKeys": [
+              "t0c0"
+            ],
+            "issues": []
+          },
+          {
+            "page": 23,
+            "claim": "Life insurance products have long duration and investment sensitivity as their financial feature.",
+            "sourceIds": [
+              "p23s0"
+            ],
+            "exclusionReason": "",
+            "key": "t1",
+            "cardKeys": [
+              "t1c0"
+            ],
+            "issues": []
+          },
+          {
+            "page": 23,
+            "claim": "Property and casualty insurance products protect property and legal liability, and cover motor, property, accident, or liability losses.",
+            "sourceIds": [
+              "p23s0"
+            ],
+            "exclusionReason": "",
+            "key": "t2",
+            "cardKeys": [
+              "t2c0"
+            ],
+            "issues": []
+          },
+          {
+            "page": 23,
+            "claim": "The financial feature of property and casualty insurance products includes claims frequency and severity.",
+            "sourceIds": [
+              "p23s0"
+            ],
+            "exclusionReason": "",
+            "key": "t3",
+            "cardKeys": [
+              "t3c0"
+            ],
+            "issues": []
+          },
+          {
+            "page": 23,
+            "claim": "Health and accident insurance products are intended to fund medical care or replace income, and are associated with medical expense, disability, or accident risks.",
+            "sourceIds": [
+              "p23s0"
+            ],
+            "exclusionReason": "",
+            "key": "t4",
+            "cardKeys": [
+              "t4c0"
+            ],
+            "issues": []
+          },
+          {
+            "page": 23,
+            "claim": "Health and accident insurance products have claims experience and healthcare inflation as their financial feature.",
+            "sourceIds": [
+              "p23s0"
+            ],
+            "exclusionReason": "",
+            "key": "t5",
+            "cardKeys": [
+              "t5c0"
+            ],
+            "issues": []
+          },
+          {
+            "page": 23,
+            "claim": "Reinsurance is designed to protect an insurer from large, volatile, or accumulated insurance losses.",
+            "sourceIds": [
+              "p23s0"
+            ],
+            "exclusionReason": "",
+            "key": "t6",
+            "cardKeys": [
+              "t6c0"
+            ],
+            "issues": []
+          },
+          {
+            "page": 23,
+            "claim": "Reinsurance involves ceded premium and claim recoveries as its financial feature.",
+            "sourceIds": [
+              "p23s0"
+            ],
+            "exclusionReason": "",
+            "key": "t7",
+            "cardKeys": [
+              "t7c0"
+            ],
+            "issues": []
+          },
+          {
+            "page": 23,
+            "claim": "Captive insurance is used to finance a corporate group's own risks with risks retained within the group.",
+            "sourceIds": [
+              "p23s0"
+            ],
+            "exclusionReason": "",
+            "key": "t8",
+            "cardKeys": [
+              "t8c0"
+            ],
+            "issues": []
+          },
+          {
+            "page": 23,
+            "claim": "Captive insurance involves risk retention with external protection when needed as a financial feature.",
+            "sourceIds": [
+              "p23s0"
+            ],
+            "exclusionReason": "",
+            "key": "t9",
+            "cardKeys": [
+              "t9c0"
+            ],
+            "issues": []
+          },
+          {
+            "page": 23,
+            "claim": "Insurance product classification can overlap, but the purpose and risk transfer are more important than the label.",
+            "sourceIds": [
+              "p23s0"
+            ],
+            "exclusionReason": "",
+            "key": "t10",
+            "cardKeys": [
+              "t10c0"
+            ],
+            "issues": []
+          }
+        ],
+        "cards": [
+          {
+            "topic": "Life Insurance Products",
+            "topicDefinition": "Life insurance products are designed to protect income or build savings. They are associated with benefits related to death, longevity, retirement, or savings.",
+            "question": "What are life insurance products designed to do and what benefits are they associated with?",
+            "answer": "They are designed to protect income or build savings and are associated with death, longevity, retirement, or savings benefits.",
+            "explanation": "Life insurance products focus on providing financial protection or savings accumulation. The associated benefits are typically financial payouts upon events like death, reaching retirement age, or upon the completion of a savings term, ensuring financial security over a long duration.",
+            "kind": "mechanism",
+            "objective": "Understand the design and associated benefits of life insurance products.",
+            "sources": [
+              {
+                "sourceId": "p23s0"
+              }
+            ],
+            "visualDescription": "",
+            "key": "t0c0"
+          },
+          {
+            "topic": "Life Insurance Products",
+            "topicDefinition": "Life insurance products are designed to protect income or build savings. They are associated with benefits related to death, longevity, retirement, or savings.",
+            "question": "What are the financial features of life insurance products?",
+            "answer": "Long duration and investment sensitivity.",
+            "explanation": "Life insurance products often require long-term financial commitment, which makes their duration longer. They are sensitive to investment returns because the premiums collected are typically invested until they are paid out as benefits, hence investment sensitivity is a key feature.",
+            "kind": "mechanism",
+            "objective": "Identify the financial features of life insurance products.",
+            "sources": [
+              {
+                "sourceId": "p23s0"
+              }
+            ],
+            "visualDescription": "",
+            "key": "t1c0"
+          },
+          {
+            "topic": "Property and Casualty Insurance Products",
+            "topicDefinition": "Property and casualty insurance products protect property and cover legal liabilities, addressing risks such as motor, property, accident, or liability losses.",
+            "question": "What do property and casualty insurance products protect and cover?",
+            "answer": "They protect property and legal liability, covering motor, property, accident, or liability losses.",
+            "explanation": "These products provide coverage against tangible risks to property and potential legal claims against the insured. They encompass a range of protection from physical damage to properties to liabilities arising from accidents.",
+            "kind": "mechanism",
+            "objective": "Identify the protections and coverage provided by property and casualty insurance products.",
+            "sources": [
+              {
+                "sourceId": "p23s0"
+              }
+            ],
+            "visualDescription": "",
+            "key": "t2c0"
+          },
+          {
+            "topic": "Property and Casualty Insurance Products",
+            "topicDefinition": "Property and casualty insurance products protect property and cover legal liabilities, addressing risks such as motor, property, accident, or liability losses.",
+            "question": "What financial features are associated with property and casualty insurance products?",
+            "answer": "Claims frequency and severity.",
+            "explanation": "The financial stability of property and casualty insurance products relies heavily on understanding and predicting how often claims will occur (frequency) and how costly each claim might be (severity), impacting the insurer's profitability and pricing strategies.",
+            "kind": "mechanism",
+            "objective": "Understand the financial features important in property and casualty insurance.",
+            "sources": [
+              {
+                "sourceId": "p23s0"
+              }
+            ],
+            "visualDescription": "",
+            "key": "t3c0"
+          },
+          {
+            "topic": "Health and Accident Insurance Products",
+            "topicDefinition": "Health and accident insurance products fund medical care or replace income, covering risks like medical expenses, disability, or accidents.",
+            "question": "What are health and accident insurance products intended to fund, and what risks are they associated with?",
+            "answer": "They fund medical care or replace income, and are associated with medical expense, disability, or accident risks.",
+            "explanation": "These insurance products are specifically designed to provide financial assistance for medical treatment costs or loss of income due to disability or accidents, ensuring individuals can manage unforeseen health-related expenses.",
+            "kind": "mechanism",
+            "objective": "Identify the purpose and associated risks of health and accident insurance products.",
+            "sources": [
+              {
+                "sourceId": "p23s0"
+              }
+            ],
+            "visualDescription": "",
+            "key": "t4c0"
+          },
+          {
+            "topic": "Health and Accident Insurance Products",
+            "topicDefinition": "Health and accident insurance products fund medical care or replace income, covering risks like medical expenses, disability, or accidents.",
+            "question": "What financial features are commonly seen with health and accident insurance products?",
+            "answer": "Claims experience and healthcare inflation.",
+            "explanation": "The cost of claims in health and accident insurance is directly influenced by how frequent and severe the claims are (claims experience) as well as the inflation in healthcare costs, affecting long-term financial planning and premium determination.",
+            "kind": "mechanism",
+            "objective": "Understand the financial features of health and accident insurance products.",
+            "sources": [
+              {
+                "sourceId": "p23s0"
+              }
+            ],
+            "visualDescription": "",
+            "key": "t5c0"
+          },
+          {
+            "topic": "Reinsurance",
+            "topicDefinition": "Reinsurance is designed to protect an insurer from substantial losses by transferring portions of risk to other insurance entities, thus stabilizing insurers' financials.",
+            "question": "What is the primary purpose of reinsurance?",
+            "answer": "To protect an insurer from large, volatile, or accumulated insurance losses.",
+            "explanation": "Reinsurance allows primary insurers to mitigate risk by sharing potential huge losses with other insurers, providing stability and capacity to underwrite more policies or large individual risks.",
+            "kind": "mechanism",
+            "objective": "Understand the purpose of reinsurance in insurance risk management.",
+            "sources": [
+              {
+                "sourceId": "p23s0"
+              }
+            ],
+            "visualDescription": "",
+            "key": "t6c0"
+          },
+          {
+            "topic": "Reinsurance",
+            "topicDefinition": "Reinsurance is designed to protect an insurer from substantial losses by transferring portions of risk to other insurance entities, thus stabilizing insurers' financials.",
+            "question": "What financial features are associated with reinsurance?",
+            "answer": "Ceded premium and claim recoveries.",
+            "explanation": "Reinsurance involves the transfer of premium revenue—called ceded premium—to a reinsurer, which in return, reimburses or covers the primary insurer for claims made on the policies reinsured, supporting financial risk management.",
+            "kind": "mechanism",
+            "objective": "Identify the financial characteristics of reinsurance.",
+            "sources": [
+              {
+                "sourceId": "p23s0"
+              }
+            ],
+            "visualDescription": "",
+            "key": "t7c0"
+          },
+          {
+            "topic": "Captive Insurance",
+            "topicDefinition": "Captive insurance is used to finance a corporate group's own risks by retaining them within the group, often self-insuring up to a certain limit, with external coverage for larger risks.",
+            "question": "What is the purpose of captive insurance?",
+            "answer": "To finance a corporate group's own risks with risks retained within the group.",
+            "explanation": "Captive insurance allows corporations to manage their own insurance needs directly, customize coverage, and potentially reduce costs by not relying solely on traditional insurers, retaining risks within the group up to an established threshold.",
+            "kind": "mechanism",
+            "objective": "Understand the purpose of captive insurance for corporate risk management.",
+            "sources": [
+              {
+                "sourceId": "p23s0"
+              }
+            ],
+            "visualDescription": "",
+            "key": "t8c0"
+          },
+          {
+            "topic": "Captive Insurance",
+            "topicDefinition": "Captive insurance is used to finance a corporate group's own risks by retaining them within the group, often self-insuring up to a certain limit, with external coverage for larger risks.",
+            "question": "What financial feature is involved in captive insurance?",
+            "answer": "Risk retention with external protection when needed.",
+            "explanation": "Captive insurance enables a corporate group to retain daily risk exposures, thereby financing them internally. However, for larger or unexpected losses, the group may secure external insurance protection to mitigate potential financial impacts.",
+            "kind": "mechanism",
+            "objective": "Identify the financial feature of captive insurance.",
+            "sources": [
+              {
+                "sourceId": "p23s0"
+              }
+            ],
+            "visualDescription": "",
+            "key": "t9c0"
+          },
+          {
+            "topic": "Insurance Product Classification",
+            "topicDefinition": "Insurance products can have overlapping classifications where the purpose and risk transfer of the product are more significant than its label.",
+            "question": "Why does insurance product classification sometimes overlap?",
+            "answer": "Because the purpose and risk transfer are more important than the label.",
+            "explanation": "While products may be labeled distinctly, such as life, health, or property insurance, the underlying risk management goals and mechanisms of risk transfer often overlap, indicating shared objectives across classifications.",
+            "kind": "mechanism",
+            "objective": "Understand why insurance product classification can overlap.",
+            "sources": [
+              {
+                "sourceId": "p23s0"
+              }
+            ],
+            "visualDescription": "",
+            "key": "t10c0"
+          }
+        ]
+      },
+      "review": {
+        "targets": [
+          {
+            "key": "t0",
+            "verdict": "supported",
+            "atomic": true,
+            "coverageComplete": true,
+            "reason": "The target properly identifies life insurance products' design purpose and associated benefits, directly supported by the provided source."
+          },
+          {
+            "key": "t1",
+            "verdict": "supported",
+            "atomic": true,
+            "coverageComplete": true,
+            "reason": "The target accurately states the financial feature of life insurance products as per the source."
+          },
+          {
+            "key": "t2",
+            "verdict": "supported",
+            "atomic": true,
+            "coverageComplete": true,
+            "reason": "The target correctly summarizes the purpose and coverage of property and casualty insurance products, directly supported by the source material."
+          },
+          {
+            "key": "t3",
+            "verdict": "supported",
+            "atomic": true,
+            "coverageComplete": true,
+            "reason": "The target accurately describes the financial features of property and casualty insurance products, aligning with the source."
+          },
+          {
+            "key": "t4",
+            "verdict": "supported",
+            "atomic": true,
+            "coverageComplete": true,
+            "reason": "The target accurately reflects the design purpose and associated risks of health and accident insurance products, supported by the source information."
+          },
+          {
+            "key": "t5",
+            "verdict": "supported",
+            "atomic": true,
+            "coverageComplete": true,
+            "reason": "The target correctly identifies the financial features associated with health and accident insurance products, directly supported by the source."
+          },
+          {
+            "key": "t6",
+            "verdict": "supported",
+            "atomic": true,
+            "coverageComplete": true,
+            "reason": "The target correctly describes the purpose of reinsurance as per the source."
+          },
+          {
+            "key": "t7",
+            "verdict": "supported",
+            "atomic": true,
+            "coverageComplete": true,
+            "reason": "The target accurately describes financial features associated with reinsurance, as supported by the source."
+          },
+          {
+            "key": "t8",
+            "verdict": "supported",
+            "atomic": true,
+            "coverageComplete": true,
+            "reason": "The target accurately describes the purpose of captive insurance, aligning with the source text."
+          },
+          {
+            "key": "t9",
+            "verdict": "supported",
+            "atomic": true,
+            "coverageComplete": true,
+            "reason": "The target correctly identifies the financial feature associated with captive insurance, as stated in the source."
+          },
+          {
+            "key": "t10",
+            "verdict": "supported",
+            "atomic": true,
+            "coverageComplete": true,
+            "reason": "The target accurately explains why insurance product classification can overlap, directly supported by the source."
+          }
+        ],
+        "decisions": [
+          {
+            "key": "t0c0",
+            "complete": true,
+            "scopeCorrect": true,
+            "atomic": true,
+            "unambiguous": true,
+            "relevant": true,
+            "requiresVisualEvidence": false,
+            "duplicateOf": "",
+            "reason": "The field is directly supported by the source and appropriately scoped to its subject matter.",
+            "claims": [
+              {
+                "text": "Topic: Life Insurance Products\nConcept definition: Life insurance products are designed to protect income or build savings. They are associated with benefits related to death, longevity, retirement, or savings.\nQuestion: What are life insurance products designed to do and what benefits are they associated with?\nAnswer: They are designed to protect income or build savings and are associated with death, longevity, retirement, or savings benefits.\nExplanation: Life insurance products focus on providing financial protection or savings accumulation. The associated benefits are typically financial payouts upon events like death, reaching retirement age, or upon the completion of a savings term, ensuring financial security over a long duration.",
+                "verdict": "supported",
+                "evidence": [
+                  {
+                    "sourceId": "p23s0",
+                    "quote": "Main insurance product families\n44\nFamily Customer need Typical risk or benefit Financial feature\nLife Protect income or build\nsavings\nDeath, longevity, retirement or\nsavings benefit\nLong duration and investment\nsensitivity\nProperty and\ncasualty\nProtect property and legal\nliability\nMotor, property, accident or liability\nloss\nClaims frequency and severity\nHealth and\naccident\nFund medical care or replace\nincome\nMedical expense, disability or\naccident\nClaims experience and\nhealthcare inflation\nReinsurance Protect an insurer Large, volatile or accumulated\ninsurance losses\nCeded premium and claim\nrecoveries\nCaptive\ninsurance\nFinance a corporate group's\nown risks\nRisks retained within the group Risk retention with external\nprotection when needed\nProduct classification can overlap. The purpose and risk transfer matter more than the label."
+                  }
+                ],
+                "reasoning": "The card focuses on the design and benefits of life insurance products as outlined in the source. It's scoped correctly, addresses a relevant insurance concept, and does not rely on visual content to convey its claim."
+              }
+            ]
+          },
+          {
+            "key": "t1c0",
+            "complete": true,
+            "scopeCorrect": true,
+            "atomic": true,
+            "unambiguous": true,
+            "relevant": true,
+            "requiresVisualEvidence": false,
+            "duplicateOf": "",
+            "reason": "The claim concerning the financial aspects of life insurance products is directly supported by the evidence and clearly defined.",
+            "claims": [
+              {
+                "text": "Topic: Life Insurance Products\nConcept definition: Life insurance products are designed to protect income or build savings. They are associated with benefits related to death, longevity, retirement, or savings.\nQuestion: What are the financial features of life insurance products?\nAnswer: Long duration and investment sensitivity.\nExplanation: Life insurance products often require long-term financial commitment, which makes their duration longer. They are sensitive to investment returns because the premiums collected are typically invested until they are paid out as benefits, hence investment sensitivity is a key feature.",
+                "verdict": "supported",
+                "evidence": [
+                  {
+                    "sourceId": "p23s0",
+                    "quote": "Main insurance product families\n44\nFamily Customer need Typical risk or benefit Financial feature\nLife Protect income or build\nsavings\nDeath, longevity, retirement or\nsavings benefit\nLong duration and investment\nsensitivity\nProperty and\ncasualty\nProtect property and legal\nliability\nMotor, property, accident or liability\nloss\nClaims frequency and severity\nHealth and\naccident\nFund medical care or replace\nincome\nMedical expense, disability or\naccident\nClaims experience and\nhealthcare inflation\nReinsurance Protect an insurer Large, volatile or accumulated\ninsurance losses\nCeded premium and claim\nrecoveries\nCaptive\ninsurance\nFinance a corporate group's\nown risks\nRisks retained within the group Risk retention with external\nprotection when needed\nProduct classification can overlap. The purpose and risk transfer matter more than the label."
+                  }
+                ],
+                "reasoning": "The source supports the claim about financial features of life insurance products, stating they involve long duration and investment sensitivity."
+              }
+            ]
+          },
+          {
+            "key": "t2c0",
+            "complete": true,
+            "scopeCorrect": true,
+            "atomic": true,
+            "unambiguous": true,
+            "relevant": true,
+            "requiresVisualEvidence": false,
+            "duplicateOf": "",
+            "reason": "The claim accurately describes the purpose of property and casualty insurance products, directly supported by the source.",
+            "claims": [
+              {
+                "text": "Topic: Property and Casualty Insurance Products\nConcept definition: Property and casualty insurance products protect property and cover legal liabilities, addressing risks such as motor, property, accident, or liability losses.\nQuestion: What do property and casualty insurance products protect and cover?\nAnswer: They protect property and legal liability, covering motor, property, accident, or liability losses.\nExplanation: These products provide coverage against tangible risks to property and potential legal claims against the insured. They encompass a range of protection from physical damage to properties to liabilities arising from accidents.",
+                "verdict": "supported",
+                "evidence": [
+                  {
+                    "sourceId": "p23s0",
+                    "quote": "Main insurance product families\n44\nFamily Customer need Typical risk or benefit Financial feature\nLife Protect income or build\nsavings\nDeath, longevity, retirement or\nsavings benefit\nLong duration and investment\nsensitivity\nProperty and\ncasualty\nProtect property and legal\nliability\nMotor, property, accident or liability\nloss\nClaims frequency and severity\nHealth and\naccident\nFund medical care or replace\nincome\nMedical expense, disability or\naccident\nClaims experience and\nhealthcare inflation\nReinsurance Protect an insurer Large, volatile or accumulated\ninsurance losses\nCeded premium and claim\nrecoveries\nCaptive\ninsurance\nFinance a corporate group's\nown risks\nRisks retained within the group Risk retention with external\nprotection when needed\nProduct classification can overlap. The purpose and risk transfer matter more than the label."
+                  }
+                ],
+                "reasoning": "The focus on the protections and coverage provided by property and casualty insurance products aligns with source definitions."
+              }
+            ]
+          },
+          {
+            "key": "t3c0",
+            "complete": true,
+            "scopeCorrect": true,
+            "atomic": true,
+            "unambiguous": true,
+            "relevant": true,
+            "requiresVisualEvidence": false,
+            "duplicateOf": "",
+            "reason": "The claim about financial features associated with property and casualty insurance is directly supported by the source material.",
+            "claims": [
+              {
+                "text": "Topic: Property and Casualty Insurance Products\nConcept definition: Property and casualty insurance products protect property and cover legal liabilities, addressing risks such as motor, property, accident, or liability losses.\nQuestion: What financial features are associated with property and casualty insurance products?\nAnswer: Claims frequency and severity.\nExplanation: The financial stability of property and casualty insurance products relies heavily on understanding and predicting how often claims will occur (frequency) and how costly each claim might be (severity), impacting the insurer's profitability and pricing strategies.",
+                "verdict": "supported",
+                "evidence": [
+                  {
+                    "sourceId": "p23s0",
+                    "quote": "Main insurance product families\n44\nFamily Customer need Typical risk or benefit Financial feature\nLife Protect income or build\nsavings\nDeath, longevity, retirement or\nsavings benefit\nLong duration and investment\nsensitivity\nProperty and\ncasualty\nProtect property and legal\nliability\nMotor, property, accident or liability\nloss\nClaims frequency and severity\nHealth and\naccident\nFund medical care or replace\nincome\nMedical expense, disability or\naccident\nClaims experience and\nhealthcare inflation\nReinsurance Protect an insurer Large, volatile or accumulated\ninsurance losses\nCeded premium and claim\nrecoveries\nCaptive\ninsurance\nFinance a corporate group's\nown risks\nRisks retained within the group Risk retention with external\nprotection when needed\nProduct classification can overlap. The purpose and risk transfer matter more than the label."
+                  }
+                ],
+                "reasoning": "Claims frequency and severity as financial features of property and casualty insurance products are clearly discussed in the source."
+              }
+            ]
+          },
+          {
+            "key": "t4c0",
+            "complete": true,
+            "scopeCorrect": true,
+            "atomic": true,
+            "unambiguous": true,
+            "relevant": true,
+            "requiresVisualEvidence": false,
+            "duplicateOf": "",
+            "reason": "The target accurately describes health and accident insurance products' purposes and associated risks as per the source.",
+            "claims": [
+              {
+                "text": "Topic: Health and Accident Insurance Products\nConcept definition: Health and accident insurance products fund medical care or replace income, covering risks like medical expenses, disability, or accidents.\nQuestion: What are health and accident insurance products intended to fund, and what risks are they associated with?\nAnswer: They fund medical care or replace income, and are associated with medical expense, disability, or accident risks.\nExplanation: These insurance products are specifically designed to provide financial assistance for medical treatment costs or loss of income due to disability or accidents, ensuring individuals can manage unforeseen health-related expenses.",
+                "verdict": "supported",
+                "evidence": [
+                  {
+                    "sourceId": "p23s0",
+                    "quote": "Main insurance product families\n44\nFamily Customer need Typical risk or benefit Financial feature\nLife Protect income or build\nsavings\nDeath, longevity, retirement or\nsavings benefit\nLong duration and investment\nsensitivity\nProperty and\ncasualty\nProtect property and legal\nliability\nMotor, property, accident or liability\nloss\nClaims frequency and severity\nHealth and\naccident\nFund medical care or replace\nincome\nMedical expense, disability or\naccident\nClaims experience and\nhealthcare inflation\nReinsurance Protect an insurer Large, volatile or accumulated\ninsurance losses\nCeded premium and claim\nrecoveries\nCaptive\ninsurance\nFinance a corporate group's\nown risks\nRisks retained within the group Risk retention with external\nprotection when needed\nProduct classification can overlap. The purpose and risk transfer matter more than the label."
+                  }
+                ],
+                "reasoning": "The explanation on the purpose behind health and accident products is directly supported by the given source."
+              }
+            ]
+          },
+          {
+            "key": "t5c0",
+            "complete": true,
+            "scopeCorrect": true,
+            "atomic": true,
+            "unambiguous": true,
+            "relevant": true,
+            "requiresVisualEvidence": false,
+            "duplicateOf": "",
+            "reason": "The financial features of health and accident insurance are correctly stated and supported by the source.",
+            "claims": [
+              {
+                "text": "Topic: Health and Accident Insurance Products\nConcept definition: Health and accident insurance products fund medical care or replace income, covering risks like medical expenses, disability, or accidents.\nQuestion: What financial features are commonly seen with health and accident insurance products?\nAnswer: Claims experience and healthcare inflation.\nExplanation: The cost of claims in health and accident insurance is directly influenced by how frequent and severe the claims are (claims experience) as well as the inflation in healthcare costs, affecting long-term financial planning and premium determination.",
+                "verdict": "supported",
+                "evidence": [
+                  {
+                    "sourceId": "p23s0",
+                    "quote": "Main insurance product families\n44\nFamily Customer need Typical risk or benefit Financial feature\nLife Protect income or build\nsavings\nDeath, longevity, retirement or\nsavings benefit\nLong duration and investment\nsensitivity\nProperty and\ncasualty\nProtect property and legal\nliability\nMotor, property, accident or liability\nloss\nClaims frequency and severity\nHealth and\naccident\nFund medical care or replace\nincome\nMedical expense, disability or\naccident\nClaims experience and\nhealthcare inflation\nReinsurance Protect an insurer Large, volatile or accumulated\ninsurance losses\nCeded premium and claim\nrecoveries\nCaptive\ninsurance\nFinance a corporate group's\nown risks\nRisks retained within the group Risk retention with external\nprotection when needed\nProduct classification can overlap. The purpose and risk transfer matter more than the label."
+                  }
+                ],
+                "reasoning": "The source defines claims experience and healthcare inflation as relevant financial features, which aligns with the claim."
+              }
+            ]
+          },
+          {
+            "key": "t6c0",
+            "complete": true,
+            "scopeCorrect": true,
+            "atomic": true,
+            "unambiguous": true,
+            "relevant": true,
+            "requiresVisualEvidence": false,
+            "duplicateOf": "",
+            "reason": "The description of the primary purpose of reinsurance is clearly supported by the provided source.",
+            "claims": [
+              {
+                "text": "Topic: Reinsurance\nConcept definition: Reinsurance is designed to protect an insurer from substantial losses by transferring portions of risk to other insurance entities, thus stabilizing insurers' financials.\nQuestion: What is the primary purpose of reinsurance?\nAnswer: To protect an insurer from large, volatile, or accumulated insurance losses.\nExplanation: Reinsurance allows primary insurers to mitigate risk by sharing potential huge losses with other insurers, providing stability and capacity to underwrite more policies or large individual risks.",
+                "verdict": "supported",
+                "evidence": [
+                  {
+                    "sourceId": "p23s0",
+                    "quote": "Main insurance product families\n44\nFamily Customer need Typical risk or benefit Financial feature\nLife Protect income or build\nsavings\nDeath, longevity, retirement or\nsavings benefit\nLong duration and investment\nsensitivity\nProperty and\ncasualty\nProtect property and legal\nliability\nMotor, property, accident or liability\nloss\nClaims frequency and severity\nHealth and\naccident\nFund medical care or replace\nincome\nMedical expense, disability or\naccident\nClaims experience and\nhealthcare inflation\nReinsurance Protect an insurer Large, volatile or accumulated\ninsurance losses\nCeded premium and claim\nrecoveries\nCaptive\ninsurance\nFinance a corporate group's\nown risks\nRisks retained within the group Risk retention with external\nprotection when needed\nProduct classification can overlap. The purpose and risk transfer matter more than the label."
+                  }
+                ],
+                "reasoning": "Reinsurance as protection against large losses is directly mentioned in the source, clarifying its primary purpose."
+              }
+            ]
+          },
+          {
+            "key": "t7c0",
+            "complete": true,
+            "scopeCorrect": true,
+            "atomic": true,
+            "unambiguous": true,
+            "relevant": true,
+            "requiresVisualEvidence": false,
+            "duplicateOf": "",
+            "reason": "The financial aspects of reinsurance are well-defined and substantiated by the source.",
+            "claims": [
+              {
+                "text": "Topic: Reinsurance\nConcept definition: Reinsurance is designed to protect an insurer from substantial losses by transferring portions of risk to other insurance entities, thus stabilizing insurers' financials.\nQuestion: What financial features are associated with reinsurance?\nAnswer: Ceded premium and claim recoveries.\nExplanation: Reinsurance involves the transfer of premium revenue—called ceded premium—to a reinsurer, which in return, reimburses or covers the primary insurer for claims made on the policies reinsured, supporting financial risk management.",
+                "verdict": "supported",
+                "evidence": [
+                  {
+                    "sourceId": "p23s0",
+                    "quote": "Main insurance product families\n44\nFamily Customer need Typical risk or benefit Financial feature\nLife Protect income or build\nsavings\nDeath, longevity, retirement or\nsavings benefit\nLong duration and investment\nsensitivity\nProperty and\ncasualty\nProtect property and legal\nliability\nMotor, property, accident or liability\nloss\nClaims frequency and severity\nHealth and\naccident\nFund medical care or replace\nincome\nMedical expense, disability or\naccident\nClaims experience and\nhealthcare inflation\nReinsurance Protect an insurer Large, volatile or accumulated\ninsurance losses\nCeded premium and claim\nrecoveries\nCaptive\ninsurance\nFinance a corporate group's\nown risks\nRisks retained within the group Risk retention with external\nprotection when needed\nProduct classification can overlap. The purpose and risk transfer matter more than the label."
+                  }
+                ],
+                "reasoning": "Information on ceded premiums and claim recoveries aligns with source content on reinsurance financial aspects."
+              }
+            ]
+          },
+          {
+            "key": "t8c0",
+            "complete": true,
+            "scopeCorrect": true,
+            "atomic": true,
+            "unambiguous": true,
+            "relevant": true,
+            "requiresVisualEvidence": false,
+            "duplicateOf": "",
+            "reason": "The purpose of captive insurance fits the definition and scope provided by the source.",
+            "claims": [
+              {
+                "text": "Topic: Captive Insurance\nConcept definition: Captive insurance is used to finance a corporate group's own risks by retaining them within the group, often self-insuring up to a certain limit, with external coverage for larger risks.\nQuestion: What is the purpose of captive insurance?\nAnswer: To finance a corporate group's own risks with risks retained within the group.\nExplanation: Captive insurance allows corporations to manage their own insurance needs directly, customize coverage, and potentially reduce costs by not relying solely on traditional insurers, retaining risks within the group up to an established threshold.",
+                "verdict": "supported",
+                "evidence": [
+                  {
+                    "sourceId": "p23s0",
+                    "quote": "Main insurance product families\n44\nFamily Customer need Typical risk or benefit Financial feature\nLife Protect income or build\nsavings\nDeath, longevity, retirement or\nsavings benefit\nLong duration and investment\nsensitivity\nProperty and\ncasualty\nProtect property and legal\nliability\nMotor, property, accident or liability\nloss\nClaims frequency and severity\nHealth and\naccident\nFund medical care or replace\nincome\nMedical expense, disability or\naccident\nClaims experience and\nhealthcare inflation\nReinsurance Protect an insurer Large, volatile or accumulated\ninsurance losses\nCeded premium and claim\nrecoveries\nCaptive\ninsurance\nFinance a corporate group's\nown risks\nRisks retained within the group Risk retention with external\nprotection when needed\nProduct classification can overlap. The purpose and risk transfer matter more than the label."
+                  }
+                ],
+                "reasoning": "The role of captive insurance to finance group risks aligns with the source's explanation."
+              }
+            ]
+          },
+          {
+            "key": "t9c0",
+            "complete": true,
+            "scopeCorrect": true,
+            "atomic": true,
+            "unambiguous": true,
+            "relevant": true,
+            "requiresVisualEvidence": false,
+            "duplicateOf": "",
+            "reason": "The financial feature of captive insurance is correctly derived from the source, supported by the source.",
+            "claims": [
+              {
+                "text": "Topic: Captive Insurance\nConcept definition: Captive insurance is used to finance a corporate group's own risks by retaining them within the group, often self-insuring up to a certain limit, with external coverage for larger risks.\nQuestion: What financial feature is involved in captive insurance?\nAnswer: Risk retention with external protection when needed.\nExplanation: Captive insurance enables a corporate group to retain daily risk exposures, thereby financing them internally. However, for larger or unexpected losses, the group may secure external insurance protection to mitigate potential financial impacts.",
+                "verdict": "supported",
+                "evidence": [
+                  {
+                    "sourceId": "p23s0",
+                    "quote": "Main insurance product families\n44\nFamily Customer need Typical risk or benefit Financial feature\nLife Protect income or build\nsavings\nDeath, longevity, retirement or\nsavings benefit\nLong duration and investment\nsensitivity\nProperty and\ncasualty\nProtect property and legal\nliability\nMotor, property, accident or liability\nloss\nClaims frequency and severity\nHealth and\naccident\nFund medical care or replace\nincome\nMedical expense, disability or\naccident\nClaims experience and\nhealthcare inflation\nReinsurance Protect an insurer Large, volatile or accumulated\ninsurance losses\nCeded premium and claim\nrecoveries\nCaptive\ninsurance\nFinance a corporate group's\nown risks\nRisks retained within the group Risk retention with external\nprotection when needed\nProduct classification can overlap. The purpose and risk transfer matter more than the label."
+                  }
+                ],
+                "reasoning": "The identification of risk retention with external protection accurately reflects the source material on captive insurance."
+              }
+            ]
+          },
+          {
+            "key": "t10c0",
+            "complete": true,
+            "scopeCorrect": true,
+            "atomic": true,
+            "unambiguous": true,
+            "relevant": true,
+            "requiresVisualEvidence": false,
+            "duplicateOf": "",
+            "reason": "The claim on overlapping insurance product classification is directly supported by the source.",
+            "claims": [
+              {
+                "text": "Topic: Insurance Product Classification\nConcept definition: Insurance products can have overlapping classifications where the purpose and risk transfer of the product are more significant than its label.\nQuestion: Why does insurance product classification sometimes overlap?\nAnswer: Because the purpose and risk transfer are more important than the label.\nExplanation: While products may be labeled distinctly, such as life, health, or property insurance, the underlying risk management goals and mechanisms of risk transfer often overlap, indicating shared objectives across classifications.",
+                "verdict": "supported",
+                "evidence": [
+                  {
+                    "sourceId": "p23s0",
+                    "quote": "Main insurance product families\n44\nFamily Customer need Typical risk or benefit Financial feature\nLife Protect income or build\nsavings\nDeath, longevity, retirement or\nsavings benefit\nLong duration and investment\nsensitivity\nProperty and\ncasualty\nProtect property and legal\nliability\nMotor, property, accident or liability\nloss\nClaims frequency and severity\nHealth and\naccident\nFund medical care or replace\nincome\nMedical expense, disability or\naccident\nClaims experience and\nhealthcare inflation\nReinsurance Protect an insurer Large, volatile or accumulated\ninsurance losses\nCeded premium and claim\nrecoveries\nCaptive\ninsurance\nFinance a corporate group's\nown risks\nRisks retained within the group Risk retention with external\nprotection when needed\nProduct classification can overlap. The purpose and risk transfer matter more than the label."
+                  }
+                ],
+                "reasoning": "Insurance product classification overlaps due to purpose and risk transfer, as conveyed in the source."
+              }
+            ]
+          }
+        ],
+        "pages": [
+          {
+            "page": 23,
+            "excluded": false,
+            "reason": "Contains substantive knowledge about insurance products.",
+            "objectives": [
+              {
+                "description": "Understand the design and associated benefits of life insurance products.",
+                "cardKeys": [
+                  "t0c0"
+                ]
+              },
+              {
+                "description": "Identify the financial features of life insurance products.",
+                "cardKeys": [
+                  "t1c0"
+                ]
+              },
+              {
+                "description": "Identify the protections and coverage provided by property and casualty insurance products.",
+                "cardKeys": [
+                  "t2c0"
+                ]
+              },
+              {
+                "description": "Understand the financial features important in property and casualty insurance.",
+                "cardKeys": [
+                  "t3c0"
+                ]
+              },
+              {
+                "description": "Identify the purpose and associated risks of health and accident insurance products.",
+                "cardKeys": [
+                  "t4c0"
+                ]
+              },
+              {
+                "description": "Understand the financial features of health and accident insurance products.",
+                "cardKeys": [
+                  "t5c0"
+                ]
+              },
+              {
+                "description": "Understand the purpose of reinsurance in insurance risk management.",
+                "cardKeys": [
+                  "t6c0"
+                ]
+              },
+              {
+                "description": "Identify the financial characteristics of reinsurance.",
+                "cardKeys": [
+                  "t7c0"
+                ]
+              },
+              {
+                "description": "Understand the purpose of captive insurance for corporate risk management.",
+                "cardKeys": [
+                  "t8c0"
+                ]
+              },
+              {
+                "description": "Identify the financial feature of captive insurance.",
+                "cardKeys": [
+                  "t9c0"
+                ]
+              },
+              {
+                "description": "Understand why insurance product classification can overlap.",
+                "cardKeys": [
+                  "t10c0"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "cards": [
+        {
+          "candidate": {
+            "topic": "Life Insurance Products",
+            "topicDefinition": "Life insurance products are designed to protect income or build savings. They are associated with benefits related to death, longevity, retirement, or savings.",
+            "question": "What are life insurance products designed to do and what benefits are they associated with?",
+            "answer": "They are designed to protect income or build savings and are associated with death, longevity, retirement, or savings benefits.",
+            "explanation": "Life insurance products focus on providing financial protection or savings accumulation. The associated benefits are typically financial payouts upon events like death, reaching retirement age, or upon the completion of a savings term, ensuring financial security over a long duration.",
+            "kind": "mechanism",
+            "objective": "Understand the design and associated benefits of life insurance products.",
+            "sources": [
+              {
+                "sourceId": "p23s0"
+              }
+            ],
+            "visualDescription": "",
+            "key": "t0c0"
+          },
+          "evidence": [
+            {
+              "documentId": "33d1997c-a357-4735-b507-8ba25e5292bd",
+              "page": 23,
+              "quote": "Main insurance product families\n44\nFamily Customer need Typical risk or benefit Financial feature\nLife Protect income or build\nsavings\nDeath, longevity, retirement or\nsavings benefit\nLong duration and investment\nsensitivity\nProperty and\ncasualty\nProtect property and legal\nliability\nMotor, property, accident or liability\nloss\nClaims frequency and severity\nHealth and\naccident\nFund medical care or replace\nincome\nMedical expense, disability or\naccident\nClaims experience and\nhealthcare inflation\nReinsurance Protect an insurer Large, volatile or accumulated\ninsurance losses\nCeded premium and claim\nrecoveries\nCaptive\ninsurance\nFinance a corporate group's\nown risks\nRisks retained within the group Risk retention with external\nprotection when needed\nProduct classification can overlap. The purpose and risk transfer matter more than the label."
+            }
+          ],
+          "issues": [],
+          "contractValid": true
+        },
+        {
+          "candidate": {
+            "topic": "Life Insurance Products",
+            "topicDefinition": "Life insurance products are designed to protect income or build savings. They are associated with benefits related to death, longevity, retirement, or savings.",
+            "question": "What are the financial features of life insurance products?",
+            "answer": "Long duration and investment sensitivity.",
+            "explanation": "Life insurance products often require long-term financial commitment, which makes their duration longer. They are sensitive to investment returns because the premiums collected are typically invested until they are paid out as benefits, hence investment sensitivity is a key feature.",
+            "kind": "mechanism",
+            "objective": "Identify the financial features of life insurance products.",
+            "sources": [
+              {
+                "sourceId": "p23s0"
+              }
+            ],
+            "visualDescription": "",
+            "key": "t1c0"
+          },
+          "evidence": [
+            {
+              "documentId": "33d1997c-a357-4735-b507-8ba25e5292bd",
+              "page": 23,
+              "quote": "Main insurance product families\n44\nFamily Customer need Typical risk or benefit Financial feature\nLife Protect income or build\nsavings\nDeath, longevity, retirement or\nsavings benefit\nLong duration and investment\nsensitivity\nProperty and\ncasualty\nProtect property and legal\nliability\nMotor, property, accident or liability\nloss\nClaims frequency and severity\nHealth and\naccident\nFund medical care or replace\nincome\nMedical expense, disability or\naccident\nClaims experience and\nhealthcare inflation\nReinsurance Protect an insurer Large, volatile or accumulated\ninsurance losses\nCeded premium and claim\nrecoveries\nCaptive\ninsurance\nFinance a corporate group's\nown risks\nRisks retained within the group Risk retention with external\nprotection when needed\nProduct classification can overlap. The purpose and risk transfer matter more than the label."
+            }
+          ],
+          "issues": [],
+          "contractValid": true
+        },
+        {
+          "candidate": {
+            "topic": "Property and Casualty Insurance Products",
+            "topicDefinition": "Property and casualty insurance products protect property and cover legal liabilities, addressing risks such as motor, property, accident, or liability losses.",
+            "question": "What do property and casualty insurance products protect and cover?",
+            "answer": "They protect property and legal liability, covering motor, property, accident, or liability losses.",
+            "explanation": "These products provide coverage against tangible risks to property and potential legal claims against the insured. They encompass a range of protection from physical damage to properties to liabilities arising from accidents.",
+            "kind": "mechanism",
+            "objective": "Identify the protections and coverage provided by property and casualty insurance products.",
+            "sources": [
+              {
+                "sourceId": "p23s0"
+              }
+            ],
+            "visualDescription": "",
+            "key": "t2c0"
+          },
+          "evidence": [
+            {
+              "documentId": "33d1997c-a357-4735-b507-8ba25e5292bd",
+              "page": 23,
+              "quote": "Main insurance product families\n44\nFamily Customer need Typical risk or benefit Financial feature\nLife Protect income or build\nsavings\nDeath, longevity, retirement or\nsavings benefit\nLong duration and investment\nsensitivity\nProperty and\ncasualty\nProtect property and legal\nliability\nMotor, property, accident or liability\nloss\nClaims frequency and severity\nHealth and\naccident\nFund medical care or replace\nincome\nMedical expense, disability or\naccident\nClaims experience and\nhealthcare inflation\nReinsurance Protect an insurer Large, volatile or accumulated\ninsurance losses\nCeded premium and claim\nrecoveries\nCaptive\ninsurance\nFinance a corporate group's\nown risks\nRisks retained within the group Risk retention with external\nprotection when needed\nProduct classification can overlap. The purpose and risk transfer matter more than the label."
+            }
+          ],
+          "issues": [],
+          "contractValid": true
+        },
+        {
+          "candidate": {
+            "topic": "Property and Casualty Insurance Products",
+            "topicDefinition": "Property and casualty insurance products protect property and cover legal liabilities, addressing risks such as motor, property, accident, or liability losses.",
+            "question": "What financial features are associated with property and casualty insurance products?",
+            "answer": "Claims frequency and severity.",
+            "explanation": "The financial stability of property and casualty insurance products relies heavily on understanding and predicting how often claims will occur (frequency) and how costly each claim might be (severity), impacting the insurer's profitability and pricing strategies.",
+            "kind": "mechanism",
+            "objective": "Understand the financial features important in property and casualty insurance.",
+            "sources": [
+              {
+                "sourceId": "p23s0"
+              }
+            ],
+            "visualDescription": "",
+            "key": "t3c0"
+          },
+          "evidence": [
+            {
+              "documentId": "33d1997c-a357-4735-b507-8ba25e5292bd",
+              "page": 23,
+              "quote": "Main insurance product families\n44\nFamily Customer need Typical risk or benefit Financial feature\nLife Protect income or build\nsavings\nDeath, longevity, retirement or\nsavings benefit\nLong duration and investment\nsensitivity\nProperty and\ncasualty\nProtect property and legal\nliability\nMotor, property, accident or liability\nloss\nClaims frequency and severity\nHealth and\naccident\nFund medical care or replace\nincome\nMedical expense, disability or\naccident\nClaims experience and\nhealthcare inflation\nReinsurance Protect an insurer Large, volatile or accumulated\ninsurance losses\nCeded premium and claim\nrecoveries\nCaptive\ninsurance\nFinance a corporate group's\nown risks\nRisks retained within the group Risk retention with external\nprotection when needed\nProduct classification can overlap. The purpose and risk transfer matter more than the label."
+            }
+          ],
+          "issues": [],
+          "contractValid": true
+        },
+        {
+          "candidate": {
+            "topic": "Health and Accident Insurance Products",
+            "topicDefinition": "Health and accident insurance products fund medical care or replace income, covering risks like medical expenses, disability, or accidents.",
+            "question": "What are health and accident insurance products intended to fund, and what risks are they associated with?",
+            "answer": "They fund medical care or replace income, and are associated with medical expense, disability, or accident risks.",
+            "explanation": "These insurance products are specifically designed to provide financial assistance for medical treatment costs or loss of income due to disability or accidents, ensuring individuals can manage unforeseen health-related expenses.",
+            "kind": "mechanism",
+            "objective": "Identify the purpose and associated risks of health and accident insurance products.",
+            "sources": [
+              {
+                "sourceId": "p23s0"
+              }
+            ],
+            "visualDescription": "",
+            "key": "t4c0"
+          },
+          "evidence": [
+            {
+              "documentId": "33d1997c-a357-4735-b507-8ba25e5292bd",
+              "page": 23,
+              "quote": "Main insurance product families\n44\nFamily Customer need Typical risk or benefit Financial feature\nLife Protect income or build\nsavings\nDeath, longevity, retirement or\nsavings benefit\nLong duration and investment\nsensitivity\nProperty and\ncasualty\nProtect property and legal\nliability\nMotor, property, accident or liability\nloss\nClaims frequency and severity\nHealth and\naccident\nFund medical care or replace\nincome\nMedical expense, disability or\naccident\nClaims experience and\nhealthcare inflation\nReinsurance Protect an insurer Large, volatile or accumulated\ninsurance losses\nCeded premium and claim\nrecoveries\nCaptive\ninsurance\nFinance a corporate group's\nown risks\nRisks retained within the group Risk retention with external\nprotection when needed\nProduct classification can overlap. The purpose and risk transfer matter more than the label."
+            }
+          ],
+          "issues": [],
+          "contractValid": true
+        },
+        {
+          "candidate": {
+            "topic": "Health and Accident Insurance Products",
+            "topicDefinition": "Health and accident insurance products fund medical care or replace income, covering risks like medical expenses, disability, or accidents.",
+            "question": "What financial features are commonly seen with health and accident insurance products?",
+            "answer": "Claims experience and healthcare inflation.",
+            "explanation": "The cost of claims in health and accident insurance is directly influenced by how frequent and severe the claims are (claims experience) as well as the inflation in healthcare costs, affecting long-term financial planning and premium determination.",
+            "kind": "mechanism",
+            "objective": "Understand the financial features of health and accident insurance products.",
+            "sources": [
+              {
+                "sourceId": "p23s0"
+              }
+            ],
+            "visualDescription": "",
+            "key": "t5c0"
+          },
+          "evidence": [
+            {
+              "documentId": "33d1997c-a357-4735-b507-8ba25e5292bd",
+              "page": 23,
+              "quote": "Main insurance product families\n44\nFamily Customer need Typical risk or benefit Financial feature\nLife Protect income or build\nsavings\nDeath, longevity, retirement or\nsavings benefit\nLong duration and investment\nsensitivity\nProperty and\ncasualty\nProtect property and legal\nliability\nMotor, property, accident or liability\nloss\nClaims frequency and severity\nHealth and\naccident\nFund medical care or replace\nincome\nMedical expense, disability or\naccident\nClaims experience and\nhealthcare inflation\nReinsurance Protect an insurer Large, volatile or accumulated\ninsurance losses\nCeded premium and claim\nrecoveries\nCaptive\ninsurance\nFinance a corporate group's\nown risks\nRisks retained within the group Risk retention with external\nprotection when needed\nProduct classification can overlap. The purpose and risk transfer matter more than the label."
+            }
+          ],
+          "issues": [],
+          "contractValid": true
+        },
+        {
+          "candidate": {
+            "topic": "Reinsurance",
+            "topicDefinition": "Reinsurance is designed to protect an insurer from substantial losses by transferring portions of risk to other insurance entities, thus stabilizing insurers' financials.",
+            "question": "What is the primary purpose of reinsurance?",
+            "answer": "To protect an insurer from large, volatile, or accumulated insurance losses.",
+            "explanation": "Reinsurance allows primary insurers to mitigate risk by sharing potential huge losses with other insurers, providing stability and capacity to underwrite more policies or large individual risks.",
+            "kind": "mechanism",
+            "objective": "Understand the purpose of reinsurance in insurance risk management.",
+            "sources": [
+              {
+                "sourceId": "p23s0"
+              }
+            ],
+            "visualDescription": "",
+            "key": "t6c0"
+          },
+          "evidence": [
+            {
+              "documentId": "33d1997c-a357-4735-b507-8ba25e5292bd",
+              "page": 23,
+              "quote": "Main insurance product families\n44\nFamily Customer need Typical risk or benefit Financial feature\nLife Protect income or build\nsavings\nDeath, longevity, retirement or\nsavings benefit\nLong duration and investment\nsensitivity\nProperty and\ncasualty\nProtect property and legal\nliability\nMotor, property, accident or liability\nloss\nClaims frequency and severity\nHealth and\naccident\nFund medical care or replace\nincome\nMedical expense, disability or\naccident\nClaims experience and\nhealthcare inflation\nReinsurance Protect an insurer Large, volatile or accumulated\ninsurance losses\nCeded premium and claim\nrecoveries\nCaptive\ninsurance\nFinance a corporate group's\nown risks\nRisks retained within the group Risk retention with external\nprotection when needed\nProduct classification can overlap. The purpose and risk transfer matter more than the label."
+            }
+          ],
+          "issues": [],
+          "contractValid": true
+        },
+        {
+          "candidate": {
+            "topic": "Reinsurance",
+            "topicDefinition": "Reinsurance is designed to protect an insurer from substantial losses by transferring portions of risk to other insurance entities, thus stabilizing insurers' financials.",
+            "question": "What financial features are associated with reinsurance?",
+            "answer": "Ceded premium and claim recoveries.",
+            "explanation": "Reinsurance involves the transfer of premium revenue—called ceded premium—to a reinsurer, which in return, reimburses or covers the primary insurer for claims made on the policies reinsured, supporting financial risk management.",
+            "kind": "mechanism",
+            "objective": "Identify the financial characteristics of reinsurance.",
+            "sources": [
+              {
+                "sourceId": "p23s0"
+              }
+            ],
+            "visualDescription": "",
+            "key": "t7c0"
+          },
+          "evidence": [
+            {
+              "documentId": "33d1997c-a357-4735-b507-8ba25e5292bd",
+              "page": 23,
+              "quote": "Main insurance product families\n44\nFamily Customer need Typical risk or benefit Financial feature\nLife Protect income or build\nsavings\nDeath, longevity, retirement or\nsavings benefit\nLong duration and investment\nsensitivity\nProperty and\ncasualty\nProtect property and legal\nliability\nMotor, property, accident or liability\nloss\nClaims frequency and severity\nHealth and\naccident\nFund medical care or replace\nincome\nMedical expense, disability or\naccident\nClaims experience and\nhealthcare inflation\nReinsurance Protect an insurer Large, volatile or accumulated\ninsurance losses\nCeded premium and claim\nrecoveries\nCaptive\ninsurance\nFinance a corporate group's\nown risks\nRisks retained within the group Risk retention with external\nprotection when needed\nProduct classification can overlap. The purpose and risk transfer matter more than the label."
+            }
+          ],
+          "issues": [],
+          "contractValid": true
+        },
+        {
+          "candidate": {
+            "topic": "Captive Insurance",
+            "topicDefinition": "Captive insurance is used to finance a corporate group's own risks by retaining them within the group, often self-insuring up to a certain limit, with external coverage for larger risks.",
+            "question": "What is the purpose of captive insurance?",
+            "answer": "To finance a corporate group's own risks with risks retained within the group.",
+            "explanation": "Captive insurance allows corporations to manage their own insurance needs directly, customize coverage, and potentially reduce costs by not relying solely on traditional insurers, retaining risks within the group up to an established threshold.",
+            "kind": "mechanism",
+            "objective": "Understand the purpose of captive insurance for corporate risk management.",
+            "sources": [
+              {
+                "sourceId": "p23s0"
+              }
+            ],
+            "visualDescription": "",
+            "key": "t8c0"
+          },
+          "evidence": [
+            {
+              "documentId": "33d1997c-a357-4735-b507-8ba25e5292bd",
+              "page": 23,
+              "quote": "Main insurance product families\n44\nFamily Customer need Typical risk or benefit Financial feature\nLife Protect income or build\nsavings\nDeath, longevity, retirement or\nsavings benefit\nLong duration and investment\nsensitivity\nProperty and\ncasualty\nProtect property and legal\nliability\nMotor, property, accident or liability\nloss\nClaims frequency and severity\nHealth and\naccident\nFund medical care or replace\nincome\nMedical expense, disability or\naccident\nClaims experience and\nhealthcare inflation\nReinsurance Protect an insurer Large, volatile or accumulated\ninsurance losses\nCeded premium and claim\nrecoveries\nCaptive\ninsurance\nFinance a corporate group's\nown risks\nRisks retained within the group Risk retention with external\nprotection when needed\nProduct classification can overlap. The purpose and risk transfer matter more than the label."
+            }
+          ],
+          "issues": [],
+          "contractValid": true
+        },
+        {
+          "candidate": {
+            "topic": "Captive Insurance",
+            "topicDefinition": "Captive insurance is used to finance a corporate group's own risks by retaining them within the group, often self-insuring up to a certain limit, with external coverage for larger risks.",
+            "question": "What financial feature is involved in captive insurance?",
+            "answer": "Risk retention with external protection when needed.",
+            "explanation": "Captive insurance enables a corporate group to retain daily risk exposures, thereby financing them internally. However, for larger or unexpected losses, the group may secure external insurance protection to mitigate potential financial impacts.",
+            "kind": "mechanism",
+            "objective": "Identify the financial feature of captive insurance.",
+            "sources": [
+              {
+                "sourceId": "p23s0"
+              }
+            ],
+            "visualDescription": "",
+            "key": "t9c0"
+          },
+          "evidence": [
+            {
+              "documentId": "33d1997c-a357-4735-b507-8ba25e5292bd",
+              "page": 23,
+              "quote": "Main insurance product families\n44\nFamily Customer need Typical risk or benefit Financial feature\nLife Protect income or build\nsavings\nDeath, longevity, retirement or\nsavings benefit\nLong duration and investment\nsensitivity\nProperty and\ncasualty\nProtect property and legal\nliability\nMotor, property, accident or liability\nloss\nClaims frequency and severity\nHealth and\naccident\nFund medical care or replace\nincome\nMedical expense, disability or\naccident\nClaims experience and\nhealthcare inflation\nReinsurance Protect an insurer Large, volatile or accumulated\ninsurance losses\nCeded premium and claim\nrecoveries\nCaptive\ninsurance\nFinance a corporate group's\nown risks\nRisks retained within the group Risk retention with external\nprotection when needed\nProduct classification can overlap. The purpose and risk transfer matter more than the label."
+            }
+          ],
+          "issues": [],
+          "contractValid": true
+        },
+        {
+          "candidate": {
+            "topic": "Insurance Product Classification",
+            "topicDefinition": "Insurance products can have overlapping classifications where the purpose and risk transfer of the product are more significant than its label.",
+            "question": "Why does insurance product classification sometimes overlap?",
+            "answer": "Because the purpose and risk transfer are more important than the label.",
+            "explanation": "While products may be labeled distinctly, such as life, health, or property insurance, the underlying risk management goals and mechanisms of risk transfer often overlap, indicating shared objectives across classifications.",
+            "kind": "mechanism",
+            "objective": "Understand why insurance product classification can overlap.",
+            "sources": [
+              {
+                "sourceId": "p23s0"
+              }
+            ],
+            "visualDescription": "",
+            "key": "t10c0"
+          },
+          "evidence": [
+            {
+              "documentId": "33d1997c-a357-4735-b507-8ba25e5292bd",
+              "page": 23,
+              "quote": "Main insurance product families\n44\nFamily Customer need Typical risk or benefit Financial feature\nLife Protect income or build\nsavings\nDeath, longevity, retirement or\nsavings benefit\nLong duration and investment\nsensitivity\nProperty and\ncasualty\nProtect property and legal\nliability\nMotor, property, accident or liability\nloss\nClaims frequency and severity\nHealth and\naccident\nFund medical care or replace\nincome\nMedical expense, disability or\naccident\nClaims experience and\nhealthcare inflation\nReinsurance Protect an insurer Large, volatile or accumulated\ninsurance losses\nCeded premium and claim\nrecoveries\nCaptive\ninsurance\nFinance a corporate group's\nown risks\nRisks retained within the group Risk retention with external\nprotection when needed\nProduct classification can overlap. The purpose and risk transfer matter more than the label."
+            }
+          ],
+          "issues": [],
+          "contractValid": true
+        }
+      ],
+      "excludedCards": [],
+      "diagnostics": []
+    },
+    {
+      "version": "direct-cards-v5-reviewed-targets",
+      "planPromptHash": "659162cc66be9f35d1ba64e86a5c33762de22b9aa8ea24f5fe3b34df909b91ed",
+      "writerPromptHash": "c44e9de277b03195fe3b9bf996350ff9f053e52c42950564b927116d6efe76b4",
+      "reviewPromptHash": "b3d35bcf40bd5fbbefa8c9ed29c449a1ec5acd145ea755aa0b43470f09937711",
+      "writerModel": "OpenAI (gpt-4o)",
+      "reviewModel": "OpenAI (gpt-4o)",
+      "cardDetail": "key-ideas",
+      "sourceRevision": "3891a9defa4b02dda9c1d0a8256103122a50b9b3ab970145448131f5e6740b86",
+      "pdfSha256": "438f0286f8310855dd51bcb0db76aafbea5c5551b8dcf160cbc0a5feeb4160af",
+      "sourceOrigin": "pdf",
+      "pages": [
+        20
+      ],
+      "imagePages": [
+        20
+      ],
+      "draft": {
+        "knowledge": [
+          {
+            "page": 20,
+            "claim": "Insurance companies contribute to capital markets, support businesses and individuals, and provide jobs.",
+            "sourceIds": [
+              "p20s0"
+            ],
+            "exclusionReason": "",
+            "key": "t0",
+            "cardKeys": [
+              "t0c0"
+            ],
+            "issues": []
+          },
+          {
+            "page": 20,
+            "claim": "Underwriting in an insurance company involves assessing risk and pricing.",
+            "sourceIds": [
+              "p20s0"
+            ],
+            "exclusionReason": "",
+            "key": "t1",
+            "cardKeys": [
+              "t1c0"
+            ],
+            "issues": []
+          },
+          {
+            "page": 20,
+            "claim": "Risk pooling and diversification are part of the operations of an insurance company.",
+            "sourceIds": [
+              "p20s0"
+            ],
+            "exclusionReason": "",
+            "key": "t2",
+            "cardKeys": [
+              "t2c0"
+            ],
+            "issues": []
+          },
+          {
+            "page": 20,
+            "claim": "Reserving in an insurance company involves setting aside liabilities.",
+            "sourceIds": [
+              "p20s0"
+            ],
+            "exclusionReason": "",
+            "key": "t3",
+            "cardKeys": [
+              "t3c0"
+            ],
+            "issues": []
+          },
+          {
+            "page": 20,
+            "claim": "Claims management in an insurance company involves paying losses.",
+            "sourceIds": [
+              "p20s0"
+            ],
+            "exclusionReason": "",
+            "key": "t4",
+            "cardKeys": [
+              "t4c0"
+            ],
+            "issues": []
+          },
+          {
+            "page": 20,
+            "claim": "Investment management in an insurance company involves investing premiums until claims are paid, generating returns, and supporting capital markets.",
+            "sourceIds": [
+              "p20s0"
+            ],
+            "exclusionReason": "",
+            "key": "t5",
+            "cardKeys": [
+              "t5c0"
+            ],
+            "issues": []
+          },
+          {
+            "page": 20,
+            "claim": "Insurance companies offer savings and protection products.",
+            "sourceIds": [
+              "p20s0"
+            ],
+            "exclusionReason": "",
+            "key": "t6",
+            "cardKeys": [
+              "t6c0"
+            ],
+            "issues": []
+          },
+          {
+            "page": 20,
+            "claim": "Insurance companies offer property and casualty products.",
+            "sourceIds": [
+              "p20s0"
+            ],
+            "exclusionReason": "",
+            "key": "t7",
+            "cardKeys": [
+              "repair-t7c0"
+            ],
+            "issues": []
+          }
+        ],
+        "cards": [
+          {
+            "topic": "roleOfInsuranceCompanies",
+            "topicDefinition": "Insurance companies play a critical role by contributing to capital markets, supporting businesses and individuals, and providing employment.",
+            "question": "What are the contributions of insurance companies to the economy and society?",
+            "answer": "Insurance companies contribute to capital markets, support businesses and individuals, and provide jobs.",
+            "explanation": "Insurance companies act as stabilizers in the economy by providing essential services, contributing to capital markets through investments, supporting business operations by covering risks, and generating employment opportunities across various functions.",
+            "kind": "application",
+            "objective": "Understand the broader impact of insurance companies on the economy and society.",
+            "sources": [
+              {
+                "sourceId": "p20s0"
+              }
+            ],
+            "visualDescription": "",
+            "key": "t0c0"
+          },
+          {
+            "topic": "underwritingInInsurance",
+            "topicDefinition": "Underwriting in an insurance company involves assessing the risk of insuring potential clients and determining the pricing of insurance policies based on that risk assessment.",
+            "question": "What does underwriting in an insurance company involve?",
+            "answer": "Underwriting in an insurance company involves assessing risk and pricing.",
+            "explanation": "Underwriting is a fundamental process in insurance companies where they evaluate the risks of insuring a client and set the appropriate premiums based on the likelihood of a claim being made. Effective underwriting ensures that the company is not taking on more risk than it can handle and is pricing policies adequately to cover potential claims.",
+            "kind": "definition",
+            "objective": "Define the role and function of underwriting in an insurance company.",
+            "sources": [
+              {
+                "sourceId": "p20s0"
+              }
+            ],
+            "visualDescription": "",
+            "key": "t1c0"
+          },
+          {
+            "topic": "riskPoolingAndDiversification",
+            "topicDefinition": "Risk pooling and diversification are strategies used by insurance companies to manage risk by spreading potential financial losses across a large number of policyholders and various insurance products.",
+            "question": "What are risk pooling and diversification in the context of insurance company operations?",
+            "answer": "Risk pooling and diversification are part of the operations of an insurance company.",
+            "explanation": "Insurance companies employ risk pooling to aggregate individuals’ risks into a collective pool, which minimizes the impact of high-cost claims on any single entity. Diversification further mitigates risks by spreading them across different types of policies and geographic areas, thus enhancing stability and predictability in business operations.",
+            "kind": "mechanism",
+            "objective": "Explain how insurance companies manage risk through pooling and diversification.",
+            "sources": [
+              {
+                "sourceId": "p20s0"
+              }
+            ],
+            "visualDescription": "",
+            "key": "t2c0"
+          },
+          {
+            "topic": "reservingInInsurance",
+            "topicDefinition": "In an insurance company, reserving involves setting aside liabilities to ensure the availability of funds when claims are made by policyholders.",
+            "question": "What does reserving involve in an insurance company?",
+            "answer": "Reserving in an insurance company involves setting aside liabilities.",
+            "explanation": "The practice of reserving ensures that an insurance company maintains sufficient funds to cover its future obligations arising from the claims submitted by policyholders. This financial practice is critical for the company's solvency and operational stability.",
+            "kind": "definition",
+            "objective": "Understand the purpose and process of reserving within an insurance company.",
+            "sources": [
+              {
+                "sourceId": "p20s0"
+              }
+            ],
+            "visualDescription": "",
+            "key": "t3c0"
+          },
+          {
+            "topic": "claimsManagementInInsurance",
+            "topicDefinition": "Claims management in an insurance company involves the process of handling policyholder claims, from assessment to payout, to compensate for insured losses.",
+            "question": "What does claims management in an insurance company involve?",
+            "answer": "Claims management in an insurance company involves paying losses.",
+            "explanation": "Claims management includes evaluating and processing insurance claims to ensure that genuine claims are settled accurately and efficiently. This process, which involves verifying the legitimacy of claims and calculating payouts, is vital for maintaining trust and satisfaction among policyholders.",
+            "kind": "definition",
+            "objective": "Define the role and function of claims management in an insurance company.",
+            "sources": [
+              {
+                "sourceId": "p20s0"
+              }
+            ],
+            "visualDescription": "",
+            "key": "t4c0"
+          },
+          {
+            "topic": "investmentManagementInInsurance",
+            "topicDefinition": "Investment management in an insurance company involves investing collected premiums until claims need to be paid, generating investment returns, and supporting capital markets financially.",
+            "question": "What does investment management in an insurance company involve?",
+            "answer": "Investment management in an insurance company involves investing premiums until claims are paid, generating returns, and supporting capital markets.",
+            "explanation": "Insurance companies collect premiums from policyholders and invest these funds in various financial instruments to earn returns. This approach ensures the availability of funds when claims are made and contributes to the stability and growth of capital markets, providing an additional revenue stream for the company.",
+            "kind": "definition",
+            "objective": "Understand the investment responsibilities of insurance companies and their economic impact.",
+            "sources": [
+              {
+                "sourceId": "p20s0"
+              }
+            ],
+            "visualDescription": "",
+            "key": "t5c0"
+          },
+          {
+            "topic": "insuranceProducts",
+            "topicDefinition": "Insurance products provide financial protection or savings options to individuals and businesses, addressing specific risks such as loss, damage, or personal security.",
+            "question": "What types of products do insurance companies offer relating to savings and protection?",
+            "answer": "Insurance companies offer savings and protection products.",
+            "explanation": "Savings and protection products are designed to safeguard individuals against financial uncertainties while providing avenues for savings. These could include life insurance, health insurance, and various other products that offer policyholders peace of mind by ensuring future financial security.",
+            "kind": "definition",
+            "objective": "Identify the types of savings and protection products offered by insurance companies.",
+            "sources": [
+              {
+                "sourceId": "p20s0"
+              }
+            ],
+            "visualDescription": "",
+            "key": "t6c0"
+          },
+          {
+            "topic": "Property and Casualty Products",
+            "topicDefinition": "Property and casualty products offered by insurance companies are designed to protect policyholders against losses related to property damage and legal liabilities.",
+            "question": "What type of products do insurance companies offer to protect against property damage and legal liability?",
+            "answer": "Property and casualty products.",
+            "explanation": "Property and casualty products are part of the offerings by insurance companies, providing coverage for risks associated with damage to property and liability for damages to others, ensuring financial protection in these areas.",
+            "kind": "definition",
+            "objective": "Identify types of products offered by insurance companies for property and liability protection.",
+            "sources": [
+              {
+                "sourceId": "p20s0"
+              }
+            ],
+            "visualDescription": "",
+            "key": "repair-t7c0"
+          }
+        ]
+      },
+      "review": {
+        "targets": [
+          {
+            "key": "t0",
+            "verdict": "supported",
+            "atomic": true,
+            "coverageComplete": true,
+            "reason": "The target is clearly defined, specific, and focuses solely on the contributions of insurance companies to the economy and society, which matches the source."
+          },
+          {
+            "key": "t1",
+            "verdict": "supported",
+            "atomic": true,
+            "coverageComplete": true,
+            "reason": "The target focuses entirely on the function of underwriting, specifically assessing risk and pricing, which is directly supported by the source text."
+          },
+          {
+            "key": "t2",
+            "verdict": "supported",
+            "atomic": true,
+            "coverageComplete": true,
+            "reason": "The target specifically addresses risk pooling and diversification as operations, precisely aligning with information in the source."
+          },
+          {
+            "key": "t3",
+            "verdict": "supported",
+            "atomic": true,
+            "coverageComplete": true,
+            "reason": "The target exclusively covers the concept of reserving as involving setting aside liabilities, directly supported by the source text."
+          },
+          {
+            "key": "t4",
+            "verdict": "supported",
+            "atomic": true,
+            "coverageComplete": true,
+            "reason": "This target addresses claims management in terms of paying losses, as clearly stated in the source."
+          },
+          {
+            "key": "t5",
+            "verdict": "supported",
+            "atomic": true,
+            "coverageComplete": true,
+            "reason": "The target explicitly mentions investment management roles of investing premiums, generating returns, and supporting capital markets, fully embracing the scope in the source."
+          },
+          {
+            "key": "t6",
+            "verdict": "supported",
+            "atomic": true,
+            "coverageComplete": true,
+            "reason": "The target focuses narrowly on offering savings and protection products, directly backed by the source."
+          },
+          {
+            "key": "t7",
+            "verdict": "supported",
+            "atomic": true,
+            "coverageComplete": true,
+            "reason": "The target card accurately covers the claim that insurance companies offer property and casualty products. The source on page 20 explicitly includes these types of products in the insurance company's offerings."
+          }
+        ],
+        "decisions": [
+          {
+            "key": "t0c0",
+            "complete": true,
+            "scopeCorrect": true,
+            "atomic": true,
+            "unambiguous": true,
+            "relevant": true,
+            "requiresVisualEvidence": false,
+            "duplicateOf": "",
+            "reason": "The claim in the exercise is well-defined and fully supported by the source.",
+            "claims": [
+              {
+                "text": "Topic: roleOfInsuranceCompanies\nConcept definition: Insurance companies play a critical role by contributing to capital markets, supporting businesses and individuals, and providing employment.\nQuestion: What are the contributions of insurance companies to the economy and society?\nAnswer: Insurance companies contribute to capital markets, support businesses and individuals, and provide jobs.\nExplanation: Insurance companies act as stabilizers in the economy by providing essential services, contributing to capital markets through investments, supporting business operations by covering risks, and generating employment opportunities across various functions.",
+                "verdict": "supported",
+                "evidence": [
+                  {
+                    "sourceId": "p20s0",
+                    "quote": "Inside an insurance company\n20\nInsurance Company\nPolicyholders\nSociety / Economy\n(stability, protection\nContribution to cappital markets,\nsupport business&individuals, jobs)\nUnderwriting\n(Assess risk + Pricing)\nRisk Pooling &\nDiversification\nReserving\n(Set aside liabilities)\nClaims Management\n(Pay losses)\nInvestment Management\n(Invest premiums until claims are paid;\nGenerate returns; Support capital markets)\nSavings & Protection Products\nProperty and Casulty Products"
+                  }
+                ],
+                "reasoning": "Insurance companies contribute to the economy and society by playing various significant roles, including stabilizing the financial markets, supporting businesses and individuals through various services, and providing employment, as directly asserted by the source."
+              }
+            ]
+          },
+          {
+            "key": "t1c0",
+            "complete": true,
+            "scopeCorrect": true,
+            "atomic": true,
+            "unambiguous": true,
+            "relevant": true,
+            "requiresVisualEvidence": false,
+            "duplicateOf": "",
+            "reason": "The claim is directly and explicitly supported by the source.",
+            "claims": [
+              {
+                "text": "Topic: underwritingInInsurance\nConcept definition: Underwriting in an insurance company involves assessing the risk of insuring potential clients and determining the pricing of insurance policies based on that risk assessment.\nQuestion: What does underwriting in an insurance company involve?\nAnswer: Underwriting in an insurance company involves assessing risk and pricing.\nExplanation: Underwriting is a fundamental process in insurance companies where they evaluate the risks of insuring a client and set the appropriate premiums based on the likelihood of a claim being made. Effective underwriting ensures that the company is not taking on more risk than it can handle and is pricing policies adequately to cover potential claims.",
+                "verdict": "supported",
+                "evidence": [
+                  {
+                    "sourceId": "p20s0",
+                    "quote": "Inside an insurance company\n20\nInsurance Company\nPolicyholders\nSociety / Economy\n(stability, protection\nContribution to cappital markets,\nsupport business&individuals, jobs)\nUnderwriting\n(Assess risk + Pricing)\nRisk Pooling &\nDiversification\nReserving\n(Set aside liabilities)\nClaims Management\n(Pay losses)\nInvestment Management\n(Invest premiums until claims are paid;\nGenerate returns; Support capital markets)\nSavings & Protection Products\nProperty and Casulty Products"
+                  }
+                ],
+                "reasoning": "Underwriting in insurance clearly involves assessing risk and determining pricing, a claim that is straightforward and directly derived from the source text, making the exercise accurate and supported."
+              }
+            ]
+          },
+          {
+            "key": "t2c0",
+            "complete": true,
+            "scopeCorrect": true,
+            "atomic": true,
+            "unambiguous": true,
+            "relevant": true,
+            "requiresVisualEvidence": false,
+            "duplicateOf": "",
+            "reason": "The claim is clearly supported by the source, with no overstatement or speculation.",
+            "claims": [
+              {
+                "text": "Topic: riskPoolingAndDiversification\nConcept definition: Risk pooling and diversification are strategies used by insurance companies to manage risk by spreading potential financial losses across a large number of policyholders and various insurance products.\nQuestion: What are risk pooling and diversification in the context of insurance company operations?\nAnswer: Risk pooling and diversification are part of the operations of an insurance company.\nExplanation: Insurance companies employ risk pooling to aggregate individuals’ risks into a collective pool, which minimizes the impact of high-cost claims on any single entity. Diversification further mitigates risks by spreading them across different types of policies and geographic areas, thus enhancing stability and predictability in business operations.",
+                "verdict": "supported",
+                "evidence": [
+                  {
+                    "sourceId": "p20s0",
+                    "quote": "Inside an insurance company\n20\nInsurance Company\nPolicyholders\nSociety / Economy\n(stability, protection\nContribution to cappital markets,\nsupport business&individuals, jobs)\nUnderwriting\n(Assess risk + Pricing)\nRisk Pooling &\nDiversification\nReserving\n(Set aside liabilities)\nClaims Management\n(Pay losses)\nInvestment Management\n(Invest premiums until claims are paid;\nGenerate returns; Support capital markets)\nSavings & Protection Products\nProperty and Casulty Products"
+                  }
+                ],
+                "reasoning": "The exercise claim that risk pooling and diversification are operations within an insurance company is explicitly mentioned in the source, making it completely supported without extending beyond the content."
+              }
+            ]
+          },
+          {
+            "key": "t3c0",
+            "complete": true,
+            "scopeCorrect": true,
+            "atomic": true,
+            "unambiguous": true,
+            "relevant": true,
+            "requiresVisualEvidence": false,
+            "duplicateOf": "",
+            "reason": "This exercise is supported directly by the source and accurately reflects the claim being assessed.",
+            "claims": [
+              {
+                "text": "Topic: reservingInInsurance\nConcept definition: In an insurance company, reserving involves setting aside liabilities to ensure the availability of funds when claims are made by policyholders.\nQuestion: What does reserving involve in an insurance company?\nAnswer: Reserving in an insurance company involves setting aside liabilities.\nExplanation: The practice of reserving ensures that an insurance company maintains sufficient funds to cover its future obligations arising from the claims submitted by policyholders. This financial practice is critical for the company's solvency and operational stability.",
+                "verdict": "supported",
+                "evidence": [
+                  {
+                    "sourceId": "p20s0",
+                    "quote": "Inside an insurance company\n20\nInsurance Company\nPolicyholders\nSociety / Economy\n(stability, protection\nContribution to cappital markets,\nsupport business&individuals, jobs)\nUnderwriting\n(Assess risk + Pricing)\nRisk Pooling &\nDiversification\nReserving\n(Set aside liabilities)\nClaims Management\n(Pay losses)\nInvestment Management\n(Invest premiums until claims are paid;\nGenerate returns; Support capital markets)\nSavings & Protection Products\nProperty and Casulty Products"
+                  }
+                ],
+                "reasoning": "The source clearly states that reserving in insurance involves setting aside liabilities. The exercise represents this claim accurately without adding or missing any detail, making it fully supported."
+              }
+            ]
+          },
+          {
+            "key": "t4c0",
+            "complete": true,
+            "scopeCorrect": true,
+            "atomic": true,
+            "unambiguous": true,
+            "relevant": true,
+            "requiresVisualEvidence": false,
+            "duplicateOf": "",
+            "reason": "The source text directly supports this claim in the exercise without requiring additional inference.",
+            "claims": [
+              {
+                "text": "Topic: claimsManagementInInsurance\nConcept definition: Claims management in an insurance company involves the process of handling policyholder claims, from assessment to payout, to compensate for insured losses.\nQuestion: What does claims management in an insurance company involve?\nAnswer: Claims management in an insurance company involves paying losses.\nExplanation: Claims management includes evaluating and processing insurance claims to ensure that genuine claims are settled accurately and efficiently. This process, which involves verifying the legitimacy of claims and calculating payouts, is vital for maintaining trust and satisfaction among policyholders.",
+                "verdict": "supported",
+                "evidence": [
+                  {
+                    "sourceId": "p20s0",
+                    "quote": "Inside an insurance company\n20\nInsurance Company\nPolicyholders\nSociety / Economy\n(stability, protection\nContribution to cappital markets,\nsupport business&individuals, jobs)\nUnderwriting\n(Assess risk + Pricing)\nRisk Pooling &\nDiversification\nReserving\n(Set aside liabilities)\nClaims Management\n(Pay losses)\nInvestment Management\n(Invest premiums until claims are paid;\nGenerate returns; Support capital markets)\nSavings & Protection Products\nProperty and Casulty Products"
+                  }
+                ],
+                "reasoning": "The source confirms the direct characterization of claims management as paying losses within the operations of an insurance company. The exercise accurately reflects this content."
+              }
+            ]
+          },
+          {
+            "key": "t5c0",
+            "complete": true,
+            "scopeCorrect": true,
+            "atomic": true,
+            "unambiguous": true,
+            "relevant": true,
+            "requiresVisualEvidence": false,
+            "duplicateOf": "",
+            "reason": "The target is accurately detailed and fully supported by the source content.",
+            "claims": [
+              {
+                "text": "Topic: investmentManagementInInsurance\nConcept definition: Investment management in an insurance company involves investing collected premiums until claims need to be paid, generating investment returns, and supporting capital markets financially.\nQuestion: What does investment management in an insurance company involve?\nAnswer: Investment management in an insurance company involves investing premiums until claims are paid, generating returns, and supporting capital markets.\nExplanation: Insurance companies collect premiums from policyholders and invest these funds in various financial instruments to earn returns. This approach ensures the availability of funds when claims are made and contributes to the stability and growth of capital markets, providing an additional revenue stream for the company.",
+                "verdict": "supported",
+                "evidence": [
+                  {
+                    "sourceId": "p20s0",
+                    "quote": "Inside an insurance company\n20\nInsurance Company\nPolicyholders\nSociety / Economy\n(stability, protection\nContribution to cappital markets,\nsupport business&individuals, jobs)\nUnderwriting\n(Assess risk + Pricing)\nRisk Pooling &\nDiversification\nReserving\n(Set aside liabilities)\nClaims Management\n(Pay losses)\nInvestment Management\n(Invest premiums until claims are paid;\nGenerate returns; Support capital markets)\nSavings & Protection Products\nProperty and Casulty Products"
+                  }
+                ],
+                "reasoning": "Investment management in an insurance company is explicitly described in the source, involving investing premiums, generating returns, and supporting the capital markets, all of which are clearly presented in this exercise answer."
+              }
+            ]
+          },
+          {
+            "key": "repair-t7c0",
+            "complete": true,
+            "scopeCorrect": true,
+            "atomic": true,
+            "unambiguous": true,
+            "relevant": true,
+            "requiresVisualEvidence": false,
+            "duplicateOf": "",
+            "reason": "The claim that insurance companies offer property and casualty products is directly supported by the source on page 20. The target card correctly encapsulates this information by asking about types of products that provide protection against property damage and legal liability.",
+            "claims": [
+              {
+                "text": "Topic: Property and Casualty Products\nConcept definition: Property and casualty products offered by insurance companies are designed to protect policyholders against losses related to property damage and legal liabilities.\nQuestion: What type of products do insurance companies offer to protect against property damage and legal liability?\nAnswer: Property and casualty products.\nExplanation: Property and casualty products are part of the offerings by insurance companies, providing coverage for risks associated with damage to property and liability for damages to others, ensuring financial protection in these areas.",
+                "verdict": "supported",
+                "evidence": [
+                  {
+                    "sourceId": "p20s0",
+                    "quote": "Inside an insurance company\n20\nInsurance Company\nPolicyholders\nSociety / Economy\n(stability, protection\nContribution to cappital markets,\nsupport business&individuals, jobs)\nUnderwriting\n(Assess risk + Pricing)\nRisk Pooling &\nDiversification\nReserving\n(Set aside liabilities)\nClaims Management\n(Pay losses)\nInvestment Management\n(Invest premiums until claims are paid;\nGenerate returns; Support capital markets)\nSavings & Protection Products\nProperty and Casulty Products"
+                  }
+                ],
+                "reasoning": "The primary source explicitly states that insurance companies offer property and casualty products. The question presented in the target card is specific to this type of product, correctly aligns with the source, and does not require any external visual proof to understand the claim."
+              }
+            ]
+          }
+        ],
+        "pages": [
+          {
+            "page": 20,
+            "excluded": false,
+            "reason": "Page 20 is not excluded as it provides essential teaching material about the roles and functions within an insurance company.",
+            "objectives": [
+              {
+                "description": "Understand the contributions of insurance companies to the economy and society, including capital markets, business support, and offering jobs.",
+                "cardKeys": [
+                  "t0c0"
+                ]
+              },
+              {
+                "description": "Comprehend the meaning and process of underwriting within an insurance company and its significance.",
+                "cardKeys": [
+                  "t1c0"
+                ]
+              },
+              {
+                "description": "Explain the principles of risk pooling and diversification and their applications in insurance operations.",
+                "cardKeys": [
+                  "t2c0"
+                ]
+              },
+              {
+                "description": "Recognize the concept and process of reserving in insurance companies, focused on liabilities.",
+                "cardKeys": [
+                  "t3c0"
+                ]
+              },
+              {
+                "description": "Identify the purpose and activities involved in claims management within an insurer.",
+                "cardKeys": [
+                  "t4c0"
+                ]
+              },
+              {
+                "description": "Learn the role of investment management in insurance companies regarding premiums, returns, and market support.",
+                "cardKeys": [
+                  "t5c0"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "cards": [
+        {
+          "candidate": {
+            "topic": "roleOfInsuranceCompanies",
+            "topicDefinition": "Insurance companies play a critical role by contributing to capital markets, supporting businesses and individuals, and providing employment.",
+            "question": "What are the contributions of insurance companies to the economy and society?",
+            "answer": "Insurance companies contribute to capital markets, support businesses and individuals, and provide jobs.",
+            "explanation": "Insurance companies act as stabilizers in the economy by providing essential services, contributing to capital markets through investments, supporting business operations by covering risks, and generating employment opportunities across various functions.",
+            "kind": "application",
+            "objective": "Understand the broader impact of insurance companies on the economy and society.",
+            "sources": [
+              {
+                "sourceId": "p20s0"
+              }
+            ],
+            "visualDescription": "",
+            "key": "t0c0"
+          },
+          "evidence": [
+            {
+              "documentId": "33d1997c-a357-4735-b507-8ba25e5292bd",
+              "page": 20,
+              "quote": "Inside an insurance company\n20\nInsurance Company\nPolicyholders\nSociety / Economy\n(stability, protection\nContribution to cappital markets,\nsupport business&individuals, jobs)\nUnderwriting\n(Assess risk + Pricing)\nRisk Pooling &\nDiversification\nReserving\n(Set aside liabilities)\nClaims Management\n(Pay losses)\nInvestment Management\n(Invest premiums until claims are paid;\nGenerate returns; Support capital markets)\nSavings & Protection Products\nProperty and Casulty Products"
+            }
+          ],
+          "issues": [],
+          "contractValid": true
+        },
+        {
+          "candidate": {
+            "topic": "underwritingInInsurance",
+            "topicDefinition": "Underwriting in an insurance company involves assessing the risk of insuring potential clients and determining the pricing of insurance policies based on that risk assessment.",
+            "question": "What does underwriting in an insurance company involve?",
+            "answer": "Underwriting in an insurance company involves assessing risk and pricing.",
+            "explanation": "Underwriting is a fundamental process in insurance companies where they evaluate the risks of insuring a client and set the appropriate premiums based on the likelihood of a claim being made. Effective underwriting ensures that the company is not taking on more risk than it can handle and is pricing policies adequately to cover potential claims.",
+            "kind": "definition",
+            "objective": "Define the role and function of underwriting in an insurance company.",
+            "sources": [
+              {
+                "sourceId": "p20s0"
+              }
+            ],
+            "visualDescription": "",
+            "key": "t1c0"
+          },
+          "evidence": [
+            {
+              "documentId": "33d1997c-a357-4735-b507-8ba25e5292bd",
+              "page": 20,
+              "quote": "Inside an insurance company\n20\nInsurance Company\nPolicyholders\nSociety / Economy\n(stability, protection\nContribution to cappital markets,\nsupport business&individuals, jobs)\nUnderwriting\n(Assess risk + Pricing)\nRisk Pooling &\nDiversification\nReserving\n(Set aside liabilities)\nClaims Management\n(Pay losses)\nInvestment Management\n(Invest premiums until claims are paid;\nGenerate returns; Support capital markets)\nSavings & Protection Products\nProperty and Casulty Products"
+            }
+          ],
+          "issues": [],
+          "contractValid": true
+        },
+        {
+          "candidate": {
+            "topic": "riskPoolingAndDiversification",
+            "topicDefinition": "Risk pooling and diversification are strategies used by insurance companies to manage risk by spreading potential financial losses across a large number of policyholders and various insurance products.",
+            "question": "What are risk pooling and diversification in the context of insurance company operations?",
+            "answer": "Risk pooling and diversification are part of the operations of an insurance company.",
+            "explanation": "Insurance companies employ risk pooling to aggregate individuals’ risks into a collective pool, which minimizes the impact of high-cost claims on any single entity. Diversification further mitigates risks by spreading them across different types of policies and geographic areas, thus enhancing stability and predictability in business operations.",
+            "kind": "mechanism",
+            "objective": "Explain how insurance companies manage risk through pooling and diversification.",
+            "sources": [
+              {
+                "sourceId": "p20s0"
+              }
+            ],
+            "visualDescription": "",
+            "key": "t2c0"
+          },
+          "evidence": [
+            {
+              "documentId": "33d1997c-a357-4735-b507-8ba25e5292bd",
+              "page": 20,
+              "quote": "Inside an insurance company\n20\nInsurance Company\nPolicyholders\nSociety / Economy\n(stability, protection\nContribution to cappital markets,\nsupport business&individuals, jobs)\nUnderwriting\n(Assess risk + Pricing)\nRisk Pooling &\nDiversification\nReserving\n(Set aside liabilities)\nClaims Management\n(Pay losses)\nInvestment Management\n(Invest premiums until claims are paid;\nGenerate returns; Support capital markets)\nSavings & Protection Products\nProperty and Casulty Products"
+            }
+          ],
+          "issues": [],
+          "contractValid": true
+        },
+        {
+          "candidate": {
+            "topic": "reservingInInsurance",
+            "topicDefinition": "In an insurance company, reserving involves setting aside liabilities to ensure the availability of funds when claims are made by policyholders.",
+            "question": "What does reserving involve in an insurance company?",
+            "answer": "Reserving in an insurance company involves setting aside liabilities.",
+            "explanation": "The practice of reserving ensures that an insurance company maintains sufficient funds to cover its future obligations arising from the claims submitted by policyholders. This financial practice is critical for the company's solvency and operational stability.",
+            "kind": "definition",
+            "objective": "Understand the purpose and process of reserving within an insurance company.",
+            "sources": [
+              {
+                "sourceId": "p20s0"
+              }
+            ],
+            "visualDescription": "",
+            "key": "t3c0"
+          },
+          "evidence": [
+            {
+              "documentId": "33d1997c-a357-4735-b507-8ba25e5292bd",
+              "page": 20,
+              "quote": "Inside an insurance company\n20\nInsurance Company\nPolicyholders\nSociety / Economy\n(stability, protection\nContribution to cappital markets,\nsupport business&individuals, jobs)\nUnderwriting\n(Assess risk + Pricing)\nRisk Pooling &\nDiversification\nReserving\n(Set aside liabilities)\nClaims Management\n(Pay losses)\nInvestment Management\n(Invest premiums until claims are paid;\nGenerate returns; Support capital markets)\nSavings & Protection Products\nProperty and Casulty Products"
+            }
+          ],
+          "issues": [],
+          "contractValid": true
+        },
+        {
+          "candidate": {
+            "topic": "claimsManagementInInsurance",
+            "topicDefinition": "Claims management in an insurance company involves the process of handling policyholder claims, from assessment to payout, to compensate for insured losses.",
+            "question": "What does claims management in an insurance company involve?",
+            "answer": "Claims management in an insurance company involves paying losses.",
+            "explanation": "Claims management includes evaluating and processing insurance claims to ensure that genuine claims are settled accurately and efficiently. This process, which involves verifying the legitimacy of claims and calculating payouts, is vital for maintaining trust and satisfaction among policyholders.",
+            "kind": "definition",
+            "objective": "Define the role and function of claims management in an insurance company.",
+            "sources": [
+              {
+                "sourceId": "p20s0"
+              }
+            ],
+            "visualDescription": "",
+            "key": "t4c0"
+          },
+          "evidence": [
+            {
+              "documentId": "33d1997c-a357-4735-b507-8ba25e5292bd",
+              "page": 20,
+              "quote": "Inside an insurance company\n20\nInsurance Company\nPolicyholders\nSociety / Economy\n(stability, protection\nContribution to cappital markets,\nsupport business&individuals, jobs)\nUnderwriting\n(Assess risk + Pricing)\nRisk Pooling &\nDiversification\nReserving\n(Set aside liabilities)\nClaims Management\n(Pay losses)\nInvestment Management\n(Invest premiums until claims are paid;\nGenerate returns; Support capital markets)\nSavings & Protection Products\nProperty and Casulty Products"
+            }
+          ],
+          "issues": [],
+          "contractValid": true
+        },
+        {
+          "candidate": {
+            "topic": "investmentManagementInInsurance",
+            "topicDefinition": "Investment management in an insurance company involves investing collected premiums until claims need to be paid, generating investment returns, and supporting capital markets financially.",
+            "question": "What does investment management in an insurance company involve?",
+            "answer": "Investment management in an insurance company involves investing premiums until claims are paid, generating returns, and supporting capital markets.",
+            "explanation": "Insurance companies collect premiums from policyholders and invest these funds in various financial instruments to earn returns. This approach ensures the availability of funds when claims are made and contributes to the stability and growth of capital markets, providing an additional revenue stream for the company.",
+            "kind": "definition",
+            "objective": "Understand the investment responsibilities of insurance companies and their economic impact.",
+            "sources": [
+              {
+                "sourceId": "p20s0"
+              }
+            ],
+            "visualDescription": "",
+            "key": "t5c0"
+          },
+          "evidence": [
+            {
+              "documentId": "33d1997c-a357-4735-b507-8ba25e5292bd",
+              "page": 20,
+              "quote": "Inside an insurance company\n20\nInsurance Company\nPolicyholders\nSociety / Economy\n(stability, protection\nContribution to cappital markets,\nsupport business&individuals, jobs)\nUnderwriting\n(Assess risk + Pricing)\nRisk Pooling &\nDiversification\nReserving\n(Set aside liabilities)\nClaims Management\n(Pay losses)\nInvestment Management\n(Invest premiums until claims are paid;\nGenerate returns; Support capital markets)\nSavings & Protection Products\nProperty and Casulty Products"
+            }
+          ],
+          "issues": [],
+          "contractValid": true
+        },
+        {
+          "candidate": {
+            "topic": "insuranceProducts",
+            "topicDefinition": "Insurance products provide financial protection or savings options to individuals and businesses, addressing specific risks such as loss, damage, or personal security.",
+            "question": "What types of products do insurance companies offer relating to savings and protection?",
+            "answer": "Insurance companies offer savings and protection products.",
+            "explanation": "Savings and protection products are designed to safeguard individuals against financial uncertainties while providing avenues for savings. These could include life insurance, health insurance, and various other products that offer policyholders peace of mind by ensuring future financial security.",
+            "kind": "definition",
+            "objective": "Identify the types of savings and protection products offered by insurance companies.",
+            "sources": [
+              {
+                "sourceId": "p20s0"
+              }
+            ],
+            "visualDescription": "",
+            "key": "t6c0"
+          },
+          "evidence": [
+            {
+              "documentId": "33d1997c-a357-4735-b507-8ba25e5292bd",
+              "page": 20,
+              "quote": "Inside an insurance company\n20\nInsurance Company\nPolicyholders\nSociety / Economy\n(stability, protection\nContribution to cappital markets,\nsupport business&individuals, jobs)\nUnderwriting\n(Assess risk + Pricing)\nRisk Pooling &\nDiversification\nReserving\n(Set aside liabilities)\nClaims Management\n(Pay losses)\nInvestment Management\n(Invest premiums until claims are paid;\nGenerate returns; Support capital markets)\nSavings & Protection Products\nProperty and Casulty Products"
+            }
+          ],
+          "issues": [
+            "Question already supplies the substantive recall answer",
+            "Missing or rejected card design review"
+          ],
+          "contractValid": false
+        },
+        {
+          "candidate": {
+            "topic": "Property and Casualty Products",
+            "topicDefinition": "Property and casualty products offered by insurance companies are designed to protect policyholders against losses related to property damage and legal liabilities.",
+            "question": "What type of products do insurance companies offer to protect against property damage and legal liability?",
+            "answer": "Property and casualty products.",
+            "explanation": "Property and casualty products are part of the offerings by insurance companies, providing coverage for risks associated with damage to property and liability for damages to others, ensuring financial protection in these areas.",
+            "kind": "definition",
+            "objective": "Identify types of products offered by insurance companies for property and liability protection.",
+            "sources": [
+              {
+                "sourceId": "p20s0"
+              }
+            ],
+            "visualDescription": "",
+            "key": "repair-t7c0"
+          },
+          "evidence": [
+            {
+              "documentId": "33d1997c-a357-4735-b507-8ba25e5292bd",
+              "page": 20,
+              "quote": "Inside an insurance company\n20\nInsurance Company\nPolicyholders\nSociety / Economy\n(stability, protection\nContribution to cappital markets,\nsupport business&individuals, jobs)\nUnderwriting\n(Assess risk + Pricing)\nRisk Pooling &\nDiversification\nReserving\n(Set aside liabilities)\nClaims Management\n(Pay losses)\nInvestment Management\n(Invest premiums until claims are paid;\nGenerate returns; Support capital markets)\nSavings & Protection Products\nProperty and Casulty Products"
+            }
+          ],
+          "issues": [],
+          "contractValid": true
+        }
+      ],
+      "excludedCards": [],
+      "diagnostics": [
+        "Bounded repair reviewed 2 targets; no second repair round"
+      ],
+      "repairs": [
+        {
+          "draft": {
+            "knowledge": [
+              {
+                "page": 20,
+                "claim": "Insurance companies offer savings and protection products.",
+                "sourceIds": [
+                  "p20s0"
+                ],
+                "exclusionReason": "",
+                "key": "t6",
+                "cardKeys": [
+                  "repair-t6c0"
+                ],
+                "issues": [],
+                "repairOf": "t6"
+              },
+              {
+                "page": 20,
+                "claim": "Insurance companies offer property and casualty products.",
+                "sourceIds": [
+                  "p20s0"
+                ],
+                "exclusionReason": "",
+                "key": "t7",
+                "cardKeys": [
+                  "repair-t7c0"
+                ],
+                "issues": [],
+                "repairOf": "t7"
+              }
+            ],
+            "cards": [
+              {
+                "topic": "Savings and Protection Products",
+                "topicDefinition": "Savings and protection products offered by insurance companies are designed to protect the financial well-being of policyholders by providing financial protection and a means to build savings over time.",
+                "question": "What type of products do insurance companies offer to provide financial protection and build savings?",
+                "answer": "Savings and protection products.",
+                "explanation": "Insurance companies provide savings and protection products which help individuals safeguard their financial future by offering protection against unforeseen events and allowing them to accumulate savings over time.",
+                "kind": "definition",
+                "objective": "Identify types of products offered by insurance companies for financial protection and savings.",
+                "sources": [
+                  {
+                    "sourceId": "p20s0"
+                  }
+                ],
+                "visualDescription": "",
+                "key": "repair-t6c0"
+              },
+              {
+                "topic": "Property and Casualty Products",
+                "topicDefinition": "Property and casualty products offered by insurance companies are designed to protect policyholders against losses related to property damage and legal liabilities.",
+                "question": "What type of products do insurance companies offer to protect against property damage and legal liability?",
+                "answer": "Property and casualty products.",
+                "explanation": "Property and casualty products are part of the offerings by insurance companies, providing coverage for risks associated with damage to property and liability for damages to others, ensuring financial protection in these areas.",
+                "kind": "definition",
+                "objective": "Identify types of products offered by insurance companies for property and liability protection.",
+                "sources": [
+                  {
+                    "sourceId": "p20s0"
+                  }
+                ],
+                "visualDescription": "",
+                "key": "repair-t7c0"
+              }
+            ]
+          },
+          "review": {
+            "targets": [
+              {
+                "key": "t6",
+                "verdict": "supported",
+                "atomic": true,
+                "coverageComplete": true,
+                "reason": "The target card correctly covers the claim that insurance companies offer savings and protection products. The claim is supported by the source on page 20, which mentions these products as part of the insurance company's offerings."
+              },
+              {
+                "key": "t7",
+                "verdict": "supported",
+                "atomic": true,
+                "coverageComplete": true,
+                "reason": "The target card accurately covers the claim that insurance companies offer property and casualty products. The source on page 20 explicitly includes these types of products in the insurance company's offerings."
+              }
+            ],
+            "decisions": [
+              {
+                "key": "repair-t7c0",
+                "complete": true,
+                "scopeCorrect": true,
+                "atomic": true,
+                "unambiguous": true,
+                "relevant": true,
+                "requiresVisualEvidence": false,
+                "duplicateOf": "",
+                "reason": "The claim that insurance companies offer property and casualty products is directly supported by the source on page 20. The target card correctly encapsulates this information by asking about types of products that provide protection against property damage and legal liability.",
+                "claims": [
+                  {
+                    "text": "Topic: Property and Casualty Products\nConcept definition: Property and casualty products offered by insurance companies are designed to protect policyholders against losses related to property damage and legal liabilities.\nQuestion: What type of products do insurance companies offer to protect against property damage and legal liability?\nAnswer: Property and casualty products.\nExplanation: Property and casualty products are part of the offerings by insurance companies, providing coverage for risks associated with damage to property and liability for damages to others, ensuring financial protection in these areas.",
+                    "verdict": "supported",
+                    "evidence": [
+                      {
+                        "sourceId": "p20s0",
+                        "quote": "Inside an insurance company\n20\nInsurance Company\nPolicyholders\nSociety / Economy\n(stability, protection\nContribution to cappital markets,\nsupport business&individuals, jobs)\nUnderwriting\n(Assess risk + Pricing)\nRisk Pooling &\nDiversification\nReserving\n(Set aside liabilities)\nClaims Management\n(Pay losses)\nInvestment Management\n(Invest premiums until claims are paid;\nGenerate returns; Support capital markets)\nSavings & Protection Products\nProperty and Casulty Products"
+                      }
+                    ],
+                    "reasoning": "The primary source explicitly states that insurance companies offer property and casualty products. The question presented in the target card is specific to this type of product, correctly aligns with the source, and does not require any external visual proof to understand the claim."
+                  }
+                ]
+              }
+            ],
+            "pages": [
+              {
+                "page": 20,
+                "excluded": false,
+                "reason": "The page provides substantive teaching content about products offered by insurance companies, which are directly supported by the target sources.",
+                "objectives": [
+                  {
+                    "description": "Explain the types of products insurance companies offer for financial protection and savings.",
+                    "cardKeys": [
+                      "repair-t7c0"
+                    ]
+                  },
+                  {
+                    "description": "Describe property and casualty products offered by insurance companies.",
+                    "cardKeys": [
+                      "repair-t7c0"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          "cards": [
+            {
+              "candidate": {
+                "topic": "Savings and Protection Products",
+                "topicDefinition": "Savings and protection products offered by insurance companies are designed to protect the financial well-being of policyholders by providing financial protection and a means to build savings over time.",
+                "question": "What type of products do insurance companies offer to provide financial protection and build savings?",
+                "answer": "Savings and protection products.",
+                "explanation": "Insurance companies provide savings and protection products which help individuals safeguard their financial future by offering protection against unforeseen events and allowing them to accumulate savings over time.",
+                "kind": "definition",
+                "objective": "Identify types of products offered by insurance companies for financial protection and savings.",
+                "sources": [
+                  {
+                    "sourceId": "p20s0"
+                  }
+                ],
+                "visualDescription": "",
+                "key": "repair-t6c0"
+              },
+              "evidence": [
+                {
+                  "documentId": "33d1997c-a357-4735-b507-8ba25e5292bd",
+                  "page": 20,
+                  "quote": "Inside an insurance company\n20\nInsurance Company\nPolicyholders\nSociety / Economy\n(stability, protection\nContribution to cappital markets,\nsupport business&individuals, jobs)\nUnderwriting\n(Assess risk + Pricing)\nRisk Pooling &\nDiversification\nReserving\n(Set aside liabilities)\nClaims Management\n(Pay losses)\nInvestment Management\n(Invest premiums until claims are paid;\nGenerate returns; Support capital markets)\nSavings & Protection Products\nProperty and Casulty Products"
+                }
+              ],
+              "issues": [
+                "Question already supplies the substantive recall answer",
+                "Missing or rejected card design review"
+              ],
+              "contractValid": false
+            },
+            {
+              "candidate": {
+                "topic": "Property and Casualty Products",
+                "topicDefinition": "Property and casualty products offered by insurance companies are designed to protect policyholders against losses related to property damage and legal liabilities.",
+                "question": "What type of products do insurance companies offer to protect against property damage and legal liability?",
+                "answer": "Property and casualty products.",
+                "explanation": "Property and casualty products are part of the offerings by insurance companies, providing coverage for risks associated with damage to property and liability for damages to others, ensuring financial protection in these areas.",
+                "kind": "definition",
+                "objective": "Identify types of products offered by insurance companies for property and liability protection.",
+                "sources": [
+                  {
+                    "sourceId": "p20s0"
+                  }
+                ],
+                "visualDescription": "",
+                "key": "repair-t7c0"
+              },
+              "evidence": [
+                {
+                  "documentId": "33d1997c-a357-4735-b507-8ba25e5292bd",
+                  "page": 20,
+                  "quote": "Inside an insurance company\n20\nInsurance Company\nPolicyholders\nSociety / Economy\n(stability, protection\nContribution to cappital markets,\nsupport business&individuals, jobs)\nUnderwriting\n(Assess risk + Pricing)\nRisk Pooling &\nDiversification\nReserving\n(Set aside liabilities)\nClaims Management\n(Pay losses)\nInvestment Management\n(Invest premiums until claims are paid;\nGenerate returns; Support capital markets)\nSavings & Protection Products\nProperty and Casulty Products"
+                }
+              ],
+              "issues": [],
+              "contractValid": true
+            }
+          ],
+          "excludedCards": [],
+          "diagnostics": []
+        }
+      ]
+    }
+  ],
+  "activeAfter": "default"
+}

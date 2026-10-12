@@ -1,0 +1,26 @@
+import {DatabaseSync} from 'node:sqlite';
+import {mkdirSync,writeFileSync} from 'node:fs';
+import {createHash} from 'node:crypto';
+import path from 'node:path';
+import assert from 'node:assert/strict';
+import {isolatedModules,DATABASE_MODULES} from './isolated-modules.mjs';
+const root=process.cwd();
+const source=new DatabaseSync(path.join(root,'data/encyclopedia.db'),{readOnly:true});
+mkdirSync(path.join(root,'data/backups'),{recursive:true});
+const backup=path.join(root,'data/backups',`before-quality-v8-${Date.now()}.db`);
+source.prepare('VACUUM INTO ?').run(backup);
+const signature=database=>Object.fromEntries(['review_state','review_log','study_cards'].map(table=>[table,createHash('sha256').update(JSON.stringify(database.prepare(`SELECT ${table==='study_cards'?'id':'*'} FROM ${table} ORDER BY rowid`).all())).digest('hex')]));
+const before=signature(source);source.close();
+const env=await isolatedModules(DATABASE_MODULES,{llm:`export function currentProviderLabel(){return 'offline-upgrade';} export async function structuredCompletion(){throw new Error('No API calls permitted during quality upgrade');}`});
+process.chdir(root);
+const scope=await env.load('courseScope'),db=await env.load('db');
+let result;
+await scope.withCourse('default',()=>{
+  const database=db.openDb();
+  assert.deepEqual(signature(database),before,'Migration preserves every card ID and all review state/log rows');
+  result={backup,cards:database.prepare('SELECT payload FROM study_cards').all().map(r=>JSON.parse(r.payload)),pages:database.prepare('SELECT payload FROM page_analysis').all().map(r=>JSON.parse(r.payload)),visibleNotions:Number(database.prepare('SELECT count(*) n FROM notions WHERE mapping_visible=1').get().n)};
+  database.close();
+});
+const report={backup,visibleNotions:result.visibleNotions,cardStatuses:Object.fromEntries(['ready','draft','suspended'].map(status=>[status,result.cards.filter(c=>c.status===status).length])),legacyReady:result.cards.filter(c=>c.promptVersion==='legacy'&&c.status==='ready').length,knownWrongReady:result.cards.filter(c=>c.status==='ready'&&c.answer.includes("doesn't directly impact profit")).length,pagesQueuedForConsistency:result.pages.filter(p=>p.warnings?.some(w=>w.startsWith('Consistency recheck'))).map(p=>p.page),reviewsUnchanged:true,paidApiCalls:0};
+writeFileSync(path.join(root,'data/reports/quality-v8-upgrade.json'),JSON.stringify(report,null,2));
+console.log(JSON.stringify(report,null,2));

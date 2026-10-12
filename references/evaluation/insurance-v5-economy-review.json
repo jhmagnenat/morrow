@@ -1,0 +1,43 @@
+{
+  "id": "e75f20f9-d834-4f1a-bf83-cf1984deae2a",
+  "documentId": "8b6f4739-c98f-4a73-98c2-39df80dcbb4f",
+  "courseId": "default",
+  "workerPid": 6256,
+  "status": "complete",
+  "mode": "strict",
+  "enrichment": false,
+  "cardDetail": "key-ideas",
+  "pages": [
+    19
+  ],
+  "reprocess": true,
+  "startedAt": "2026-10-10T23:14:12.141Z",
+  "updatedAt": "2026-10-10T23:14:21.642Z",
+  "totalPages": 1,
+  "attemptedPages": [
+    19
+  ],
+  "completedPages": 1,
+  "reviewPages": [],
+  "notionsCreated": 2,
+  "cardsCreated": 0,
+  "requests": 1,
+  "inputTokens": 14674,
+  "outputTokens": 831,
+  "warnings": [],
+  "execution": "inline",
+  "concurrency": 3,
+  "pipeline": "direct",
+  "sectionCount": 1,
+  "activeStages": {},
+  "elapsedMs": 9494,
+  "estimatedCostUsd": null,
+  "firstReadyAt": "2026-10-10T23:14:21.635Z",
+  "firstReadyMs": 9494,
+  "sectionsCompleted": 1,
+  "readyCards": 10,
+  "draftCards": 0,
+  "coveredPages": 1,
+  "skippedPages": 0,
+  "processedPages": 1
+}

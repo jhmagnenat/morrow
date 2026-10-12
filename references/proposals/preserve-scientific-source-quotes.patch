@@ -1,0 +1,9 @@
+diff --git a/lib/contentQuality.ts b/lib/contentQuality.ts
+--- a/lib/contentQuality.ts
++++ b/lib/contentQuality.ts
+@@ -63,4 +63,4 @@
+ export function verifiesQuote(quote: string, text: string): boolean {
+-  const normalize = (s: string) => s.normalize("NFKC").replace(/\s+/g, " ").trim().toLowerCase();
++  const normalize = (s: string) => s.normalize("NFC").replace(/\s+/g, " ").trim();
+   return normalize(quote).length >= 12 && normalize(text).includes(normalize(quote));
+ }

@@ -1,0 +1,35 @@
+{
+  "reportPath": "references/evaluation/direct-server-1791699870800.json",
+  "documentId": "8b6f4739-c98f-4a73-98c2-39df80dcbb4f",
+  "courseId": "default",
+  "recoveryId": {
+    "version": 1,
+    "id": "7d597ddf-ee76-460a-b8a0-2f138a2fd0ab",
+    "courseId": "default",
+    "createdAt": "2026-10-11T10:19:28.509Z",
+    "reason": "before-reviewed-generation-replay",
+    "digest": "b02c236e09c72ed9a0e94aec6ed448833becec35c31155cd6d2b1d74ee9138eb",
+    "bytes": 455193,
+    "pdfs": [
+      "438f0286f8310855dd51bcb0db76aafbea5c5551b8dcf160cbc0a5feeb4160af"
+    ]
+  },
+  "results": [
+    {
+      "notions": [],
+      "cardsCreated": 0,
+      "processed": 1,
+      "readyCards": 5,
+      "warnings": []
+    },
+    {
+      "notions": [],
+      "cardsCreated": 9,
+      "processed": 1,
+      "readyCards": 11,
+      "warnings": []
+    }
+  ],
+  "providerCalls": 0,
+  "at": "2026-10-11T10:19:28.728Z"
+}

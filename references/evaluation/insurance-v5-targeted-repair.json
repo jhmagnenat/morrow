@@ -1,0 +1,54 @@
+{
+  "id": "c7106b42-f5c1-49fc-8b81-b789cb84bfd3",
+  "documentId": "8b6f4739-c98f-4a73-98c2-39df80dcbb4f",
+  "courseId": "default",
+  "workerPid": 6256,
+  "status": "needs_review",
+  "mode": "strict",
+  "enrichment": false,
+  "cardDetail": "key-ideas",
+  "pages": [
+    19,
+    23,
+    34
+  ],
+  "reprocess": true,
+  "startedAt": "2026-10-10T23:09:12.239Z",
+  "updatedAt": "2026-10-10T23:09:49.072Z",
+  "totalPages": 3,
+  "attemptedPages": [
+    34,
+    19,
+    23
+  ],
+  "completedPages": 2,
+  "reviewPages": [
+    19
+  ],
+  "notionsCreated": 22,
+  "cardsCreated": 9,
+  "requests": 9,
+  "inputTokens": 80111,
+  "outputTokens": 8851,
+  "warnings": [
+    "An existing card changed during review and was preserved; this objective needs another review",
+    "Uncovered knowledge: Insurance provides saving and protections as part of its role in the economy.",
+    "Savings and protections as roles of insurance in the economy.",
+    "Unpublished objective: Insurance provides saving and protections as part of its role in the economy."
+  ],
+  "execution": "inline",
+  "concurrency": 3,
+  "pipeline": "direct",
+  "sectionCount": 3,
+  "activeStages": {},
+  "elapsedMs": 36815,
+  "estimatedCostUsd": null,
+  "firstReadyAt": "2026-10-10T23:09:20.138Z",
+  "firstReadyMs": 7899,
+  "sectionsCompleted": 3,
+  "readyCards": 29,
+  "draftCards": 1,
+  "coveredPages": 2,
+  "skippedPages": 0,
+  "processedPages": 3
+}

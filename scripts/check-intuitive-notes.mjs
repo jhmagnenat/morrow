@@ -1,0 +1,35 @@
+import assert from 'node:assert/strict';
+export async function checkIntuitiveNotes(command){
+  const evaluate=async(expression)=>{const result=await command('Runtime.evaluate',{expression,returnByValue:true,awaitPromise:true});if(result.exceptionDetails)throw Error(result.exceptionDetails.exception?.description??result.exceptionDetails.text);return result.result.value;};
+  const settle=()=>evaluate('new Promise(resolve=>setTimeout(resolve,700))');
+  await settle();
+  assert(await evaluate(`document.querySelector('button[aria-label="Open Insurance fundamentals"]').innerText.includes('Policyholder ⇄ Insurer')`),'The overview shows actors rather than only glossary titles');
+  assert(await evaluate(`document.querySelector('button[aria-label="Open Insurance Products"]').innerText.includes('P&C → car')`),'Concrete product examples are visible in the overview');
+  await evaluate(`document.querySelector('button[aria-label="Open Insurance fundamentals"]').click()`);
+  await settle();
+  await evaluate(`document.querySelector('button[aria-label="Open Insurance Premium"]').click()`);
+  await settle();
+  assert(await evaluate(`document.body.innerText.includes('In the workflow:') && document.body.innerText.includes('Do not confuse:')`),'Workflow and comparisons are visible in the existing reader');
+  assert(await evaluate(`document.body.innerText.includes('Calculating a premium is not receiving it')`));
+  assert(await evaluate(`document.body.innerText.includes('At a glance:') && document.body.innerText.includes('Concrete example:')`));
+  await evaluate(`[...document.querySelectorAll('button')].find(b=>b.innerText==='Overview').click()`);
+  await settle();
+  await evaluate(`document.querySelector('button[aria-label="Open Insurance Products"]').click()`);
+  await settle();
+  assert(await evaluate(`!document.querySelector('button[aria-label="Open Motor Insurance"]')`),'A motor product does not sit at the same level as its P&C family');
+  await evaluate(`document.querySelector('button[aria-label="Open Property and Casualty Insurance"]').click()`);
+  await settle();
+  assert(await evaluate(`!!document.querySelector('button[aria-label="Open Motor Insurance"]') && !!document.querySelector('button[aria-label="Open Liability Insurance"]')`),'P&C contains motor and liability concepts');
+  await evaluate(`document.querySelector('button[aria-label="Open Motor Insurance"]').click()`);
+  await settle();
+  assert(await evaluate(`document.body.innerText.includes('Motor vehicle damage → protected vehicle') && document.body.innerText.includes('Motor liability → injured person')`),'The product explains two different covered interests');
+  await evaluate(`[...document.querySelectorAll('button')].find(b=>b.innerText==='Overview').click()`);
+  await settle();
+  await evaluate(`document.querySelector('button[aria-label="Open Financial understanding"]').click()`);
+  await settle();
+  await evaluate(`document.querySelector('button[aria-label="Open Cash, Profit and Provisions"]').click()`);
+  await settle();
+  assert(await evaluate(`document.body.innerText.includes('profit +7') && document.body.innerText.includes('cash change +13')`),'The worked reconciliation is readable');
+  assert(await evaluate(`document.body.innerText.includes('profit without cash moving')`));
+  console.log('PASS: premium workflow, specific comparisons and cash/profit example visible without changing data.');
+}

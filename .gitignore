@@ -32,9 +32,22 @@ yarn-error.log*
 
 # env files (can opt-in for committing if needed)
 .env*
+!.env.local.example
 
 # vercel
 .vercel
+
+# local data
+/data/*
+!/data/seed.ts
+/data/encyclopedia.db*
+/data/*.db*
+/data/backups/
+/data/uploads/
+/data/benchmark-lab/
+/data/model-evaluation/
+/data/llm-budget.sqlite*
+/.tools/ollama/
 
 # typescript
 *.tsbuildinfo

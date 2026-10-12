@@ -1,0 +1,1438 @@
+{
+  "version": "direct-cards-v5-reviewed-targets",
+  "selected": [
+    23
+  ],
+  "activeBefore": "default",
+  "startedAt": "2026-10-10T22:29:08.067Z",
+  "complete": true,
+  "humanQualityScore": null,
+  "job": {
+    "id": "0ad8d11f-1981-4a34-95d4-ed83d647d8a8",
+    "documentId": "2d270018-8aea-4a71-add8-85ea1c285aea",
+    "courseId": "4b914a78-5042-4708-b2e8-c4525910cc6d",
+    "workerPid": 6256,
+    "status": "needs_review",
+    "mode": "strict",
+    "enrichment": false,
+    "cardDetail": "key-ideas",
+    "pages": [
+      23
+    ],
+    "reprocess": false,
+    "startedAt": "2026-10-10T22:29:08.350Z",
+    "updatedAt": "2026-10-10T22:29:44.570Z",
+    "totalPages": 1,
+    "attemptedPages": [
+      23
+    ],
+    "completedPages": 0,
+    "reviewPages": [
+      23
+    ],
+    "notionsCreated": 7,
+    "cardsCreated": 7,
+    "requests": 5,
+    "inputTokens": 16163,
+    "outputTokens": 5268,
+    "warnings": [
+      "Uncovered knowledge: Property and casualty insurance covers risks such as motor, property, accident, or liability loss.",
+      "Uncovered knowledge: Health and accident insurance covers risks such as medical expenses, disability, or accident.",
+      "Uncovered knowledge: The financial feature of health and accident insurance is claims experience and healthcare inflation.",
+      "Uncovered knowledge: Reinsurance deals with risks such as large, volatile, or accumulated insurance losses.",
+      "Uncovered knowledge: The financial features of reinsurance include ceded premium and claim recoveries.",
+      "Uncovered knowledge: Captive insurance involves risks retained within the group.",
+      "Uncovered knowledge: The financial feature of captive insurance involves risk retention with external protection when needed.",
+      "Uncovered knowledge: Product classification can overlap, but purpose and risk transfer are more important than the label."
+    ],
+    "execution": "inline",
+    "concurrency": 3,
+    "pipeline": "direct",
+    "sectionCount": 1,
+    "activeStages": {},
+    "elapsedMs": 36216,
+    "estimatedCostUsd": null,
+    "readyCards": 7,
+    "draftCards": 0,
+    "firstReadyAt": "2026-10-10T22:29:44.566Z",
+    "firstReadyMs": 36216,
+    "sectionsCompleted": 1,
+    "coveredPages": 0,
+    "skippedPages": 0,
+    "processedPages": 1
+  },
+  "elapsedMs": 36933,
+  "cards": [
+    {
+      "id": "01850fb2-0278-4543-8083-70adcdc0718a",
+      "notionId": "00ef1025-37b5-4640-a75c-874eab0ccd2f",
+      "cardType": "notion",
+      "question": "What is the main aim of life insurance?",
+      "answer": "To protect income or build savings.",
+      "explanation": "Life insurance is designed to provide financial security for beneficiaries after the policyholder's death, and it can also serve as an investment vehicle to build savings over time.",
+      "example": "",
+      "kind": "definition",
+      "objective": "Understand the primary aim of life insurance.",
+      "status": "ready",
+      "evidence": [
+        {
+          "documentId": "2d270018-8aea-4a71-add8-85ea1c285aea",
+          "page": 23,
+          "quote": "Main insurance product families\n44\nFamily Customer need Typical risk or benefit Financial feature\nLife Protect income or build\nsavings\nDeath, longevity, retirement or\nsavings benefit\nLong duration and investment\nsensitivity\nProperty and\ncasualty\nProtect property and legal\nliability\nMotor, property, accident or liability\nloss\nClaims frequency and severity\nHealth and\naccident\nFund medical care or replace\nincome\nMedical expense, disability or\naccident\nClaims experience and\nhealthcare inflation\nReinsurance Protect an insurer Large, volatile or accumulated\ninsurance losses\nCeded premium and claim\nrecoveries\nCaptive\ninsurance\nFinance a corporate group's\nown risks\nRisks retained within the group Risk retention with external\nprotection when needed\nProduct classification can overlap. The purpose and risk transfer matter more than the label."
+        }
+      ],
+      "warnings": [],
+      "userEdited": false,
+      "model": "OpenAI (gpt-4o)",
+      "promptVersion": "direct-cards-v5-reviewed-targets",
+      "knowledgeTrace": {
+        "unitId": "t0",
+        "planKey": "a71e82e92d2bb7e957d906afa71782f279e81ca86bad0397dbb3b1f03bb7e1a6",
+        "claim": "Life insurance aims to protect income or build savings.",
+        "conditions": []
+      },
+      "accuracyReview": {
+        "version": "accuracy-v2-scientific-quotations",
+        "contentHash": "63833a7a9fad507e3543f2fc04bffe59a5cf411acc2339857267ca1f591ae08e",
+        "sources": [
+          {
+            "documentId": "2d270018-8aea-4a71-add8-85ea1c285aea",
+            "page": 23,
+            "sha256": "8b6fbf6418a1867022d38b551ccfecf9764f0025b7c21dbc19949493cec98613",
+            "revision": "68b60055f797a0ab369023a838dfdb8ba4f4f6b5a1b3852fae27c7ca192a9b6a"
+          }
+        ]
+      }
+    },
+    {
+      "id": "adb699a8-5a1c-42b3-898c-605718633928",
+      "notionId": "cbc9b78b-2636-4b04-9232-b0258ea507fb",
+      "cardType": "notion",
+      "question": "What are the financial features of life insurance?",
+      "answer": "Long duration and investment sensitivity.",
+      "explanation": "The long duration refers to the extended period over which life insurance policies are effective, while investment sensitivity relates to the way life insurance values can be affected by changes in investment performance.",
+      "example": "",
+      "kind": "mechanism",
+      "objective": "Identify financial characteristics of life insurance.",
+      "status": "ready",
+      "evidence": [
+        {
+          "documentId": "2d270018-8aea-4a71-add8-85ea1c285aea",
+          "page": 23,
+          "quote": "Main insurance product families\n44\nFamily Customer need Typical risk or benefit Financial feature\nLife Protect income or build\nsavings\nDeath, longevity, retirement or\nsavings benefit\nLong duration and investment\nsensitivity\nProperty and\ncasualty\nProtect property and legal\nliability\nMotor, property, accident or liability\nloss\nClaims frequency and severity\nHealth and\naccident\nFund medical care or replace\nincome\nMedical expense, disability or\naccident\nClaims experience and\nhealthcare inflation\nReinsurance Protect an insurer Large, volatile or accumulated\ninsurance losses\nCeded premium and claim\nrecoveries\nCaptive\ninsurance\nFinance a corporate group's\nown risks\nRisks retained within the group Risk retention with external\nprotection when needed\nProduct classification can overlap. The purpose and risk transfer matter more than the label."
+        }
+      ],
+      "warnings": [],
+      "userEdited": false,
+      "model": "OpenAI (gpt-4o)",
+      "promptVersion": "direct-cards-v5-reviewed-targets",
+      "knowledgeTrace": {
+        "unitId": "t2",
+        "planKey": "a71e82e92d2bb7e957d906afa71782f279e81ca86bad0397dbb3b1f03bb7e1a6",
+        "claim": "Life insurance has financial features like long duration and investment sensitivity.",
+        "conditions": []
+      },
+      "accuracyReview": {
+        "version": "accuracy-v2-scientific-quotations",
+        "contentHash": "4c1ce75467b181114cfc153d42382ba00c9e2c125a42fea0efb737f571e3e120",
+        "sources": [
+          {
+            "documentId": "2d270018-8aea-4a71-add8-85ea1c285aea",
+            "page": 23,
+            "sha256": "8b6fbf6418a1867022d38b551ccfecf9764f0025b7c21dbc19949493cec98613",
+            "revision": "68b60055f797a0ab369023a838dfdb8ba4f4f6b5a1b3852fae27c7ca192a9b6a"
+          }
+        ]
+      }
+    },
+    {
+      "id": "182cbd2f-8fe7-4215-a549-e277cdb115e8",
+      "notionId": "f1460aa9-6171-4d22-aa39-a384130664c2",
+      "cardType": "notion",
+      "question": "What is the purpose of property and casualty insurance?",
+      "answer": "To protect property and provide legal liability coverage.",
+      "explanation": "Property and casualty insurance focus on safeguarding the insured's physical assets and offering coverage for responsibility towards third-party damages.",
+      "example": "",
+      "kind": "definition",
+      "objective": "Understand the primary purpose of property and casualty insurance.",
+      "status": "ready",
+      "evidence": [
+        {
+          "documentId": "2d270018-8aea-4a71-add8-85ea1c285aea",
+          "page": 23,
+          "quote": "Main insurance product families\n44\nFamily Customer need Typical risk or benefit Financial feature\nLife Protect income or build\nsavings\nDeath, longevity, retirement or\nsavings benefit\nLong duration and investment\nsensitivity\nProperty and\ncasualty\nProtect property and legal\nliability\nMotor, property, accident or liability\nloss\nClaims frequency and severity\nHealth and\naccident\nFund medical care or replace\nincome\nMedical expense, disability or\naccident\nClaims experience and\nhealthcare inflation\nReinsurance Protect an insurer Large, volatile or accumulated\ninsurance losses\nCeded premium and claim\nrecoveries\nCaptive\ninsurance\nFinance a corporate group's\nown risks\nRisks retained within the group Risk retention with external\nprotection when needed\nProduct classification can overlap. The purpose and risk transfer matter more than the label."
+        }
+      ],
+      "warnings": [],
+      "userEdited": false,
+      "model": "OpenAI (gpt-4o)",
+      "promptVersion": "direct-cards-v5-reviewed-targets",
+      "knowledgeTrace": {
+        "unitId": "t3",
+        "planKey": "a71e82e92d2bb7e957d906afa71782f279e81ca86bad0397dbb3b1f03bb7e1a6",
+        "claim": "Property and casualty insurance aims to protect property and provide legal liability coverage.",
+        "conditions": []
+      },
+      "accuracyReview": {
+        "version": "accuracy-v2-scientific-quotations",
+        "contentHash": "6152d88168bac7db37b1ba6ac956cde794f09602a62516b570c6532ecbd1f93a",
+        "sources": [
+          {
+            "documentId": "2d270018-8aea-4a71-add8-85ea1c285aea",
+            "page": 23,
+            "sha256": "8b6fbf6418a1867022d38b551ccfecf9764f0025b7c21dbc19949493cec98613",
+            "revision": "68b60055f797a0ab369023a838dfdb8ba4f4f6b5a1b3852fae27c7ca192a9b6a"
+          }
+        ]
+      }
+    },
+    {
+      "id": "6f1b41cd-a13f-4fc1-922d-50a7e0570425",
+      "notionId": "ed728fc2-46a4-46c3-949f-fbe36070e0f6",
+      "cardType": "notion",
+      "question": "What is the financial feature of property and casualty insurance?",
+      "answer": "Claims frequency and severity.",
+      "explanation": "Property and casualty insurance is heavily influenced by how often claims are made (frequency) and how costly each claim is (severity), impacting the insurer's overall risk.",
+      "example": "",
+      "kind": "mechanism",
+      "objective": "Identify financial characteristics of property and casualty insurance.",
+      "status": "ready",
+      "evidence": [
+        {
+          "documentId": "2d270018-8aea-4a71-add8-85ea1c285aea",
+          "page": 23,
+          "quote": "Main insurance product families\n44\nFamily Customer need Typical risk or benefit Financial feature\nLife Protect income or build\nsavings\nDeath, longevity, retirement or\nsavings benefit\nLong duration and investment\nsensitivity\nProperty and\ncasualty\nProtect property and legal\nliability\nMotor, property, accident or liability\nloss\nClaims frequency and severity\nHealth and\naccident\nFund medical care or replace\nincome\nMedical expense, disability or\naccident\nClaims experience and\nhealthcare inflation\nReinsurance Protect an insurer Large, volatile or accumulated\ninsurance losses\nCeded premium and claim\nrecoveries\nCaptive\ninsurance\nFinance a corporate group's\nown risks\nRisks retained within the group Risk retention with external\nprotection when needed\nProduct classification can overlap. The purpose and risk transfer matter more than the label."
+        }
+      ],
+      "warnings": [],
+      "userEdited": false,
+      "model": "OpenAI (gpt-4o)",
+      "promptVersion": "direct-cards-v5-reviewed-targets",
+      "knowledgeTrace": {
+        "unitId": "t5",
+        "planKey": "a71e82e92d2bb7e957d906afa71782f279e81ca86bad0397dbb3b1f03bb7e1a6",
+        "claim": "The financial feature of property and casualty insurance is claims frequency and severity.",
+        "conditions": []
+      },
+      "accuracyReview": {
+        "version": "accuracy-v2-scientific-quotations",
+        "contentHash": "73dfe20701b40fc89888c10c1e483adfa60faa272c4c225cc4ca5b79769218eb",
+        "sources": [
+          {
+            "documentId": "2d270018-8aea-4a71-add8-85ea1c285aea",
+            "page": 23,
+            "sha256": "8b6fbf6418a1867022d38b551ccfecf9764f0025b7c21dbc19949493cec98613",
+            "revision": "68b60055f797a0ab369023a838dfdb8ba4f4f6b5a1b3852fae27c7ca192a9b6a"
+          }
+        ]
+      }
+    },
+    {
+      "id": "3265fc1e-b9be-4de3-888a-d04d41199173",
+      "notionId": "c6f3782b-9e97-4305-a877-651963417c1d",
+      "cardType": "notion",
+      "question": "What is the purpose of health and accident insurance?",
+      "answer": "To fund medical care or replace income.",
+      "explanation": "This type of insurance specifically targets the financial burden of medical care and compensates for lost income due to health-related issues such as disability or accidents.",
+      "example": "",
+      "kind": "definition",
+      "objective": "Understand the primary purpose of health and accident insurance.",
+      "status": "ready",
+      "evidence": [
+        {
+          "documentId": "2d270018-8aea-4a71-add8-85ea1c285aea",
+          "page": 23,
+          "quote": "Main insurance product families\n44\nFamily Customer need Typical risk or benefit Financial feature\nLife Protect income or build\nsavings\nDeath, longevity, retirement or\nsavings benefit\nLong duration and investment\nsensitivity\nProperty and\ncasualty\nProtect property and legal\nliability\nMotor, property, accident or liability\nloss\nClaims frequency and severity\nHealth and\naccident\nFund medical care or replace\nincome\nMedical expense, disability or\naccident\nClaims experience and\nhealthcare inflation\nReinsurance Protect an insurer Large, volatile or accumulated\ninsurance losses\nCeded premium and claim\nrecoveries\nCaptive\ninsurance\nFinance a corporate group's\nown risks\nRisks retained within the group Risk retention with external\nprotection when needed\nProduct classification can overlap. The purpose and risk transfer matter more than the label."
+        }
+      ],
+      "warnings": [],
+      "userEdited": false,
+      "model": "OpenAI (gpt-4o)",
+      "promptVersion": "direct-cards-v5-reviewed-targets",
+      "knowledgeTrace": {
+        "unitId": "t6",
+        "planKey": "a71e82e92d2bb7e957d906afa71782f279e81ca86bad0397dbb3b1f03bb7e1a6",
+        "claim": "Health and accident insurance is designed to fund medical care or replace income.",
+        "conditions": []
+      },
+      "accuracyReview": {
+        "version": "accuracy-v2-scientific-quotations",
+        "contentHash": "ccc752ee823f22a07f57360b8e0d2fe40bad0b53f3a0af89c26befad43552689",
+        "sources": [
+          {
+            "documentId": "2d270018-8aea-4a71-add8-85ea1c285aea",
+            "page": 23,
+            "sha256": "8b6fbf6418a1867022d38b551ccfecf9764f0025b7c21dbc19949493cec98613",
+            "revision": "68b60055f797a0ab369023a838dfdb8ba4f4f6b5a1b3852fae27c7ca192a9b6a"
+          }
+        ]
+      }
+    },
+    {
+      "id": "2aa8a253-3155-4503-bb91-d4e227292f95",
+      "notionId": "106dc36d-7969-447a-b3c0-ad36fd3618a2",
+      "cardType": "notion",
+      "question": "What is the main purpose of reinsurance?",
+      "answer": "To protect an insurer.",
+      "explanation": "Reinsurance allows insurance companies to mitigate risks that arise from their own policies, covering large or volatile potential losses by sharing them with other insurers.",
+      "example": "",
+      "kind": "definition",
+      "objective": "Understand the primary purpose of reinsurance.",
+      "status": "ready",
+      "evidence": [
+        {
+          "documentId": "2d270018-8aea-4a71-add8-85ea1c285aea",
+          "page": 23,
+          "quote": "Main insurance product families\n44\nFamily Customer need Typical risk or benefit Financial feature\nLife Protect income or build\nsavings\nDeath, longevity, retirement or\nsavings benefit\nLong duration and investment\nsensitivity\nProperty and\ncasualty\nProtect property and legal\nliability\nMotor, property, accident or liability\nloss\nClaims frequency and severity\nHealth and\naccident\nFund medical care or replace\nincome\nMedical expense, disability or\naccident\nClaims experience and\nhealthcare inflation\nReinsurance Protect an insurer Large, volatile or accumulated\ninsurance losses\nCeded premium and claim\nrecoveries\nCaptive\ninsurance\nFinance a corporate group's\nown risks\nRisks retained within the group Risk retention with external\nprotection when needed\nProduct classification can overlap. The purpose and risk transfer matter more than the label."
+        }
+      ],
+      "warnings": [],
+      "userEdited": false,
+      "model": "OpenAI (gpt-4o)",
+      "promptVersion": "direct-cards-v5-reviewed-targets",
+      "knowledgeTrace": {
+        "unitId": "t9",
+        "planKey": "a71e82e92d2bb7e957d906afa71782f279e81ca86bad0397dbb3b1f03bb7e1a6",
+        "claim": "Reinsurance is intended to protect an insurer.",
+        "conditions": []
+      },
+      "accuracyReview": {
+        "version": "accuracy-v2-scientific-quotations",
+        "contentHash": "57448855a609a6aae66028850c6fb9154bc80b37ea126e5e08c98d6a7f41cbf9",
+        "sources": [
+          {
+            "documentId": "2d270018-8aea-4a71-add8-85ea1c285aea",
+            "page": 23,
+            "sha256": "8b6fbf6418a1867022d38b551ccfecf9764f0025b7c21dbc19949493cec98613",
+            "revision": "68b60055f797a0ab369023a838dfdb8ba4f4f6b5a1b3852fae27c7ca192a9b6a"
+          }
+        ]
+      }
+    },
+    {
+      "id": "e0770693-def2-4134-b519-3062996f069d",
+      "notionId": "2c899fba-68e7-4b86-b780-98bceaeea5ab",
+      "cardType": "notion",
+      "question": "What is the purpose of captive insurance?",
+      "answer": "To finance a corporate group's own risks.",
+      "explanation": "Corporations use captive insurance to self-insure liabilities by setting up an internal insurance company, thereby controlling risks directly.",
+      "example": "",
+      "kind": "definition",
+      "objective": "Understand the primary purpose of captive insurance.",
+      "status": "ready",
+      "evidence": [
+        {
+          "documentId": "2d270018-8aea-4a71-add8-85ea1c285aea",
+          "page": 23,
+          "quote": "Main insurance product families\n44\nFamily Customer need Typical risk or benefit Financial feature\nLife Protect income or build\nsavings\nDeath, longevity, retirement or\nsavings benefit\nLong duration and investment\nsensitivity\nProperty and\ncasualty\nProtect property and legal\nliability\nMotor, property, accident or liability\nloss\nClaims frequency and severity\nHealth and\naccident\nFund medical care or replace\nincome\nMedical expense, disability or\naccident\nClaims experience and\nhealthcare inflation\nReinsurance Protect an insurer Large, volatile or accumulated\ninsurance losses\nCeded premium and claim\nrecoveries\nCaptive\ninsurance\nFinance a corporate group's\nown risks\nRisks retained within the group Risk retention with external\nprotection when needed\nProduct classification can overlap. The purpose and risk transfer matter more than the label."
+        }
+      ],
+      "warnings": [],
+      "userEdited": false,
+      "model": "OpenAI (gpt-4o)",
+      "promptVersion": "direct-cards-v5-reviewed-targets",
+      "knowledgeTrace": {
+        "unitId": "t12",
+        "planKey": "a71e82e92d2bb7e957d906afa71782f279e81ca86bad0397dbb3b1f03bb7e1a6",
+        "claim": "Captive insurance is used to finance a corporate group's own risks.",
+        "conditions": []
+      },
+      "accuracyReview": {
+        "version": "accuracy-v2-scientific-quotations",
+        "contentHash": "35b96bd1d7fd94f8db3571564a1b3582919fdf8264642d8d24885e54a1f23852",
+        "sources": [
+          {
+            "documentId": "2d270018-8aea-4a71-add8-85ea1c285aea",
+            "page": 23,
+            "sha256": "8b6fbf6418a1867022d38b551ccfecf9764f0025b7c21dbc19949493cec98613",
+            "revision": "68b60055f797a0ab369023a838dfdb8ba4f4f6b5a1b3852fae27c7ca192a9b6a"
+          }
+        ]
+      }
+    }
+  ],
+  "pages": [
+    {
+      "page": 23,
+      "kind": "content",
+      "status": "retry",
+      "generationComplete": true,
+      "reason": "Page 23 contains substantive teachings on insurance product families, their purposes, and features.",
+      "warnings": [
+        "Uncovered knowledge: Life insurance is associated with risks such as death, longevity, retirement or savings benefits.",
+        "Uncovered knowledge: Property and casualty insurance covers risks such as motor, property, accident, or liability loss.",
+        "Uncovered knowledge: Health and accident insurance covers risks such as medical expenses, disability, or accident.",
+        "Uncovered knowledge: The financial feature of health and accident insurance is claims experience and healthcare inflation.",
+        "Uncovered knowledge: Reinsurance deals with risks such as large, volatile, or accumulated insurance losses.",
+        "Uncovered knowledge: The financial features of reinsurance include ceded premium and claim recoveries.",
+        "Uncovered knowledge: Captive insurance involves risks retained within the group.",
+        "Uncovered knowledge: The financial feature of captive insurance involves risk retention with external protection when needed.",
+        "Uncovered knowledge: Product classification can overlap, but purpose and risk transfer are more important than the label."
+      ],
+      "concepts": 7,
+      "cards": 7,
+      "readyCards": 7,
+      "draftCards": 0,
+      "knowledgeCoverage": [
+        {
+          "key": "t0",
+          "claim": "Life insurance aims to protect income or build savings.",
+          "status": "covered",
+          "reason": "The claim directly corresponds to the source text and is atomic, covering the full intended aim of life insurance as protecting income or building savings.",
+          "sourceIds": [
+            "p23s0"
+          ],
+          "cardKeys": [
+            "t0c0"
+          ]
+        },
+        {
+          "key": "t1",
+          "claim": "Life insurance is associated with risks such as death, longevity, retirement or savings benefits.",
+          "status": "unresolved",
+          "reason": "The claim correctly states the risks associated with life insurance from the source, but no target card exists. Thus, the coverage is incomplete.",
+          "sourceIds": [
+            "p23s0"
+          ],
+          "cardKeys": []
+        },
+        {
+          "key": "t2",
+          "claim": "Life insurance has financial features like long duration and investment sensitivity.",
+          "status": "covered",
+          "reason": "The claim about financial features of life insurance is straightforward, correctly outlined in the source, and captured by the card.",
+          "sourceIds": [
+            "p23s0"
+          ],
+          "cardKeys": [
+            "t2c0"
+          ]
+        },
+        {
+          "key": "t3",
+          "claim": "Property and casualty insurance aims to protect property and provide legal liability coverage.",
+          "status": "covered",
+          "reason": "This claim accurately mirrors the source's description of the purpose of property and casualty insurance, with complete card coverage.",
+          "sourceIds": [
+            "p23s0"
+          ],
+          "cardKeys": [
+            "t3c0"
+          ]
+        },
+        {
+          "key": "t4",
+          "claim": "Property and casualty insurance covers risks such as motor, property, accident, or liability loss.",
+          "status": "unresolved",
+          "reason": "The claim is supported by the source. However, due to the absence of a corresponding target card, the coverage is incomplete.",
+          "sourceIds": [
+            "p23s0"
+          ],
+          "cardKeys": []
+        },
+        {
+          "key": "t5",
+          "claim": "The financial feature of property and casualty insurance is claims frequency and severity.",
+          "status": "covered",
+          "reason": "The financial feature and associated elements are explicitly supported by the source, with a target card covering the full extent.",
+          "sourceIds": [
+            "p23s0"
+          ],
+          "cardKeys": [
+            "t5c0"
+          ]
+        },
+        {
+          "key": "t6",
+          "claim": "Health and accident insurance is designed to fund medical care or replace income.",
+          "status": "covered",
+          "reason": "The claim on the purpose of health and accident insurance is exact, with comprehensive coverage through the corresponding target card.",
+          "sourceIds": [
+            "p23s0"
+          ],
+          "cardKeys": [
+            "t6c0"
+          ]
+        },
+        {
+          "key": "t7",
+          "claim": "Health and accident insurance covers risks such as medical expenses, disability, or accident.",
+          "status": "unresolved",
+          "reason": "The claim is fully supported by the source text. However, the lack of a target card implies incomplete coverage.",
+          "sourceIds": [
+            "p23s0"
+          ],
+          "cardKeys": []
+        },
+        {
+          "key": "t8",
+          "claim": "The financial feature of health and accident insurance is claims experience and healthcare inflation.",
+          "status": "unresolved",
+          "reason": "Although the claim is supported by the source, coverage is incomplete because of the absence of a related target card.",
+          "sourceIds": [
+            "p23s0"
+          ],
+          "cardKeys": []
+        },
+        {
+          "key": "t9",
+          "claim": "Reinsurance is intended to protect an insurer.",
+          "status": "covered",
+          "reason": "The claim and corresponding card accurately state the primary intent of reinsurance, as per the source.",
+          "sourceIds": [
+            "p23s0"
+          ],
+          "cardKeys": [
+            "t9c0"
+          ]
+        },
+        {
+          "key": "t10",
+          "claim": "Reinsurance deals with risks such as large, volatile, or accumulated insurance losses.",
+          "status": "unresolved",
+          "reason": "The claim regarding risks in reinsurance is supported by the source, but no associated target card indicates incomplete coverage.",
+          "sourceIds": [
+            "p23s0"
+          ],
+          "cardKeys": []
+        },
+        {
+          "key": "t11",
+          "claim": "The financial features of reinsurance include ceded premium and claim recoveries.",
+          "status": "unresolved",
+          "reason": "The financial features of reinsurance are correctly captured in the claim, but lacking an associated target card makes coverage incomplete.",
+          "sourceIds": [
+            "p23s0"
+          ],
+          "cardKeys": []
+        },
+        {
+          "key": "t12",
+          "claim": "Captive insurance is used to finance a corporate group's own risks.",
+          "status": "covered",
+          "reason": "Captive insurance's purpose is clearly matched by both the source and target card, ensuring full coverage.",
+          "sourceIds": [
+            "p23s0"
+          ],
+          "cardKeys": [
+            "t12c0"
+          ]
+        },
+        {
+          "key": "t13",
+          "claim": "Captive insurance involves risks retained within the group.",
+          "status": "unresolved",
+          "reason": "Despite full support from the source, the absence of a covering card results in incomplete coverage.",
+          "sourceIds": [
+            "p23s0"
+          ],
+          "cardKeys": []
+        },
+        {
+          "key": "t14",
+          "claim": "The financial feature of captive insurance involves risk retention with external protection when needed.",
+          "status": "unresolved",
+          "reason": "While the claim accurately reflects the source, missing a target card means the coverage is incomplete.",
+          "sourceIds": [
+            "p23s0"
+          ],
+          "cardKeys": []
+        },
+        {
+          "key": "t15",
+          "claim": "Product classification can overlap, but purpose and risk transfer are more important than the label.",
+          "status": "unresolved",
+          "reason": "The claim about product classification is supported, but the lack of a related card leaves coverage incomplete.",
+          "sourceIds": [
+            "p23s0"
+          ],
+          "cardKeys": []
+        }
+      ],
+      "missingObjectives": [
+        "Uncovered knowledge: Life insurance is associated with risks such as death, longevity, retirement or savings benefits.",
+        "Uncovered knowledge: Property and casualty insurance covers risks such as motor, property, accident, or liability loss.",
+        "Uncovered knowledge: Health and accident insurance covers risks such as medical expenses, disability, or accident.",
+        "Uncovered knowledge: The financial feature of health and accident insurance is claims experience and healthcare inflation.",
+        "Uncovered knowledge: Reinsurance deals with risks such as large, volatile, or accumulated insurance losses.",
+        "Uncovered knowledge: The financial features of reinsurance include ceded premium and claim recoveries.",
+        "Uncovered knowledge: Captive insurance involves risks retained within the group.",
+        "Uncovered knowledge: The financial feature of captive insurance involves risk retention with external protection when needed.",
+        "Uncovered knowledge: Product classification can overlap, but purpose and risk transfer are more important than the label."
+      ],
+      "version": "direct-cards-v5-reviewed-targets",
+      "sourceRevision": "68b60055f797a0ab369023a838dfdb8ba4f4f6b5a1b3852fae27c7ca192a9b6a",
+      "updatedAt": "2026-10-10T22:29:44.559Z"
+    }
+  ],
+  "artifacts": [
+    {
+      "version": "direct-cards-v5-reviewed-targets",
+      "planPromptHash": "659162cc66be9f35d1ba64e86a5c33762de22b9aa8ea24f5fe3b34df909b91ed",
+      "writerPromptHash": "f2a8ce6820ca1a2152bce85cc6c239ba498e64759f2a2fe68709e2b8af74c3ce",
+      "reviewPromptHash": "b3d35bcf40bd5fbbefa8c9ed29c449a1ec5acd145ea755aa0b43470f09937711",
+      "writerModel": "OpenAI (gpt-4o)",
+      "reviewModel": "OpenAI (gpt-4o)",
+      "cardDetail": "key-ideas",
+      "sourceRevision": "68b60055f797a0ab369023a838dfdb8ba4f4f6b5a1b3852fae27c7ca192a9b6a",
+      "pdfSha256": "438f0286f8310855dd51bcb0db76aafbea5c5551b8dcf160cbc0a5feeb4160af",
+      "sourceOrigin": "pdf",
+      "pages": [
+        23
+      ],
+      "imagePages": [
+        23
+      ],
+      "draft": {
+        "knowledge": [
+          {
+            "page": 23,
+            "claim": "Life insurance aims to protect income or build savings.",
+            "sourceIds": [
+              "p23s0"
+            ],
+            "exclusionReason": "",
+            "key": "t0",
+            "cardKeys": [
+              "t0c0"
+            ],
+            "issues": []
+          },
+          {
+            "page": 23,
+            "claim": "Life insurance is associated with risks such as death, longevity, retirement or savings benefits.",
+            "sourceIds": [
+              "p23s0"
+            ],
+            "exclusionReason": "",
+            "key": "t1",
+            "cardKeys": [],
+            "issues": []
+          },
+          {
+            "page": 23,
+            "claim": "Life insurance has financial features like long duration and investment sensitivity.",
+            "sourceIds": [
+              "p23s0"
+            ],
+            "exclusionReason": "",
+            "key": "t2",
+            "cardKeys": [
+              "t2c0"
+            ],
+            "issues": []
+          },
+          {
+            "page": 23,
+            "claim": "Property and casualty insurance aims to protect property and provide legal liability coverage.",
+            "sourceIds": [
+              "p23s0"
+            ],
+            "exclusionReason": "",
+            "key": "t3",
+            "cardKeys": [
+              "t3c0"
+            ],
+            "issues": []
+          },
+          {
+            "page": 23,
+            "claim": "Property and casualty insurance covers risks such as motor, property, accident, or liability loss.",
+            "sourceIds": [
+              "p23s0"
+            ],
+            "exclusionReason": "",
+            "key": "t4",
+            "cardKeys": [],
+            "issues": []
+          },
+          {
+            "page": 23,
+            "claim": "The financial feature of property and casualty insurance is claims frequency and severity.",
+            "sourceIds": [
+              "p23s0"
+            ],
+            "exclusionReason": "",
+            "key": "t5",
+            "cardKeys": [
+              "t5c0"
+            ],
+            "issues": []
+          },
+          {
+            "page": 23,
+            "claim": "Health and accident insurance is designed to fund medical care or replace income.",
+            "sourceIds": [
+              "p23s0"
+            ],
+            "exclusionReason": "",
+            "key": "t6",
+            "cardKeys": [
+              "t6c0"
+            ],
+            "issues": []
+          },
+          {
+            "page": 23,
+            "claim": "Health and accident insurance covers risks such as medical expenses, disability, or accident.",
+            "sourceIds": [
+              "p23s0"
+            ],
+            "exclusionReason": "",
+            "key": "t7",
+            "cardKeys": [],
+            "issues": []
+          },
+          {
+            "page": 23,
+            "claim": "The financial feature of health and accident insurance is claims experience and healthcare inflation.",
+            "sourceIds": [
+              "p23s0"
+            ],
+            "exclusionReason": "",
+            "key": "t8",
+            "cardKeys": [],
+            "issues": []
+          },
+          {
+            "page": 23,
+            "claim": "Reinsurance is intended to protect an insurer.",
+            "sourceIds": [
+              "p23s0"
+            ],
+            "exclusionReason": "",
+            "key": "t9",
+            "cardKeys": [
+              "t9c0"
+            ],
+            "issues": []
+          },
+          {
+            "page": 23,
+            "claim": "Reinsurance deals with risks such as large, volatile, or accumulated insurance losses.",
+            "sourceIds": [
+              "p23s0"
+            ],
+            "exclusionReason": "",
+            "key": "t10",
+            "cardKeys": [],
+            "issues": []
+          },
+          {
+            "page": 23,
+            "claim": "The financial features of reinsurance include ceded premium and claim recoveries.",
+            "sourceIds": [
+              "p23s0"
+            ],
+            "exclusionReason": "",
+            "key": "t11",
+            "cardKeys": [],
+            "issues": []
+          },
+          {
+            "page": 23,
+            "claim": "Captive insurance is used to finance a corporate group's own risks.",
+            "sourceIds": [
+              "p23s0"
+            ],
+            "exclusionReason": "",
+            "key": "t12",
+            "cardKeys": [
+              "t12c0"
+            ],
+            "issues": []
+          },
+          {
+            "page": 23,
+            "claim": "Captive insurance involves risks retained within the group.",
+            "sourceIds": [
+              "p23s0"
+            ],
+            "exclusionReason": "",
+            "key": "t13",
+            "cardKeys": [],
+            "issues": []
+          },
+          {
+            "page": 23,
+            "claim": "The financial feature of captive insurance involves risk retention with external protection when needed.",
+            "sourceIds": [
+              "p23s0"
+            ],
+            "exclusionReason": "",
+            "key": "t14",
+            "cardKeys": [],
+            "issues": []
+          },
+          {
+            "page": 23,
+            "claim": "Product classification can overlap, but purpose and risk transfer are more important than the label.",
+            "sourceIds": [
+              "p23s0"
+            ],
+            "exclusionReason": "",
+            "key": "t15",
+            "cardKeys": [],
+            "issues": []
+          }
+        ],
+        "cards": [
+          {
+            "targetKey": "t0",
+            "topic": "Life Insurance",
+            "topicDefinition": "Life insurance refers to a contract between an insurer and a policyholder where the insurer guarantees payment of a death benefit to named beneficiaries upon the death of the insured, often also serving to protect income or build savings.",
+            "question": "What is the main aim of life insurance?",
+            "answer": "To protect income or build savings.",
+            "explanation": "Life insurance is designed to provide financial security for beneficiaries after the policyholder's death, and it can also serve as an investment vehicle to build savings over time.",
+            "kind": "definition",
+            "objective": "Understand the primary aim of life insurance.",
+            "sources": [
+              {
+                "sourceId": "p23s0"
+              }
+            ],
+            "visualDescription": "",
+            "key": "t0c0"
+          },
+          {
+            "targetKey": "t2",
+            "topic": "Financial Features of Life Insurance",
+            "topicDefinition": "Life insurance is characterized by long duration of policies and sensitivity to investment performance due to its dual role of providing protection and serving as a savings vehicle.",
+            "question": "What are the financial features of life insurance?",
+            "answer": "Long duration and investment sensitivity.",
+            "explanation": "The long duration refers to the extended period over which life insurance policies are effective, while investment sensitivity relates to the way life insurance values can be affected by changes in investment performance.",
+            "kind": "mechanism",
+            "objective": "Identify financial characteristics of life insurance.",
+            "sources": [
+              {
+                "sourceId": "p23s0"
+              }
+            ],
+            "visualDescription": "",
+            "key": "t2c0"
+          },
+          {
+            "targetKey": "t3",
+            "topic": "Property and Casualty Insurance",
+            "topicDefinition": "Property and casualty insurance provides coverage to protect physical property and cover legal liability for damages caused to others by the policyholder.",
+            "question": "What is the purpose of property and casualty insurance?",
+            "answer": "To protect property and provide legal liability coverage.",
+            "explanation": "Property and casualty insurance focus on safeguarding the insured's physical assets and offering coverage for responsibility towards third-party damages.",
+            "kind": "definition",
+            "objective": "Understand the primary purpose of property and casualty insurance.",
+            "sources": [
+              {
+                "sourceId": "p23s0"
+              }
+            ],
+            "visualDescription": "",
+            "key": "t3c0"
+          },
+          {
+            "targetKey": "t5",
+            "topic": "Financial Feature of Property and Casualty Insurance",
+            "topicDefinition": "The financial feature of property and casualty insurance is characterized by claims frequency, the number of claims made, and severity, the magnitude of each claim's cost.",
+            "question": "What is the financial feature of property and casualty insurance?",
+            "answer": "Claims frequency and severity.",
+            "explanation": "Property and casualty insurance is heavily influenced by how often claims are made (frequency) and how costly each claim is (severity), impacting the insurer's overall risk.",
+            "kind": "mechanism",
+            "objective": "Identify financial characteristics of property and casualty insurance.",
+            "sources": [
+              {
+                "sourceId": "p23s0"
+              }
+            ],
+            "visualDescription": "",
+            "key": "t5c0"
+          },
+          {
+            "targetKey": "t6",
+            "topic": "Health and Accident Insurance",
+            "topicDefinition": "Health and accident insurance is designed to cover medical expenses or provide income replacement due to disability or accidents.",
+            "question": "What is the purpose of health and accident insurance?",
+            "answer": "To fund medical care or replace income.",
+            "explanation": "This type of insurance specifically targets the financial burden of medical care and compensates for lost income due to health-related issues such as disability or accidents.",
+            "kind": "definition",
+            "objective": "Understand the primary purpose of health and accident insurance.",
+            "sources": [
+              {
+                "sourceId": "p23s0"
+              }
+            ],
+            "visualDescription": "",
+            "key": "t6c0"
+          },
+          {
+            "targetKey": "t9",
+            "topic": "Reinsurance",
+            "topicDefinition": "Reinsurance involves insurance that an insurance company purchases to manage risk, protecting itself against significant claims by spreading the risk to other insurers.",
+            "question": "What is the main purpose of reinsurance?",
+            "answer": "To protect an insurer.",
+            "explanation": "Reinsurance allows insurance companies to mitigate risks that arise from their own policies, covering large or volatile potential losses by sharing them with other insurers.",
+            "kind": "definition",
+            "objective": "Understand the primary purpose of reinsurance.",
+            "sources": [
+              {
+                "sourceId": "p23s0"
+              }
+            ],
+            "visualDescription": "",
+            "key": "t9c0"
+          },
+          {
+            "targetKey": "t12",
+            "topic": "Captive Insurance",
+            "topicDefinition": "Captive insurance is a method by which a corporation insures its own risks through a wholly owned insurance subsidiary.",
+            "question": "What is the purpose of captive insurance?",
+            "answer": "To finance a corporate group's own risks.",
+            "explanation": "Corporations use captive insurance to self-insure liabilities by setting up an internal insurance company, thereby controlling risks directly.",
+            "kind": "definition",
+            "objective": "Understand the primary purpose of captive insurance.",
+            "sources": [
+              {
+                "sourceId": "p23s0"
+              }
+            ],
+            "visualDescription": "",
+            "key": "t12c0"
+          }
+        ]
+      },
+      "review": {
+        "targets": [
+          {
+            "key": "t0",
+            "verdict": "supported",
+            "atomic": true,
+            "coverageComplete": true,
+            "reason": "The claim directly corresponds to the source text and is atomic, covering the full intended aim of life insurance as protecting income or building savings."
+          },
+          {
+            "key": "t1",
+            "verdict": "supported",
+            "atomic": true,
+            "coverageComplete": false,
+            "reason": "The claim correctly states the risks associated with life insurance from the source, but no target card exists. Thus, the coverage is incomplete."
+          },
+          {
+            "key": "t2",
+            "verdict": "supported",
+            "atomic": true,
+            "coverageComplete": true,
+            "reason": "The claim about financial features of life insurance is straightforward, correctly outlined in the source, and captured by the card."
+          },
+          {
+            "key": "t3",
+            "verdict": "supported",
+            "atomic": true,
+            "coverageComplete": true,
+            "reason": "This claim accurately mirrors the source's description of the purpose of property and casualty insurance, with complete card coverage."
+          },
+          {
+            "key": "t4",
+            "verdict": "supported",
+            "atomic": true,
+            "coverageComplete": false,
+            "reason": "The claim is supported by the source. However, due to the absence of a corresponding target card, the coverage is incomplete."
+          },
+          {
+            "key": "t5",
+            "verdict": "supported",
+            "atomic": true,
+            "coverageComplete": true,
+            "reason": "The financial feature and associated elements are explicitly supported by the source, with a target card covering the full extent."
+          },
+          {
+            "key": "t6",
+            "verdict": "supported",
+            "atomic": true,
+            "coverageComplete": true,
+            "reason": "The claim on the purpose of health and accident insurance is exact, with comprehensive coverage through the corresponding target card."
+          },
+          {
+            "key": "t7",
+            "verdict": "supported",
+            "atomic": true,
+            "coverageComplete": false,
+            "reason": "The claim is fully supported by the source text. However, the lack of a target card implies incomplete coverage."
+          },
+          {
+            "key": "t8",
+            "verdict": "supported",
+            "atomic": true,
+            "coverageComplete": false,
+            "reason": "Although the claim is supported by the source, coverage is incomplete because of the absence of a related target card."
+          },
+          {
+            "key": "t9",
+            "verdict": "supported",
+            "atomic": true,
+            "coverageComplete": true,
+            "reason": "The claim and corresponding card accurately state the primary intent of reinsurance, as per the source."
+          },
+          {
+            "key": "t10",
+            "verdict": "supported",
+            "atomic": true,
+            "coverageComplete": false,
+            "reason": "The claim regarding risks in reinsurance is supported by the source, but no associated target card indicates incomplete coverage."
+          },
+          {
+            "key": "t11",
+            "verdict": "supported",
+            "atomic": true,
+            "coverageComplete": false,
+            "reason": "The financial features of reinsurance are correctly captured in the claim, but lacking an associated target card makes coverage incomplete."
+          },
+          {
+            "key": "t12",
+            "verdict": "supported",
+            "atomic": true,
+            "coverageComplete": true,
+            "reason": "Captive insurance's purpose is clearly matched by both the source and target card, ensuring full coverage."
+          },
+          {
+            "key": "t13",
+            "verdict": "supported",
+            "atomic": true,
+            "coverageComplete": false,
+            "reason": "Despite full support from the source, the absence of a covering card results in incomplete coverage."
+          },
+          {
+            "key": "t14",
+            "verdict": "supported",
+            "atomic": true,
+            "coverageComplete": false,
+            "reason": "While the claim accurately reflects the source, missing a target card means the coverage is incomplete."
+          },
+          {
+            "key": "t15",
+            "verdict": "supported",
+            "atomic": true,
+            "coverageComplete": false,
+            "reason": "The claim about product classification is supported, but the lack of a related card leaves coverage incomplete."
+          }
+        ],
+        "decisions": [
+          {
+            "key": "t0c0",
+            "complete": true,
+            "scopeCorrect": true,
+            "atomic": true,
+            "unambiguous": true,
+            "relevant": true,
+            "requiresVisualEvidence": false,
+            "duplicateOf": "",
+            "reason": "The claim provides a precise, accurate, and complete understanding of life insurance's purpose, as supported by the source.",
+            "claims": [
+              {
+                "text": "Topic: Life Insurance\nConcept definition: Life insurance refers to a contract between an insurer and a policyholder where the insurer guarantees payment of a death benefit to named beneficiaries upon the death of the insured, often also serving to protect income or build savings.\nQuestion: What is the main aim of life insurance?\nAnswer: To protect income or build savings.\nExplanation: Life insurance is designed to provide financial security for beneficiaries after the policyholder's death, and it can also serve as an investment vehicle to build savings over time.",
+                "verdict": "supported",
+                "evidence": [
+                  {
+                    "sourceId": "p23s0",
+                    "quote": "Main insurance product families\n44\nFamily Customer need Typical risk or benefit Financial feature\nLife Protect income or build\nsavings\nDeath, longevity, retirement or\nsavings benefit\nLong duration and investment\nsensitivity\nProperty and\ncasualty\nProtect property and legal\nliability\nMotor, property, accident or liability\nloss\nClaims frequency and severity\nHealth and\naccident\nFund medical care or replace\nincome\nMedical expense, disability or\naccident\nClaims experience and\nhealthcare inflation\nReinsurance Protect an insurer Large, volatile or accumulated\ninsurance losses\nCeded premium and claim\nrecoveries\nCaptive\ninsurance\nFinance a corporate group's\nown risks\nRisks retained within the group Risk retention with external\nprotection when needed\nProduct classification can overlap. The purpose and risk transfer matter more than the label."
+                  }
+                ],
+                "reasoning": "The claim clearly explains the primary intent of life insurance which is to protect income or build savings. The source text directly supports this notion, making the claim comprehensive and accurate."
+              }
+            ]
+          },
+          {
+            "key": "t2c0",
+            "complete": true,
+            "scopeCorrect": true,
+            "atomic": true,
+            "unambiguous": true,
+            "relevant": true,
+            "requiresVisualEvidence": false,
+            "duplicateOf": "",
+            "reason": "The claim accurately captures the financial features of life insurance, supported by the source, being comprehensive and relevant.",
+            "claims": [
+              {
+                "text": "Topic: Financial Features of Life Insurance\nConcept definition: Life insurance is characterized by long duration of policies and sensitivity to investment performance due to its dual role of providing protection and serving as a savings vehicle.\nQuestion: What are the financial features of life insurance?\nAnswer: Long duration and investment sensitivity.\nExplanation: The long duration refers to the extended period over which life insurance policies are effective, while investment sensitivity relates to the way life insurance values can be affected by changes in investment performance.",
+                "verdict": "supported",
+                "evidence": [
+                  {
+                    "sourceId": "p23s0",
+                    "quote": "Main insurance product families\n44\nFamily Customer need Typical risk or benefit Financial feature\nLife Protect income or build\nsavings\nDeath, longevity, retirement or\nsavings benefit\nLong duration and investment\nsensitivity\nProperty and\ncasualty\nProtect property and legal\nliability\nMotor, property, accident or liability\nloss\nClaims frequency and severity\nHealth and\naccident\nFund medical care or replace\nincome\nMedical expense, disability or\naccident\nClaims experience and\nhealthcare inflation\nReinsurance Protect an insurer Large, volatile or accumulated\ninsurance losses\nCeded premium and claim\nrecoveries\nCaptive\ninsurance\nFinance a corporate group's\nown risks\nRisks retained within the group Risk retention with external\nprotection when needed\nProduct classification can overlap. The purpose and risk transfer matter more than the label."
+                  }
+                ],
+                "reasoning": "This claim clearly identifies the financial characteristics outlined in the source: long duration and investment sensitivity. It fully covers relevant features and remains relevant to the subject."
+              }
+            ]
+          },
+          {
+            "key": "t3c0",
+            "complete": true,
+            "scopeCorrect": true,
+            "atomic": true,
+            "unambiguous": true,
+            "relevant": true,
+            "requiresVisualEvidence": false,
+            "duplicateOf": "",
+            "reason": "The card directly corresponds to the source text, covering the aim of property and casualty insurance accurately and completely.",
+            "claims": [
+              {
+                "text": "Topic: Property and Casualty Insurance\nConcept definition: Property and casualty insurance provides coverage to protect physical property and cover legal liability for damages caused to others by the policyholder.\nQuestion: What is the purpose of property and casualty insurance?\nAnswer: To protect property and provide legal liability coverage.\nExplanation: Property and casualty insurance focus on safeguarding the insured's physical assets and offering coverage for responsibility towards third-party damages.",
+                "verdict": "supported",
+                "evidence": [
+                  {
+                    "sourceId": "p23s0",
+                    "quote": "Main insurance product families\n44\nFamily Customer need Typical risk or benefit Financial feature\nLife Protect income or build\nsavings\nDeath, longevity, retirement or\nsavings benefit\nLong duration and investment\nsensitivity\nProperty and\ncasualty\nProtect property and legal\nliability\nMotor, property, accident or liability\nloss\nClaims frequency and severity\nHealth and\naccident\nFund medical care or replace\nincome\nMedical expense, disability or\naccident\nClaims experience and\nhealthcare inflation\nReinsurance Protect an insurer Large, volatile or accumulated\ninsurance losses\nCeded premium and claim\nrecoveries\nCaptive\ninsurance\nFinance a corporate group's\nown risks\nRisks retained within the group Risk retention with external\nprotection when needed\nProduct classification can overlap. The purpose and risk transfer matter more than the label."
+                  }
+                ],
+                "reasoning": "The claim explains the overall aim of property and casualty insurance as supported by the source, specifically addressing protection and liability coverage, rendering it complete and relevant."
+              }
+            ]
+          },
+          {
+            "key": "t5c0",
+            "complete": true,
+            "scopeCorrect": true,
+            "atomic": true,
+            "unambiguous": true,
+            "relevant": true,
+            "requiresVisualEvidence": false,
+            "duplicateOf": "",
+            "reason": "This claim correctly describes the financial features involved in property and casualty insurance entirely supported by the source text.",
+            "claims": [
+              {
+                "text": "Topic: Financial Feature of Property and Casualty Insurance\nConcept definition: The financial feature of property and casualty insurance is characterized by claims frequency, the number of claims made, and severity, the magnitude of each claim's cost.\nQuestion: What is the financial feature of property and casualty insurance?\nAnswer: Claims frequency and severity.\nExplanation: Property and casualty insurance is heavily influenced by how often claims are made (frequency) and how costly each claim is (severity), impacting the insurer's overall risk.",
+                "verdict": "supported",
+                "evidence": [
+                  {
+                    "sourceId": "p23s0",
+                    "quote": "Main insurance product families\n44\nFamily Customer need Typical risk or benefit Financial feature\nLife Protect income or build\nsavings\nDeath, longevity, retirement or\nsavings benefit\nLong duration and investment\nsensitivity\nProperty and\ncasualty\nProtect property and legal\nliability\nMotor, property, accident or liability\nloss\nClaims frequency and severity\nHealth and\naccident\nFund medical care or replace\nincome\nMedical expense, disability or\naccident\nClaims experience and\nhealthcare inflation\nReinsurance Protect an insurer Large, volatile or accumulated\ninsurance losses\nCeded premium and claim\nrecoveries\nCaptive\ninsurance\nFinance a corporate group's\nown risks\nRisks retained within the group Risk retention with external\nprotection when needed\nProduct classification can overlap. The purpose and risk transfer matter more than the label."
+                  }
+                ],
+                "reasoning": "Since the source mentions claims frequency and severity as financial features of the insurance type, the claim is complete, with a full match to the source's information."
+              }
+            ]
+          },
+          {
+            "key": "t6c0",
+            "complete": true,
+            "scopeCorrect": true,
+            "atomic": true,
+            "unambiguous": true,
+            "relevant": true,
+            "requiresVisualEvidence": false,
+            "duplicateOf": "",
+            "reason": "The claim is consistent, atomic, and completely in alignment with the source's assertion on the purpose of health and accident insurance.",
+            "claims": [
+              {
+                "text": "Topic: Health and Accident Insurance\nConcept definition: Health and accident insurance is designed to cover medical expenses or provide income replacement due to disability or accidents.\nQuestion: What is the purpose of health and accident insurance?\nAnswer: To fund medical care or replace income.\nExplanation: This type of insurance specifically targets the financial burden of medical care and compensates for lost income due to health-related issues such as disability or accidents.",
+                "verdict": "supported",
+                "evidence": [
+                  {
+                    "sourceId": "p23s0",
+                    "quote": "Main insurance product families\n44\nFamily Customer need Typical risk or benefit Financial feature\nLife Protect income or build\nsavings\nDeath, longevity, retirement or\nsavings benefit\nLong duration and investment\nsensitivity\nProperty and\ncasualty\nProtect property and legal\nliability\nMotor, property, accident or liability\nloss\nClaims frequency and severity\nHealth and\naccident\nFund medical care or replace\nincome\nMedical expense, disability or\naccident\nClaims experience and\nhealthcare inflation\nReinsurance Protect an insurer Large, volatile or accumulated\ninsurance losses\nCeded premium and claim\nrecoveries\nCaptive\ninsurance\nFinance a corporate group's\nown risks\nRisks retained within the group Risk retention with external\nprotection when needed\nProduct classification can overlap. The purpose and risk transfer matter more than the label."
+                  }
+                ],
+                "reasoning": "This claim directly addresses the primary purpose outlined in the source: funding medical coverage or income replacement, making it thorough, unambiguous, and aligned with the text."
+              }
+            ]
+          },
+          {
+            "key": "t9c0",
+            "complete": true,
+            "scopeCorrect": true,
+            "atomic": true,
+            "unambiguous": true,
+            "relevant": true,
+            "requiresVisualEvidence": false,
+            "duplicateOf": "",
+            "reason": "The claim mirrors the source's effectively stated purpose of reinsurance for protecting insurers.",
+            "claims": [
+              {
+                "text": "Topic: Reinsurance\nConcept definition: Reinsurance involves insurance that an insurance company purchases to manage risk, protecting itself against significant claims by spreading the risk to other insurers.\nQuestion: What is the main purpose of reinsurance?\nAnswer: To protect an insurer.\nExplanation: Reinsurance allows insurance companies to mitigate risks that arise from their own policies, covering large or volatile potential losses by sharing them with other insurers.",
+                "verdict": "supported",
+                "evidence": [
+                  {
+                    "sourceId": "p23s0",
+                    "quote": "Main insurance product families\n44\nFamily Customer need Typical risk or benefit Financial feature\nLife Protect income or build\nsavings\nDeath, longevity, retirement or\nsavings benefit\nLong duration and investment\nsensitivity\nProperty and\ncasualty\nProtect property and legal\nliability\nMotor, property, accident or liability\nloss\nClaims frequency and severity\nHealth and\naccident\nFund medical care or replace\nincome\nMedical expense, disability or\naccident\nClaims experience and\nhealthcare inflation\nReinsurance Protect an insurer Large, volatile or accumulated\ninsurance losses\nCeded premium and claim\nrecoveries\nCaptive\ninsurance\nFinance a corporate group's\nown risks\nRisks retained within the group Risk retention with external\nprotection when needed\nProduct classification can overlap. The purpose and risk transfer matter more than the label."
+                  }
+                ],
+                "reasoning": "Reinsurance is explicitly defined in the source to protect insurers, making this claim fully supported, precise, and relevant to the teaching content."
+              }
+            ]
+          },
+          {
+            "key": "t12c0",
+            "complete": true,
+            "scopeCorrect": true,
+            "atomic": true,
+            "unambiguous": true,
+            "relevant": true,
+            "requiresVisualEvidence": false,
+            "duplicateOf": "",
+            "reason": "Captive insurance's intent is detailed correctly in the claim, backed by the source and precise in content scope.",
+            "claims": [
+              {
+                "text": "Topic: Captive Insurance\nConcept definition: Captive insurance is a method by which a corporation insures its own risks through a wholly owned insurance subsidiary.\nQuestion: What is the purpose of captive insurance?\nAnswer: To finance a corporate group's own risks.\nExplanation: Corporations use captive insurance to self-insure liabilities by setting up an internal insurance company, thereby controlling risks directly.",
+                "verdict": "supported",
+                "evidence": [
+                  {
+                    "sourceId": "p23s0",
+                    "quote": "Main insurance product families\n44\nFamily Customer need Typical risk or benefit Financial feature\nLife Protect income or build\nsavings\nDeath, longevity, retirement or\nsavings benefit\nLong duration and investment\nsensitivity\nProperty and\ncasualty\nProtect property and legal\nliability\nMotor, property, accident or liability\nloss\nClaims frequency and severity\nHealth and\naccident\nFund medical care or replace\nincome\nMedical expense, disability or\naccident\nClaims experience and\nhealthcare inflation\nReinsurance Protect an insurer Large, volatile or accumulated\ninsurance losses\nCeded premium and claim\nrecoveries\nCaptive\ninsurance\nFinance a corporate group's\nown risks\nRisks retained within the group Risk retention with external\nprotection when needed\nProduct classification can overlap. The purpose and risk transfer matter more than the label."
+                  }
+                ],
+                "reasoning": "The claim focuses on captive insurance and its primary purpose concerning corporate risk management, matching well with the sourced context, ensuring its applicability and completeness."
+              }
+            ]
+          }
+        ],
+        "pages": [
+          {
+            "page": 23,
+            "excluded": false,
+            "reason": "Page 23 contains substantive teachings on insurance product families, their purposes, and features.",
+            "objectives": [
+              {
+                "description": "Understand the main aim of life insurance and associated risks.",
+                "cardKeys": [
+                  "t0c0"
+                ]
+              },
+              {
+                "description": "Identify financial features of life insurance.",
+                "cardKeys": [
+                  "t2c0"
+                ]
+              },
+              {
+                "description": "Understand the primary purpose and features of property and casualty insurance.",
+                "cardKeys": [
+                  "t3c0",
+                  "t5c0"
+                ]
+              },
+              {
+                "description": "Recognize the purpose and features of health and accident insurance.",
+                "cardKeys": [
+                  "t6c0"
+                ]
+              },
+              {
+                "description": "Comprehend the purpose of reinsurance in risk management.",
+                "cardKeys": [
+                  "t9c0"
+                ]
+              },
+              {
+                "description": "Understand the usage of captive insurance for corporate risk management.",
+                "cardKeys": [
+                  "t12c0"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "cards": [
+        {
+          "candidate": {
+            "targetKey": "t0",
+            "topic": "Life Insurance",
+            "topicDefinition": "Life insurance refers to a contract between an insurer and a policyholder where the insurer guarantees payment of a death benefit to named beneficiaries upon the death of the insured, often also serving to protect income or build savings.",
+            "question": "What is the main aim of life insurance?",
+            "answer": "To protect income or build savings.",
+            "explanation": "Life insurance is designed to provide financial security for beneficiaries after the policyholder's death, and it can also serve as an investment vehicle to build savings over time.",
+            "kind": "definition",
+            "objective": "Understand the primary aim of life insurance.",
+            "sources": [
+              {
+                "sourceId": "p23s0"
+              }
+            ],
+            "visualDescription": "",
+            "key": "t0c0"
+          },
+          "evidence": [
+            {
+              "documentId": "2d270018-8aea-4a71-add8-85ea1c285aea",
+              "page": 23,
+              "quote": "Main insurance product families\n44\nFamily Customer need Typical risk or benefit Financial feature\nLife Protect income or build\nsavings\nDeath, longevity, retirement or\nsavings benefit\nLong duration and investment\nsensitivity\nProperty and\ncasualty\nProtect property and legal\nliability\nMotor, property, accident or liability\nloss\nClaims frequency and severity\nHealth and\naccident\nFund medical care or replace\nincome\nMedical expense, disability or\naccident\nClaims experience and\nhealthcare inflation\nReinsurance Protect an insurer Large, volatile or accumulated\ninsurance losses\nCeded premium and claim\nrecoveries\nCaptive\ninsurance\nFinance a corporate group's\nown risks\nRisks retained within the group Risk retention with external\nprotection when needed\nProduct classification can overlap. The purpose and risk transfer matter more than the label."
+            }
+          ],
+          "issues": [],
+          "contractValid": true
+        },
+        {
+          "candidate": {
+            "targetKey": "t2",
+            "topic": "Financial Features of Life Insurance",
+            "topicDefinition": "Life insurance is characterized by long duration of policies and sensitivity to investment performance due to its dual role of providing protection and serving as a savings vehicle.",
+            "question": "What are the financial features of life insurance?",
+            "answer": "Long duration and investment sensitivity.",
+            "explanation": "The long duration refers to the extended period over which life insurance policies are effective, while investment sensitivity relates to the way life insurance values can be affected by changes in investment performance.",
+            "kind": "mechanism",
+            "objective": "Identify financial characteristics of life insurance.",
+            "sources": [
+              {
+                "sourceId": "p23s0"
+              }
+            ],
+            "visualDescription": "",
+            "key": "t2c0"
+          },
+          "evidence": [
+            {
+              "documentId": "2d270018-8aea-4a71-add8-85ea1c285aea",
+              "page": 23,
+              "quote": "Main insurance product families\n44\nFamily Customer need Typical risk or benefit Financial feature\nLife Protect income or build\nsavings\nDeath, longevity, retirement or\nsavings benefit\nLong duration and investment\nsensitivity\nProperty and\ncasualty\nProtect property and legal\nliability\nMotor, property, accident or liability\nloss\nClaims frequency and severity\nHealth and\naccident\nFund medical care or replace\nincome\nMedical expense, disability or\naccident\nClaims experience and\nhealthcare inflation\nReinsurance Protect an insurer Large, volatile or accumulated\ninsurance losses\nCeded premium and claim\nrecoveries\nCaptive\ninsurance\nFinance a corporate group's\nown risks\nRisks retained within the group Risk retention with external\nprotection when needed\nProduct classification can overlap. The purpose and risk transfer matter more than the label."
+            }
+          ],
+          "issues": [],
+          "contractValid": true
+        },
+        {
+          "candidate": {
+            "targetKey": "t3",
+            "topic": "Property and Casualty Insurance",
+            "topicDefinition": "Property and casualty insurance provides coverage to protect physical property and cover legal liability for damages caused to others by the policyholder.",
+            "question": "What is the purpose of property and casualty insurance?",
+            "answer": "To protect property and provide legal liability coverage.",
+            "explanation": "Property and casualty insurance focus on safeguarding the insured's physical assets and offering coverage for responsibility towards third-party damages.",
+            "kind": "definition",
+            "objective": "Understand the primary purpose of property and casualty insurance.",
+            "sources": [
+              {
+                "sourceId": "p23s0"
+              }
+            ],
+            "visualDescription": "",
+            "key": "t3c0"
+          },
+          "evidence": [
+            {
+              "documentId": "2d270018-8aea-4a71-add8-85ea1c285aea",
+              "page": 23,
+              "quote": "Main insurance product families\n44\nFamily Customer need Typical risk or benefit Financial feature\nLife Protect income or build\nsavings\nDeath, longevity, retirement or\nsavings benefit\nLong duration and investment\nsensitivity\nProperty and\ncasualty\nProtect property and legal\nliability\nMotor, property, accident or liability\nloss\nClaims frequency and severity\nHealth and\naccident\nFund medical care or replace\nincome\nMedical expense, disability or\naccident\nClaims experience and\nhealthcare inflation\nReinsurance Protect an insurer Large, volatile or accumulated\ninsurance losses\nCeded premium and claim\nrecoveries\nCaptive\ninsurance\nFinance a corporate group's\nown risks\nRisks retained within the group Risk retention with external\nprotection when needed\nProduct classification can overlap. The purpose and risk transfer matter more than the label."
+            }
+          ],
+          "issues": [],
+          "contractValid": true
+        },
+        {
+          "candidate": {
+            "targetKey": "t5",
+            "topic": "Financial Feature of Property and Casualty Insurance",
+            "topicDefinition": "The financial feature of property and casualty insurance is characterized by claims frequency, the number of claims made, and severity, the magnitude of each claim's cost.",
+            "question": "What is the financial feature of property and casualty insurance?",
+            "answer": "Claims frequency and severity.",
+            "explanation": "Property and casualty insurance is heavily influenced by how often claims are made (frequency) and how costly each claim is (severity), impacting the insurer's overall risk.",
+            "kind": "mechanism",
+            "objective": "Identify financial characteristics of property and casualty insurance.",
+            "sources": [
+              {
+                "sourceId": "p23s0"
+              }
+            ],
+            "visualDescription": "",
+            "key": "t5c0"
+          },
+          "evidence": [
+            {
+              "documentId": "2d270018-8aea-4a71-add8-85ea1c285aea",
+              "page": 23,
+              "quote": "Main insurance product families\n44\nFamily Customer need Typical risk or benefit Financial feature\nLife Protect income or build\nsavings\nDeath, longevity, retirement or\nsavings benefit\nLong duration and investment\nsensitivity\nProperty and\ncasualty\nProtect property and legal\nliability\nMotor, property, accident or liability\nloss\nClaims frequency and severity\nHealth and\naccident\nFund medical care or replace\nincome\nMedical expense, disability or\naccident\nClaims experience and\nhealthcare inflation\nReinsurance Protect an insurer Large, volatile or accumulated\ninsurance losses\nCeded premium and claim\nrecoveries\nCaptive\ninsurance\nFinance a corporate group's\nown risks\nRisks retained within the group Risk retention with external\nprotection when needed\nProduct classification can overlap. The purpose and risk transfer matter more than the label."
+            }
+          ],
+          "issues": [],
+          "contractValid": true
+        },
+        {
+          "candidate": {
+            "targetKey": "t6",
+            "topic": "Health and Accident Insurance",
+            "topicDefinition": "Health and accident insurance is designed to cover medical expenses or provide income replacement due to disability or accidents.",
+            "question": "What is the purpose of health and accident insurance?",
+            "answer": "To fund medical care or replace income.",
+            "explanation": "This type of insurance specifically targets the financial burden of medical care and compensates for lost income due to health-related issues such as disability or accidents.",
+            "kind": "definition",
+            "objective": "Understand the primary purpose of health and accident insurance.",
+            "sources": [
+              {
+                "sourceId": "p23s0"
+              }
+            ],
+            "visualDescription": "",
+            "key": "t6c0"
+          },
+          "evidence": [
+            {
+              "documentId": "2d270018-8aea-4a71-add8-85ea1c285aea",
+              "page": 23,
+              "quote": "Main insurance product families\n44\nFamily Customer need Typical risk or benefit Financial feature\nLife Protect income or build\nsavings\nDeath, longevity, retirement or\nsavings benefit\nLong duration and investment\nsensitivity\nProperty and\ncasualty\nProtect property and legal\nliability\nMotor, property, accident or liability\nloss\nClaims frequency and severity\nHealth and\naccident\nFund medical care or replace\nincome\nMedical expense, disability or\naccident\nClaims experience and\nhealthcare inflation\nReinsurance Protect an insurer Large, volatile or accumulated\ninsurance losses\nCeded premium and claim\nrecoveries\nCaptive\ninsurance\nFinance a corporate group's\nown risks\nRisks retained within the group Risk retention with external\nprotection when needed\nProduct classification can overlap. The purpose and risk transfer matter more than the label."
+            }
+          ],
+          "issues": [],
+          "contractValid": true
+        },
+        {
+          "candidate": {
+            "targetKey": "t9",
+            "topic": "Reinsurance",
+            "topicDefinition": "Reinsurance involves insurance that an insurance company purchases to manage risk, protecting itself against significant claims by spreading the risk to other insurers.",
+            "question": "What is the main purpose of reinsurance?",
+            "answer": "To protect an insurer.",
+            "explanation": "Reinsurance allows insurance companies to mitigate risks that arise from their own policies, covering large or volatile potential losses by sharing them with other insurers.",
+            "kind": "definition",
+            "objective": "Understand the primary purpose of reinsurance.",
+            "sources": [
+              {
+                "sourceId": "p23s0"
+              }
+            ],
+            "visualDescription": "",
+            "key": "t9c0"
+          },
+          "evidence": [
+            {
+              "documentId": "2d270018-8aea-4a71-add8-85ea1c285aea",
+              "page": 23,
+              "quote": "Main insurance product families\n44\nFamily Customer need Typical risk or benefit Financial feature\nLife Protect income or build\nsavings\nDeath, longevity, retirement or\nsavings benefit\nLong duration and investment\nsensitivity\nProperty and\ncasualty\nProtect property and legal\nliability\nMotor, property, accident or liability\nloss\nClaims frequency and severity\nHealth and\naccident\nFund medical care or replace\nincome\nMedical expense, disability or\naccident\nClaims experience and\nhealthcare inflation\nReinsurance Protect an insurer Large, volatile or accumulated\ninsurance losses\nCeded premium and claim\nrecoveries\nCaptive\ninsurance\nFinance a corporate group's\nown risks\nRisks retained within the group Risk retention with external\nprotection when needed\nProduct classification can overlap. The purpose and risk transfer matter more than the label."
+            }
+          ],
+          "issues": [],
+          "contractValid": true
+        },
+        {
+          "candidate": {
+            "targetKey": "t12",
+            "topic": "Captive Insurance",
+            "topicDefinition": "Captive insurance is a method by which a corporation insures its own risks through a wholly owned insurance subsidiary.",
+            "question": "What is the purpose of captive insurance?",
+            "answer": "To finance a corporate group's own risks.",
+            "explanation": "Corporations use captive insurance to self-insure liabilities by setting up an internal insurance company, thereby controlling risks directly.",
+            "kind": "definition",
+            "objective": "Understand the primary purpose of captive insurance.",
+            "sources": [
+              {
+                "sourceId": "p23s0"
+              }
+            ],
+            "visualDescription": "",
+            "key": "t12c0"
+          },
+          "evidence": [
+            {
+              "documentId": "2d270018-8aea-4a71-add8-85ea1c285aea",
+              "page": 23,
+              "quote": "Main insurance product families\n44\nFamily Customer need Typical risk or benefit Financial feature\nLife Protect income or build\nsavings\nDeath, longevity, retirement or\nsavings benefit\nLong duration and investment\nsensitivity\nProperty and\ncasualty\nProtect property and legal\nliability\nMotor, property, accident or liability\nloss\nClaims frequency and severity\nHealth and\naccident\nFund medical care or replace\nincome\nMedical expense, disability or\naccident\nClaims experience and\nhealthcare inflation\nReinsurance Protect an insurer Large, volatile or accumulated\ninsurance losses\nCeded premium and claim\nrecoveries\nCaptive\ninsurance\nFinance a corporate group's\nown risks\nRisks retained within the group Risk retention with external\nprotection when needed\nProduct classification can overlap. The purpose and risk transfer matter more than the label."
+            }
+          ],
+          "issues": [],
+          "contractValid": true
+        }
+      ],
+      "excludedCards": [],
+      "diagnostics": [
+        "Bounded repair reviewed 6 targets; no second repair round"
+      ]
+    }
+  ],
+  "activeAfter": "default"
+}

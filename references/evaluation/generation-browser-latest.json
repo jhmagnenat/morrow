@@ -1,0 +1,14 @@
+{
+  "checkedAt": "2026-10-11T11:27:23.821Z",
+  "result": "pass",
+  "checks": [
+    "generation coverage and page options",
+    "invalid page rejection",
+    "Reprocess starts generation",
+    "Browse refreshes saved cards",
+    "separate study explanation"
+  ],
+  "disposableData": true,
+  "providerRequestsIntercepted": true,
+  "pedagogicalQualityScore": null
+}

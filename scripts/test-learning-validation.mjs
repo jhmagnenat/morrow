@@ -1,0 +1,14 @@
+import assert from 'node:assert/strict';
+import {isolatedModules} from './isolated-modules.mjs';
+const env=await isolatedModules(['learningValidation']);
+const {assessLearningValidation}=await env.load('learningValidation');
+assert.equal(assessLearningValidation({scope:'Insurance fixture'}).score,null);
+const complete={scope:'Insurance fixture',content:{cases:30,reviewed:30,ratings:Array(210).fill(4),criticalErrors:0,provenanceIssues:0,independent:true},understanding:{questions:12,correct:12,unaided:true,independentlyScored:true},delayedTransfer:{questions:12,correct:12,unaided:true,independentlyScored:true,days:7,newProblems:true},coldGenerations:Array.from({length:3},()=>({complete:true,readyCards:20,elapsedMs:29000}))};
+assert.equal(assessLearningValidation(complete).score,10);
+assert.equal(assessLearningValidation({...complete,content:{...complete.content,independent:false}}).claimAllowed,false);
+assert.equal(assessLearningValidation({...complete,delayedTransfer:{...complete.delayedTransfer,days:0}}).score,null);
+assert.equal(assessLearningValidation({...complete,coldGenerations:[{complete:false,readyCards:0,elapsedMs:100},...complete.coldGenerations]}).score,null);
+assert.equal(assessLearningValidation({...complete,content:{...complete.content,ratings:Array(210).fill(3)}}).score,null);
+assert.equal(assessLearningValidation({...complete,understanding:{...complete.understanding,correct:11}}).score,null);
+assert.throws(()=>assessLearningValidation({...complete,content:{...complete.content,ratings:[NaN]}}),/Invalid/);
+console.log('PASS: scoped rubric, missing evidence, independent review, delayed transfer and failed-generation gates. No model calls.');

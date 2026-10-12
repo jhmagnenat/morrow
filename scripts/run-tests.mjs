@@ -1,0 +1,67 @@
+import {spawnSync} from 'node:child_process';
+const modelEvaluation=spawnSync(process.execPath,['scripts/test-model-evaluation.mjs'],{stdio:'inherit'});
+if(modelEvaluation.status!==0)process.exit(modelEvaluation.status??1);
+const evaluationCli=spawnSync(process.execPath,['scripts/test-model-evaluation-cli.mjs'],{stdio:'inherit'});
+if(evaluationCli.status!==0)process.exit(evaluationCli.status??1);
+const ollama=spawnSync(process.execPath,['scripts/test-ollama.mjs'],{stdio:'inherit'});
+if(ollama.status!==0)process.exit(ollama.status??1);
+const foundation=spawnSync(process.execPath,['scripts/test-generation-foundation.mjs'],{stdio:'inherit'});
+if(foundation.status!==0)process.exit(foundation.status??1);
+const directCards=spawnSync(process.execPath,['scripts/test-professor-generation.mjs'],{stdio:'inherit'});
+if(directCards.status!==0)process.exit(directCards.status??1);
+const usableCards=spawnSync(process.execPath,['scripts/test-generation-usability.mjs'],{stdio:'inherit'});
+if(usableCards.status!==0)process.exit(usableCards.status??1);
+const pedagogy=spawnSync(process.execPath,['scripts/test-generation-pedagogy.mjs'],{stdio:'inherit'});
+if(pedagogy.status!==0)process.exit(pedagogy.status??1);
+const targetCoverage=spawnSync(process.execPath,['scripts/test-direct-target-coverage.mjs'],{stdio:'inherit'});
+if(targetCoverage.status!==0)process.exit(targetCoverage.status??1);
+const selection=spawnSync(process.execPath,['scripts/test-generation-selection.mjs'],{stdio:'inherit'});
+if(selection.status!==0)process.exit(selection.status??1);
+const resetGeneration=spawnSync(process.execPath,['scripts/test-generation-reset.mjs'],{stdio:'inherit'});
+if(resetGeneration.status!==0)process.exit(resetGeneration.status??1);
+const inspectedGeneration=spawnSync(process.execPath,['scripts/test-inspected-generation.mjs'],{stdio:'inherit'});
+if(inspectedGeneration.status!==0)process.exit(inspectedGeneration.status??1);
+const realReplay=spawnSync(process.execPath,['scripts/test-direct-real-response-replay.mjs'],{stdio:'inherit'});
+if(realReplay.status!==0)process.exit(realReplay.status??1);
+const proofBinding=spawnSync(process.execPath,['scripts/test-card-proof-binding.mjs'],{stdio:'inherit'});
+if(proofBinding.status!==0)process.exit(proofBinding.status??1);
+const compiler=spawnSync(process.execPath,['scripts/test-knowledge-compiler.mjs'],{stdio:'inherit'});
+if(compiler.status!==0)process.exit(compiler.status??1);
+const sourceFirst=spawnSync(process.execPath,['scripts/test-source-first-import.mjs'],{stdio:'inherit'});
+if(sourceFirst.status!==0)process.exit(sourceFirst.status??1);
+const architecture=spawnSync(process.execPath,['scripts/test-generation-architecture.mjs'],{stdio:'inherit'});
+if(architecture.status!==0)process.exit(architecture.status??1);
+const documentUpload=spawnSync(process.execPath,['scripts/test-document-upload.mjs'],{stdio:'inherit'});
+if(documentUpload.status!==0)process.exit(documentUpload.status??1);
+const cardImprovement=spawnSync(process.execPath,['scripts/test-card-improvement.mjs'],{stdio:'inherit'});
+if(cardImprovement.status!==0)process.exit(cardImprovement.status??1);
+const accuracy=spawnSync(process.execPath,['scripts/test-content-accuracy.mjs'],{stdio:'inherit'});
+if(accuracy.status!==0)process.exit(accuracy.status??1);
+const explanations=spawnSync(process.execPath,['scripts/test-source-explanations.mjs'],{stdio:'inherit'});
+if(explanations.status!==0)process.exit(explanations.status??1);
+const generationGuards=spawnSync(process.execPath,['scripts/test-generation-guards.mjs'],{stdio:'inherit'});
+const curriculumMigration=spawnSync(process.execPath,['scripts/test-insurance-curriculum.mjs'],{stdio:'inherit'});
+if(curriculumMigration.status!==0)process.exit(curriculumMigration.status??1);
+if(generationGuards.status!==0)process.exit(generationGuards.status??1);
+const learningValidation=spawnSync(process.execPath,['scripts/test-learning-validation.mjs'],{stdio:'inherit'});
+if(learningValidation.status!==0)process.exit(learningValidation.status??1);
+const visualReview=spawnSync(process.execPath,['scripts/test-visual-review.mjs'],{stdio:'inherit'});
+if(visualReview.status!==0)process.exit(visualReview.status??1);
+const qaGeneration=spawnSync(process.execPath,['scripts/test-qa-generation.mjs'],{stdio:'inherit'});
+if(qaGeneration.status!==0)process.exit(qaGeneration.status??1);
+const studyModes=spawnSync(process.execPath,['scripts/test-study-modes.mjs'],{stdio:'inherit'});
+if(studyModes.status!==0)process.exit(studyModes.status??1);
+const serviceWorker=spawnSync(process.execPath,['scripts/test-service-worker.mjs'],{stdio:'inherit'});
+if(serviceWorker.status!==0)process.exit(serviceWorker.status??1);
+for(const script of ['test-user-isolation.mjs','test-process-supervisor.mjs','test-snapshot-concurrency.mjs','test-backup-atomicity.mjs','test-offline-reliability.mjs','test-pdf-layout.mjs','test-anki-packages.mjs','test-course-transfer.mjs','test-learning-evaluation.mjs']){
+  const result=spawnSync(process.execPath,[`scripts/${script}`],{stdio:'inherit'});
+  if(result.status!==0)process.exit(result.status??1);
+}
+const reliability=spawnSync(process.execPath,['scripts/test-scheduler-recovery.mjs'],{stdio:'inherit'});
+if(reliability.status!==0)process.exit(reliability.status??1);
+const progressive=spawnSync(process.execPath,['scripts/test-progressive-learning.mjs'],{stdio:'inherit'});
+if(progressive.status!==0)process.exit(progressive.status??1);
+for(const script of ['test-fsrs.mjs','test-fast-generation.mjs','test-clair-learning.mjs','test-understand-repair.mjs','test-intuitive-pedagogy.mjs','test-intuitive-generation.mjs','test-document-generation.mjs','test-reviewed-course-notes.mjs','test-semantic-mapping.mjs','test-course-pedagogy.mjs','test-generation-consistency.mjs','test-course-sections.mjs','test-map-overview.mjs','test-mapping-keyboard.mjs','test-study-session.mjs','test-clear-mapping.mjs','test-regeneration-dedup.mjs','test-content-quality.mjs','test-learning-quality.mjs','evaluate-slides.mjs']){
+  const result=spawnSync(process.execPath,[`scripts/${script}`],{stdio:'inherit'});
+  if(result.status!==0){process.exitCode=1;break;}
+}
